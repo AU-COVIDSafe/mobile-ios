@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ndM-0H-HLb">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Initial Screen View Controller-->
+        <scene sceneID="3KM-vg-9Ea">
+            <objects>
+                <viewController id="ndM-0H-HLb" userLabel="Initial Screen View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ccJ-n5-IxS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="govLogoWhite" translatesAutoresizingMaskIntoConstraints="NO" id="21S-jo-kCt">
+                                <rect key="frame" x="86" y="32" width="148" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="21S-jo-kCt" secondAttribute="height" multiplier="148:77" id="a08-bz-dFI"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="byk-eZ-Cpa" userLabel="GREEN background view">
+                                <rect key="frame" x="0.0" y="155" width="320" height="413"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash_logo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ktg-vZ-UiA">
+                                        <rect key="frame" x="68" y="64.5" width="184" height="184"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ktg-vZ-UiA" secondAttribute="height" multiplier="1:1" id="wJ3-Vy-1rk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cme-9F-deB">
+                                        <rect key="frame" x="75" y="288.5" width="170.5" height="41"/>
+                                        <string key="text">Help stop the spread
+and save lives.</string>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.78431372549019607" green="1" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ktg-vZ-UiA" firstAttribute="leading" secondItem="byk-eZ-Cpa" secondAttribute="leading" constant="68" id="NLt-Zr-H9K"/>
+                                    <constraint firstAttribute="trailing" secondItem="ktg-vZ-UiA" secondAttribute="trailing" constant="68" id="RDT-wI-lTp"/>
+                                    <constraint firstItem="ktg-vZ-UiA" firstAttribute="centerY" secondItem="byk-eZ-Cpa" secondAttribute="centerY" constant="-50" id="XPi-qh-Vel"/>
+                                    <constraint firstItem="Cme-9F-deB" firstAttribute="top" secondItem="ktg-vZ-UiA" secondAttribute="bottom" constant="40" id="bBr-To-itr"/>
+                                    <constraint firstItem="Cme-9F-deB" firstAttribute="centerX" secondItem="byk-eZ-Cpa" secondAttribute="centerX" id="uv0-RF-0Dy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="byk-eZ-Cpa" firstAttribute="top" secondItem="21S-jo-kCt" secondAttribute="bottom" constant="46" id="QDG-ti-md6"/>
+                            <constraint firstItem="21S-jo-kCt" firstAttribute="top" secondItem="dqz-nd-ma4" secondAttribute="top" constant="32" id="dkQ-8V-GvR"/>
+                            <constraint firstItem="21S-jo-kCt" firstAttribute="centerX" secondItem="ccJ-n5-IxS" secondAttribute="centerX" id="hyp-Iu-rfr"/>
+                            <constraint firstItem="byk-eZ-Cpa" firstAttribute="bottom" secondItem="dqz-nd-ma4" secondAttribute="bottom" id="j5B-ny-qsO"/>
+                            <constraint firstItem="21S-jo-kCt" firstAttribute="centerX" secondItem="byk-eZ-Cpa" secondAttribute="centerX" id="oOH-3M-97h"/>
+                            <constraint firstItem="byk-eZ-Cpa" firstAttribute="leading" secondItem="dqz-nd-ma4" secondAttribute="leading" id="sAQ-Vm-eEu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dqz-nd-ma4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1sA-Bl-Xp3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pkq-4F-YCB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1267.5" y="335.91549295774649"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Splash_logo" width="240" height="240"/>
+        <image name="govLogoWhite" width="148" height="77"/>
+    </resources>
+</document>

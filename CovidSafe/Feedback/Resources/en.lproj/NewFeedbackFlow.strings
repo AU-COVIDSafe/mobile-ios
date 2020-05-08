@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Share your feedback…"; ObjectID = "OZa-NP-7UE"; */
+"OZa-NP-7UE.text" = "Share your feedback about COVIDSafe";
+
+/* Class = "UITextView"; text = "."; ObjectID = "f9d-gY-osK"; */
+"f9d-gY-osK.text" = ".";
+
+/* Class = "UILabel"; text = "Screenshot"; ObjectID = "gny-Yi-vdL"; */
+"gny-Yi-vdL.text" = "Screenshot";
+
+/* Class = "UILabel"; text = "Sending"; ObjectID = "jxY-0S-cFE"; */
+"jxY-0S-cFE.text" = "Sending";

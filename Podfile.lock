@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.0.5)
+  - KeychainSwift (19.0.0)
+  - lottie-ios (3.1.6)
+
+DEPENDENCIES:
+  - Alamofire
+  - KeychainSwift
+  - lottie-ios
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - KeychainSwift
+    - lottie-ios
+
+SPEC CHECKSUMS:
+  Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
+  KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
+  lottie-ios: 85ce835dd8c53e02509f20729fc7d6a4e6645a0a
+
+PODFILE CHECKSUM: 8bc87fadafd4dd4f9d03ad3edbfbd84d778c1b19
+
+COCOAPODS: 1.9.1

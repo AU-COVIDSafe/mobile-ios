@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  CovidSafe
+
+  Copyright © 2020 Australian Government. All rights reserved.
+*/
+
+// OTP
+"EnterOTPSent" = "Enter PIN that was sent to %@";
+"WrongNumber" = "Wrong number?";
+"ResendCode" = "Resend PIN";
+
+"InvalidOTP" = "Must be a 6-digit code";
+"WrongOTP" = "Wrong PIN entered";
+
+"CodeWillExpired" = "Your code will expire in %@";
+"CodeHasExpired" = "Your code has expired.";
+
+"NotAValidCode" = "Not a valid code";
+"DataUploaded" = "Data uploaded";
+"DataNotUploaded" = "Data not uploaded";

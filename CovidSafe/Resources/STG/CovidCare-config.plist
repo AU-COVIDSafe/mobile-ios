@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Aus_number_URL</key>
+	<string>https://website.uat.unp.aws.covidsafe.gov.au/help-topics.html#verify-mobile-number-pin</string>
+	<key>FAQ_URL</key>
+	<string>https://website.uat.unp.aws.covidsafe.gov.au/faqs.html</string>
+	<key>Help_URL</key>
+	<string>https://website.uat.unp.aws.covidsafe.gov.au/help-topics.html</string>
+	<key>API_Host</key>
+	<string>https://device-api.uat.unp.aws.covidsafe.gov.au/uat</string>
+	<key>Allow_Debug</key>
+	<true/>
+</dict>
+</plist>
