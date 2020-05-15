@@ -35,7 +35,7 @@ class UploadDataStep2VC: UIViewController, CodeInputViewDelegate {
     let uploadFailErrMsg = "Upload failed. Please try again later."
     let invalidPinErrMsg = "Invalid PIN, please ask the health official to send you another PIN."
     
-    let verifyEnabledColor = UIColor.covidSafeButtonColor
+    let verifyEnabledColor = UIColor.covidSafeButtonDarkerColor
     let verifyDisabledColor = UIColor(red: 219/255.0, green: 221/255.0, blue: 221.0/255.0, alpha: 1.0)
 
     lazy var countdownFormatter: DateComponentsFormatter = {

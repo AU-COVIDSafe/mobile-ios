@@ -170,15 +170,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         DLog("applicationDidEnterBackground")
         Encounter.timestamp(for: .appEnteredBackground)
         
-        let magicNumber = Int.random(in: 0 ... PushNotificationConstants.dailyRemPushNotifContents.count - 1)
-        
         self.dismissBlackscreen()
-        stopAccelerometerUpdates()
-        
-        let center = UNUserNotificationCenter.current()
-        center.removeAllPendingNotificationRequests()
-        
-        triggerCalendarLocalPushNotifications(pnContent: PushNotificationConstants.dailyRemPushNotifContents[magicNumber], identifier: "appBackgroundNotifId")
+        stopAccelerometerUpdates()        
     }
     
     func applicationWillEnterForeground(_ application: UIApplication) {

@@ -49,6 +49,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQj-UW-fvt" userLabel="BackBtn">
                                                 <rect key="frame" x="16" y="16" width="44" height="44"/>
+                                                <accessibility key="accessibilityConfiguration" label="back"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="HWn-in-9mc"/>
                                                     <constraint firstAttribute="width" constant="44" id="czu-6G-Za0"/>
@@ -60,6 +61,9 @@
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload your information" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zY-su-fK0">
                                                 <rect key="frame" x="32" y="56" width="311" height="29"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                                                </accessibility>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -115,11 +119,11 @@
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24k-o7-Lgs" customClass="GradientButton" customModule="COVIDSafe" customModuleProvider="target">
                                 <rect key="frame" x="32" y="599" width="311" height="48"/>
-                                <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="aN0-ip-CM7"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="tintColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Upload my information">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -226,6 +230,7 @@ Please do not close the app.</string>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WvG-1T-uDR" userLabel="BackBtn">
                                 <rect key="frame" x="315" y="16" width="44" height="44"/>
+                                <accessibility key="accessibilityConfiguration" label="Close"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Nrc-LG-i61"/>
                                     <constraint firstAttribute="width" constant="44" id="SvQ-oz-VvC"/>
@@ -253,11 +258,11 @@ Please do not close the app.</string>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEL-Fh-3RO" customClass="GradientButton" customModule="COVIDSafe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="358" width="311" height="48"/>
-                                        <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="8ao-HW-u9m"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <color key="tintColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Try again">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -335,6 +340,7 @@ Please do not close the app.</string>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rvr-ky-7ly">
                                                 <rect key="frame" x="16" y="16" width="44" height="44"/>
+                                                <accessibility key="accessibilityConfiguration" label="back"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="TPE-hl-9Pf"/>
                                                     <constraint firstAttribute="width" constant="44" id="r0m-BO-V14"/>
@@ -352,6 +358,9 @@ Please do not close the app.</string>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is a health official asking you to upload your information?" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGP-gN-IjT">
                                                 <rect key="frame" x="32" y="268" width="311" height="57.5"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                                                </accessibility>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -394,11 +403,11 @@ Once you press ‘Yes’ you’ll need to provide consent to upload your informa
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1e-ah-JXF" userLabel="No" customClass="GradientButton" customModule="COVIDSafe" customModuleProvider="target">
                                 <rect key="frame" x="32" y="587" width="151.5" height="48"/>
-                                <color key="backgroundColor" red="0.0" green="0.54117647058823526" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="66Z-n2-IEN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="tintColor" red="0.0" green="0.54117647058823526" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="No">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -414,11 +423,11 @@ Once you press ‘Yes’ you’ll need to provide consent to upload your informa
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xg-wK-gCo" userLabel="Yes" customClass="GradientButton" customModule="COVIDSafe" customModuleProvider="target">
                                 <rect key="frame" x="191.5" y="587" width="151.5" height="48"/>
-                                <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="WjV-Sg-A9T"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="tintColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Yes">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -470,6 +479,9 @@ Once you press ‘Yes’ you’ll need to provide consent to upload your informa
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Consent" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecY-RE-ssa">
                                                 <rect key="frame" x="32" y="56" width="311" height="29"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                                                </accessibility>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -488,6 +500,9 @@ Read the COVIDSafe *privacy policy* for further details.</string>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzh-IB-Sem" userLabel="ConsentButton">
                                                 <rect key="frame" x="32" y="391" width="24" height="24"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Check to consent" label="I consent checkbox, unchecked">
+                                                    <accessibilityTraits key="traits" none="YES"/>
+                                                </accessibility>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="FJs-ZV-f7s"/>
                                                     <constraint firstAttribute="width" constant="24" id="rSd-43-LYy"/>
@@ -505,6 +520,7 @@ Read the COVIDSafe *privacy policy* for further details.</string>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1v-Px-kY5">
                                                 <rect key="frame" x="16" y="16" width="44" height="44"/>
+                                                <accessibility key="accessibilityConfiguration" label="back"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="ufi-VP-bXc"/>
                                                     <constraint firstAttribute="width" constant="44" id="xGv-7N-ugt"/>
@@ -545,11 +561,12 @@ Read the COVIDSafe *privacy policy* for further details.</string>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huH-hW-8ZB" customClass="GradientButton" customModule="COVIDSafe" customModuleProvider="target">
                                 <rect key="frame" x="32" y="587" width="311" height="48"/>
-                                <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" hint="please consent to proceed"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="1pW-Jb-2mj"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="tintColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -620,6 +637,9 @@ Read the COVIDSafe *privacy policy* for further details.</string>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for helping to stop the spread of COVID-19!" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1n-tc-aEy">
                                                 <rect key="frame" x="32" y="192" width="311" height="57.5"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                                                </accessibility>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -667,11 +687,11 @@ State or territory health officials will notify other COVIDSafe users that have 
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0O-fk-ZsF">
                                 <rect key="frame" x="32" y="598" width="311" height="49"/>
-                                <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="gDg-cR-S0i"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="tintColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

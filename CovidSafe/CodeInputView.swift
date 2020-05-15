@@ -68,7 +68,7 @@ open class CodeInputView: UIView {
     /**
     The color of the digits
     */
-    open var textColor: UIColor = UIColor.covidSafeButtonColor {
+    open var textColor: UIColor = UIColor.covidSafeLighterColor {
         
         didSet {
             setup()

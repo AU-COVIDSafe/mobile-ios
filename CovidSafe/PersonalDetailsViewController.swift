@@ -8,16 +8,6 @@
 import UIKit
 import SafariServices
 
-enum AusState: String {
-    case VIC = "Victoria"
-    case NSW = "New South Wales"
-    case QLD = "Queensland"
-    case SA = "South Australia"
-    case WA = "Western Australia"
-    case NT = "Northern Territory"
-    case ACT = "Australian Capital Territory"
-}
-
 class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var firstnameTextField: UITextField!
@@ -26,6 +16,7 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
     @IBOutlet weak var continueButton: UIButton!
     @IBOutlet weak var scrollview: UIScrollView!
     @IBOutlet weak var dimView: UIView!
+    @IBOutlet weak var backButton: UIButton!
     var agePicker: UIPickerView?
     var pickerBarButtonItem: UIBarButtonItem?
     var currentKeyboardFrame: CGRect?
@@ -197,8 +188,18 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if (textField == firstnameTextField || textField == postcodeTextField) {
             nextBarButtonItem?.title = "Done"
+            if(UIAccessibility.isVoiceOverRunning) {
+                firstnameTextField.isAccessibilityElement = true
+                postcodeTextField.isAccessibilityElement = true
+                backButton.isAccessibilityElement = true
+            }
         } else if (textField == ageTextField) {
             dimView.isHidden = false
+            if(UIAccessibility.isVoiceOverRunning) {
+                firstnameTextField.isAccessibilityElement = false
+                postcodeTextField.isAccessibilityElement = false
+                backButton.isAccessibilityElement = false
+            }
             nextBarButtonItem?.title = "Next"
         }
     }
@@ -230,7 +231,7 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
         firstnameTextField.text = firstnameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         if (self.ageTextField.text != "" && self.postcodeTextField.text?.count == 4  && self.firstnameTextField.text != "") {
             self.continueButton.isEnabled = true
-            self.continueButton.backgroundColor = UIColor.covidSafeButtonColor
+            self.continueButton.backgroundColor = UIColor.covidSafeButtonDarkerColor
         } else {
             self.continueButton.backgroundColor = UIColor(0xDBDDDD)
             self.continueButton.isEnabled = false

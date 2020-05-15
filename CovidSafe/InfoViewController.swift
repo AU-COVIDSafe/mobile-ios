@@ -29,7 +29,6 @@ final class InfoViewController: UIViewController {
         advertisementSwitch.addTarget(self, action: #selector(self.advertisementSwitchChanged), for: UIControl.Event.valueChanged)
         scanningSwitch.addTarget(self, action: #selector(self.scanningSwitchChanged), for: UIControl.Event.valueChanged)
         clearLogsButton.addTarget(self, action:#selector(self.clearLogsButtonClicked), for: .touchUpInside)
-        obtainBluetoothStateButton.addTarget(self, action:#selector(self.obtainBluetoothStateButtonClicked), for: .touchUpInside)
         
     }
     
@@ -98,7 +97,4 @@ final class InfoViewController: UIViewController {
             print("Could not perform delete. \(error)")
         }
     }
-    
-    @objc
-    func obtainBluetoothStateButtonClicked() { }
 }
