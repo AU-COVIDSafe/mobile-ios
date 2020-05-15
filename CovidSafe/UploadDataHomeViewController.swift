@@ -25,6 +25,7 @@ final class UploadDataHomeViewController: UIViewController {
         sender.isSelected = !sender.isSelected
         self.agreeButton.isEnabled = sender.isSelected
         updateContinueButton()
+        consentCheckBox.accessibilityLabel = sender.isSelected ? "I consent checkbox, checked" : "I consent checkbox, unchecked"
     }
     
     @IBAction func onBackTapped(_ sender: UIButton) {
@@ -33,7 +34,7 @@ final class UploadDataHomeViewController: UIViewController {
     
     func updateContinueButton() {
         if (agreeButton.isEnabled) {
-            agreeButton.backgroundColor = UIColor.covidSafeButtonColor
+            agreeButton.backgroundColor = UIColor.covidSafeButtonDarkerColor
         } else {
             agreeButton.backgroundColor = UIColor(0xDBDDDD)
         }

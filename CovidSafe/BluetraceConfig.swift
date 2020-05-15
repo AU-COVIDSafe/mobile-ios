@@ -15,6 +15,6 @@ struct BluetraceConfig {
     static let OrgID = "AU_DTA"
     static let ProtocolVersion = 1
     
-    static let CentralScanInterval = 60 // in seconds
+    static let CentralScanInterval = 60.0 // in seconds
     static let CentralScanDuration = 10 // in seconds
 }

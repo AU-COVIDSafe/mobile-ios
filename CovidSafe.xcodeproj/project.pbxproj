@@ -1308,7 +1308,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = CovidSafe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1316,7 +1316,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
@@ -1391,7 +1391,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = CovidSafe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1399,7 +1399,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1419,7 +1419,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = CovidSafe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1427,7 +1427,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
@@ -1448,7 +1448,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = CovidSafe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1456,7 +1456,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
@@ -1477,7 +1477,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = CovidSafe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1485,7 +1485,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = "COVIDSafe-staging";
@@ -1506,7 +1506,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = CovidSafe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1514,7 +1514,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = "COVIDSafe-staging";
@@ -1651,7 +1651,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = CovidSafe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1659,7 +1659,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
@@ -1679,7 +1679,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = CovidSafe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1687,7 +1687,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
 				PROVISIONING_PROFILE_SPECIFIER = "";

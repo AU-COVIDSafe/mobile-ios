@@ -49,7 +49,9 @@ class CentralController: NSObject {
         guard central == nil else {
             return
         }
-        central = CBCentralManager(delegate: self, queue: self.queue, options: [CBCentralManagerOptionRestoreIdentifierKey: restoreIdentifierKey, CBCentralManagerOptionShowPowerAlertKey: 1])
+        let options: [String: Any] = [CBCentralManagerOptionRestoreIdentifierKey: restoreIdentifierKey,
+                                      CBCentralManagerOptionShowPowerAlertKey: NSNumber(true)]
+        central = CBCentralManager(delegate: self, queue: self.queue, options: options )
     }
     
     func turnOff() {
@@ -61,63 +63,74 @@ class CentralController: NSObject {
         central = nil
     }
     
-    public func getState() -> CBManagerState? {
-        return central?.state
+    func shouldRecordEncounter(_ encounter: EncounterRecord) -> Bool {
+        guard let scannedDate = encounter.timestamp else {
+            return true
+        }
+        if abs(scannedDate.timeIntervalSinceNow) > BluetraceConfig.CentralScanInterval {
+            return true
+        }
+        return false
     }
     
-    public func getDiscoveredPeripheralsCount() -> Int {
-        let COUNT_NOT_FOUND = -1
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return COUNT_NOT_FOUND
+    func shouldReconnectToPeripheral(peripheral: CBPeripheral) -> Bool {
+        guard let encounteredPeripheral = scannedPeripherals[peripheral.identifier] else {
+            return true
         }
-        let managedContext = appDelegate.persistentContainer.viewContext
-        let fetchRequest = NSFetchRequest<Encounter>(entityName: "Encounter")
-        let sortByDate = NSSortDescriptor(key: "timestamp", ascending: false)
-        fetchRequest.sortDescriptors = [sortByDate]
-        let fetchedResultsController = NSFetchedResultsController<Encounter>(fetchRequest: fetchRequest, managedObjectContext: managedContext, sectionNameKeyPath: nil, cacheName: nil)
-        
-        do {
-            try fetchedResultsController.performFetch()
-            return fetchedResultsController.fetchedObjects?.count ?? COUNT_NOT_FOUND
-        } catch let error as NSError {
-            print("Could not perform fetch. \(error), \(error.userInfo)")
-            return COUNT_NOT_FOUND
+        guard let scannedDate = encounteredPeripheral.encounter.timestamp else {
+            return true
         }
+        if abs(scannedDate.timeIntervalSinceNow) > BluetraceConfig.CentralScanInterval {
+            return true
+        }
+        return false
+    }
+    
+    public func getState() -> CBManagerState? {
+        return central?.state
     }
 }
 
 extension CentralController: CBCentralManagerDelegate {
     
-    func centralManager(_ central: CBCentralManager, willRestoreState dict: [String : Any]) { }
+    func centralManager(_ central: CBCentralManager, willRestoreState dict: [String : Any]) {
+        DLog("CC willRestoreState. Central state: \(BluetraceUtils.centralStateToString(central.state))")
+        if let peripheralsObject = dict[CBCentralManagerRestoredStatePeripheralsKey] {
+            let peripherals = peripheralsObject as! Array<CBPeripheral>
+            DLog("CC restoring \(peripherals.count) peripherals from system.")
+            for peripheral in peripherals {
+                recoveredPeripherals.append(peripheral)
+                peripheral.delegate = self
+            }
+        }
+    }
     
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         centralDidUpdateStateCallback?(central.state)
         switch central.state {
         case .poweredOn:
-            DispatchQueue.main.async {
-                self.timerForScanning = Timer.scheduledTimer(withTimeInterval: TimeInterval(BluetraceConfig.CentralScanInterval), repeats: true) { _ in
-                    DLog("CC Starting a scan")
-                    Encounter.timestamp(for: .scanningStarted)
-                    
-                    // for all peripherals that are not disconnected, disconnect them
-                    self.scannedPeripherals.forEach { (scannedPeri) in
-                        central.cancelPeripheralConnection(scannedPeri.value.peripheral)
-                    }
-                    // clear all peripherals, such that a new scan window can take place
-                    self.scannedPeripherals = [UUID: (CBPeripheral, EncounterRecord)]()
-                    self.discoveredAndroidPeriManufacturerToUUIDMap = [Data: UUID]()
-                    
-                    central.scanForPeripherals(withServices: [BluetraceConfig.BluetoothServiceID])
-                    DispatchQueue.global().asyncAfter(deadline: .now() + .seconds(BluetraceConfig.CentralScanDuration)) {
-                        DLog("CC Stopping a scan")
-                        central.stopScan()
-                        Encounter.timestamp(for: .scanningStopped)
-                    }
-                }
-                self.timerForScanning?.fire()
+            DLog("CC Starting a scan")
+            Encounter.timestamp(for: .scanningStarted)
+            
+            // for all peripherals that are not disconnected, disconnect them
+            self.scannedPeripherals.forEach { (scannedPeri) in
+                central.cancelPeripheralConnection(scannedPeri.value.peripheral)
             }
+            // clear all peripherals, such that a new scan window can take place
+            self.scannedPeripherals = [UUID: (CBPeripheral, EncounterRecord)]()
+            self.discoveredAndroidPeriManufacturerToUUIDMap = [Data: UUID]()
+            // handle a state restoration scenario
+            for recoveredPeripheral in recoveredPeripherals {
+                var restoredEncounter = EncounterRecord(rssi: 0, txPower: nil)
+                restoredEncounter.timestamp = nil
+                scannedPeripherals.updateValue((recoveredPeripheral, restoredEncounter),
+                                               forKey: recoveredPeripheral.identifier)
+                central.connect(recoveredPeripheral)
+            }
+            
+            central.scanForPeripherals(withServices: [BluetraceConfig.BluetoothServiceID], options: [CBCentralManagerScanOptionAllowDuplicatesKey: NSNumber(true)])
         default:
-            timerForScanning?.invalidate()
+            DLog("State chnged to \(central.state)")
         }
     }
     
@@ -161,9 +174,12 @@ extension CentralController: CBCentralManagerDelegate {
                          "advertisments": advertisementData as AnyObject] as AnyObject
         
         DLog("\(debugLogs)")
+        var initialEncounter = EncounterRecord(rssi: RSSI.doubleValue, txPower: advertisementData[CBAdvertisementDataTxPowerLevelKey] as? Double)
+        initialEncounter.timestamp = nil
         
         // iphones will "mask" the peripheral's identifier for android devices, resulting in the same android device being discovered multiple times with different peripheral identifier. Hence Android is using use CBAdvertisementDataServiceDataKey data for identifying an android pheripheral
-        if let manuData = advertisementData[CBAdvertisementDataManufacturerDataKey] as? Data {
+        // Also, check that the length is greater than 2 to prevent crash. Otherwise ignore.
+        if let manuData = advertisementData[CBAdvertisementDataManufacturerDataKey] as? Data, manuData.count > 2 {            
             let androidIdentifierData = manuData.subdata(in: 2..<manuData.count)
             if discoveredAndroidPeriManufacturerToUUIDMap.keys.contains(androidIdentifierData) {
                 DLog("Android Peripheral \(peripheral) has been discovered already in this window, will not attempt to connect to it again")
@@ -171,18 +187,29 @@ extension CentralController: CBCentralManagerDelegate {
             } else {
                 peripheral.delegate = self
                 discoveredAndroidPeriManufacturerToUUIDMap.updateValue(peripheral.identifier, forKey: androidIdentifierData)
-                scannedPeripherals.updateValue((peripheral, EncounterRecord(rssi: RSSI.doubleValue, txPower: advertisementData[CBAdvertisementDataTxPowerLevelKey] as? Double)), forKey: peripheral.identifier)
+                scannedPeripherals.updateValue((peripheral, initialEncounter), forKey: peripheral.identifier)
                 central.connect(peripheral)
             }
         } else {
             // Means not android device, i will check if the peripheral.identifier exist in the scannedPeripherals
             DLog("CBAdvertisementDataManufacturerDataKey Data not found. Peripheral is likely not android")
-            if scannedPeripherals[peripheral.identifier] == nil {
-                peripheral.delegate = self
-                scannedPeripherals.updateValue((peripheral, EncounterRecord(rssi: RSSI.doubleValue, txPower: advertisementData[CBAdvertisementDataTxPowerLevelKey] as? Double)), forKey: peripheral.identifier)
-                central.connect(peripheral)
+            if let encounteredPeripheral = scannedPeripherals[peripheral.identifier] {
+                if shouldReconnectToPeripheral(peripheral: encounteredPeripheral.peripheral) {
+                    peripheral.delegate = self
+                    if peripheral.state != .connected {
+                        central.connect(peripheral)
+                        DLog("found previous peripheral from more than 60 seconds ago")
+                    }
+                } else {
+                    DLog("iOS Peripheral \(peripheral) has been discovered already in this window, will not attempt to connect to it again")
+                    if let scannedDate = encounteredPeripheral.encounter.timestamp {
+                        DLog("It was found \(scannedDate.timeIntervalSinceNow) seconds ago")
+                    }
+                }
             } else {
-                DLog("iOS Peripheral \(peripheral) has been discovered already in this window, will not attempt to connect to it again")
+                peripheral.delegate = self
+                scannedPeripherals.updateValue((peripheral, initialEncounter), forKey: peripheral.identifier)
+                central.connect(peripheral)
             }
         }
     }
@@ -190,12 +217,19 @@ extension CentralController: CBCentralManagerDelegate {
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
         let peripheralStateString = BluetraceUtils.peripheralStateToString(peripheral.state)
         DLog("CC didConnect peripheral peripheralCentral state: \(BluetraceUtils.centralStateToString(central.state)), Peripheral state: \(peripheralStateString)")
+        guard shouldReconnectToPeripheral(peripheral: peripheral) else {
+            central.cancelPeripheralConnection(peripheral)
+            return
+        }
         peripheral.delegate = self
+        peripheral.readRSSI()
         peripheral.discoverServices([BluetraceConfig.BluetoothServiceID])
     }
     
     func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
         DLog("CC didDisconnectPeripheral \(peripheral) , \(error != nil ? "error: \(error.debugDescription)" : "" )")
+        let options = [CBConnectPeripheralOptionStartDelayKey: NSNumber(15)]
+        central.connect(peripheral, options: options)
     }
     
     func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
@@ -204,6 +238,23 @@ extension CentralController: CBCentralManagerDelegate {
 }
 
 extension CentralController: CBPeripheralDelegate {
+    func peripheral(_ peripheral: CBPeripheral, didReadRSSI RSSI: NSNumber, error: Error?) {
+        if let err = error {
+            DLog("error: \(err)")
+        }
+        if error == nil {
+            if let existingPeripheral = scannedPeripherals[peripheral.identifier] {
+                var scannedEncounter = existingPeripheral.encounter
+                scannedEncounter.rssi = RSSI.doubleValue
+                scannedPeripherals.updateValue((existingPeripheral.peripheral, scannedEncounter), forKey: peripheral.identifier)
+            }
+        }
+    }
+    
+    func peripheral(_ peripheral: CBPeripheral, didModifyServices invalidatedServices: [CBService]) {
+        DLog("Peripheral: \(peripheral) didModifyServices: \(invalidatedServices)")
+    }
+    
     func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
         if let err = error {
             DLog("error: \(err)")
@@ -254,26 +305,31 @@ extension CentralController: CBPeripheralDelegate {
                          "encounter": scannedPeripherals[peripheral.identifier] as AnyObject] as AnyObject
         
         DLog("\(debugLogs)")
-        if error == nil {
-            if let scannedPeri = scannedPeripherals[peripheral.identifier],
-                let characteristicValue = characteristic.value {
-                do {
-                    let peripheralCharData = try JSONDecoder().decode(PeripheralCharacteristicsData.self, from: characteristicValue)
-                    var encounterStruct = scannedPeri.encounter
-                    encounterStruct.msg = peripheralCharData.msg
-                    encounterStruct.update(modelP: peripheralCharData.modelP)
-                    encounterStruct.org = peripheralCharData.org
-                    encounterStruct.v = peripheralCharData.v
-                    scannedPeripherals.updateValue((scannedPeri.peripheral, encounterStruct), forKey: peripheral.identifier)
-                    encounterStruct.saveToCoreData()
-                } catch {
-                    DLog("Error: \(error). CharacteristicValue is \(characteristicValue)")
-                }
-            } else {
-                DLog("Error: scannedPeripherals[peripheral.identifier] is \(String(describing: scannedPeripherals[peripheral.identifier])), characteristic.value is \(String(describing: characteristic.value))")
+        guard error == nil else {
+            DLog("Error: \(String(describing: error))")
+            return
+        }
+        
+        if let scannedPeri = scannedPeripherals[peripheral.identifier],
+            let characteristicValue = characteristic.value,
+            shouldRecordEncounter(scannedPeri.encounter)
+        {
+            do {
+                let peripheralCharData = try JSONDecoder().decode(PeripheralCharacteristicsData.self, from: characteristicValue)
+                var encounterStruct = scannedPeri.encounter
+                encounterStruct.msg = peripheralCharData.msg
+                encounterStruct.update(modelP: peripheralCharData.modelP)
+                encounterStruct.org = peripheralCharData.org
+                encounterStruct.v = peripheralCharData.v
+                encounterStruct.timestamp = Date()
+                scannedPeripherals.updateValue((scannedPeri.peripheral, encounterStruct), forKey: peripheral.identifier)
+                encounterStruct.saveToCoreData()
+                DLog("Central recorded encounter with \(String(describing: scannedPeri.peripheral.name))")
+            } catch {
+                DLog("Error: \(error). CharacteristicValue is \(characteristicValue)")
             }
         } else {
-            DLog("Error: \(error!)")
+            DLog("Error: scannedPeripherals[peripheral.identifier] is \(String(describing: scannedPeripherals[peripheral.identifier])), characteristic.value is \(String(describing: characteristic.value))")
         }
     }
     

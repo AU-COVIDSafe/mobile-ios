@@ -10,8 +10,6 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var bluetoothStatusOnView: UIView!
     @IBOutlet weak var bluetoothPermissionOffView: UIView!
     @IBOutlet weak var bluetoothPermissionOnView: UIView!
-    @IBOutlet weak var pushNotificationOnView: UIView!
-    @IBOutlet weak var pushNotificationOffView: UIView!
     @IBOutlet weak var homeHeaderView: UIView!
     @IBOutlet weak var homeHeaderInfoText: UILabel!
     @IBOutlet weak var homeHeaderPermissionsOffImage: UIImageView!
@@ -24,6 +22,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var uploadView: UIView!
     @IBOutlet weak var helpButton: UIButton!
     @IBOutlet weak var seeOurFAQ: UIButton!
+    @IBOutlet weak var pushNotificationStatusTitle: UILabel!
+    @IBOutlet weak var pushNotificationStatusIcon: UIImageView!
+    @IBOutlet weak var pushNotificationStatusLabel: UILabel!
     
     var lottieBluetoothView: AnimationView!
 
@@ -141,7 +142,7 @@ class HomeViewController: UIViewController {
         self.bluetoothStatusOn = BluetraceManager.shared.isBluetoothOn()
         self.bluetoothPermissionOn = BluetraceManager.shared.isBluetoothAuthorized()
         self.pushNotificationOn = notificationSettings.authorizationStatus == .authorized
-        self.allPermissionOn = self.bluetoothStatusOn && self.bluetoothPermissionOn && self.pushNotificationOn
+        self.allPermissionOn = self.bluetoothStatusOn && self.bluetoothPermissionOn
     }
     
     fileprivate func toggleViewVisibility(view: UIView, isVisible: Bool) {
@@ -179,17 +180,20 @@ class HomeViewController: UIViewController {
         }
         self.helpButton.setImage(UIImage(named: "ic-help-selected"), for: .normal)
         self.helpButton.setTitleColor(UIColor.black, for: .normal)
+        
+        self.homeHeaderInfoText.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+        self.homeHeaderInfoText.text = "COVIDSafe is active.\nNo further action is required."
+        
         if (!self.allPermissionOn) {
             self.homeHeaderInfoText.text = "COVIDSafe is not active.\nCheck your permissions."
             self.homeHeaderView.backgroundColor = UIColor.covidHomePermissionErrorColor
         } else if (self.didUploadData) {
             self.helpButton.setImage(UIImage(named: "ic-help"), for: .normal)
             self.helpButton.setTitleColor(UIColor.white, for: .normal)
-            self.homeHeaderInfoText.text = "COVIDSafe is active.\nNo further action is required."
-            self.homeHeaderView.backgroundColor = UIColor.covidSafeButtonColor
+            self.homeHeaderInfoText.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+            self.homeHeaderView.backgroundColor = UIColor.covidSafeButtonDarkerColor
             updateAnimationViewWithAnimationName(name: "Spinner_home_upload_complete")
         } else {
-            self.homeHeaderInfoText.text = "COVIDSafe is active.\nNo further action is required."
             self.homeHeaderView.backgroundColor = UIColor.covidHomeActiveColor
             updateAnimationViewWithAnimationName(name: "Spinner_home")
         }
@@ -207,8 +211,38 @@ class HomeViewController: UIViewController {
     }
     
     fileprivate func togglePushNotificationsStatusView() {
-        toggleViewVisibility(view: pushNotificationOnView, isVisible: !self.allPermissionOn && self.pushNotificationOn)
-        toggleViewVisibility(view: pushNotificationOffView, isVisible: !self.allPermissionOn && !self.pushNotificationOn)
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = 4
+        
+        switch self.pushNotificationOn {
+        case true:
+            pushNotificationStatusIcon.isHighlighted = false
+            pushNotificationStatusTitle.text = "Notifications are enabled"
+            let newAttributedLabel = NSMutableAttributedString(string: "You will receive a notification if COVIDSafe is not active.  Change notification settings")
+
+            //set some attributes
+            guard let linkRange = newAttributedLabel.string.range(of: "Change notification settings") else { return }
+            let nsRange = NSRange(linkRange, in: newAttributedLabel.string)
+            newAttributedLabel.addAttribute(.foregroundColor,
+                                     value: UIColor.covidSafeColor,
+                                     range: nsRange)
+            newAttributedLabel.addAttribute(.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, newAttributedLabel.length))
+            pushNotificationStatusLabel.attributedText = newAttributedLabel
+            
+        default:
+            pushNotificationStatusIcon.isHighlighted = true
+            pushNotificationStatusTitle.text = "Notifications are disabled"
+            let newAttributedLabel = NSMutableAttributedString(string: "You will not receive a notification if COVIDSafe is not active.  Change notification settings")
+
+            //set some attributes
+            guard let linkRange = newAttributedLabel.string.range(of: "Change notification settings") else { return }
+            let nsRange = NSRange(linkRange, in: newAttributedLabel.string)
+            newAttributedLabel.addAttribute(.foregroundColor,
+                                     value: UIColor.covidSafeColor,
+                                     range: nsRange)
+            newAttributedLabel.addAttribute(.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, newAttributedLabel.length))
+            pushNotificationStatusLabel.attributedText = newAttributedLabel
+        }
     }
     
     @IBAction func onSettingsTapped(_ sender: UITapGestureRecognizer) {

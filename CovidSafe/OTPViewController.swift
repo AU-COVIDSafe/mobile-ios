@@ -39,7 +39,7 @@ class OTPViewController: UIViewController, RegistrationHandler {
     static let fiveMinutes = 300
     
     var countdownSeconds = fiveMinutes
-    let verifyEnabledColor = UIColor.covidSafeButtonColor
+    let verifyEnabledColor = UIColor.covidSafeButtonDarkerColor
     let verifyDisabledColor = UIColor(red: 219/255.0, green: 221/255.0, blue: 221.0/255.0, alpha: 1.0)
 
     let linkButtonAttributes: [NSAttributedString.Key: Any] = [ .foregroundColor: UIColor(red: 53.0/255.0, green: 111.0/255.0, blue: 152.0/255.0, alpha: 1.0), .underlineStyle: NSUnderlineStyle.single.rawValue]
