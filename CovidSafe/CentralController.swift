@@ -228,8 +228,10 @@ extension CentralController: CBCentralManagerDelegate {
     
     func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
         DLog("CC didDisconnectPeripheral \(peripheral) , \(error != nil ? "error: \(error.debugDescription)" : "" )")
-        let options = [CBConnectPeripheralOptionStartDelayKey: NSNumber(15)]
-        central.connect(peripheral, options: options)
+        if #available(iOS 12, *) {
+            let options = [CBConnectPeripheralOptionStartDelayKey: NSNumber(15)]
+            central.connect(peripheral, options: options)
+        }
     }
     
     func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
