@@ -25,6 +25,7 @@ extension EncounterRecord {
             } catch {
                 print("Could not save. \(error)")
             }
+            NotificationCenter.default.post(name: .encounterRecorded, object: nil)
         }
     }
     

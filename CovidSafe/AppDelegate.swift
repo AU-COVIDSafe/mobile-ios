@@ -40,6 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UNUserNotificationCenter.current().delegate = self
         NotificationCenter.default.addObserver(self, selector:#selector(jwtExpired(_:)),name: .jwtExpired, object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(deferReminderNotifications(_:)),name: .encounterRecorded, object: nil)
         
         setupBluetoothPNStatusCallback()
         
@@ -103,23 +104,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    fileprivate func triggerCalendarLocalPushNotifications(pnContent: [String : String], identifier: String) {
-        
-        let center = UNUserNotificationCenter.current()
-        
-        let content = UNMutableNotificationContent()
-        content.title = pnContent["contentTitle"]!
-        content.body = pnContent["contentBody"]!
-        
-        var dateComponents = DateComponents()
-        dateComponents.hour = 9
-        
-        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-        
-        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
-        center.add(request)
+    fileprivate func cancelPreviouslyScheduledNotifications() {
+        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
     }
-    
+        
     fileprivate func triggerIntervalLocalPushNotifications(pnContent: [String : String], identifier: String) {
         
         let center = UNUserNotificationCenter.current()
@@ -132,6 +120,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
         center.add(request)
+    }
+
+    
+    #if DEBUG
+        let intervals: [TimeInterval] = [60, 15 * 60, 30 * 60, 60 * 60, 120 * 60]
+    #else
+        let intervals: [TimeInterval] = [TimeInterval(60 * 60 * 48)]
+    #endif
+
+    fileprivate func scheduleReminderNotifications() {
+        
+        let reminderContent = PushNotificationConstants.reminderPushNotifContents
+        guard
+            let title = reminderContent["contentTitle"],
+            let body = reminderContent["contentBody"] else {
+                return
+        }
+        
+        let notificationCenter = UNUserNotificationCenter.current()
+        
+        for interval in intervals {
+            let content = UNMutableNotificationContent()
+            
+            #if DEBUG
+                content.title = "\(title) \(interval / 60) min"
+            #else
+                content.title = title
+            #endif
+            
+            content.body = body
+            
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: interval, repeats: false)
+            
+            let request = UNNotificationRequest(identifier: "reminder-\(interval)", content: content, trigger: trigger)
+            notificationCenter.add(request)
+        }
+    }
+    
+    @objc
+    func deferReminderNotifications(_ notification: Notification) {
+        cancelPreviouslyScheduledNotifications()
+        scheduleReminderNotifications()
     }
     
     // MARK: - Core Data stack
@@ -164,6 +194,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         DLog("applicationWillResignActive")
         // Retry in case it failed on become active
         clearOldDataInContext()
+        scheduleReminderNotifications()
     }
     
     func applicationDidEnterBackground(_ application: UIApplication) {
@@ -171,14 +202,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Encounter.timestamp(for: .appEnteredBackground)
         
         self.dismissBlackscreen()
-        stopAccelerometerUpdates()        
+        stopAccelerometerUpdates()
     }
     
     func applicationWillEnterForeground(_ application: UIApplication) {
         DLog("applicationWillEnterForeground")
         self.dismissBlackscreen()
         
-        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+        cancelPreviouslyScheduledNotifications()
     }
     
     func applicationWillTerminate(_ application: UIApplication) {
@@ -350,6 +381,7 @@ extension Notification.Name {
     static let disableUserInteraction = Notification.Name("disableUserInteraction")
     static let enableUserInteraction = Notification.Name("enableUserInteraction")
     static let jwtExpired = Notification.Name("jwtExpired")
+    static let encounterRecorded = Notification.Name("encounterRecorded")
 }
 
 @available(iOS 10, *)
