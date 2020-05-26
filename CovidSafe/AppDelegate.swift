@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setupCoredataDir()
-        Encounter.timestamp(for: .appStarted)
         let firstRun = UserDefaults.standard.bool(forKey: "HasBeenLaunched")
         if( !firstRun ) {
             let keychain = KeychainSwift()
@@ -49,7 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Remote config setup
         let _ = TracerRemoteConfig()
-        
+                
         return true
     }
     
@@ -164,27 +163,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         scheduleReminderNotifications()
     }
     
-    // MARK: - Core Data stack
-    
-    lazy var persistentContainer: CovidPersistentContainer = {
-        /*
-         The persistent container for the application. This implementation
-         creates and returns a container, having loaded the store for the
-         application to it. This property is optional since there are legitimate
-         error conditions that could cause the creation of the store to fail.
-         */
-        let container = CovidPersistentContainer(name: "tracer")
-        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
-            if let error = error as NSError? {
-                fatalError("Unresolved error \(error), \(error.userInfo)")
-            }
-        })
-        return container
-    }()
-    
     func applicationDidBecomeActive(_ application: UIApplication) {
         DLog("applicationDidBecomeActive")
-        Encounter.timestamp(for: .appEnteredForeground)
         
         startAccelerometerUpdates()
         clearOldDataInContext()
@@ -199,7 +179,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationDidEnterBackground(_ application: UIApplication) {
         DLog("applicationDidEnterBackground")
-        Encounter.timestamp(for: .appEnteredBackground)
         
         self.dismissBlackscreen()
         stopAccelerometerUpdates()
@@ -214,23 +193,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationWillTerminate(_ application: UIApplication) {
         DLog("applicationWillTerminate")
-        Encounter.timestamp(for: .appTerminating)
         
         stopAccelerometerUpdates()
-    }
-    
-    // MARK: - Core Data Saving support
-    
-    func saveContext () {
-        let context = persistentContainer.viewContext
-        if context.hasChanges {
-            do {
-                try context.save()
-            } catch {
-                let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
-            }
-        }
     }
     
     func clearOldDataInContext() {
@@ -250,7 +214,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             registerBackgroundTask()
             let dispatchQueue = DispatchQueue(label: "DeleteOldData", qos: .background)
             dispatchQueue.async{
-                let managedContext = self.persistentContainer.viewContext
+                guard let persistentContainer = EncounterDB.shared.persistentContainer else {
+                    self.endBackgroundTask()
+                    return
+                }
+                let managedContext = persistentContainer.viewContext
                 if let oldFetchRequest = Encounter.fetchOldEncounters() {
                     let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: oldFetchRequest)
                     do {

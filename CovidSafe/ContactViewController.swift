@@ -19,12 +19,13 @@ final class ContactViewController: UIViewController {
     }
     
     func fetchContacts() {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
+        guard let persistentContainer =
+            EncounterDB.shared.persistentContainer else {
+                return
         }
-        let managedContext = appDelegate.persistentContainer.viewContext
+        let managedContext = persistentContainer.viewContext
         let fetchRequest = Encounter.fetchRequestForRecords()
-        let sortByContactId = NSSortDescriptor(key: "msg", ascending: false)
+        let sortByContactId = NSSortDescriptor(key: "timestamp", ascending: false)
         fetchRequest.sortDescriptors = [sortByContactId]
         fetchedResultsController = NSFetchedResultsController<Encounter>(fetchRequest: fetchRequest, managedObjectContext: managedContext, sectionNameKeyPath: nil, cacheName: nil)
         fetchedResultsController?.delegate = self
@@ -44,11 +45,11 @@ final class ContactViewController: UIViewController {
         }
         var contactCounts: [String: Int] = [:]
         for encounter in encounters {
-            if encounter.msg != nil {
-                if contactCounts[encounter.msg!] == nil {
-                    contactCounts[encounter.msg!] = 0
+            if encounter.remoteBlob != nil {
+                if contactCounts[encounter.remoteBlob!] == nil {
+                    contactCounts[encounter.remoteBlob!] = 0
                 }
-                contactCounts[encounter.msg!]! += 1
+                contactCounts[encounter.remoteBlob!]! += 1
             }
         }
         var contactTuples = contactCounts.map { ($0.key, $0.value) }

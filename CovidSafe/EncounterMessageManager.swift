@@ -12,7 +12,19 @@ class EncounterMessageManager {
     }
     
     var advertisedPayload: Data? {
-        return UserDefaults.standard.data(forKey: userDefaultsAdvtKey)
+        do {
+            let broadcastPayload = EncounterBlob(modelC: nil,
+                                                 rssi: nil,
+                                                 txPower: nil,
+                                                 modelP: DeviceIdentifier.getModel(),
+                                                 msg: tempId)
+            let jsonMsg = try JSONEncoder().encode(broadcastPayload)
+            let encryptedJsonMsg = try Crypto.encrypt(dataToEncrypt: jsonMsg)
+            let peripheralCharStruct = PeripheralCharacteristicsData(modelP: BluetraceConfig.DummyModel, msg: encryptedJsonMsg, org: BluetraceConfig.OrgID, v: BluetraceConfig.ProtocolVersion)
+            return try JSONEncoder().encode(peripheralCharStruct)
+        } catch {
+            return nil
+        }
     }
     
     // This variable stores the expiry date of the broadcast message. At the same time, we will use this expiry date as the expiry date for the encryted advertisement payload
@@ -29,7 +41,6 @@ class EncounterMessageManager {
                     DLog("No response, Error: \(String(describing: error))")
                     return
                 }
-                _ = self.setAdvertisementPayloadIntoUserDefaults(response)
                 UserDefaults.standard.set(response.tempId, forKey: self.userDefaultsTempIdKey)
             }
         }
@@ -72,8 +83,10 @@ class EncounterMessageManager {
                     onComplete(nil)
                     return
                 }
+                UserDefaults.standard.set(response.tempId, forKey: self.userDefaultsTempIdKey)
+                UserDefaults.standard.set(response.expiry, forKey: self.userDefaultsAdvtExpiryKey)
                 
-                if let newPayload = self.setAdvertisementPayloadIntoUserDefaults(response) {
+                if let newPayload = self.advertisedPayload {
                     onComplete(newPayload)
                 }
                 onComplete(nil)
@@ -121,19 +134,5 @@ class EncounterMessageManager {
             let date = Date(timeIntervalSince1970: TimeInterval(expiry))
             onComplete?(nil, (tempId, date))
         }
-    }
-    
-    private func setAdvertisementPayloadIntoUserDefaults(_ response: (tempId: String, expiry: Date)) -> Data? {
-        let peripheralCharStruct = PeripheralCharacteristicsData(modelP: DeviceIdentifier.getModel(), msg: response.tempId, org: BluetraceConfig.OrgID, v: BluetraceConfig.ProtocolVersion)
-        do {
-            let encodedPeriCharStruct = try JSONEncoder().encode(peripheralCharStruct)
-            UserDefaults.standard.set(encodedPeriCharStruct, forKey: self.userDefaultsAdvtKey)
-            UserDefaults.standard.set(response.expiry, forKey: self.userDefaultsAdvtExpiryKey)
-            return encodedPeriCharStruct
-        } catch {
-            DLog("Error: \(error)")
-        }
-        
-        return nil
     }
 }

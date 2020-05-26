@@ -7,6 +7,14 @@
 
 import Foundation
 
+struct EncounterBlob: Encodable {
+    var modelC: String?
+    var rssi: Double?
+    var txPower: Double?
+    var modelP: String?
+    var msg: String?
+}
+
 struct EncounterRecord: Encodable {
     var timestamp: Date?
     var msg: String?

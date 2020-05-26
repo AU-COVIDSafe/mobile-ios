@@ -117,12 +117,12 @@
                                     <action selector="logoutBtn:" destination="dhe-6o-fvJ" eventType="touchUpInside" id="wv7-nj-02U"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKG-5D-Wyg">
-                                <rect key="frame" x="16" y="493" width="155" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMQ-oF-sLW">
+                                <rect key="frame" x="161" y="59" width="70" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Request Upload PIN"/>
+                                <state key="normal" title="Export DB"/>
                                 <connections>
-                                    <action selector="requestUploadOTP:" destination="dhe-6o-fvJ" eventType="touchUpInside" id="C8K-BY-12Z"/>
+                                    <action selector="dumpDBpressed:" destination="dhe-6o-fvJ" eventType="touchUpInside" id="4VP-XF-A4v"/>
                                 </connections>
                             </button>
                         </subviews>

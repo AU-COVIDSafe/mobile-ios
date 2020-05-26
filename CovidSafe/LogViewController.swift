@@ -23,10 +23,11 @@ final class LogViewController: UIViewController {
     }
     
     func fetchEncounters() {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
+        guard let persistentContainer =
+            EncounterDB.shared.persistentContainer else {
+                return
         }
-        let managedContext = appDelegate.persistentContainer.viewContext
+        let managedContext = persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<Encounter>(entityName: "Encounter")
         let sortByDate = NSSortDescriptor(key: "timestamp", ascending: false)
         fetchRequest.sortDescriptors = [sortByDate]
@@ -62,26 +63,23 @@ extension LogViewController: UITableViewDataSource {
             return
         }
         let datetime = encounter.timestamp
-        let msg = encounter.msg
+//        let msg = encounter.msg
         let dateFormatter = DateFormatter()
         dateFormatter.timeStyle = .medium
         let timeString = "\(datetime == nil ? "<NONE>" : dateFormatter.string(from: datetime!))"
         
-        if let rawMessage = encounter.msg, let event = Encounter.Event(rawValue: rawMessage) {
-            cell.textLabel?.text = "\(timeString) - \(event.rawValue)"
-        } else {
+//        if let rawMessage = encounter.msg, let event = Encounter.Event(rawValue: rawMessage) {
+//            cell.textLabel?.text = "\(timeString) - \(event.rawValue)"
+//        } else {
             cell.textLabel?.text = """
             \(timeString)
-            msg: \(msg ?? "<MISSING>")
-            modelC: \(encounter.modelC != nil ? "\(encounter.modelC!)" : "nil")
-            modelP: \(encounter.modelP != nil ? "\(encounter.modelP!)" : "nil")
-            RSSI:  \(encounter.rssi != nil ? "\(encounter.rssi!)" : "nil")
-            txPower: \(encounter.txPower != nil ? "\(encounter.txPower!)" : "nil")
             org: \(encounter.org != nil ? "\(encounter.org!)" : "nil")
             v: \(encounter.v != nil ? "\(encounter.v!)" : "nil")
+            remoteBlob: \(encounter.remoteBlob ?? "nil")
+            localBlob: \(encounter.localBlob ?? "nil")
             """
             cell.textLabel?.numberOfLines = 0
-        }
+//        }
     }
 }
 

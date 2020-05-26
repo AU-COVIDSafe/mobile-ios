@@ -20,8 +20,10 @@ public class PeripheralController: NSObject {
     }
     
     var didUpdateState: ((String) -> Void)?
+    private let encounteredCentralExpiryTime:TimeInterval = 1800.0 // 30 minutes
     private let restoreIdentifierKey = "com.joelkek.tracer.peripheral"
     private let peripheralName: String
+    private var encounteredCentrals = [UUID: (EncounterRecord)]()
     
     private var characteristicData: PeripheralCharacteristicsData
     
@@ -99,7 +101,13 @@ extension PeripheralController: CBPeripheralManagerDelegate {
                 if let characteristicValue = request.value {
                     let dataFromCentral = try JSONDecoder().decode(CentralWriteData.self, from: characteristicValue)
                     let encounter = EncounterRecord(from: dataFromCentral)
-                    encounter.saveToCoreData()
+                    if (shouldRecordEncounterWithCentral(request.central)) {
+                        try encounter.saveRemoteCentralToCoreData()
+                        encounteredCentrals.updateValue(encounter, forKey: request.central.identifier)
+                        removeOldEncounters()
+                    } else {
+                        DLog("Encounterd central too recently, not recording")
+                    }
                 }
             }
             peripheral.respond(to: requests[0], withResult: .success)
@@ -107,6 +115,28 @@ extension PeripheralController: CBPeripheralManagerDelegate {
             DLog("Error: \(error)")
             peripheral.respond(to: requests[0], withResult: .unlikelyError)
         }
+    }
+    
+    private func removeOldEncounters() {
+        encounteredCentrals = encounteredCentrals.filter { (uuid, encounter) -> Bool in
+            guard let encDate = encounter.timestamp else {
+                return true
+            }
+            return abs(encDate.timeIntervalSinceNow) < encounteredCentralExpiryTime
+        }
+    }
+    
+    private func shouldRecordEncounterWithCentral(_ central: CBCentral) -> Bool {
+        guard let previousEncounter = encounteredCentrals[central.identifier] else {
+            return true
+        }
+        guard let lastEncDate = previousEncounter.timestamp else {
+            return true
+        }
         
+        if abs(lastEncDate.timeIntervalSinceNow) > BluetraceConfig.CentralScanInterval {
+            return true
+        }
+        return false
     }
 }

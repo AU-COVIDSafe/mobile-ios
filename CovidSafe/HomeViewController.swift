@@ -14,7 +14,6 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var homeHeaderInfoText: UILabel!
     @IBOutlet weak var homeHeaderPermissionsOffImage: UIImageView!
     @IBOutlet weak var shareView: UIView!
-    @IBOutlet weak var thanksForTheHelp: UIView!
     @IBOutlet weak var appPermissionsLabel: UIView!
     @IBOutlet weak var animatedBluetoothHeader: UIView!
     @IBOutlet weak var versionNumberLabel: UILabel!
@@ -25,6 +24,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var pushNotificationStatusTitle: UILabel!
     @IBOutlet weak var pushNotificationStatusIcon: UIImageView!
     @IBOutlet weak var pushNotificationStatusLabel: UILabel!
+    @IBOutlet weak var uploadDateLabel: UILabel!
     
     var lottieBluetoothView: AnimationView!
 
@@ -35,13 +35,31 @@ class HomeViewController: UIViewController {
     var didUploadData: Bool {
         let uploadTimestamp = UserDefaults.standard.double(forKey: "uploadDataDate")
         let lastUpload = Date(timeIntervalSince1970: uploadTimestamp)
-        return Date().timeIntervalSince(lastUpload) < 86400 * 21
+        return Date().timeIntervalSince(lastUpload) < 86400 * 14
     }
-    var shouldShowEndOfIsolationScreen: Bool {
-        let uploadTimestamp = UserDefaults.standard.double(forKey: "firstUploadDataDate")
+    var dataUploadedAttributedString: NSAttributedString? {
+        let uploadTimestamp = UserDefaults.standard.double(forKey: "uploadDataDate")
         if(uploadTimestamp > 0){
             let lastUpload = Date(timeIntervalSince1970: uploadTimestamp)
-            return Date().timeIntervalSince(lastUpload) >= 86400 * 21
+            let dateFormatterPrint = DateFormatter()
+            dateFormatterPrint.dateFormat = "dd MMM yyyy"
+            let formattedDate = dateFormatterPrint.string(from: lastUpload)
+            let newAttributedString = NSMutableAttributedString(string: "Your information was uploaded on \(formattedDate).")
+
+            guard let dateRange = newAttributedString.string.range(of: formattedDate) else { return nil }
+            let nsRange = NSRange(dateRange, in: newAttributedString.string)
+            newAttributedString.addAttribute(.font,
+                                            value: UIFont.boldSystemFont(ofSize: 18),
+                                     range: nsRange)
+            return newAttributedString
+        }
+        return nil
+    }
+    var shouldShowUploadDate: Bool {
+        let uploadTimestamp = UserDefaults.standard.double(forKey: "uploadDataDate")
+        if(uploadTimestamp > 0){
+            let lastUpload = Date(timeIntervalSince1970: uploadTimestamp)
+            return Date().timeIntervalSince(lastUpload) <= 86400 * 14
         }
         return false
     }
@@ -67,6 +85,7 @@ class HomeViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(enableUserInteraction(_:)), name: .enableUserInteraction, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(appWillResignActive(_:)), name: UIApplication.willResignActiveNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(appWillEnterForeground(_:)), name: UIApplication.willEnterForegroundNotification, object: nil)
+        
         if let versionNumber = Bundle.main.versionShort, let buildNumber = Bundle.main.version {
             self.versionNumberLabel.text = "Version number: \(versionNumber) Build: \(buildNumber)"
         } else {
@@ -89,10 +108,6 @@ class HomeViewController: UIViewController {
         super.viewDidAppear(animated)
         self.lottieBluetoothView?.play()
         self.becomeFirstResponder()
-        
-        if(shouldShowEndOfIsolationScreen){
-           self.performSegue(withIdentifier: "IsolationSuccessSegue", sender: self)
-        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -133,8 +148,18 @@ class HomeViewController: UIViewController {
                     self?.toggleBluetoothPermissionStatusView()
                     self?.toggleHeaderView()
                     self?.toggleUploadView()
+                    self?.toggleUploadDateView()
                 }
             })
+        }
+    }
+    
+    fileprivate func toggleUploadDateView() {
+        if shouldShowUploadDate, let lastUploadText = self.dataUploadedAttributedString {
+            uploadDateLabel.attributedText = lastUploadText
+            uploadDateLabel.isHidden = false
+        } else {
+            uploadDateLabel.isHidden = true
         }
     }
     
@@ -169,15 +194,9 @@ class HomeViewController: UIViewController {
     fileprivate func toggleHeaderView() {
         self.allPermissionOn ? self.lottieBluetoothView?.play() : self.lottieBluetoothView?.stop()
         toggleViewVisibility(view: appPermissionsLabel, isVisible: !self.allPermissionOn)
-        toggleViewVisibility(view: thanksForTheHelp, isVisible: self.allPermissionOn && self.didUploadData)
         toggleViewVisibility(view: homeHeaderPermissionsOffImage, isVisible: !self.allPermissionOn)
         toggleViewVisibility(view: lottieBluetoothView, isVisible: self.allPermissionOn)
         
-        if (self.allPermissionOn && self.didUploadData) {
-            self.homeHeaderInfoText.textColor = UIColor.white
-        } else {
-            self.homeHeaderInfoText.textColor = UIColor(0x131313)
-        }
         self.helpButton.setImage(UIImage(named: "ic-help-selected"), for: .normal)
         self.helpButton.setTitleColor(UIColor.black, for: .normal)
         
@@ -187,12 +206,6 @@ class HomeViewController: UIViewController {
         if (!self.allPermissionOn) {
             self.homeHeaderInfoText.text = "COVIDSafe is not active.\nCheck your permissions."
             self.homeHeaderView.backgroundColor = UIColor.covidHomePermissionErrorColor
-        } else if (self.didUploadData) {
-            self.helpButton.setImage(UIImage(named: "ic-help"), for: .normal)
-            self.helpButton.setTitleColor(UIColor.white, for: .normal)
-            self.homeHeaderInfoText.font = UIFont.systemFont(ofSize: 18, weight: .bold)
-            self.homeHeaderView.backgroundColor = UIColor.covidSafeButtonDarkerColor
-            updateAnimationViewWithAnimationName(name: "Spinner_home_upload_complete")
         } else {
             self.homeHeaderView.backgroundColor = UIColor.covidHomeActiveColor
             updateAnimationViewWithAnimationName(name: "Spinner_home")
@@ -272,6 +285,15 @@ class HomeViewController: UIViewController {
     
     @IBAction func getCoronaVirusApp(_ sender: UITapGestureRecognizer) {
         guard let url = URL(string: "https://www.health.gov.au/resources/apps-and-tools/coronavirus-australia-app") else {
+            return
+        }
+        
+        let safariVC = SFSafariViewController(url: url)
+        present(safariVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func bluetoothPairingTapped(_ sender: Any) {
+        guard let url = URL(string: "https://www.covidsafe.gov.au/help-topics.html#bluetooth-pairing-request") else {
             return
         }
         
