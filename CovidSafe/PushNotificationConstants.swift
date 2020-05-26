@@ -9,8 +9,8 @@ struct PushNotificationConstants {
     // Bluetooth Status
     static let btStatusPushNotifContents = [
         [
-            "contentTitle": "Turned Bluetooth off by mistake?",
-            "contentBody": "Help stop the spread of COVID-19 by keeping your phone’s Bluetooth on until the outbreak is over."
+            "contentTitle": "COVIDSafe is currently inactive",
+            "contentBody": "Make sure it's active before you leave home and when in public places by enabling Bluetooth®"
         ]
     ]
     

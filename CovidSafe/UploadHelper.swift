@@ -13,11 +13,12 @@ final class UploadHelper {
     
     public static func uploadEncounterData(pin: String?, _ result: @escaping (UploadResult) -> Void) {
         let keychain = KeychainSwift()
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+        
+        guard let managedContext = EncounterDB.shared.persistentContainer?.viewContext else {
+            result(.Failed)
             return
         }
         
-        let managedContext = appDelegate.persistentContainer.viewContext
         
         let recordsFetchRequest: NSFetchRequest<Encounter> = Encounter.fetchRequestForRecords()
         

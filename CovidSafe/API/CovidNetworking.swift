@@ -35,7 +35,7 @@ class CovidNetworking {
     static let shared = CovidNetworking()
     public let session: Session
     
-    init() {
+    init() {       
         let serverTrustPolicy = CovidServerTrustManager(evaluators: evaluators)
         session = Session(serverTrustManager:serverTrustPolicy)
     }

@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="586"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ow2-rP-ZcP" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="429"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="472"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppPermissions2" translatesAutoresizingMaskIntoConstraints="NO" id="zzU-xp-IaB">
                                                 <rect key="frame" x="32" y="8" width="311" height="188"/>
@@ -38,9 +38,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1u-Qk-m74">
-                                                <rect key="frame" x="32" y="311" width="311" height="43"/>
+                                                <rect key="frame" x="32" y="311" width="311" height="64.5"/>
                                                 <attributedString key="attributedText">
-                                                    <fragment content="1. Keep your phone with you when you leave home. ">
+                                                    <fragment content="1. When you leave home, keep your phone with you and make sure COVIDSafe is active.">
                                                         <attributes>
                                                             <font key="NSFont" metaFont="system" size="18"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="18" tighteningFactorForTruncation="0.0"/>
@@ -49,16 +49,30 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Keep the app running. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHp-C7-xCZ">
-                                                <rect key="frame" x="32" y="370" width="311" height="21.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Bluetooth® should be kept ON." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHp-C7-xCZ">
+                                                <rect key="frame" x="32" y="391.5" width="311" height="21.5"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04D-Hy-djY">
-                                                <rect key="frame" x="32" y="407.5" width="311" height="21.5"/>
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04D-Hy-djY">
+                                                <rect key="frame" x="32" y="429" width="311" height="43"/>
                                                 <attributedString key="attributedText">
-                                                    <fragment content="3. Keep Bluetooth® on.">
+                                                    <fragment content="3. COVIDSafe does not send pairing requests. ">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="18"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="18" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Learn more">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="18"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="18" tighteningFactorForTruncation="0.0"/>
+                                                            <integer key="NSUnderline" value="1"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=".">
                                                         <attributes>
                                                             <font key="NSFont" metaFont="system" size="18"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="18" tighteningFactorForTruncation="0.0"/>
@@ -66,6 +80,9 @@
                                                     </fragment>
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="0yI-MG-Vp0" appends="YES" id="Gwy-3W-KzG"/>
+                                                </connections>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -107,7 +124,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="yl1-rG-jXE" kind="presentation" modalPresentationStyle="fullScreen" id="JfD-5U-gMM"/>
+                                    <action selector="continueBtnTapped:" destination="GaQ-f5-ei6" eventType="touchUpInside" id="ksa-Q1-bFw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -125,10 +142,18 @@
                         <viewLayoutGuide key="safeArea" id="PHO-4j-w6y"/>
                     </view>
                     <navigationItem key="navigationItem" id="Qmi-E0-d5C"/>
+                    <connections>
+                        <segue destination="yl1-rG-jXE" kind="presentation" identifier="showHomeSegue" modalPresentationStyle="fullScreen" id="Yi1-Hr-f9s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SqF-IF-P8L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="0yI-MG-Vp0" userLabel="LearnMoreTapped">
+                    <connections>
+                        <action selector="learnMoreTapped:" destination="GaQ-f5-ei6" id="UJg-09-Jdt"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-3423" y="4081"/>
+            <point key="canvasLocation" x="-2980" y="3394"/>
         </scene>
         <!--Onboarding Step 1 View Controller-->
         <scene sceneID="26D-Zd-57d">
@@ -239,7 +264,7 @@ Together we can help stop the spread and stay healthy.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="543"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SpU-i1-aUA" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="522.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="587"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEd-YX-6P6" userLabel="BackButton">
                                                 <rect key="frame" x="16" y="16" width="44" height="44"/>
@@ -281,8 +306,11 @@ Together we can help stop the spread and stay healthy.</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Notifications" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAg-5r-Sgd">
-                                                <rect key="frame" x="32" y="485" width="311" height="21.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAg-5r-Sgd">
+                                                <rect key="frame" x="32" y="485" width="311" height="86"/>
+                                                <string key="text">2. Notifications
+
+COVIDSafe does not send pairing requests.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -329,8 +357,7 @@ Together we can help stop the spread and stay healthy.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="allowPermissionsBtn:" destination="eME-NJ-Fcz" eventType="touchUpInside" id="siX-i4-aS7"/>
-                                    <segue destination="jtV-53-sil" kind="show" id="9GC-gr-FFS"/>
+                                    <segue destination="GaQ-f5-ei6" kind="show" id="DrV-xU-Plc"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CdG-cy-ocX" userLabel="ProgressView">
@@ -952,80 +979,12 @@ They will need to register using their own device and phone number so that COVID
                         <outlet property="verifyButton" destination="lQY-RW-yBL" id="0Zf-Wz-kba"/>
                         <outlet property="wrongNumberButton" destination="K7X-Ux-SAc" id="yCf-mF-ngh"/>
                         <segue destination="eME-NJ-Fcz" kind="show" identifier="showAllowPermissionsFromOTPSegue" id="4eL-1Z-MtW"/>
-                        <segue destination="jtV-53-sil" kind="show" identifier="OTPToTurnOnBtSegue" id="Qc8-cY-neO"/>
                         <segue destination="yl1-rG-jXE" kind="presentation" identifier="OTPToHomeSegue" modalPresentationStyle="fullScreen" id="8rs-ZD-VFl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0yd-3A-Qct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2870" y="1012"/>
-        </scene>
-        <!--Onboarding Step 2c View Controller-->
-        <scene sceneID="s5a-9i-aLg">
-            <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="jtV-53-sil" userLabel="Onboarding Step 2c View Controller" customClass="OnboardingStep2cViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nnw-PT-xcy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGC-4P-Xbk">
-                                <rect key="frame" x="32" y="586" width="311" height="49"/>
-                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="MDf-og-8ou"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <state key="normal" title="Continue">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="enabledBluetoothBtn:" destination="jtV-53-sil" eventType="touchUpInside" id="OhZ-8d-ygC"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppNoPermissions" translatesAutoresizingMaskIntoConstraints="NO" id="jcN-AE-FsG">
-                                <rect key="frame" x="32" y="8" width="311" height="188"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn on your Bluetooth®" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahv-yZ-Jd3">
-                                <rect key="frame" x="32" y="199" width="311" height="29"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" staticText="YES" header="YES"/>
-                                </accessibility>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please go to your Settings or Control Center to turn on Bluetooth®.   Then come back to the COVIDSafe app to confirm." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjL-QF-W6s">
-                                <rect key="frame" x="32" y="236" width="311" height="107.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="uhC-er-6bV" firstAttribute="trailing" secondItem="QGC-4P-Xbk" secondAttribute="trailing" constant="32" id="9gn-Mz-yYE"/>
-                            <constraint firstItem="jcN-AE-FsG" firstAttribute="centerX" secondItem="uhC-er-6bV" secondAttribute="centerX" id="Afx-qn-ugT"/>
-                            <constraint firstItem="uhC-er-6bV" firstAttribute="trailing" secondItem="Ahv-yZ-Jd3" secondAttribute="trailing" constant="32" id="ESD-TG-nCp"/>
-                            <constraint firstItem="uhC-er-6bV" firstAttribute="trailing" secondItem="tjL-QF-W6s" secondAttribute="trailing" constant="32" id="ba8-1O-KOC"/>
-                            <constraint firstItem="uhC-er-6bV" firstAttribute="bottom" secondItem="QGC-4P-Xbk" secondAttribute="bottom" constant="32" id="cZR-Lx-IIe"/>
-                            <constraint firstItem="Ahv-yZ-Jd3" firstAttribute="leading" secondItem="uhC-er-6bV" secondAttribute="leading" constant="32" id="gE6-B8-Ukk"/>
-                            <constraint firstItem="QGC-4P-Xbk" firstAttribute="leading" secondItem="uhC-er-6bV" secondAttribute="leading" constant="32" id="ghH-cO-PBt"/>
-                            <constraint firstItem="Ahv-yZ-Jd3" firstAttribute="top" secondItem="jcN-AE-FsG" secondAttribute="bottom" constant="3" id="lAO-nD-Vwl"/>
-                            <constraint firstItem="jcN-AE-FsG" firstAttribute="top" secondItem="uhC-er-6bV" secondAttribute="top" constant="8" id="mQu-H9-RzN"/>
-                            <constraint firstItem="tjL-QF-W6s" firstAttribute="leading" secondItem="uhC-er-6bV" secondAttribute="leading" constant="32" id="sTj-BQ-Nhj"/>
-                            <constraint firstItem="tjL-QF-W6s" firstAttribute="top" secondItem="Ahv-yZ-Jd3" secondAttribute="bottom" constant="8" id="xuJ-ia-nAM"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="uhC-er-6bV"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="wa8-bd-DB6"/>
-                    <connections>
-                        <segue destination="GaQ-f5-ei6" kind="show" identifier="showFullySetUpFromTurnOnBtSegue" id="sbt-WA-Zmh"/>
-                        <segue destination="yl1-rG-jXE" kind="presentation" identifier="showHomeFromTurnOnBtSegue" modalPresentationStyle="fullScreen" id="9Us-JB-oI0"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yOi-Ce-xh5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3422" y="3134"/>
         </scene>
         <!--Home-->
         <scene sceneID="ExA-0f-AvY">
@@ -1039,7 +998,7 @@ They will need to register using their own device and phone number so that COVID
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="2301"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1C-2s-72y" userLabel="Home Header View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="775"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="725"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6A-MV-WzM">
                                                 <rect key="frame" x="317" y="22" width="50" height="50"/>
@@ -1074,54 +1033,56 @@ They will need to register using their own device and phone number so that COVID
                                                     <constraint firstAttribute="width" constant="240" id="yaP-9d-JNY"/>
                                                 </constraints>
                                             </view>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7vU-Zc-lZj">
-                                                <rect key="frame" x="32" y="423" width="311" height="256"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7vU-Zc-lZj">
+                                                <rect key="frame" x="32" y="468" width="311" height="161"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AxN-oX-9aS" userLabel="ThanksForHelp">
-                                                        <rect key="frame" x="0.0" y="0.0" width="311" height="128"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for helping stop the spread of COVID-19. Your information has been uploaded." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3y-tK-eCX">
-                                                                <rect key="frame" x="0.0" y="0.0" width="311" height="78"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vk7-vj-SYv" userLabel="seperator">
-                                                                <rect key="frame" x="75.5" y="102" width="160" height="2"/>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="2" id="2Yz-2U-XRU"/>
-                                                                    <constraint firstAttribute="width" constant="160" id="Pmr-1g-1qw"/>
-                                                                </constraints>
-                                                            </view>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstAttribute="trailing" secondItem="J3y-tK-eCX" secondAttribute="trailing" id="0oL-pQ-gRj"/>
-                                                            <constraint firstItem="J3y-tK-eCX" firstAttribute="top" secondItem="AxN-oX-9aS" secondAttribute="top" id="2vb-QH-79r"/>
-                                                            <constraint firstItem="J3y-tK-eCX" firstAttribute="leading" secondItem="AxN-oX-9aS" secondAttribute="leading" id="BAH-sg-Cwn"/>
-                                                            <constraint firstItem="vk7-vj-SYv" firstAttribute="centerX" secondItem="AxN-oX-9aS" secondAttribute="centerX" id="BSo-tr-gI3"/>
-                                                            <constraint firstAttribute="bottom" secondItem="vk7-vj-SYv" secondAttribute="bottom" constant="24" id="eNR-8l-aqT"/>
-                                                            <constraint firstItem="vk7-vj-SYv" firstAttribute="top" secondItem="J3y-tK-eCX" secondAttribute="bottom" constant="24" id="syN-9Z-JWd"/>
-                                                        </constraints>
-                                                    </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHB-bi-tze" userLabel="Status">
-                                                        <rect key="frame" x="0.0" y="128" width="311" height="128"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COVIDSafe is active. No further action is required." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49x-lt-ifR">
-                                                                <rect key="frame" x="0.0" y="0.0" width="311" height="128"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstAttribute="trailing" secondItem="49x-lt-ifR" secondAttribute="trailing" id="9a6-CD-3Oz"/>
-                                                            <constraint firstItem="49x-lt-ifR" firstAttribute="leading" secondItem="GHB-bi-tze" secondAttribute="leading" id="Jyn-4S-Q8t"/>
-                                                            <constraint firstItem="49x-lt-ifR" firstAttribute="top" secondItem="GHB-bi-tze" secondAttribute="top" id="tdZ-OR-TpQ"/>
-                                                            <constraint firstAttribute="bottom" secondItem="49x-lt-ifR" secondAttribute="bottom" id="xnQ-zn-FwO"/>
-                                                        </constraints>
-                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49x-lt-ifR">
+                                                        <rect key="frame" x="0.0" y="0.0" width="311" height="43"/>
+                                                        <string key="text">COVIDSafe is active.
+No further action is required.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your information was uploaded on 19 May 2020." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdZ-6A-VIB">
+                                                        <rect key="frame" x="0.0" y="59" width="311" height="43"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKm-pz-Cun">
+                                                        <rect key="frame" x="0.0" y="118" width="311" height="43"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="COVIDSafe does not send ">
+                                                                <attributes>
+                                                                    <font key="NSFont" metaFont="system" size="18"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="pairing requests">
+                                                                <attributes>
+                                                                    <font key="NSFont" metaFont="system" size="18"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    <integer key="NSUnderline" value="1"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content=".">
+                                                                <attributes>
+                                                                    <font key="NSFont" metaFont="system" size="18"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="f47-5X-eXP" appends="YES" id="5Yi-Zr-9XG"/>
+                                                        </connections>
+                                                    </label>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="49x-lt-ifR" firstAttribute="top" secondItem="7vU-Zc-lZj" secondAttribute="top" id="fpf-Dy-hQb"/>
+                                                    <constraint firstAttribute="bottom" secondItem="vKm-pz-Cun" secondAttribute="bottom" id="ozd-TP-CpW"/>
+                                                </constraints>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.78431372549019607" green="1" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1133,12 +1094,12 @@ They will need to register using their own device and phone number so that COVID
                                             <constraint firstItem="g8W-pe-Zjl" firstAttribute="top" secondItem="a1C-2s-72y" secondAttribute="top" constant="168" id="SXW-DN-uaa"/>
                                             <constraint firstAttribute="bottom" secondItem="7vU-Zc-lZj" secondAttribute="bottom" constant="96" id="Sn6-eI-OWc"/>
                                             <constraint firstAttribute="trailing" secondItem="u6A-MV-WzM" secondAttribute="trailing" constant="8" id="TPp-ft-aBl"/>
-                                            <constraint firstItem="7vU-Zc-lZj" firstAttribute="top" secondItem="g8W-pe-Zjl" secondAttribute="bottom" constant="15" id="l3p-ND-WnZ"/>
+                                            <constraint firstItem="7vU-Zc-lZj" firstAttribute="top" secondItem="g8W-pe-Zjl" secondAttribute="bottom" constant="60" id="l3p-ND-WnZ"/>
                                             <constraint firstItem="7vU-Zc-lZj" firstAttribute="leading" secondItem="a1C-2s-72y" secondAttribute="leading" constant="32" id="vAy-Ic-q12"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Eim-Z7-BkO">
-                                        <rect key="frame" x="0.0" y="719" width="375" height="1658"/>
+                                        <rect key="frame" x="0.0" y="669" width="375" height="1658"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewx-Jj-gLM" userLabel="PermissionsView">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="832"/>
@@ -2054,17 +2015,21 @@ They will need to register using their own device and phone number so that COVID
                         <outlet property="pushNotificationStatusLabel" destination="tdm-Nt-WrT" id="1fz-Dj-kEt"/>
                         <outlet property="pushNotificationStatusTitle" destination="gx3-nF-2OD" id="A6K-y6-BFD"/>
                         <outlet property="screenStack" destination="Eim-Z7-BkO" id="vQc-mn-6mJ"/>
-                        <outlet property="thanksForTheHelp" destination="AxN-oX-9aS" id="QhO-zB-K4o"/>
+                        <outlet property="uploadDateLabel" destination="SdZ-6A-VIB" id="2Xb-Nr-mtf"/>
                         <outlet property="uploadView" destination="2xp-v3-22Q" id="diq-zr-YJL"/>
                         <outlet property="versionNumberLabel" destination="CD7-Ft-bQU" id="Lqj-N3-DqH"/>
                         <outlet property="versionView" destination="KEs-yq-szw" id="zPn-dc-ce9"/>
-                        <segue destination="8dk-ge-2YL" kind="presentation" identifier="IsolationSuccessSegue" modalPresentationStyle="fullScreen" id="mjO-TD-7Iq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJa-Mu-MXq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="bTB-MH-OYr" userLabel="SettingsTapped">
                     <connections>
                         <action selector="onSettingsTapped:" destination="yl1-rG-jXE" id="A5D-v5-Mvt"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="f47-5X-eXP" userLabel="BluetoothPairingLabelTapped">
+                    <connections>
+                        <action selector="bluetoothPairingTapped:" destination="yl1-rG-jXE" id="SAI-Sq-Jsb"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="3K8-or-mMv" userLabel="HelpTopicsTapped">
@@ -2104,75 +2069,6 @@ They will need to register using their own device and phone number so that COVID
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2189.5999999999999" y="-1882.7586206896553"/>
-        </scene>
-        <!--Isolation Success View Controller-->
-        <scene sceneID="0nZ-xq-WN5">
-            <objects>
-                <viewController id="8dk-ge-2YL" customClass="IsolationSuccessViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Lla-H0-kdm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dz7-Q3-qhF">
-                                <rect key="frame" x="32" y="586" width="311" height="49"/>
-                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="VZc-Co-WlR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <color key="tintColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Continue">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="doneOntap:" destination="8dk-ge-2YL" eventType="touchUpInside" id="1cX-HR-u8X"/>
-                                    <action selector="enabledBluetoothBtn:" destination="jtV-53-sil" eventType="touchUpInside" id="EQT-3K-YYd"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Upload_Success" translatesAutoresizingMaskIntoConstraints="NO" id="NS0-JW-dF4">
-                                <rect key="frame" x="32" y="8" width="311" height="188"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="NS0-JW-dF4" secondAttribute="height" multiplier="311:188" id="zWE-QF-0JR"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for helping stop the spread of COVID-19!" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asx-BK-7er">
-                                <rect key="frame" x="32" y="230" width="311" height="57.5"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" staticText="YES" header="YES"/>
-                                </accessibility>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You’ve kept others safe while helping to stop the spread of COVID-19 during self-isolation." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izB-Kk-H7a">
-                                <rect key="frame" x="32" y="303.5" width="311" height="57.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="NS0-JW-dF4" firstAttribute="top" secondItem="G4r-4V-vDo" secondAttribute="top" constant="8" id="0G3-Aw-ixP"/>
-                            <constraint firstItem="G4r-4V-vDo" firstAttribute="bottom" secondItem="dz7-Q3-qhF" secondAttribute="bottom" constant="32" id="0eC-1X-bDL"/>
-                            <constraint firstItem="NS0-JW-dF4" firstAttribute="centerX" secondItem="Lla-H0-kdm" secondAttribute="centerX" id="DNO-R2-eaP"/>
-                            <constraint firstItem="izB-Kk-H7a" firstAttribute="leading" secondItem="G4r-4V-vDo" secondAttribute="leading" constant="32" id="Kiq-ZY-i0o"/>
-                            <constraint firstItem="asx-BK-7er" firstAttribute="leading" secondItem="G4r-4V-vDo" secondAttribute="leading" constant="32" id="SLj-yu-lFS"/>
-                            <constraint firstItem="dz7-Q3-qhF" firstAttribute="leading" secondItem="G4r-4V-vDo" secondAttribute="leading" constant="32" id="SXg-8D-MkV"/>
-                            <constraint firstItem="NS0-JW-dF4" firstAttribute="leading" secondItem="G4r-4V-vDo" secondAttribute="leading" constant="32" id="Xbo-8Q-ynp"/>
-                            <constraint firstItem="G4r-4V-vDo" firstAttribute="trailing" secondItem="NS0-JW-dF4" secondAttribute="trailing" constant="32" id="bt0-k6-uvx"/>
-                            <constraint firstItem="G4r-4V-vDo" firstAttribute="trailing" secondItem="izB-Kk-H7a" secondAttribute="trailing" constant="32" id="dWa-qW-8kE"/>
-                            <constraint firstItem="G4r-4V-vDo" firstAttribute="trailing" secondItem="dz7-Q3-qhF" secondAttribute="trailing" constant="32" id="oUZ-cg-Zif"/>
-                            <constraint firstItem="izB-Kk-H7a" firstAttribute="top" secondItem="asx-BK-7er" secondAttribute="bottom" constant="16" id="qfJ-8d-Do5"/>
-                            <constraint firstItem="G4r-4V-vDo" firstAttribute="trailing" secondItem="asx-BK-7er" secondAttribute="trailing" constant="32" id="r5t-C4-RAX"/>
-                            <constraint firstItem="asx-BK-7er" firstAttribute="top" secondItem="NS0-JW-dF4" secondAttribute="bottom" constant="34" id="zvw-yT-oOA"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="G4r-4V-vDo"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="q84-vG-DNL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3380" y="-2840"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="39N-pk-1gr">
@@ -2247,15 +2143,76 @@ and save lives.</string>
                         <segue destination="8nR-hO-fWt" kind="show" identifier="initialScreenToIWantToHelpSegue" id="eMC-CV-hVS"/>
                         <segue destination="mND-9i-sIw" kind="show" identifier="initialScreenToGetOTPSegue" id="rHc-rZ-59x"/>
                         <segue destination="eME-NJ-Fcz" kind="show" identifier="initialScreenToAllowPermissionsSegue" id="XiO-Zp-pOg"/>
-                        <segue destination="jtV-53-sil" kind="show" identifier="initialScreenToTurnOnBtSegue" id="ap4-2a-3fH"/>
                         <segue destination="yl1-rG-jXE" kind="presentation" identifier="initialScreenToHomeSegue" modalPresentationStyle="fullScreen" id="Eya-O4-CPO"/>
                         <segue destination="2XR-xi-raR" kind="show" identifier="initialScreenToConsentSegue" id="ntT-Wx-kqK"/>
                         <segue destination="tmd-7A-Wz4" kind="show" identifier="initialPersonalDetailsSegue" id="cLu-Ng-v4y"/>
+                        <segue destination="wD9-lR-1wv" kind="presentation" identifier="presentMigrationSegue" id="w3o-Dg-9eW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="29g-dC-yWi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-8290" y="339"/>
+        </scene>
+        <!--Migration View Controller-->
+        <scene sceneID="1KH-mM-D5F">
+            <objects>
+                <viewController storyboardIdentifier="migrationInProgress" modalPresentationStyle="fullScreen" id="wD9-lR-1wv" customClass="MigrationViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cPl-cO-Fbz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="govLogoWhite" translatesAutoresizingMaskIntoConstraints="NO" id="Qov-O8-A7L">
+                                <rect key="frame" x="113.5" y="30" width="148" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Qov-O8-A7L" secondAttribute="height" multiplier="148:77" id="aqp-uc-4R5"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SLW-8v-OdL" userLabel="Blue background view">
+                                <rect key="frame" x="0.0" y="137" width="375" height="530"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COVIDSafe update is in progress.  Please make sure your phone is not switched off until the update is complete." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Wo-Qe-Wye">
+                                        <rect key="frame" x="32" y="40" width="311" height="107.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SOF-ig-kwj" userLabel="AnimatingView">
+                                        <rect key="frame" x="67.5" y="189.5" width="240" height="240"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="kxC-N2-PH3"/>
+                                            <constraint firstAttribute="height" constant="240" id="ryn-nk-rKK"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.7843137255" green="1" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="1Wo-Qe-Wye" secondAttribute="trailing" constant="32" id="8LA-9O-xXW"/>
+                                    <constraint firstItem="1Wo-Qe-Wye" firstAttribute="top" secondItem="SLW-8v-OdL" secondAttribute="top" constant="40" id="D5D-Ij-J3b"/>
+                                    <constraint firstItem="SOF-ig-kwj" firstAttribute="top" secondItem="1Wo-Qe-Wye" secondAttribute="bottom" constant="42" id="QeO-v6-n9q"/>
+                                    <constraint firstItem="SOF-ig-kwj" firstAttribute="centerX" secondItem="SLW-8v-OdL" secondAttribute="centerX" id="TVj-vF-v4H"/>
+                                    <constraint firstItem="1Wo-Qe-Wye" firstAttribute="leading" secondItem="SLW-8v-OdL" secondAttribute="leading" constant="32" id="wrG-HY-APO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Qov-O8-A7L" firstAttribute="width" secondItem="Qov-O8-A7L" secondAttribute="height" multiplier="148:77" id="1iI-wS-6LY"/>
+                            <constraint firstItem="SLW-8v-OdL" firstAttribute="leading" secondItem="ZLv-lh-E2f" secondAttribute="leading" id="5do-pU-Abn"/>
+                            <constraint firstItem="SLW-8v-OdL" firstAttribute="trailing" secondItem="ZLv-lh-E2f" secondAttribute="trailing" id="PDr-fw-RgW"/>
+                            <constraint firstItem="ZLv-lh-E2f" firstAttribute="bottom" secondItem="SLW-8v-OdL" secondAttribute="bottom" id="Tlz-3G-C3g"/>
+                            <constraint firstItem="Qov-O8-A7L" firstAttribute="centerX" secondItem="cPl-cO-Fbz" secondAttribute="centerX" id="faB-hs-F95"/>
+                            <constraint firstItem="SLW-8v-OdL" firstAttribute="top" secondItem="Qov-O8-A7L" secondAttribute="bottom" constant="30" id="nKo-BV-iiu"/>
+                            <constraint firstItem="Qov-O8-A7L" firstAttribute="top" secondItem="ZLv-lh-E2f" secondAttribute="top" constant="30" id="u5Z-1m-FSD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZLv-lh-E2f"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationContainer" destination="SOF-ig-kwj" id="24K-l5-R3z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3IU-Mp-wPy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8561" y="1143"/>
         </scene>
         <!--Onboarding Step 1b View Controller-->
         <scene sceneID="f3t-QQ-sex">
@@ -2722,7 +2679,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name (first, last)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIF-xa-lvX">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name (First Last)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIF-xa-lvX">
                                                 <rect key="frame" x="32" y="109.5" width="311" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <nil key="textColor"/>
@@ -2755,7 +2712,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                     <constraint firstAttribute="width" constant="12" id="QNs-P4-1Be"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Postcode (eg 3000)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7RM-TO-7v0">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Postcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7RM-TO-7v0">
                                                 <rect key="frame" x="32" y="293.5" width="311" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <nil key="textColor"/>
@@ -3094,22 +3051,19 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="h8R-i7-zdK"/>
-        <segue reference="ALe-An-dsT"/>
-        <segue reference="8rs-ZD-VFl"/>
-        <segue reference="Qc8-cY-neO"/>
-        <segue reference="bMl-IY-pjw"/>
-        <segue reference="WC1-tG-bo5"/>
+        <segue reference="cLu-Ng-v4y"/>
+        <segue reference="ntT-Wx-kqK"/>
+        <segue reference="Eya-O4-CPO"/>
+        <segue reference="iUa-3s-4XB"/>
+        <segue reference="XiO-Zp-pOg"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="AppNoPermissions" width="311" height="188"/>
         <image name="AppPermissions1" width="311" height="188"/>
         <image name="AppPermissions2" width="311" height="188"/>
         <image name="ChevronRight" width="24" height="24"/>
         <image name="CovidPermissionsOff" width="240" height="240"/>
         <image name="ShareApp" width="24" height="24"/>
         <image name="Splash_logo" width="240" height="240"/>
-        <image name="Upload_Success" width="311" height="188"/>
         <image name="WhiteSmallGovCrest" width="44" height="31"/>
         <image name="arrow-left" width="24" height="24"/>
         <image name="bell 1" width="40" height="40"/>

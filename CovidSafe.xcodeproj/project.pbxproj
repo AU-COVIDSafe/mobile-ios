@@ -36,8 +36,9 @@
 		30BE1CB523F15D47005DCE4F /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BE1CB423F15D47005DCE4F /* OTPViewController.swift */; };
 		30E91BE923EFE514002D592A /* UploadDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E91BE823EFE514002D592A /* UploadDataVC.swift */; };
 		30E91BEB23EFEA0B002D592A /* CodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E91BEA23EFEA0B002D592A /* CodeInputView.swift */; };
-		30FADDAE23F6896C006C125F /* Encounter+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FADDAD23F6896C006C125F /* Encounter+Event.swift */; };
-		469DD4CFF262D29768A8CBEF /* Pods_CovidSafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE2A0527997C5042B9E2A41 /* Pods_CovidSafe.framework */; };
+		3A8951FDED310D7ABA54259E /* Pods_CovidSafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E9EB96EA6E42A571E73C8E /* Pods_CovidSafe.framework */; };
+		5904A5C22462471A008C8012 /* EncounterV1toV2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5904A5C12462471A008C8012 /* EncounterV1toV2.xcmappingmodel */; };
+		5904A5C32462471A008C8012 /* EncounterV1toV2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5904A5C12462471A008C8012 /* EncounterV1toV2.xcmappingmodel */; };
 		590888AF2431B9E3008C9B9F /* UITextView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B55E1912430760500C9E798 /* UITextView + Extensions.swift */; };
 		590888B02431B9E7008C9B9F /* UIColor + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC141AD2430685800399FA8 /* UIColor + Extensions.swift */; };
 		590888B12431B9EB008C9B9F /* Question3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B86119424303F5E00EA4B6B /* Question3ViewController.swift */; };
@@ -52,13 +53,27 @@
 		590C99332432C1C400A5EC71 /* UploadDataHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B69E7E82430C22E00561DD9 /* UploadDataHomeViewController.swift */; };
 		592CBB802441A583001FFCE9 /* PersonalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592CBB7F2441A583001FFCE9 /* PersonalDetailsViewController.swift */; };
 		592CBB812441A583001FFCE9 /* PersonalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592CBB7F2441A583001FFCE9 /* PersonalDetailsViewController.swift */; };
+		59490B64245FE3DA00C9802B /* EncounterV2Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59490B63245FE3DA00C9802B /* EncounterV2Mapping.swift */; };
+		59490B65245FE3DA00C9802B /* EncounterV2Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59490B63245FE3DA00C9802B /* EncounterV2Mapping.swift */; };
+		594E77BF24736B77009B8B34 /* EncounterDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594E77BE24736B77009B8B34 /* EncounterDB.swift */; };
+		594E77C024736B77009B8B34 /* EncounterDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594E77BE24736B77009B8B34 /* EncounterDB.swift */; };
+		594E77C2247387B1009B8B34 /* EncounterDB+migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594E77C1247387B1009B8B34 /* EncounterDB+migration.swift */; };
+		594E77C3247387B1009B8B34 /* EncounterDB+migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594E77C1247387B1009B8B34 /* EncounterDB+migration.swift */; };
 		5956CD8F246D44EA00EA4D4A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5956CD8E246D44EA00EA4D4A /* CoreBluetooth.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5956CD90246D44F100EA4D4A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5956CD8E246D44EA00EA4D4A /* CoreBluetooth.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5957EB67244E936E002F5388 /* UnderSixteenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7ABF27244D6BE100BB249B /* UnderSixteenViewController.swift */; };
+		5961ABEA2474E358004040DF /* MigrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5961ABE92474E358004040DF /* MigrationViewController.swift */; };
+		5961ABEB2474E358004040DF /* MigrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5961ABE92474E358004040DF /* MigrationViewController.swift */; };
+		5961ABED2474E464004040DF /* spinner_migrating_db.json in Resources */ = {isa = PBXBuildFile; fileRef = 5961ABEC2474E464004040DF /* spinner_migrating_db.json */; };
+		5961ABEE2474E464004040DF /* spinner_migrating_db.json in Resources */ = {isa = PBXBuildFile; fileRef = 5961ABEC2474E464004040DF /* spinner_migrating_db.json */; };
 		596B189924496D32003E190F /* Encounter+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596B189824496D32003E190F /* Encounter+Util.swift */; };
 		596B189A24496D32003E190F /* Encounter+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596B189824496D32003E190F /* Encounter+Util.swift */; };
 		596B189C24499591003E190F /* UploadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596B189B24499591003E190F /* UploadHelper.swift */; };
 		596B189D24499591003E190F /* UploadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596B189B24499591003E190F /* UploadHelper.swift */; };
+		597BB7CC245FAEC00067A2E2 /* SecKey+CovidSafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597BB7CB245FAEC00067A2E2 /* SecKey+CovidSafe.swift */; };
+		597BB7CD245FAEC00067A2E2 /* SecKey+CovidSafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597BB7CB245FAEC00067A2E2 /* SecKey+CovidSafe.swift */; };
+		597BB7CF245FB1250067A2E2 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597BB7CE245FB1250067A2E2 /* Crypto.swift */; };
+		597BB7D0245FB1250067A2E2 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597BB7CE245FB1250067A2E2 /* Crypto.swift */; };
 		59898603245173C200966E61 /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59898602245173C200966E61 /* URLHelper.swift */; };
 		59898604245173C200966E61 /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59898602245173C200966E61 /* URLHelper.swift */; };
 		59ACB574242F195A00E63E3C /* InitiateUploadAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ACB573242F195A00E63E3C /* InitiateUploadAPI.swift */; };
@@ -73,8 +88,6 @@
 		59B7417124514126006E1EEA /* RegistrationConsentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B7416F24514126006E1EEA /* RegistrationConsentViewController.swift */; };
 		59F25D69245B917A002A7ED8 /* Spinner_home.json in Resources */ = {isa = PBXBuildFile; fileRef = 59F25D68245B917A002A7ED8 /* Spinner_home.json */; };
 		59F25D6A245B917A002A7ED8 /* Spinner_home.json in Resources */ = {isa = PBXBuildFile; fileRef = 59F25D68245B917A002A7ED8 /* Spinner_home.json */; };
-		59F25D6C245BBCA2002A7ED8 /* Spinner_home_upload_complete.json in Resources */ = {isa = PBXBuildFile; fileRef = 59F25D6B245BBCA2002A7ED8 /* Spinner_home_upload_complete.json */; };
-		59F25D6D245BBCA2002A7ED8 /* Spinner_home_upload_complete.json in Resources */ = {isa = PBXBuildFile; fileRef = 59F25D6B245BBCA2002A7ED8 /* Spinner_home_upload_complete.json */; };
 		59F25D6F245BED80002A7ED8 /* Debug.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F25D6E245BED80002A7ED8 /* Debug.storyboard */; };
 		5B337AAB245A9BBC00537620 /* UploadDataErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B337AAA245A9BBC00537620 /* UploadDataErrorViewController.swift */; };
 		5B337AAC245A9EEC00537620 /* UploadDataPrefaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B577814245A584C0088F111 /* UploadDataPrefaceViewController.swift */; };
@@ -96,11 +109,9 @@
 		5B92D674243018040049877B /* BluetraceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7B8D0242B8536008E1715 /* BluetraceConfig.swift */; };
 		5B92D675243018040049877B /* IssueInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767D300242DF1B000DC9E2A /* IssueInfo.swift */; };
 		5B92D676243018040049877B /* ADGColorPallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767D30A242DF1B000DC9E2A /* ADGColorPallete.swift */; };
-		5B92D677243018040049877B /* Encounter+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FADDAD23F6896C006C125F /* Encounter+Event.swift */; };
 		5B92D678243018040049877B /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767D2FC242DF1B000DC9E2A /* UIKitExtensions.swift */; };
 		5B92D679243018040049877B /* InitialScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FACD53923F25A9A0042A33A /* InitialScreenViewController.swift */; };
 		5B92D67A243018040049877B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8DD05923E2F08400E097EF /* ContactViewController.swift */; };
-		5B92D67B243018040049877B /* OnboardingStep2cViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D817823F16C3900345771 /* OnboardingStep2cViewController.swift */; };
 		5B92D67C243018040049877B /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8DD05B23E2F0A700E097EF /* LogViewController.swift */; };
 		5B92D67D243018040049877B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F83AF23F045A800770DEF /* HomeViewController.swift */; };
 		5B92D67E243018040049877B /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8DD05D23E2F0BA00E097EF /* InfoViewController.swift */; };
@@ -188,7 +199,6 @@
 		5DD41D4723DCB03D00FD4AB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD41D4523DCB03D00FD4AB0 /* LaunchScreen.storyboard */; };
 		5DD41D4F23DCB05600FD4AB0 /* CentralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD41D4E23DCB05600FD4AB0 /* CentralController.swift */; };
 		5DD41D5323DD4CA400FD4AB0 /* PeripheralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD41D5223DD4CA400FD4AB0 /* PeripheralController.swift */; };
-		7AB66BCCCA27E969EE126F9F /* Pods_CovidSafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE2A0527997C5042B9E2A41 /* Pods_CovidSafe.framework */; };
 		7F19B4DD23F565850071A11E /* PogoInstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F19B4DC23F565850071A11E /* PogoInstructionsViewController.swift */; };
 		7F2F0BA223EFFF75006D7404 /* OnboardingStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2F0BA123EFFF75006D7404 /* OnboardingStep2ViewController.swift */; };
 		7F36305F23F7F81400CC6E1D /* PushNotificationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F36305E23F7F81400CC6E1D /* PushNotificationConstants.swift */; };
@@ -223,7 +233,6 @@
 		A767D334242DF1B100DC9E2A /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767D309242DF1B000DC9E2A /* Action.swift */; };
 		A767D335242DF1B100DC9E2A /* ADGColorPallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767D30A242DF1B000DC9E2A /* ADGColorPallete.swift */; };
 		A767D336242DF1B100DC9E2A /* GetJMCTargetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767D30B242DF1B000DC9E2A /* GetJMCTargetAction.swift */; };
-		AC1B51D6C926C60CCC1FB565 /* Pods_CovidSafe_staging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A3F236B583DE5A31A50F1F /* Pods_CovidSafe_staging.framework */; };
 		B605A7B12427429D008BA819 /* PlistHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B605A7B02427429D008BA819 /* PlistHelper.swift */; };
 		B60F8BE4242659810007A641 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F8BE3242659810007A641 /* UILabelExtension.swift */; };
 		B615C5A723F8EB1700345969 /* UIProgressView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B615C5A623F8EB1700345969 /* UIProgressView + Extension.swift */; };
@@ -233,11 +242,11 @@
 		C56CF43F23F18A15006B05B0 /* OnboardingStep4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56CF43E23F18A15006B05B0 /* OnboardingStep4ViewController.swift */; };
 		C585C83B23EEB99B0061B7C6 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C585C83A23EEB99B0061B7C6 /* GradientButton.swift */; };
 		C58D817723F169DB00345771 /* OnboardingStep2bViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D817623F169DB00345771 /* OnboardingStep2bViewController.swift */; };
-		C58D817923F16C3900345771 /* OnboardingStep2cViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D817823F16C3900345771 /* OnboardingStep2cViewController.swift */; };
 		C5D209FC23F4476F007233BE /* UITextViewFixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D209FB23F4476F007233BE /* UITextViewFixed.swift */; };
 		D8DEB6822423AE2E00D99925 /* OnboardingStep1bViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DEB6812423AE2E00D99925 /* OnboardingStep1bViewController.swift */; };
 		D8EB201B23FA722D001C60EC /* HelpNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EB201A23FA722D001C60EC /* HelpNavController.swift */; };
 		D8EB201D23FBE216001C60EC /* help_center_article_style.css in Resources */ = {isa = PBXBuildFile; fileRef = D8EB201C23FBE216001C60EC /* help_center_article_style.css */; };
+		F4992D5F7DAE4B13FF4BB47D /* Pods_CovidSafe_staging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB86126400FA51506E1B416 /* Pods_CovidSafe_staging.framework */; };
 		FB12C4C1242F0480007E893B /* RespondToAuthChallengeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12C4C0242F047F007E893B /* RespondToAuthChallengeAPI.swift */; };
 		FB12C4C3242F0FE9007E893B /* GetTempIdAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12C4C2242F0FE9007E893B /* GetTempIdAPI.swift */; };
 		FB12C4C524304AF0007E893B /* OnboardingStep1aViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12C4C424304AF0007E893B /* OnboardingStep1aViewController.swift */; };
@@ -245,6 +254,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03E2D9045555F5F013130375 /* Pods-CovidSafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe.release.xcconfig"; path = "Target Support Files/Pods-CovidSafe/Pods-CovidSafe.release.xcconfig"; sourceTree = "<group>"; };
 		0B1810112431EE610005D11F /* PhoneNumberParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberParser.swift; sourceTree = "<group>"; };
 		0B22A56A242F286900D1FE60 /* UINavigationBar+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Style.swift"; sourceTree = "<group>"; };
 		0B55E1912430760500C9E798 /* UITextView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView + Extensions.swift"; sourceTree = "<group>"; };
@@ -255,6 +265,7 @@
 		0BC141AB24305D9C00399FA8 /* NSMutableString + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableString + Extensions.swift"; sourceTree = "<group>"; };
 		0BC141AD2430685800399FA8 /* UIColor + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extensions.swift"; sourceTree = "<group>"; };
 		122AF4E79D17C983066C1CEB /* Pods-CovidSafe-staging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe-staging.release.xcconfig"; path = "Target Support Files/Pods-CovidSafe-staging/Pods-CovidSafe-staging.release.xcconfig"; sourceTree = "<group>"; };
+		1925EA5F4413AD52AC198894 /* Pods-CovidSafe.covid-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe.covid-production.xcconfig"; path = "Target Support Files/Pods-CovidSafe/Pods-CovidSafe.covid-production.xcconfig"; sourceTree = "<group>"; };
 		1B86118D24303E7D00EA4B6B /* Questions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Questions.storyboard; sourceTree = "<group>"; };
 		1B86119024303EF200EA4B6B /* Question1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question1ViewController.swift; sourceTree = "<group>"; };
 		1B86119224303F4A00EA4B6B /* Question2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question2ViewController.swift; sourceTree = "<group>"; };
@@ -264,6 +275,7 @@
 		1B86119A24303FA200EA4B6B /* Question3ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question3ErrorViewController.swift; sourceTree = "<group>"; };
 		1B86119C24303FC000EA4B6B /* QuestionUploadDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionUploadDataViewController.swift; sourceTree = "<group>"; };
 		20A0AADA27329C83CFAB5A7C /* Pods-CovidSafe.covid-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe.covid-staging.xcconfig"; path = "Target Support Files/Pods-CovidSafe/Pods-CovidSafe.covid-staging.xcconfig"; sourceTree = "<group>"; };
+		2B916D8946F8A94E32E569C7 /* Pods-CovidSafe.covid-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe.covid-staging.xcconfig"; path = "Target Support Files/Pods-CovidSafe/Pods-CovidSafe.covid-staging.xcconfig"; sourceTree = "<group>"; };
 		30BE1CA923F108BA005DCE4F /* UploadFileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadFileData.swift; sourceTree = "<group>"; };
 		30BE1CAC23F119FD005DCE4F /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		30BE1CAE23F1349F005DCE4F /* EncounterRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterRecord.swift; sourceTree = "<group>"; };
@@ -271,15 +283,27 @@
 		30BE1CB423F15D47005DCE4F /* OTPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		30E91BE823EFE514002D592A /* UploadDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadDataVC.swift; sourceTree = "<group>"; };
 		30E91BEA23EFEA0B002D592A /* CodeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeInputView.swift; sourceTree = "<group>"; };
-		30FADDAD23F6896C006C125F /* Encounter+Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encounter+Event.swift"; sourceTree = "<group>"; };
 		342FF717762F714E56F4412D /* Pods-CovidSafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe.release.xcconfig"; path = "Target Support Files/Pods-CovidSafe/Pods-CovidSafe.release.xcconfig"; sourceTree = "<group>"; };
+		34E9EB96EA6E42A571E73C8E /* Pods_CovidSafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidSafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39E21BD3842669F051A5D6D8 /* Pods-CovidSafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe.debug.xcconfig"; path = "Target Support Files/Pods-CovidSafe/Pods-CovidSafe.debug.xcconfig"; sourceTree = "<group>"; };
 		3A403F07F3B7C5A94CBFC43D /* Pods-CovidSafe-staging.covid-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe-staging.covid-staging.xcconfig"; path = "Target Support Files/Pods-CovidSafe-staging/Pods-CovidSafe-staging.covid-staging.xcconfig"; sourceTree = "<group>"; };
+		46A5730925DA6B664DFE9546 /* Pods-CovidSafe-staging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe-staging.debug.xcconfig"; path = "Target Support Files/Pods-CovidSafe-staging/Pods-CovidSafe-staging.debug.xcconfig"; sourceTree = "<group>"; };
 		46D0C3F015CA753BB4D4787D /* Pods-CovidSafe-staging.covid-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe-staging.covid-production.xcconfig"; path = "Target Support Files/Pods-CovidSafe-staging/Pods-CovidSafe-staging.covid-production.xcconfig"; sourceTree = "<group>"; };
+		49A22E09D113DF058C94C6E6 /* Pods-CovidSafe-staging.covid-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe-staging.covid-staging.xcconfig"; path = "Target Support Files/Pods-CovidSafe-staging/Pods-CovidSafe-staging.covid-staging.xcconfig"; sourceTree = "<group>"; };
+		5904A5C12462471A008C8012 /* EncounterV1toV2.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = EncounterV1toV2.xcmappingmodel; sourceTree = "<group>"; };
 		5909E4AA245043C400D41C26 /* CovidPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidPersistentContainer.swift; sourceTree = "<group>"; };
 		592CBB7F2441A583001FFCE9 /* PersonalDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsViewController.swift; sourceTree = "<group>"; };
+		59490B61245FE22C00C9802B /* ModelV2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelV2.xcdatamodel; sourceTree = "<group>"; };
+		59490B63245FE3DA00C9802B /* EncounterV2Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterV2Mapping.swift; sourceTree = "<group>"; };
+		594E77BE24736B77009B8B34 /* EncounterDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterDB.swift; sourceTree = "<group>"; };
+		594E77C1247387B1009B8B34 /* EncounterDB+migration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EncounterDB+migration.swift"; sourceTree = "<group>"; };
 		5956CD8E246D44EA00EA4D4A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		5961ABE92474E358004040DF /* MigrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationViewController.swift; sourceTree = "<group>"; };
+		5961ABEC2474E464004040DF /* spinner_migrating_db.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spinner_migrating_db.json; sourceTree = "<group>"; };
 		596B189824496D32003E190F /* Encounter+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encounter+Util.swift"; sourceTree = "<group>"; };
 		596B189B24499591003E190F /* UploadHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadHelper.swift; sourceTree = "<group>"; };
+		597BB7CB245FAEC00067A2E2 /* SecKey+CovidSafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SecKey+CovidSafe.swift"; sourceTree = "<group>"; };
+		597BB7CE245FB1250067A2E2 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		59898602245173C200966E61 /* URLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHelper.swift; sourceTree = "<group>"; };
 		59ACB573242F195A00E63E3C /* InitiateUploadAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitiateUploadAPI.swift; sourceTree = "<group>"; };
 		59ACB575242F404500E63E3C /* DataUploadS3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUploadS3.swift; sourceTree = "<group>"; };
@@ -288,7 +312,6 @@
 		59AF2EB12435A38100ACCAF2 /* CovidRequestRetrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidRequestRetrier.swift; sourceTree = "<group>"; };
 		59B7416F24514126006E1EEA /* RegistrationConsentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationConsentViewController.swift; sourceTree = "<group>"; };
 		59F25D68245B917A002A7ED8 /* Spinner_home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Spinner_home.json; sourceTree = "<group>"; };
-		59F25D6B245BBCA2002A7ED8 /* Spinner_home_upload_complete.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Spinner_home_upload_complete.json; sourceTree = "<group>"; };
 		59F25D6E245BED80002A7ED8 /* Debug.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Debug.storyboard; sourceTree = "<group>"; };
 		5B337AAA245A9BBC00537620 /* UploadDataErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadDataErrorViewController.swift; sourceTree = "<group>"; };
 		5B337AAE245AA26300537620 /* Spinner_upload.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Spinner_upload.json; sourceTree = "<group>"; };
@@ -299,7 +322,6 @@
 		5B92D666243012330049877B /* CovidSafe-config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "CovidSafe-config.plist"; path = "Resources/STG/CovidSafe-config.plist"; sourceTree = "<group>"; };
 		5B92D6D9243018040049877B /* COVIDSafe-staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COVIDSafe-staging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD3EE8224330E1A0004A007 /* UploadDataStep2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadDataStep2VC.swift; sourceTree = "<group>"; };
-		5BE2A0527997C5042B9E2A41 /* Pods_CovidSafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidSafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BFFD94A242EC120003AEF4F /* PhoneValidationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneValidationAPI.swift; sourceTree = "<group>"; };
 		5D269C0A23E22CC400ADF2DE /* DeviceIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceIdentifier.swift; sourceTree = "<group>"; };
 		5D269C0C23E2958F00ADF2DE /* BluetraceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetraceManager.swift; sourceTree = "<group>"; };
@@ -331,6 +353,7 @@
 		7FACD53923F25A9A0042A33A /* InitialScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreenViewController.swift; sourceTree = "<group>"; };
 		7FEC361423F16A1E00127AFB /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		7FF75C212429FEE800C11FEA /* CountriesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesData.swift; sourceTree = "<group>"; };
+		81B28CDCE1F29BA0F1D30CCE /* Pods-CovidSafe-staging.covid-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe-staging.covid-production.xcconfig"; path = "Target Support Files/Pods-CovidSafe-staging/Pods-CovidSafe-staging.covid-production.xcconfig"; sourceTree = "<group>"; };
 		A767D2B6242DF1B000DC9E2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feedback.strings; sourceTree = "<group>"; };
 		A767D2B7242DF1B000DC9E2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/NewFeedbackFlow.strings; sourceTree = "<group>"; };
 		A767D2D1242DF1B000DC9E2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NewFeedbackFlow.storyboard; sourceTree = "<group>"; };
@@ -369,9 +392,7 @@
 		C56CF43E23F18A15006B05B0 /* OnboardingStep4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStep4ViewController.swift; sourceTree = "<group>"; };
 		C585C83A23EEB99B0061B7C6 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		C58D817623F169DB00345771 /* OnboardingStep2bViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStep2bViewController.swift; sourceTree = "<group>"; };
-		C58D817823F16C3900345771 /* OnboardingStep2cViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStep2cViewController.swift; sourceTree = "<group>"; };
 		C5D209FB23F4476F007233BE /* UITextViewFixed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewFixed.swift; sourceTree = "<group>"; };
-		D0A3F236B583DE5A31A50F1F /* Pods_CovidSafe_staging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidSafe_staging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8DEB6812423AE2E00D99925 /* OnboardingStep1bViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStep1bViewController.swift; sourceTree = "<group>"; };
 		D8EB201A23FA722D001C60EC /* HelpNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpNavController.swift; sourceTree = "<group>"; };
 		D8EB201C23FBE216001C60EC /* help_center_article_style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = help_center_article_style.css; sourceTree = "<group>"; };
@@ -380,6 +401,8 @@
 		FB12C4C0242F047F007E893B /* RespondToAuthChallengeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RespondToAuthChallengeAPI.swift; sourceTree = "<group>"; };
 		FB12C4C2242F0FE9007E893B /* GetTempIdAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTempIdAPI.swift; sourceTree = "<group>"; };
 		FB12C4C424304AF0007E893B /* OnboardingStep1aViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingStep1aViewController.swift; sourceTree = "<group>"; };
+		FB81BAD81D73C6FD42202A04 /* Pods-CovidSafe-staging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe-staging.release.xcconfig"; path = "Target Support Files/Pods-CovidSafe-staging/Pods-CovidSafe-staging.release.xcconfig"; sourceTree = "<group>"; };
+		FFB86126400FA51506E1B416 /* Pods_CovidSafe_staging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidSafe_staging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -388,7 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5956CD8F246D44EA00EA4D4A /* CoreBluetooth.framework in Frameworks */,
-				AC1B51D6C926C60CCC1FB565 /* Pods_CovidCare_staging.framework in Frameworks */,
+				F4992D5F7DAE4B13FF4BB47D /* Pods_CovidSafe_staging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,8 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5956CD90246D44F100EA4D4A /* CoreBluetooth.framework in Frameworks */,
-				469DD4CFF262D29768A8CBEF /* Pods_CovidCare.framework in Frameworks */,
-				7AB66BCCCA27E969EE126F9F /* Pods_CovidCare.framework in Frameworks */,
+				3A8951FDED310D7ABA54259E /* Pods_CovidSafe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,9 +454,9 @@
 		30BE1CB223F13B26005DCE4F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				59490B62245FE3BD00C9802B /* V2 */,
 				5D8DD05F23E319B300E097EF /* Encounter+CoreDataClass.swift */,
 				5D8DD06023E319B300E097EF /* Encounter+CoreDataProperties.swift */,
-				30FADDAD23F6896C006C125F /* Encounter+Event.swift */,
 				596B189824496D32003E190F /* Encounter+Util.swift */,
 			);
 			name = Models;
@@ -449,7 +471,6 @@
 				FB12C4C424304AF0007E893B /* OnboardingStep1aViewController.swift */,
 				7F2F0BA123EFFF75006D7404 /* OnboardingStep2ViewController.swift */,
 				C58D817623F169DB00345771 /* OnboardingStep2bViewController.swift */,
-				C58D817823F16C3900345771 /* OnboardingStep2cViewController.swift */,
 				C56CF43E23F18A15006B05B0 /* OnboardingStep4ViewController.swift */,
 				5D8DD05923E2F08400E097EF /* ContactViewController.swift */,
 				5D8DD05B23E2F0A700E097EF /* LogViewController.swift */,
@@ -465,6 +486,7 @@
 				5B7ABF24244D3BC600BB249B /* IsolationSuccessViewController.swift */,
 				5B7ABF27244D6BE100BB249B /* UnderSixteenViewController.swift */,
 				59B7416F24514126006E1EEA /* RegistrationConsentViewController.swift */,
+				5961ABE92474E358004040DF /* MigrationViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -510,18 +532,38 @@
 			isa = PBXGroup;
 			children = (
 				5909E4AA245043C400D41C26 /* CovidPersistentContainer.swift */,
+				594E77BE24736B77009B8B34 /* EncounterDB.swift */,
+				594E77C1247387B1009B8B34 /* EncounterDB+migration.swift */,
 			);
 			name = CoreData;
+			sourceTree = "<group>";
+		};
+		59490B62245FE3BD00C9802B /* V2 */ = {
+			isa = PBXGroup;
+			children = (
+				59490B63245FE3DA00C9802B /* EncounterV2Mapping.swift */,
+				5904A5C12462471A008C8012 /* EncounterV1toV2.xcmappingmodel */,
+			);
+			name = V2;
 			sourceTree = "<group>";
 		};
 		5949DC522434859600AE76BC /* lottie */ = {
 			isa = PBXGroup;
 			children = (
+				5961ABEC2474E464004040DF /* spinner_migrating_db.json */,
 				5B337AAE245AA26300537620 /* Spinner_upload.json */,
 				59F25D68245B917A002A7ED8 /* Spinner_home.json */,
-				59F25D6B245BBCA2002A7ED8 /* Spinner_home_upload_complete.json */,
 			);
 			name = lottie;
+			sourceTree = "<group>";
+		};
+		597BB7CA245FACE20067A2E2 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				597BB7CB245FAEC00067A2E2 /* SecKey+CovidSafe.swift */,
+				597BB7CE245FB1250067A2E2 /* Crypto.swift */,
+			);
+			name = Crypto;
 			sourceTree = "<group>";
 		};
 		59AF2E97243552FB00ACCAF2 /* Certificates */ = {
@@ -603,6 +645,7 @@
 		5DD41D3923DCB03B00FD4AB0 /* CovidSafe */ = {
 			isa = PBXGroup;
 			children = (
+				597BB7CA245FACE20067A2E2 /* Crypto */,
 				5949DC522434859600AE76BC /* lottie */,
 				5B92D661243005B10049877B /* Resources */,
 				A767D2AE242DF1B000DC9E2A /* Feedback */,
@@ -700,8 +743,8 @@
 			isa = PBXGroup;
 			children = (
 				5956CD8E246D44EA00EA4D4A /* CoreBluetooth.framework */,
-				5BE2A0527997C5042B9E2A41 /* Pods_CovidCare.framework */,
-				D0A3F236B583DE5A31A50F1F /* Pods_CovidCare_staging.framework */,
+				34E9EB96EA6E42A571E73C8E /* Pods_CovidSafe.framework */,
+				FFB86126400FA51506E1B416 /* Pods_CovidSafe_staging.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -732,6 +775,14 @@
 				342FF717762F714E56F4412D /* Pods-CovidSafe.release.xcconfig */,
 				E3B9CCF78D93EFF0EF2A0ADB /* Pods-CovidSafe-staging.debug.xcconfig */,
 				122AF4E79D17C983066C1CEB /* Pods-CovidSafe-staging.release.xcconfig */,
+				39E21BD3842669F051A5D6D8 /* Pods-CovidSafe.debug.xcconfig */,
+				2B916D8946F8A94E32E569C7 /* Pods-CovidSafe.covid-staging.xcconfig */,
+				03E2D9045555F5F013130375 /* Pods-CovidSafe.release.xcconfig */,
+				1925EA5F4413AD52AC198894 /* Pods-CovidSafe.covid-production.xcconfig */,
+				46A5730925DA6B664DFE9546 /* Pods-CovidSafe-staging.debug.xcconfig */,
+				49A22E09D113DF058C94C6E6 /* Pods-CovidSafe-staging.covid-staging.xcconfig */,
+				FB81BAD81D73C6FD42202A04 /* Pods-CovidSafe-staging.release.xcconfig */,
+				81B28CDCE1F29BA0F1D30CCE /* Pods-CovidSafe-staging.covid-production.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -868,10 +919,11 @@
 				5B92D6C2243018040049877B /* Localizable.strings in Resources */,
 				5B92D6C7243018040049877B /* CovidSafe-config.plist in Resources */,
 				5B92D6C8243018040049877B /* NewFeedbackFlow.strings in Resources */,
+				5961ABEE2474E464004040DF /* spinner_migrating_db.json in Resources */,
+				59AF2EAD2435801400ACCAF2 /* AmazonRootCA4.cer in Resources */,
 				59F25D6F245BED80002A7ED8 /* Debug.storyboard in Resources */,
 				5B92D6C9243018040049877B /* LaunchScreen.storyboard in Resources */,
 				5B92D6CB243018040049877B /* Assets.xcassets in Resources */,
-				59F25D6D245BBCA2002A7ED8 /* Spinner_home_upload_complete.json in Resources */,
 				5B92D6CC243018040049877B /* Feedback.strings in Resources */,
 				5B337AB0245AA26300537620 /* Spinner_upload.json in Resources */,
 				5B92D6CF243018040049877B /* Main.storyboard in Resources */,
@@ -893,9 +945,10 @@
 				A767D30F242DF1B000DC9E2A /* NewFeedbackFlow.strings in Resources */,
 				5DD41D4723DCB03D00FD4AB0 /* LaunchScreen.storyboard in Resources */,
 				5DD41D4423DCB03D00FD4AB0 /* Assets.xcassets in Resources */,
-				59F25D6C245BBCA2002A7ED8 /* Spinner_home_upload_complete.json in Resources */,
 				A767D30E242DF1B000DC9E2A /* Feedback.strings in Resources */,
 				5B337AAF245AA26300537620 /* Spinner_upload.json in Resources */,
+				59AF2EAA2435801400ACCAF2 /* AmazonRootCA3.cer in Resources */,
+				5961ABED2474E464004040DF /* spinner_migrating_db.json in Resources */,
 				5DD41D4223DCB03B00FD4AB0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -998,16 +1051,16 @@
 				5B92D674243018040049877B /* BluetraceConfig.swift in Sources */,
 				5B92D675243018040049877B /* IssueInfo.swift in Sources */,
 				5B92D676243018040049877B /* ADGColorPallete.swift in Sources */,
-				5B92D677243018040049877B /* Encounter+Event.swift in Sources */,
 				5B92D678243018040049877B /* UIKitExtensions.swift in Sources */,
 				5B92D679243018040049877B /* InitialScreenViewController.swift in Sources */,
+				59490B65245FE3DA00C9802B /* EncounterV2Mapping.swift in Sources */,
 				5B92D67A243018040049877B /* ContactViewController.swift in Sources */,
-				5B92D67B243018040049877B /* OnboardingStep2cViewController.swift in Sources */,
 				5B92D67C243018040049877B /* LogViewController.swift in Sources */,
 				5B92D67D243018040049877B /* HomeViewController.swift in Sources */,
 				5B92D67E243018040049877B /* InfoViewController.swift in Sources */,
 				5B92D67F243018040049877B /* PogoInstructionsViewController.swift in Sources */,
 				FBBBFCE82430A933002B174D /* OnboardingStep1aViewController.swift in Sources */,
+				594E77C3247387B1009B8B34 /* EncounterDB+migration.swift in Sources */,
 				590C99332432C1C400A5EC71 /* UploadDataHomeViewController.swift in Sources */,
 				59B7417124514126006E1EEA /* RegistrationConsentViewController.swift in Sources */,
 				5B92D680243018040049877B /* CodeInputView.swift in Sources */,
@@ -1020,11 +1073,13 @@
 				5B92D685243018040049877B /* UILabelExtension.swift in Sources */,
 				5B92D686243018040049877B /* AppDelegate.swift in Sources */,
 				5B92D687243018040049877B /* PhoneNumberViewController.swift in Sources */,
+				5961ABEB2474E358004040DF /* MigrationViewController.swift in Sources */,
 				5B92D688243018040049877B /* BluetraceUtils.swift in Sources */,
 				5B92D689243018040049877B /* NewFeedbackFlowController.swift in Sources */,
 				5B92D68A243018040049877B /* Outcome.swift in Sources */,
 				5B92D68B243018040049877B /* Encounter+EncounterRecord.swift in Sources */,
 				0B42D0DE2432B39E00E4F44C /* Question2ErrorViewController.swift in Sources */,
+				594E77C024736B77009B8B34 /* EncounterDB.swift in Sources */,
 				590888B42431B9F5008C9B9F /* UploadDataNavigationController.swift in Sources */,
 				5B92D68C243018040049877B /* GetJMCTargetAction.swift in Sources */,
 				5B92D68D243018040049877B /* Logging.swift in Sources */,
@@ -1032,9 +1087,12 @@
 				5B92D68E243018040049877B /* HelpNavController.swift in Sources */,
 				5B92D68F243018040049877B /* OTPViewController.swift in Sources */,
 				596B189A24496D32003E190F /* Encounter+Util.swift in Sources */,
+				5904A5C32462471A008C8012 /* EncounterV1toV2.xcmappingmodel in Sources */,
 				5B92D690243018040049877B /* Encounter+CoreDataClass.swift in Sources */,
 				5B92D691243018040049877B /* RespondToAuthChallengeAPI.swift in Sources */,
 				5B92D692243018040049877B /* BluetraceManager.swift in Sources */,
+				597BB7CD245FAEC00067A2E2 /* SecKey+CovidSafe.swift in Sources */,
+				597BB7D0245FB1250067A2E2 /* Crypto.swift in Sources */,
 				5B92D693243018040049877B /* UIColor+Hex.swift in Sources */,
 				5B92D694243018040049877B /* OnboardingStep1ViewController.swift in Sources */,
 				5B92D695243018040049877B /* DeviceInfoExtension.swift in Sources */,
@@ -1113,17 +1171,17 @@
 				0B69E7EB2430CF4100561DD9 /* UploadDataThankYouHomeViewController.swift in Sources */,
 				1B86119924303F9600EA4B6B /* Question2ErrorViewController.swift in Sources */,
 				A767D335242DF1B100DC9E2A /* ADGColorPallete.swift in Sources */,
-				30FADDAE23F6896C006C125F /* Encounter+Event.swift in Sources */,
 				A767D327242DF1B100DC9E2A /* UIKitExtensions.swift in Sources */,
 				7FACD53A23F25A9A0042A33A /* InitialScreenViewController.swift in Sources */,
-				C58D817923F16C3900345771 /* OnboardingStep2cViewController.swift in Sources */,
 				59B7417024514126006E1EEA /* RegistrationConsentViewController.swift in Sources */,
 				5D5F83B023F045A800770DEF /* HomeViewController.swift in Sources */,
 				5B337AAB245A9BBC00537620 /* UploadDataErrorViewController.swift in Sources */,
 				FB12C4C524304AF0007E893B /* OnboardingStep1aViewController.swift in Sources */,
 				7F19B4DD23F565850071A11E /* PogoInstructionsViewController.swift in Sources */,
 				30E91BEB23EFEA0B002D592A /* CodeInputView.swift in Sources */,
+				597BB7CF245FB1250067A2E2 /* Crypto.swift in Sources */,
 				30BE1CAF23F1349F005DCE4F /* EncounterRecord.swift in Sources */,
+				59490B64245FE3DA00C9802B /* EncounterV2Mapping.swift in Sources */,
 				C58D817723F169DB00345771 /* OnboardingStep2bViewController.swift in Sources */,
 				59ACB574242F195A00E63E3C /* InitiateUploadAPI.swift in Sources */,
 				A767D324242DF1B100DC9E2A /* AsyncAction.swift in Sources */,
@@ -1138,8 +1196,10 @@
 				A767D316242DF1B000DC9E2A /* Logging.swift in Sources */,
 				D8EB201B23FA722D001C60EC /* HelpNavController.swift in Sources */,
 				596B189924496D32003E190F /* Encounter+Util.swift in Sources */,
+				5961ABEA2474E358004040DF /* MigrationViewController.swift in Sources */,
 				30BE1CB523F15D47005DCE4F /* OTPViewController.swift in Sources */,
 				5D8DD06123E319B300E097EF /* Encounter+CoreDataClass.swift in Sources */,
+				594E77BF24736B77009B8B34 /* EncounterDB.swift in Sources */,
 				FB12C4C1242F0480007E893B /* RespondToAuthChallengeAPI.swift in Sources */,
 				5D269C0D23E2958F00ADF2DE /* BluetraceManager.swift in Sources */,
 				1B86119124303EF200EA4B6B /* Question1ViewController.swift in Sources */,
@@ -1153,6 +1213,7 @@
 				A767D325242DF1B100DC9E2A /* SendFeedbackAction.swift in Sources */,
 				C5D209FC23F4476F007233BE /* UITextViewFixed.swift in Sources */,
 				C585C83B23EEB99B0061B7C6 /* GradientButton.swift in Sources */,
+				597BB7CC245FAEC00067A2E2 /* SecKey+CovidSafe.swift in Sources */,
 				5B7ABF25244D3BC600BB249B /* IsolationSuccessViewController.swift in Sources */,
 				A767D331242DF1B100DC9E2A /* ViewControllerFactory.swift in Sources */,
 				0BA617CE242E09B200E6C631 /* FeedbackViewController.swift in Sources */,
@@ -1186,6 +1247,7 @@
 				A767D334242DF1B100DC9E2A /* Action.swift in Sources */,
 				59AF2E992435533A00ACCAF2 /* CovidCertificates.swift in Sources */,
 				7F2F0BA223EFFF75006D7404 /* OnboardingStep2ViewController.swift in Sources */,
+				594E77C2247387B1009B8B34 /* EncounterDB+migration.swift in Sources */,
 				59898603245173C200966E61 /* URLHelper.swift in Sources */,
 				A767D31F242DF1B000DC9E2A /* HTTPPostFeedbackAction.swift in Sources */,
 				7F36305F23F7F81400CC6E1D /* PushNotificationConstants.swift in Sources */,
@@ -1196,6 +1258,7 @@
 				1B86119324303F4A00EA4B6B /* Question2ViewController.swift in Sources */,
 				5D8DD06223E319B300E097EF /* Encounter+CoreDataProperties.swift in Sources */,
 				A767D32A242DF1B100DC9E2A /* Issue.swift in Sources */,
+				5904A5C22462471A008C8012 /* EncounterV1toV2.xcmappingmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1308,21 +1371,21 @@
 		};
 		59E766DD242CBC590015EA07 /* covid-staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20A0AADA27329C83CFAB5A7C /* Pods-CovidSafe.covid-staging.xcconfig */;
+			baseConfigurationReference = 2B916D8946F8A94E32E569C7 /* Pods-CovidSafe.covid-staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = 45792XH5L8;
-				INFOPLIST_FILE = CovidSafe/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
@@ -1391,21 +1454,21 @@
 		};
 		59E766DF242CBC8C0015EA07 /* covid-production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 679DE00E3E364DA756795844 /* Pods-CovidSafe.covid-production.xcconfig */;
+			baseConfigurationReference = 1925EA5F4413AD52AC198894 /* Pods-CovidSafe.covid-production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = 45792XH5L8;
-				INFOPLIST_FILE = CovidSafe/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1419,24 +1482,25 @@
 		};
 		5B92D6D5243018040049877B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3B9CCF78D93EFF0EF2A0ADB /* Pods-CovidSafe-staging.debug.xcconfig */;
+			baseConfigurationReference = 46A5730925DA6B664DFE9546 /* Pods-CovidSafe-staging.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = 45792XH5L8;
-				INFOPLIST_FILE = CovidSafe/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
+				PRODUCT_MODULE_NAME = COVIDSafe;
 				PRODUCT_NAME = "COVIDSafe-staging";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SERVICE_UUID = "CC0AC8B7-03B5-4252-8D84-44D199E16065";
@@ -1448,24 +1512,25 @@
 		};
 		5B92D6D6243018040049877B /* covid-staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A403F07F3B7C5A94CBFC43D /* Pods-CovidSafe-staging.covid-staging.xcconfig */;
+			baseConfigurationReference = 49A22E09D113DF058C94C6E6 /* Pods-CovidSafe-staging.covid-staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = 45792XH5L8;
-				INFOPLIST_FILE = CovidSafe/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
+				PRODUCT_MODULE_NAME = COVIDSafe;
 				PRODUCT_NAME = "COVIDSafe-staging";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SERVICE_UUID = "CC0AC8B7-03B5-4252-8D84-44D199E16065";
@@ -1477,23 +1542,24 @@
 		};
 		5B92D6D7243018040049877B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 122AF4E79D17C983066C1CEB /* Pods-CovidSafe-staging.release.xcconfig */;
+			baseConfigurationReference = FB81BAD81D73C6FD42202A04 /* Pods-CovidSafe-staging.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = 45792XH5L8;
-				INFOPLIST_FILE = CovidSafe/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
+				PRODUCT_MODULE_NAME = COVIDSafe;
 				PRODUCT_NAME = "COVIDSafe-staging";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SERVICE_UUID = "CC0AC8B7-03B5-4252-8D84-44D199E16065";
@@ -1506,23 +1572,24 @@
 		};
 		5B92D6D8243018040049877B /* covid-production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46D0C3F015CA753BB4D4787D /* Pods-CovidSafe-staging.covid-production.xcconfig */;
+			baseConfigurationReference = 81B28CDCE1F29BA0F1D30CCE /* Pods-CovidSafe-staging.covid-production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = 45792XH5L8;
-				INFOPLIST_FILE = CovidSafe/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
+				PRODUCT_MODULE_NAME = COVIDSafe;
 				PRODUCT_NAME = "COVIDSafe-staging";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SERVICE_UUID = "CC0AC8B7-03B5-4252-8D84-44D199E16065";
@@ -1651,21 +1718,21 @@
 		};
 		5DD41D4C23DCB03D00FD4AB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EBCA1AD6D10F8DF7BBDC660 /* Pods-CovidSafe.debug.xcconfig */;
+			baseConfigurationReference = 39E21BD3842669F051A5D6D8 /* Pods-CovidSafe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = 45792XH5L8;
-				INFOPLIST_FILE = CovidSafe/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
@@ -1679,21 +1746,21 @@
 		};
 		5DD41D4D23DCB03D00FD4AB0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 342FF717762F714E56F4412D /* Pods-CovidSafe.release.xcconfig */;
+			baseConfigurationReference = 03E2D9045555F5F013130375 /* Pods-CovidSafe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = 45792XH5L8;
-				INFOPLIST_FILE = CovidSafe/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1747,9 +1814,10 @@
 		5DD41D7723DE141700FD4AB0 /* tracer.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				59490B61245FE22C00C9802B /* ModelV2.xcdatamodel */,
 				5DD41D7823DE141700FD4AB0 /* Model.xcdatamodel */,
 			);
-			currentVersion = 5DD41D7823DE141700FD4AB0 /* Model.xcdatamodel */;
+			currentVersion = 59490B61245FE22C00C9802B /* ModelV2.xcdatamodel */;
 			path = tracer.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

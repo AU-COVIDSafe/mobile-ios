@@ -54,15 +54,16 @@ final class InfoViewController: UIViewController {
     }
     
     func fetchDevicesEncounteredCount() {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
+                    guard let persistentContainer =
+            EncounterDB.shared.persistentContainer else {
+                return
         }
-        let managedContext = appDelegate.persistentContainer.viewContext
+        let managedContext = persistentContainer.viewContext
         let fetchRequest = Encounter.fetchRequestForRecords()
         
         do {
             let devicesEncountered = try managedContext.fetch(fetchRequest)
-            let uniqueIDs = Set(devicesEncountered.map { $0.msg })
+            let uniqueIDs = Set(devicesEncountered.map { $0.timestamp })
             self.devicesEncounteredLabel.text = String(uniqueIDs.count)
         } catch let error as NSError {
             print("Could not fetch. \(error), \(error.userInfo)")
@@ -79,12 +80,29 @@ final class InfoViewController: UIViewController {
         BluetraceManager.shared.toggleScanning(mySwitch.isOn)
     }
     
+    @IBAction func dumpDBpressed(_ sender: UIButton) {
+        var activityItems: [Any] = []
+        let localStoreUrl = CovidPersistentContainer.defaultDirectoryURL().appendingPathComponent("tracer", isDirectory: false).appendingPathExtension("sqlite")
+        activityItems.append(localStoreUrl)
+        let localStoreUrlshm = CovidPersistentContainer.defaultDirectoryURL().appendingPathComponent("tracer", isDirectory: false).appendingPathExtension("sqlite-shm")
+        if FileManager.default.fileExists(atPath: localStoreUrlshm.path) {
+            activityItems.append(localStoreUrlshm)
+        }
+        let localStoreUrlwal = CovidPersistentContainer.defaultDirectoryURL().appendingPathComponent("tracer", isDirectory: false).appendingPathExtension("sqlite-wal")
+        if FileManager.default.fileExists(atPath: localStoreUrlwal.path) {
+            activityItems.append(localStoreUrlwal)
+        }
+        let activity = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+        present(activity, animated: true, completion: nil)
+    }
+    
     @objc
     func clearLogsButtonClicked() {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
+                    guard let persistentContainer =
+            EncounterDB.shared.persistentContainer else {
+                return
         }
-        let managedContext = appDelegate.persistentContainer.viewContext
+        let managedContext = persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<Encounter>(entityName: "Encounter")
         fetchRequest.includesPropertyValues = false
         do {

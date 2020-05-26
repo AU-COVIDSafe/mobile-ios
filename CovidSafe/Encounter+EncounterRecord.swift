@@ -12,9 +12,8 @@ extension EncounterRecord {
     
     func saveToCoreData() {
         DispatchQueue.main.async {
-            guard let appDelegate =
-                UIApplication.shared.delegate as? AppDelegate else {
-                    return
+            guard let persistentContainer = EncounterDB.shared.persistentContainer else {
+                return
             }
             let managedContext = appDelegate.persistentContainer.viewContext
             let entity = NSEntityDescription.entity(forEntityName: "Encounter", in: managedContext)!

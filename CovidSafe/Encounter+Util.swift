@@ -10,10 +10,7 @@ import CoreData
 
 extension Encounter {
     @nonobjc public class func deleteAll() {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        appDelegate.persistentContainer.performBackgroundTask { (backgroundContext) in
+        EncounterDB.shared.persistentContainer?.performBackgroundTask { (backgroundContext) in
             let oldFetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Encounter")
             let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: oldFetchRequest)
             do {

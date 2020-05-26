@@ -237,8 +237,6 @@ class OTPViewController: UIViewController, RegistrationHandler {
                 }
                 if !UserDefaults.standard.bool(forKey: "allowedPermissions") {
                     viewController.performSegue(withIdentifier: "showAllowPermissionsFromOTPSegue", sender: self)
-                } else if !UserDefaults.standard.bool(forKey: "turnedOnBluetooth") {
-                    self.performSegue(withIdentifier: "OTPToTurnOnBtSegue", sender: self)
                 } else {
                     self.performSegue(withIdentifier: "OTPToHomeSegue", sender: self)
                 }
