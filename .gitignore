@@ -1,0 +1,21 @@
+Pods
+
+build/
+DerivedData/
+
+.bundle
+.build
+.DS_Store
+
+*.mode1v3
+*.pbxuser
+*.swp
+*.xcuserstate
+*.xccurrentversion
+*.xccheckout
+*.xcbkptlist
+*.xcscmblueprint
+xcuserdata
+
+# Ruby Bundler
+vendor

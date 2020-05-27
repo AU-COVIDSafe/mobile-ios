@@ -82,6 +82,16 @@
 		59AF2E9A2435533A00ACCAF2 /* CovidCertificates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AF2E982435533A00ACCAF2 /* CovidCertificates.swift */; };
 		59AF2E9C2435581600ACCAF2 /* CovidNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AF2E9B2435581600ACCAF2 /* CovidNetworking.swift */; };
 		59AF2E9D2435581600ACCAF2 /* CovidNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AF2E9B2435581600ACCAF2 /* CovidNetworking.swift */; };
+		59AF2E9F243560FD00ACCAF2 /* AmazonRootCA1.cer in Resources */ = {isa = PBXBuildFile; fileRef = 59AF2E9E243560FD00ACCAF2 /* AmazonRootCA1.cer */; };
+		59AF2EA0243560FD00ACCAF2 /* AmazonRootCA1.cer in Resources */ = {isa = PBXBuildFile; fileRef = 59AF2E9E243560FD00ACCAF2 /* AmazonRootCA1.cer */; };
+		59AF2EA82435801400ACCAF2 /* SFSRootCAG2.cer in Resources */ = {isa = PBXBuildFile; fileRef = 59AF2EA42435801300ACCAF2 /* SFSRootCAG2.cer */; };
+		59AF2EA92435801400ACCAF2 /* SFSRootCAG2.cer in Resources */ = {isa = PBXBuildFile; fileRef = 59AF2EA42435801300ACCAF2 /* SFSRootCAG2.cer */; };
+		59AF2EAA2435801400ACCAF2 /* AmazonRootCA3.cer in Resources */ = {isa = PBXBuildFile; fileRef = 59AF2EA52435801300ACCAF2 /* AmazonRootCA3.cer */; };
+		59AF2EAB2435801400ACCAF2 /* AmazonRootCA3.cer in Resources */ = {isa = PBXBuildFile; fileRef = 59AF2EA52435801300ACCAF2 /* AmazonRootCA3.cer */; };
+		59AF2EAC2435801400ACCAF2 /* AmazonRootCA4.cer in Resources */ = {isa = PBXBuildFile; fileRef = 59AF2EA62435801400ACCAF2 /* AmazonRootCA4.cer */; };
+		59AF2EAD2435801400ACCAF2 /* AmazonRootCA4.cer in Resources */ = {isa = PBXBuildFile; fileRef = 59AF2EA62435801400ACCAF2 /* AmazonRootCA4.cer */; };
+		59AF2EAE2435801400ACCAF2 /* AmazonRootCA2.cer in Resources */ = {isa = PBXBuildFile; fileRef = 59AF2EA72435801400ACCAF2 /* AmazonRootCA2.cer */; };
+		59AF2EAF2435801400ACCAF2 /* AmazonRootCA2.cer in Resources */ = {isa = PBXBuildFile; fileRef = 59AF2EA72435801400ACCAF2 /* AmazonRootCA2.cer */; };
 		59AF2EB22435A38100ACCAF2 /* CovidRequestRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AF2EB12435A38100ACCAF2 /* CovidRequestRetrier.swift */; };
 		59AF2EB32435A38100ACCAF2 /* CovidRequestRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AF2EB12435A38100ACCAF2 /* CovidRequestRetrier.swift */; };
 		59B7417024514126006E1EEA /* RegistrationConsentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B7416F24514126006E1EEA /* RegistrationConsentViewController.swift */; };
@@ -309,6 +319,11 @@
 		59ACB575242F404500E63E3C /* DataUploadS3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUploadS3.swift; sourceTree = "<group>"; };
 		59AF2E982435533A00ACCAF2 /* CovidCertificates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCertificates.swift; sourceTree = "<group>"; };
 		59AF2E9B2435581600ACCAF2 /* CovidNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidNetworking.swift; sourceTree = "<group>"; };
+		59AF2E9E243560FD00ACCAF2 /* AmazonRootCA1.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmazonRootCA1.cer; sourceTree = "<group>"; };
+		59AF2EA42435801300ACCAF2 /* SFSRootCAG2.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFSRootCAG2.cer; sourceTree = "<group>"; };
+		59AF2EA52435801300ACCAF2 /* AmazonRootCA3.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmazonRootCA3.cer; sourceTree = "<group>"; };
+		59AF2EA62435801400ACCAF2 /* AmazonRootCA4.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmazonRootCA4.cer; sourceTree = "<group>"; };
+		59AF2EA72435801400ACCAF2 /* AmazonRootCA2.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmazonRootCA2.cer; sourceTree = "<group>"; };
 		59AF2EB12435A38100ACCAF2 /* CovidRequestRetrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidRequestRetrier.swift; sourceTree = "<group>"; };
 		59B7416F24514126006E1EEA /* RegistrationConsentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationConsentViewController.swift; sourceTree = "<group>"; };
 		59F25D68245B917A002A7ED8 /* Spinner_home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Spinner_home.json; sourceTree = "<group>"; };
@@ -578,6 +593,11 @@
 		59AF2EB02435801900ACCAF2 /* RootCAs */ = {
 			isa = PBXGroup;
 			children = (
+				59AF2EA72435801400ACCAF2 /* AmazonRootCA2.cer */,
+				59AF2EA52435801300ACCAF2 /* AmazonRootCA3.cer */,
+				59AF2EA62435801400ACCAF2 /* AmazonRootCA4.cer */,
+				59AF2EA42435801300ACCAF2 /* SFSRootCAG2.cer */,
+				59AF2E9E243560FD00ACCAF2 /* AmazonRootCA1.cer */,
 			);
 			path = RootCAs;
 			sourceTree = "<group>";
@@ -914,18 +934,22 @@
 				5B92D6BB243018040049877B /* UploadData.storyboard in Resources */,
 				5B92D6BD243018040049877B /* JMCTarget.json in Resources */,
 				5B92D6BF243018040049877B /* NewFeedbackFlow.storyboard in Resources */,
+				59AF2EA92435801400ACCAF2 /* SFSRootCAG2.cer in Resources */,
 				0BDE12302431DCE6003BC44C /* Questions.storyboard in Resources */,
 				59F25D6A245B917A002A7ED8 /* Spinner_home.json in Resources */,
 				5B92D6C2243018040049877B /* Localizable.strings in Resources */,
 				5B92D6C7243018040049877B /* CovidSafe-config.plist in Resources */,
+				59AF2EA0243560FD00ACCAF2 /* AmazonRootCA1.cer in Resources */,
 				5B92D6C8243018040049877B /* NewFeedbackFlow.strings in Resources */,
 				5961ABEE2474E464004040DF /* spinner_migrating_db.json in Resources */,
 				59AF2EAD2435801400ACCAF2 /* AmazonRootCA4.cer in Resources */,
 				59F25D6F245BED80002A7ED8 /* Debug.storyboard in Resources */,
 				5B92D6C9243018040049877B /* LaunchScreen.storyboard in Resources */,
+				59AF2EAF2435801400ACCAF2 /* AmazonRootCA2.cer in Resources */,
 				5B92D6CB243018040049877B /* Assets.xcassets in Resources */,
 				5B92D6CC243018040049877B /* Feedback.strings in Resources */,
 				5B337AB0245AA26300537620 /* Spinner_upload.json in Resources */,
+				59AF2EAB2435801400ACCAF2 /* AmazonRootCA3.cer in Resources */,
 				5B92D6CF243018040049877B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -938,12 +962,16 @@
 				B6932CE724260E2B003D1810 /* UploadData.storyboard in Resources */,
 				A767D313242DF1B000DC9E2A /* JMCTarget.json in Resources */,
 				1B86118E24303E7D00EA4B6B /* Questions.storyboard in Resources */,
+				59AF2EA82435801400ACCAF2 /* SFSRootCAG2.cer in Resources */,
 				A767D312242DF1B000DC9E2A /* NewFeedbackFlow.storyboard in Resources */,
 				59F25D69245B917A002A7ED8 /* Spinner_home.json in Resources */,
 				30BE1CAD23F119FD005DCE4F /* Localizable.strings in Resources */,
 				5B92D663243011B40049877B /* CovidSafe-config.plist in Resources */,
+				59AF2E9F243560FD00ACCAF2 /* AmazonRootCA1.cer in Resources */,
 				A767D30F242DF1B000DC9E2A /* NewFeedbackFlow.strings in Resources */,
+				59AF2EAC2435801400ACCAF2 /* AmazonRootCA4.cer in Resources */,
 				5DD41D4723DCB03D00FD4AB0 /* LaunchScreen.storyboard in Resources */,
+				59AF2EAE2435801400ACCAF2 /* AmazonRootCA2.cer in Resources */,
 				5DD41D4423DCB03D00FD4AB0 /* Assets.xcassets in Resources */,
 				A767D30E242DF1B000DC9E2A /* Feedback.strings in Resources */,
 				5B337AAF245AA26300537620 /* Spinner_upload.json in Resources */,

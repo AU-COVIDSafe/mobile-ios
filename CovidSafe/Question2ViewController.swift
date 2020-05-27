@@ -28,3 +28,4 @@ class Question2ViewController: UIViewController {
         messageTextView.addLink("https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/how-to-protect-yourself-and-others-from-coronavirus-covid-19/self-isolation-self-quarantine-for-coronavirus-covid-19", enclosedIn: "*")
     }
 }
+
