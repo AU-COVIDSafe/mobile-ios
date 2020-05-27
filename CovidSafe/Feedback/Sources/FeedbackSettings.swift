@@ -49,6 +49,7 @@ public struct FeedbackSettings {
     getReporterInfoAsynchronously: ((@escaping (_ usernameOrEmail: String?, _ avatarImageURL: URL?) -> Void) -> Void)? = nil
   ) throws {
     let target = try defaultFeedbackSettings?.JIRATarget ?? JMCTarget.createTargetFromJSONOnDisk()
+
     self.init(
       JIRATarget: target,
       issueType: issueType,

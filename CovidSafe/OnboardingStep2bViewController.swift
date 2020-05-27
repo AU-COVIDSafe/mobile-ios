@@ -6,24 +6,41 @@
 //
 
 import UIKit
+import SafariServices
 
 class OnboardingStep2bViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)        
+        BluetraceManager.shared.turnOn()
+        UserDefaults.standard.set(true, forKey: "turnedOnBluetooth")
     }
     
-
-    /*
-     // MARK: - Navigation
-
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-
+    @IBAction func learnMoreTapped(_ sender: Any) {
+        guard let url = URL(string: "https://www.covidsafe.gov.au/help-topics.html#bluetooth-pairing-request") else {
+            return
+        }
+        
+        let safariVC = SFSafariViewController(url: url)
+        present(safariVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func continueBtnTapped(_ sender: UIButton) {
+        requestAllPermissions()
+    }
+    
+    func requestAllPermissions() {
+        
+        UNUserNotificationCenter.current() // 1
+            .requestAuthorization(options: [.alert, .sound, .badge]) { // 2
+                granted, error in
+                
+                UserDefaults.standard.set(true, forKey: "allowedPermissions")
+                print("Permissions granted: \(granted)") // 3
+                
+                DispatchQueue.main.async {
+                    self.performSegue(withIdentifier: "showHomeSegue", sender: self)
+                }
+        }
+    }
 }

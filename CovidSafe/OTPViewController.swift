@@ -244,3 +244,4 @@ class OTPViewController: UIViewController, RegistrationHandler {
         }
     }
 }
+
