@@ -25,6 +25,7 @@ class OTPViewController: UIViewController, RegistrationHandler {
     
     @IBOutlet weak var wrongNumberButton: UIButton?
     @IBOutlet weak var resendCodeButton: UIButton?
+    @IBOutlet weak var pinIssuesButton: UIButton?
     
     @IBOutlet weak var verifyButton: UIButton?
     
@@ -57,6 +58,27 @@ class OTPViewController: UIViewController, RegistrationHandler {
         
         dismissKeyboardOnTap()
         codeInputView?.isOneTimeCode = true
+        let linkAtt: [NSAttributedString.Key : Any] = [
+            .font: UIFont.preferredFont(forTextStyle: .callout),
+            .foregroundColor: UIColor.covidSafeColor,
+            .underlineStyle: NSUnderlineStyle.single.rawValue
+        ]
+        let wrongNumberText = NSAttributedString(string: NSLocalizedString("IsThisNumberWrong",
+                                                                           comment: "Is the entered mobile number incorrect"),
+                                                 attributes: linkAtt)
+        self.wrongNumberButton?.setAttributedTitle(wrongNumberText, for: .normal)
+        let buttonAtt: [NSAttributedString.Key : Any] = [
+            .font: UIFont.preferredFont(forTextStyle: .body),
+            .foregroundColor: UIColor.covidSafeColor,
+            .underlineStyle: NSUnderlineStyle.single.rawValue
+        ]
+        let resendPin = NSLocalizedString("ResendPin", comment: "Text for resend pin button")
+        let resendCodeText = NSAttributedString(string: resendPin, attributes: buttonAtt)
+        self.resendCodeButton?.setAttributedTitle(resendCodeText, for: .normal)
+        
+        let pinIssuesString = NSLocalizedString("ReceivePinIssue", comment: "Text for pin receive issues button")
+        let pinIssuesText = NSAttributedString(string: pinIssuesString, attributes: buttonAtt)
+        self.pinIssuesButton?.setAttributedTitle(pinIssuesText, for: .normal)
 
     }
     
@@ -67,7 +89,9 @@ class OTPViewController: UIViewController, RegistrationHandler {
         if let regInfo = registrationInfo {
             numberWithCountryCode = "+61 \(regInfo.phoneNumber)"
         }
-        self.titleLabel.text = "Enter the PIN sent to \(numberWithCountryCode)"
+        self.titleLabel.text = String.localizedStringWithFormat(
+            NSLocalizedString("EnterPINSent", comment: "Enter the PIN sent template"), numberWithCountryCode
+        )
         startTimer()
     }
     
@@ -105,7 +129,9 @@ class OTPViewController: UIViewController, RegistrationHandler {
             if (countdown.range(of: #"\d{2}:"#, options: .regularExpression) != nil) {
                 countdownFormatted = String(countdown.suffix(from: countdown.index(after: countdown.startIndex)))
             }
-            expiredMessageLabel?.text = "Your PIN will expire in \(countdownFormatted)"
+            expiredMessageLabel?.text = String.localizedStringWithFormat(
+                NSLocalizedString("PINWillExpire", comment: "PIN will expire template"), countdownFormatted
+            )
             expiredMessageLabel?.isHidden = false
             if let OTP = codeInputView?.text {
                 verifyButton?.isEnabled = OTP.count > 0
@@ -137,7 +163,9 @@ class OTPViewController: UIViewController, RegistrationHandler {
         }
         PhoneValidationAPI.verifyPhoneNumber(regInfo: self.registrationInfo!) {[weak self]  (session, error) in
             if let error = error {
-                let errorAlert = UIAlertController(title: "Error verifying phone number", message: "Please try again later.", preferredStyle: .alert)
+                let errorAlert = UIAlertController(title: NSLocalizedString("PhoneVerificationErrorTitle", comment: "Phone verification error title"),
+                                                   message: NSLocalizedString("PhoneVerificationErrorMessage", comment: "Phone verification error message"),
+                                                   preferredStyle: .alert)
                 errorAlert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
                     NSLog("Unable to verify phone number")
                 }))
@@ -174,7 +202,9 @@ class OTPViewController: UIViewController, RegistrationHandler {
             verifyPhoneNumber(parsedNumber)
             
         case .failure(let error):
-            let errorAlert = UIAlertController(title: "Wrong number format", message: "Please enter a mobile phone number", preferredStyle: .alert)
+            let errorAlert = UIAlertController(title: NSLocalizedString("PhoneNumberFormatErrorTitle", comment: "Wrong phone format error title"),
+                                               message: NSLocalizedString("PhoneNumberFormatErrorMessage", comment: "Wrong phone format error message"),
+                                               preferredStyle: .alert)
             errorAlert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
                 self.navigationController?.popViewController(animated: true)
                 NSLog("Unable to verify phone number")

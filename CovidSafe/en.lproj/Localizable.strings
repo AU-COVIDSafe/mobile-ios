@@ -1,0 +1,71 @@
+/* 
+  Localizable.strings
+  CovidSafe
+
+  Copyright © 2020 Australian Government. All rights reserved.
+*/
+//Global
+"OK" = "OK";
+
+// OTP View Controller
+"EnterPINSent" = "Enter the PIN sent to %@";
+"PINWillExpire" = "Your PIN will expire in %@";
+"CodeHasExpired" = "Your code has expired.";
+"InvalidOTP" = "Must be a 6-digit code";
+"WrongOTP" = "Wrong PIN entered";
+"IsThisNumberWrong" = "Is this mobile number wrong?";
+"ResendPin" = "Resend PIN";
+"ReceivePinIssue" = "Issues receiving your PIN?";
+
+"PhoneVerificationErrorTitle" = "Error verifying phone number";
+"PhoneVerificationErrorMessage" = "Please check your details and try again.";
+"PhoneNumberFormatErrorTitle" = "Wrong number format";
+"PhoneNumberFormatErrorMessage" = "Please enter a mobile phone number.";
+
+
+//Phone Number View Controller
+"EnterPhoneReVerify" = "Enter your mobile number to re-verify";
+"AusPhoneNumberButton" = "Use an Australian phone number";
+
+
+// Home View Controller
+"PairingRequestsInfo" = "COVIDSafe does not send pairing requests.";
+"PairingRequestsInfoUnderline" = "pairing requests";
+"InformationUploaded" = "Your information was uploaded on %@";
+"VersionNumber" = "Version number: %@ Build: %@";
+"HomeHeaderNoAction" = "COVIDSafe is active.\nNo further action is required.";
+"HomeHeaderPermissions" = "COVIDSafe is not active.\nCheck your permissions.";
+"NotificationsEnabled" = "Notifications are enabled";
+"NotificationsDisabled" = "Notifications are disabled";
+"NotificationsEnabledBlurb" = "You will receive a notification if COVIDSafe is not active.  Change notification settings";
+"NotificationsDisabledBlurb" = "You will not receive a notification if COVIDSafe is not active.  Change notification settings";
+"NotificationsBlurbLink" = "Change notification settings";
+"ShareText" = "Join me in stopping the spread of COVID-19! Download COVIDSafe, an app from the Australian Government.";
+
+//Successful registration (OnboardingStep2B)
+"PointOne" = "1. When you leave home, keep your phone with you and make sure COVIDSafe is active.";
+"PointTwo" = "2. Bluetooth® should be kept ON.";
+"PointThree" = "3. COVIDSafe does not send pairing requests. Learn more.";
+"PointThreeUnderline" = "Learn more";
+
+// Help Nav Controller
+"ReportAnIssue" = "Report an issue";
+
+// Personal Details View Controller
+"Done" = "Done";
+"Next" = "Next";
+"ValidationError" = "Validation error";
+"PostcodeValidationErrorMessage" = "Please enter a valid postcode";
+
+//Upload Data Step 2 View Controller
+"UploadFailed" = "Upload failed. Please try again later.";
+"InvalidPIN" = "Invalid PIN, please ask the health official to send you another PIN.";
+"UploadFailedErrorTitle" = "Upload Failed";
+"UploadFailedErrorMessage" = "Please try again later.";
+
+// Unused
+"WrongNumber" = "Wrong number?";
+"ResendCode" = "Resend PIN";
+"NotAValidCode" = "Not a valid code";
+"DataUploaded" = "Data uploaded";
+"DataNotUploaded" = "Data not uploaded";

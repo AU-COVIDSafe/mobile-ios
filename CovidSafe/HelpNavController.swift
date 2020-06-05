@@ -32,7 +32,8 @@ class HelpNavController: UINavigationController {
         let feedbackButton = UIButton(type: .system)
         feedbackButton.translatesAutoresizingMaskIntoConstraints = false
         feedbackButton.addTarget(self, action: #selector(feedbackButtonPressed(_:)), for: .touchUpInside)
-        feedbackButton.setTitle("Report an issue", for: .normal)
+        feedbackButton.setTitle(NSLocalizedString("ReportAnIssue", comment: "Report an issue"),
+                                for: .normal)
         feedbackButton.titleLabel?.font = .systemFont(ofSize: 18)
         feedbackButton.tintColor = .covidSafeColor
         

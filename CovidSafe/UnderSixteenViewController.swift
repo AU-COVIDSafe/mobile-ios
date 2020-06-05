@@ -11,17 +11,7 @@ import SafariServices
 
 class UnderSixteenViewController: UIViewController, RegistrationHandler {
 
-    @IBOutlet weak var consentCheckBox: UIButton!
-    @IBOutlet weak var agreeButton: UIButton!
     public var registrationInfo: RegistrationRequest?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        consentCheckBox.setImage(UIImage(named: "emptyCheckbox"), for: .normal)
-        consentCheckBox.setImage(UIImage(named: "selectedCheckbox"), for: .selected)
-        updateContinueButton()
-    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if var vc = segue.destination as? RegistrationHandler {
@@ -29,23 +19,8 @@ class UnderSixteenViewController: UIViewController, RegistrationHandler {
         }
     }
     
-    func updateContinueButton() {
-        if (agreeButton.isEnabled) {
-            agreeButton.backgroundColor = UIColor.covidSafeButtonDarkerColor
-        } else {
-            agreeButton.backgroundColor = UIColor(0xDBDDDD)
-        }
-    }
-    
     @IBAction func onBackTapped(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
-    }
-    
-    @IBAction func onCheckboxTapped(sender: UIButton) {
-        sender.isSelected = !sender.isSelected
-        self.agreeButton.isEnabled = sender.isSelected
-        updateContinueButton()
-        consentCheckBox.accessibilityLabel = sender.isSelected ? "I consent checkbox, checked" : "I consent checkbox, unchecked"
     }
 
     @IBAction func doneOntap(_ sender: Any) {
