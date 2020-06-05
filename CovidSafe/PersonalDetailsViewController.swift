@@ -17,12 +17,21 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
     @IBOutlet weak var scrollview: UIScrollView!
     @IBOutlet weak var dimView: UIView!
     @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var fullNameErrorLabel: UILabel!
+    @IBOutlet weak var ageErrorLabel: UILabel!
+    @IBOutlet weak var postcodeErrorLabel: UILabel!
+    @IBOutlet weak var fullnameLabel: UILabel!
+    @IBOutlet weak var postcodeLabel: UILabel!
+    @IBOutlet weak var enterYourDetailsLabel: UILabel!
+    @IBOutlet weak var ageRangeLabel: UILabel!
+    
     var agePicker: UIPickerView?
     var pickerBarButtonItem: UIBarButtonItem?
     var currentKeyboardFrame: CGRect?
     var nextBarButtonItem: UIBarButtonItem?
     var selectedAge: Int = -1
     let ages = ["0 - 15", "16 - 29", "30 - 39", "40 - 49", "50 - 59", "60 - 69", "70 - 79", "80 - 89", "90+"]
+    var initialLabelTextColour: UIColor?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,20 +46,26 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
 
-        self.nextBarButtonItem = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(self.nextButtonTapped))
+        self.nextBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Done", comment: "Done"),
+                                                 style: .plain,
+                                                 target: self,
+                                                 action: #selector(self.nextButtonTapped))
         let spacer = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         toolBar.setItems([spacer, self.nextBarButtonItem!], animated: true)
         toolBar.isUserInteractionEnabled = true
         self.postcodeTextField.inputAccessoryView = toolBar
         self.ageTextField.inputAccessoryView = toolBar
         self.firstnameTextField.inputAccessoryView = toolBar
+        initialLabelTextColour = fullnameLabel.textColor
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notif:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeFrame(notif:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
-        self.firstnameTextField.becomeFirstResponder()
+        if(UIAccessibility.isVoiceOverRunning){
+            UIAccessibility.post(notification: .screenChanged, argument: enterYourDetailsLabel)
+        }
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -187,11 +202,19 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if (textField == firstnameTextField || textField == postcodeTextField) {
-            nextBarButtonItem?.title = "Done"
+            nextBarButtonItem?.title = NSLocalizedString("Done", comment: "Done")
             if(UIAccessibility.isVoiceOverRunning) {
                 firstnameTextField.isAccessibilityElement = true
                 postcodeTextField.isAccessibilityElement = true
                 backButton.isAccessibilityElement = true
+                enterYourDetailsLabel.isAccessibilityElement = true
+                fullnameLabel.isAccessibilityElement = true
+                ageRangeLabel.isAccessibilityElement = true
+                postcodeLabel.isAccessibilityElement = true
+                fullNameErrorLabel.isAccessibilityElement = true
+                ageErrorLabel.isAccessibilityElement = true
+                postcodeErrorLabel.isAccessibilityElement = true
+                ageTextField.isAccessibilityElement = true
             }
         } else if (textField == ageTextField) {
             dimView.isHidden = false
@@ -199,8 +222,17 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
                 firstnameTextField.isAccessibilityElement = false
                 postcodeTextField.isAccessibilityElement = false
                 backButton.isAccessibilityElement = false
+                enterYourDetailsLabel.isAccessibilityElement = false
+                fullnameLabel.isAccessibilityElement = false
+                ageRangeLabel.isAccessibilityElement = false
+                postcodeLabel.isAccessibilityElement = false
+                fullNameErrorLabel.isAccessibilityElement = false
+                ageErrorLabel.isAccessibilityElement = false
+                postcodeErrorLabel.isAccessibilityElement = false
+                ageTextField.isAccessibilityElement = false
+                UIAccessibility.post(notification: .screenChanged, argument: agePicker)
             }
-            nextBarButtonItem?.title = "Next"
+            nextBarButtonItem?.title = NSLocalizedString("Next", comment: "Next")
         }
     }
     
@@ -213,15 +245,37 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
             }
             textField.text = ages[currentRow]
             selectedAge = currentRow
+        } else if textField == postcodeTextField {
+            if textField.text?.count != 4 {
+                postcodeErrorLabel.isHidden = false
+                postcodeLabel.textColor = UIColor.covidSafeErrorColor
+                postcodeTextField.borderWidth = 1
+            } else {
+                postcodeErrorLabel.isHidden = true
+                postcodeLabel.textColor = initialLabelTextColour
+                postcodeTextField.borderWidth = 0
+            }
+        } else if textField == firstnameTextField {
+            if textField.text == "" {
+                fullNameErrorLabel.isHidden = false
+                fullnameLabel.textColor = UIColor.covidSafeErrorColor
+                firstnameTextField.borderWidth = 1
+            } else {
+                fullNameErrorLabel.isHidden = true
+                fullnameLabel.textColor = initialLabelTextColour
+                firstnameTextField.borderWidth = 0
+            }
         }
         updateContinueButton()
     }
     
     func presentValidationError(error: String, fieldToFocus: UITextField) {
-        let errorAlert = UIAlertController(title: "Validation error",
+        let errorAlert = UIAlertController(title: NSLocalizedString("ValidationError", comment: "Validation error"),
                                            message: error,
                                            preferredStyle: .alert)
-        errorAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+        errorAlert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "OK"),
+                                           style: .default,
+                                           handler: { _ in
             fieldToFocus.becomeFirstResponder()
         }))
         self.present(errorAlert, animated: true)
@@ -249,7 +303,7 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
             return
         }
         guard postCode.range(of: #"^(0[2|8|9]|[1-9][0-9])\d{2}$"#, options: .regularExpression) != nil else {
-            presentValidationError(error: "Please enter a valid postcode",
+            presentValidationError(error: NSLocalizedString("PostcodeValidationErrorMessage", comment: "Please enter a valid postcode"),
                                    fieldToFocus: postcodeTextField)
             return
         }

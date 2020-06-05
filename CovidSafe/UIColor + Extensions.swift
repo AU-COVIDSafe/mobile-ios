@@ -8,6 +8,7 @@ extension UIColor {
     static let covidSafeColor = UIColor(0x00661B)
     static let covidSafeLighterColor = UIColor(0x008A23)
     static let covidSafeButtonDarkerColor = UIColor(0x00661B)
+    static let covidSafeErrorColor = UIColor(0xA31919)
     
     var asSolidBackgroundImage: UIImage {
         let rect = CGRect(x: 0, y: 0, width: 20, height: 20)

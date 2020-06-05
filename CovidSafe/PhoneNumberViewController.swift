@@ -9,6 +9,7 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
     @IBOutlet weak var titleLabel: UILabel!
     let PHONE_NUMBER_LENGTH = 17 // e.g. "+61 4 12 345 678 " if text is auto-pasted from text message
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var ausPhoneNumberButton: UIButton!
     var selectedCountry: String? = "Australia"
     var countryList: [String] = CountriesData.countryArray
     // If this view is part of the reauthentiation flow of an expired JWT
@@ -22,8 +23,17 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
         phoneNumberField.delegate = self
         dismissKeyboardOnTap()
         if (reauthenticating) {
-            self.titleLabel.text = "Enter your mobile number to re-verify"
+            self.titleLabel.text = NSLocalizedString("EnterPhoneReVerify", comment: "Enter your mobile number to re-verify")
         }
+        let ausNumberAtt: [NSAttributedString.Key : Any] = [
+            .font: UIFont.preferredFont(forTextStyle: .body),
+            .foregroundColor: UIColor.covidSafeColor,
+            .underlineStyle: NSUnderlineStyle.single.rawValue
+        ]
+        let ausNumberButtonText = NSAttributedString(string: NSLocalizedString("AusPhoneNumberButton", comment: "Link to help page about using an australian phone number"),
+                                                     attributes: ausNumberAtt)
+        self.ausPhoneNumberButton.setAttributedTitle(ausNumberButtonText, for: .normal)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -73,7 +83,9 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
             verifyPhoneNumber(parsedNumber)
             
         case .failure(let error):
-            let errorAlert = UIAlertController(title: "Wrong number format", message: "Please enter a mobile phone number", preferredStyle: .alert)
+            let errorAlert = UIAlertController(title: NSLocalizedString("PhoneNumberFormatErrorTitle", comment: "Wrong phone format error title"),
+            message: NSLocalizedString("PhoneNumberFormatErrorMessage", comment: "Wrong phone format error message"),
+                                               preferredStyle: .alert)
             errorAlert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
                 NSLog("Unable to verify phone number")
             }))
@@ -92,7 +104,8 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
             self?.activityIndicator.stopAnimating()
             self?.getOTPButton.isEnabled = true
             if let error = error {
-                let errorAlert = UIAlertController(title: "Error verifying phone number", message: "Please check your details and try again.", preferredStyle: .alert)
+                let errorAlert = UIAlertController(title: NSLocalizedString("PhoneVerificationErrorTitle", comment: "Phone verification error title"),
+                message: NSLocalizedString("PhoneVerificationErrorMessage", comment: "Phone verification error message"), preferredStyle: .alert)
                 errorAlert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
                     DLog("Unable to verify phone number")
                 }))

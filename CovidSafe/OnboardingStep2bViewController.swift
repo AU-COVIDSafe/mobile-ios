@@ -9,11 +9,32 @@ import UIKit
 import SafariServices
 
 class OnboardingStep2bViewController: UIViewController {
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)        
-        BluetraceManager.shared.turnOn()
-        UserDefaults.standard.set(true, forKey: "turnedOnBluetooth")
+    @IBOutlet weak var pointOneLabel: UILabel!
+    @IBOutlet weak var pointTwoLabel: UILabel!
+    @IBOutlet weak var pointThreeLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.headIndent = 18.0
+        let labelAtt: [NSAttributedString.Key : Any] = [
+            .paragraphStyle: paragraphStyle,
+            .font: UIFont.preferredFont(forTextStyle: .body)
+        ]
+        let pointOneText = NSAttributedString(string: NSLocalizedString("PointOne", comment: "Keep phone on you when you leave home"),
+                                                     attributes: labelAtt)
+        pointOneLabel.attributedText = pointOneText
+        
+        let pointTwoText = NSAttributedString(string: NSLocalizedString("PointTwo", comment: "Keep bluetooth turned on"),
+                                                     attributes: labelAtt)
+        pointTwoLabel.attributedText = pointTwoText
+        
+        let pointThreeText = NSMutableAttributedString(string: NSLocalizedString("PointThree", comment: "COVIDSafe does NOT send pairing requests"),
+                                                     attributes: labelAtt)
+        let learnMoreRange = pointThreeText.string.range(of: NSLocalizedString("PointThreeUnderline", comment: "Text that should be underlined from PointThree"))!
+        let nsRange = NSRange(learnMoreRange, in: pointThreeText.string)
+        pointThreeText.addAttributes([.underlineStyle: NSUnderlineStyle.single.rawValue, .foregroundColor: UIColor.covidSafeColor], range: nsRange)
+        pointThreeLabel.attributedText = pointThreeText
     }
     
     @IBAction func learnMoreTapped(_ sender: Any) {
@@ -26,21 +47,6 @@ class OnboardingStep2bViewController: UIViewController {
     }
     
     @IBAction func continueBtnTapped(_ sender: UIButton) {
-        requestAllPermissions()
-    }
-    
-    func requestAllPermissions() {
-        
-        UNUserNotificationCenter.current() // 1
-            .requestAuthorization(options: [.alert, .sound, .badge]) { // 2
-                granted, error in
-                
-                UserDefaults.standard.set(true, forKey: "allowedPermissions")
-                print("Permissions granted: \(granted)") // 3
-                
-                DispatchQueue.main.async {
-                    self.performSegue(withIdentifier: "showHomeSegue", sender: self)
-                }
-        }
+        self.performSegue(withIdentifier: "showHomeSegue", sender: self)
     }
 }

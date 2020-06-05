@@ -62,12 +62,12 @@ class Crypto {
         }
         
         // CREATE A LOCAL EPHEMERAL P-256 KEYPAIR
-        let ephereralPublicKeyAttributes: [CFString: Any] = [
+        let ephemeralPublicKeyAttributes: [CFString: Any] = [
             kSecAttrKeyType: kSecAttrKeyTypeECSECPrimeRandom,
             kSecAttrKeySizeInBits: 256,
         ]
         
-        guard let ephemeralPrivateKey = SecKeyCreateRandomKey(ephereralPublicKeyAttributes as CFDictionary, &err) else {
+        guard let ephemeralPrivateKey = SecKeyCreateRandomKey(ephemeralPublicKeyAttributes as CFDictionary, &err) else {
             throw err!.takeRetainedValue() as Error
         }
         guard let ephemeralPublicKey = SecKeyCopyPublicKey(ephemeralPrivateKey) else {

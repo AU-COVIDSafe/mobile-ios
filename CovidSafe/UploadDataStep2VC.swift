@@ -32,8 +32,8 @@ class UploadDataStep2VC: UIViewController, CodeInputViewDelegate {
     var currentKeyboardFrame: CGRect?
     var uploadAnimatedView: AnimationView?
     
-    let uploadFailErrMsg = "Upload failed. Please try again later."
-    let invalidPinErrMsg = "Invalid PIN, please ask the health official to send you another PIN."
+    let uploadFailErrMsg = NSLocalizedString("UploadFailed", comment: "Upload failed. Please try again later.")
+    let invalidPinErrMsg = NSLocalizedString("InvalidPIN", comment: "Invalid PIN, please ask health official to send another PIN.")
     
     let verifyEnabledColor = UIColor.covidSafeButtonDarkerColor
     let verifyDisabledColor = UIColor(red: 219/255.0, green: 221/255.0, blue: 221.0/255.0, alpha: 1.0)
@@ -165,10 +165,10 @@ class UploadDataStep2VC: UIViewController, CodeInputViewDelegate {
     }
     
     func displayUploadDataError() {
-        let errorAlert = UIAlertController(title: "Upload failed",
-                                           message: "Please try again later.",
+        let errorAlert = UIAlertController(title: NSLocalizedString("UploadFailedErrorTitle", comment: "Upload Failed"),
+                                           message: NSLocalizedString("UploadFailedErrorMessage", comment: "Please try again later."),
                                            preferredStyle: .alert)
-        errorAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        errorAlert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "OK"), style: .default, handler: nil))
         self.present(errorAlert, animated: true)
     }
     

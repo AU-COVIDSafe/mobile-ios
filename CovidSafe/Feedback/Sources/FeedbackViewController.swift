@@ -29,13 +29,16 @@ final class FeedbackViewController: UIViewController {
     }
     
     private lazy var sendBarButtonItem: UIBarButtonItem = {
-        let item = UIBarButtonItem(title: "Send", style: .done, target: self, action: #selector(sendButtonTapped))
-        item.tintColor = .covidSafeColor
+        let item = UIBarButtonItem(title: NSLocalizedString("global_send_button_title",
+                                                            tableName: "Feedback",
+                                                            bundle: Bundle.main,
+                                                            comment: "Send"), style: .done, target: self, action: #selector(sendButtonTapped))
+        item.tintColor = .covidCareColor
         return item
     }()
 
     private lazy var doneButtonItem: UIBarButtonItem = {
-        let item = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(doneButtonTapped))
+        let item = UIBarButtonItem(title: NSLocalizedString("Done", comment: "Done"), style: .done, target: self, action: #selector(doneButtonTapped))
         item.tintColor = .covidSafeColor
         return item
     }()
@@ -145,7 +148,8 @@ final class FeedbackViewController: UIViewController {
     
     @objc private func sendButtonTapped(_ sender: Any) {
         guard emailTextField.isValid else {
-            let errorMessage = "Please enter a valid email address!"
+            let errorMessage = NSLocalizedString("newFeedback_invalidEmail_errorMessage",tableName: "Feedback",
+            bundle: Bundle.main, comment: "Please enter a valid email address!")
             showErrorMessage(errorMessage)
             return
         }

@@ -25,6 +25,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var pushNotificationStatusIcon: UIImageView!
     @IBOutlet weak var pushNotificationStatusLabel: UILabel!
     @IBOutlet weak var uploadDateLabel: UILabel!
+    @IBOutlet weak var pairingRequestsLabel: UILabel!
     
     var lottieBluetoothView: AnimationView!
 
@@ -44,7 +45,11 @@ class HomeViewController: UIViewController {
             let dateFormatterPrint = DateFormatter()
             dateFormatterPrint.dateFormat = "dd MMM yyyy"
             let formattedDate = dateFormatterPrint.string(from: lastUpload)
-            let newAttributedString = NSMutableAttributedString(string: "Your information was uploaded on \(formattedDate).")
+            let newAttributedString = NSMutableAttributedString(
+                string: String.localizedStringWithFormat(
+                    NSLocalizedString("InformationUploaded", comment: "Information uploaded template"),
+                    formattedDate)
+            )
 
             guard let dateRange = newAttributedString.string.range(of: formattedDate) else { return nil }
             let nsRange = NSRange(dateRange, in: newAttributedString.string)
@@ -87,10 +92,21 @@ class HomeViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(appWillEnterForeground(_:)), name: UIApplication.willEnterForegroundNotification, object: nil)
         
         if let versionNumber = Bundle.main.versionShort, let buildNumber = Bundle.main.version {
-            self.versionNumberLabel.text = "Version number: \(versionNumber) Build: \(buildNumber)"
+            self.versionNumberLabel.text = String.localizedStringWithFormat(
+                NSLocalizedString("VersionNumber", comment: "Version number template"),
+                versionNumber,buildNumber
+            )
         } else {
             toggleViewVisibility(view: versionView, isVisible: false)
         }
+        let pairingRequestString = NSLocalizedString("PairingRequestsInfo", comment: "Text explaining COVIDSafe does not send pairing requests")
+        let pairingRequestText = NSMutableAttributedString(string: pairingRequestString,
+                                                           attributes: [.font: UIFont.preferredFont(forTextStyle: .body)])
+        let pairingRequestUnderlinedString = NSLocalizedString("PairingRequestsInfoUnderline", comment: "section of text that should be underlined from the PairingRequestsInfo text")
+        let requestsRange = pairingRequestText.string.range(of: pairingRequestUnderlinedString)!
+        let nsRange = NSRange(requestsRange, in: pairingRequestText.string)
+        pairingRequestText.addAttribute(.underlineStyle, value: NSUnderlineStyle.single.rawValue, range: nsRange)
+        pairingRequestsLabel.attributedText = pairingRequestText
     }
     
     deinit {
@@ -200,11 +216,10 @@ class HomeViewController: UIViewController {
         self.helpButton.setImage(UIImage(named: "ic-help-selected"), for: .normal)
         self.helpButton.setTitleColor(UIColor.black, for: .normal)
         
-        self.homeHeaderInfoText.font = UIFont.systemFont(ofSize: 18, weight: .regular)
-        self.homeHeaderInfoText.text = "COVIDSafe is active.\nNo further action is required."
+        self.homeHeaderInfoText.text = NSLocalizedString("HomeHeaderNoAction", comment: "Header with no action req")
         
         if (!self.allPermissionOn) {
-            self.homeHeaderInfoText.text = "COVIDSafe is not active.\nCheck your permissions."
+            self.homeHeaderInfoText.text = NSLocalizedString("HomeHeaderPermissions", comment: "Header with check permisisons text")
             self.homeHeaderView.backgroundColor = UIColor.covidHomePermissionErrorColor
         } else {
             self.homeHeaderView.backgroundColor = UIColor.covidHomeActiveColor
@@ -230,11 +245,11 @@ class HomeViewController: UIViewController {
         switch self.pushNotificationOn {
         case true:
             pushNotificationStatusIcon.isHighlighted = false
-            pushNotificationStatusTitle.text = "Notifications are enabled"
-            let newAttributedLabel = NSMutableAttributedString(string: "You will receive a notification if COVIDSafe is not active.  Change notification settings")
+            pushNotificationStatusTitle.text = NSLocalizedString("NotificationsEnabled", comment: "Notifications Enabled")
+            let newAttributedLabel = NSMutableAttributedString(string: NSLocalizedString("NotificationsEnabledBlurb", comment: "Notifications Enabled content blurb"), attributes: [.font: UIFont.preferredFont(forTextStyle: .caption1)])
 
             //set some attributes
-            guard let linkRange = newAttributedLabel.string.range(of: "Change notification settings") else { return }
+            guard let linkRange = newAttributedLabel.string.range(of: NSLocalizedString("NotificationsBlurbLink", comment: "Notifications blurb link")) else { return }
             let nsRange = NSRange(linkRange, in: newAttributedLabel.string)
             newAttributedLabel.addAttribute(.foregroundColor,
                                      value: UIColor.covidSafeColor,
@@ -244,11 +259,13 @@ class HomeViewController: UIViewController {
             
         default:
             pushNotificationStatusIcon.isHighlighted = true
-            pushNotificationStatusTitle.text = "Notifications are disabled"
-            let newAttributedLabel = NSMutableAttributedString(string: "You will not receive a notification if COVIDSafe is not active.  Change notification settings")
+            pushNotificationStatusTitle.text = NSLocalizedString("NotificationsDisabled", comment: "Notifications Enabled")
+            let newAttributedLabel = NSMutableAttributedString(string:
+                NSLocalizedString("NotificationsDisabledBlurb", comment: "Notifications Enabled content blurb"), attributes: [.font: UIFont.preferredFont(forTextStyle: .caption1)])
 
             //set some attributes
-            guard let linkRange = newAttributedLabel.string.range(of: "Change notification settings") else { return }
+            guard let linkRange = newAttributedLabel.string.range(of:
+                NSLocalizedString("NotificationsBlurbLink", comment: "Notifications blurb link")) else { return }
             let nsRange = NSRange(linkRange, in: newAttributedLabel.string)
             newAttributedLabel.addAttribute(.foregroundColor,
                                      value: UIColor.covidSafeColor,
@@ -363,7 +380,7 @@ class HomeViewController: UIViewController {
 
 struct TracerRemoteConfig {
     static let defaultShareText = """
-        Join me in stopping the spread of COVID-19! Download COVIDSafe, an app from the Australian Government. #COVID19
+        \(NSLocalizedString("ShareText", comment: "Share app with friends text")) #COVID19
         #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au
         """
 }

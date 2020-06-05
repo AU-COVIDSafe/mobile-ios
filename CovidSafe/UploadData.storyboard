@@ -45,7 +45,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="593"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="135-V4-pIA" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="324"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="328.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQj-UW-fvt" userLabel="BackBtn">
                                                 <rect key="frame" x="16" y="16" width="44" height="44"/>
@@ -59,32 +59,32 @@
                                                     <action selector="backBtnTapped:" destination="a6e-KY-ZKO" eventType="touchUpInside" id="5hu-by-Bp7"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload your information" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zY-su-fK0">
-                                                <rect key="frame" x="32" y="56" width="311" height="29"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload your information" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zY-su-fK0">
+                                                <rect key="frame" x="32" y="56" width="311" height="33.5"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ft1-PF-Epb">
-                                                <rect key="frame" x="32" y="101" width="295.5" height="86"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ft1-PF-Epb">
+                                                <rect key="frame" x="32" y="105.5" width="301" height="86.5"/>
                                                 <string key="text">A state or territory health official will send a PIN to your device via text message. Enter it below to upload your information.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mKA-1q-WgQ" customClass="CodeInputView" customModule="COVIDSafe" customModuleProvider="target">
-                                                <rect key="frame" x="26" y="203" width="317" height="54"/>
+                                                <rect key="frame" x="26" y="208" width="317" height="54"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="54" id="GTp-b5-upv"/>
                                                 </constraints>
                                             </view>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid PIN, please ask the health official to send you another PIN." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkm-8z-rno">
-                                                <rect key="frame" x="32" y="265" width="311" height="43"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid PIN, please ask the health official to send you another PIN." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkm-8z-rno">
+                                                <rect key="frame" x="32" y="270" width="311" height="42.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.63921568627450975" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -123,7 +123,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="aN0-ip-CM7"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="tintColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Upload my information">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -136,14 +136,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vMG-6j-hyZ">
-                                        <rect key="frame" x="32" y="145" width="311" height="377"/>
+                                        <rect key="frame" x="32" y="145" width="311" height="377.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKh-zc-OXM">
-                                                <rect key="frame" x="0.0" y="291" width="311" height="86"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKh-zc-OXM">
+                                                <rect key="frame" x="0.0" y="291" width="311" height="86.5"/>
                                                 <string key="text">Your COVIDSafe information is currently being uploaded. 
 
 Please do not close the app.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -242,7 +242,7 @@ Please do not close the app.</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkA-4k-if8">
-                                <rect key="frame" x="32" y="102.5" width="311" height="462"/>
+                                <rect key="frame" x="32" y="103" width="311" height="461.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CovidSafe-Circle-Black" translatesAutoresizingMaskIntoConstraints="NO" id="cih-JQ-a0F">
                                         <rect key="frame" x="40" y="0.0" width="231" height="231"/>
@@ -250,19 +250,19 @@ Please do not close the app.</string>
                                             <constraint firstAttribute="width" secondItem="cih-JQ-a0F" secondAttribute="height" multiplier="1:1" id="Kfm-4r-ACZ"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An error occurred while uploading your information, please try again." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgG-df-SWA">
-                                        <rect key="frame" x="0.0" y="291" width="311" height="43"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An error occurred while uploading your information, please try again." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgG-df-SWA">
+                                        <rect key="frame" x="0.0" y="291" width="311" height="42.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEL-Fh-3RO" customClass="GradientButton" customModule="COVIDSafe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="358" width="311" height="48"/>
+                                        <rect key="frame" x="0.0" y="357.5" width="311" height="48"/>
                                         <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="8ao-HW-u9m"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <color key="tintColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Try again">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -273,12 +273,12 @@ Please do not close the app.</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3A-71-AFA" customClass="GradientButton" customModule="COVIDSafe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="414" width="311" height="48"/>
+                                        <rect key="frame" x="0.0" y="413.5" width="311" height="48"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="A91-Cr-mRZ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <color key="tintColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -356,23 +356,23 @@ Please do not close the app.</string>
                                                     <constraint firstAttribute="width" secondItem="E3m-3P-jjw" secondAttribute="height" multiplier="311:188" id="5OB-nO-g1C"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is a health official asking you to upload your information?" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGP-gN-IjT">
-                                                <rect key="frame" x="32" y="268" width="311" height="57.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is a health official asking you to upload your information?" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGP-gN-IjT">
+                                                <rect key="frame" x="32" y="268" width="311" height="101.5"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" delaysContentTouches="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tqv-D9-PS3">
-                                                <rect key="frame" x="32" y="341.5" width="311" height="188"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" delaysContentTouches="NO" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tqv-D9-PS3">
+                                                <rect key="frame" x="32" y="385.5" width="311" height="192"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <string key="text">Only if you test positive to COVID-19 will a state or territory health official contact you to assist with voluntary upload of your information.
 
 Once you press ‘Yes’ you’ll need to provide consent to upload your information. </string>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
@@ -407,7 +407,7 @@ Once you press ‘Yes’ you’ll need to provide consent to upload your informa
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="66Z-n2-IEN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="tintColor" red="0.0" green="0.54117647058823526" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="No">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -427,7 +427,7 @@ Once you press ‘Yes’ you’ll need to provide consent to upload your informa
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="WjV-Sg-A9T"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="tintColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Yes">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -475,49 +475,29 @@ Once you press ‘Yes’ you’ll need to provide consent to upload your informa
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="587"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdE-ta-9is" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="475"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="485.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Consent" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecY-RE-ssa">
-                                                <rect key="frame" x="32" y="56" width="311" height="29"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Consent" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecY-RE-ssa">
+                                                <rect key="frame" x="32" y="56" width="311" height="33.5"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" delaysContentTouches="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ryL-BN-XeS">
-                                                <rect key="frame" x="32" y="101" width="311" height="274"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" delaysContentTouches="NO" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ryL-BN-XeS">
+                                                <rect key="frame" x="32" y="105.5" width="311" height="280"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <string key="text">Unless you consent, your close contact information will not be uploaded.
 
 If you consent, your close contact information will be uploaded and shared with state or territory health officials for contact tracing purposes. 
 
-Read the COVIDSafe *privacy policy* for further details.</string>
+Read the COVIDSafe *privacy policy* for further details.  Select 'I agree' to confirm consent.</string>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzh-IB-Sem" userLabel="ConsentButton">
-                                                <rect key="frame" x="32" y="391" width="24" height="24"/>
-                                                <accessibility key="accessibilityConfiguration" hint="Check to consent" label="I consent checkbox, unchecked">
-                                                    <accessibilityTraits key="traits" none="YES"/>
-                                                </accessibility>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="24" id="FJs-ZV-f7s"/>
-                                                    <constraint firstAttribute="width" constant="24" id="rSd-43-LYy"/>
-                                                </constraints>
-                                                <state key="normal" image="emptyCheckbox"/>
-                                                <connections>
-                                                    <action selector="onCheckboxTappedWithSender:" destination="GKP-u6-wgj" eventType="touchUpInside" id="XLU-ww-42R"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I consent to upload my information." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFl-H4-sBC">
-                                                <rect key="frame" x="64" y="392.5" width="291" height="21.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1v-Px-kY5">
                                                 <rect key="frame" x="16" y="16" width="44" height="44"/>
                                                 <accessibility key="accessibilityConfiguration" label="back"/>
@@ -535,17 +515,12 @@ Read the COVIDSafe *privacy policy* for further details.</string>
                                         <accessibility key="accessibilityConfiguration" label="ContentView"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="ryL-BN-XeS" secondAttribute="bottom" constant="100" id="4JN-hN-SHZ"/>
-                                            <constraint firstItem="oFl-H4-sBC" firstAttribute="centerY" secondItem="mzh-IB-Sem" secondAttribute="centerY" id="8rb-lu-PZe"/>
                                             <constraint firstItem="ecY-RE-ssa" firstAttribute="top" secondItem="qdE-ta-9is" secondAttribute="top" constant="56" id="9pa-0O-gf7"/>
-                                            <constraint firstItem="mzh-IB-Sem" firstAttribute="leading" secondItem="qdE-ta-9is" secondAttribute="leading" constant="32" id="E0b-LR-GgB"/>
                                             <constraint firstAttribute="trailing" secondItem="ecY-RE-ssa" secondAttribute="trailing" constant="32" id="O5O-Q5-L92"/>
                                             <constraint firstItem="ecY-RE-ssa" firstAttribute="leading" secondItem="qdE-ta-9is" secondAttribute="leading" constant="32" id="RA6-hI-Six"/>
                                             <constraint firstItem="c1v-Px-kY5" firstAttribute="leading" secondItem="qdE-ta-9is" secondAttribute="leading" constant="16" id="Utd-IG-kxz"/>
                                             <constraint firstItem="ryL-BN-XeS" firstAttribute="top" secondItem="ecY-RE-ssa" secondAttribute="bottom" constant="16" id="am7-Xb-QHu"/>
-                                            <constraint firstAttribute="trailing" secondItem="oFl-H4-sBC" secondAttribute="trailing" constant="20" id="ct0-bb-7J5"/>
-                                            <constraint firstItem="mzh-IB-Sem" firstAttribute="top" secondItem="ryL-BN-XeS" secondAttribute="bottom" constant="16" id="epY-4R-ShR"/>
                                             <constraint firstItem="ecY-RE-ssa" firstAttribute="trailing" secondItem="ryL-BN-XeS" secondAttribute="trailing" id="mnw-ZK-UUm"/>
-                                            <constraint firstItem="oFl-H4-sBC" firstAttribute="leading" secondItem="mzh-IB-Sem" secondAttribute="trailing" constant="8" id="oKJ-7K-JtO"/>
                                             <constraint firstItem="c1v-Px-kY5" firstAttribute="top" secondItem="qdE-ta-9is" secondAttribute="top" constant="16" id="x19-vw-sBZ"/>
                                             <constraint firstItem="ryL-BN-XeS" firstAttribute="leading" secondItem="ecY-RE-ssa" secondAttribute="leading" id="xD8-sP-05a"/>
                                         </constraints>
@@ -559,16 +534,16 @@ Read the COVIDSafe *privacy policy* for further details.</string>
                                     <constraint firstAttribute="bottom" secondItem="qdE-ta-9is" secondAttribute="bottom" id="zqI-pE-geo"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huH-hW-8ZB" customClass="GradientButton" customModule="COVIDSafe" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huH-hW-8ZB" customClass="GradientButton" customModule="COVIDSafe" customModuleProvider="target">
                                 <rect key="frame" x="32" y="587" width="311" height="48"/>
                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" hint="please consent to proceed"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="1pW-Jb-2mj"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="tintColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Continue">
+                                <state key="normal" title="I agree">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -596,8 +571,6 @@ Read the COVIDSafe *privacy policy* for further details.</string>
                     <navigationItem key="navigationItem" id="uNC-rC-MF2"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="agreeButton" destination="huH-hW-8ZB" id="BWW-PT-FxQ"/>
-                        <outlet property="consentCheckBox" destination="mzh-IB-Sem" id="9z7-AI-snh"/>
                         <outlet property="messageTextView" destination="ryL-BN-XeS" id="Ypb-kY-GQH"/>
                     </connections>
                 </viewController>
@@ -627,7 +600,7 @@ Read the COVIDSafe *privacy policy* for further details.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="586"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0tB-vW-7YF" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="483"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="531.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Upload_Success" translatesAutoresizingMaskIntoConstraints="NO" id="TcN-eU-PuH">
                                                 <rect key="frame" x="32" y="0.0" width="311" height="160"/>
@@ -636,29 +609,22 @@ Read the COVIDSafe *privacy policy* for further details.</string>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for helping to stop the spread of COVID-19!" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1n-tc-aEy">
-                                                <rect key="frame" x="32" y="192" width="311" height="57.5"/>
+                                                <rect key="frame" x="32" y="192" width="311" height="101.5"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" delaysContentTouches="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bP5-GQ-GQk">
-                                                <rect key="frame" x="32" y="265.5" width="311" height="209.5"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" delaysContentTouches="NO" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bP5-GQ-GQk">
+                                                <rect key="frame" x="32" y="309.5" width="311" height="214"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment>
-                                                        <string key="content">You have successfully uploaded your information to the COVIDSafe highly secure storage system.
+                                                <string key="text">You have successfully uploaded your information to the COVIDSafe highly secure storage system.
 
 State or territory health officials will notify other COVIDSafe users that have recorded instances of close contact with you. Your identity will remain anonymous to other users.</string>
-                                                        <attributes>
-                                                            <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                            <font key="NSFont" metaFont="system" size="18"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
@@ -691,7 +657,7 @@ State or territory health officials will notify other COVIDSafe users that have 
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="gDg-cR-S0i"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="tintColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -731,6 +697,5 @@ State or territory health officials will notify other COVIDSafe users that have 
         <image name="Upload_Success" width="311" height="188"/>
         <image name="arrow-left" width="24" height="24"/>
         <image name="closeButton" width="24" height="24"/>
-        <image name="emptyCheckbox" width="24" height="24"/>
     </resources>
 </document>
