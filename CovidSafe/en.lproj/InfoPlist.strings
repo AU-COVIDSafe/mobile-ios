@@ -1,0 +1,7 @@
+/* 
+  InfoPlist.strings
+  CovidSafe
+
+  Copyright © 2020 Australian Government. All rights reserved.
+*/
+"BluetoothUsageDesc" = "COVIDSafe exchanges Bluetooth® signals with nearby phones running the same app. These signals contain an anonymised ID, which is encrypted and changes continually to ensure your privacy.";

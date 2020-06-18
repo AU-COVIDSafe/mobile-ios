@@ -15,6 +15,7 @@ target 'CovidSafe' do
   pod 'Alamofire'
   pod 'KeychainSwift'
   pod 'lottie-ios'
+  pod 'FlagKit'
 end
 
 
@@ -26,4 +27,5 @@ target 'CovidSafe-staging' do
   pod 'Alamofire'
   pod 'KeychainSwift'
   pod 'lottie-ios'
+  pod 'FlagKit'
 end

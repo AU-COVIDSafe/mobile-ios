@@ -29,16 +29,16 @@ final class FeedbackViewController: UIViewController {
     }
     
     private lazy var sendBarButtonItem: UIBarButtonItem = {
-        let item = UIBarButtonItem(title: NSLocalizedString("global_send_button_title",
-                                                            tableName: "Feedback",
-                                                            bundle: Bundle.main,
-                                                            comment: "Send"), style: .done, target: self, action: #selector(sendButtonTapped))
-        item.tintColor = .covidCareColor
+        let item = UIBarButtonItem(title: "global_send_button_title".localizedString(comment: "Send Button"),
+                                   style: .done,
+                                   target: self,
+                                   action: #selector(sendButtonTapped))
+        item.tintColor = .covidSafeColor
         return item
     }()
 
     private lazy var doneButtonItem: UIBarButtonItem = {
-        let item = UIBarButtonItem(title: NSLocalizedString("Done", comment: "Done"), style: .done, target: self, action: #selector(doneButtonTapped))
+        let item = UIBarButtonItem(title: "Done".localizedString(), style: .done, target: self, action: #selector(doneButtonTapped))
         item.tintColor = .covidSafeColor
         return item
     }()
@@ -110,11 +110,7 @@ final class FeedbackViewController: UIViewController {
     }
     
     private func setup() {
-        self.title = NSLocalizedString("newFeedbackFlow_navigationTitle",
-            tableName: "Feedback",
-            bundle: Bundle.main,
-            comment: "Title for feedback flow navigation"
-        )
+        self.title = "newFeedbackFlow_navigationTitle".localizedString(comment: "Title for feedback flow navigation")
         
         issueTextView.textContainer.lineFragmentPadding = 0.0
         setupDelegates()
@@ -148,8 +144,7 @@ final class FeedbackViewController: UIViewController {
     
     @objc private func sendButtonTapped(_ sender: Any) {
         guard emailTextField.isValid else {
-            let errorMessage = NSLocalizedString("newFeedback_invalidEmail_errorMessage",tableName: "Feedback",
-            bundle: Bundle.main, comment: "Please enter a valid email address!")
+            let errorMessage = "newFeedback_invalidEmail_errorMessage".localizedString(comment: "Please enter a valid email address!")
             showErrorMessage(errorMessage)
             return
         }
@@ -211,11 +206,7 @@ final class FeedbackViewController: UIViewController {
                 
             case.error:
                 self.state = .idle
-                let errorMessage = NSLocalizedString("newFeedback_send_errorMessage",
-                    tableName: "Feedback",
-                    bundle: Bundle.main,
-                    comment: "Generic error message shown when feedback could not be sent"
-                )
+                let errorMessage = "newFeedback_send_errorMessage".localizedString(comment: "Generic error message shown when feedback could not be sent")
 
                 self.showErrorMessage(errorMessage)
                 
@@ -229,10 +220,7 @@ final class FeedbackViewController: UIViewController {
     
     private func showErrorMessage(_ message: String) {
         let alert = AlertController(title: "COVIDSafe", message: message, preferredStyle: .alert)
-        let okActionTitle = NSLocalizedString("global_ok_button_title",
-                                              tableName: "Feedback",
-                                              bundle: Bundle.main,
-                                              comment: "Title for ok button")
+        let okActionTitle = "OK".localizedString()
         let okAction = UIAlertAction(title: okActionTitle, style: .default)
         alert.addAction(okAction)
         present(alert, animated: true)

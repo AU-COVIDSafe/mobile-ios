@@ -9,13 +9,13 @@ struct PushNotificationConstants {
     // Bluetooth Status
     static let btStatusPushNotifContents = [
         [
-            "contentTitle": "COVIDSafe is currently inactive",
-            "contentBody": "Make sure it's active before you leave home and when in public places by enabling Bluetooth®"
+            "contentTitle": "PN_BluetoothStatusTitle".localizedString(),
+            "contentBody": "PN_BluetoothStatusBody".localizedString()
         ]
     ]
     
     static let reminderPushNotifContents = [
-        "contentTitle": "Reminder: COVIDSafe app has not been active in the past 48 hours",
-        "contentBody": "Tap to open the app and keep Bluetooth enabled."
+        "contentTitle": "PN_ReminderTitle".localizedString(),
+        "contentBody": "PN_ReminderBody".localizedString()
     ]
 }

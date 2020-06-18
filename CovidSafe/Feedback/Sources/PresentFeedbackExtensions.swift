@@ -116,9 +116,7 @@ extension UIViewController {
 
 extension AlertController {
   func addNewFeedbackFlowAction() {
-    let title = NSLocalizedString("entryPrompt_newFeedback_button_title",
-        tableName: "Feedback",
-        bundle: Bundle.main,
+    let title = "entryPrompt_newFeedback_button_title".localizedString(
         comment: "Button title for button that launches new feedback flow"
     )
     self.addDefaultAction(localizedTitle: title) { [weak self] _ in

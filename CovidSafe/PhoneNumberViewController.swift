@@ -1,20 +1,28 @@
 //  Copyright © 2020 Australian Government All rights reserved.
 import SafariServices
 import UIKit
+import FlagKit
 
-class PhoneNumberViewController: UIViewController, UITextFieldDelegate, RegistrationHandler {
+class PhoneNumberViewController: UIViewController, UITextFieldDelegate, RegistrationHandler, CountrySelectionDelegate {
     
     @IBOutlet weak var phoneNumberField: UITextField!
+    @IBOutlet weak var countryCodeField: UITextField!
     @IBOutlet weak var getOTPButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var phoneExample: UILabel!
+    @IBOutlet weak var phoneError: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+    var countryFlagContainerView: UIView!
+    var flagImageView: UIImageView!
+    
     let PHONE_NUMBER_LENGTH = 17 // e.g. "+61 4 12 345 678 " if text is auto-pasted from text message
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var ausPhoneNumberButton: UIButton!
-    var selectedCountry: String? = "Australia"
+    var selectedCountry: Country?
     var countryList: [String] = CountriesData.countryArray
     // If this view is part of the reauthentiation flow of an expired JWT
     var reauthenticating: Bool = false
     var registrationInfo: RegistrationRequest?
+    var initialLabelTextColour: UIColor?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,26 +31,31 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
         phoneNumberField.delegate = self
         dismissKeyboardOnTap()
         if (reauthenticating) {
-            self.titleLabel.text = NSLocalizedString("EnterPhoneReVerify", comment: "Enter your mobile number to re-verify")
+            self.titleLabel.text = "EnterPhoneReVerify".localizedString(comment: "Enter your mobile number to re-verify")
         }
-        let ausNumberAtt: [NSAttributedString.Key : Any] = [
-            .font: UIFont.preferredFont(forTextStyle: .body),
-            .foregroundColor: UIColor.covidSafeColor,
-            .underlineStyle: NSUnderlineStyle.single.rawValue
-        ]
-        let ausNumberButtonText = NSAttributedString(string: NSLocalizedString("AusPhoneNumberButton", comment: "Link to help page about using an australian phone number"),
-                                                     attributes: ausNumberAtt)
-        self.ausPhoneNumberButton.setAttributedTitle(ausNumberButtonText, for: .normal)
+        countryCodeField.text = "(+61) " + "Country_AU".localizedString()
+        countryCodeField.accessibilityValue = "(+61) " + "Country_AU".localizedString() + " is selected"
         
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.phoneNumberField.becomeFirstResponder()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+        // Set initial Country img
+        countryFlagContainerView = UIView(frame: CGRect(x: 0, y: 0, width: 60, height: 24))
+        let flag = Flag(countryCode: "AU")!
+        let flagImage = flag.originalImage
+        flagImageView = UIImageView(frame: CGRect(x: 0, y: 2, width: 28, height: 20))
+        flagImageView.contentMode = .scaleAspectFit
+        flagImageView.image = flagImage
+        countryFlagContainerView.addSubview(flagImageView)
+        // Set View
+        let chevronImg = UIImage(named: "ChevronRight")
+        let chevronImgView = UIImageView(frame: CGRect(x: 32, y: 0, width: 24, height: 24))
+        chevronImgView.image = chevronImg
+        countryFlagContainerView.addSubview(chevronImgView)
+        
+        countryCodeField.rightView = countryFlagContainerView
+        countryCodeField.rightViewMode = .always
+        countryCodeField.delegate = self
+        
+        initialLabelTextColour = phoneLabel.textColor
+        navigationController?.view.backgroundColor = UIColor.white        
     }
     
     @IBAction func onBackTapped(_ sender: UIButton) {
@@ -52,21 +65,12 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
     @IBAction func nextButtonClicked(_ sender: Any) {
         parsePhoneNumberAndProceed(self.phoneNumberField.text ?? "")
     }
-    
-    @IBAction func onAustralianNumberPressed(_ sender: UIButton) {
-        guard let url = URL(string: URLHelper.getAustralianNumberURL()) else {
-            DLog("Failed to get Aus number URL")
-            return
-        }
-        let safariVC = SFSafariViewController(url: url)
-        present(safariVC, animated: true, completion: nil)
-    }
-    
+        
     @objc
     func phoneNumberFieldDidChange() {
         guard let phoneNumberString = self.phoneNumberField.text else { return }
-        if (selectedCountry == "Australia") {
-            let result = PhoneNumberParser.parse(phoneNumberString)
+        if (selectedCountry == nil || selectedCountry?.name == "Australia") {
+            let result = PhoneNumberParser.parse(phoneNumberString, countryCode: "61")
             if case .success = result {
                 self.phoneNumberField.resignFirstResponder()
             }
@@ -74,7 +78,7 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
     }
     
     func parsePhoneNumberAndProceed(_ number: String) {
-        let result = PhoneNumberParser.parse(number)
+        let result = PhoneNumberParser.parse(number, countryCode: selectedCountry?.phoneCode ?? "61")
         
         switch result {
         case .success(let parsedNumber):
@@ -83,10 +87,10 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
             verifyPhoneNumber(parsedNumber)
             
         case .failure(let error):
-            let errorAlert = UIAlertController(title: NSLocalizedString("PhoneNumberFormatErrorTitle", comment: "Wrong phone format error title"),
-            message: NSLocalizedString("PhoneNumberFormatErrorMessage", comment: "Wrong phone format error message"),
+            let errorAlert = UIAlertController(title: "PhoneNumberFormatErrorTitle".localizedString(),
+                                               message: "PhoneNumberFormatErrorMessage".localizedString(),
                                                preferredStyle: .alert)
-            errorAlert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+            errorAlert.addAction(UIAlertAction(title: "OK".localizedString(), style: .default, handler: { _ in
                 NSLog("Unable to verify phone number")
             }))
             present(errorAlert, animated: true)
@@ -100,13 +104,15 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
             return
         }
         self.registrationInfo?.phoneNumber = phoneNumber
+        self.registrationInfo?.countryPhoneCode = selectedCountry?.phoneCode ?? "61"
         PhoneValidationAPI.verifyPhoneNumber(regInfo: self.registrationInfo!) {[weak self]  (session, error) in
             self?.activityIndicator.stopAnimating()
             self?.getOTPButton.isEnabled = true
             if let error = error {
-                let errorAlert = UIAlertController(title: NSLocalizedString("PhoneVerificationErrorTitle", comment: "Phone verification error title"),
-                message: NSLocalizedString("PhoneVerificationErrorMessage", comment: "Phone verification error message"), preferredStyle: .alert)
-                errorAlert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                let errorAlert = UIAlertController(title: "PhoneVerificationErrorTitle".localizedString(),
+                                                   message: "PhoneVerificationErrorMessage".localizedString(),
+                                                   preferredStyle: .alert)
+                errorAlert.addAction(UIAlertAction(title: "OK".localizedString(), style: .default, handler: { _ in
                     DLog("Unable to verify phone number")
                 }))
                 self?.present(errorAlert, animated: true)
@@ -123,6 +129,10 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
             vc.reauthenticating = self.reauthenticating
             vc.registrationInfo = self.registrationInfo
         }
+        if let vc = segue.destination as? SelectCountryViewController {
+            navigationController?.setNavigationBarHidden(false, animated: false)
+            vc.countrySelectionDelegate = self            
+        }
     }
     
     //  limit text field input to 17 characters
@@ -136,8 +146,74 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
         return newString.length <= maxLength
     }
     
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField == phoneNumberField {
+            validatePhoneNumber()
+        }
+    }
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        if textField == countryCodeField {
+            phoneNumberField.resignFirstResponder()
+            performSegue(withIdentifier: "selectCountrySegue", sender: self)
+            return false
+        }
+        return true
+    }
+    
     @objc func action() {
        view.endEditing(true)
     }
     
+    func setCountry(country: Country) {
+        selectedCountry = country
+        
+        flagImageView.image = selectedCountry?.flag?.originalImage
+        guard let countryName = country.name, let countryPhoneCode = country.phoneCode else {
+            return
+        }
+        countryCodeField.text = "(+\(countryPhoneCode)) \(countryName)"
+        countryCodeField.accessibilityValue = "(+\(countryPhoneCode)) \(countryName) is selected"
+        if selectedCountry?.isoCode == "AU2" {
+            phoneExample.isHidden = false
+        } else {
+            phoneExample.isHidden = true
+        }
+        validatePhoneNumber()
+    }
+    
+    func validatePhoneNumber() {
+        phoneExample.textColor = initialLabelTextColour
+        phoneLabel.textColor = initialLabelTextColour
+        phoneNumberField.borderWidth = 0
+        phoneError.isHidden = true
+        let countryCode = selectedCountry?.phoneCode ?? "61"
+        
+        guard let phoneText = phoneNumberField.text, phoneText.count > 0 else {
+            return
+        }
+        
+        let parseResult = PhoneNumberParser.parse(phoneText, countryCode: countryCode)
+        
+        switch parseResult {
+        case .failure( _):
+            phoneError.isHidden = false
+            phoneExample.textColor = UIColor.covidSafeErrorColor
+            phoneLabel.textColor = UIColor.covidSafeErrorColor
+            phoneNumberField.borderWidth = 1
+            if selectedCountry == nil || selectedCountry?.isoCode == "AU" {
+                phoneError.text = "AustralianPhoneValidationError".localizedString()
+            } else if selectedCountry?.isoCode == "AU2" {
+                phoneError.text = "NorfolkPhoneValidationError".localizedString()
+            }
+            break
+        default:
+            break
+        }
+        
+    }
+}
+
+protocol CountrySelectionDelegate {
+    func setCountry(country: Country)
 }

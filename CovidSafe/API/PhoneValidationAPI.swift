@@ -16,7 +16,9 @@ class PhoneValidationAPI {
         guard let apiHost = PlistHelper.getvalueFromInfoPlist(withKey: "API_Host", plistName: "CovidSafe-config") else {
             return
         }
+        
         let params = [
+            "country_code": "+\(regInfo.countryPhoneCode ?? "61")",
             "phone_number": regInfo.phoneNumber,
             "age": String(regInfo.age),
             "postcode": regInfo.postcode,
@@ -45,6 +47,7 @@ struct RegistrationRequest {
     var age: Int
     var isMinor: Bool
     var phoneNumber: String
+    var countryPhoneCode: String?
 }
 
 struct AuthResponse: Decodable {
