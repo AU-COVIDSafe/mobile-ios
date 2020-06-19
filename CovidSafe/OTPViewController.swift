@@ -87,10 +87,10 @@ class OTPViewController: UIViewController, RegistrationHandler {
         
         var numberWithCountryCode = "Unknown"
         if let regInfo = registrationInfo {
-            numberWithCountryCode = "+61 \(regInfo.phoneNumber)"
+            numberWithCountryCode = "+\(regInfo.countryPhoneCode ?? "61") \(regInfo.phoneNumber)"
         }
         self.titleLabel.text = String.localizedStringWithFormat(
-            NSLocalizedString("EnterPINSent", comment: "Enter the PIN sent template"), numberWithCountryCode
+            "EnterPINSent".localizedString(comment: "Enter the PIN sent template"), numberWithCountryCode
         )
         startTimer()
     }
@@ -130,7 +130,7 @@ class OTPViewController: UIViewController, RegistrationHandler {
                 countdownFormatted = String(countdown.suffix(from: countdown.index(after: countdown.startIndex)))
             }
             expiredMessageLabel?.text = String.localizedStringWithFormat(
-                NSLocalizedString("PINWillExpire", comment: "PIN will expire template"), countdownFormatted
+                "PINWillExpire".localizedString(comment: "PIN will expire template"), countdownFormatted
             )
             expiredMessageLabel?.isHidden = false
             if let OTP = codeInputView?.text {
@@ -139,23 +139,13 @@ class OTPViewController: UIViewController, RegistrationHandler {
             }
         } else {
             timer?.invalidate()
-            expiredMessageLabel?.text = NSLocalizedString("CodeHasExpired", comment: "Your code has expired.")
+            expiredMessageLabel?.text = "CodeHasExpired".localizedString()
             expiredMessageLabel?.textColor = UIColor(0xA31919)
             
             verifyButton?.isEnabled = false
             verifyButton?.backgroundColor = self.verifyDisabledColor
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     private func verifyPhoneNumber(_ phoneNumber: String) {
         guard self.registrationInfo != nil else {
@@ -163,10 +153,10 @@ class OTPViewController: UIViewController, RegistrationHandler {
         }
         PhoneValidationAPI.verifyPhoneNumber(regInfo: self.registrationInfo!) {[weak self]  (session, error) in
             if let error = error {
-                let errorAlert = UIAlertController(title: NSLocalizedString("PhoneVerificationErrorTitle", comment: "Phone verification error title"),
-                                                   message: NSLocalizedString("PhoneVerificationErrorMessage", comment: "Phone verification error message"),
+                let errorAlert = UIAlertController(title: "PhoneVerificationErrorTitle".localizedString(),
+                                                   message: "PhoneVerificationErrorMessage".localizedString(),
                                                    preferredStyle: .alert)
-                errorAlert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                errorAlert.addAction(UIAlertAction(title: "OK".localizedString(), style: .default, handler: { _ in
                     NSLog("Unable to verify phone number")
                 }))
                 self?.present(errorAlert, animated: true)
@@ -193,19 +183,18 @@ class OTPViewController: UIViewController, RegistrationHandler {
             self.navigationController?.popViewController(animated: true)
             return
         }
-        let numberWithCountryCode = "+61 \(regInfo.phoneNumber)"
-
-        let result = PhoneNumberParser.parse(numberWithCountryCode)
+        
+        let result = PhoneNumberParser.parse(regInfo.phoneNumber, countryCode: regInfo.countryPhoneCode ?? "61")
         
         switch result {
         case .success(let parsedNumber):
             verifyPhoneNumber(parsedNumber)
             
         case .failure(let error):
-            let errorAlert = UIAlertController(title: NSLocalizedString("PhoneNumberFormatErrorTitle", comment: "Wrong phone format error title"),
-                                               message: NSLocalizedString("PhoneNumberFormatErrorMessage", comment: "Wrong phone format error message"),
+            let errorAlert = UIAlertController(title: "PhoneNumberFormatErrorTitle".localizedString(),
+                                               message: "PhoneNumberFormatErrorMessage".localizedString(),
                                                preferredStyle: .alert)
-            errorAlert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+            errorAlert.addAction(UIAlertAction(title: "OK".localizedString(), style: .default, handler: { _ in
                 self.navigationController?.popViewController(animated: true)
                 NSLog("Unable to verify phone number")
             }))
@@ -241,7 +230,8 @@ class OTPViewController: UIViewController, RegistrationHandler {
                 return
             }
             let keychain = KeychainSwift()
-            keychain.set(tokenToStore, forKey: "JWT_TOKEN")
+            keychain.set(tokenToStore, forKey: "JWT_TOKEN", withAccess: .accessibleAfterFirstUnlock)
+            UserDefaults.standard.set(true, forKey: "HasUpdatedKeychainAccess")
             result(.Success)
         }
     }
@@ -253,11 +243,11 @@ class OTPViewController: UIViewController, RegistrationHandler {
             self.activityIndicator.stopAnimating()
             switch status {
             case .InvalidOTP:
-                viewController.errorMessageLabel?.text = NSLocalizedString("InvalidOTP", comment: "Must be a 6-digit code")
+                viewController.errorMessageLabel?.text = "InvalidOTP".localizedString(comment: "Must be a 6-digit code")
                 self.errorMessageLabel?.isHidden = false
                 self.codeInputView?.invalidCode = true
             case .WrongOTP:
-                viewController.errorMessageLabel?.text = NSLocalizedString("WrongOTP", comment: "Wrong PIN entered")
+                viewController.errorMessageLabel?.text = "WrongOTP".localizedString(comment: "Wrong PIN entered")
                 self.errorMessageLabel?.isHidden = false
                 self.codeInputView?.invalidCode = true
             case .Success:

@@ -88,6 +88,7 @@ class EncounterMessageManager {
                 
                 if let newPayload = self.advertisedPayload {
                     onComplete(newPayload)
+                    return
                 }
                 onComplete(nil)
             }

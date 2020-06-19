@@ -21,17 +21,17 @@ class OnboardingStep2bViewController: UIViewController {
             .paragraphStyle: paragraphStyle,
             .font: UIFont.preferredFont(forTextStyle: .body)
         ]
-        let pointOneText = NSAttributedString(string: NSLocalizedString("PointOne", comment: "Keep phone on you when you leave home"),
+        let pointOneText = NSAttributedString(string: NSLocalizedString("OS2b_Item1", comment: "Keep phone on you when you leave home"),
                                                      attributes: labelAtt)
         pointOneLabel.attributedText = pointOneText
         
-        let pointTwoText = NSAttributedString(string: NSLocalizedString("PointTwo", comment: "Keep bluetooth turned on"),
+        let pointTwoText = NSAttributedString(string: NSLocalizedString("OS2b_Item2", comment: "Keep bluetooth turned on"),
                                                      attributes: labelAtt)
         pointTwoLabel.attributedText = pointTwoText
         
-        let pointThreeText = NSMutableAttributedString(string: NSLocalizedString("PointThree", comment: "COVIDSafe does NOT send pairing requests"),
+        let pointThreeText = NSMutableAttributedString(string: NSLocalizedString("OS2b_Item3", comment: "COVIDSafe does NOT send pairing requests"),
                                                      attributes: labelAtt)
-        let learnMoreRange = pointThreeText.string.range(of: NSLocalizedString("PointThreeUnderline", comment: "Text that should be underlined from PointThree"))!
+        let learnMoreRange = pointThreeText.string.range(of: NSLocalizedString("OS2b_Item3Underline", comment: "Text that should be underlined from PointThree"))!
         let nsRange = NSRange(learnMoreRange, in: pointThreeText.string)
         pointThreeText.addAttributes([.underlineStyle: NSUnderlineStyle.single.rawValue, .foregroundColor: UIColor.covidSafeColor], range: nsRange)
         pointThreeLabel.attributedText = pointThreeText

@@ -36,6 +36,9 @@
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="OS2b_Title"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1u-Qk-m74">
                                                 <rect key="frame" x="32" y="311.5" width="311" height="64.5"/>
@@ -48,6 +51,9 @@
                                                     </fragment>
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="OS2b_Item1"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Bluetooth® should be kept ON." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHp-C7-xCZ">
                                                 <rect key="frame" x="32" y="392" width="311" height="20.5"/>
@@ -55,6 +61,9 @@
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="OS2b_Item2"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04D-Hy-djY">
                                                 <rect key="frame" x="32" y="428.5" width="311" height="43"/>
@@ -81,6 +90,9 @@
                                                     </fragment>
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="OS2b_Item3"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <outletCollection property="gestureRecognizers" destination="0yI-MG-Vp0" appends="YES" id="Gwy-3W-KzG"/>
                                                 </connections>
@@ -124,6 +136,9 @@
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="OS2b_Button"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="continueBtnTapped:" destination="GaQ-f5-ei6" eventType="touchUpInside" id="ksa-Q1-bFw"/>
                                 </connections>
@@ -187,6 +202,9 @@
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="OS1_Title"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2G-ck-rYV">
                                                 <rect key="frame" x="32" y="291.5" width="311" height="328.5"/>
@@ -198,6 +216,9 @@ Together we can help stop the spread and stay healthy.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="OS1_Content1"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -232,6 +253,9 @@ Together we can help stop the spread and stay healthy.</string>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <state key="normal" title="I want to help"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="OS1_Button"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="szA-K1-DiB" kind="show" identifier="howItWorksSegue" id="VZ1-Gk-qIP"/>
                                 </connections>
@@ -288,7 +312,7 @@ Together we can help stop the spread and stay healthy.</string>
                                                     <constraint firstAttribute="height" constant="188" id="eEy-03-MeQ"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App permissions" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pO-gl-umK">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App settings" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pO-gl-umK">
                                                 <rect key="frame" x="32" y="272" width="311" height="33.5"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
@@ -296,6 +320,9 @@ Together we can help stop the spread and stay healthy.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="OS2_Title"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Bluetooth®" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kv0-mp-Xoy">
                                                 <rect key="frame" x="32" y="482" width="311" height="20.5"/>
@@ -303,16 +330,27 @@ Together we can help stop the spread and stay healthy.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="OS2_Item1"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="npY-9G-r2u">
                                                 <rect key="frame" x="32" y="321.5" width="311" height="152.5"/>
                                                 <accessibility key="accessibilityConfiguration">
-                                                    <string key="label">COVIDSafe needs Bluetooth enabled to work. By enabling Notifications, you get updates to remind you when COVIDSafe is not active.  Select ‘Proceed' to enable:</string>
+                                                    <string key="label">COVIDSafe needs Bluetooth enabled to work. By enabling Notifications, you get updates to remind you when COVIDSafe is not active.
+
+Select ‘Proceed' to enable:</string>
                                                 </accessibility>
-                                                <string key="text">COVIDSafe needs Bluetooth® enabled to work. By enabling Notifications, you get updates to remind you when COVIDSafe is not active.  Select ‘Proceed' to enable: </string>
+                                                <string key="text">COVIDSafe needs Bluetooth® enabled to work. By enabling Notifications, you get updates to remind you when COVIDSafe is not active.
+
+Select ‘Proceed' to enable:
+</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="OS2_Intro"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAg-5r-Sgd">
                                                 <rect key="frame" x="32" y="507.5" width="311" height="86.5"/>
@@ -322,6 +360,9 @@ COVIDSafe does not send pairing requests.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="OS2_Item2"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -364,6 +405,9 @@ COVIDSafe does not send pairing requests.</string>
                                 <state key="normal" title="Proceed">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="OS2_Button"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="proceedTapped:" destination="eME-NJ-Fcz" eventType="touchUpInside" id="Umi-Ym-184"/>
                                 </connections>
@@ -450,10 +494,10 @@ COVIDSafe does not send pairing requests.</string>
             </objects>
             <point key="canvasLocation" x="-2980" y="2374.362818590705"/>
         </scene>
-        <!--Onboarding Step 3 View Controller-->
+        <!--Phone Number View Controller-->
         <scene sceneID="CVV-gW-tlC">
             <objects>
-                <viewController storyboardIdentifier="onboardingStep3" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="mND-9i-sIw" userLabel="Onboarding Step 3 View Controller" customClass="PhoneNumberViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="onboardingStep3" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="mND-9i-sIw" customClass="PhoneNumberViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vgL-lg-QQN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -462,50 +506,8 @@ COVIDSafe does not send pairing requests.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rcd-mO-xGu" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="432"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="547.5"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="z2j-UO-X53">
-                                                <rect key="frame" x="32" y="56" width="311" height="33.5"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your mobile number" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6U2-DI-o9Z">
-                                                        <rect key="frame" x="0.0" y="0.0" width="311" height="33.5"/>
-                                                        <accessibility key="accessibilityConfiguration">
-                                                            <accessibilityTraits key="traits" staticText="YES" header="YES"/>
-                                                        </accessibility>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="16b-Xl-c5b">
-                                                <rect key="frame" x="77.5" y="113.5" width="265.5" height="36"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="4"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.31372549020000001" green="0.31764705879999999" blue="0.31764705879999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We’ll send you a six-digit pin to verify your mobile number." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oa7-Z8-RbO">
-                                                <rect key="frame" x="32" y="231" width="311" height="42.5"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="+61" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Yy-RH-9Tk">
-                                                <rect key="frame" x="32" y="118.5" width="37.5" height="26.5"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbj-dJ-gHU" userLabel="BackButton">
                                                 <rect key="frame" x="16" y="16" width="44" height="44"/>
                                                 <accessibility key="accessibilityConfiguration" label="back"/>
@@ -518,8 +520,65 @@ COVIDSafe does not send pairing requests.</string>
                                                     <action selector="onBackTapped:" destination="mND-9i-sIw" eventType="touchUpInside" id="w2u-SV-0ZV"/>
                                                 </connections>
                                             </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="z2j-UO-X53">
+                                                <rect key="frame" x="32" y="56" width="311" height="33.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your mobile number" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6U2-DI-o9Z">
+                                                        <rect key="frame" x="0.0" y="0.0" width="311" height="33.5"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                                                        </accessibility>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="EnterMobileNumber"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select country or region" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2N-RH-0MU">
+                                                <rect key="frame" x="32" y="113.5" width="311" height="20.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="SelectCountryRegion"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="(+61) Australia" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="18" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bnv-bL-uww">
+                                                <rect key="frame" x="32" y="142" width="311" height="46"/>
+                                                <accessibility key="accessibilityConfiguration" hint="double tap to edit" label="select country or region">
+                                                    <accessibilityTraits key="traits" staticText="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="MEN-zb-HUn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.31372549020000001" green="0.31764705879999999" blue="0.31764705879999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We’ll send you a six-digit pin to verify your mobile number." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oa7-Z8-RbO">
+                                                <rect key="frame" x="32" y="308.5" width="311" height="42.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="PN_WillSendPIN"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vFl-kK-y4g" userLabel="infoBar">
-                                                <rect key="frame" x="16" y="289.5" width="343" height="126.5"/>
+                                                <rect key="frame" x="16" y="375" width="343" height="156.5"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="info" translatesAutoresizingMaskIntoConstraints="NO" id="X9S-JD-BUK">
                                                         <rect key="frame" x="16" y="16" width="24" height="24"/>
@@ -529,13 +588,16 @@ COVIDSafe does not send pairing requests.</string>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xch-AF-g1r">
-                                                        <rect key="frame" x="48" y="16" width="279" height="94.5"/>
+                                                        <rect key="frame" x="48" y="16" width="279" height="124.5"/>
                                                         <string key="text">Trying to register on behalf of a friend or relative?
 
-They will need to register using their own device and phone number so that COVIDSafe can work for them.</string>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+They will need to register using their own device and phone number so that COVIDSafe can work for them. </string>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="PN_WarningContent"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.96470588235294119" green="0.9882352941176471" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -572,50 +634,80 @@ They will need to register using their own device and phone number so that COVID
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ohd-oH-9ny">
-                                                <rect key="frame" x="32" y="173.5" width="327" height="33.5"/>
-                                                <accessibility key="accessibilityConfiguration">
-                                                    <accessibilityTraits key="traits" link="YES"/>
-                                                </accessibility>
-                                                <state key="normal">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="Use an Australian phone number">
-                                                            <attributes>
-                                                                <color key="NSColor" red="0.0" green="0.40000000000000002" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" metaFont="system" size="18"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                <integer key="NSUnderline" value="1"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                </state>
-                                                <connections>
-                                                    <action selector="onAustralianNumberPressed:" destination="mND-9i-sIw" eventType="touchUpInside" id="5Ii-wL-hWQ"/>
-                                                </connections>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="AMg-Zg-jA1">
+                                                <rect key="frame" x="32" y="212" width="311" height="72.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your mobile number" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q35-js-uRY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="311" height="20.5"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="EnterMobileNumber"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For example: 351234" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6T-io-z0x">
+                                                        <rect key="frame" x="0.0" y="23.5" width="311" height="0.0"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="NorfolkExample"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="16b-Xl-c5b">
+                                                        <rect key="frame" x="0.0" y="26.5" width="311" height="46"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="46" id="vwA-ek-fdd"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your mobile number" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAk-aI-1Uc">
+                                                        <rect key="frame" x="0.0" y="72.5" width="311" height="0.0"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                        <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="7Yy-RH-9Tk" firstAttribute="centerY" secondItem="16b-Xl-c5b" secondAttribute="centerY" id="5F0-Ya-7Cm"/>
-                                            <constraint firstAttribute="trailing" secondItem="16b-Xl-c5b" secondAttribute="trailing" constant="32" id="8rc-91-XQq"/>
+                                            <constraint firstAttribute="trailing" secondItem="AMg-Zg-jA1" secondAttribute="trailing" constant="32" id="1fX-5g-0gD"/>
+                                            <constraint firstAttribute="trailing" secondItem="bnv-bL-uww" secondAttribute="trailing" constant="32" id="94I-BS-xYg"/>
+                                            <constraint firstAttribute="trailing" secondItem="V2N-RH-0MU" secondAttribute="trailing" constant="32" id="9FN-0q-bZV"/>
                                             <constraint firstAttribute="trailing" secondItem="z2j-UO-X53" secondAttribute="trailing" constant="32" id="C22-eK-SZJ"/>
                                             <constraint firstItem="z2j-UO-X53" firstAttribute="top" secondItem="Rcd-mO-xGu" secondAttribute="top" constant="56" id="DZF-id-0UW"/>
-                                            <constraint firstItem="oa7-Z8-RbO" firstAttribute="top" secondItem="ohd-oH-9ny" secondAttribute="bottom" constant="24" id="IcC-mO-q0P"/>
-                                            <constraint firstItem="16b-Xl-c5b" firstAttribute="top" secondItem="z2j-UO-X53" secondAttribute="bottom" constant="24" id="LSU-sf-BcB"/>
+                                            <constraint firstItem="AMg-Zg-jA1" firstAttribute="leading" secondItem="Rcd-mO-xGu" secondAttribute="leading" constant="32" id="HY7-Ue-RM1"/>
+                                            <constraint firstAttribute="trailing" secondItem="oa7-Z8-RbO" secondAttribute="trailing" constant="32" id="HuX-3h-oaX"/>
+                                            <constraint firstItem="bnv-bL-uww" firstAttribute="top" secondItem="V2N-RH-0MU" secondAttribute="bottom" constant="8" id="Iri-91-yve"/>
+                                            <constraint firstItem="AMg-Zg-jA1" firstAttribute="top" secondItem="bnv-bL-uww" secondAttribute="bottom" constant="24" id="NVQ-nc-L6h"/>
                                             <constraint firstAttribute="bottom" secondItem="vFl-kK-y4g" secondAttribute="bottom" constant="16" id="O9v-lp-YwG"/>
-                                            <constraint firstItem="7Yy-RH-9Tk" firstAttribute="leading" secondItem="Rcd-mO-xGu" secondAttribute="leading" constant="32" id="OAT-wd-gny"/>
                                             <constraint firstItem="Cbj-dJ-gHU" firstAttribute="top" secondItem="Rcd-mO-xGu" secondAttribute="top" constant="16" id="S06-Kb-shq"/>
-                                            <constraint firstItem="vFl-kK-y4g" firstAttribute="top" secondItem="oa7-Z8-RbO" secondAttribute="bottom" constant="16" id="T14-5x-V87"/>
+                                            <constraint firstItem="vFl-kK-y4g" firstAttribute="top" secondItem="oa7-Z8-RbO" secondAttribute="bottom" constant="24" id="T14-5x-V87"/>
                                             <constraint firstAttribute="trailing" secondItem="vFl-kK-y4g" secondAttribute="trailing" constant="16" id="XJi-SG-0TZ"/>
+                                            <constraint firstItem="oa7-Z8-RbO" firstAttribute="leading" secondItem="Rcd-mO-xGu" secondAttribute="leading" constant="32" id="cko-5j-aUp"/>
                                             <constraint firstItem="oa7-Z8-RbO" firstAttribute="leading" secondItem="Rcd-mO-xGu" secondAttribute="leading" constant="32" id="cmk-xK-BUe"/>
                                             <constraint firstItem="Cbj-dJ-gHU" firstAttribute="leading" secondItem="Rcd-mO-xGu" secondAttribute="leading" constant="16" id="f1c-je-uUB"/>
+                                            <constraint firstItem="bnv-bL-uww" firstAttribute="leading" secondItem="Rcd-mO-xGu" secondAttribute="leading" constant="32" id="gre-If-0Wp"/>
+                                            <constraint firstItem="oa7-Z8-RbO" firstAttribute="top" secondItem="AMg-Zg-jA1" secondAttribute="bottom" constant="24" id="gwJ-av-5XT"/>
                                             <constraint firstItem="vFl-kK-y4g" firstAttribute="leading" secondItem="Rcd-mO-xGu" secondAttribute="leading" constant="16" id="i9i-iv-7a9"/>
-                                            <constraint firstAttribute="trailing" secondItem="ohd-oH-9ny" secondAttribute="trailing" constant="16" id="rYO-zG-A5H"/>
-                                            <constraint firstItem="ohd-oH-9ny" firstAttribute="top" secondItem="16b-Xl-c5b" secondAttribute="bottom" constant="24" id="tCb-LQ-Bos"/>
-                                            <constraint firstItem="ohd-oH-9ny" firstAttribute="leading" secondItem="Rcd-mO-xGu" secondAttribute="leading" constant="32" id="tOc-Bt-hUK"/>
+                                            <constraint firstItem="V2N-RH-0MU" firstAttribute="leading" secondItem="Rcd-mO-xGu" secondAttribute="leading" constant="32" id="lDC-sZ-DYL"/>
                                             <constraint firstItem="z2j-UO-X53" firstAttribute="leading" secondItem="Rcd-mO-xGu" secondAttribute="leading" constant="32" id="wKq-2a-2vL"/>
+                                            <constraint firstItem="V2N-RH-0MU" firstAttribute="top" secondItem="z2j-UO-X53" secondAttribute="bottom" constant="24" id="xRl-Cx-K3I"/>
                                             <constraint firstAttribute="trailing" secondItem="oa7-Z8-RbO" secondAttribute="trailing" constant="32" id="yqe-wt-P0j"/>
-                                            <constraint firstItem="16b-Xl-c5b" firstAttribute="leading" secondItem="7Yy-RH-9Tk" secondAttribute="trailing" constant="8" id="z6n-sa-jFz"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -637,6 +729,9 @@ They will need to register using their own device and phone number so that COVID
                                 <state key="normal" title="Get PIN">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="PN_Button"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="nextButtonClicked:" destination="mND-9i-sIw" eventType="touchUpInside" id="DxD-HP-SaN"/>
                                 </connections>
@@ -728,21 +823,99 @@ They will need to register using their own device and phone number so that COVID
                     <navigationItem key="navigationItem" id="yu2-9q-yeC"/>
                     <connections>
                         <outlet property="activityIndicator" destination="9fc-dI-kw7" id="0m9-uc-KP2"/>
-                        <outlet property="ausPhoneNumberButton" destination="ohd-oH-9ny" id="lQo-rX-wNq"/>
+                        <outlet property="countryCodeField" destination="bnv-bL-uww" id="MX0-VR-STY"/>
                         <outlet property="getOTPButton" destination="Tuw-g5-oMO" id="V1f-GW-Nyu"/>
+                        <outlet property="phoneError" destination="tAk-aI-1Uc" id="SuX-K7-3vA"/>
+                        <outlet property="phoneExample" destination="c6T-io-z0x" id="K8p-RH-yyn"/>
+                        <outlet property="phoneLabel" destination="Q35-js-uRY" id="Drp-7N-pcf"/>
                         <outlet property="phoneNumberField" destination="16b-Xl-c5b" id="Rba-DO-ffd"/>
                         <outlet property="titleLabel" destination="6U2-DI-o9Z" id="spb-d4-dUt"/>
                         <segue destination="QXj-uo-Wqr" kind="show" identifier="segueFromNumberToOTP" id="Vln-72-O1E"/>
+                        <segue destination="wiF-c4-qi9" kind="show" identifier="selectCountrySegue" id="kCd-Vd-Lzv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a0m-xp-X9S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2978.4000000000001" y="53.523238380809602"/>
         </scene>
-        <!--Onboarding Step 3b View Controller-->
+        <!--Select Country View Controller-->
+        <scene sceneID="PuC-vI-JYg">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="wiF-c4-qi9" userLabel="Select Country View Controller" customClass="SelectCountryViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="p4Q-Qs-SJV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="sectionIndexColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountryCell" id="8do-WN-Rfo" customClass="CountryCellViewCell" customModule="COVIDSafe" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="66.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8do-WN-Rfo" id="jdA-4g-Z20">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="66.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Country Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxc-zW-68B">
+                                            <rect key="frame" x="16" y="11" width="296" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="Upn-dY-3by"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="+00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4p-eY-0rp">
+                                            <rect key="frame" x="16" y="33" width="30" height="22.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="fG3-Jb-1RE"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dd8-97-cp6">
+                                            <rect key="frame" x="320" y="23.5" width="39" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="HXI-uT-fqK"/>
+                                                <constraint firstAttribute="width" constant="39" id="Tmd-ez-Quu"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="j4p-eY-0rp" secondAttribute="bottom" id="De0-ir-vsE"/>
+                                        <constraint firstItem="jxc-zW-68B" firstAttribute="leading" secondItem="j4p-eY-0rp" secondAttribute="leading" id="FKp-j6-oSd"/>
+                                        <constraint firstItem="dd8-97-cp6" firstAttribute="leading" secondItem="jxc-zW-68B" secondAttribute="trailing" constant="8" id="IiE-MO-YtF"/>
+                                        <constraint firstItem="jxc-zW-68B" firstAttribute="top" secondItem="jdA-4g-Z20" secondAttribute="topMargin" id="Ny2-9l-pJQ"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="dd8-97-cp6" secondAttribute="trailing" id="VKj-hA-xCR"/>
+                                        <constraint firstItem="j4p-eY-0rp" firstAttribute="leading" secondItem="jdA-4g-Z20" secondAttribute="leadingMargin" id="czB-QH-VIX"/>
+                                        <constraint firstItem="j4p-eY-0rp" firstAttribute="top" secondItem="jxc-zW-68B" secondAttribute="bottom" id="wY3-Ui-hmK"/>
+                                        <constraint firstItem="dd8-97-cp6" firstAttribute="centerY" secondItem="jdA-4g-Z20" secondAttribute="centerY" id="yIT-3D-2fU"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="countryFlagImageView" destination="dd8-97-cp6" id="5R2-bv-Eeo"/>
+                                    <outlet property="countryPhoneLabel" destination="j4p-eY-0rp" id="nSg-Kc-oUR"/>
+                                    <outlet property="countryTitleLabel" destination="jxc-zW-68B" id="f9c-7q-WJU"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wiF-c4-qi9" id="o3l-n1-AbQ"/>
+                            <outlet property="delegate" destination="wiF-c4-qi9" id="nRx-A3-OCc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="jjN-w6-KYU"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wc5-gp-zor" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2034.4000000000001" y="63.418290854572717"/>
+        </scene>
+        <!--OTP View Controller-->
         <scene sceneID="RbO-2Z-0P1">
             <objects>
-                <viewController storyboardIdentifier="otp" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="QXj-uo-Wqr" userLabel="Onboarding Step 3b View Controller" customClass="OTPViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="otp" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="QXj-uo-Wqr" userLabel="OTP View Controller" customClass="OTPViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rF1-b7-OpB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -791,6 +964,9 @@ They will need to register using their own device and phone number so that COVID
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" red="0.63921568627450975" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="WrongOTP"/>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
                                 </subviews>
                                 <constraints>
@@ -840,6 +1016,9 @@ They will need to register using their own device and phone number so that COVID
                                 <state key="normal" title="Verify">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="OTP_Button"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="verify:" destination="QXj-uo-Wqr" eventType="touchUpInside" id="bfc-Np-tNK"/>
                                 </connections>
@@ -1022,6 +1201,9 @@ They will need to register using their own device and phone number so that COVID
                                                 <state key="normal" title="Help" image="ic-help-selected">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="HelpButton"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="onHelpButtonTapped:" destination="yl1-rG-jXE" eventType="touchUpInside" id="KMZ-jG-hSh"/>
                                                 </connections>
@@ -1108,16 +1290,16 @@ No further action is required.</string>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Eim-Z7-BkO">
-                                        <rect key="frame" x="0.0" y="668" width="375" height="1660.5"/>
+                                        <rect key="frame" x="0.0" y="668" width="375" height="1752.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewx-Jj-gLM" userLabel="PermissionsView">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="832"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="866"/>
                                                 <subviews>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bht-4J-CSp">
-                                                        <rect key="frame" x="16" y="0.0" width="343" height="832"/>
+                                                        <rect key="frame" x="16" y="0.0" width="343" height="866"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="doE-1i-C91">
-                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="832"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="866"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vXJ-wP-bzJ" userLabel="App Permission Label View">
                                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="300"/>
@@ -1125,17 +1307,23 @@ No further action is required.</string>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9PF-Aa-Hfw" userLabel="Content">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="299"/>
                                                                                 <subviews>
-                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Check your permissions" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lM2-pC-IPR">
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Check your settings" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lM2-pC-IPR">
                                                                                         <rect key="frame" x="16" y="16" width="311" height="33.5"/>
                                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                                                         <nil key="textColor"/>
                                                                                         <nil key="highlightedColor"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="CheckPermissions"/>
+                                                                                        </userDefinedRuntimeAttributes>
                                                                                     </label>
-                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COVIDSafe won't work without these permissions." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQi-hW-1c5">
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COVIDSafe won't work without the right settings. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQi-hW-1c5">
                                                                                         <rect key="frame" x="16" y="58.5" width="311" height="225.5"/>
                                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                                                         <nil key="textColor"/>
                                                                                         <nil key="highlightedColor"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="CheckPermissionsMessage"/>
+                                                                                        </userDefinedRuntimeAttributes>
                                                                                     </label>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1164,11 +1352,14 @@ No further action is required.</string>
                                                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="85"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow Bluetooth®: On" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkG-8h-L41">
-                                                                                        <rect key="frame" x="16" y="16" width="152.5" height="53"/>
+                                                                                        <rect key="frame" x="16" y="16" width="183.5" height="53"/>
                                                                                         <accessibility key="accessibilityConfiguration" label="Allow Bluetooth: On"/>
-                                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                                         <nil key="textColor"/>
                                                                                         <nil key="highlightedColor"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="AllowBluetoothON"/>
+                                                                                        </userDefinedRuntimeAttributes>
                                                                                     </label>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="small tick" translatesAutoresizingMaskIntoConstraints="NO" id="G4h-DG-m98">
                                                                                         <rect key="frame" x="305" y="15" width="22" height="55"/>
@@ -1198,37 +1389,49 @@ No further action is required.</string>
                                                                         </constraints>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tx3-h9-HD9" userLabel="Bluetooth Permission Off Section">
-                                                                        <rect key="frame" x="0.0" y="386" width="343" height="86"/>
+                                                                        <rect key="frame" x="0.0" y="386" width="343" height="120"/>
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNn-4p-s3i" userLabel="Bluetooth Permission Off Bar">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="85"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="119"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow Bluetooth®: Off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpF-lX-utx">
-                                                                                        <rect key="frame" x="16" y="16" width="154.5" height="53"/>
+                                                                                        <rect key="frame" x="16" y="16" width="185.5" height="24"/>
                                                                                         <accessibility key="accessibilityConfiguration" label="Allow Bluetooth: Off"/>
-                                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
-                                                                                        <nil key="textColor"/>
+                                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                                                        <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                                         <nil key="highlightedColor"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="AllowBluetoothOFF"/>
+                                                                                        </userDefinedRuntimeAttributes>
                                                                                     </label>
-                                                                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLf-d8-Voz">
-                                                                                        <rect key="frame" x="293" y="20.5" width="44" height="44"/>
+                                                                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLf-d8-Voz">
+                                                                                        <rect key="frame" x="293" y="6" width="44" height="44"/>
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="height" constant="44" id="UFm-0e-wXt"/>
                                                                                             <constraint firstAttribute="width" constant="44" id="wc1-xx-4Et"/>
                                                                                         </constraints>
                                                                                         <state key="normal" image="redcross"/>
-                                                                                        <connections>
-                                                                                            <segue destination="eME-NJ-Fcz" kind="show" id="WC1-tG-bo5"/>
-                                                                                        </connections>
                                                                                     </button>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow COVIDSafe to access Bluetooth®" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nU4-J7-nnH">
+                                                                                        <rect key="frame" x="16" y="44" width="269" height="59"/>
+                                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                                                        <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="AllowBluetoothOffDesc"/>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </label>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                                                 <constraints>
                                                                                     <constraint firstItem="TLf-d8-Voz" firstAttribute="centerY" secondItem="LpF-lX-utx" secondAttribute="centerY" id="6qt-Nn-1z1"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="nU4-J7-nnH" secondAttribute="bottom" constant="16" id="COf-5v-RIy"/>
+                                                                                    <constraint firstItem="nU4-J7-nnH" firstAttribute="leading" secondItem="ZNn-4p-s3i" secondAttribute="leading" constant="16" id="KTm-Le-PK7"/>
+                                                                                    <constraint firstItem="nU4-J7-nnH" firstAttribute="top" secondItem="LpF-lX-utx" secondAttribute="bottom" constant="4" id="M68-TK-WNo"/>
                                                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LpF-lX-utx" secondAttribute="trailing" constant="20" symbolic="YES" id="NeZ-Rb-Ts3"/>
                                                                                     <constraint firstItem="LpF-lX-utx" firstAttribute="leading" secondItem="ZNn-4p-s3i" secondAttribute="leading" constant="16" id="Qbl-iC-kgw"/>
                                                                                     <constraint firstItem="LpF-lX-utx" firstAttribute="top" secondItem="ZNn-4p-s3i" secondAttribute="top" constant="16" id="RDn-ZJ-qwf"/>
-                                                                                    <constraint firstAttribute="bottom" secondItem="LpF-lX-utx" secondAttribute="bottom" constant="16" id="aX2-Vn-asJ"/>
+                                                                                    <constraint firstItem="TLf-d8-Voz" firstAttribute="leading" secondItem="nU4-J7-nnH" secondAttribute="trailing" constant="8" id="Y1x-Oy-hZv"/>
                                                                                     <constraint firstAttribute="trailing" secondItem="TLf-d8-Voz" secondAttribute="trailing" constant="6" id="pvo-ce-lSI"/>
                                                                                 </constraints>
                                                                             </view>
@@ -1244,21 +1447,24 @@ No further action is required.</string>
                                                                             <constraint firstItem="ZNn-4p-s3i" firstAttribute="top" secondItem="tx3-h9-HD9" secondAttribute="top" id="keo-ig-wuF"/>
                                                                         </constraints>
                                                                         <connections>
-                                                                            <outletCollection property="gestureRecognizers" destination="uzR-q7-5tz" appends="YES" id="brI-0L-66S"/>
+                                                                            <outletCollection property="gestureRecognizers" destination="p9t-xu-RiE" appends="YES" id="TA0-RM-fDM"/>
                                                                         </connections>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epu-AT-8fq" userLabel="Bluetooth Status On Section">
-                                                                        <rect key="frame" x="0.0" y="472" width="343" height="180"/>
+                                                                        <rect key="frame" x="0.0" y="506" width="343" height="180"/>
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ICq-T2-I96" userLabel="Bluetooth Status Bar On">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="179"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth®: On" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byz-Ld-DQp">
-                                                                                        <rect key="frame" x="16" y="16" width="109.5" height="147"/>
+                                                                                        <rect key="frame" x="16" y="16" width="131.5" height="147"/>
                                                                                         <accessibility key="accessibilityConfiguration" label="Bluetooth: On"/>
-                                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                                         <nil key="textColor"/>
                                                                                         <nil key="highlightedColor"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="BluetoothON"/>
+                                                                                        </userDefinedRuntimeAttributes>
                                                                                     </label>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="small tick" translatesAutoresizingMaskIntoConstraints="NO" id="xEh-wX-pdN">
                                                                                         <rect key="frame" x="305" y="15" width="22" height="149"/>
@@ -1288,29 +1494,44 @@ No further action is required.</string>
                                                                         </constraints>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CRB-vh-VZ7" userLabel="Bluetooth Status  Off Section">
-                                                                        <rect key="frame" x="0.0" y="652" width="343" height="180"/>
+                                                                        <rect key="frame" x="0.0" y="686" width="343" height="180"/>
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMY-Vd-8r5" userLabel="Bluetooth Status Bar Off">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="179"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth®: Off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1S-u0-WAI">
-                                                                                        <rect key="frame" x="16" y="16" width="111.5" height="147"/>
+                                                                                        <rect key="frame" x="16" y="16" width="133.5" height="24"/>
                                                                                         <accessibility key="accessibilityConfiguration" label="Bluetooth: Off">
                                                                                             <bool key="isElement" value="NO"/>
                                                                                         </accessibility>
-                                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
-                                                                                        <nil key="textColor"/>
+                                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                                                        <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                                         <nil key="highlightedColor"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="BluetoothOFF"/>
+                                                                                        </userDefinedRuntimeAttributes>
                                                                                     </label>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redcross" translatesAutoresizingMaskIntoConstraints="NO" id="0Bq-dX-rBb" userLabel="cross">
-                                                                                        <rect key="frame" x="305" y="15" width="22" height="149"/>
+                                                                                        <rect key="frame" x="305" y="15" width="22" height="26"/>
                                                                                     </imageView>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn on your phone's Bluetooth®" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5V-2J-WxQ">
+                                                                                        <rect key="frame" x="16" y="44" width="282" height="119"/>
+                                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                                                        <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="BluetoothOffDesc"/>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </label>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                                                 <constraints>
                                                                                     <constraint firstItem="0Bq-dX-rBb" firstAttribute="top" secondItem="JMY-Vd-8r5" secondAttribute="top" constant="15" id="0cP-9T-xla"/>
-                                                                                    <constraint firstAttribute="bottom" secondItem="T1S-u0-WAI" secondAttribute="bottom" constant="16" id="Zpv-gs-TmF"/>
-                                                                                    <constraint firstAttribute="bottom" secondItem="0Bq-dX-rBb" secondAttribute="bottom" constant="15" id="a27-S7-m2N"/>
+                                                                                    <constraint firstItem="0Bq-dX-rBb" firstAttribute="centerY" secondItem="T1S-u0-WAI" secondAttribute="centerY" id="5uZ-fj-DYK"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="k5V-2J-WxQ" secondAttribute="bottom" constant="16" id="6oD-ds-s15"/>
+                                                                                    <constraint firstItem="k5V-2J-WxQ" firstAttribute="leading" secondItem="JMY-Vd-8r5" secondAttribute="leading" constant="16" id="QTh-Az-TsI"/>
+                                                                                    <constraint firstItem="k5V-2J-WxQ" firstAttribute="top" secondItem="T1S-u0-WAI" secondAttribute="bottom" constant="4" id="Ro9-tL-418"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="k5V-2J-WxQ" secondAttribute="trailing" constant="45" id="c6m-Di-CXD"/>
                                                                                     <constraint firstAttribute="trailing" secondItem="0Bq-dX-rBb" secondAttribute="trailing" constant="16" id="dkc-OO-VYM"/>
                                                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="T1S-u0-WAI" secondAttribute="trailing" constant="20" symbolic="YES" id="gOq-Co-Z07"/>
                                                                                     <constraint firstItem="T1S-u0-WAI" firstAttribute="leading" secondItem="JMY-Vd-8r5" secondAttribute="leading" constant="16" id="k8i-Ln-44u"/>
@@ -1370,16 +1591,16 @@ No further action is required.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J2N-QO-qnd" userLabel="Share CovidSafe">
-                                                <rect key="frame" x="0.0" y="832" width="375" height="268.5"/>
+                                                <rect key="frame" x="0.0" y="866" width="375" height="299.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yMN-hZ-h5Z">
-                                                        <rect key="frame" x="16" y="17" width="343" height="235.5"/>
+                                                        <rect key="frame" x="16" y="17" width="343" height="266.5"/>
                                                         <subviews>
                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfZ-Yk-XhQ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="235.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="266.5"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QAS-A7-TKz">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="235.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="266.5"/>
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hjj-BO-zNW" userLabel="Share CovidSafe">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="104"/>
@@ -1393,6 +1614,9 @@ No further action is required.</string>
                                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                                         <nil key="textColor"/>
                                                                                         <nil key="highlightedColor"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="ShareCovidSafe"/>
+                                                                                        </userDefinedRuntimeAttributes>
                                                                                     </label>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShareApp" translatesAutoresizingMaskIntoConstraints="NO" id="cJO-d7-w08">
                                                                                         <rect key="frame" x="16" y="16" width="40" height="40"/>
@@ -1413,9 +1637,12 @@ No further action is required.</string>
                                                                                             <accessibilityTraits key="traits" none="YES"/>
                                                                                             <bool key="isElement" value="NO"/>
                                                                                         </accessibility>
-                                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                                                         <nil key="textColor"/>
                                                                                         <nil key="highlightedColor"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="ShareCovidSafeContent"/>
+                                                                                        </userDefinedRuntimeAttributes>
                                                                                     </label>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChevronRight" translatesAutoresizingMaskIntoConstraints="NO" id="YQO-2f-zE6">
                                                                                         <rect key="frame" x="311" y="16" width="24" height="24"/>
@@ -1447,7 +1674,7 @@ No further action is required.</string>
                                                                                 </connections>
                                                                             </view>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xp-v3-22Q" userLabel="Have you been contacted">
-                                                                                <rect key="frame" x="0.0" y="104" width="343" height="131.5"/>
+                                                                                <rect key="frame" x="0.0" y="104" width="343" height="162.5"/>
                                                                                 <subviews>
                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gCh-j9-5Af">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="1"/>
@@ -1465,6 +1692,9 @@ No further action is required.</string>
                                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                                         <nil key="textColor"/>
                                                                                         <nil key="highlightedColor"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UploadData"/>
+                                                                                        </userDefinedRuntimeAttributes>
                                                                                     </label>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-upload" translatesAutoresizingMaskIntoConstraints="NO" id="no0-0k-QyA">
                                                                                         <rect key="frame" x="16" y="16" width="40" height="40"/>
@@ -1480,13 +1710,16 @@ No further action is required.</string>
                                                                                         </userDefinedRuntimeAttributes>
                                                                                     </imageView>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can only upload your information if you have tested positive." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3e4-WK-QWm">
-                                                                                        <rect key="frame" x="72" y="65" width="223" height="30.5"/>
+                                                                                        <rect key="frame" x="72" y="65" width="223" height="61.5"/>
                                                                                         <accessibility key="accessibilityConfiguration">
                                                                                             <bool key="isElement" value="NO"/>
                                                                                         </accessibility>
-                                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                                                         <nil key="textColor"/>
                                                                                         <nil key="highlightedColor"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UploadDataContent"/>
+                                                                                        </userDefinedRuntimeAttributes>
                                                                                     </label>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChevronRight" translatesAutoresizingMaskIntoConstraints="NO" id="yOd-Gd-L2c">
                                                                                         <rect key="frame" x="311" y="16" width="24" height="24"/>
@@ -1572,13 +1805,13 @@ No further action is required.</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wwn-XW-nMe" userLabel="Get Corona Virus App">
-                                                <rect key="frame" x="0.0" y="1100.5" width="375" height="234"/>
+                                                <rect key="frame" x="0.0" y="1165.5" width="375" height="245"/>
                                                 <subviews>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Rg-zb-sXs">
-                                                        <rect key="frame" x="16" y="16" width="343" height="202"/>
+                                                        <rect key="frame" x="16" y="16" width="343" height="213"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJq-Zl-6IV" userLabel="GetCoronavirusApp">
-                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="105.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="106.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get the Coronavirus app" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y1s-f5-waN">
                                                                         <rect key="frame" x="72" y="16" width="231" height="24"/>
@@ -1589,6 +1822,9 @@ No further action is required.</string>
                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="GetCoronaVirusApp"/>
+                                                                        </userDefinedRuntimeAttributes>
                                                                     </label>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteSmallGovCrest" translatesAutoresizingMaskIntoConstraints="NO" id="rO3-8S-aS9">
                                                                         <rect key="frame" x="16" y="16" width="40" height="40"/>
@@ -1611,14 +1847,17 @@ No further action is required.</string>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Download the government app for the latest news and advice." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TK4-iq-vTQ">
-                                                                        <rect key="frame" x="72" y="40" width="239" height="39.5"/>
+                                                                        <rect key="frame" x="72" y="40" width="239" height="40.5"/>
                                                                         <accessibility key="accessibilityConfiguration">
                                                                             <accessibilityTraits key="traits" none="YES"/>
                                                                             <bool key="isElement" value="NO"/>
                                                                         </accessibility>
-                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="GetCoronaVirusAppContent"/>
+                                                                        </userDefinedRuntimeAttributes>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1641,7 +1880,7 @@ No further action is required.</string>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qli-dh-Q2T" userLabel="Latest CoronaVirus News">
-                                                                <rect key="frame" x="0.0" y="106.5" width="343" height="95.5"/>
+                                                                <rect key="frame" x="0.0" y="107.5" width="343" height="105.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest news and updates" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S5Z-WJ-GcB">
                                                                         <rect key="frame" x="72" y="16" width="231" height="24"/>
@@ -1652,6 +1891,9 @@ No further action is required.</string>
                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="LatestNews"/>
+                                                                        </userDefinedRuntimeAttributes>
                                                                     </label>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteSmallGovCrest" translatesAutoresizingMaskIntoConstraints="NO" id="fgy-GO-YbH">
                                                                         <rect key="frame" x="16" y="16" width="40" height="40"/>
@@ -1674,14 +1916,17 @@ No further action is required.</string>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Head to aus.gov.au for the latest Coronavirus news." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7QT-bl-n2h">
-                                                                        <rect key="frame" x="72" y="40" width="231" height="30.5"/>
+                                                                        <rect key="frame" x="72" y="40" width="231" height="40.5"/>
                                                                         <accessibility key="accessibilityConfiguration">
                                                                             <accessibilityTraits key="traits" notEnabled="YES"/>
                                                                             <bool key="isElement" value="NO"/>
                                                                         </accessibility>
-                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="LatestNewsContent"/>
+                                                                        </userDefinedRuntimeAttributes>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1747,13 +1992,13 @@ No further action is required.</string>
                                                 </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Z1-bW-BBc" userLabel="Help">
-                                                <rect key="frame" x="0.0" y="1334.5" width="375" height="125"/>
+                                                <rect key="frame" x="0.0" y="1410.5" width="375" height="132.5"/>
                                                 <subviews>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZvR-cz-qSC">
-                                                        <rect key="frame" x="16" y="16" width="343" height="93"/>
+                                                        <rect key="frame" x="16" y="16" width="343" height="100.5"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NNi-nx-VDS" userLabel="Help topics">
-                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="93"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="100.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help topics" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C0q-aD-TfW">
                                                                         <rect key="frame" x="72" y="16" width="231" height="28"/>
@@ -1767,6 +2012,9 @@ No further action is required.</string>
                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="HelpTopics"/>
+                                                                        </userDefinedRuntimeAttributes>
                                                                     </label>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-help-selected" translatesAutoresizingMaskIntoConstraints="NO" id="lfG-7i-Hk0">
                                                                         <rect key="frame" x="16" y="16" width="40" height="40"/>
@@ -1792,14 +2040,17 @@ No further action is required.</string>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you have issues or questions about the app." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dux-J4-dJG">
-                                                                        <rect key="frame" x="72" y="44" width="231" height="33"/>
+                                                                        <rect key="frame" x="72" y="44" width="231" height="40.5"/>
                                                                         <accessibility key="accessibilityConfiguration">
                                                                             <accessibilityTraits key="traits" none="YES"/>
                                                                             <bool key="isElement" value="NO"/>
                                                                         </accessibility>
-                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="HelpTopicsContent"/>
+                                                                        </userDefinedRuntimeAttributes>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1859,13 +2110,13 @@ No further action is required.</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HeH-6a-T5j" userLabel="Notification Status">
-                                                <rect key="frame" x="0.0" y="1459.5" width="375" height="145"/>
+                                                <rect key="frame" x="0.0" y="1543" width="375" height="153.5"/>
                                                 <subviews>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zee-qU-mfQ">
-                                                        <rect key="frame" x="16" y="16" width="343" height="113"/>
+                                                        <rect key="frame" x="16" y="16" width="343" height="121.5"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0C-VM-931" userLabel="Notifications">
-                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="113"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="121.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications are enabled" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gx3-nF-2OD">
                                                                         <rect key="frame" x="72" y="16" width="231" height="24"/>
@@ -1898,22 +2149,22 @@ No further action is required.</string>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdm-Nt-WrT">
-                                                                        <rect key="frame" x="72" y="40" width="239" height="57"/>
+                                                                        <rect key="frame" x="72" y="40" width="239" height="65.5"/>
                                                                         <accessibility key="accessibilityConfiguration">
                                                                             <accessibilityTraits key="traits" none="YES"/>
                                                                             <bool key="isElement" value="NO"/>
                                                                         </accessibility>
                                                                         <attributedString key="attributedText">
-                                                                            <fragment content="You will receive a notification if COVIDSafe is not active.  ">
+                                                                            <fragment content="You will receive a notification if COVIDSafe is not active. ">
                                                                                 <attributes>
-                                                                                    <font key="NSFont" metaFont="label" size="12"/>
+                                                                                    <font key="NSFont" metaFont="system" size="16"/>
                                                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
                                                                                 </attributes>
                                                                             </fragment>
                                                                             <fragment content="Change notifications settings">
                                                                                 <attributes>
                                                                                     <color key="NSColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                    <font key="NSFont" metaFont="label" size="12"/>
+                                                                                    <font key="NSFont" metaFont="system" size="16"/>
                                                                                     <font key="NSOriginalFont" metaFont="label" size="12"/>
                                                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
                                                                                 </attributes>
@@ -1984,7 +2235,7 @@ No further action is required.</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEs-yq-szw" userLabel="Version View">
-                                                <rect key="frame" x="0.0" y="1604.5" width="375" height="56"/>
+                                                <rect key="frame" x="0.0" y="1696.5" width="375" height="56"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CD7-Ft-bQU" userLabel="Version">
                                                         <rect key="frame" x="128.5" y="12" width="118.5" height="20"/>
@@ -2055,9 +2306,14 @@ No further action is required.</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJa-Mu-MXq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="bTB-MH-OYr" userLabel="SettingsTapped">
+                <tapGestureRecognizer id="bTB-MH-OYr" userLabel="PNAppSettingsTapped">
                     <connections>
-                        <action selector="onSettingsTapped:" destination="yl1-rG-jXE" id="A5D-v5-Mvt"/>
+                        <action selector="onAppSettingsTapped:" destination="yl1-rG-jXE" id="9Ft-iy-Wv8"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="p9t-xu-RiE" userLabel="BLAppSettingsTapped">
+                    <connections>
+                        <action selector="onAppSettingsTapped:" destination="yl1-rG-jXE" id="5SG-0m-m1K"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="f47-5X-eXP" userLabel="BluetoothPairingLabelTapped">
@@ -2072,12 +2328,7 @@ No further action is required.</string>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="2qo-p8-KEt" userLabel="BluetoothSettingsTapped">
                     <connections>
-                        <action selector="onSettingsTapped:" destination="yl1-rG-jXE" id="zkT-Tu-Kfu"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="uzR-q7-5tz" userLabel="BluetoothPermissionsSettingsTapped">
-                    <connections>
-                        <action selector="onSettingsTapped:" destination="yl1-rG-jXE" id="F1N-sB-Thx"/>
+                        <action selector="onBluetoothPhoneSettingsTapped:" destination="yl1-rG-jXE" id="bPD-Ud-Gyl"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="qhb-00-wD2" userLabel="ShareTapped">
@@ -2109,6 +2360,7 @@ No further action is required.</string>
                 <navigationController navigationBarHidden="YES" id="8X4-AC-7cb" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QSU-F5-h7G">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
                         <segue destination="cED-yU-VgW" kind="relationship" relationship="rootViewController" id="SiO-yQ-VUz"/>
@@ -2148,6 +2400,9 @@ and save lives.</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="IntroLabel"/>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.7843137255" green="1" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2203,14 +2458,17 @@ and save lives.</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SLW-8v-OdL" userLabel="Blue background view">
                                 <rect key="frame" x="0.0" y="137" width="375" height="530"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COVIDSafe update is in progress.  Please make sure your phone is not switched off until the update is complete." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Wo-Qe-Wye">
-                                        <rect key="frame" x="32" y="40" width="311" height="108.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COVIDSafe update is in progress.  Please make sure your phone is not switched off until the update is complete." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Wo-Qe-Wye">
+                                        <rect key="frame" x="32" y="40" width="311" height="86.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="MigrationLabel"/>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SOF-ig-kwj" userLabel="AnimatingView">
-                                        <rect key="frame" x="67.5" y="190.5" width="240" height="240"/>
+                                        <rect key="frame" x="67.5" y="168.5" width="240" height="240"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="kxC-N2-PH3"/>
                                             <constraint firstAttribute="height" constant="240" id="ryn-nk-rKK"/>
@@ -2275,6 +2533,9 @@ and save lives.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="OS1b_Title"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2n-u4-MlW">
                                                 <rect key="frame" x="16" y="16" width="44" height="44"/>
@@ -2301,6 +2562,9 @@ For more information please refer to the *Help Topics* page.</string>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="OS1b_Content"/>
+                                                </userDefinedRuntimeAttributes>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth® signals are used to determine when you're near another COVIDSafe user." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMe-Xb-n33">
                                                 <rect key="frame" x="32" y="299.5" width="311" height="64.5"/>
@@ -2308,6 +2572,9 @@ For more information please refer to the *Help Topics* page.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="OS1b_TopParagraph"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -2346,6 +2613,9 @@ For more information please refer to the *Help Topics* page.</string>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <state key="normal" title="Next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="OS1b_Button"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="JMg-fD-wpp" kind="show" identifier="privacySegue" id="FdM-kW-fLb"/>
                                 </connections>
@@ -2395,24 +2665,36 @@ For more information please refer to the *Help Topics* page.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="RC_Title"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My registration information to allow contact tracing by state or territory health officials." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFJ-yh-BcG">
                                                 <rect key="frame" x="46" y="168" width="297" height="64.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="RC_Item1"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My contact information from other COVIDSafe users after they test positive for COVID-19." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eCd-JO-SUg">
                                                 <rect key="frame" x="46" y="248.5" width="297" height="64.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="RC_Item2"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I consent to the Australian Department of Health collecting:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6E-t2-z2H">
                                                 <rect key="frame" x="32" y="109.5" width="311" height="42.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="RC_Intro"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1i-g9-Bpj">
                                                 <rect key="frame" x="32" y="175" width="8" height="8"/>
@@ -2451,6 +2733,9 @@ For more information please refer to the *Help Topics* page.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="RC_Closing"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -2502,6 +2787,9 @@ For more information please refer to the *Help Topics* page.</string>
                                 <state key="disabled" title="Continue">
                                     <color key="titleColor" red="0.31372549020000001" green="0.31764705879999999" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="RC_Button"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onAgreeTappedWithSender:" destination="2XR-xi-raR" eventType="touchUpInside" id="QoS-5H-Fqg"/>
                                 </connections>
@@ -2589,6 +2877,9 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="OS1a_Content"/>
+                                                </userDefinedRuntimeAttributes>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration and privacy" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0u-wa-fYL">
                                                 <rect key="frame" x="30" y="244" width="315" height="29"/>
@@ -2601,6 +2892,9 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="OS1a_Title"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -2637,6 +2931,9 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <state key="normal" title="Next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="OS1a_Button"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="iWantToHelpBtnClick:" destination="JMg-fD-wpp" eventType="touchUpInside" id="iy5-9T-DkM"/>
                                 </connections>
@@ -2677,7 +2974,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LCa-Je-nVQ" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="362"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="358"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERG-dG-Bx2">
                                                 <rect key="frame" x="16" y="16" width="44" height="44"/>
@@ -2699,20 +2996,26 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="PD_Title"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tk2-6x-mvl">
-                                                <rect key="frame" x="32" y="117.5" width="311" height="244.5"/>
+                                                <rect key="frame" x="32" y="117.5" width="311" height="240.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIF-xa-lvX">
                                                         <rect key="frame" x="0.0" y="0.0" width="311" height="20.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="PD_Fullname"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L4n-0d-pyv">
-                                                        <rect key="frame" x="0.0" y="28.5" width="311" height="36"/>
+                                                        <rect key="frame" x="0.0" y="28.5" width="311" height="34"/>
                                                         <accessibility key="accessibilityConfiguration" label="Full name"/>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -2727,19 +3030,25 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your full name." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VM-OQ-VUC">
-                                                        <rect key="frame" x="0.0" y="68.5" width="311" height="0.0"/>
+                                                        <rect key="frame" x="0.0" y="66.5" width="311" height="0.0"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="PD_FullnameError"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3e-GV-yRm">
-                                                        <rect key="frame" x="0.0" y="72.5" width="311" height="37"/>
+                                                        <rect key="frame" x="0.0" y="70.5" width="311" height="37"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age range (select)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdJ-6t-GZL">
                                                                 <rect key="frame" x="0.0" y="13" width="141" height="20.5"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="PD_AgeRange"/>
+                                                                </userDefinedRuntimeAttributes>
                                                             </label>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -2750,7 +3059,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAO-Fi-CsW" userLabel="Age Range dropdown">
-                                                        <rect key="frame" x="0.0" y="117.5" width="311" height="38"/>
+                                                        <rect key="frame" x="0.0" y="115.5" width="311" height="38"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pYl-es-7AA" userLabel="Age combobox">
                                                                 <rect key="frame" x="0.0" y="0.0" width="311" height="38"/>
@@ -2758,7 +3067,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                                     <accessibilityTraits key="traits" staticText="YES"/>
                                                                     <bool key="isElement" value="YES"/>
                                                                 </accessibility>
-                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartInsertDeleteType="no"/>
                                                             </textField>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chev-down" translatesAutoresizingMaskIntoConstraints="NO" id="qAZ-v4-ydb">
@@ -2781,19 +3090,25 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                         </constraints>
                                                     </view>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select your age range." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Tp-qk-8iH">
-                                                        <rect key="frame" x="0.0" y="159.5" width="311" height="0.0"/>
+                                                        <rect key="frame" x="0.0" y="157.5" width="311" height="0.0"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="PD_AgeRangeError"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zEi-0v-YfD">
-                                                        <rect key="frame" x="0.0" y="163.5" width="311" height="37"/>
+                                                        <rect key="frame" x="0.0" y="161.5" width="311" height="37"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Postcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7RM-TO-7v0">
                                                                 <rect key="frame" x="0.0" y="13" width="72.5" height="20.5"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="PD_Postcode"/>
+                                                                </userDefinedRuntimeAttributes>
                                                             </label>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -2804,9 +3119,9 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                         </constraints>
                                                     </view>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ORR-xb-Oh7">
-                                                        <rect key="frame" x="0.0" y="208.5" width="311" height="36"/>
+                                                        <rect key="frame" x="0.0" y="206.5" width="311" height="34"/>
                                                         <accessibility key="accessibilityConfiguration" label="postcode"/>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" smartInsertDeleteType="no" textContentType="postal-code"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -2818,10 +3133,13 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Postcode number must contain 4 digits." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iad-Wm-Swy">
-                                                        <rect key="frame" x="0.0" y="244.5" width="311" height="0.0"/>
+                                                        <rect key="frame" x="0.0" y="240.5" width="311" height="0.0"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="PD_PostcodeError"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </label>
                                                 </subviews>
                                             </stackView>
@@ -2924,6 +3242,9 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                 <state key="disabled">
                                     <color key="titleColor" red="0.31372549019607843" green="0.31764705882352939" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="PD_Button"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="continueOnTapped:" destination="tmd-7A-Wz4" eventType="touchUpInside" id="kQy-gp-H1X"/>
                                 </connections>
@@ -2994,30 +3315,45 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="US_Title"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My registration information to allow contact tracing by state or territory health officials." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXg-tG-JnX">
                                                 <rect key="frame" x="46" y="254" width="297" height="64.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="US_Item1"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My contact information from other COVIDSafe users after they test positive for COVID-19." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ago-Xc-vpG">
                                                 <rect key="frame" x="46" y="334.5" width="297" height="64.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="US_Item2"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select 'I agree' to confirm consent." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ba6-us-91a">
                                                 <rect key="frame" x="32" y="423" width="323" height="20.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="US_Closing"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I confirm my parent or guardian consents to the Australian Department of Health collecting:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDG-kZ-uPM">
                                                 <rect key="frame" x="32" y="173.5" width="311" height="64.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="US_Intro"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfb-Qr-RoV">
                                                 <rect key="frame" x="32" y="261" width="8" height="8"/>
@@ -3098,6 +3434,9 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                 <state key="normal" title="I agree">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="US_Button"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="doneOntap:" destination="GKS-Wl-QbF" eventType="touchUpInside" id="h4R-Sa-TOb"/>
                                 </connections>
@@ -3128,9 +3467,9 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
     <inferredMetricsTieBreakers>
         <segue reference="h8R-i7-zdK"/>
         <segue reference="ALe-An-dsT"/>
-        <segue reference="Yi1-Hr-f9s"/>
+        <segue reference="8rs-ZD-VFl"/>
         <segue reference="iUa-3s-4XB"/>
-        <segue reference="WC1-tG-bo5"/>
+        <segue reference="XiO-Zp-pOg"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AppPermissions1" width="311" height="188"/>

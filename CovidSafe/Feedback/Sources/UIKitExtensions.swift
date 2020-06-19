@@ -22,9 +22,7 @@ extension UIAlertAction {
 // MARK: UIAlertController cancel extension
 extension UIAlertController {
   func addCancelAction() {
-    let cancelActionTitle = NSLocalizedString("global_cancel_button_title",
-      tableName: "Feedback",
-      bundle: Bundle.main,
+    let cancelActionTitle = "global_cancel_button_title".localizedString(
       comment: "Cancel button title"
     )
     let cancelAction = UIAlertAction(title: cancelActionTitle, style: .cancel, handler: nil)

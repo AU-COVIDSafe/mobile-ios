@@ -83,7 +83,13 @@ extension PeripheralController: CBPeripheralManagerDelegate {
         DLog("\(["request": request] as AnyObject)")
         EncounterMessageManager.shared.getAdvertisementPayload { (payloadToAdvertise) in
             if let payload = payloadToAdvertise {
-                request.value = payload
+                // check offset
+                if request.offset > payload.count {
+                    peripheral.respond(to: request, withResult: .invalidOffset)
+                    return;
+                }
+                
+                request.value = payload.advanced(by: request.offset)
                 peripheral.respond(to: request, withResult: .success)
             } else {
                 DLog("Error getting payload to advertise")

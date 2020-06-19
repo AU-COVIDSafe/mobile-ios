@@ -15,23 +15,10 @@
                     <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qRv-Xf-UaQ">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="Elx-xe-4zu" kind="relationship" relationship="rootViewController" id="CP0-Er-dpJ"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NBS-3a-gxj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-674" y="-1872"/>
-        </scene>
-        <!--Questions-->
-        <scene sceneID="pBE-qy-Y8H">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Questions" id="Elx-xe-4zu" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="mWG-RM-ehP"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hfk-Su-78X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="526" y="-1873"/>
         </scene>
         <!--Upload Data Step2VC-->
         <scene sceneID="MLs-LJ-G0a">
@@ -67,6 +54,9 @@
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UD2_Title"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ft1-PF-Epb">
                                                 <rect key="frame" x="32" y="105.5" width="301" height="86.5"/>
@@ -74,6 +64,9 @@
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UD2_Intro"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mKA-1q-WgQ" customClass="CodeInputView" customModule="COVIDSafe" customModuleProvider="target">
                                                 <rect key="frame" x="26" y="208" width="317" height="54"/>
@@ -128,6 +121,9 @@
                                 <state key="normal" title="Upload my information">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UD2_Button"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="uploadDataBtnTapped:" destination="a6e-KY-ZKO" eventType="touchUpInside" id="njp-EI-wJ9"/>
                                 </connections>
@@ -146,6 +142,9 @@ Please do not close the app.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UploadingInfo"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWM-sx-BWy">
                                                 <rect key="frame" x="40" y="0.0" width="231" height="231"/>
@@ -255,6 +254,9 @@ Please do not close the app.</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDE_Message"/>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEL-Fh-3RO" customClass="GradientButton" customModule="COVIDSafe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="357.5" width="311" height="48"/>
@@ -267,6 +269,9 @@ Please do not close the app.</string>
                                         <state key="normal" title="Try again">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDE_TryAgain"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="onBackTapped:" destination="Bpf-Xp-F3m" eventType="touchUpInside" id="WS1-R8-wUd"/>
                                             <action selector="uploadDataBtnTapped:" destination="a6e-KY-ZKO" eventType="touchUpInside" id="WRe-bP-cIQ"/>
@@ -283,6 +288,9 @@ Please do not close the app.</string>
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDE_Cancel"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="onBackTapped:" destination="Bpf-Xp-F3m" eventType="touchUpInside" id="zlB-kb-MRy"/>
                                             <action selector="uploadDataBtnTapped:" destination="a6e-KY-ZKO" eventType="touchUpInside" id="uoS-ai-Rn8"/>
@@ -364,6 +372,9 @@ Please do not close the app.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDP_Title"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" delaysContentTouches="NO" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tqv-D9-PS3">
                                                 <rect key="frame" x="32" y="385.5" width="311" height="192"/>
@@ -374,6 +385,9 @@ Once you press ‘Yes’ you’ll need to provide consent to upload your informa
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDP_Content"/>
+                                                </userDefinedRuntimeAttributes>
                                             </textView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -416,6 +430,7 @@ Once you press ‘Yes’ you’ll need to provide consent to upload your informa
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDP_NoButton"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onBackTapped:" destination="HPs-l8-CC5" eventType="touchUpInside" id="nta-yE-3yq"/>
@@ -436,6 +451,7 @@ Once you press ‘Yes’ you’ll need to provide consent to upload your informa
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDP_YesButton"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="GKP-u6-wgj" kind="show" id="Qa7-iF-RFi"/>
@@ -485,6 +501,9 @@ Once you press ‘Yes’ you’ll need to provide consent to upload your informa
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDC_Title"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" delaysContentTouches="NO" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ryL-BN-XeS">
                                                 <rect key="frame" x="32" y="105.5" width="311" height="280"/>
@@ -497,6 +516,9 @@ Read the COVIDSafe *privacy policy* for further details.  Select 'I agree' t
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDC_Content"/>
+                                                </userDefinedRuntimeAttributes>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1v-Px-kY5">
                                                 <rect key="frame" x="16" y="16" width="44" height="44"/>
@@ -550,6 +572,7 @@ Read the COVIDSafe *privacy policy* for further details.  Select 'I agree' t
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDC_Button"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="a6e-KY-ZKO" kind="show" id="lxD-W9-vGv"/>
@@ -577,16 +600,6 @@ Read the COVIDSafe *privacy policy* for further details.  Select 'I agree' t
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FPc-mn-ERh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2168.1159420289855" y="-3626.0869565217395"/>
-        </scene>
-        <!--Questions-->
-        <scene sceneID="Yjc-4h-Yma">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Questions" id="Kzd-qE-07a" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="BDJ-wD-Fwl"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iD5-lB-pPC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-881" y="-3763"/>
         </scene>
         <!--Upload Data Thank You Home View Controller-->
         <scene sceneID="mXp-nc-2a6">
@@ -616,6 +629,9 @@ Read the COVIDSafe *privacy policy* for further details.  Select 'I agree' t
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDTY_Title"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" delaysContentTouches="NO" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bP5-GQ-GQk">
                                                 <rect key="frame" x="32" y="309.5" width="311" height="214"/>
@@ -626,6 +642,9 @@ State or territory health officials will notify other COVIDSafe users that have 
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDTY_Content"/>
+                                                </userDefinedRuntimeAttributes>
                                             </textView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -662,6 +681,9 @@ State or territory health officials will notify other COVIDSafe users that have 
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDTY_Button"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="doneBtnTapped:" destination="Vno-TX-yIM" eventType="touchUpInside" id="3xk-nY-dMS"/>
                                 </connections>

@@ -5,15 +5,11 @@ import UIKit
 class ViewControllerFactory {
 
   func createPropmtController(_ useCustomTransition: Bool, settings: FeedbackSettings? = nil) -> UIViewController {
-    let title = NSLocalizedString("entryPrompt_alert_title",
-        tableName: "Feedback",
-        bundle: Bundle.main,
+    let title = "entryPrompt_alert_title".localizedString(
         comment: "Title for initial alert when feedback is launched"
     )
 
-    let message = NSLocalizedString("entryPrompt_alert_message",
-        tableName: "Feedback",
-        bundle: Bundle.main,
+    let message = "entryPrompt_alert_message".localizedString(
         comment: "Prompt message for initial alert when feedback is launched"
     )
 

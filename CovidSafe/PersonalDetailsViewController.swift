@@ -46,7 +46,7 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
 
-        self.nextBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Done", comment: "Done"),
+        self.nextBarButtonItem = UIBarButtonItem(title: "Done".localizedString(),
                                                  style: .plain,
                                                  target: self,
                                                  action: #selector(self.nextButtonTapped))
@@ -202,7 +202,7 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if (textField == firstnameTextField || textField == postcodeTextField) {
-            nextBarButtonItem?.title = NSLocalizedString("Done", comment: "Done")
+            nextBarButtonItem?.title = "Done".localizedString()
             if(UIAccessibility.isVoiceOverRunning) {
                 firstnameTextField.isAccessibilityElement = true
                 postcodeTextField.isAccessibilityElement = true
@@ -232,7 +232,7 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
                 ageTextField.isAccessibilityElement = false
                 UIAccessibility.post(notification: .screenChanged, argument: agePicker)
             }
-            nextBarButtonItem?.title = NSLocalizedString("Next", comment: "Next")
+            nextBarButtonItem?.title = "Next".localizedString()
         }
     }
     
@@ -270,10 +270,10 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
     }
     
     func presentValidationError(error: String, fieldToFocus: UITextField) {
-        let errorAlert = UIAlertController(title: NSLocalizedString("ValidationError", comment: "Validation error"),
+        let errorAlert = UIAlertController(title: "ValidationError".localizedString(comment: "Validation error"),
                                            message: error,
                                            preferredStyle: .alert)
-        errorAlert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "OK"),
+        errorAlert.addAction(UIAlertAction(title: "OK".localizedString(),
                                            style: .default,
                                            handler: { _ in
             fieldToFocus.becomeFirstResponder()
@@ -303,7 +303,7 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
             return
         }
         guard postCode.range(of: #"^(0[2|8|9]|[1-9][0-9])\d{2}$"#, options: .regularExpression) != nil else {
-            presentValidationError(error: NSLocalizedString("PostcodeValidationErrorMessage", comment: "Please enter a valid postcode"),
+            presentValidationError(error: "PostcodeValidationErrorMessage".localizedString(comment: "Please enter a valid postcode"),
                                    fieldToFocus: postcodeTextField)
             return
         }

@@ -115,11 +115,7 @@ extension NewFeedbackFlowController {
   // MARK: Factories
 
   func createCancelBarButtonItem() -> UIBarButtonItem {
-    let buttonTitle = NSLocalizedString("global_cancel_button_title",
-        tableName: "Feedback",
-        bundle: Bundle.main,
-        comment: "Cancel button title"
-    )
+    let buttonTitle = "global_cancel_button_title".localizedString()
 
     let item = UIBarButtonItem(
       title: buttonTitle,

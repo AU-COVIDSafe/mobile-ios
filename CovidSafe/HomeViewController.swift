@@ -1,5 +1,6 @@
 import UIKit
 import Lottie
+import KeychainSwift
 import SafariServices
 
 class HomeViewController: UIViewController {
@@ -26,7 +27,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var pushNotificationStatusLabel: UILabel!
     @IBOutlet weak var uploadDateLabel: UILabel!
     @IBOutlet weak var pairingRequestsLabel: UILabel!
-    
+        
     var lottieBluetoothView: AnimationView!
 
     var allPermissionOn = true
@@ -47,7 +48,7 @@ class HomeViewController: UIViewController {
             let formattedDate = dateFormatterPrint.string(from: lastUpload)
             let newAttributedString = NSMutableAttributedString(
                 string: String.localizedStringWithFormat(
-                    NSLocalizedString("InformationUploaded", comment: "Information uploaded template"),
+                    "InformationUploaded".localizedString(comment: "Information uploaded template"),
                     formattedDate)
             )
 
@@ -78,6 +79,11 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // this is to show the settings prompt initially if bluetooth is off
+        if !BluetraceManager.shared.isBluetoothOn() {
+            BluetraceManager.shared.turnOn()
+        }
+        
         observer = NotificationCenter.default.addObserver(forName: UIApplication.didBecomeActiveNotification, object: nil, queue: .main) { [unowned self] notification in
             self.toggleViews()
         }
@@ -93,7 +99,7 @@ class HomeViewController: UIViewController {
         
         if let versionNumber = Bundle.main.versionShort, let buildNumber = Bundle.main.version {
             self.versionNumberLabel.text = String.localizedStringWithFormat(
-                NSLocalizedString("VersionNumber", comment: "Version number template"),
+                "VersionNumber".localizedString(comment: "Version number template"),
                 versionNumber,buildNumber
             )
         } else {
@@ -124,6 +130,7 @@ class HomeViewController: UIViewController {
         super.viewDidAppear(animated)
         self.lottieBluetoothView?.play()
         self.becomeFirstResponder()
+        self.updateJWTKeychainAccess()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -151,9 +158,20 @@ class HomeViewController: UIViewController {
         #endif
     }
     
+    func updateJWTKeychainAccess() {
+        let hasUpdatedKeychainAccess = UserDefaults.standard.bool(forKey: "HasUpdatedKeychainAccess")
+        if (!hasUpdatedKeychainAccess) {
+            let keychain = KeychainSwift()
+            if let jwt = keychain.get("JWT_TOKEN") {
+                if (keychain.set(jwt, forKey: "JWT_TOKEN", withAccess: .accessibleAfterFirstUnlock)) {
+                    DLog("Updated access class on JWT")
+                    UserDefaults.standard.set(true, forKey: "HasUpdatedKeychainAccess")
+                }
+            }
+        }
+    }
+    
     fileprivate func toggleViews() {
-        
-        
         DispatchQueue.main.async {
             UNUserNotificationCenter.current().getNotificationSettings(completionHandler: { [weak self] settings in
                 DispatchQueue.main.async {
@@ -216,10 +234,10 @@ class HomeViewController: UIViewController {
         self.helpButton.setImage(UIImage(named: "ic-help-selected"), for: .normal)
         self.helpButton.setTitleColor(UIColor.black, for: .normal)
         
-        self.homeHeaderInfoText.text = NSLocalizedString("HomeHeaderNoAction", comment: "Header with no action req")
+        self.homeHeaderInfoText.text = "HomeHeaderNoAction".localizedString(comment: "Header with no action req")
         
         if (!self.allPermissionOn) {
-            self.homeHeaderInfoText.text = NSLocalizedString("HomeHeaderPermissions", comment: "Header with check permisisons text")
+            self.homeHeaderInfoText.text = "HomeHeaderPermissions".localizedString(comment: "Header with check permisisons text")
             self.homeHeaderView.backgroundColor = UIColor.covidHomePermissionErrorColor
         } else {
             self.homeHeaderView.backgroundColor = UIColor.covidHomeActiveColor
@@ -229,8 +247,8 @@ class HomeViewController: UIViewController {
     }
     
     fileprivate func toggleBluetoothStatusView() {
-        toggleViewVisibility(view: bluetoothStatusOnView, isVisible: !self.allPermissionOn && self.bluetoothStatusOn)
-        toggleViewVisibility(view: bluetoothStatusOffView, isVisible: !self.allPermissionOn && !self.bluetoothStatusOn)
+        toggleViewVisibility(view: bluetoothStatusOnView, isVisible: !self.bluetoothPermissionOn && self.bluetoothStatusOn)
+        toggleViewVisibility(view: bluetoothStatusOffView, isVisible: self.bluetoothPermissionOn && !self.bluetoothStatusOn)
     }
     
     fileprivate func toggleBluetoothPermissionStatusView() {
@@ -246,10 +264,10 @@ class HomeViewController: UIViewController {
         case true:
             pushNotificationStatusIcon.isHighlighted = false
             pushNotificationStatusTitle.text = NSLocalizedString("NotificationsEnabled", comment: "Notifications Enabled")
-            let newAttributedLabel = NSMutableAttributedString(string: NSLocalizedString("NotificationsEnabledBlurb", comment: "Notifications Enabled content blurb"), attributes: [.font: UIFont.preferredFont(forTextStyle: .caption1)])
+            let newAttributedLabel = NSMutableAttributedString(string: NSLocalizedString("NotificationsEnabledBlurb", comment: "Notifications Enabled content blurb"), attributes: [.font: UIFont.preferredFont(forTextStyle: .callout)])
 
             //set some attributes
-            guard let linkRange = newAttributedLabel.string.range(of: NSLocalizedString("NotificationsBlurbLink", comment: "Notifications blurb link")) else { return }
+            guard let linkRange = newAttributedLabel.string.range(of: "NotificationsBlurbLink".localizedString( comment: "Notifications blurb link")) else { return }
             let nsRange = NSRange(linkRange, in: newAttributedLabel.string)
             newAttributedLabel.addAttribute(.foregroundColor,
                                      value: UIColor.covidSafeColor,
@@ -259,13 +277,12 @@ class HomeViewController: UIViewController {
             
         default:
             pushNotificationStatusIcon.isHighlighted = true
-            pushNotificationStatusTitle.text = NSLocalizedString("NotificationsDisabled", comment: "Notifications Enabled")
+            pushNotificationStatusTitle.text = "NotificationsDisabled".localizedString(comment: "Notifications Enabled")
             let newAttributedLabel = NSMutableAttributedString(string:
-                NSLocalizedString("NotificationsDisabledBlurb", comment: "Notifications Enabled content blurb"), attributes: [.font: UIFont.preferredFont(forTextStyle: .caption1)])
+                NSLocalizedString("NotificationsDisabledBlurb", comment: "Notifications Enabled content blurb"), attributes: [.font: UIFont.preferredFont(forTextStyle: .callout)])
 
             //set some attributes
-            guard let linkRange = newAttributedLabel.string.range(of:
-                NSLocalizedString("NotificationsBlurbLink", comment: "Notifications blurb link")) else { return }
+            guard let linkRange = newAttributedLabel.string.range(of: "NotificationsBlurbLink".localizedString()) else { return }
             let nsRange = NSRange(linkRange, in: newAttributedLabel.string)
             newAttributedLabel.addAttribute(.foregroundColor,
                                      value: UIColor.covidSafeColor,
@@ -275,13 +292,24 @@ class HomeViewController: UIViewController {
         }
     }
     
-    @IBAction func onSettingsTapped(_ sender: UITapGestureRecognizer) {
+    func attemptTurnOnBluetooth() {
+        BluetraceManager.shared.toggleScanning(false)
+        BluetraceManager.shared.turnOn()
+    }
+    
+    // MARK: IBActions
+    
+    @IBAction func onAppSettingsTapped(_ sender: UITapGestureRecognizer) {
         guard let settingsURL = URL(string: UIApplication.openSettingsURLString) else {
             return
         }
         UIApplication.shared.open(settingsURL)
     }
-
+    
+    @IBAction func onBluetoothPhoneSettingsTapped(_ sender: Any) {
+        attemptTurnOnBluetooth()
+    }
+    
     @IBAction func onShareTapped(_ sender: UITapGestureRecognizer) {
         let shareText = TracerRemoteConfig.defaultShareText
         let activity = UIActivityViewController(activityItems: [shareText], applicationActivities: nil)
@@ -335,10 +363,6 @@ class HomeViewController: UIViewController {
         present(nav, animated: true, completion: nil)
     }
     
-    @IBAction func onPowerSaverButtonTapped(_ sender: Any) {
-        
-    }
-    
     @objc
     func appWillResignActive(_ notification: Notification) {
         self.lottieBluetoothView?.stop()
@@ -380,7 +404,7 @@ class HomeViewController: UIViewController {
 
 struct TracerRemoteConfig {
     static let defaultShareText = """
-        \(NSLocalizedString("ShareText", comment: "Share app with friends text")) #COVID19
+        \("ShareText".localizedString(comment: "Share app with friends text")) #COVID19
         #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au
         """
 }
