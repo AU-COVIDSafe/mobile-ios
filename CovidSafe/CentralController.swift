@@ -29,6 +29,7 @@ class CentralController: NSObject {
     private var central: CBCentralManager?
     private var recoveredPeripherals: [CBPeripheral] = []
     private var queue: DispatchQueue
+    private var lastCleanedScannedPeripherals = Date()
     
     // This dict is to keep track of discovered android devices, so that i do not connect to the same android device multiple times within the same BluetraceConfig.CentralScanInterval
     private var discoveredAndroidPeriManufacturerToUUIDMap = [Data: UUID]()
@@ -42,6 +43,12 @@ class CentralController: NSObject {
     public init(queue: DispatchQueue) {
         self.queue = queue
         super.init()
+        NotificationCenter.default.addObserver(
+          forName: UIApplication.didReceiveMemoryWarningNotification,
+          object: nil,
+          queue: .main) { [weak self] notification in
+            self?.cleanupScannedPeripherals()
+        }
     }
     
     func turnOn() {
@@ -92,6 +99,14 @@ class CentralController: NSObject {
             return true
         }
         return false
+    }
+    
+    fileprivate func cleanupScannedPeripherals() {
+        scannedPeripherals = scannedPeripherals.filter { scan in
+            guard let encounterTime = scan.value.encounter.timestamp else { return true }
+            return abs(encounterTime.timeIntervalSinceNow) < BluetraceConfig.CentralScanInterval
+        }
+        lastCleanedScannedPeripherals = Date()
     }
     
     public func getState() -> CBManagerState? {
@@ -181,6 +196,9 @@ extension CentralController: CBCentralManagerDelegate {
                          "advertisments": advertisementData as AnyObject] as AnyObject
         
         DLog("\(debugLogs)")
+        if (abs(lastCleanedScannedPeripherals.timeIntervalSince(Date())) > BluetraceConfig.CentralScanInterval) {
+            cleanupScannedPeripherals()
+        }
         var initialEncounter = EncounterRecord(rssi: RSSI.doubleValue, txPower: advertisementData[CBAdvertisementDataTxPowerLevelKey] as? Double)
         initialEncounter.timestamp = nil
         
