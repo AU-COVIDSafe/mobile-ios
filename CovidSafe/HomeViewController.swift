@@ -25,6 +25,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var pushNotificationStatusTitle: UILabel!
     @IBOutlet weak var pushNotificationStatusIcon: UIImageView!
     @IBOutlet weak var pushNotificationStatusLabel: UILabel!
+    @IBOutlet weak var pushNotificationContainerView: UIView!
     @IBOutlet weak var uploadDateLabel: UILabel!
     @IBOutlet weak var pairingRequestsLabel: UILabel!
         
@@ -99,20 +100,23 @@ class HomeViewController: UIViewController {
         
         if let versionNumber = Bundle.main.versionShort, let buildNumber = Bundle.main.version {
             self.versionNumberLabel.text = String.localizedStringWithFormat(
-                "VersionNumber".localizedString(comment: "Version number template"),
+                "home_version_number_ios".localizedString(comment: "Version number template"),
                 versionNumber,buildNumber
             )
         } else {
             toggleViewVisibility(view: versionView, isVisible: false)
         }
-        let pairingRequestString = NSLocalizedString("PairingRequestsInfo", comment: "Text explaining COVIDSafe does not send pairing requests")
+        
+        // Some translators are adding the ** for this link, just cleaning that up.
+        let pairingRequestString = NSLocalizedString("PairingRequestsInfo", comment: "Text explaining COVIDSafe does not send pairing requests").replacingOccurrences(of: "*", with: "")
         let pairingRequestText = NSMutableAttributedString(string: pairingRequestString,
                                                            attributes: [.font: UIFont.preferredFont(forTextStyle: .body)])
         let pairingRequestUnderlinedString = NSLocalizedString("PairingRequestsInfoUnderline", comment: "section of text that should be underlined from the PairingRequestsInfo text")
-        let requestsRange = pairingRequestText.string.range(of: pairingRequestUnderlinedString)!
-        let nsRange = NSRange(requestsRange, in: pairingRequestText.string)
-        pairingRequestText.addAttribute(.underlineStyle, value: NSUnderlineStyle.single.rawValue, range: nsRange)
-        pairingRequestsLabel.attributedText = pairingRequestText
+        if let requestsRange = pairingRequestText.string.range(of: pairingRequestUnderlinedString) {
+            let nsRange = NSRange(requestsRange, in: pairingRequestText.string)
+            pairingRequestText.addAttribute(.underlineStyle, value: NSUnderlineStyle.single.rawValue, range: nsRange)
+            pairingRequestsLabel.attributedText = pairingRequestText
+        }
     }
     
     deinit {
@@ -230,14 +234,11 @@ class HomeViewController: UIViewController {
         toggleViewVisibility(view: appPermissionsLabel, isVisible: !self.allPermissionOn)
         toggleViewVisibility(view: homeHeaderPermissionsOffImage, isVisible: !self.allPermissionOn)
         toggleViewVisibility(view: lottieBluetoothView, isVisible: self.allPermissionOn)
-        
-        self.helpButton.setImage(UIImage(named: "ic-help-selected"), for: .normal)
-        self.helpButton.setTitleColor(UIColor.black, for: .normal)
-        
-        self.homeHeaderInfoText.text = "HomeHeaderNoAction".localizedString(comment: "Header with no action req")
+                
+        self.homeHeaderInfoText.text = "home_header_active_title".localizedString(comment: "Header with no action req") + "\n" + "home_header_active_no_action_required".localizedString()
         
         if (!self.allPermissionOn) {
-            self.homeHeaderInfoText.text = "HomeHeaderPermissions".localizedString(comment: "Header with check permisisons text")
+            self.homeHeaderInfoText.text = "home_header_inactive_title".localizedString(comment: "Header with check permisisons text") + "\n" + "home_header_inactive_check_your_permissions".localizedString()
             self.homeHeaderView.backgroundColor = UIColor.covidHomePermissionErrorColor
         } else {
             self.homeHeaderView.backgroundColor = UIColor.covidHomeActiveColor
@@ -262,8 +263,9 @@ class HomeViewController: UIViewController {
         
         switch self.pushNotificationOn {
         case true:
+            pushNotificationContainerView.accessibilityLabel = "NotificationsEnabled_VOLabel".localizedString()
             pushNotificationStatusIcon.isHighlighted = false
-            pushNotificationStatusTitle.text = NSLocalizedString("NotificationsEnabled", comment: "Notifications Enabled")
+            pushNotificationStatusTitle.text = NSLocalizedString("home_set_complete_external_link_notifications_title_iOS", comment: "Notifications Enabled")
             let newAttributedLabel = NSMutableAttributedString(string: NSLocalizedString("NotificationsEnabledBlurb", comment: "Notifications Enabled content blurb"), attributes: [.font: UIFont.preferredFont(forTextStyle: .callout)])
 
             //set some attributes
@@ -276,10 +278,11 @@ class HomeViewController: UIViewController {
             pushNotificationStatusLabel.attributedText = newAttributedLabel
             
         default:
+            pushNotificationContainerView.accessibilityLabel = "NotificationsDisabled_VOLabel".localizedString()
             pushNotificationStatusIcon.isHighlighted = true
-            pushNotificationStatusTitle.text = "NotificationsDisabled".localizedString(comment: "Notifications Enabled")
+            pushNotificationStatusTitle.text = "home_set_complete_external_link_notifications_title_iOS_off".localizedString(comment: "Notifications Disabled")
             let newAttributedLabel = NSMutableAttributedString(string:
-                NSLocalizedString("NotificationsDisabledBlurb", comment: "Notifications Enabled content blurb"), attributes: [.font: UIFont.preferredFont(forTextStyle: .callout)])
+                NSLocalizedString("NotificationsDisabledBlurb", comment: "Notifications Disabled content blurb"), attributes: [.font: UIFont.preferredFont(forTextStyle: .callout)])
 
             //set some attributes
             guard let linkRange = newAttributedLabel.string.range(of: "NotificationsBlurbLink".localizedString()) else { return }
@@ -338,7 +341,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func bluetoothPairingTapped(_ sender: Any) {
-        guard let url = URL(string: "https://www.covidsafe.gov.au/help-topics.html#bluetooth-pairing-request") else {
+        guard let url = URL(string: "\(URLHelper.getHelpURL())#bluetooth-pairing-request") else {
             return
         }
         
@@ -404,7 +407,6 @@ class HomeViewController: UIViewController {
 
 struct TracerRemoteConfig {
     static let defaultShareText = """
-        \("ShareText".localizedString(comment: "Share app with friends text")) #COVID19
-        #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au
+        \("share_this_app_content".localizedString(comment: "Share app with friends text"))
         """
 }

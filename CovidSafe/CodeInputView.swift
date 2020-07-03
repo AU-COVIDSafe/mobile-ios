@@ -243,7 +243,7 @@ open class CodeInputView: UIView {
             textField?.frame = CGRect(x: 0, y: -40, width: 100, height: 30)
             addSubview(textField!)
         }
-        
+        textField?.accessibilityLabel = self.accessibilityLabel
         textField?.keyboardType = keyboardType
         textField?.keyboardAppearance = keyboardAppearance
         

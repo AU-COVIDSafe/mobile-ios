@@ -1,0 +1,449 @@
+"personal_details_name_characters_prompt" = "Please use English characters for your full name. Do not use other languages or symbols like ',' or '?'.";
+"how_it_works_content" = "Tín hiệu Bluetooth® được sử dụng để xác định khi bạn ở gần người dùng COVIDSafe khác. \
+\
+Mọi trường hợp tiếp xúc gần giữa bạn và những người dùng COVIDSafe khác đều được ghi nhận để tạo thông tin về tiếp xúc gần. Thông tin được mã hóa và chỉ được lưu trữ trong điện thoại của bạn. \
+\
+Nếu bạn xét nghiệm dương tính với COVID-19 với tư cách là người dùng COVIDSafe, nhân viên y tế của tiểu bang hoặc lãnh thổ sẽ liên hệ với bạn. Họ sẽ hỗ trợ tải lên thông tin về tiếp xúc gần của bạn một cách tự nguyện vào hệ thống lưu trữ thông tin có độ an toàn cao \
+\
+Các nhân viên y tế của tiểu bang hoặc lãnh thổ cũng có thể liên hệ với bạn nếu bạn tiếp xúc gần với một người dùng COVIDSafe khác có kết quả xét nghiệm dương tính. \
+\
+Để biết thêm thông tin, vui lòng tham khảo trang *Chủ đề Trợ giúp*";
+"data_privacy_content" = "Điều quan trọng là bạn phải đọc *chính sách bảo mật* của COVIDSafe trước khi đăng ký COVIDSafe. \
+\
+Nếu bạn dưới 16 tuổi, cha mẹ/người giám hộ của bạn cũng phải đọc *chính sách bảo mật*. \
+\
+Sử dụng COVIDSafe là hoàn toàn tự nguyện. Bạn có thể cài đặt hoặc xóa ứng dụng bất cứ lúc nào. Nếu bạn xóa COVIDSafe, *bạn cũng có thể yêu cầu xóa thông tin của mình* khỏi máy chủ bảo mật. \
+\
+Để đăng ký COVIDSafe, bạn cần nhập tên, số điện thoại di động, độ tuổi và mã bưu điện. \
+\
+Thông tin bạn gửi khi đăng ký, và thông tin về việc sử dụng COVIDSafe của bạn sẽ được thu thập và lưu trữ trên một máy chủ có độ an toàn cao. \
+\
+COVIDSafe sẽ không thu thập thông tin về vị trí của bạn. \
+\
+COVIDSafe sẽ lưu ý thời gian tiếp xúc và mã ID ẩn danh của những người dùng COVIDSafe khác mà bạn tiếp xúc. \
+\
+Những người dùng COVIDSafe khác mà bạn tiếp xúc sẽ ghi lại mã ID ẩn danh và thời gian tiếp xúc với bạn trên thiết bị của họ. \
+\
+Nếu người dùng khác xét nghiệm dương tính với COVID-19, họ có thể đăng tải thông tin tiếp xúc của họ và nhân viên y tế của tiểu bang hoặc lãnh thổ có thể liên hệ với bạn nhằm mục đích truy tìm việc tiếp xúc. \
+\
+Chi tiết đăng ký của bạn sẽ chỉ được sử dụng hoặc tiết lộ để theo dõi việc tiếp xúc và cho hoạt động đúng đắn và hợp pháp của COVIDSafe. \
+\
+Thông tin thêm có sẵn tại trang mạng của *Bộ Y tế Chính phủ Úc*. \
+\
+Xem *chính sách bảo mật* của COVIDSafe để biết thêm chi tiết về các quyền về thông tin của bạn và cách xử lý và chia sẻ thông tin đó.";
+"pin_issue" = "*Có vấn đề với việc nhận mã PIN của bạn?*";
+"upload_step_4_sub_header" = "Nếu bạn không đồng ý, thông tin về việc tiếp xúc gần của bạn sẽ không được đăng tải. \
+\
+Nếu bạn đồng ý, thông tin về việc tiếp xúc gần của bạn sẽ được đăng tải và chia sẻ với các nhân viên y tế của tiểu bang hoặc lãnh thổ cho các mục đích truy tìm tiếp xúc. \
+\
+Đọc *chính sách bảo mật* của COVIDSafe để biết thêm chi tiết.";
+"NotificationsDisabledBlurb" = "Bạn sẽ không nhận được thông báo nếu COVIDSafe không hoạt động. \nThay đổi cài đặt thông báo";
+"home_header_uploaded_on_date_ios" = "Thông tin của bạn đã được đăng tải lên %@ .";
+"home_version_number_ios" = "Phiên bản %@ , Xây dựng %@";
+"NotificationsEnabledBlurb" = "Bạn sẽ nhận được thông báo nếu COVIDSafe không hoạt động. \nThay đổi cài đặt thông báo";
+"upload_consent_button" = "Tôi đồng ý";
+"SelectedCountryTemplate" = "(+ %@ ) %@ được chọn";
+"Done" = "Hoàn tất";
+"Next" = "Tiếp theo";
+"ValidationError" = "Lỗi xác nhận";
+"EnterPhoneReVerify" = "Nhập số điện thoại của bạn để xác minh lại";
+"EnterPINSent" = "Nhập mã PIN được gửi đến %@";
+"PINWillExpire" = "Mã PIN của bạn sẽ hết hạn trong %@";
+"ReceivePinIssue" = "Có vấn đề với việc nhận mã PIN?";
+"CodeHasExpired" = "Mã của bạn đã hết hạn.";
+"InvalidOTP" = "Phải là mã gồm 6 chữ số";
+"PhoneVerificationErrorTitle" = "Lỗi xác minh số điện thoại";
+"PhoneVerificationErrorMessage" = "Vui lòng kiểm tra thông tin của bạn và thử lại.";
+"PhoneNumberFormatErrorTitle" = "Định dạng số sai";
+"PhoneNumberFormatErrorMessage" = "Vui lòng nhập số điện thoại di động.";
+"ReportAnIssue" = "Báo cáo sự cố";
+"FoundIssueWithApp" = "Phát hiện sự cố trong ứng dụng COVIDSafe?";
+"IssueDescPlaceholder" = "Hãy mô tả sự cố";
+"IssueFooter" = "Chúng tôi có thể liên lạc với bạn để biết thêm chi tiết về phản hồi của bạn. Địa chỉ email của bạn sẽ không được sử dụng cho bất kỳ mục đích nào khác.";
+"IssueThankYou" = "Cảm ơn! Chúng tôi đã nhận được phản hồi của bạn.";
+"OS2b_Item1" = "Khi bạn rời khỏi nhà, hãy mang theo điện thoại bên mình và chắc chắn rằng COVIDSafe đang hoạt động. ";
+"OS2b_Item2" = "2. Bluetooth® nên luôn giữ ở trạng thái BẬT";
+"OS2b_Item3" = "3. COVIDSafe không gửi yêu cầu ghép nối. Tìm hiểu thêm.";
+"OS2b_Item3Underline" = "Tìm hiểu thêm";
+"PairingRequestsInfo" = "COVIDSafe không gửi yêu cầu kết nối.";
+"PairingRequestsInfoUnderline" = "yêu cầu kết nối";
+"InformationUploaded" = "Thông tin của bạn đã được đăng tải lên %@ ";
+"UploadFailed" = "Đăng tải thất bại. Vui lòng thử lại sau.";
+"UploadFailedErrorMessage" = "Vui lòng thử lại sau.";
+"EmailPlaceholder" = "Nhập địa chỉ email của bạn đã địa phương hóa (bắt buộc)";
+"global_cancel_button_title" = "Hủy bỏ";
+"global_send_button_title" = "Gửi";
+"global_sending_indication_title" = "Đang gửi";
+"global_success_indication_title" = "Thành công";
+"entryPrompt_alert_title" = "Hộp Phản hồi";
+"entryPrompt_alert_message" = "Chào bạn, bạn muốn tiếp tục như thế nào?";
+"entryPrompt_newFeedback_button_title" = "Phản hồi Mới";
+"newFeedbackFlow_navigationTitle" = "Báo cáo sự cố";
+"newFeedback_deleteScreenshotConfirmation_message" = "Ảnh chụp màn hình này sẽ bị xóa vĩnh viễn.";
+"newFeedback_deleteScreenshot_actionTitle" = "Xóa ảnh chụp màn hình";
+"newFeedback_send_errorMessage" = "Báo Lỗi khi Gửi Phản hồi";
+"global_OK" = "Đồng ý";
+"global_back" = "Trở lại";
+"global_close" = "Đóng";
+"global_double_tap" = "nhấn đúp để chỉnh sửa";
+"PostcodeValidationErrorMessage" = "Vui lòng nhập mã bưu điện Úc hợp lệ.";
+"newFeedback_noMessage_errorMessage" = "Hãy đóng góp ý kiến cho chúng tôi trước khi gửi.";
+"newFeedback_invalidEmail_errorMessage" = "Vui lòng nhập địa chỉ email hợp lệ!";
+"OS1b_TopParagraph_VOLabel" = "";
+"permission_content_iOS_VOLabel" = "";
+"permission_content_iOS_2_VOLabel" = "";
+"NotificationsDisabled_VOLabel" = "";
+"NotificationsEnabled_VOLabel" = "";
+"HelpTopics_VOLabel" = "";
+"LatestNews_VOLabel" = "";
+"GetCoronaVirusApp_VOLabel" = "";
+"UploadData_VOLabel" = "";
+"ShareCovidSafe_VOLabel" = "";
+"PN_MobileNumber_VOLabel" = "";
+"PINNumber_VO_Label" = "";
+"OS2b_Item2_VOLabel" = "";
+"BluetoothOFF_VOLabel" = "";
+"BluetoothON_VOLabel" = "";
+"AllowBluetoothOFF_VOLabel" = "";
+"AllowBluetoothON_VOLabel" = "";
+"us_consent_button" = "Tôi đồng ý";
+"IntroLabel" = "Giúp ngăn chặn sự lây lan\
+và cứu mạng sống.";
+"BluetoothOFF_content" = "Bật Bluetooth® trên điện thoại của bạn. Chọn ‘Cho phép Kết nối mới’ nếu có hiển thị.";
+"under_sixteen_headline" = "Bạn cần có sự đồng ý của cha mẹ/người giám hộ để kích hoạt";
+"permission_content_iOS" = "Bật Bluetooth® để COVIDSafe hoạt động. Khi bật Thông báo, bạn nhận được các cập nhật để nhắc nhở khi COVIDSafe không hoạt động. \
+\
+ Chọn 'Kích hoạt' để bật:";
+"home_set_complete_external_link_notifications_title_iOS" = "Thông báo đã được bật";
+"dialog_uploading_message" = "Thông tin COVIDSafe của bạn hiện đang được đăng tải. \
+\
+ Vui lòng không đóng ứng dụng.";
+"dialog_error_uploading_message" = "Bị lỗi trong khi đăng tải thông tin của bạn, vui lòng thử lại.";
+"dialog_error_uploading_positive" = "Thử lại";
+"dialog_error_uploading_negative" = "Hủy bỏ";
+"share_this_app_content" = "Hãy cùng tôi ngăn chặn sự lây lan của COVID-19! Tải COVIDSafe, ứng dụng của Chính phủ Úc. # COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
+"migration_in_progress" = "COVIDSafe trong tiến trình cập nhật. \
+\
+Vui lòng đảm bảo điện thoại của bạn không bị tắt cho đến khi cập nhật hoàn tất.";
+"intro_headline" = "Cùng nhau, chúng ta có thể ngăn chặn sự lây lan của COVID-19";
+"intro_content" = "Chính phủ Úc đã phát triển COVIDSafe để giúp giữ an toàn cho cộng đồng tránh khỏi sự lây lan của coronavirus. \
+\
+COVIDSafe sẽ ghi lại một cách bảo mật các tiếp xúc của bạn với với những người dùng ứng dụng khác. Điều này sẽ cho phép các nhân viên y tế của tiểu bang và lãnh thổ liên lạc với bạn, nếu bạn đã tiếp xúc gần với người đã xét nghiệm dương tính với vi-rút. \
+\
+Cùng nhau chúng ta có thể giúp ngăn chặn sự lây lan và giữ sức khỏe.";
+"intro_button" = "Tôi muốn giúp đỡ";
+"how_it_works_headline" = "COVIDSafe hoạt động như thế nào";
+"how_it_works_button" = "Tiếp theo";
+"data_privacy_headline" = "Đăng ký và bảo mật";
+"data_privacy_button" = "Tiếp theo";
+"consent_call_for_action" = "Chọn 'Tôi đồng ý' để xác nhận đồng ý.";
+"consent_button" = "Tôi đồng ý";
+"registration_consent_headline" = "Đồng ý đăng ký";
+"registration_consent_content" = "Tôi đồng ý để Bộ Y tế Úc thu thập:";
+"registration_consent_first_paragraph" = "Thông tin đăng ký của tôi giúp các nhân viên y tế tiểu bang và lãnh thổ theo dõi sự tiếp xúc.";
+"registration_consent_second_paragraph" = "Thông tin tiếp xúc của tôi từ những người sử dụng COVIDSafe khác sau khi họ xét nghiệm dương tính với COVID-19.";
+"personal_details_headline" = "Nhập thông tin cá nhân của bạn";
+"personal_details_name_title" = "Tên đầy đủ";
+"personal_details_name_error_prompt" = "Vui lòng nhập tên đầy đủ của bạn.";
+"personal_details_age_title" = "Độ tuổi (chọn)";
+"personal_details_age_content_description" = "Chọn độ tuổi";
+"personal_details_age_error_prompt" = "Vui lòng chọn độ tuổi của bạn.";
+"personal_details_post_code" = "Mã bưu điện ở Úc";
+"personal_details_post_code_error_prompt" = "Số mã bưu điện Úc phải gồm 4 chữ số.";
+"personal_details_dialog_ok" = "Chọn";
+"personal_details_button" = "Tiếp tục";
+"under_sixteen_content" = "Tôi xác nhận cha mẹ hoặc người giám hộ của tôi đồng ý cho Bộ Y tế Úc thu thập:";
+"under_sixteen_first_paragraph" = "Thông tin đăng ký của tôi giúp các nhân viên y tế tiểu bang và lãnh thổ theo dõi sự tiếp xúc.";
+"under_sixteen_second_paragraph" = "Thông tin tiếp xúc của tôi từ những người sử dụng COVIDSafe khác sau khi họ xét nghiệm dương tính với COVID-19.";
+"select_country_or_region" = "Chọn quốc gia hoặc khu vực";
+"enter_number_headline" = "Nhập sô điện thoại di động của bạn";
+"invalid_norfolk_island_phone_number_error_prompt" = "Số điện thoại di động ở Đảo Norfolk chứa từ 5 đến 6 chữ số.";
+"invalid_australian_phone_number_error_prompt" = "Số điện thoại di động ở Úc chứa tối đa 10 chữ số.";
+"enter_number_content" = "Chúng tôi sẽ gửi cho bạn mã PIN gồm 6 chữ số để xác minh số điện thoại của bạn.";
+"enter_number_relative" = "Đăng ký dùm bạn bè hoặc người thân? \
+\
+Họ cần phải đăng ký bằng máy điện thoại và số điện thoại của riêng họ để COVIDSafe có thể hoạt động cho họ.";
+"enter_number_button" = "Nhận mã PIN";
+"options_for_australia" = "Tùy chọn cho Úc";
+"country_region_name_af" = "Afghanistan";
+"country_region_name_al" = "Albania";
+"country_region_name_dz" = "Algeria";
+"country_region_name_ad" = "Andorra";
+"country_region_name_ao" = "Angola";
+"country_region_name_ag" = "Antigua và Barbuda";
+"country_region_name_ai" = "Anguilla";
+"country_region_name_ar" = "Argentina";
+"country_region_name_am" = "Armenia";
+"country_region_name_aw" = "Aruba";
+"country_region_name_au" = "Úc";
+"country_region_name_at" = "Áo";
+"country_region_name_az" = "Azerbaijan";
+"country_region_name_bs" = "Bahamas";
+"country_region_name_bh" = "Bahrain";
+"country_region_name_bd" = "Bangladesh";
+"country_region_name_bb" = "Barbados";
+"country_region_name_by" = "Belarus";
+"country_region_name_be" = "Bỉ";
+"country_region_name_bz" = "Belize";
+"country_region_name_bj" = "Benin";
+"country_region_name_bm" = "Bermuda";
+"country_region_name_bt" = "Bhutan";
+"country_region_name_bo" = "Bolivia";
+"country_region_name_ba" = "Bosnia và Herzegovina";
+"country_region_name_bw" = "Botswana";
+"country_region_name_br" = "Brazil";
+"country_region_name_bn" = "Brunei";
+"country_region_name_bg" = "Bulgaria";
+"country_region_name_bf" = "Burkina Faso";
+"country_region_name_bi" = "Burundi";
+"country_region_name_kh" = "Campuchia";
+"country_region_name_cm" = "Cameroon";
+"country_region_name_ca" = "Canada";
+"country_region_name_cv" = "Cape Verde";
+"country_region_name_ky" = "Quần đảo Cayman";
+"country_region_name_cf" = "Cộng hòa Trung Phi";
+"country_region_name_td" = "Chad";
+"country_region_name_cl" = "Chi Lê";
+"country_region_name_cn" = "Trung Quốc";
+"country_region_name_co" = "Colombia";
+"country_region_name_km" = "Comoros";
+"country_region_name_ck" = "Quần đảo Cook";
+"country_region_name_cr" = "Costa Rica";
+"country_region_name_hr" = "Croatia";
+"country_region_name_cy" = "Síp";
+"country_region_name_cz" = "Cộng hòa Séc";
+"country_region_name_cd" = "Cộng hòa dân chủ Congo";
+"country_region_name_dk" = "Đan mạch";
+"country_region_name_dj" = "Djibouti";
+"country_region_name_dm" = "Dominica";
+"country_region_name_do" = "Cộng hòa Dominica";
+"country_region_name_ec" = "Ecuador";
+"country_region_name_eg" = "Ai Cập";
+"country_region_name_gq" = "Guinea Xích đạo";
+"country_region_name_sv" = "El Salvador";
+"country_region_name_ee" = "Estonia";
+"country_region_name_et" = "Ethiopia";
+"country_region_name_fo" = "Quần đảo Faroe";
+"country_region_name_fj" = "Fiji";
+"country_region_name_fi" = "Phần Lan";
+"country_region_name_fr" = "Pháp";
+"country_region_name_gf" = "Guiana thuộc Pháp";
+"country_region_name_ga" = "Gabon";
+"country_region_name_gm" = "Gambia";
+"country_region_name_ge" = "Georgia";
+"country_region_name_de" = "Đức";
+"country_region_name_gh" = "Ghana";
+"country_region_name_gi" = "Gibraltar";
+"country_region_name_gr" = "Hy Lạp";
+"country_region_name_gl" = "Greenland";
+"country_region_name_gd" = "Grenada";
+"country_region_name_gp" = "Guadeloupe";
+"country_region_name_gu" = "Guam";
+"country_region_name_gt" = "Guatemala";
+"country_region_name_gn" = "Guinea";
+"country_region_name_gw" = "Guinea-Bissau";
+"country_region_name_gy" = "Guyana";
+"country_region_name_ht" = "Haiti";
+"country_region_name_hn" = "Honduras";
+"country_region_name_hk" = "Hồng Kông";
+"country_region_name_hu" = "Hungary";
+"country_region_name_is" = "Iceland";
+"country_region_name_in" = "Ấn Độ";
+"country_region_name_id" = "Indonesia";
+"country_region_name_iq" = "Iraq";
+"country_region_name_ie" = "Ái Nhĩ Lan";
+"country_region_name_il" = "Israel";
+"country_region_name_it" = "Ý";
+"country_region_name_ci" = "Bờ biển Ngà";
+"country_region_name_jm" = "Jamaica";
+"country_region_name_jp" = "Nhật Bản";
+"country_region_name_jo" = "Jordan";
+"country_region_name_kz" = "Kazakhstan";
+"country_region_name_ke" = "Kenya";
+"country_region_name_ki" = "Kiribati";
+"country_region_name_kw" = "Kuwait";
+"country_region_name_kg" = "Kyrgyzstan";
+"country_region_name_la" = "Lào";
+"country_region_name_lv" = "Latvia";
+"country_region_name_lb" = "Lebanon";
+"country_region_name_ls" = "Lesotho";
+"country_region_name_lr" = "Liberia";
+"country_region_name_ly" = "Libya";
+"country_region_name_li" = "Liechtenstein";
+"country_region_name_lt" = "Lithuania";
+"country_region_name_lu" = "Luxembourg";
+"country_region_name_mo" = "Ma Cao";
+"country_region_name_mk" = "Cộng hoà Macedonia trực thuộc Nam Tư cũ ";
+"country_region_name_mg" = "Madagascar";
+"country_region_name_mw" = "Malawi";
+"country_region_name_my" = "Mã Lai";
+"country_region_name_mv" = "Maldives";
+"country_region_name_ml" = "Mali";
+"country_region_name_mt" = "Malta";
+"country_region_name_mq" = "Martinique";
+"country_region_name_mr" = "Mauritania";
+"country_region_name_mu" = "Mauritius";
+"country_region_name_mx" = "Mexico";
+"country_region_name_md" = "Moldova";
+"country_region_name_mc" = "Monaco";
+"country_region_name_mn" = "Mông Cổ";
+"country_region_name_me" = "Montenegro";
+"country_region_name_ms" = "Montserrat";
+"country_region_name_ma" = "Ma-rốc";
+"country_region_name_mz" = "Mozambique";
+"country_region_name_mm" = "Myanmar";
+"country_region_name_na" = "Namibia";
+"country_region_name_np" = "Nepal";
+"country_region_name_nl" = "Hà lan";
+"country_region_name_an" = "Antilles Hà Lan";
+"country_region_name_nc" = "New Caledonia";
+"country_region_name_nz" = "New Zealand";
+"country_region_name_ni" = "Nicaragua";
+"country_region_name_ne" = "Niger";
+"country_region_name_ng" = "Nigeria";
+"country_region_name_no" = "Na Uy";
+"country_region_name_om" = "Oman";
+"country_region_name_pk" = "Pakistan";
+"country_region_name_pw" = "Palau";
+"country_region_name_ps" = "Lãnh thổ Palestine";
+"country_region_name_pa" = "Panama";
+"country_region_name_pg" = "Papua New Guinea";
+"country_region_name_py" = "Paraguay";
+"country_region_name_pe" = "Peru";
+"country_region_name_ph" = "Philippine";
+"country_region_name_pl" = "Ba Lan";
+"country_region_name_pt" = "Bồ Đào Nha";
+"country_region_name_pr" = "Puerto Rico";
+"country_region_name_qa" = "Qatar";
+"country_region_name_cg" = "Cộng hòa Congo";
+"country_region_name_re" = "Đảo Reunion";
+"country_region_name_ro" = "Rumani";
+"country_region_name_ru" = "Nga";
+"country_region_name_rw" = "Rwanda";
+"country_region_name_kn" = "Saint Kitts và Nevis";
+"country_region_name_lc" = "Saint Lucia";
+"country_region_name_vc" = "Saint Vincent và Grenadines";
+"country_region_name_ws" = "Samoa";
+"country_region_name_st" = "Sao Tome và Principe";
+"country_region_name_sa" = "Ả Rập Saudi";
+"country_region_name_sn" = "Senegal";
+"country_region_name_rs" = "Serbia";
+"country_region_name_sc" = "Seychelles";
+"country_region_name_sl" = "Sierra Leone";
+"country_region_name_sg" = "Singapore";
+"country_region_name_sk" = "Slovakia";
+"country_region_name_si" = "Slovenia";
+"country_region_name_sb" = "Quần đảo Solomon";
+"country_region_name_so" = "Somalia";
+"country_region_name_za" = "Nam Phi";
+"country_region_name_kr" = "Hàn quốc";
+"country_region_name_ss" = "Nam Sudan";
+"country_region_name_es" = "Tây Ban Nha";
+"country_region_name_lk" = "Sri Lanka";
+"country_region_name_sr" = "Suriname";
+"country_region_name_sz" = "Swaziland";
+"country_region_name_se" = "Thụy Điển";
+"country_region_name_ch" = "Thụy sĩ";
+"country_region_name_tw" = "Đài Loan";
+"country_region_name_tj" = "Tajikistan";
+"country_region_name_tz" = "Tanzania";
+"country_region_name_th" = "Thái lan";
+"country_region_name_tg" = "Togo";
+"country_region_name_tl" = "Đông Timor";
+"country_region_name_to" = "Tonga";
+"country_region_name_tt" = "Trinidad và Tobago";
+"country_region_name_tn" = "Tunisia";
+"country_region_name_tr" = "Thổ nhĩ kỳ";
+"country_region_name_tm" = "Turkmenistan";
+"country_region_name_tc" = "Quần đảo Turks và Caicos";
+"country_region_name_ug" = "Uganda";
+"country_region_name_ua" = "Ukraine";
+"country_region_name_ae" = "Các Tiểu Vương Quốc Ả Rập Thống Nhất";
+"country_region_name_gb" = "Vương quốc Anh";
+"country_region_name_us" = "Hoa Kỳ";
+"country_region_name_uy" = "Uruguay";
+"country_region_name_uz" = "Uzbekistan";
+"country_region_name_vu" = "Vanuatu";
+"country_region_name_ve" = "Venezuela";
+"country_region_name_vn" = "Việt Nam";
+"country_region_name_vg" = "Quần đảo Virgin, Anh";
+"country_region_name_vi" = "Quần đảo Virgin, Hoa Kỳ";
+"country_region_name_ye" = "Yemen";
+"country_region_name_zm" = "Zambia";
+"country_region_name_zw" = "Zimbabwe";
+"enter_pin_headline" = "Nhập mã PIN được gửi tới %s %s";
+"enter_pin_wrong_number" = "Số điện thoại này có sai không?";
+"enter_pin_timer_expire" = "MÃ PIN của bạn sẽ hết hạn trong &#160;";
+"wrong_ping_number" = "Nhập sai mã PIN";
+"enter_pin_resend_pin" = "Gửi lại mã PIN";
+"enter_pin_button" = "Xác minh";
+"permission_headline" = "Cài đặt ứng dụng";
+"permission_button" = "Kích hoạt";
+"permission_success_headline" = "Bạn đã đăng ký thành công";
+"permission_success_warning" = "Bật gửi thông báo của COVIDSafe để chúng tôi có thể nhanh chóng thông báo cho bạn nếu ứng dụng không hoạt động đúng cách.";
+"permission_success_button" = "Tiếp tục";
+"home_header_active_title" = "COVIDSafe đang hoạt động.";
+"home_header_active_no_action_required" = "Không cần làm gì thêm.";
+"home_header_inactive_title" = "COVIDSafe không hoạt động.";
+"home_header_inactive_check_your_permissions" = "Kiểm tra cài đặt của bạn.";
+"home_setup_help" = "Trợ giúp";
+"home_app_permission_status_title" = "Kiểm tra cài đặt của bạn";
+"home_app_permission_status_subtitle" = "COVIDSafe sẽ không hoạt động nếu không có cài đặt phù hợp.";
+"home_data_uploaded_message" = "Giúp ngăn chặn sự lây lan của COVID-19 và theo dõi các triệu chứng của bạn.";
+"home_set_complete_external_link_share_title" = "Chia sẻ COVIDSafe";
+"home_set_complete_external_link_share_content" = "Mời những người khác giúp. Cùng nhau, chúng ta mạnh mẽ hơn.";
+"home_set_complete_external_link_news_title" = "Tin tức và cập nhật mới nhất";
+"home_set_complete_external_link_news_url" = "https://www.australia.gov.au";
+"home_set_complete_external_link_self_isolation_register_url" = "https://covid-form.service.gov.au";
+"home_set_complete_external_link_news_content" = "Vào aus.gov.au để biết tin tức mới nhất về Coronavirus.";
+"home_set_complete_external_link_app_title" = "Tải ứng dụng Coronavirus";
+"home_set_complete_external_link_app_content" = "Tải xuống ứng dụng của chính phủ để biết những tin tức và lời khuyên mới nhất.";
+"home_set_complete_external_link_been_contacted_title" = "Nhân viên y tế có liên lạc với bạn không?";
+"home_set_complete_external_link_been_contacted_content" = "Bạn chỉ có thể đăng tải thông tin của mình nếu bạn được xét nghiệm có kết quả dương tính.";
+"home_set_complete_external_link_help_topics_title" = "Các chủ đề trợ giúp";
+"home_set_complete_external_link_help_topics_content" = "Nếu bạn có sự cố hoặc thắc mắc về ứng dụng.";
+"action_report_an_issue" = "Báo cáo sự cố";
+"upload_answer_yes" = "Có";
+"upload_answer_no" = "Không";
+"upload_step_1_header" = "Nhân viên y tế có yêu cầu bạn đăng tải thông tin của bạn không?";
+"upload_step_1_body" = "Chỉ khi bạn xét nghiệm dương tính với COVID-19, nhân viên y tế của tiểu bang hoặc lãnh thổ sẽ liên lạc với bạn để hỗ trợ đăng tải thông tin của bạn một cách tự nguyện. \
+\
+Khi nhấn 'Có', bạn cần phải đồng ý đăng tải thông tin của mình.";
+"upload_step_4_header" = "Đăng tải sự đồng ý";
+"upload_step_verify_pin_header" = "Đăng tải thông tin của bạn";
+"upload_step_verify_pin_sub_header" = "Nhân viên y tế của tiểu bang hoặc lãnh thổ sẽ gửi mã PIN qua tin nhắn đến thiết bị di động của bạn. Nhập mã PIN vào đây để đăng tải thông tin của bạn.";
+"action_verify_upload_pin" = "Đăng tải thông tin của tôi";
+"action_verify_invalid_pin" = "MÃ PIN không hợp lệ, vui lòng yêu cầu nhân viên y tế gửi cho bạn một mã PIN khác.";
+"upload_finished_header" = "Cảm ơn bạn đã giúp ngăn chặn sự lây lan của COVID-19!";
+"upload_finished_sub_header" = "Bạn đã đăng tải thành công thông tin của mình vào hệ thống lưu trữ bảo mật cao của COVIDSafe. \
+\
+Các nhân viên y tế của tiểu bang hoặc lãnh thổ sẽ thông báo cho những người sử dụng COVIDSafe khác khi tiếp xúc gần với bạn. Danh tính của bạn sẽ được ẩn danh đối với người sử dụng khác.";
+"action_continue" = "Tiếp tục";
+"action_upload_done" = "Tiếp tục";
+"upload_failed" = "Đăng tải thất bại";
+"country_region_name_au2" = "Đảo Norfolk";
+"country_region_name_cu" = "Cuba";
+"country_region_name_cw" = "Curaçao";
+"country_region_name_ir" = "Iran";
+"country_region_name_sd" = "Sudan";
+"under_sixteen_registration_consent_first_paragraph" = "Thông tin đăng ký của tôi để cho phép nhân viên y tế của tiểu bang và lãnh thổ theo dõi việc tiếp xúc.";
+"under-sixteen_consent_call_for_action" = "Chọn 'Tôi đồng ý' để xác nhận sự đồng ý.";
+"Select_country_or_region_headline" = "Chọn quốc gia hoặc khu vực";
+"Enter_your_mobile_number_label" = "Nhập sô điện thoại di động của bạn";
+"norfolk_hint" = "Ví dụ: 51234";
+"permission_content_iOS_2" = "1. Bluetooth® \
+2. Thông báo \
+\
+ COVIDSafe không gửi yêu cầu kết nối.";
+"NotificationsBlurbLink" = "Thay đổi cài đặt thông báo";
+"PN_BluetoothStatusTitle" = "COVIDSafe không hoạt động";
+"PN_BluetoothStatusBody" = "Bật Bluetooth® để đảm bảo COVIDsafe hoạt động trước khi bạn rời khỏi nhà và khi ở những nơi công cộng.";
+"PN_ReminderTitle" = "Không phát hiện có tiếp xúc trong 48 giờ";
+"PN_ReminderBody" = "Mở COVIDSafe để đảm bảo ứng dụng đang hoạt động";
+"AllowBluetoothON" = "Truy cập Bluetooth®: BẬT";
+"AllowBluetoothOFF" = "Truy cập Bluetooth®: TẮT";
+"allow_bluetooth_call" = "Cho phép COVIDSafe truy cập vào Bluetooth®";
+"home_set_complete_external_link_notifications_title_iOS_off" = "Thông báo bị tắt";
+"home_set_complete_external_link_notifications_content_iOS_off" = "Bạn sẽ không nhận được bất kỳ thông báo nào nếu COVIDSafe không được kích hoạt.";
+"BluetoothOFF" = "Bluetooth®: TẮT";
+"BluetoothON" = "Bluetooth®: BẬT";

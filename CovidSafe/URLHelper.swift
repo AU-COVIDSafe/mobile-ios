@@ -9,10 +9,19 @@ import Foundation
 
 struct URLHelper {
     static func getAustralianNumberURL() -> String {
-        return "https://www.covidsafe.gov.au/help-topics.html#verify-mobile-number-pin"
+        return "\(getHelpURL())#verify-mobile-number-pin"
     }
     static func getHelpURL() -> String {
-        return "https://www.covidsafe.gov.au/help-topics.html"
+        let localeId = Locale.current.identifier
+        let supportedLocales = Bundle.main.localizations
+        let matches = supportedLocales.filter { (supportedLocale) -> Bool in
+            return localeId.starts(with: supportedLocale)
+        }
+        guard let localeCode = matches.first, localeCode != "en" else {
+            return "https://www.covidsafe.gov.au/help-topics.html"
+        }
+        
+        return "https://www.covidsafe.gov.au/help-topics/\(localeCode.lowercased()).html"
     }
     
 }

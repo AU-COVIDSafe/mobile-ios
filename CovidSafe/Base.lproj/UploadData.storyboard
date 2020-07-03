@@ -36,12 +36,14 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQj-UW-fvt" userLabel="BackBtn">
                                                 <rect key="frame" x="16" y="16" width="44" height="44"/>
-                                                <accessibility key="accessibilityConfiguration" label="back"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="HWn-in-9mc"/>
                                                     <constraint firstAttribute="width" constant="44" id="czu-6G-Za0"/>
                                                 </constraints>
                                                 <state key="normal" image="arrow-left"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="global_back"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="backBtnTapped:" destination="a6e-KY-ZKO" eventType="touchUpInside" id="5hu-by-Bp7"/>
                                                 </connections>
@@ -55,7 +57,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UD2_Title"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="upload_step_verify_pin_header"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ft1-PF-Epb">
@@ -65,7 +67,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UD2_Intro"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="upload_step_verify_pin_sub_header"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mKA-1q-WgQ" customClass="CodeInputView" customModule="COVIDSafe" customModuleProvider="target">
@@ -74,6 +76,9 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="54" id="GTp-b5-upv"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="PINNumber_VO_Label"/>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid PIN, please ask the health official to send you another PIN." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkm-8z-rno">
                                                 <rect key="frame" x="32" y="270" width="311" height="42.5"/>
@@ -122,7 +127,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UD2_Button"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="action_verify_upload_pin"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="uploadDataBtnTapped:" destination="a6e-KY-ZKO" eventType="touchUpInside" id="njp-EI-wJ9"/>
@@ -132,10 +137,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vMG-6j-hyZ">
-                                        <rect key="frame" x="32" y="145" width="311" height="377.5"/>
+                                        <rect key="frame" x="32" y="10" width="311" height="647"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKh-zc-OXM">
-                                                <rect key="frame" x="0.0" y="291" width="311" height="86.5"/>
+                                            <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XWM-sx-BWy">
+                                                <rect key="frame" x="40" y="0.0" width="231" height="231"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="XWM-sx-BWy" secondAttribute="height" multiplier="1:1" id="NfU-eM-0d0"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKh-zc-OXM" userLabel="Your COVIDSafe information is currently being uploaded.   Please do not close the app.">
+                                                <rect key="frame" x="0.0" y="291" width="311" height="356"/>
                                                 <string key="text">Your COVIDSafe information is currently being uploaded. 
 
 Please do not close the app.</string>
@@ -143,19 +155,13 @@ Please do not close the app.</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UploadingInfo"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="dialog_uploading_message"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWM-sx-BWy">
-                                                <rect key="frame" x="40" y="0.0" width="231" height="231"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="XWM-sx-BWy" secondAttribute="height" multiplier="1:1" id="NfU-eM-0d0"/>
-                                                </constraints>
-                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="XWM-sx-BWy" firstAttribute="centerX" secondItem="vMG-6j-hyZ" secondAttribute="centerX" id="E9b-y6-b1l"/>
                                             <constraint firstItem="uKh-zc-OXM" firstAttribute="top" secondItem="XWM-sx-BWy" secondAttribute="bottom" constant="60" id="EDH-i4-RrE"/>
                                             <constraint firstAttribute="bottom" secondItem="uKh-zc-OXM" secondAttribute="bottom" id="FKi-WZ-gP4"/>
                                             <constraint firstItem="XWM-sx-BWy" firstAttribute="top" secondItem="vMG-6j-hyZ" secondAttribute="top" id="JE9-cl-owJ"/>
@@ -170,7 +176,10 @@ Please do not close the app.</string>
                                 <constraints>
                                     <constraint firstItem="vMG-6j-hyZ" firstAttribute="leading" secondItem="EVS-5h-GNM" secondAttribute="leading" constant="32" id="6z0-xQ-WH7"/>
                                     <constraint firstAttribute="trailing" secondItem="vMG-6j-hyZ" secondAttribute="trailing" constant="32" id="Ckv-Ov-e4B"/>
+                                    <constraint firstItem="vMG-6j-hyZ" firstAttribute="top" secondItem="EVS-5h-GNM" secondAttribute="top" constant="10" id="KUy-h1-vQv"/>
                                     <constraint firstItem="vMG-6j-hyZ" firstAttribute="centerY" secondItem="EVS-5h-GNM" secondAttribute="centerY" id="ZMq-KH-4TZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="vMG-6j-hyZ" secondAttribute="bottom" constant="10" id="bg0-8Z-dSU"/>
+                                    <constraint firstItem="vMG-6j-hyZ" firstAttribute="centerX" secondItem="EVS-5h-GNM" secondAttribute="centerX" id="wi1-CQ-gdX"/>
                                 </constraints>
                             </view>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="2tM-Ke-llF">
@@ -205,6 +214,10 @@ Please do not close the app.</string>
                     <navigationItem key="navigationItem" id="xKw-Fy-u05"/>
                     <connections>
                         <outlet property="activityIndicator" destination="2tM-Ke-llF" id="e6A-pj-Ow4"/>
+                        <outlet property="animationLeadingConstraint" destination="TMw-Bo-PBk" id="8sT-W0-WQl"/>
+                        <outlet property="animationTrailingConstraint" destination="q4o-HU-EKM" id="JRC-BO-tf8"/>
+                        <outlet property="centredContainerViewBottomConstraint" destination="bg0-8Z-dSU" id="Gd2-To-vAq"/>
+                        <outlet property="centredContainerViewTopConstraint" destination="KUy-h1-vQv" id="SGe-oL-3sS"/>
                         <outlet property="codeInputView" destination="mKA-1q-WgQ" id="HZ0-Cw-z4R"/>
                         <outlet property="scrollView" destination="uPH-Oq-UZ8" id="mSr-8A-2sx"/>
                         <outlet property="uploadAnimatedviewContainer" destination="XWM-sx-BWy" id="d6h-as-ti9"/>
@@ -227,19 +240,6 @@ Please do not close the app.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WvG-1T-uDR" userLabel="BackBtn">
-                                <rect key="frame" x="315" y="16" width="44" height="44"/>
-                                <accessibility key="accessibilityConfiguration" label="Close"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="Nrc-LG-i61"/>
-                                    <constraint firstAttribute="width" constant="44" id="SvQ-oz-VvC"/>
-                                </constraints>
-                                <state key="normal" image="closeButton"/>
-                                <connections>
-                                    <action selector="backBtnTapped:" destination="a6e-KY-ZKO" eventType="touchUpInside" id="awF-do-t5Z"/>
-                                    <action selector="onBackTapped:" destination="Bpf-Xp-F3m" eventType="touchUpInside" id="E0w-I8-k59"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkA-4k-if8">
                                 <rect key="frame" x="32" y="103" width="311" height="461.5"/>
                                 <subviews>
@@ -249,13 +249,13 @@ Please do not close the app.</string>
                                             <constraint firstAttribute="width" secondItem="cih-JQ-a0F" secondAttribute="height" multiplier="1:1" id="Kfm-4r-ACZ"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An error occurred while uploading your information, please try again." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgG-df-SWA">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="An error occurred while uploading your information, please try again." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgG-df-SWA">
                                         <rect key="frame" x="0.0" y="291" width="311" height="42.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDE_Message"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="dialog_error_uploading_message"/>
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEL-Fh-3RO" customClass="GradientButton" customModule="COVIDSafe" customModuleProvider="target">
@@ -270,7 +270,7 @@ Please do not close the app.</string>
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDE_TryAgain"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="dialog_error_uploading_positive"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="onBackTapped:" destination="Bpf-Xp-F3m" eventType="touchUpInside" id="WS1-R8-wUd"/>
@@ -289,7 +289,7 @@ Please do not close the app.</string>
                                             <color key="titleColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDE_Cancel"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="dialog_error_uploading_negative"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="onBackTapped:" destination="Bpf-Xp-F3m" eventType="touchUpInside" id="zlB-kb-MRy"/>
@@ -301,10 +301,11 @@ Please do not close the app.</string>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="d3A-71-AFA" secondAttribute="bottom" id="0kq-IZ-9kp"/>
                                     <constraint firstItem="d3A-71-AFA" firstAttribute="leading" secondItem="hkA-4k-if8" secondAttribute="leading" id="2gf-9T-Bcp"/>
-                                    <constraint firstItem="cih-JQ-a0F" firstAttribute="leading" secondItem="hkA-4k-if8" secondAttribute="leading" constant="40" id="B0Y-Of-3z2"/>
+                                    <constraint firstItem="cih-JQ-a0F" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hkA-4k-if8" secondAttribute="leading" constant="40" id="B0Y-Of-3z2"/>
                                     <constraint firstItem="d3A-71-AFA" firstAttribute="width" secondItem="sEL-Fh-3RO" secondAttribute="width" id="HKX-7a-Yjf"/>
-                                    <constraint firstAttribute="trailing" secondItem="cih-JQ-a0F" secondAttribute="trailing" constant="40" id="HUs-UB-zlq"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cih-JQ-a0F" secondAttribute="trailing" constant="40" id="HUs-UB-zlq"/>
                                     <constraint firstItem="sEL-Fh-3RO" firstAttribute="top" secondItem="JgG-df-SWA" secondAttribute="bottom" constant="24" id="IU0-Fy-bBp"/>
+                                    <constraint firstItem="cih-JQ-a0F" firstAttribute="centerX" secondItem="hkA-4k-if8" secondAttribute="centerX" id="L5V-gh-aJc"/>
                                     <constraint firstItem="JgG-df-SWA" firstAttribute="leading" secondItem="hkA-4k-if8" secondAttribute="leading" id="bab-pj-qEB"/>
                                     <constraint firstItem="JgG-df-SWA" firstAttribute="top" secondItem="cih-JQ-a0F" secondAttribute="bottom" constant="60" id="bhV-4F-gJx"/>
                                     <constraint firstAttribute="trailing" secondItem="d3A-71-AFA" secondAttribute="trailing" id="h4z-wY-286"/>
@@ -315,10 +316,27 @@ Please do not close the app.</string>
                                     <constraint firstItem="sEL-Fh-3RO" firstAttribute="leading" secondItem="hkA-4k-if8" secondAttribute="leading" id="xrb-71-bmV"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WvG-1T-uDR" userLabel="BackBtn">
+                                <rect key="frame" x="315" y="16" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Nrc-LG-i61"/>
+                                    <constraint firstAttribute="width" constant="44" id="SvQ-oz-VvC"/>
+                                </constraints>
+                                <state key="normal" image="closeButton"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="global_close"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backBtnTapped:" destination="a6e-KY-ZKO" eventType="touchUpInside" id="awF-do-t5Z"/>
+                                    <action selector="onBackTapped:" destination="Bpf-Xp-F3m" eventType="touchUpInside" id="E0w-I8-k59"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="S4G-Xv-591" firstAttribute="trailing" secondItem="WvG-1T-uDR" secondAttribute="trailing" constant="16" id="0Pj-7Q-qP7"/>
+                            <constraint firstItem="S4G-Xv-591" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hkA-4k-if8" secondAttribute="bottom" constant="10" id="0bh-Om-5QL"/>
+                            <constraint firstItem="hkA-4k-if8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="WvG-1T-uDR" secondAttribute="top" constant="10" id="Hka-wQ-VSZ"/>
                             <constraint firstItem="hkA-4k-if8" firstAttribute="centerX" secondItem="lGH-hw-Ygd" secondAttribute="centerX" id="WXZ-hM-vxF"/>
                             <constraint firstItem="WvG-1T-uDR" firstAttribute="top" secondItem="S4G-Xv-591" secondAttribute="top" constant="16" id="ayC-0V-3wY"/>
                             <constraint firstItem="hkA-4k-if8" firstAttribute="leading" secondItem="lGH-hw-Ygd" secondAttribute="leading" constant="32" id="feM-Bf-uXJ"/>
@@ -343,8 +361,8 @@ Please do not close the app.</string>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PeD-lV-HtW">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="579"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BpB-Za-qba" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="579"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BpB-Za-qba" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="577.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rvr-ky-7ly">
                                                 <rect key="frame" x="16" y="16" width="44" height="44"/>
@@ -354,6 +372,9 @@ Please do not close the app.</string>
                                                     <constraint firstAttribute="width" constant="44" id="r0m-BO-V14"/>
                                                 </constraints>
                                                 <state key="normal" image="arrow-left"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="global_back"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="onBackTapped:" destination="HPs-l8-CC5" eventType="touchUpInside" id="TcZ-u0-qug"/>
                                                 </connections>
@@ -364,7 +385,7 @@ Please do not close the app.</string>
                                                     <constraint firstAttribute="width" secondItem="E3m-3P-jjw" secondAttribute="height" multiplier="311:188" id="5OB-nO-g1C"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is a health official asking you to upload your information?" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGP-gN-IjT">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is a health official asking you to upload your information?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGP-gN-IjT">
                                                 <rect key="frame" x="32" y="268" width="311" height="101.5"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
@@ -373,7 +394,7 @@ Please do not close the app.</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDP_Title"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="upload_step_1_header"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" delaysContentTouches="NO" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tqv-D9-PS3">
@@ -386,7 +407,7 @@ Once you press ‘Yes’ you’ll need to provide consent to upload your informa
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDP_Content"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="upload_step_1_body"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textView>
                                         </subviews>
@@ -394,6 +415,7 @@ Once you press ‘Yes’ you’ll need to provide consent to upload your informa
                                         <accessibility key="accessibilityConfiguration" label="ContentView"/>
                                         <constraints>
                                             <constraint firstItem="Rvr-ky-7ly" firstAttribute="leading" secondItem="BpB-Za-qba" secondAttribute="leading" constant="16" id="1n7-7C-IKv"/>
+                                            <constraint firstItem="YGP-gN-IjT" firstAttribute="top" secondItem="Rvr-ky-7ly" secondAttribute="bottom" id="54A-a2-nTD"/>
                                             <constraint firstAttribute="bottom" secondItem="tqv-D9-PS3" secondAttribute="bottom" id="9S8-g9-xFW"/>
                                             <constraint firstItem="YGP-gN-IjT" firstAttribute="leading" secondItem="BpB-Za-qba" secondAttribute="leading" constant="32" id="B3P-bO-KxE"/>
                                             <constraint firstItem="E3m-3P-jjw" firstAttribute="centerX" secondItem="BpB-Za-qba" secondAttribute="centerX" id="BY2-nO-iDZ"/>
@@ -405,6 +427,27 @@ Once you press ‘Yes’ you’ll need to provide consent to upload your informa
                                             <constraint firstItem="YGP-gN-IjT" firstAttribute="trailing" secondItem="tqv-D9-PS3" secondAttribute="trailing" id="n9p-TS-l4Y"/>
                                             <constraint firstAttribute="trailing" secondItem="YGP-gN-IjT" secondAttribute="trailing" constant="32" id="wW2-o4-MOj"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="54A-a2-nTD"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <mask key="subviews">
+                                                <exclude reference="E3m-3P-jjw"/>
+                                            </mask>
+                                            <mask key="constraints">
+                                                <include reference="54A-a2-nTD"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <mask key="subviews">
+                                                <exclude reference="E3m-3P-jjw"/>
+                                            </mask>
+                                            <mask key="constraints">
+                                                <include reference="54A-a2-nTD"/>
+                                            </mask>
+                                        </variation>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -430,7 +473,7 @@ Once you press ‘Yes’ you’ll need to provide consent to upload your informa
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDP_NoButton"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="upload_answer_no"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onBackTapped:" destination="HPs-l8-CC5" eventType="touchUpInside" id="nta-yE-3yq"/>
@@ -451,7 +494,7 @@ Once you press ‘Yes’ you’ll need to provide consent to upload your informa
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDP_YesButton"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="upload_answer_yes"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="GKP-u6-wgj" kind="show" id="Qa7-iF-RFi"/>
@@ -493,7 +536,7 @@ Once you press ‘Yes’ you’ll need to provide consent to upload your informa
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdE-ta-9is" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="485.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Consent" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecY-RE-ssa">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Consent" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecY-RE-ssa">
                                                 <rect key="frame" x="32" y="56" width="311" height="33.5"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
@@ -502,7 +545,7 @@ Once you press ‘Yes’ you’ll need to provide consent to upload your informa
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDC_Title"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="upload_step_4_header"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" delaysContentTouches="NO" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ryL-BN-XeS">
@@ -512,22 +555,26 @@ Once you press ‘Yes’ you’ll need to provide consent to upload your informa
 
 If you consent, your close contact information will be uploaded and shared with state or territory health officials for contact tracing purposes. 
 
-Read the COVIDSafe *privacy policy* for further details.  Select 'I agree' to confirm consent.</string>
+Read the COVIDSafe *privacy policy* for further details.
+
+Select 'I agree' to confirm consent.</string>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDC_Content"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="upload_step_4_sub_header"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1v-Px-kY5">
                                                 <rect key="frame" x="16" y="16" width="44" height="44"/>
-                                                <accessibility key="accessibilityConfiguration" label="back"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="ufi-VP-bXc"/>
                                                     <constraint firstAttribute="width" constant="44" id="xGv-7N-ugt"/>
                                                 </constraints>
                                                 <state key="normal" image="arrow-left"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="global_back"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="onBackTapped:" destination="GKP-u6-wgj" eventType="touchUpInside" id="9we-7d-25R"/>
                                                 </connections>
@@ -572,7 +619,7 @@ Read the COVIDSafe *privacy policy* for further details.  Select 'I agree' t
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDC_Button"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="upload_consent_button"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="a6e-KY-ZKO" kind="show" id="lxD-W9-vGv"/>
@@ -621,7 +668,7 @@ Read the COVIDSafe *privacy policy* for further details.  Select 'I agree' t
                                                     <constraint firstAttribute="height" constant="160" id="Ahw-AY-B4N"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for helping to stop the spread of COVID-19!" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1n-tc-aEy">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for helping to stop the spread of COVID-19!" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1n-tc-aEy">
                                                 <rect key="frame" x="32" y="192" width="311" height="101.5"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
@@ -630,7 +677,7 @@ Read the COVIDSafe *privacy policy* for further details.  Select 'I agree' t
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDTY_Title"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="upload_finished_header"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" delaysContentTouches="NO" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bP5-GQ-GQk">
@@ -643,7 +690,7 @@ State or territory health officials will notify other COVIDSafe users that have 
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDTY_Content"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="upload_finished_sub_header"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textView>
                                         </subviews>
@@ -654,12 +701,34 @@ State or territory health officials will notify other COVIDSafe users that have 
                                             <constraint firstItem="TcN-eU-PuH" firstAttribute="centerX" secondItem="0tB-vW-7YF" secondAttribute="centerX" id="BEL-go-7Gl"/>
                                             <constraint firstItem="bP5-GQ-GQk" firstAttribute="leading" secondItem="C1n-tc-aEy" secondAttribute="leading" id="SNr-Ge-xHb"/>
                                             <constraint firstItem="TcN-eU-PuH" firstAttribute="top" secondItem="0tB-vW-7YF" secondAttribute="top" id="SjY-jk-49u"/>
+                                            <constraint firstItem="C1n-tc-aEy" firstAttribute="top" secondItem="0tB-vW-7YF" secondAttribute="top" constant="16" id="UT9-dF-ygA"/>
                                             <constraint firstItem="C1n-tc-aEy" firstAttribute="trailing" secondItem="bP5-GQ-GQk" secondAttribute="trailing" id="WIx-QE-lD0"/>
                                             <constraint firstAttribute="trailing" secondItem="C1n-tc-aEy" secondAttribute="trailing" constant="32" id="X2x-fP-5xb"/>
                                             <constraint firstItem="C1n-tc-aEy" firstAttribute="leading" secondItem="0tB-vW-7YF" secondAttribute="leading" constant="32" id="aXH-UV-vNq"/>
                                             <constraint firstItem="C1n-tc-aEy" firstAttribute="top" secondItem="TcN-eU-PuH" secondAttribute="bottom" constant="32" id="arA-XT-7D2"/>
                                             <constraint firstAttribute="bottom" secondItem="bP5-GQ-GQk" secondAttribute="bottom" constant="8" id="lG9-CV-q23"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="UT9-dF-ygA"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <mask key="subviews">
+                                                <exclude reference="TcN-eU-PuH"/>
+                                            </mask>
+                                            <mask key="constraints">
+                                                <include reference="UT9-dF-ygA"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <mask key="subviews">
+                                                <exclude reference="TcN-eU-PuH"/>
+                                            </mask>
+                                            <mask key="constraints">
+                                                <include reference="UT9-dF-ygA"/>
+                                            </mask>
+                                        </variation>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -682,7 +751,7 @@ State or territory health officials will notify other COVIDSafe users that have 
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="UDTY_Button"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="action_upload_done"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="doneBtnTapped:" destination="Vno-TX-yIM" eventType="touchUpInside" id="3xk-nY-dMS"/>

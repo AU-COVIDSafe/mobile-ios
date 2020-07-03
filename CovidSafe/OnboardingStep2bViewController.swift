@@ -31,14 +31,15 @@ class OnboardingStep2bViewController: UIViewController {
         
         let pointThreeText = NSMutableAttributedString(string: NSLocalizedString("OS2b_Item3", comment: "COVIDSafe does NOT send pairing requests"),
                                                      attributes: labelAtt)
-        let learnMoreRange = pointThreeText.string.range(of: NSLocalizedString("OS2b_Item3Underline", comment: "Text that should be underlined from PointThree"))!
-        let nsRange = NSRange(learnMoreRange, in: pointThreeText.string)
-        pointThreeText.addAttributes([.underlineStyle: NSUnderlineStyle.single.rawValue, .foregroundColor: UIColor.covidSafeColor], range: nsRange)
-        pointThreeLabel.attributedText = pointThreeText
+        if let learnMoreRange = pointThreeText.string.range(of: NSLocalizedString("OS2b_Item3Underline", comment: "Text that should be underlined from PointThree")) {
+            let nsRange = NSRange(learnMoreRange, in: pointThreeText.string)
+            pointThreeText.addAttributes([.underlineStyle: NSUnderlineStyle.single.rawValue, .foregroundColor: UIColor.covidSafeColor], range: nsRange)
+            pointThreeLabel.attributedText = pointThreeText
+        }
     }
     
     @IBAction func learnMoreTapped(_ sender: Any) {
-        guard let url = URL(string: "https://www.covidsafe.gov.au/help-topics.html#bluetooth-pairing-request") else {
+        guard let url = URL(string: "\(URLHelper.getHelpURL())#bluetooth-pairing-request") else {
             return
         }
         

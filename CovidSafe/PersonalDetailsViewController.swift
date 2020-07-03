@@ -32,6 +32,7 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
     var selectedAge: Int = -1
     let ages = ["0 - 15", "16 - 29", "30 - 39", "40 - 49", "50 - 59", "60 - 69", "70 - 79", "80 - 89", "90+"]
     var initialLabelTextColour: UIColor?
+    var initialTextFieldBorderColour: UIColor?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +58,7 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
         self.ageTextField.inputAccessoryView = toolBar
         self.firstnameTextField.inputAccessoryView = toolBar
         initialLabelTextColour = fullnameLabel.textColor
+        initialTextFieldBorderColour = fullnameLabel.borderColor
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -249,21 +251,39 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
             if textField.text?.count != 4 {
                 postcodeErrorLabel.isHidden = false
                 postcodeLabel.textColor = UIColor.covidSafeErrorColor
-                postcodeTextField.borderWidth = 1
+                postcodeTextField.borderColor = UIColor.covidSafeErrorColor
+                if UIAccessibility.isVoiceOverRunning {
+                    UIAccessibility.post(notification: .layoutChanged, argument: postcodeErrorLabel)
+                }
             } else {
                 postcodeErrorLabel.isHidden = true
                 postcodeLabel.textColor = initialLabelTextColour
-                postcodeTextField.borderWidth = 0
+                postcodeTextField.borderColor = initialTextFieldBorderColour
             }
         } else if textField == firstnameTextField {
+            var hasError = false
+            
+            
             if textField.text == "" {
+                hasError = true
+                fullNameErrorLabel.text = "personal_details_name_error_prompt".localizedString()
+            }
+            else if textField.text?.range(of: #"^[A-Za-z0-9][A-Za-z'0-9\\-\\u00C0-\\u017F ]{0,80}$"#, options: .regularExpression) == nil {
+                hasError = true
+                fullNameErrorLabel.text = "personal_details_name_characters_prompt".localizedString()
+            }
+            
+            if hasError {
                 fullNameErrorLabel.isHidden = false
                 fullnameLabel.textColor = UIColor.covidSafeErrorColor
-                firstnameTextField.borderWidth = 1
+                firstnameTextField.borderColor = UIColor.covidSafeErrorColor
+                if UIAccessibility.isVoiceOverRunning {
+                    UIAccessibility.post(notification: .layoutChanged, argument: fullNameErrorLabel)
+                }
             } else {
                 fullNameErrorLabel.isHidden = true
                 fullnameLabel.textColor = initialLabelTextColour
-                firstnameTextField.borderWidth = 0
+                firstnameTextField.borderColor = initialTextFieldBorderColour
             }
         }
         updateContinueButton()
@@ -273,7 +293,7 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
         let errorAlert = UIAlertController(title: "ValidationError".localizedString(comment: "Validation error"),
                                            message: error,
                                            preferredStyle: .alert)
-        errorAlert.addAction(UIAlertAction(title: "OK".localizedString(),
+        errorAlert.addAction(UIAlertAction(title: "global_OK".localizedString(),
                                            style: .default,
                                            handler: { _ in
             fieldToFocus.becomeFirstResponder()

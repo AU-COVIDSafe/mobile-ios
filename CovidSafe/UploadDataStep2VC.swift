@@ -28,12 +28,16 @@ class UploadDataStep2VC: UIViewController, CodeInputViewDelegate {
     @IBOutlet weak var uploadDataButton: GradientButton!
     @IBOutlet weak var uploadingView: UIView!
     @IBOutlet weak var uploadAnimatedviewContainer: UIView!
+    @IBOutlet var animationLeadingConstraint: NSLayoutConstraint!
+    @IBOutlet var animationTrailingConstraint: NSLayoutConstraint!
+    @IBOutlet var centredContainerViewBottomConstraint: NSLayoutConstraint!
+    @IBOutlet var centredContainerViewTopConstraint: NSLayoutConstraint!    
     
     var currentKeyboardFrame: CGRect?
     var uploadAnimatedView: AnimationView?
     
     let uploadFailErrMsg = "UploadFailed".localizedString(comment: "Upload failed. Please try again later.")
-    let invalidPinErrMsg = "InvalidPIN".localizedString(comment: "Invalid PIN, please ask health official to send another PIN.")
+    let invalidPinErrMsg = "action_verify_invalid_pin".localizedString(comment: "Invalid PIN, please ask health official to send another PIN.")
     
     let verifyEnabledColor = UIColor.covidSafeButtonDarkerColor
     let verifyDisabledColor = UIColor(red: 219/255.0, green: 221/255.0, blue: 221.0/255.0, alpha: 1.0)
@@ -51,6 +55,7 @@ class UploadDataStep2VC: UIViewController, CodeInputViewDelegate {
         codeInputView.delegate = self
         dismissKeyboardOnTap()
         updateUploadButton()
+        updateConstrainstsTo(orientation: UIDevice.current.orientation)
         
         if #available(iOS 13.0, *) {
             isModalInPresentation = true
@@ -77,6 +82,24 @@ class UploadDataStep2VC: UIViewController, CodeInputViewDelegate {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         NotificationCenter.default.removeObserver(self)
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        updateConstrainstsTo(orientation: UIDevice.current.orientation)
+    }
+    
+    func updateConstrainstsTo(orientation: UIDeviceOrientation) {
+        if orientation.isLandscape {
+            centredContainerViewTopConstraint.isActive = true
+            centredContainerViewBottomConstraint.isActive = true
+            animationLeadingConstraint.isActive = false
+            animationTrailingConstraint.isActive = false
+        } else {
+            centredContainerViewTopConstraint.isActive = false
+            centredContainerViewBottomConstraint.isActive = false
+            animationLeadingConstraint.isActive = true
+            animationTrailingConstraint.isActive = true
+        }
     }
     
     @objc
@@ -165,10 +188,10 @@ class UploadDataStep2VC: UIViewController, CodeInputViewDelegate {
     }
     
     func displayUploadDataError() {
-        let errorAlert = UIAlertController(title: "UploadFailedErrorTitle".localizedString(),
+        let errorAlert = UIAlertController(title: "upload_failed".localizedString(),
                                            message: "UploadFailedErrorMessage".localizedString(),
                                            preferredStyle: .alert)
-        errorAlert.addAction(UIAlertAction(title: "OK".localizedString(), style: .default, handler: nil))
+        errorAlert.addAction(UIAlertAction(title: "global_OK".localizedString(), style: .default, handler: nil))
         self.present(errorAlert, animated: true)
     }
     

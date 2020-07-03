@@ -1,0 +1,449 @@
+"personal_details_name_characters_prompt" = "Please use English characters for your full name. Do not use other languages or symbols like ',' or '?'.";
+"data_privacy_content" = "在註册 COVIDSafe 之前，請務必閱讀 COVIDSafe 私隱政策。 \
+\
+如果您未滿16歲，您的父母/監護人也必須閱讀私隱政策。 \
+\
+使用 COVIDSafe 屬自願性質。您可以隨時安裝或刪除該應用程式。如果刪除 COVIDSafe，您亦可以要求刪除在保密伺服器内的個人資料。 \
+\
+要註册使用 COVIDSafe，您需要輸入姓名、手機號碼、年齡組别及郵遞區號。 \
+\
+註册時提交的資料以及有關使用 COVIDSafe 的資料，將被收集並儲存在一個高度保密的伺服器内。 \
+\
+COVIDSafe 不會收集您的定位置資訊。 \
+\
+COVIDSafe 將會記錄接觸的發生時間，以及其他與您接觸的 COVIDSafe 用戶的匿名 ID。 \
+\
+其他與您接觸的 COVIDSafe 用戶亦將會在其裝置上看到一個匿名 ID 及與您接觸的時間。 \
+\
+如果其他用戶的 COVID-19 測試呈陽性，他們可以上傳其聯絡資料。為了追蹤接觸者，各州或領地的衛生部官員可能會聯絡您。 \
+\
+您的詳細註册資料僅在追蹤接觸者以及在維持 COVIDSafe 的合法正常運作時使用或披露。 \
+\
+欲了解更多資訊，請瀏覧澳洲政府衛生部的網站。 \
+\
+如需進一步了解有闗於您個人資料的權利，及個人資料的處理和共享方式，請參閱 COVIDSafe 私隱政策。";
+"enter_number_relative" = "是否替朋友或親戚註册？\
+\
+他們需用自己的設備和電話號碼進行註册才能使用 COVIDSafe。";
+"registration_consent_first_paragraph" = "我的註册資料以便各州或領地衛生部官員追蹤接觸者。";
+"OS2b_Item3" = "3. COVIDSafe不會傳送配對請求。了解更多資訊。";
+"OS2b_Item3Underline" = "了解更多資訊";
+"PairingRequestsInfo" = "COVIDSafe不會傳送配對請求。";
+"IssueFooter" = "我們可能會與您聯繫以進一步了解反饋的詳情。您的電子郵件不會被用於其他目的。";
+"newFeedback_send_errorMessage" = "送出反饋時出錯";
+"newFeedback_noMessage_errorMessage" = "送出前請填寫反饋意見。";
+"intro_content" = "爲了避免冠狀病毒在社區傳播，澳洲政府開發了 COVIDSafe。 \
+\
+COVIDSafe 會保密地記錄您與其他用戶之間的接觸。如果您與病毒檢測呈陽性的人發生密切接觸，各州和領地的衛生部官員將會與您聯繫。 \
+\
+讓我們齊心協力，阻止病毒傳播，保護大眾健康。";
+"IntroLabel" = "請協助阻止病毒傳播\
+拯救生命";
+"under_sixteen_first_paragraph" = "我的註册資料以便各州及領地衛生部官員追蹤接觸者。";
+"home_set_complete_external_link_been_contacted_title" = "是否有衛生部官員聯絡您？";
+"upload_step_1_header" = "是否有衛生部官員要求您上傳您的資料？";
+"upload_step_1_body" = "只有在您的 COVID-19測試呈陽性的時候，各州或領地的衛生部官員才會聯繫您，在您同意的前提下協助您上傳您的資料。\
+\
+按“是”後，請同意上傳您的資料。";
+"upload_step_4_sub_header" = "除非您同意，否則您的密切接觸者資料不會被上傳。\
+\
+如果您同意，您的密切接觸者資料將會被上傳並與各州或領地的衛生部官員共享，作為追蹤接觸者之用。\
+\
+欲知詳情，請參閱 COVIDSafe*私隱政策*。";
+"upload_step_verify_pin_sub_header" = "各州或領地的衛生部官員將會透過簡訊傳送一組 PIN 到您的手機。請在下面輸入 PIN 來上傳個人資料。";
+"action_verify_invalid_pin" = "PIN 無效，請要求衛生部官員再傳送另一組 PIN 給您。";
+"upload_finished_sub_header" = "您已成功將個人資料上傳到 COVIDSafe 高度保密的儲存系統。\
+\
+根據紀錄，其他COVIDSafe 用户與您若有密切接觸，各州或領地的衛生部官員將會通知他們。您的身份將保密。";
+"under_sixteen_registration_consent_first_paragraph" = "我的註册資料以便各州或領地衛生部官員追蹤接觸者。";
+"dialog_uploading_message" = "正在上傳您的 COVIDSafe 資料。 \
+\
+請不要關閉應用程式。";
+"share_this_app_content" = "讓我們一起阻止COVID-19的傳播！下載* COVIDSafe * —澳洲政府開發的一款應用程式。 ＃COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
+"intro_headline" = "齊心協力，阻止COVID-19的傳播。";
+"intro_button" = "我想幫忙";
+"how_it_works_content" = "藍牙®訊號用於確定您在何時接近另一名COVIDSafe用戶。 \
+\
+您與其他COVIDSafe用戶之間的每一次密切接觸都會被記錄下來，以建立密切接觸者資料。該資料會被加密，並僅儲存在您的手機裏。 \
+\
+如果您使用COVIDSafe並對COVID-19測試呈陽性，則各州或領地衛生部官員將會與您聯絡。他們會協助您將密切接觸者資料上傳到高度保密的資料儲存系統。\
+\
+如果您與測試結果呈陽性的COVIDSafe用戶密切接觸，則各州或領地的衛生部官員也會聯絡您。 \
+\
+欲知詳情，請參閱*求助主題*頁";
+"data_privacy_headline" = "註册及隱私權";
+"registration_consent_content" = "我同意澳洲衛生部收集以下資訊：";
+"registration_consent_second_paragraph" = "在其他COVIDSafe用戶的COVID-19測試呈陽性時，從該用戶處取得我的聯絡資料";
+"personal_details_headline" = "輸入您的詳細資料";
+"personal_details_name_error_prompt" = "請輸入您的全名。";
+"personal_details_age_error_prompt" = "請選擇您的年齡組別。";
+"personal_details_post_code" = "澳洲郵遞區號";
+"personal_details_post_code_error_prompt" = "您的澳洲郵遞區號必須包含4位數。";
+"under_sixteen_content" = "我確認我的父母或監護人同意澳洲衛生部收集以下資訊：";
+"under_sixteen_second_paragraph" = "在其他COVIDSafe用戶的COVID-19檢測呈陽性時，從該用戶處取得我的聯絡資料";
+"enter_number_headline" = "輸入您的手機號碼";
+"invalid_australian_phone_number_error_prompt" = "澳洲手機號碼最多有10位數。";
+"enter_number_content" = "我們將向您傳送一組6數位的PIN來驗證您的手機號碼。";
+"enter_number_button" = "取得PIN";
+"country_region_name_ag" = "安地卡及巴布達";
+"country_region_name_az" = "亞塞拜然";
+"country_region_name_bb" = "巴貝多";
+"country_region_name_bj" = "貝南";
+"country_region_name_ba" = "波士尼亞與赫塞哥維納";
+"country_region_name_bw" = "波札那";
+"country_region_name_bf" = "布吉納法索";
+"country_region_name_bi" = "蒲隆地";
+"country_region_name_cv" = "維德角";
+"country_region_name_td" = "查德";
+"country_region_name_km" = "葛摩";
+"country_region_name_cr" = "哥斯大黎加";
+"country_region_name_hr" = "克羅埃西亞";
+"country_region_name_cy" = "賽普勒斯";
+"country_region_name_dj" = "吉布地";
+"country_region_name_dm" = "多明尼加";
+"country_region_name_ec" = "厄瓜多";
+"country_region_name_et" = "衣索比亞";
+"country_region_name_ge" = "喬治亞";
+"country_region_name_gt" = "瓜地馬拉";
+"country_region_name_gn" = "幾內亞";
+"country_region_name_gw" = "幾內亞比索";
+"country_region_name_id" = "印尼";
+"country_region_name_it" = "義大利";
+"country_region_name_kz" = "哈薩克";
+"country_region_name_ke" = "肯亞";
+"country_region_name_ki" = "吉里巴斯";
+"country_region_name_kg" = "吉爾吉斯";
+"country_region_name_ls" = "賴索托";
+"country_region_name_lr" = "賴比瑞亞";
+"country_region_name_mw" = "馬拉威";
+"country_region_name_mv" = "馬爾地夫";
+"country_region_name_mu" = "模里西斯";
+"country_region_name_mc" = "摩納哥";
+"country_region_name_mz" = "莫三比克";
+"country_region_name_nc" = "新喀里多尼亞";
+"country_region_name_nz" = "紐西蘭";
+"country_region_name_ng" = "奈及利亞";
+"country_region_name_pw" = "帛琉";
+"country_region_name_qa" = "卡達";
+"country_region_name_re" = "留尼旺島";
+"country_region_name_rw" = "盧安達";
+"country_region_name_lc" = "聖露西亞";
+"country_region_name_sa" = "沙烏地阿拉伯";
+"country_region_name_sc" = "塞席爾";
+"country_region_name_sl" = "獅子山共和國";
+"country_region_name_si" = "斯洛維尼亞";
+"country_region_name_so" = "索馬利亞";
+"country_region_name_sr" = "蘇利南";
+"country_region_name_sz" = "史瓦帝尼";
+"country_region_name_tz" = "坦尚尼亞";
+"country_region_name_to" = "東加";
+"country_region_name_tn" = "突尼西亞";
+"country_region_name_ae" = "阿拉伯聯合大公國";
+"country_region_name_uz" = "烏茲別克";
+"country_region_name_ye" = "葉門";
+"country_region_name_zm" = "尚比亞";
+"country_region_name_zw" = "辛巴威";
+"enter_pin_headline" = "輸入傳送到%s%s的PIN";
+"enter_pin_wrong_number" = "請確認手機號碼是否正確";
+"enter_pin_timer_expire" = "您的 PIN 將在 &#160失效;";
+"wrong_ping_number" = "錯誤的 PIN";
+"enter_pin_resend_pin" = "重新寄出 PIN";
+"pin_issue" = "*接收 PIN 時遇到問題？ *";
+"permission_headline" = "應用程式設定";
+"permission_success_warning" = "開啓 COVIDSafe的推送通知功能，以便在應用程式無法正常運作時及時通知您。";
+"home_header_active_title" = "COVIDSafe已啟用。";
+"home_header_active_no_action_required" = "無需採取進一步行動。";
+"home_header_inactive_title" = "COVIDSafe未啟用。";
+"home_header_inactive_check_your_permissions" = "檢查您的設定。";
+"home_app_permission_status_title" = "檢查您的設定";
+"home_app_permission_status_subtitle" = "若設定錯誤，COVIDSafe將無法執行";
+"home_data_uploaded_message" = "協助阻止COVID-19的傳播，追蹤您的症狀。";
+"home_set_complete_external_link_share_title" = "分享COVIDSafe";
+"home_set_complete_external_link_share_content" = "邀請其他人一同防疫。團結便是力量！";
+"home_set_complete_external_link_news_content" = "請到 aus.gov.au 了解冠狀病毒的最新資訊。";
+"home_set_complete_external_link_app_title" = "下載冠狀病毒應用程式";
+"home_set_complete_external_link_app_content" = "下載政府應用程式，了解最新資訊及建議。";
+"home_set_complete_external_link_been_contacted_content" = "只有在您的病毒檢測呈陽性時，才能上傳個人資料。";
+"home_set_complete_external_link_help_topics_content" = "如果應用程式在使用時碰到問題或您對其有疑問。";
+"action_report_an_issue" = "回報問題";
+"upload_step_verify_pin_header" = "上傳您的資料";
+"upload_finished_header" = "感謝您協助阻止COVID-19的傳播！";
+"NotificationsDisabledBlurb" = "如果COVIDSafe尚未啟用，您將不會收到任何通知。 \n更改通知設定";
+"home_set_complete_external_link_notifications_content_iOS_off" = "如果COVIDSafe尚未啟用，您將不會收到任何通知。";
+"NotificationsEnabledBlurb" = "如果COVIDSafe未啟用，您將會收到通知。 \n更改通知設定";
+"PhoneVerificationErrorMessage" = "請檢查個人資料，然後重試。";
+"Enter_your_mobile_number_label" = "請輸入您的手機號碼";
+"permission_content_iOS" = "COVIDSafe 需要開啓藍牙®才能運作。當推送通知功能開啟時，您會在 COVIDSafe未啟用時收到提醒。\
+\
+選擇“繼續”來開啟：";
+"permission_content_iOS_2" = "1. 藍牙®\
+2. 通知\
+\
+COVIDSafe 不會寄出配對請求。";
+"home_set_complete_external_link_notifications_title_iOS" = "推送通知功能已開啟";
+"PN_BluetoothStatusTitle" = "COVIDSafe未啟用";
+"PN_BluetoothStatusBody" = "在離家前及在公共場所時，務必開啟藍牙®以確保 COVIDSafe 處於啟用狀態。";
+"PN_ReminderTitle" = "48 小時內未探測到任何接觸";
+"AllowBluetoothON" = "連接藍牙®：開";
+"AllowBluetoothOFF" = "連接藍牙®：關";
+"home_set_complete_external_link_notifications_title_iOS_off" = "推送通知功能已關閉";
+"allow_bluetooth_call" = "允許COVIDSafe連接藍牙®";
+"home_header_uploaded_on_date_ios" = "您的資料已在%@上傳 。";
+"home_version_number_ios" = "發行版本%@ ，構建版本%@";
+"SelectedCountryTemplate" = "已選擇（+ %@ ） %@";
+"Done" = "完成";
+"Next" = "下一步";
+"ValidationError" = "驗證出錯";
+"EnterPhoneReVerify" = "輸入您的手機號碼以重新驗證";
+"EnterPINSent" = "輸入寄送到%@的PIN碼";
+"PINWillExpire" = "您的PIN碼將在%@失效";
+"ReceivePinIssue" = "接收PIN碼時遇到問題？";
+"InvalidOTP" = "PIN碼為6位數";
+"CodeHasExpired" = "您的PIN碼已失效。";
+"PhoneVerificationErrorTitle" = "驗證電話號碼時出錯";
+"PhoneNumberFormatErrorTitle" = "號碼格式錯誤";
+"PhoneNumberFormatErrorMessage" = "請輸入手機號碼。";
+"ReportAnIssue" = "回報問題";
+"FoundIssueWithApp" = "在COVIDSafe應用程式中發現問題嗎？";
+"IssueDescPlaceholder" = "請描述問題";
+"IssueThankYou" = "謝謝！我們已經收到您的反饋。";
+"OS2b_Item1" = "1.離開家時，請隨身攜帶手機，並確保COVIDSafe處於開啟狀態。";
+"OS2b_Item2" = "2.藍牙®應該保持開啟狀態。";
+"PairingRequestsInfoUnderline" = "配對請求";
+"InformationUploaded" = "個人資料已在%@ 上傳。";
+"UploadFailed" = "上傳失敗。請稍後再試。";
+"UploadFailedErrorMessage" = "請稍後再試";
+"EmailPlaceholder" = "輸入您的電子郵件（必填）";
+"global_cancel_button_title" = "取消";
+"global_send_button_title" = "寄送";
+"global_sending_indication_title" = "正在寄送";
+"global_success_indication_title" = "成功";
+"entryPrompt_alert_title" = "意見箱";
+"entryPrompt_alert_message" = "您好，請選擇接下來的執行選項。";
+"entryPrompt_newFeedback_button_title" = "新的反饋";
+"newFeedbackFlow_navigationTitle" = "回報問題";
+"newFeedback_deleteScreenshotConfirmation_message" = "此螢幕截圖將被永久刪除。";
+"newFeedback_deleteScreenshot_actionTitle" = "刪除螢幕截圖";
+"newFeedback_invalidEmail_errorMessage" = "請輸入有效的電子郵件！";
+"global_OK" = "確定";
+"global_back" = "返回";
+"global_close" = "關閉";
+"global_double_tap" = "點擊兩次進行編輯";
+"PostcodeValidationErrorMessage" = "請輸入有效的澳洲郵遞區號。";
+"OS1b_TopParagraph_VOLabel" = "";
+"permission_content_iOS_VOLabel" = "";
+"permission_content_iOS_2_VOLabel" = "";
+"NotificationsDisabled_VOLabel" = "";
+"NotificationsEnabled_VOLabel" = "";
+"HelpTopics_VOLabel" = "";
+"LatestNews_VOLabel" = "";
+"GetCoronaVirusApp_VOLabel" = "";
+"UploadData_VOLabel" = "";
+"ShareCovidSafe_VOLabel" = "";
+"PN_MobileNumber_VOLabel" = "";
+"PINNumber_VO_Label" = "";
+"OS2b_Item2_VOLabel" = "";
+"BluetoothOFF_VOLabel" = "";
+"BluetoothON_VOLabel" = "";
+"AllowBluetoothOFF_VOLabel" = "";
+"AllowBluetoothON_VOLabel" = "";
+"upload_consent_button" = "我同意";
+"us_consent_button" = "我同意";
+"how_it_works_headline" = "COVIDSafe 是怎樣運作的";
+"BluetoothON" = "藍牙®：開";
+"registration_consent_headline" = "註册同意書";
+"enter_pin_button" = "驗證";
+"BluetoothOFF_content" = "請打開手機藍牙®。如有顯示，請選擇‘允許新連接’選項，";
+"BluetoothOFF" = "藍牙®：關";
+"select_country_or_region" = "選擇國家或地區";
+"NotificationsBlurbLink" = "更改通知設定";
+"personal_details_age_content_description" = "選擇年齡組別";
+"upload_step_4_header" = "上傳同意聲明";
+"country_region_name_ve" = "委內瑞拉";
+"country_region_name_vn" = "越南";
+"permission_success_headline" = "您已成功註册";
+"country_region_name_vg" = "英屬維爾京群島";
+"country_region_name_vi" = "美屬維爾京群島";
+"country_region_name_sb" = "所羅門群島";
+"upload_answer_yes" = "是";
+"country_region_name_ws" = "薩摩亞";
+"country_region_name_st" = "聖多美和普林西比";
+"country_region_name_sn" = "塞內加爾";
+"country_region_name_rs" = "塞爾維亞";
+"country_region_name_sg" = "新加坡";
+"country_region_name_sk" = "斯洛伐克";
+"permission_button" = "執行";
+"country_region_name_za" = "南非";
+"country_region_name_kr" = "南韓";
+"country_region_name_ss" = "南蘇丹";
+"country_region_name_by" = "白俄羅斯";
+"under-sixteen_consent_call_for_action" = "選擇“我同意”以確認同意聲明。";
+"Select_country_or_region_headline" = "選擇國家或地區";
+"home_setup_help" = "求助";
+"country_region_name_es" = "西班牙";
+"country_region_name_lk" = "斯里蘭卡";
+"country_region_name_se" = "瑞典";
+"country_region_name_ch" = "瑞士";
+"country_region_name_tw" = "台灣";
+"country_region_name_tl" = "東帝汶";
+"country_region_name_us" = "美國";
+"country_region_name_vu" = "瓦努阿圖";
+"action_continue" = "繼續";
+"action_upload_done" = "繼續";
+"upload_failed" = "上傳失敗";
+"personal_details_button" = "繼續";
+"norfolk_hint" = "例如：51234";
+"invalid_norfolk_island_phone_number_error_prompt" = "諾福克島的手機號碼是個5至6位數字。";
+"country_region_name_gu" = "關島";
+"home_set_complete_external_link_news_title" = "最新資訊及更新";
+"home_set_complete_external_link_news_url" = "https://www.australia.gov.au";
+"home_set_complete_external_link_self_isolation_register_url" = "https://covid-form.service.gov.au";
+"upload_answer_no" = "否";
+"country_region_name_na" = "納米比亞";
+"action_verify_upload_pin" = "上傳我的資料";
+"personal_details_name_title" = "全名";
+"country_region_name_kh" = "柬埔寨";
+"country_region_name_ga" = "加蓬";
+"country_region_name_gm" = "岡比亞";
+"country_region_name_de" = "德國";
+"country_region_name_gh" = "加納";
+"country_region_name_gi" = "直布羅陀";
+"country_region_name_gr" = "希臘";
+"country_region_name_gl" = "格陵蘭";
+"country_region_name_gd" = "格林納達";
+"country_region_name_gp" = "瓜德羅普";
+"country_region_name_ne" = "尼日爾";
+"country_region_name_no" = "挪威";
+"country_region_name_om" = "阿曼";
+"country_region_name_pk" = "巴基斯坦";
+"country_region_name_ps" = "巴勒斯坦領土";
+"country_region_name_pa" = "巴拿馬";
+"country_region_name_pg" = "巴布亞新畿內亞";
+"country_region_name_pe" = "秘魯";
+"country_region_name_ph" = "菲律賓";
+"country_region_name_pl" = "波蘭";
+"country_region_name_pt" = "葡萄牙";
+"country_region_name_pr" = "波多黎各";
+"country_region_name_cg" = "剛果共和國";
+"country_region_name_ro" = "羅馬尼亞";
+"country_region_name_ru" = "俄羅斯";
+"country_region_name_kn" = "聖基茨和尼維斯";
+"country_region_name_vc" = "聖文森特和格林納丁斯";
+"country_region_name_tj" = "塔吉克斯坦";
+"country_region_name_th" = "泰國";
+"dialog_error_uploading_message" = "個人資料上傳時發生錯誤，請重試。";
+"country_region_name_bs" = "巴哈馬";
+"country_region_name_hk" = "香港";
+"country_region_name_af" = "阿富汗";
+"country_region_name_lu" = "盧森堡";
+"country_region_name_ni" = "尼加拉瓜";
+"country_region_name_py" = "巴拉圭";
+"country_region_name_tg" = "多哥";
+"country_region_name_tt" = "特立尼達和多巴哥";
+"country_region_name_uy" = "烏拉圭";
+"options_for_australia" = "澳洲選項";
+"country_region_name_mm" = "緬甸";
+"country_region_name_ly" = "利比亞";
+"home_set_complete_external_link_help_topics_title" = "求助主題";
+"country_region_name_au2" = "諾福克島";
+"country_region_name_ir" = "伊朗";
+"country_region_name_cw" = "庫拉索";
+"country_region_name_sd" = "蘇丹";
+"country_region_name_cu" = "古巴";
+"country_region_name_gy" = "圭亞那";
+"country_region_name_ht" = "海地";
+"country_region_name_hn" = "洪都拉斯";
+"country_region_name_hu" = "匈牙利";
+"country_region_name_is" = "冰島";
+"country_region_name_in" = "印度";
+"country_region_name_iq" = "伊拉克";
+"country_region_name_ie" = "愛爾蘭";
+"country_region_name_il" = "以色列";
+"country_region_name_ci" = "象牙海岸";
+"country_region_name_jm" = "牙買加";
+"country_region_name_jp" = "日本";
+"country_region_name_jo" = "約旦";
+"country_region_name_np" = "尼泊爾";
+"country_region_name_nl" = "荷蘭";
+"country_region_name_an" = "荷屬安的列斯";
+"country_region_name_tr" = "土耳其";
+"country_region_name_tm" = "土庫曼斯坦";
+"country_region_name_tc" = "特克斯和凱科斯群島";
+"country_region_name_ug" = "烏干達";
+"country_region_name_ua" = "烏克蘭";
+"country_region_name_gb" = "英國";
+"country_region_name_dz" = "阿爾及利亞";
+"country_region_name_ad" = "安道爾";
+"country_region_name_ao" = "安哥拉";
+"country_region_name_ai" = "安圭拉";
+"country_region_name_ar" = "阿根廷";
+"country_region_name_am" = "亞美尼亞";
+"country_region_name_aw" = "阿魯巴";
+"country_region_name_au" = "澳洲";
+"country_region_name_at" = "奧地利";
+"country_region_name_bh" = "巴林";
+"country_region_name_bd" = "孟加拉國";
+"country_region_name_be" = "比利時";
+"country_region_name_bz" = "伯利茲";
+"country_region_name_bm" = "百慕達";
+"country_region_name_bt" = "不丹";
+"country_region_name_bo" = "玻利維亞";
+"country_region_name_br" = "巴西";
+"country_region_name_bn" = "汶萊";
+"country_region_name_bg" = "保加利亞";
+"permission_success_button" = "繼續";
+"how_it_works_button" = "下一步";
+"data_privacy_button" = "下一步";
+"consent_call_for_action" = "選擇“我同意”以確認同意聲明。";
+"consent_button" = "我同意";
+"dialog_error_uploading_positive" = "重試";
+"dialog_error_uploading_negative" = "取消";
+"migration_in_progress" = "COVIDSafe 正在更新。\
+\
+請保持開機狀態直至更新完成。";
+"personal_details_dialog_ok" = "選擇";
+"under_sixteen_headline" = "您需要得到父母/監護人的同意才能繼續";
+"country_region_name_al" = "阿爾巴尼亞";
+"country_region_name_cm" = "喀麥隆";
+"country_region_name_ca" = "加拿大";
+"country_region_name_ky" = "開曼群島";
+"country_region_name_cf" = "中非共和國";
+"country_region_name_cl" = "智利";
+"country_region_name_cn" = "中國";
+"country_region_name_co" = "哥倫比亞";
+"country_region_name_ck" = "庫克群島";
+"country_region_name_cz" = "捷克共和國";
+"country_region_name_cd" = "剛果民主共和國";
+"country_region_name_dk" = "丹麥";
+"country_region_name_do" = "多明尼加共和國";
+"country_region_name_eg" = "埃及";
+"country_region_name_sv" = "薩爾瓦多";
+"country_region_name_gq" = "赤道幾內亞";
+"country_region_name_ee" = "愛沙尼亞";
+"country_region_name_fo" = "法羅群島";
+"country_region_name_fj" = "斐濟";
+"country_region_name_fi" = "芬蘭";
+"country_region_name_gf" = "法屬圭亞那";
+"country_region_name_fr" = "法國";
+"country_region_name_kw" = "科威特";
+"country_region_name_la" = "寮国";
+"country_region_name_lv" = "拉脫維亞";
+"country_region_name_lb" = "黎巴嫩";
+"country_region_name_li" = "列支敦士登";
+"country_region_name_lt" = "立陶宛";
+"country_region_name_mo" = "澳門";
+"country_region_name_mk" = "前南斯拉夫馬其頓共和國";
+"country_region_name_mg" = "馬達加斯加";
+"country_region_name_my" = "馬來西亞";
+"country_region_name_ml" = "馬里";
+"country_region_name_mt" = "馬耳他";
+"country_region_name_mq" = "馬提尼克";
+"country_region_name_mr" = "毛里塔尼亞";
+"country_region_name_mx" = "墨西哥";
+"country_region_name_md" = "摩爾多瓦";
+"country_region_name_mn" = "蒙古";
+"country_region_name_me" = "黑山";
+"country_region_name_ms" = "蒙特塞拉特";
+"country_region_name_ma" = "摩洛哥";
+"personal_details_age_title" = "年齡組別（選擇）";
+"PN_ReminderBody" = "開啟 COVIDSafe，確保其處於運行狀態。";

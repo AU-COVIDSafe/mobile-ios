@@ -23,6 +23,7 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
     var reauthenticating: Bool = false
     var registrationInfo: RegistrationRequest?
     var initialLabelTextColour: UIColor?
+    var initialTextFieldBorderColour: UIColor?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +34,19 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
         if (reauthenticating) {
             self.titleLabel.text = "EnterPhoneReVerify".localizedString(comment: "Enter your mobile number to re-verify")
         }
-        countryCodeField.text = "(+61) " + "Country_AU".localizedString()
-        countryCodeField.accessibilityValue = "(+61) " + "Country_AU".localizedString() + " is selected"
+        countryCodeField.text = "(+61) " + "country_region_name_au".localizedString()
+        countryCodeField.accessibilityValue = String.init(format: "SelectedCountryTemplate".localizedString(), "61", "country_region_name_au".localizedString())
+        
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        let nextBarButtonItem = UIBarButtonItem(title: "Done".localizedString(),
+                                                 style: .plain,
+                                                 target: self,
+                                                 action: #selector(self.dismissKeyboard))
+        let spacer = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        toolBar.setItems([spacer, nextBarButtonItem], animated: true)
+        toolBar.isUserInteractionEnabled = true
+        self.phoneNumberField.inputAccessoryView = toolBar
         
         // Set initial Country img
         countryFlagContainerView = UIView(frame: CGRect(x: 0, y: 0, width: 60, height: 24))
@@ -44,9 +56,15 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
         flagImageView.contentMode = .scaleAspectFit
         flagImageView.image = flagImage
         countryFlagContainerView.addSubview(flagImageView)
+        
         // Set View
         let chevronImg = UIImage(named: "ChevronRight")
         let chevronImgView = UIImageView(frame: CGRect(x: 32, y: 0, width: 24, height: 24))
+        if UIApplication.shared.userInterfaceLayoutDirection == .rightToLeft {
+            // change frame of the chevron and flag
+            chevronImgView.frame = CGRect(x: 0, y: 0, width: 24, height: 24)
+            flagImageView.frame = CGRect(x: 28, y: 2, width: 28, height: 20)
+        }
         chevronImgView.image = chevronImg
         countryFlagContainerView.addSubview(chevronImgView)
         
@@ -55,6 +73,7 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
         countryCodeField.delegate = self
         
         initialLabelTextColour = phoneLabel.textColor
+        initialTextFieldBorderColour = phoneNumberField.borderColor
         navigationController?.view.backgroundColor = UIColor.white        
     }
     
@@ -90,7 +109,7 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
             let errorAlert = UIAlertController(title: "PhoneNumberFormatErrorTitle".localizedString(),
                                                message: "PhoneNumberFormatErrorMessage".localizedString(),
                                                preferredStyle: .alert)
-            errorAlert.addAction(UIAlertAction(title: "OK".localizedString(), style: .default, handler: { _ in
+            errorAlert.addAction(UIAlertAction(title: "global_OK".localizedString(), style: .default, handler: { _ in
                 NSLog("Unable to verify phone number")
             }))
             present(errorAlert, animated: true)
@@ -112,7 +131,7 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
                 let errorAlert = UIAlertController(title: "PhoneVerificationErrorTitle".localizedString(),
                                                    message: "PhoneVerificationErrorMessage".localizedString(),
                                                    preferredStyle: .alert)
-                errorAlert.addAction(UIAlertAction(title: "OK".localizedString(), style: .default, handler: { _ in
+                errorAlert.addAction(UIAlertAction(title: "global_OK".localizedString(), style: .default, handler: { _ in
                     DLog("Unable to verify phone number")
                 }))
                 self?.present(errorAlert, animated: true)
@@ -173,7 +192,7 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
             return
         }
         countryCodeField.text = "(+\(countryPhoneCode)) \(countryName)"
-        countryCodeField.accessibilityValue = "(+\(countryPhoneCode)) \(countryName) is selected"
+        countryCodeField.accessibilityValue = String.init(format: "SelectedCountryTemplate".localizedString(), countryPhoneCode, countryName)
         if selectedCountry?.isoCode == "AU2" {
             phoneExample.isHidden = false
         } else {
@@ -185,7 +204,7 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
     func validatePhoneNumber() {
         phoneExample.textColor = initialLabelTextColour
         phoneLabel.textColor = initialLabelTextColour
-        phoneNumberField.borderWidth = 0
+        phoneNumberField.borderColor = initialTextFieldBorderColour
         phoneError.isHidden = true
         let countryCode = selectedCountry?.phoneCode ?? "61"
         
@@ -200,11 +219,15 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
             phoneError.isHidden = false
             phoneExample.textColor = UIColor.covidSafeErrorColor
             phoneLabel.textColor = UIColor.covidSafeErrorColor
-            phoneNumberField.borderWidth = 1
+            phoneNumberField.borderColor = UIColor.covidSafeErrorColor
             if selectedCountry == nil || selectedCountry?.isoCode == "AU" {
-                phoneError.text = "AustralianPhoneValidationError".localizedString()
+                phoneError.text = "invalid_australian_phone_number_error_prompt".localizedString()
             } else if selectedCountry?.isoCode == "AU2" {
-                phoneError.text = "NorfolkPhoneValidationError".localizedString()
+                phoneError.text = "invalid_norfolk_island_phone_number_error_prompt".localizedString()
+            }
+            
+            if UIAccessibility.isVoiceOverRunning {
+                UIAccessibility.post(notification: .layoutChanged, argument: phoneError)
             }
             break
         default:

@@ -1,0 +1,449 @@
+"personal_details_name_characters_prompt" = "Please use English characters for your full name. Do not use other languages or symbols like ',' or '?'.";
+"data_privacy_content" = "من المهم أن تقرأ *سياسة خصوصية* COVIDSafe قبل التسجيل في COVIDSafe. \
+\
+ إذا كان عمرك أقل من 16 عامًا، فيجب على والديك/ الوصي أيضًا قراءة *سياسة الخصوصية*. \
+\
+ إنّ استخدام COVIDSafe هو أمر إختياري تمامًا. يمكنك تثبيت التطبيق أو حذفه في أي وقت. إذا قمت بحذف COVIDSafe، *يمكنك أيضًا طلب حذف معلوماتك* من نظام مقدم الخدمة الآمن. \
+\
+ للتسجيل في COVIDSafe، ستحتاج إلى إدخال اسم ورقم هاتف محمول وفئة عمر ورمز بريدي. \
+\
+ المعلومات التي ترسلها عند التسجيل، ومعلومات استخدامك لـ COVIDSafe سيتم جمعها وتخزينها في نظام مقدم الخدمة الآمن للغاية. \
+\
+ لن تقوم COVIDSafe بجمع معلومات عن موقعك. \
+\
+ سيدوّن COVIDSafe وقت الاتصال ورمز مجهول الهوية لمستخدمي COVIDSafe الآخرين الذين تتواصل معهم. \
+\
+ سيتم تدوين مستخدمي COVIDSafe الآخرين الذين تتواصل معهم من خلال رمز مجهول الهوية ووقت الاتصال بك على أجهزتهم. \
+\
+ إذا كانت نتائج اختبار مستخدم آخر إيجابية لـ COVID-19، فقد يقوموا بتحميل معلومات الاتصال الخاصة به ويمكن أن يتصل بك مسؤول الصحة في الولاية أو الإقليم لأغراض تعقُّب جهات الاتصال. \
+\
+ سيتم استخدام تفاصيل التسجيل الخاصة بك أو الكشف عنها فقط لتعقُّب جهات الاتصال وللأغراض المناسبة والقانونية لـ COVIDSafe. \
+\
+ يتوفر المزيد من المعلومات على موقع *وزارة الصحة الأسترالية على الإنترنت*. \
+\
+ راجع *سياسة خصوصية* COVIDSafe لمزيد من التفاصيل حول حقوقك المتعلقة بمعلوماتك وكيفية التعامل معها ومشاركتها.";
+"intro_content" = "تم تطوير COVIDSafe من قبل الحكومة الأسترالية للمساعدة في الحفاظ على المجتمع في مأمن من انتشار فيروس كورونا. \
+\
+ سوف يدوّن COVIDSafe بشكل آمن اتصالك مع مستخدمين آخرين للتطبيق. سيسمح ذلك لمسؤولي الصحة في الولاية أو الإقليم بالاتصال بك، إذا كنت على اتصال عن قرب مع شخص كانت نتيجة اختباره إيجابية بالفيروس. \
+\
+ معاً يمكننا المساعدة في وقف الانتشار والبقاء في صحة جيدة.";
+"NotificationsEnabledBlurb" = "سوف تتلقى إخطارًا إذا كان COVIDSafe غير نشظ. \nتغيير إعدادات الإخطارات";
+"NotificationsDisabledBlurb" = "لن تتلقى إخطارًا إذا كان COVIDSafe غير نشط. \nتغيير إعدادات الإخطارات";
+"ReceivePinIssue" = "مشكلات في تلقي رقم التعريف الشخصي الخاص بك؟";
+"dialog_uploading_message" = "يتم الآن تحميل معلومات COVIDSafe الخاصة بك. \
+\
+ الرجاء عدم إغلاق التطبيق.";
+"dialog_error_uploading_positive" = "حاول مرة أخرى";
+"dialog_error_uploading_negative" = "إلغاء";
+"how_it_works_headline" = "كيف يعمل COVIDSafe";
+"how_it_works_button" = "التالى";
+"data_privacy_headline" = "التسجيل والخصوصية";
+"data_privacy_button" = "التالى";
+"consent_button" = "أوافق";
+"personal_details_name_title" = "الاسم الكامل";
+"personal_details_post_code" = "الرمز البريدي في أستراليا";
+"personal_details_post_code_error_prompt" = "يجب أن يحتوي رقم الرمز البريدي الأسترالي على 4 أرقام.";
+"personal_details_button" = "استمر";
+"enter_number_headline" = "أدخل رقم هاتفك المحمول";
+"invalid_norfolk_island_phone_number_error_prompt" = "تحتوي أرقام الهواتف المحمولة في جزيرة نورفولك على 5 إلى 6 أرقام.";
+"enter_number_content" = "سنرسل لك رقم تعريف شخصي مكونًا من 6 أرقام للتحقق من رقم هاتفك المحمول.";
+"options_for_australia" = "خيارات لأستراليا";
+"country_region_name_la" = "لاوس";
+"country_region_name_lv" = "لاتفيا";
+"country_region_name_lb" = "لبنان";
+"country_region_name_ls" = "ليسوتو";
+"country_region_name_lr" = "ليبيريا";
+"country_region_name_ly" = "ليبيا";
+"country_region_name_li" = "ليختنشتاين";
+"country_region_name_lt" = "ليتوانيا";
+"country_region_name_mo" = "ماكاو";
+"country_region_name_mk" = "جمهورية مقدونيا اليوغوسلافية السابقة";
+"country_region_name_mg" = "مدغشقر";
+"country_region_name_mw" = "ملاوي";
+"country_region_name_my" = "ماليزيا";
+"country_region_name_mv" = "جزر المالديف";
+"country_region_name_ml" = "مالي";
+"country_region_name_mt" = "مالطا";
+"country_region_name_mq" = "مارتينيك";
+"country_region_name_mr" = "موريتانيا";
+"country_region_name_mu" = "موريشيوس";
+"country_region_name_mx" = "المكسيك";
+"country_region_name_md" = "مولدوفا";
+"country_region_name_mc" = "موناكو";
+"country_region_name_mn" = "منغوليا";
+"country_region_name_me" = "الجبل الأسود";
+"country_region_name_ms" = "مونتسيرات";
+"country_region_name_ma" = "المغرب";
+"country_region_name_mz" = "موزمبيق";
+"country_region_name_mm" = "ميانمار";
+"country_region_name_na" = "ناميبيا";
+"country_region_name_np" = "نيبال";
+"country_region_name_nl" = "هولندا";
+"country_region_name_an" = "جزر الأنتيل الهولندية";
+"country_region_name_nc" = "كاليدونيا الجديدة";
+"country_region_name_nz" = "نيوزيلندا";
+"country_region_name_ne" = "النيجر";
+"country_region_name_ng" = "نيجيريا";
+"country_region_name_no" = "النرويج";
+"country_region_name_om" = "سلطنة عمان";
+"country_region_name_pk" = "باكستان";
+"country_region_name_pw" = "بالاو";
+"country_region_name_ps" = "الاراضي الفلسطينية";
+"country_region_name_pa" = "بنما";
+"country_region_name_py" = "باراغواي";
+"country_region_name_pg" = "بابوا غينيا الجديدة";
+"country_region_name_pe" = "بيرو";
+"country_region_name_ph" = "الفلبين";
+"country_region_name_pl" = "بولندا";
+"country_region_name_pt" = "البرتغال";
+"country_region_name_pr" = "بورتوريكو";
+"country_region_name_qa" = "قطر";
+"country_region_name_cg" = "جمهورية الكونغو";
+"country_region_name_re" = "جزيرة ريونيون";
+"country_region_name_ro" = "رومانيا";
+"country_region_name_ru" = "روسيا";
+"country_region_name_rw" = "رواندا";
+"country_region_name_kn" = "سانت كيتس ونيفيس";
+"country_region_name_lc" = "سانت لوسيا";
+"country_region_name_vc" = "سانت فنسنت وجزر غرينادين";
+"country_region_name_ws" = "ساموا";
+"country_region_name_st" = "ساو تومي وبرينسيبي";
+"country_region_name_sa" = "المملكة العربية السعودية";
+"country_region_name_sn" = "السنغال";
+"country_region_name_rs" = "صربيا";
+"country_region_name_sc" = "سيشيل";
+"country_region_name_sl" = "سيراليون";
+"country_region_name_sg" = "سنغافورة";
+"country_region_name_sk" = "سلوفاكيا";
+"country_region_name_si" = "سلوفينيا";
+"country_region_name_sb" = "جزر سليمان";
+"country_region_name_so" = "الصومال";
+"country_region_name_za" = "جنوب أفريقيا";
+"country_region_name_kr" = "كوريا الجنوبية";
+"country_region_name_ss" = "جنوب السودان";
+"country_region_name_es" = "إسبانيا";
+"country_region_name_lk" = "سيريلانكا";
+"country_region_name_sr" = "سورينام";
+"country_region_name_sz" = "سوازيلاند";
+"country_region_name_se" = "السويد";
+"country_region_name_ch" = "سويسرا";
+"country_region_name_tj" = "طاجيكستان";
+"country_region_name_tw" = "تايوان";
+"country_region_name_tz" = "تنزانيا";
+"country_region_name_th" = "تايلاند";
+"country_region_name_tl" = "تيمور ليشتي";
+"country_region_name_to" = "تونغا";
+"country_region_name_tn" = "تونس";
+"country_region_name_tr" = "تركيا";
+"country_region_name_tm" = "تركمانستان";
+"country_region_name_tc" = "جزر تركس وكايكوس";
+"country_region_name_ug" = "أوغندا";
+"country_region_name_ua" = "أوكرانيا";
+"country_region_name_ae" = "الإمارات العربية المتحدة";
+"country_region_name_gb" = "المملكة المتحدة";
+"country_region_name_us" = "الولايات المتحدة الأمريكية";
+"country_region_name_uz" = "أوزبكستان";
+"country_region_name_vu" = "فانواتو";
+"country_region_name_ve" = "فنزويلا";
+"country_region_name_vn" = "فيتنام";
+"country_region_name_vg" = "جزر فيرجن, البريطانية";
+"country_region_name_vi" = "جزر فيرجن، الولايات المتحدة الأمريكية";
+"country_region_name_ye" = "اليمن";
+"country_region_name_zm" = "زامبيا";
+"country_region_name_zw" = "زيمبابوي";
+"enter_pin_headline" = "أدخل رقم التعريف الشخصي المرسل إلى %s %s";
+"enter_pin_wrong_number" = "هل رقم الهاتف المحمول هذا خاطئ؟";
+"enter_pin_timer_expire" = "ستنتهي صلاحية رقم التعريف الشخصي الخاص بك في &#160؛";
+"permission_button" = "استمر";
+"permission_success_button" = "استمر";
+"home_set_complete_external_link_share_title" = "شارك COVIDSafe";
+"upload_answer_no" = "لا";
+"action_continue" = "استمر";
+"action_upload_done" = "استمر";
+"upload_failed" = "فشل التحميل";
+"PN_BluetoothStatusTitle" = "COVIDSafe غير نشط";
+"us_consent_button" = "أوافق";
+"home_header_uploaded_on_date_ios" = "تم تحميل معلوماتك على %@ .";
+"upload_consent_button" = "أوافق";
+"SelectedCountryTemplate" = "(+ %@ ) %@تم اختيار";
+"Done" = "منجز";
+"Next" = "التالى";
+"EnterPhoneReVerify" = "أدخل رقم هاتفك المحمول لإعادة التحقق";
+"EnterPINSent" = "أدخل رقم التعريف الشخصي المرسل إلى %@";
+"CodeHasExpired" = "انتهت صلاحية الرمز الخاص بك.";
+"InvalidOTP" = "يجب أن يكون رمزًا مكونًا من 6 أرقام";
+"PhoneVerificationErrorTitle" = "خطأ في التحقق من رقم الهاتف";
+"PhoneVerificationErrorMessage" = "يرجى التحقق من التفاصيل الخاصة بك والمحاولة مرة أخرى.";
+"PhoneNumberFormatErrorTitle" = "تنسيق رقم خاطئ";
+"PhoneNumberFormatErrorMessage" = "الرجاء إدخال رقم هاتف محمول.";
+"ReportAnIssue" = "بلِّغ عن مشكلة";
+"FoundIssueWithApp" = "هل وجدت مشكلة في تطبيق COVIDSafe؟";
+"IssueDescPlaceholder" = "يرجى وصف المشكلة";
+"PairingRequestsInfo" = "لا يرسل COVIDSafe طلبات الاقتران.";
+"PairingRequestsInfoUnderline" = "طلبات الاقتران";
+"InformationUploaded" = "تم تحميل معلوماتك على %@ .";
+"EmailPlaceholder" = "أدخل عنوان بريدك الإلكتروني (مطلوب)";
+"global_cancel_button_title" = "إلغاء";
+"global_send_button_title" = "إرسال";
+"global_sending_indication_title" = "إرسال";
+"global_success_indication_title" = "نجاح";
+"newFeedbackFlow_navigationTitle" = "بلِّغ عن مشكلة";
+"newFeedback_deleteScreenshotConfirmation_message" = "سيتم حذف لقطة الشاشة هذه نهائيًا.";
+"newFeedback_deleteScreenshot_actionTitle" = "حذف لقطة الشاشة";
+"newFeedback_noMessage_errorMessage" = "أخبرنا بشيء قبل الإرسال.";
+"global_back" = "الرجوع";
+"global_close" = "اغلاق";
+"global_double_tap" = "اضغط مرتين للتحرير";
+"PostcodeValidationErrorMessage" = "يُرجى إدخال رمز بريدي أسترالي صالح.";
+"newFeedback_invalidEmail_errorMessage" = "الرجاء ادخل عنوان بريد إلكتروني صالح!";
+"newFeedback_send_errorMessage" = "خطأ في إرسال الملاحظات";
+"entryPrompt_newFeedback_button_title" = "ملاحظات جديدة";
+"entryPrompt_alert_title" = "صندوق الملاحظات";
+"OS2b_Item3Underline" = "تعرّف أكثر";
+"OS2b_Item3" = "3. لا يرسل COVIDSafe طلبات الاقتران. تعرّف أكثر.";
+"OS2b_Item2" = "2. يجب الاستمرار في تشغيل الـ Bluetooth®.";
+"IssueThankYou" = "شكرًا لك! لقد تلقينا ملاحظاتك.";
+"IssueFooter" = "قد نتصل بك للحصول على مزيد من التفاصيل حول ملاحظاتك. لن يتم استخدام عنوان بريدك الإلكتروني لأي غرض آخر.";
+"PINWillExpire" = "سوف تنتهي صلاحية رقم التعريف الشخصي الخاص بك في %@";
+"ValidationError" = "خطأ في التحقق من سريان المفعول";
+"BluetoothON" = "Bluetooth®: تشغيل";
+"AllowBluetoothON" = "الوصول إلى Bluetooth®: تشغيل";
+"PN_BluetoothStatusBody" = "تأكد من أنه نشط قبل مغادرتك المنزل وعندما تكون في الأماكن العامة من خلال تمكين الـ Bluetooth® من العمل.";
+"permission_content_iOS" = "يحتاج COVIDSafe إلى تمكين الـ Bluetooth® حتى يعمل. من خلال تمكين الإخطارات، تتلقى تحديثات لتذكيرك عندما لا يكون برنامج COVIDSafe نشطًا. \
+\
+ اختر \"تابع\" للتمكين:";
+"action_verify_upload_pin" = "القيام بتحميل معلوماتي";
+"upload_step_1_body" = "فقط إذا كانت نتيجة اختبارك لـ COVID-19 إيجابية، فسيتصل بك مسؤول الصحة في الولاية أو الإقليم للمساعدة في التحميل الاختياري لمعلوماتك.\
+\
+بمجرد أن تضغط على \"نعم\"، ستحتاج إلى إعطاء الموافقة حتى يتم تحميل معلوماتك.";
+"pin_issue" = "* مشكلات في تلقي رقم تعريف شخصي؟*";
+"enter_pin_resend_pin" = "إعادة إرسال رقم تعريف شخصي";
+"enter_number_button" = "احصل على رقم تعريف شخصي";
+"registration_consent_content" = "أوافق على أن تقوم وزارة الصحة الأسترالية بجمع:";
+"how_it_works_content" = "تُستخدم إشارات Bluetooth® لتحديد متى تكون بالقرب من مستخدم COVIDSafe آخر. \
+\
+ سيتم تدوين ملاحظة في كل مرة حصل فيها إتصال عن قرب بينك وبين مستخدمي COVIDSafe الآخرين لإنشاء معلومات عن الاتصال عن قرب. يتم تشفير المعلومات وتخزينها فقط في هاتفك. \
+\
+ إذا كانت نتيجة اختبارك إيجابية لـ COVID-19 كمستخدم COVIDSafe، فسوف يتصل بك مسؤول الصحة في الولاية أو الإقليم. سيساعدون في القيام بتحميل اختياري لمعلومات الاتصال عن قرب الخاصة بك إلى نظام تخزين معلومات آمن للغاية \
+\
+ يمكن أيضًا لمسؤولي الصحة في الولاية أو الإقليم الاتصال بك إذا كنت على اتصال عن قرب بمستخدم COVIDSafe آخر وكانت نتيجته إيجابية. \
+\
+ لمزيد من المعلومات، يرجى الرجوع إلى الصفحة *مواضيع المساعدة*";
+"personal_details_age_error_prompt" = "يرجى اختيار فئتك العمرية.";
+"upload_step_4_sub_header" = "ما لم توافق، لن يتم تحميل معلومات الاتصال عن قرب الخاصة بك. \
+\
+ إذا وافقت، فسيتم تحميل معلومات الاتصال عن قرب الخاصة بك ومشاركتها مع مسؤولي الصحة في الولاية أو الإقليم لأغراض تعقُّب جهات الاتصال. \
+\
+ اقرأ *سياسة الخصوصية* لـ COVIDSafe لمزيد من التفاصيل.";
+"home_version_number_ios" = "الإصدار %@، الرقم%@";
+"OS2b_Item1" = "1. عندما تغادر المنزل، احتفظ بهاتفك وتأكد من أن COVIDSafe نشط.";
+"UploadFailed" = "التحميل فشل. الرجاء عاود المحاولة في وقت لاحق.";
+"UploadFailedErrorMessage" = "الرجاء عاود المحاولة في وقت لاحق";
+"entryPrompt_alert_message" = "مرحبا يا صديقي، كيف تريد الاستمرار؟";
+"global_OK" = "حسناً";
+"OS1b_TopParagraph_VOLabel" = "";
+"permission_content_iOS_VOLabel" = "";
+"permission_content_iOS_2_VOLabel" = "";
+"NotificationsDisabled_VOLabel" = "";
+"NotificationsEnabled_VOLabel" = "";
+"HelpTopics_VOLabel" = "";
+"LatestNews_VOLabel" = "";
+"GetCoronaVirusApp_VOLabel" = "";
+"UploadData_VOLabel" = "";
+"ShareCovidSafe_VOLabel" = "";
+"PN_MobileNumber_VOLabel" = "";
+"PINNumber_VO_Label" = "";
+"OS2b_Item2_VOLabel" = "";
+"BluetoothOFF_VOLabel" = "";
+"BluetoothON_VOLabel" = "";
+"AllowBluetoothOFF_VOLabel" = "";
+"AllowBluetoothON_VOLabel" = "";
+"IntroLabel" = "ساعد في وقف الانتشار\
+وإنقاذ الأرواح.";
+"BluetoothOFF_content" = "شغِّل الـ Bluetooth® على هاتفك، اختر \"السماح باتصالات جديدة\" في حال ظهورها.";
+"under_sixteen_first_paragraph" = "معلومات التسجيل الخاصة بي للسماح بتعقُّب جهات الاتصال من قبل مسؤولي الصحة في الولاية أو الإقليم.";
+"personal_details_headline" = "أدخل تفاصيلك";
+"registration_consent_first_paragraph" = "معلومات التسجيل الخاصة بي للسماح بتعقُّب جهات الاتصال من قبل مسؤولي الصحة في الولاية أو الإقليم.";
+"registration_consent_headline" = "موافقة على التسجيل";
+"intro_button" = "أريد ان أساعد";
+"intro_headline" = "معاً يمكننا وقف انتشار COVID-19";
+"wrong_ping_number" = "تم إدخال رقم تعريف شخصي خاطئ";
+"enter_pin_button" = "تحقق";
+"permission_headline" = "إعدادات التطبيق";
+"home_data_uploaded_message" = "ساعد في وقف انتشار COVID-19 وتعقَّب أعراضك.";
+"home_set_complete_external_link_share_content" = "قم بدعوة الآخرين للمساعدة. معًا، نحن أقوى.";
+"home_set_complete_external_link_app_title" = "احصل على تطبيق فيروس كورونا";
+"home_set_complete_external_link_been_contacted_content" = "لا يمكنك تحميل معلوماتك إلا إذا كانت نتيجة اختبارك إيجابية.";
+"action_report_an_issue" = "بلِّغ عن مشكلة";
+"upload_finished_header" = "شكرًا لك على المساعدة في وقف انتشار COVID-19!";
+"under_sixteen_registration_consent_first_paragraph" = "معلومات التسجيل الخاصة بي للسماح بتعقُّب جهات الاتصال من قبل مسؤولي الصحة في الولاية أو الإقليم.";
+"PN_ReminderBody" = "افتح COVIDSafe لتتأكد أنه يشتغل.";
+"dialog_error_uploading_message" = "حدث خطأ أثناء تحميل معلوماتك، يرجى المحاولة مرة أخرى.";
+"share_this_app_content" = "إنضم إلي في العمل على وقف انتشار COVID-19! قم بتنزيل COVIDSafe، وهو تطبيق من الحكومة الأسترالية. # COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
+"migration_in_progress" = "تحديث COVIDSafe قيد الإنجاز. \
+\
+ يرجى التأكد من عدم إغلاق هاتفك حتى اكتمال التحديث.";
+"consent_call_for_action" = "اختر \"أوافق\" لتأكيد الموافقة.";
+"registration_consent_second_paragraph" = "معلومات الاتصال الخاصة بي من مستخدمي COVIDSafe الآخرين بعد أن جاءت نتيجة اختبارهم إيجابية لـ COVID-19.";
+"personal_details_name_error_prompt" = "الرجاء أدخل اسمك الكامل.";
+"personal_details_age_title" = "الفئة العمرية (اختر)";
+"personal_details_age_content_description" = "اختر الفئة العمرية";
+"personal_details_dialog_ok" = "اختر";
+"under_sixteen_headline" = "تحتاج إلى موافقة والديك / الوصي للمضي قدمًا";
+"under_sixteen_content" = "أؤكد موافقة والديّ أو الوصي على أن تقوم وزارة الصحة الأسترالية بجمع ما يلي:";
+"under_sixteen_second_paragraph" = "معلومات الاتصال الخاصة بي من مستخدمي COVIDSafe الآخرين بعد أن جاءت نتيجة اختبارهم إيجابية لـ COVID-19.";
+"select_country_or_region" = "اختر البلد أو المنطقة";
+"invalid_australian_phone_number_error_prompt" = "تحتوي أرقام الهواتف المحمولة الأسترالية على 10 أرقام كحد أقصى.";
+"enter_number_relative" = "هل تحاول التسجيل نيابة عن صديق أو قريب؟ \
+\
+ سيحتاجون إلى التسجيل باستخدام أجهزتهم الخاصة ورقم هاتفهم حتى يتمكن COVIDSafe من العمل لديهم.";
+"country_region_name_bs" = "باهاماس";
+"country_region_name_by" = "بيلاروس";
+"country_region_name_gu" = "غوام";
+"country_region_name_gt" = "غواتيمالا";
+"country_region_name_hk" = "هونغ كونغ";
+"country_region_name_lu" = "لوكسمبورغ";
+"country_region_name_ni" = "نيكاراغوا";
+"country_region_name_tg" = "توغو";
+"country_region_name_tt" = "ترينيداد وتوباغو";
+"country_region_name_uy" = "اوروغواي";
+"permission_success_headline" = "لقد قمت بالتسجيل بنجاح";
+"permission_success_warning" = "استمر في تشغيل الإخطارات اللحظية للرسائل لـ COVIDSafe حتى نتمكن من إخطارك بسرعة إذا كان التطبيق لا يعمل بشكل صحيح.";
+"home_header_active_title" = "نشط. COVIDSafe";
+"home_header_active_no_action_required" = "لا يلزم اتخاذ أي إجراء آخر.";
+"home_header_inactive_title" = "COVIDSafe غير نشط.";
+"home_header_inactive_check_your_permissions" = "تحقق من الإعدادات الخاصة بك.";
+"home_setup_help" = "المساعدة";
+"home_app_permission_status_title" = "تحقق من الإعدادات الخاصة بك";
+"home_app_permission_status_subtitle" = "لن يعمل COVIDSafe بدون الإعدادات الصحيحة.";
+"home_set_complete_external_link_news_title" = "آخر الأخبار والتحديثات";
+"home_set_complete_external_link_news_url" = "https://www.australia.gov.au";
+"home_set_complete_external_link_self_isolation_register_url" = "https://covid-form.service.gov.au";
+"home_set_complete_external_link_news_content" = "توجه إلى aus.gov.au للحصول على أحدث أخبار فيروس كورونا.";
+"home_set_complete_external_link_app_content" = "قم بتنزيل التطبيق الحكومي للحصول على أحدث الأخبار والنصائح.";
+"home_set_complete_external_link_been_contacted_title" = "هل اتصل بك مسؤول صحي؟";
+"home_set_complete_external_link_help_topics_title" = "مواضيع المساعدة";
+"home_set_complete_external_link_help_topics_content" = "إذا كان لديك مشاكل أو أسئلة حول التطبيق.";
+"upload_answer_yes" = "نعم";
+"upload_step_1_header" = "هل يطلب منك مسؤول الصحة تحميل معلوماتك؟";
+"upload_step_4_header" = "تحميل الموافقة";
+"upload_step_verify_pin_header" = "قم بتحميل معلوماتك";
+"upload_step_verify_pin_sub_header" = "سيرسل مسؤول الصحة في الولاية أو الإقليم رقم التعريف الشخصي (PIN) إلى جهازك عبر رسالة نصية. أدخله أدناه لتحميل معلوماتك.";
+"action_verify_invalid_pin" = "رقم التعريف الشخصي غير صالح، يرجى الطلب من مسؤول الصحة أن يرسل لك رقم تعريف شخصي آخر.";
+"upload_finished_sub_header" = "لقد قمت بتحميل معلوماتك بنجاح إلى نظام تخزين COVIDSafe العالي الأمان. \
+\
+ سيقوم مسؤولو الصحة في الولاية أو الإقليم بإخطار مستخدمي COVIDS الآخرين الذين سجلوا حالات اتصال عن قرب معك. ستظل هويتك مجهولة للمستخدمين الآخرين.";
+"country_region_name_au2" = "جزيرة نورفولك";
+"country_region_name_sd" = "السودان";
+"country_region_name_ir" = "إيران";
+"country_region_name_cw" = "كوراساو";
+"country_region_name_cu" = "كوبا";
+"under-sixteen_consent_call_for_action" = "اختر \"أوافق\" لتأكيد الموافقة.";
+"Select_country_or_region_headline" = "اختر البلد أو المنطقة";
+"Enter_your_mobile_number_label" = "أدخل رقم هاتفك المحمول";
+"norfolk_hint" = "على سبيل المثال: 51234";
+"permission_content_iOS_2" = "1. Bluetooth® \
+ 2. الإخطارات \
+\
+ لا يرسل COVIDSafe طلبات الاقتران.";
+"NotificationsBlurbLink" = "تغيير إعدادات الإخطارات";
+"home_set_complete_external_link_notifications_title_iOS" = "الإخطارات مفعّلة";
+"PN_ReminderTitle" = "لم يتم اكتشاف أي لقاءات لمدة 48 ساعة";
+"BluetoothOFF" = "Bluetooth®: متوقف";
+"home_set_complete_external_link_notifications_content_iOS_off" = "لن تتلقى أي إخطارات إذا لم يكن COVIDSafe نشطًا.";
+"home_set_complete_external_link_notifications_title_iOS_off" = "تم تعطيل الإخطارات";
+"allow_bluetooth_call" = "السماح لبرنامج COVIDSafe بالوصول إلى Bluetooth®";
+"AllowBluetoothOFF" = "الوصول إلى Bluetooth®: متوقف";
+"country_region_name_af" = "أفغانستان";
+"country_region_name_al" = "ألبانيا";
+"country_region_name_dz" = "الجزائر";
+"country_region_name_ad" = "أندورا";
+"country_region_name_ao" = "أنغولا";
+"country_region_name_ai" = "أنغيلا";
+"country_region_name_ag" = "أنتيغوا وبربودا";
+"country_region_name_ar" = "الأرجنتين";
+"country_region_name_am" = "أرمينيا";
+"country_region_name_aw" = "أروبا";
+"country_region_name_au" = "أستراليا";
+"country_region_name_at" = "النمسا";
+"country_region_name_az" = "أذربيجان";
+"country_region_name_bh" = "البحرين";
+"country_region_name_bd" = "بنغلاديش";
+"country_region_name_bb" = "بربادوس";
+"country_region_name_be" = "بلجيكا";
+"country_region_name_dj" = "جيبوتي";
+"country_region_name_dm" = "دومينيكا";
+"country_region_name_do" = "جمهورية الدومنيكان";
+"country_region_name_ec" = "إكوادور";
+"country_region_name_eg" = "مصر";
+"country_region_name_sv" = "السلفادور";
+"country_region_name_gq" = "غينيا الإستوائية";
+"country_region_name_ee" = "إستونيا";
+"country_region_name_et" = "أثيوبيا";
+"country_region_name_fo" = "جزر الفارو";
+"country_region_name_fj" = "فيجي";
+"country_region_name_fi" = "فنلندا";
+"country_region_name_fr" = "فرنسا";
+"country_region_name_gf" = "غيانا الفرنسية";
+"country_region_name_ga" = "الغابون";
+"country_region_name_gm" = "غامبيا";
+"country_region_name_ge" = "جورجيا";
+"country_region_name_de" = "ألمانيا";
+"country_region_name_gh" = "غانا";
+"country_region_name_gi" = "جبل طارق";
+"country_region_name_gr" = "اليونان";
+"country_region_name_gl" = "غرينلاند";
+"country_region_name_gd" = "غرينادا";
+"country_region_name_gp" = "غواديلوب";
+"country_region_name_gn" = "غينيا";
+"country_region_name_gw" = "غينيا - بيساو";
+"country_region_name_gy" = "غيانا";
+"country_region_name_ht" = "هايتي";
+"country_region_name_hn" = "هندوراس";
+"country_region_name_hu" = "المجر";
+"country_region_name_bz" = "بليز";
+"country_region_name_bj" = "بنين";
+"country_region_name_bm" = "برمودا";
+"country_region_name_bt" = "بوتان";
+"country_region_name_bo" = "بوليفيا";
+"country_region_name_ba" = "البوسنة والهرسك";
+"country_region_name_bw" = "بوتسوانا";
+"country_region_name_br" = "البرازيل";
+"country_region_name_bn" = "بروناي";
+"country_region_name_bg" = "بلغاريا";
+"country_region_name_bf" = "بوركينا فاسو";
+"country_region_name_bi" = "بوروندي";
+"country_region_name_kh" = "كمبوديا";
+"country_region_name_cm" = "الكاميرون";
+"country_region_name_ca" = "كندا";
+"country_region_name_cv" = "الرأس الأخضر";
+"country_region_name_ky" = "جزر كايمان";
+"country_region_name_cf" = "جمهورية افريقيا الوسطى";
+"country_region_name_td" = "تشاد";
+"country_region_name_cl" = "تشيلي";
+"country_region_name_cn" = "الصين";
+"country_region_name_co" = "كولومبيا";
+"country_region_name_km" = "جزر القمر";
+"country_region_name_ck" = "جزر كوك";
+"country_region_name_cr" = "كوستاريكا";
+"country_region_name_hr" = "كرواتيا";
+"country_region_name_cy" = "قبرص";
+"country_region_name_cz" = "جمهورية التشيك";
+"country_region_name_cd" = "جمهورية الكونغو الديموقراطية";
+"country_region_name_dk" = "الدنمارك";
+"country_region_name_is" = "أيسلندا";
+"country_region_name_in" = "الهند";
+"country_region_name_id" = "إندونيسيا";
+"country_region_name_iq" = "العراق";
+"country_region_name_ie" = "أيرلندا";
+"country_region_name_il" = "إسرائيل";
+"country_region_name_it" = "إيطاليا";
+"country_region_name_ci" = "ساحل العاج";
+"country_region_name_jm" = "جامايكا";
+"country_region_name_jp" = "اليابان";
+"country_region_name_jo" = "الأردن";
+"country_region_name_kz" = "كازاخستان";
+"country_region_name_ke" = "كينيا";
+"country_region_name_ki" = "كيريباتي";
+"country_region_name_kw" = "الكويت";
+"country_region_name_kg" = "قيرغيزستان";
