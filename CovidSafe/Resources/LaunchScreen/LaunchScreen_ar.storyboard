@@ -35,9 +35,9 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZS-BI-D7Z">
-                                                <rect key="frame" x="37" y="280" width="166.5" height="42.5"/>
-                                                <string key="text">Help stop the spread
-and save lives.</string>
+                                                <rect key="frame" x="43" y="280" width="154" height="42.5"/>
+                                                <string key="text">ساعد في وقف الانتشار
+وإنقاذ الأرواح.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>

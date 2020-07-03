@@ -63,7 +63,7 @@ class OTPViewController: UIViewController, RegistrationHandler {
             .foregroundColor: UIColor.covidSafeColor,
             .underlineStyle: NSUnderlineStyle.single.rawValue
         ]
-        let wrongNumberText = NSAttributedString(string: NSLocalizedString("IsThisNumberWrong",
+        let wrongNumberText = NSAttributedString(string: NSLocalizedString("enter_pin_wrong_number",
                                                                            comment: "Is the entered mobile number incorrect"),
                                                  attributes: linkAtt)
         self.wrongNumberButton?.setAttributedTitle(wrongNumberText, for: .normal)
@@ -72,7 +72,7 @@ class OTPViewController: UIViewController, RegistrationHandler {
             .foregroundColor: UIColor.covidSafeColor,
             .underlineStyle: NSUnderlineStyle.single.rawValue
         ]
-        let resendPin = NSLocalizedString("ResendPin", comment: "Text for resend pin button")
+        let resendPin = NSLocalizedString("enter_pin_resend_pin", comment: "Text for resend pin button")
         let resendCodeText = NSAttributedString(string: resendPin, attributes: buttonAtt)
         self.resendCodeButton?.setAttributedTitle(resendCodeText, for: .normal)
         
@@ -144,6 +144,9 @@ class OTPViewController: UIViewController, RegistrationHandler {
             
             verifyButton?.isEnabled = false
             verifyButton?.backgroundColor = self.verifyDisabledColor
+            if UIAccessibility.isVoiceOverRunning {
+                UIAccessibility.post(notification: .layoutChanged, argument: expiredMessageLabel)
+            }
         }
     }
     
@@ -156,7 +159,7 @@ class OTPViewController: UIViewController, RegistrationHandler {
                 let errorAlert = UIAlertController(title: "PhoneVerificationErrorTitle".localizedString(),
                                                    message: "PhoneVerificationErrorMessage".localizedString(),
                                                    preferredStyle: .alert)
-                errorAlert.addAction(UIAlertAction(title: "OK".localizedString(), style: .default, handler: { _ in
+                errorAlert.addAction(UIAlertAction(title: "global_OK".localizedString(), style: .default, handler: { _ in
                     NSLog("Unable to verify phone number")
                 }))
                 self?.present(errorAlert, animated: true)
@@ -194,7 +197,7 @@ class OTPViewController: UIViewController, RegistrationHandler {
             let errorAlert = UIAlertController(title: "PhoneNumberFormatErrorTitle".localizedString(),
                                                message: "PhoneNumberFormatErrorMessage".localizedString(),
                                                preferredStyle: .alert)
-            errorAlert.addAction(UIAlertAction(title: "OK".localizedString(), style: .default, handler: { _ in
+            errorAlert.addAction(UIAlertAction(title: "global_OK".localizedString(), style: .default, handler: { _ in
                 self.navigationController?.popViewController(animated: true)
                 NSLog("Unable to verify phone number")
             }))
@@ -246,10 +249,16 @@ class OTPViewController: UIViewController, RegistrationHandler {
                 viewController.errorMessageLabel?.text = "InvalidOTP".localizedString(comment: "Must be a 6-digit code")
                 self.errorMessageLabel?.isHidden = false
                 self.codeInputView?.invalidCode = true
+                if UIAccessibility.isVoiceOverRunning {
+                    UIAccessibility.post(notification: .layoutChanged, argument: viewController.errorMessageLabel)
+                }
             case .WrongOTP:
-                viewController.errorMessageLabel?.text = "WrongOTP".localizedString(comment: "Wrong PIN entered")
+                viewController.errorMessageLabel?.text = "wrong_ping_number".localizedString(comment: "Wrong PIN entered")
                 self.errorMessageLabel?.isHidden = false
                 self.codeInputView?.invalidCode = true
+                if UIAccessibility.isVoiceOverRunning {
+                    UIAccessibility.post(notification: .layoutChanged, argument: viewController.errorMessageLabel)
+                }
             case .Success:
                 if (self.reauthenticating) {
                     self.dismiss(animated: true, completion: nil)

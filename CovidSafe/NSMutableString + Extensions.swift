@@ -7,21 +7,22 @@ public extension NSMutableAttributedString {
     func addLink(enclosedIn marker: String, urlString: String) -> Bool {
         guard !marker.isEmpty else { return false }
         
-        // Begin marker
-        guard let beginRange = string.range(of: marker) else { return false }
-        let beginLowerBound = string.distance(from: string.startIndex, to: beginRange.lowerBound)
-        let beginUpperBound = string.distance(from: string.startIndex, to: beginRange.upperBound)
-        let nsBeginRange = NSRange(location: beginLowerBound, length: beginUpperBound - beginLowerBound)
+        let regexString = marker == "*" ? #"\*(.*?)\*"# : "\(marker)(.*?)\(marker)"
+        guard let strRange = string.range(of: regexString, options: .regularExpression) else {
+            return false
+        }
+        let convertedRange = NSRange(strRange, in: string)
+        
+        let matchingString = string[strRange]
+        let enclosedString = matchingString.replacingOccurrences(of: marker, with: "")
+        let nsBeginRange = NSRange(location: convertedRange.location, length: marker.count)
+        let nsEndRange = NSRange(location: convertedRange.upperBound - marker.count, length: marker.count)
+        // first replace end, otherwise the range will change
+        replaceCharacters(in: nsEndRange, with: "")
         replaceCharacters(in: nsBeginRange, with: "")
         
-        // End marker
-        guard let endRange = string.range(of: marker) else { return false }
-        let endLowerBound = string.distance(from: string.startIndex, to: endRange.lowerBound)
-        let endUpperBound = string.distance(from: string.startIndex, to: endRange.upperBound)
-        let nsEndRange = NSRange(location: endLowerBound, length: endUpperBound - endLowerBound)
-        replaceCharacters(in: nsEndRange, with: "")
+        let linkRange = NSRange(location: convertedRange.location, length: enclosedString.count)
         
-        let linkRange = NSRange(location: nsBeginRange.location, length: nsEndRange.location - nsBeginRange.location)
         let attributes: [NSAttributedString.Key: Any] = [
             .link: urlString,
             .underlineStyle: NSUnderlineStyle.single.rawValue,

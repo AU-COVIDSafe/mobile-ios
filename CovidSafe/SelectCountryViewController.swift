@@ -9,22 +9,30 @@ import UIKit
 import FlagKit
 import SafariServices
 
-struct Country {
-    var name: String!
+class Country {
+    @objc var name: String!
     var isoCode: String!
     var phoneCode: String!
     var flag: Flag?
+    
+    init(name: String, isoCode: String, phoneCode: String, flag: Flag?) {
+        self.name = name
+        self.isoCode = isoCode
+        self.phoneCode = phoneCode
+        self.flag = flag
+    }
 }
 
 class SelectCountryViewController: UITableViewController, UISearchResultsUpdating {
     
+    let collation = UILocalizedIndexedCollation.current()
     let searchController = UISearchController(searchResultsController: nil)
     let AU_OPTIONS_KEY = "OptionsForAustralia"
 
     var countriesTableData: Dictionary<String, [Country]> = [:]
-    let countriesSortedByName = CountriesData.countries.sorted(by: { (country1, country2) -> Bool in
-        country1.name < country2.name
-    })
+    lazy var countriesSortedByName: [Country] =
+        collation.sortedArray(from: CountriesData.countries, collationStringSelector: #selector(getter: Country.name)) as! [Country]
+    
     var filteredCountriesTableData: [Country] = []
     var countrySelectionDelegate: CountrySelectionDelegate?
     
@@ -37,7 +45,7 @@ class SelectCountryViewController: UITableViewController, UISearchResultsUpdatin
     override func viewDidLoad() {
         super.viewDidLoad()
         let label = UILabel()
-        label.text = "SelectCountryTitle".localizedString()
+        label.text = "Select_country_or_region_headline".localizedString()
         label.font = UIFont.preferredFont(forTextStyle: .headline)
         self.navigationItem.titleView = label
         
@@ -58,19 +66,23 @@ class SelectCountryViewController: UITableViewController, UISearchResultsUpdatin
         }
         
         // Create the data source of the countries table
-        let norfolkIslandCountry = Country(name: "Country_AU2".localizedString(), isoCode: "AU2", phoneCode: "672", flag: Flag(countryCode: "AU"))
-        let australiaCountry = Country(name: "Country_AU".localizedString(), isoCode: "AU", phoneCode: "61", flag: Flag(countryCode: "AU"))
+        let norfolkIslandCountry = Country(name: "country_region_name_au2".localizedString(), isoCode: "AU2", phoneCode: "672", flag: Flag(countryCode: "AU"))
+        let australiaCountry = Country(name: "country_region_name_au".localizedString(), isoCode: "AU", phoneCode: "61", flag: Flag(countryCode: "AU"))
         countriesTableData.updateValue([australiaCountry, norfolkIslandCountry], forKey: AU_OPTIONS_KEY)
         countriesSectionTitles.append(" ")
         
+        let sectionsTitles = collation.sectionTitles
+        
         for country in countriesSortedByName {
-            let initial = String(country.name[country.name.startIndex])
-            var sectionCountries: [Country] = countriesTableData[initial] ?? []
+            let sectionIndexNumber = collation.section(for: country, collationStringSelector: #selector(getter: Country.name))
+            let sectionIndexInitial = sectionsTitles[sectionIndexNumber]
+            var sectionCountries: [Country] = countriesTableData[sectionIndexInitial] ?? []
             if sectionCountries.count == 0 {
-                countriesSectionTitles.append(initial)
+                let sectionTitle = sectionsTitles[sectionIndexNumber]
+                countriesSectionTitles.append(sectionTitle)
             }
             sectionCountries.append(country)
-            countriesTableData.updateValue(sectionCountries, forKey: initial)
+            countriesTableData.updateValue(sectionCountries, forKey: sectionIndexInitial)
         }
     }
     
@@ -149,7 +161,7 @@ class SelectCountryViewController: UITableViewController, UISearchResultsUpdatin
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if !isFiltering {
             if section == 0 {
-                return "AustraliaSectionTitle".localizedString()
+                return "options_for_australia".localizedString()
             }
 
             return countriesSectionTitles[section]

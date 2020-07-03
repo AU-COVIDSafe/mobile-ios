@@ -220,7 +220,7 @@ final class FeedbackViewController: UIViewController {
     
     private func showErrorMessage(_ message: String) {
         let alert = AlertController(title: "COVIDSafe", message: message, preferredStyle: .alert)
-        let okActionTitle = "OK".localizedString()
+        let okActionTitle = "global_OK".localizedString()
         let okAction = UIAlertAction(title: okActionTitle, style: .default)
         alert.addAction(okAction)
         present(alert, animated: true)

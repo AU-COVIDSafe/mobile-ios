@@ -1,0 +1,449 @@
+"data_privacy_content" = "COVIDSafe에 등록하기 전에 COVIDSafe *개인정보 보호 정책을* 읽는 것이 중요합니다. \
+\
+당신이 16세 미만이라면, 부모 또는 보호자도 반드시 *개인정보 보호 정책을* 읽어야합니다. \
+\
+COVIDSafe의 사용은 전적으로 자발적입니다. 언제든지 앱을 설치 또는 삭제할 수 있습니다. COVIDSafe를 삭제하면, 당신은 보안 서버에 있는 자신의 정보 삭제 또한 요청할 수 있습니다. \
+\
+COVIDSafe에 등록하려면, 성명, 휴대폰 번호, 연령대 및 우편번호를 입력해야 합니다. \
+\
+등록 시 제출한 정보 및 당신의 COVIDSafe 사용정보는 보안성 높은 서버에 수집 및 저장됩니다. \
+\
+COVIDSafe는 당신의 위치정보를 수집하지 않습니다. \
+\
+COVIDSafe는 접촉 시각 및 당신과 접촉한 다른 COVIDSafe 사용자의 익명 ID 코드를 기록합니다. \
+\
+다른 COVIDSafe 사용자의 장치에 당신의 익명 ID 코드 및 당신과의 접촉 시각이 기록될 것입니다. \
+\
+다른 사용자가 COVID-19 양성 결과가 나오면, 그들이 자신의 접촉정보를 업로드 할 수 있으며, 주 또는 테리토리 보건 담당자가 접촉추적 목적으로 당신에게 연락을 취할 수 있습니다. \
+\
+당신의 등록 정보는 접촉추적 및 COVIDSafe의 적절하고 합법적인 기능을 위해서만 사용 또는 공개됩니다. \
+\
+자세한 정보는 호주 정부 보건부 웹사이트에서 확인할 수 있습니다. \
+\
+자신의 정보에 대한 권리와 개인정보의 취급 및 공유 방법에 대한 자세한 내용은 COVIDSafe *개인정보 보호 정책을* 참조하십시오.";
+"intro_headline" = "함께 할 때 우리는 COVID-19의 확산을 막을 수 있습니다";
+"personal_details_name_characters_prompt" = "";
+"OS2b_Item3Underline" = "더 알아보세요";
+"OS2b_Item3" = "3. COVIDSafe는 페어링 요청을 보내지 않습니다. 더 알아보세요.";
+"how_it_works_content" = "블루투스® 신호는 당신이 언제 다른 COVIDSafe 사용자 근처에 있는지를 확인하는 데 사용됩니다. \
+\
+당신과 다른 COVIDSafe 사용자들 사이의 모든 근거리 접촉상황들은 근거리 접촉정보로 기록됩니다. 이 정보는 암호화되어 당신의 휴대폰에만 저장됩니다. \
+\
+COVIDSafe 사용자로서 당신이 COVID-19에 양성 결과가 나오면, 주 또는 테리토리 보건 담당자가 당신에게 연락할 것입니다. 당신이 자신의 근거리 접촉정보를 보안성 높은 정보 저장 체계에 자발적으로 업로드할 수 있도록 도와줄 것입니다. \
+\
+또한 양성 결과가 나온 다른 COVIDSafe 사용자와 당신이 가까이 접촉한 경우, 주 또는 테리토리 보건 담당자가 당신에게 연락을 취할 수 있습니다. \
+\
+자세한 내용은 * 도움말 항목 * 페이지를 참조하세요";
+"registration_consent_content" = "본인은 호주 보건부 (Department of Health)의 다음과 같은 정보 수집에 동의합니다.";
+"under_sixteen_second_paragraph" = "다른 COVIDSafe 사용자가 COVID-19 양성 결과를 받은 후 그 사용자와 나 사이의 접촉정보.";
+"permission_success_headline" = "등록에 성공했습니다.";
+"home_app_permission_status_subtitle" = "COVIDSafe는 올바른 설정없이는 작동되지 않습니다.";
+"home_data_uploaded_message" = "COVID-19의 확산방지에 협조하고 자신의 증상을 추적하세요.";
+"upload_step_4_sub_header" = "당신이 동의하지 않는 한, 당신과의 가까운 접촉정보는 업로드되지 않습니다.\
+\
+동의하시면, 당신과의 가까운 접촉정보가 업로드되고, 주 또는 테리토리 보건 담당자와 공유되어 접촉추적 목적으로 사용될 것입니다.\
+\
+자세한 내용은 COVIDSafe *개인 정보 보호 정책* 을 참조하세요.";
+"upload_finished_header" = "COVID-19의 확산을 막는 데 협조해 주셔서 감사합니다!";
+"pin_issue" = "* PIN을 받는 데 문제가 있습니까? *";
+"permission_content_iOS" = "COVIDSafe 작동을 위해 블루투스®가 활성화되어 있어야 합니다. 알림기능을 활성화하면, COVIDSafe가 비활성화되어 있을 때 알림을 받게 됩니다. \
+\
+'진행'을 선택하여 활성화 하십시오:";
+"home_set_complete_external_link_notifications_content_iOS_off" = "COVIDSafe가 활성화되어 있지 않으면 알림을 받지 못합니다.";
+"OS2b_Item2" = "2. 블루투스®가 켜져 있어야 합니다.";
+"NotificationsEnabledBlurb" = "COVIDSafe가 비활성화되어 있으면 알림을 받을 것입니다.\n알림 설정 변경하기";
+"SelectedCountryTemplate" = "(+%@ ) %@이(가) 선택되었습니다";
+"ValidationError" = "인증 오류";
+"ReceivePinIssue" = "PIN을 받는 데 문제가 있습니까?";
+"PhoneNumberFormatErrorMessage" = "휴대폰 번호를 입력하세요.";
+"InformationUploaded" = "여러분의 정보가 %@에 업로드 되었습니다.";
+"newFeedback_deleteScreenshotConfirmation_message" = "이 스크린 샷은 영구적으로 삭제됩니다.";
+"newFeedback_deleteScreenshot_actionTitle" = "스크린 샷 삭제하기";
+"NotificationsDisabledBlurb" = "COVIDSafe가 비활성화되어 있으면 알림을 받을 것입니다.";
+"home_version_number_ios" = "버전 %@ , 빌드 %@";
+"ReportAnIssue" = "문제 신고하기";
+"IssueThankYou" = "감사합니다! 여러분의 피드백을 받았습니다.";
+"upload_consent_button" = "동의합니다";
+"Done" = "완료";
+"Next" = "다음";
+"EnterPhoneReVerify" = "재확인을 위해 휴대폰 전화번호를 입력하세요";
+"EnterPINSent" = "%@로 보낸 PIN을 입력하세요";
+"PINWillExpire" = "PIN이 %@후에 만료됩니다";
+"CodeHasExpired" = "코드가 만료되었습니다.";
+"InvalidOTP" = "반드시 6자리 코드여야 합니다";
+"PhoneVerificationErrorTitle" = "전화번호 확인 중 오류";
+"PhoneNumberFormatErrorTitle" = "잘못된 전화번호 형식";
+"PhoneVerificationErrorMessage" = "여러분의 세부 사항을 확인한 후 다시 시도하세요.";
+"FoundIssueWithApp" = "COVIDSafe 앱에 문제가 있습니까?";
+"IssueDescPlaceholder" = "문제를 설명해 주세요.";
+"IssueFooter" = "여러분의 피드백에 대한 자세한 내용에 대해 연락을 드릴 수도 있습니다. 여러분의 이메일 주소는 다른 목적으로 사용되지 않습니다.";
+"entryPrompt_newFeedback_button_title" = "새로운 피드백";
+"OS2b_Item1" = "1. 외출 시 휴대폰을 소지하고, COVIDSafe가 활성화되어 있도록 하세요. ";
+"PairingRequestsInfo" = "COVIDSafe는 * 페어링 요청 *을 보내지 않습니다.";
+"PairingRequestsInfoUnderline" = "페어링 요청";
+"UploadFailed" = "업로드에 실패했습니다. 나중에 다시 시도하세요.";
+"UploadFailedErrorMessage" = "나중에 다시 시도하세요.";
+"EmailPlaceholder" = "유효한 이메일 주소를 입력하세요 (필수)";
+"global_cancel_button_title" = "취소";
+"global_send_button_title" = "보내기";
+"global_sending_indication_title" = "보내는 중";
+"global_success_indication_title" = "성공";
+"entryPrompt_alert_title" = "피드백 박스";
+"entryPrompt_alert_message" = "안녕하세요, 어떻게 진행하시겠습니까?";
+"newFeedbackFlow_navigationTitle" = "문제 신고하기";
+"newFeedback_send_errorMessage" = "피드백 보내기 오류";
+"newFeedback_noMessage_errorMessage" = "보내기 전에 저희에게 피드백을 주십시오.";
+"newFeedback_invalidEmail_errorMessage" = "유효한 이메일 주소를 입력하세요!";
+"global_OK" = "확인";
+"global_back" = "뒤로";
+"global_close" = "닫기";
+"PostcodeValidationErrorMessage" = "유효한 호주 우편 번호를 입력하세요.";
+"global_double_tap" = "두 번 탭해서 수정하세요";
+"OS1b_TopParagraph_VOLabel" = "";
+"permission_content_iOS_VOLabel" = "";
+"permission_content_iOS_2_VOLabel" = "";
+"NotificationsDisabled_VOLabel" = "";
+"NotificationsEnabled_VOLabel" = "";
+"HelpTopics_VOLabel" = "";
+"LatestNews_VOLabel" = "";
+"GetCoronaVirusApp_VOLabel" = "";
+"UploadData_VOLabel" = "";
+"ShareCovidSafe_VOLabel" = "";
+"PN_MobileNumber_VOLabel" = "";
+"PINNumber_VO_Label" = "";
+"OS2b_Item2_VOLabel" = "";
+"BluetoothOFF_VOLabel" = "";
+"BluetoothON_VOLabel" = "";
+"AllowBluetoothOFF_VOLabel" = "";
+"AllowBluetoothON_VOLabel" = "";
+"home_header_uploaded_on_date_ios" = "당신의 정보가 %@에 업로드 되었습니다.";
+"us_consent_button" = "동의";
+"IntroLabel" = "바이러스 확산을 방지해서 \
+생명을 구합시다.";
+"BluetoothOFF_content" = "휴대폰의 블루투스®를 켜십시오. '새 연결 허용'이 표시되면 선택하십시오.";
+"under_sixteen_registration_consent_first_paragraph" = "주 또는 테리토리 보건 담당자의 접촉 추적을 허용하기 위한 나의 등록 정보.";
+"personal_details_headline" = "본인의 정보 입력";
+"personal_details_name_error_prompt" = "본인의 성명을 입력하세요.";
+"personal_details_age_content_description" = "연령대 선택";
+"personal_details_age_error_prompt" = "본인의 연령대를 선택하세요.";
+"upload_step_4_header" = "동의 확인을 업로드하세요";
+"enter_number_content" = "본 휴대폰 번호 확인을 위해 6자리 PIN을 보내겠습니다.";
+"intro_content" = "COVIDSafe는 코로나 바이러스 확산으로부터 지역사회를 보호하기 위해 호주 정부에 의해 개발되었습니다. \
+\
+COVIDSafe는 당신과 다른 앱 사용자와의 접촉을 안전하게 기록합니다. 바이러스 양성 결과가 나온 사람과 당신이 근거리 접촉을 한 경우 주 및 테리토리 보건 담당자가 당신에게 연락을 취할 수 있습니다. \
+\
+다함께 바이러스 확산을 막고 건강을 유지할 수 있습니다.";
+"upload_finished_sub_header" = "보안성이 높은 COVIDSafe의 저장 체계에 당신의 정보를 성공적으로 업로드하였습니다. \
+\
+당신과 가까운 접촉기록이 있는 다른 COVIDSafe 사용자에게 주 또는 테리토리 보건 담당자가 통보할 것입니다. 다른 사용자들에게 당신의 신원은 익명으로 유지됩니다.";
+"dialog_uploading_message" = "당신의 COVIDSafe 정보가 현재 업로드 중입니다. \
+\
+앱을 닫지 마세요.";
+"migration_in_progress" = "COVIDSafe 업데이트 진행 중. \
+\
+업데이트가 완료될 때까지 휴대폰이 꺼지지 않도록 해주세요.";
+"data_privacy_headline" = "등록 및 개인정보 보호";
+"consent_button" = "동의";
+"under-sixteen_consent_call_for_action" = "동의 확인을 위해 '동의'를 선택하세요.";
+"consent_call_for_action" = "동의 확인을 위해 '동의'를 선택하세요. ";
+"registration_consent_first_paragraph" = "주 또는 테리토리 보건 담당자의 접촉 추적을 허용하기 위한 나의 등록 정보.";
+"registration_consent_second_paragraph" = "다른 COVIDSafe 사용자가 COVID-19 양성 결과를 받은 후 그 사용자와 나 사이의 접촉 정보.";
+"personal_details_post_code" = "호주의 우편번호";
+"personal_details_post_code_error_prompt" = "호주 우편번호는 반드시 4자리 숫자여야 합니다.";
+"personal_details_button" = "계속";
+"under_sixteen_headline" = "계속 진행하려면 부모 혹은 보호자의 동의가 필요합니다";
+"under_sixteen_content" = "본인의 부모 또는 보호자가 호주 보건부 (Department of Health)의 다음과 같은 정보 수집에 동의함을 확인합니다:";
+"under_sixteen_first_paragraph" = "주 또는 테리토리 보건 담당자의 접촉 추적을 허용하기 위한 나의 등록 정보.";
+"enter_number_headline" = "본인의 휴대폰 번호를 입력하세요";
+"invalid_norfolk_island_phone_number_error_prompt" = "노퍽 섬의 휴대폰 번호는 5-6자리입니다.";
+"enter_number_relative" = "친구나 친척을 대신해 등록하고 계십니까? \
+\
+COVIDSafe가 작동하려면, 자신의 장치와 전화번호를 사용하여 등록해야 합니다.";
+"options_for_australia" = "호주 관련 옵션";
+"country_region_name_bf" = "부르키나 파소";
+"country_region_name_mk" = "구 유고슬라비아 마케도니아 공화국";
+"country_region_name_mr" = "모리타니아";
+"country_region_name_au2" = "노퍽 섬";
+"country_region_name_ss" = "남수단";
+"country_region_name_zw" = "짐바브웨";
+"enter_pin_wrong_number" = "잘못된 휴대폰 번호입니까?";
+"enter_pin_timer_expire" = "&#160; 후에 PIN이 만료됩니다.";
+"wrong_ping_number" = "잘못된 PIN 입력";
+"permission_button" = "진행";
+"home_set_complete_external_link_share_title" = "COVIDSafe 공유하기";
+"home_set_complete_external_link_news_title" = "최신 뉴스 및 업데이트";
+"home_set_complete_external_link_share_content" = "다른 이들에게 참여를 권유하세요. 우리는 함께할 때 더 강해집니다.";
+"home_set_complete_external_link_news_url" = "https://www.australia.gov.au";
+"home_set_complete_external_link_self_isolation_register_url" = "https://covid-form.service.gov.au";
+"home_set_complete_external_link_news_content" = "최신 코로나 바이러스 뉴스를 보려면, aus.gov.au을 방문하세요.";
+"home_set_complete_external_link_app_title" = "코로나 바이러스 앱 받기";
+"home_set_complete_external_link_app_content" = "최신 뉴스 및 조언을 보려면 정부 앱을 다운로드하세요.";
+"home_set_complete_external_link_been_contacted_content" = "양성 결과가 나온 경우에만 본인의 정보를 업로드할 수 있습니다.";
+"home_set_complete_external_link_been_contacted_title" = "보건 담당자가 당신에게 연락했습니까?";
+"home_set_complete_external_link_help_topics_title" = "토픽별 도움";
+"home_set_complete_external_link_help_topics_content" = "앱에 대한 질문이나 문제가 있는 경우.";
+"action_report_an_issue" = "문제 신고하기";
+"upload_answer_yes" = "예";
+"upload_answer_no" = "아니요";
+"upload_step_1_header" = "보건 담당자가 당신의 정보를 업로드할 것을 당신에게 요청하고 있습니까?";
+"upload_step_1_body" = "COVID-19 양성 결과가 나온 경우에만 주 또는 테리토리 보건 담당자가 당신에게 연락해서 당신의 정보를 자발적으로 업로드하는 것을 도와줄 것입니다.  \
+\
+'예'를 누르면, 본인의 정보 업로드에 동의해야 합니다.";
+"home_app_permission_status_title" = "설정을 확인하세요.";
+"permission_success_warning" = "COVIDSafe에 대한 푸시 알림을 켜 놓으면 앱이 제대로 작동하지 않는 경우 신속하게 알려드릴 수 있습니다.";
+"permission_success_button" = "계속";
+"home_header_active_title" = "COVIDSafe가 활성화되어 있습니다.";
+"home_header_active_no_action_required" = "추가 조치가 필요하지 않습니다.";
+"home_header_inactive_title" = "COVIDSafe가 활성화되어 있지 않습니다.";
+"home_header_inactive_check_your_permissions" = "설정을 확인하세요.";
+"home_setup_help" = "도움";
+"upload_step_verify_pin_header" = "본인의 정보를 업로드하세요";
+"upload_step_verify_pin_sub_header" = "주 또는 테리토리 보건 담당자가 당신의 장치에 문자 메시지로 PIN을 보낼 것입니다. 본인의 정보를 업로드하려면 아래에 그 번호를 입력하십시오.";
+"action_verify_upload_pin" = "내 정보 업로드하기";
+"action_verify_invalid_pin" = "잘못된 PIN입니다. 보건 담당자에게 다른 PIN을 보내달라고 요청하십시오.";
+"action_continue" = "계속";
+"action_upload_done" = "계속";
+"upload_failed" = "업로드 실패";
+"country_region_name_cu" = "쿠바";
+"country_region_name_cw" = "퀴라소";
+"country_region_name_ir" = "이란";
+"Select_country_or_region_headline" = "국가 또는 지역을 선택하세요";
+"Enter_your_mobile_number_label" = "본인의 휴대폰 번호를 입력하세요";
+"norfolk_hint" = "예: 51234";
+"permission_content_iOS_2" = "1. 블루투스®\
+2. 알림\
+\
+COVIDSafe는 페어링 요청을 보내지 않습니다.";
+"home_set_complete_external_link_notifications_title_iOS" = "알림 기능이 활성화되어 있습니다";
+"NotificationsBlurbLink" = "알림 설정 변경";
+"PN_BluetoothStatusTitle" = "COVIDSafe가 활성화되어 있지 않습니다.";
+"PN_BluetoothStatusBody" = "블루투스®를 켜서 외출 시 혹은 공공 장소에 있을 때 COVIDSafe가 활성화되어 있도록 하세요.";
+"PN_ReminderTitle" = "48시간 동안 접촉이 감지되지 않음";
+"PN_ReminderBody" = "COVIDSafe를 열어 실행 중인지 확인하세요.";
+"AllowBluetoothON" = "블루투스® 접속: ON";
+"AllowBluetoothOFF" = "블루투스® 접속: OFF";
+"allow_bluetooth_call" = "COVIDSafe의 블루투스® 접속을 허용해 주세요";
+"home_set_complete_external_link_notifications_title_iOS_off" = "알림 기능이 비활성화 되었습니다";
+"BluetoothON" = "블루투스®: ON";
+"BluetoothOFF" = "블루투스®: OFF";
+"country_region_name_sd" = "수단";
+"country_region_name_ie" = "아일랜드";
+"country_region_name_il" = "이스라엘";
+"country_region_name_it" = "이탈리아";
+"data_privacy_button" = "다음";
+"invalid_australian_phone_number_error_prompt" = "호주 휴대폰 번호는 최대 10자리입니다.";
+"enter_number_button" = "PIN 받기";
+"country_region_name_af" = "아프가니스탄";
+"country_region_name_al" = "알바니아";
+"country_region_name_dz" = "알제리";
+"country_region_name_ad" = "안도라";
+"country_region_name_ao" = "앙골라";
+"country_region_name_ai" = "앵귈라";
+"country_region_name_ag" = "앤티가 바부다";
+"country_region_name_ar" = "아르헨티나";
+"country_region_name_am" = "아르메니아";
+"country_region_name_aw" = "아루바";
+"country_region_name_au" = "호주";
+"country_region_name_at" = "오스트리아";
+"country_region_name_az" = "아제르바이잔";
+"country_region_name_bs" = "바하마";
+"country_region_name_bh" = "바레인";
+"country_region_name_bd" = "방글라데시";
+"country_region_name_bb" = "바베이도스";
+"country_region_name_by" = "벨라루스";
+"country_region_name_be" = "벨기에";
+"country_region_name_dj" = "지부티";
+"country_region_name_hk" = "홍콩";
+"country_region_name_hu" = "헝가리";
+"country_region_name_is" = "아이슬란드";
+"country_region_name_in" = "인도";
+"country_region_name_id" = "인도네시아";
+"country_region_name_iq" = "이라크";
+"country_region_name_ci" = "아이보리 해안";
+"country_region_name_jm" = "자메이카";
+"country_region_name_jp" = "일본";
+"country_region_name_jo" = "요르단";
+"country_region_name_kz" = "카자흐스탄";
+"country_region_name_ke" = "케냐";
+"country_region_name_ki" = "키리바시";
+"country_region_name_kw" = "쿠웨이트";
+"country_region_name_kg" = "키르기스스탄";
+"country_region_name_la" = "라오스";
+"country_region_name_lv" = "라트비아";
+"country_region_name_lb" = "레바논";
+"country_region_name_ls" = "레소토";
+"country_region_name_lr" = "라이베리아";
+"country_region_name_ly" = "리비아";
+"country_region_name_li" = "리히텐슈타인";
+"country_region_name_lt" = "리투아니아";
+"country_region_name_no" = "노르웨이";
+"country_region_name_om" = "오만";
+"country_region_name_pk" = "파키스탄";
+"country_region_name_pw" = "팔라우";
+"country_region_name_vn" = "베트남";
+"country_region_name_vg" = "영국령 버진 아일랜드";
+"country_region_name_vi" = "미국령 버진 아일랜드";
+"country_region_name_ye" = "예멘";
+"country_region_name_zm" = "잠비아";
+"enter_pin_headline" = "%s %s에 보내진 PIN을 입력하세요";
+"dialog_error_uploading_message" = "정보를 업로드하는 동안 오류가 발생했습니다. 다시 시도하세요.";
+"dialog_error_uploading_positive" = "다시 시도";
+"dialog_error_uploading_negative" = "취소";
+"share_this_app_content" = "COVID-19의 확산을 막아주세요! 호주 정부의 앱인 COVIDSafe를 다운로드하세요. # COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
+"intro_button" = "저도 동참하고 싶어요";
+"how_it_works_headline" = "COVIDSafe의 작동 원리";
+"how_it_works_button" = "다음";
+"country_region_name_dm" = "도미니카";
+"country_region_name_do" = "도미니카 공화국";
+"country_region_name_ec" = "에콰도르";
+"country_region_name_eg" = "이집트";
+"country_region_name_sv" = "엘살바도르";
+"country_region_name_gq" = "적도 기니";
+"country_region_name_ee" = "에스토니아";
+"country_region_name_et" = "에티오피아";
+"country_region_name_fo" = "페로 제도";
+"country_region_name_fj" = "피지";
+"country_region_name_fi" = "핀란드";
+"country_region_name_fr" = "프랑스";
+"country_region_name_gf" = "프랑스령 기아나";
+"country_region_name_ga" = "가봉";
+"country_region_name_gm" = "감비아";
+"country_region_name_ge" = "그루지야";
+"country_region_name_de" = "독일";
+"country_region_name_gh" = "가나";
+"country_region_name_gi" = "지브롤터";
+"country_region_name_gr" = "그리스";
+"country_region_name_gl" = "그린란드";
+"country_region_name_gd" = "그레나다";
+"country_region_name_gp" = "과들루프";
+"country_region_name_gu" = "괌";
+"country_region_name_gt" = "과테말라";
+"country_region_name_gn" = "기니";
+"country_region_name_gw" = "기니 비사우";
+"country_region_name_gy" = "가이아나";
+"country_region_name_ht" = "아이티";
+"country_region_name_hn" = "온두라스";
+"country_region_name_ps" = "팔레스타인 영토";
+"country_region_name_pa" = "파나마";
+"country_region_name_es" = "스페인";
+"country_region_name_lk" = "스리랑카";
+"country_region_name_sr" = "수리남";
+"country_region_name_sz" = "스와질란드";
+"country_region_name_se" = "스웨덴";
+"country_region_name_ch" = "스위스";
+"country_region_name_tw" = "대만";
+"country_region_name_tj" = "타지키스탄";
+"country_region_name_tz" = "탄자니아";
+"country_region_name_th" = "태국";
+"country_region_name_tl" = "동티모르";
+"country_region_name_tg" = "토고";
+"country_region_name_to" = "통가";
+"country_region_name_tt" = "트리니다드 토바고";
+"country_region_name_tn" = "튀니지아";
+"country_region_name_tr" = "터키";
+"country_region_name_tm" = "투르크메니스탄";
+"country_region_name_tc" = "터크스 케이커스 제도";
+"country_region_name_ug" = "우간다";
+"country_region_name_ua" = "우크라이나";
+"country_region_name_ae" = "아랍 에미리트";
+"country_region_name_gb" = "영국";
+"country_region_name_us" = "미국";
+"country_region_name_uy" = "우루과이";
+"country_region_name_uz" = "우즈베키스탄";
+"country_region_name_vu" = "바누아투";
+"country_region_name_ve" = "베네수엘라";
+"enter_pin_resend_pin" = "PIN 다시 보내기";
+"enter_pin_button" = "확인하기";
+"permission_headline" = "앱 설정";
+"registration_consent_headline" = "등록 동의";
+"personal_details_name_title" = "성명";
+"personal_details_age_title" = "연령대 (선택)";
+"personal_details_dialog_ok" = "선택하기";
+"select_country_or_region" = "국가 또는 지역을 선택하세요";
+"country_region_name_bz" = "벨리즈";
+"country_region_name_bj" = "베냉";
+"country_region_name_bm" = "버뮤다";
+"country_region_name_bt" = "부탄";
+"country_region_name_bo" = "볼리비아";
+"country_region_name_ba" = "보스니아 헤르체고비나";
+"country_region_name_bw" = "보츠와나";
+"country_region_name_br" = "브라질";
+"country_region_name_bn" = "브루나이";
+"country_region_name_bg" = "불가리아";
+"country_region_name_bi" = "부룬디";
+"country_region_name_kh" = "캄보디아";
+"country_region_name_cm" = "카메룬";
+"country_region_name_ca" = "캐나다";
+"country_region_name_cv" = "카보 베르데";
+"country_region_name_ky" = "케이맨 제도";
+"country_region_name_cf" = "중앙 아프리카 공화국";
+"country_region_name_td" = "차드";
+"country_region_name_cl" = "칠레";
+"country_region_name_cn" = "중국";
+"country_region_name_co" = "콜롬비아";
+"country_region_name_km" = "코모로";
+"country_region_name_ck" = "쿡 제도";
+"country_region_name_cr" = "코스타리카";
+"country_region_name_hr" = "크로아티아";
+"country_region_name_cy" = "키프로스";
+"country_region_name_cz" = "체코 공화국";
+"country_region_name_cd" = "콩고 공화국";
+"country_region_name_dk" = "덴마크";
+"country_region_name_lu" = "룩셈부르크";
+"country_region_name_mo" = "마카오";
+"country_region_name_mg" = "마다가스카르";
+"country_region_name_mw" = "말라위";
+"country_region_name_my" = "말레이시아";
+"country_region_name_mv" = "몰디브";
+"country_region_name_ml" = "말리";
+"country_region_name_mt" = "몰타";
+"country_region_name_mq" = "마르티니크";
+"country_region_name_mu" = "모리셔스";
+"country_region_name_mx" = "멕시코";
+"country_region_name_md" = "몰도바";
+"country_region_name_mc" = "모나코";
+"country_region_name_mn" = "몽골";
+"country_region_name_me" = "몬테네그로";
+"country_region_name_ms" = "몬세라트";
+"country_region_name_ma" = "모로코";
+"country_region_name_mz" = "모잠비크";
+"country_region_name_mm" = "미얀마";
+"country_region_name_na" = "나미비아";
+"country_region_name_np" = "네팔";
+"country_region_name_nl" = "네덜란드";
+"country_region_name_an" = "네덜란드령 안틸레스";
+"country_region_name_nc" = "뉴칼레도니아";
+"country_region_name_nz" = "뉴질랜드";
+"country_region_name_ni" = "니카라과";
+"country_region_name_ne" = "니제르";
+"country_region_name_ng" = "나이지리아";
+"country_region_name_pg" = "파푸아 뉴기니";
+"country_region_name_py" = "파라과이";
+"country_region_name_pe" = "페루";
+"country_region_name_ph" = "필리핀";
+"country_region_name_pl" = "폴란드";
+"country_region_name_pt" = "포르투갈";
+"country_region_name_pr" = "푸에르토리코";
+"country_region_name_qa" = "카타르";
+"country_region_name_cg" = "콩고 공화국";
+"country_region_name_re" = "레위니옹 섬";
+"country_region_name_ro" = "루마니아";
+"country_region_name_ru" = "러시아";
+"country_region_name_rw" = "르완다";
+"country_region_name_kn" = "세인트 키츠 네비스";
+"country_region_name_lc" = "세인트 루시아";
+"country_region_name_vc" = "세인트 빈센트 그레나딘";
+"country_region_name_ws" = "사모아";
+"country_region_name_st" = "상투메 프린시페";
+"country_region_name_sa" = "사우디 아라비아";
+"country_region_name_sn" = "세네갈";
+"country_region_name_rs" = "세르비아";
+"country_region_name_sc" = "세이셸";
+"country_region_name_sl" = "시에라 리온";
+"country_region_name_sg" = "싱가폴";
+"country_region_name_sk" = "슬로바키아";
+"country_region_name_si" = "슬로베니아";
+"country_region_name_sb" = "솔로몬 제도";
+"country_region_name_so" = "소말리아";
+"country_region_name_za" = "남아공화국";
+"country_region_name_kr" = "대한민국";
