@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HPs-l8-CC5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HPs-l8-CC5">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -534,10 +534,10 @@ Once you press ‘Yes’ you’ll need to provide consent to upload your informa
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="587"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdE-ta-9is" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="485.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="445.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Consent" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecY-RE-ssa">
-                                                <rect key="frame" x="32" y="56" width="311" height="33.5"/>
+                                                <rect key="frame" x="32" y="60" width="311" height="33.5"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -549,15 +549,13 @@ Once you press ‘Yes’ you’ll need to provide consent to upload your informa
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" delaysContentTouches="NO" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ryL-BN-XeS">
-                                                <rect key="frame" x="32" y="105.5" width="311" height="280"/>
+                                                <rect key="frame" x="32" y="109.5" width="311" height="236"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <string key="text">Unless you consent, your close contact information will not be uploaded.
 
 If you consent, your close contact information will be uploaded and shared with state or territory health officials for contact tracing purposes. 
 
-Read the COVIDSafe *privacy policy* for further details.
-
-Select 'I agree' to confirm consent.</string>
+Read the COVIDSafe *privacy policy* for further details.</string>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -579,19 +577,31 @@ Select 'I agree' to confirm consent.</string>
                                                     <action selector="onBackTapped:" destination="GKP-u6-wgj" eventType="touchUpInside" id="9we-7d-25R"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select 'I agree' to confirm consent." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4j6-cA-E6O">
+                                                <rect key="frame" x="32" y="361.5" width="311" height="20.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="consent_call_for_action"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <accessibility key="accessibilityConfiguration" label="ContentView"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="ryL-BN-XeS" secondAttribute="bottom" constant="100" id="4JN-hN-SHZ"/>
-                                            <constraint firstItem="ecY-RE-ssa" firstAttribute="top" secondItem="qdE-ta-9is" secondAttribute="top" constant="56" id="9pa-0O-gf7"/>
+                                            <constraint firstItem="ryL-BN-XeS" firstAttribute="leading" secondItem="qdE-ta-9is" secondAttribute="leading" constant="32" id="41x-sg-kSw"/>
+                                            <constraint firstItem="ecY-RE-ssa" firstAttribute="top" secondItem="c1v-Px-kY5" secondAttribute="bottom" id="9pa-0O-gf7"/>
+                                            <constraint firstItem="4j6-cA-E6O" firstAttribute="top" secondItem="ryL-BN-XeS" secondAttribute="bottom" constant="16" id="DhI-Nt-oat"/>
+                                            <constraint firstItem="4j6-cA-E6O" firstAttribute="leading" secondItem="qdE-ta-9is" secondAttribute="leading" constant="32" id="HrP-xU-QAM"/>
+                                            <constraint firstAttribute="bottom" secondItem="4j6-cA-E6O" secondAttribute="bottom" constant="63.5" id="L8G-TC-oPH"/>
                                             <constraint firstAttribute="trailing" secondItem="ecY-RE-ssa" secondAttribute="trailing" constant="32" id="O5O-Q5-L92"/>
                                             <constraint firstItem="ecY-RE-ssa" firstAttribute="leading" secondItem="qdE-ta-9is" secondAttribute="leading" constant="32" id="RA6-hI-Six"/>
                                             <constraint firstItem="c1v-Px-kY5" firstAttribute="leading" secondItem="qdE-ta-9is" secondAttribute="leading" constant="16" id="Utd-IG-kxz"/>
+                                            <constraint firstAttribute="trailing" secondItem="4j6-cA-E6O" secondAttribute="trailing" constant="32" id="YXD-rn-poZ"/>
                                             <constraint firstItem="ryL-BN-XeS" firstAttribute="top" secondItem="ecY-RE-ssa" secondAttribute="bottom" constant="16" id="am7-Xb-QHu"/>
-                                            <constraint firstItem="ecY-RE-ssa" firstAttribute="trailing" secondItem="ryL-BN-XeS" secondAttribute="trailing" id="mnw-ZK-UUm"/>
+                                            <constraint firstAttribute="trailing" secondItem="ryL-BN-XeS" secondAttribute="trailing" constant="32" id="dVd-Nl-Niq"/>
                                             <constraint firstItem="c1v-Px-kY5" firstAttribute="top" secondItem="qdE-ta-9is" secondAttribute="top" constant="16" id="x19-vw-sBZ"/>
-                                            <constraint firstItem="ryL-BN-XeS" firstAttribute="leading" secondItem="ecY-RE-ssa" secondAttribute="leading" id="xD8-sP-05a"/>
                                         </constraints>
                                     </view>
                                 </subviews>

@@ -33,10 +33,12 @@ class OnboardingStep2ViewController: UIViewController {
         UNUserNotificationCenter.current()
             .requestAuthorization(options: [.alert, .sound, .badge]) {
                 granted, error in
+                
                 UserDefaults.standard.set(true, forKey: "allowedPermissions")
                 print("Permissions granted: \(granted)")
                 
                 DispatchQueue.main.async {
+                    UIApplication.shared.registerForRemoteNotifications()
                     self.performSegue(withIdentifier: "showSuccessSegue", sender: self)
                 }
         }

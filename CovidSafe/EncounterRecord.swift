@@ -13,6 +13,7 @@ struct EncounterBlob: Encodable {
     var txPower: Double?
     var modelP: String?
     var msg: String?
+    var timestamp: Double?
 }
 
 struct EncounterRecord: Encodable {

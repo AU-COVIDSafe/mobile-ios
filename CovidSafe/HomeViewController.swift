@@ -6,6 +6,11 @@ import SafariServices
 class HomeViewController: UIViewController {
     private var observer: NSObjectProtocol?
     
+    let animatedHeaderActiveHeightConstant: CGFloat = 160
+    let animatedHeaderInactiveHeightConstant: CGFloat = 80
+    let animatedHeaderActiveVerticalMarginConstant: CGFloat = 60
+    let animatedHeaderInactiveVerticalMarginConstant: CGFloat = 24
+    
     @IBOutlet weak var screenStack: UIStackView!
     @IBOutlet weak var bluetoothStatusOffView: UIView!
     @IBOutlet weak var bluetoothStatusOnView: UIView!
@@ -28,7 +33,11 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var pushNotificationContainerView: UIView!
     @IBOutlet weak var uploadDateLabel: UILabel!
     @IBOutlet weak var pairingRequestsLabel: UILabel!
-        
+    @IBOutlet weak var topLeftIcon: UIImageView!
+    @IBOutlet weak var animatedBluetoothHeaderHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var animatedBluetoothHeaderTopMarginConstraint: NSLayoutConstraint!
+    @IBOutlet weak var animatedBluetoothHeaderBottomMarginConstraint: NSLayoutConstraint!
+    
     var lottieBluetoothView: AnimationView!
 
     var allPermissionOn = true
@@ -135,6 +144,7 @@ class HomeViewController: UIViewController {
         self.lottieBluetoothView?.play()
         self.becomeFirstResponder()
         self.updateJWTKeychainAccess()
+        getMessagesFromServer()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -172,6 +182,15 @@ class HomeViewController: UIViewController {
                     UserDefaults.standard.set(true, forKey: "HasUpdatedKeychainAccess")
                 }
             }
+        }
+    }
+        
+    func getMessagesFromServer() {
+        MessageAPI.getMessagesIfNeeded() { (messageResponse, error) in
+            if let error = error {
+                DLog("Get messages error: \(error.localizedDescription)")
+            }
+            // We currently dont do anything with the response. Messages are delivered via APN
         }
     }
     
@@ -234,15 +253,29 @@ class HomeViewController: UIViewController {
         toggleViewVisibility(view: appPermissionsLabel, isVisible: !self.allPermissionOn)
         toggleViewVisibility(view: homeHeaderPermissionsOffImage, isVisible: !self.allPermissionOn)
         toggleViewVisibility(view: lottieBluetoothView, isVisible: self.allPermissionOn)
-                
-        self.homeHeaderInfoText.text = "home_header_active_title".localizedString(comment: "Header with no action req") + "\n" + "home_header_active_no_action_required".localizedString()
+
+        var newAttributedLabel = NSMutableAttributedString(string: "home_header_active_title".localizedString(comment: "Header with no action req"), attributes: [.font: UIFont.preferredFont(forTextStyle: .title1).bold()])
+        newAttributedLabel.append(NSAttributedString(string: "\n" + "home_header_active_no_action_required".localizedString(), attributes: [.font: UIFont.preferredFont(forTextStyle: .body)]))
+        
+        self.homeHeaderInfoText.attributedText = newAttributedLabel
         
         if (!self.allPermissionOn) {
-            self.homeHeaderInfoText.text = "home_header_inactive_title".localizedString(comment: "Header with check permisisons text") + "\n" + "home_header_inactive_check_your_permissions".localizedString()
+            newAttributedLabel = NSMutableAttributedString(string: "home_header_inactive_title".localizedString(comment: "Header with no action req"), attributes: [.font: UIFont.preferredFont(forTextStyle: .title1).bold()])
+            newAttributedLabel.append(NSAttributedString(string: "\n" + "home_header_inactive_check_your_permissions".localizedString(), attributes: [.font: UIFont.preferredFont(forTextStyle: .body)]))
+            
+            animatedBluetoothHeaderHeightConstraint.constant = animatedHeaderInactiveHeightConstant
+            animatedBluetoothHeaderTopMarginConstraint.constant = animatedHeaderInactiveVerticalMarginConstant
+            animatedBluetoothHeaderBottomMarginConstraint.constant = animatedHeaderInactiveVerticalMarginConstant
+            self.homeHeaderInfoText.attributedText = newAttributedLabel
             self.homeHeaderView.backgroundColor = UIColor.covidHomePermissionErrorColor
+            topLeftIcon.isHidden = false
         } else {
+            animatedBluetoothHeaderHeightConstraint.constant = animatedHeaderActiveHeightConstant
+            animatedBluetoothHeaderTopMarginConstraint.constant = animatedHeaderActiveVerticalMarginConstant
+            animatedBluetoothHeaderBottomMarginConstraint.constant = animatedHeaderActiveVerticalMarginConstant
             self.homeHeaderView.backgroundColor = UIColor.covidHomeActiveColor
             updateAnimationViewWithAnimationName(name: "Spinner_home")
+            topLeftIcon.isHidden = true
         }
         
     }

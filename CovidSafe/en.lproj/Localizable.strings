@@ -1,3 +1,79 @@
+"under_sixteen_content" = "I confirm my parent or guardian consents to the Digital Transformation Agency as data store administrator, under legal determination made by the Secretary of the Australian Government Department of Health collecting:";
+"EmailPlaceholder" = "Enter your email address (required)";
+"data_privacy_content" = "It is important that you read the COVIDSafe *privacy policy* before you register for COVIDSafe.\
+\
+If you are under 16 years of age, your parent/guardian must also read the *privacy policy*.\
+\
+Use of COVIDSafe is completely voluntary. You can install or delete the application at any time. If you delete COVIDSafe, *you may also ask for your information to be deleted* from the secure server.\
+\
+To register for COVIDSafe, you will need to enter a name (or pseudonym), mobile number, age range and postcode.\
+\
+Information you submit when you register, and information about your use of COVIDSafe will be collected and stored on a highly secure server.\
+\
+COVIDSafe will not collect your location information.\
+\
+COVIDSafe will note the time of contact, anonymous ID code of other COVIDSafe users you come into contact with, Bluetooth® signal strength and the phone model of other users, on your device.\
+\
+Other COVIDSafe users you come into contact with will also note your anonymous ID code, the date and time of contact with you, Bluetooth® signal strength and your phone model, on their device.\
+\
+If another user tests positive to COVID-19, they may upload their contact information and a state or territory health official may contact you for contact tracing purposes. \
+\
+Your registration details will only be used or disclosed for contact tracing and for the proper and lawful functioning of COVIDSafe. \
+\
+More information is available at the *Australian Government Department of Health* website.\
+\
+See the COVIDSafe *privacy policy* for further details about your rights about your information and how it will be handled and shared.";
+"data_privacy_content_VO" = "It is important that you read the COVIDSafe privacy policy before you register for COVIDSafe.\
+\
+If you are under 16 years of age, your parent/guardian must also read the privacy policy.\
+\
+Use of COVIDSafe is completely voluntary. You can install or delete the application at any time. If you delete COVIDSafe, you may also ask for your information to be deleted from the secure server.\
+\
+To register for COVIDSafe, you will need to enter a name (or pseudonym), mobile number, age range and postcode.\
+\
+Information you submit when you register, and information about your use of COVIDSafe will be collected and stored on a highly secure server.\
+\
+COVIDSafe will not collect your location information.\
+\
+COVIDSafe will note the time of contact, anonymous ID code of other COVIDSafe users you come into contact with, Bluetooth signal strength and the phone model of other users, on your device.\
+\
+Other COVIDSafe users you come into contact with will also note your anonymous ID code, the date and time of contact with you, Bluetooth signal strength and your phone model, on their device.\
+\
+If another user tests positive to COVID-19, they may upload their contact information and a state or territory health official may contact you for contact tracing purposes. \
+\
+Your registration details will only be used or disclosed for contact tracing and for the proper and lawful functioning of COVIDSafe. \
+\
+More information is available at the Australian Government Department of Health website.\
+\
+See the COVIDSafe privacy policy for further details about your rights about your information and how it will be handled and shared.";
+"upload_step_4_sub_header" = "Unless you consent, your contact data will not be uploaded.\
+\
+If you consent, your contact data will be uploaded and shared with state or territory health officials for contact tracing purposes.\
+\
+State and territory health officials will only be able to access information about your close contacts.\
+\
+Read the COVIDSafe *privacy policy* for further details.";
+"personal_details_name_title" = "Full name (or pseudonym)";
+"under_sixteen_second_paragraph" = "Information about my contact with other COVIDSafe users, if another user I have come into contact with tests positive for COVID-19 and uploads their contact data.";
+"registration_consent_second_paragraph" = "Information about my contact with other COVIDSafe users, if another user I have come into contact with tests positive for COVID-19 and uploads their contact data.";
+"under_sixteen_registration_consent_first_paragraph" = "My registration information.";
+"registration_consent_first_paragraph" = "My registration information.";
+"under_sixteen_first_paragraph" = "My registration information.";
+"registration_consent_content" = "I consent to the Digital Transformation Agency as data store administrator, under legal determination made by the Secretary of the Australian Government Department of Health collecting:";
+"how_it_works_content" = "Bluetooth® signals are used to determine when you're near another COVIDSafe user.\
+\
+Every instance of close contact between you and other COVIDSafe users is noted to create contact data. This information is encrypted and only stored in you the phone.\
+\
+If you test positive to COVID-19 as a COVIDSafe user, a state or territory health official will contact you. They will assist with voluntary upload of your contact data to a highly secure information storage system.\
+\
+State or territory health officials can also contact you if you came in close contact with another COVIDSafe user who tested positive.\
+\
+For more information please refer to the *Help Topics* page.";
+"UILaunchStoryboardName" = "LaunchScreen_en";
+"update_available_dismiss_btn" = "Remind me later";
+"update_available_app_store_btn" = "Go to App Store";
+"update_available_message" = "We’ve been making improvements to COVIDSafe.";
+"update_available_title" = "Update available!";
 "personal_details_name_characters_prompt" = "Please use English characters for your full name. Do not use other languages or symbols like ',' or '?'.";
 "PN_MobileNumber_VOLabel" = "Mobile number";
 "OS1b_TopParagraph_VOLabel" = "Bluetooth signals are used to determine when you're near another COVIDSafe user.\
@@ -29,29 +105,6 @@ Change notification settings";
 "home_version_number_ios" = "Version %@, Build %@";
 "NotificationsDisabledBlurb" = "You will not receive a notification if COVIDSafe is not active.\nChange notifications settings";
 "NotificationsEnabledBlurb" = "You will receive a notification if COVIDSafe is not active.\nChange notifications settings";
-"data_privacy_content" = "It is important that you read the COVIDSafe *privacy policy* before you register for COVIDSafe.\
-\
-If you are under 16 years of age, your parent/guardian must also read the *privacy policy*.\
-\
-Use of COVIDSafe is completely voluntary. You can install or delete the application at any time. If you delete COVIDSafe, *you may also ask for your information to be deleted* from the secure server.\
-\
-To register for COVIDSafe, you will need to enter a name, mobile number, age range and postcode. \
-\
-Information you submit when you register, and information about your use of COVIDSafe will be collected and stored on a highly secure server.\
-\
-COVIDSafe will not collect your location information.\
-\
-COVIDSafe will note the time of contact and an anonymous ID code of other COVIDSafe users you come into contact with.\
-\
-Other COVIDSafe users you come into contact with will note an anonymous ID code and the time of contact with you on their device.\
-\
-If another user tests positive to COVID-19, they may upload their contact information and a state or territory health official may contact you for contact tracing purposes. \
-\
-Your registration details will only be used or disclosed for contact tracing and for the proper and lawful functioning of COVIDSafe. \
-\
-More information is available at the *Australian Government Department of Health* website.\
-\
-See the COVIDSafe *privacy policy* for further details about your rights about your information and how it will be handled and shared.";
 "PINNumber_VO_Label" = "PIN number";
 "newFeedback_invalidEmail_errorMessage" = "Please enter a valid email address!";
 "newFeedback_noMessage_errorMessage" = "Tell us something before sending.";
@@ -66,7 +119,6 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
 "global_sending_indication_title" = "Sending";
 "global_send_button_title" = "Send";
 "global_cancel_button_title" = "Cancel";
-"EmailPlaceholder" = "Enter your email address (required)";
 "UploadFailedErrorMessage" = "Please try again later.";
 "UploadFailed" = "Upload failed. Please try again later.";
 "InformationUploaded" = "Your information was uploaded on %@";
@@ -103,21 +155,6 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
 "upload_consent_button" = "I agree";
 "home_header_uploaded_on_date_ios" = "Your information was uploaded on %@.";
 "us_consent_button" = "I agree";
-"how_it_works_content" = "Bluetooth® signals are used to determine when you're near another COVIDSafe user.\
-\
-Every instance of close contact between you and other COVIDSafe users is noted to create close contact information. The information is encrypted and only stored in your phone.\
-\
-If you test positive to COVID-19 as a COVIDSafe user, a state or territory health official will contact you. They will assist with voluntary upload of your close contact information to a highly secure information storage system\
-\
-State or territory health officials can also contact you if you came in close contact with another COVIDSafe user who tested positive.\
-\
-For more information please refer to the *Help Topics* page";
-"pin_issue" = "*Issues receiving your PIN?*";
-"upload_step_4_sub_header" = "Unless you consent, your close contact information will not be uploaded.\
-\
-If you consent, your close contact information will be uploaded and shared with state or territory health officials for contact tracing purposes.\
-\
-Read the COVIDSafe *privacy policy* for further details.";
 "IntroLabel" = "Help stop the spread\
 and save lives.";
 "BluetoothOFF_content" = "Turn on your phone’s Bluetooth®. Select ‘Allow New Connections’ if displayed.";
@@ -152,7 +189,6 @@ Select ‘Proceed' to enable:";
 "Enter_your_mobile_number_label" = "Enter your mobile number";
 "Select_country_or_region_headline" = "Select country or region";
 "under-sixteen_consent_call_for_action" = "Select 'I agree' to confirm consent. ";
-"under_sixteen_registration_consent_first_paragraph" = "My registration information to allow contact tracing by state or territory health officials. ";
 "country_region_name_sd" = "Sudan";
 "country_region_name_ir" = "Iran";
 "country_region_name_cw" = "Curaçao";
@@ -418,9 +454,6 @@ They will need to register using their own device and phone number so that COVID
 "invalid_australian_phone_number_error_prompt" = "Australian mobile numbers contain a maximum of 10 digits.";
 "enter_number_headline" = "Enter your mobile number";
 "select_country_or_region" = "Select country or region";
-"under_sixteen_second_paragraph" = "My contact information from other COVIDSafe users after they test positive for COVID-19.";
-"under_sixteen_first_paragraph" = "My registration information to allow contact tracing by state and territory health officials.";
-"under_sixteen_content" = "I confirm my parent or guardian consents to the Australian Department of Health collecting:";
 "under_sixteen_headline" = "You need the consent of your parent/guardian to proceed";
 "personal_details_button" = "Continue";
 "personal_details_dialog_ok" = "Select";
@@ -429,11 +462,7 @@ They will need to register using their own device and phone number so that COVID
 "personal_details_age_content_description" = "Select age range";
 "personal_details_age_title" = "Age range (select)";
 "personal_details_name_error_prompt" = "Please enter your full name.";
-"personal_details_name_title" = "Full name";
 "personal_details_headline" = "Enter your details";
-"registration_consent_second_paragraph" = "My contact information from other COVIDSafe users after they test positive for COVID-19.";
-"registration_consent_first_paragraph" = "My registration information to allow contact tracing by state or territory health officials.";
-"registration_consent_content" = "I consent to the Australian Department of Health collecting:";
 "registration_consent_headline" = "Registration consent";
 "consent_button" = "I agree";
 "consent_call_for_action" = "Select 'I agree' to confirm consent.";

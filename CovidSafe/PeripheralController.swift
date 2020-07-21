@@ -19,12 +19,18 @@ public class PeripheralController: NSObject {
         case peripheralAlreadyOff
     }
     
+    struct CachedPayload {
+        var payload: Data,
+        expiry: TimeInterval
+    }
+
     var didUpdateState: ((String) -> Void)?
     private let encounteredCentralExpiryTime:TimeInterval = 1800.0 // 30 minutes
     private let restoreIdentifierKey = "com.joelkek.tracer.peripheral"
     private let peripheralName: String
     private var encounteredCentrals = [UUID: (EncounterRecord)]()
-    
+    private var payloadLookaside = [UUID: CachedPayload]()
+    private let FREQUENCY_OF_CONNECTION_IN_S = 20.0
     private var characteristicData: PeripheralCharacteristicsData
     
     private var peripheral: CBPeripheralManager!
@@ -81,20 +87,60 @@ extension PeripheralController: CBPeripheralManagerDelegate {
     
     public func peripheralManager(_ peripheral: CBPeripheralManager, didReceiveRead request: CBATTRequest) {
         DLog("\(["request": request] as AnyObject)")
-        EncounterMessageManager.shared.getAdvertisementPayload { (payloadToAdvertise) in
-            if let payload = payloadToAdvertise {
-                // check offset
-                if request.offset > payload.count {
-                    peripheral.respond(to: request, withResult: .invalidOffset)
-                    return;
+        let remoteCentral = request.central.identifier;
+        
+        // clean up expired payloads
+        cleanUpExpiredCachedPayloads()
+        
+        if request.offset == 0 {
+            // new request, create new payload
+            EncounterMessageManager.shared.getAdvertisementPayload { (payloadToAdvertise) in
+                self.queue.async {
+                    if let payload = payloadToAdvertise {
+                        // cache payload for remote
+                        self.payloadLookaside[remoteCentral] = CachedPayload(payload: payload, expiry: Date().timeIntervalSince1970 + self.FREQUENCY_OF_CONNECTION_IN_S);
+                        
+                        
+                        request.value = payload.advanced(by: request.offset)
+                        peripheral.respond(to: request, withResult: .success)
+                    } else {
+                        DLog("Error getting payload to advertise")
+                        peripheral.respond(to: request, withResult: .unlikelyError)
+                    }
                 }
-                
-                request.value = payload.advanced(by: request.offset)
-                peripheral.respond(to: request, withResult: .success)
-            } else {
-                DLog("Error getting payload to advertise")
-                peripheral.respond(to: request, withResult: .unlikelyError)
             }
+        } else {
+            // get cached payload, check offset valid
+            guard let cachedPayload = self.payloadLookaside[remoteCentral] else {
+                peripheral.respond(to: request, withResult: .unlikelyError)
+                return
+            }
+            
+            if request.offset > cachedPayload.payload.count {
+                peripheral.respond(to: request, withResult: .invalidOffset)
+                return
+            }
+            
+            if request.offset == cachedPayload.payload.count {
+                // the central already read all the data in its last read request
+                peripheral.respond(to: request, withResult: .success)
+                return
+            }
+            
+            // return payload as normal
+            request.value = cachedPayload.payload.advanced(by: request.offset)
+            peripheral.respond(to: request, withResult: .success)
+        }
+    }
+    
+    fileprivate func cleanUpExpiredCachedPayloads() {
+        for payloadKey in payloadLookaside.keys {
+            let currentTime = Date().timeIntervalSince1970
+            guard let payload = payloadLookaside[payloadKey], payload.expiry < currentTime else {
+                continue
+            }
+            // if payload exists and expiry time is less than current time, remove.
+            payloadLookaside.removeValue(forKey: payloadKey)
         }
     }
     
