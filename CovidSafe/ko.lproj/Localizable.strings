@@ -1,3 +1,68 @@
+"data_privacy_content_VO" = "COVIDSafe에 등록하기 전에 COVIDSafe *개인정보 보호 정책을* 읽는 것이 중요합니다. \
+\
+당신이 16세 미만이라면, 부모 또는 보호자도 반드시 *개인정보 보호 정책을* 읽어야합니다. \
+\
+COVIDSafe의 사용은 전적으로 자발적입니다. 언제든지 앱을 설치 또는 삭제할 수 있습니다. COVIDSafe를 삭제하면, 당신은 보안 서버에 있는 자신의 정보 삭제 또한 요청할 수 있습니다. \
+\
+COVIDSafe에 등록하려면, 성명, 휴대폰 번호, 연령대 및 우편번호를 입력해야 합니다. \
+\
+등록 시 제출한 정보 및 당신의 COVIDSafe 사용정보는 보안성 높은 서버에 수집 및 저장됩니다. \
+\
+COVIDSafe는 당신의 위치정보를 수집하지 않습니다. \
+\
+COVIDSafe는 접촉 시각 및 당신과 접촉한 다른 COVIDSafe 사용자의 익명 ID 코드를 기록합니다. \
+\
+다른 COVIDSafe 사용자의 장치에 당신의 익명 ID 코드 및 당신과의 접촉 시각이 기록될 것입니다. \
+\
+다른 사용자가 COVID-19 양성 결과가 나오면, 그들이 자신의 접촉정보를 업로드 할 수 있으며, 주 또는 테리토리 보건 담당자가 접촉추적 목적으로 당신에게 연락을 취할 수 있습니다. \
+\
+당신의 등록 정보는 접촉추적 및 COVIDSafe의 적절하고 합법적인 기능을 위해서만 사용 또는 공개됩니다. \
+\
+자세한 정보는 호주 정부 보건부 웹사이트에서 확인할 수 있습니다. \
+\
+자신의 정보에 대한 권리와 개인정보의 취급 및 공유 방법에 대한 자세한 내용은 COVIDSafe *개인정보 보호 정책을* 참조하십시오.";
+"UILaunchStoryboardName" = "LaunchScreen_ko";
+"ShareCovidSafe_VOLabel" = "COVIDSafe를 공유하세요. 다른 이들에게 참여를 권유하세요. 우리는 함께할 때 더 강해집니다.";
+"UploadData_VOLabel" = "보건 담당자가 여러분에게 연락했습니까? 양성 검사 결과를 받은 경우에만 여러분의 정보를 업로드할 수 있습니다.";
+"HelpTopics_VOLabel" = "도움말 항목. 앱에 대한 질문이나 문제가 있는 경우.";
+"NotificationsEnabled_VOLabel" = "알림이 켜졌습니다. COVIDSafe가 활성화되어 있지 않으면 알림을 받게 됩니다.  알림 설정 변경하기";
+"NotificationsDisabled_VOLabel" = "알림이 꺼졌습니다. COVIDSafe가 활성화되어 있지 않으면 알림을 받을 수 없습니다.  \
+알림 설정 변경하기";
+"permission_content_iOS_VOLabel" = "COVIDSafe가 작동하려면 블루투스가 활성화되어 있어야 합니다. 알림을 켜면 COVIDSafe가 활성화되지 않았음을 알리는 업데이트를 받게 됩니다.  \
+\
+ '진행'을 선택하여 다음을 활성화 하십시오.";
+"permission_content_iOS_2_VOLabel" = "1. 블루투스\
+2. 알림\
+\
+COVIDSafe는 페어링 요청을 보내지 않습니다.";
+"OS1b_TopParagraph_VOLabel" = "블루투스® 신호는 당신이 언제 다른 COVIDSafe 사용자 근처에 있었는지를 확인하는 데 사용됩니다. \
+당신과 다른 COVIDSafe 사용자들 사이의 모든 근거리 접촉상황들은 근거리 접촉정보로 기록됩니다. 이 정보는 암호화되어 당신의 휴대폰에만 저장됩니다. \
+COVIDSafe 사용자로서 당신이 COVID-19에 양성 결과가 나오면, 주 또는 테리토리 보건 담당자가 당신에게 연락할 것입니다. 당신이 자신의 근거리 접촉정보를 보안성 높은 정보 저장 체계에 자발적으로 업로드할 수 있도록 도와줄 것입니다. \
+또한 양성 결과가 나온 다른 COVIDSafe 사용자와 당신이 가까이 접촉한 경우, 주 또는 테리토리 보건 담당자가 당신에게 연락을 취할 수 있습니다. \
+자세한 내용은 *도움말 항목* 페이지를 참조하세요";
+"how_it_works_content" = "블루투스® 신호는 당신이 언제 다른 COVIDSafe 사용자 근처에 있었는지를 확인하는 데 사용됩니다. \
+\
+당신과 다른 COVIDSafe 사용자들 사이의 모든 근거리 접촉상황들은 근거리 접촉정보로 기록됩니다. 이 정보는 암호화되어 당신의 휴대폰에만 저장됩니다. \
+\
+COVIDSafe 사용자로서 당신이 COVID-19에 양성 결과가 나오면, 주 또는 테리토리 보건 담당자가 당신에게 연락할 것입니다. 당신이 자신의 근거리 접촉정보를 보안성 높은 정보 저장 체계에 자발적으로 업로드할 수 있도록 도와줄 것입니다. \
+\
+또한 양성 결과가 나온 다른 COVIDSafe 사용자와 당신이 가까이 접촉한 경우, 주 또는 테리토리 보건 담당자가 당신에게 연락을 취할 수 있습니다. \
+\
+자세한 내용은 * 도움말 항목 * 페이지를 참조하세요";
+"update_available_app_store_btn" = "앱 스토어 가기";
+"update_available_dismiss_btn" = "나중에 다시 알려 주세요";
+"personal_details_name_characters_prompt" = "성명에는 영어 알파벳을 사용하십시오. 다른 언어, 혹은 ',' 또는 '?'와 같은 기호를 사용하지 마십시오.";
+"AllowBluetoothON_VOLabel" = "블루투스 접속: ON";
+"AllowBluetoothOFF_VOLabel" = "블루투스 접속: OFF COVIDSafe의 블루투스 접속을 허용해 주세요";
+"BluetoothOFF_VOLabel" = "블루투스: OFF  휴대폰의 블루투스를 켜세요. '새 연결 허용'이 표시되면 선택하세요.";
+"BluetoothON_VOLabel" = "블루투스: ON";
+"OS2b_Item2_VOLabel" = "2. 블루투스는 켜져 있어야 합니다.";
+"PINNumber_VO_Label" = "핀 번호";
+"PN_MobileNumber_VOLabel" = "휴대폰 번호";
+"GetCoronaVirusApp_VOLabel" = "코로나 바이러스 앱을 다운로드하세요. 최신 뉴스 및 조언을 보려면 정부 앱을 다운로드하세요.";
+"LatestNews_VOLabel" = "최신 뉴스 및 업데이트. 최신 코로나 바이러스 뉴스를 보려면 aus.gov.au를 방문하세요.";
+"update_available_title" = "업데이트 가능!";
+"update_available_message" = "COVIDSafe를 개선하고 있습니다.";
 "data_privacy_content" = "COVIDSafe에 등록하기 전에 COVIDSafe *개인정보 보호 정책을* 읽는 것이 중요합니다. \
 \
 당신이 16세 미만이라면, 부모 또는 보호자도 반드시 *개인정보 보호 정책을* 읽어야합니다. \
@@ -22,18 +87,8 @@ COVIDSafe는 접촉 시각 및 당신과 접촉한 다른 COVIDSafe 사용자의
 \
 자신의 정보에 대한 권리와 개인정보의 취급 및 공유 방법에 대한 자세한 내용은 COVIDSafe *개인정보 보호 정책을* 참조하십시오.";
 "intro_headline" = "함께 할 때 우리는 COVID-19의 확산을 막을 수 있습니다";
-"personal_details_name_characters_prompt" = "";
 "OS2b_Item3Underline" = "더 알아보세요";
 "OS2b_Item3" = "3. COVIDSafe는 페어링 요청을 보내지 않습니다. 더 알아보세요.";
-"how_it_works_content" = "블루투스® 신호는 당신이 언제 다른 COVIDSafe 사용자 근처에 있는지를 확인하는 데 사용됩니다. \
-\
-당신과 다른 COVIDSafe 사용자들 사이의 모든 근거리 접촉상황들은 근거리 접촉정보로 기록됩니다. 이 정보는 암호화되어 당신의 휴대폰에만 저장됩니다. \
-\
-COVIDSafe 사용자로서 당신이 COVID-19에 양성 결과가 나오면, 주 또는 테리토리 보건 담당자가 당신에게 연락할 것입니다. 당신이 자신의 근거리 접촉정보를 보안성 높은 정보 저장 체계에 자발적으로 업로드할 수 있도록 도와줄 것입니다. \
-\
-또한 양성 결과가 나온 다른 COVIDSafe 사용자와 당신이 가까이 접촉한 경우, 주 또는 테리토리 보건 담당자가 당신에게 연락을 취할 수 있습니다. \
-\
-자세한 내용은 * 도움말 항목 * 페이지를 참조하세요";
 "registration_consent_content" = "본인은 호주 보건부 (Department of Health)의 다음과 같은 정보 수집에 동의합니다.";
 "under_sixteen_second_paragraph" = "다른 COVIDSafe 사용자가 COVID-19 양성 결과를 받은 후 그 사용자와 나 사이의 접촉정보.";
 "permission_success_headline" = "등록에 성공했습니다.";
@@ -45,7 +100,6 @@ COVIDSafe 사용자로서 당신이 COVID-19에 양성 결과가 나오면, 주 
 \
 자세한 내용은 COVIDSafe *개인 정보 보호 정책* 을 참조하세요.";
 "upload_finished_header" = "COVID-19의 확산을 막는 데 협조해 주셔서 감사합니다!";
-"pin_issue" = "* PIN을 받는 데 문제가 있습니까? *";
 "permission_content_iOS" = "COVIDSafe 작동을 위해 블루투스®가 활성화되어 있어야 합니다. 알림기능을 활성화하면, COVIDSafe가 비활성화되어 있을 때 알림을 받게 됩니다. \
 \
 '진행'을 선택하여 활성화 하십시오:";
@@ -99,23 +153,6 @@ COVIDSafe 사용자로서 당신이 COVID-19에 양성 결과가 나오면, 주 
 "global_close" = "닫기";
 "PostcodeValidationErrorMessage" = "유효한 호주 우편 번호를 입력하세요.";
 "global_double_tap" = "두 번 탭해서 수정하세요";
-"OS1b_TopParagraph_VOLabel" = "";
-"permission_content_iOS_VOLabel" = "";
-"permission_content_iOS_2_VOLabel" = "";
-"NotificationsDisabled_VOLabel" = "";
-"NotificationsEnabled_VOLabel" = "";
-"HelpTopics_VOLabel" = "";
-"LatestNews_VOLabel" = "";
-"GetCoronaVirusApp_VOLabel" = "";
-"UploadData_VOLabel" = "";
-"ShareCovidSafe_VOLabel" = "";
-"PN_MobileNumber_VOLabel" = "";
-"PINNumber_VO_Label" = "";
-"OS2b_Item2_VOLabel" = "";
-"BluetoothOFF_VOLabel" = "";
-"BluetoothON_VOLabel" = "";
-"AllowBluetoothOFF_VOLabel" = "";
-"AllowBluetoothON_VOLabel" = "";
 "home_header_uploaded_on_date_ios" = "당신의 정보가 %@에 업로드 되었습니다.";
 "us_consent_button" = "동의";
 "IntroLabel" = "바이러스 확산을 방지해서 \

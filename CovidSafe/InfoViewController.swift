@@ -12,6 +12,8 @@ final class InfoViewController: UIViewController {
     @IBOutlet weak var obtainBluetoothStateButton: UIButton!
     @IBOutlet weak var peripheralStateLabel: UILabel!
     @IBOutlet weak var discoveredPeripheralsCountLabel: UILabel!
+    @IBOutlet weak var silentNotificationsCountLabel: UILabel!
+    @IBOutlet weak var apnTokenLabel: UILabel!
     private var devicesEncounteredCount: Int?
     
     @IBOutlet weak var versionNumLabel: UILabel!
@@ -29,6 +31,8 @@ final class InfoViewController: UIViewController {
         advertisementSwitch.addTarget(self, action: #selector(self.advertisementSwitchChanged), for: UIControl.Event.valueChanged)
         scanningSwitch.addTarget(self, action: #selector(self.scanningSwitchChanged), for: UIControl.Event.valueChanged)
         clearLogsButton.addTarget(self, action:#selector(self.clearLogsButtonClicked), for: .touchUpInside)
+        silentNotificationsCountLabel.text = "\(UserDefaults.standard.integer(forKey: "debugSilentNotificationCount"))"
+        apnTokenLabel.text = UserDefaults.standard.string(forKey: "deviceTokenForAPN")
         
     }
     
@@ -114,5 +118,22 @@ final class InfoViewController: UIViewController {
         } catch {
             print("Could not perform delete. \(error)")
         }
+        
+        let logFetchRequest = NSFetchRequest<BLELog>(entityName: "BLELog")
+        logFetchRequest.includesPropertyValues = false
+        do {
+            let logs = try managedContext.fetch(logFetchRequest)
+            for bleLog in logs {
+                managedContext.delete(bleLog)
+            }
+            try managedContext.save()
+        } catch {
+            print("Could not perform delete. \(error)")
+        }
+    }
+    
+    @IBAction func resetSilentNotificationsCounter(_ sender: Any) {
+        UserDefaults.standard.set(0, forKey: "debugSilentNotificationCount")
+        silentNotificationsCountLabel.text = "0"
     }
 }

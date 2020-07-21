@@ -36,8 +36,8 @@
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZS-BI-D7Z">
                                                 <rect key="frame" x="0.0" y="281" width="241" height="42.5"/>
-                                                <string key="text">阻止传播
-拯救生命</string>
+                                                <string key="text">Aiuta a fermare la diffusione
+e salvare vite umane.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -47,9 +47,9 @@
                                             <constraint firstAttribute="trailing" secondItem="Lns-hM-mdb" secondAttribute="trailing" id="3O3-PD-3fy"/>
                                             <constraint firstItem="Lns-hM-mdb" firstAttribute="top" secondItem="ffR-XF-3zY" secondAttribute="top" id="9I9-JR-v99"/>
                                             <constraint firstItem="Lns-hM-mdb" firstAttribute="leading" secondItem="ffR-XF-3zY" secondAttribute="leading" id="9lM-TA-Uhg"/>
-                                            <constraint firstItem="eZS-BI-D7Z" firstAttribute="leading" secondItem="ffR-XF-3zY" secondAttribute="leading" id="Bqu-kE-yny"/>
+                                            <constraint firstAttribute="trailing" secondItem="eZS-BI-D7Z" secondAttribute="trailing" id="DVM-3Z-QPr"/>
                                             <constraint firstAttribute="bottom" secondItem="eZS-BI-D7Z" secondAttribute="bottom" id="FaE-b8-5YY"/>
-                                            <constraint firstAttribute="trailing" secondItem="eZS-BI-D7Z" secondAttribute="trailing" id="ibl-kK-KRP"/>
+                                            <constraint firstItem="eZS-BI-D7Z" firstAttribute="leading" secondItem="ffR-XF-3zY" secondAttribute="leading" id="Qt3-ED-c3v"/>
                                             <constraint firstItem="eZS-BI-D7Z" firstAttribute="centerX" secondItem="ffR-XF-3zY" secondAttribute="centerX" id="nRo-Vh-rBQ"/>
                                             <constraint firstItem="eZS-BI-D7Z" firstAttribute="top" secondItem="Lns-hM-mdb" secondAttribute="bottom" constant="40" id="oNj-AQ-Ies"/>
                                         </constraints>
@@ -58,10 +58,10 @@
                                 <color key="backgroundColor" red="0.78431372549019607" green="1" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="ffR-XF-3zY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="byk-eZ-Cpa" secondAttribute="top" constant="10" id="42X-bp-isz"/>
+                                    <constraint firstAttribute="trailing" secondItem="ffR-XF-3zY" secondAttribute="trailing" constant="67" id="9Kd-Lg-8xZ"/>
                                     <constraint firstItem="ffR-XF-3zY" firstAttribute="centerX" secondItem="byk-eZ-Cpa" secondAttribute="centerX" id="Csu-ZS-HCo"/>
-                                    <constraint firstAttribute="trailing" secondItem="ffR-XF-3zY" secondAttribute="trailing" constant="67" id="KZW-CG-Osh"/>
                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ffR-XF-3zY" secondAttribute="bottom" constant="10" id="k6e-ma-vPy"/>
-                                    <constraint firstItem="ffR-XF-3zY" firstAttribute="leading" secondItem="byk-eZ-Cpa" secondAttribute="leading" constant="67" id="tEh-FI-f1M"/>
+                                    <constraint firstItem="ffR-XF-3zY" firstAttribute="leading" secondItem="byk-eZ-Cpa" secondAttribute="leading" constant="67" id="tL3-vJ-yfs"/>
                                     <constraint firstItem="ffR-XF-3zY" firstAttribute="centerY" secondItem="byk-eZ-Cpa" secondAttribute="centerY" id="zXR-uc-tzt"/>
                                 </constraints>
                             </view>

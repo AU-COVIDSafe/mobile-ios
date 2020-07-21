@@ -1,0 +1,487 @@
+"data_privacy_content_VO" = "Συνίσταται να διαβάσετε την *πολιτική απορρήτου* της COVIDSafe πριν εγγραφείτε στην COVIDSafe. \
+\
+Εάν είστε κάτω των 16 ετών, ο γονέας/κηδεμόνας σας πρέπει επίσης να διαβάσει την *πολιτική απορρήτου*. \
+\
+Η χρήση της COVIDSafe είναι εντελώς εθελοντική. Μπορείτε να εγκαταστήσετε ή να διαγράψετε την εφαρμογή ανά πάσα στιγμή. Εάν διαγράψετε την COVIDSafe, *μπορείτε επίσης να ζητήσετε τη διαγραφή των στοιχείων σας* από τον ασφαλή διακομιστή. \
+\
+Για να εγγραφείτε στην COVIDSafe, θα πρέπει να εισάγετε όνομα, αριθμό κινητού τηλεφώνου, ηλικιακή ομάδα και ταχυδρομικό κώδικα. \
+\
+Οι πληροφορίες που υποβάλετε κατά την εγγραφή σας και οι πληροφορίες για τη χρήση της COVIDSafe από εσάς θα συλλέγονται και θα αποθηκεύονται σε έναν εξαιρετικά ασφαλή διακομιστή. \
+\
+Η COVIDSafe δε θα συλλέξει τις πληροφορίες τοποθεσίας σας. \
+\
+Η COVIDSafe θα σημειώσει την ώρα της επικοινωνίας και έναν ανώνυμο κωδικό ταυτότητας άλλων χρηστών COVIDSafe με τους οποίους έρχεστε σε επαφή. \
+\
+Άλλοι χρήστες της COVIDSafe με τους οποίους έρχεστε σε επαφή θα σημειώσουν έναν ανώνυμο κωδικό ταυτότητας και την ώρα επαφής μαζί σας στη συσκευή τους. \
+\
+Εάν ένας άλλος χρήστης διαγνωστεί θετικά με COVID-19, μπορεί να αναρτήσει τα στοιχεία επικοινωνίας του και ένας υπάλληλος υγείας της Πολιτείας ή της Επικράτειάς σας μπορεί να επικοινωνήσει μαζί σας για λόγους ανίχνευσης επαφών. \
+\
+Τα στοιχεία εγγραφής σας θα χρησιμοποιηθούν ή θα αποκαλυφθούν μόνο για τον εντοπισμό επαφών και για την ορθή και νόμιμη λειτουργία της COVIDSafe. \
+\
+Περισσότερες πληροφορίες διατίθενται στον ιστότοπο *Υπουργείο Υγείας της Αυστραλιανής Κυβέρνησης*. \
+\
+Διαβάστε την *πολιτική απορρήτου* της COVIDSafe για περισσότερες λεπτομέρειες σχετικά με τα δικαιώματά σας σχετικά με τις πληροφορίες σας και τον τρόπο χειρισμού και κοινοποίησής τους.";
+"UILaunchStoryboardName" = "LaunchScreen_el_GR";
+"data_privacy_content" = "Συνίσταται να διαβάσετε την *πολιτική απορρήτου* της COVIDSafe πριν εγγραφείτε στην COVIDSafe. \
+\
+Εάν είστε κάτω των 16 ετών, ο γονέας/κηδεμόνας σας πρέπει επίσης να διαβάσει την *πολιτική απορρήτου*. \
+\
+Η χρήση της COVIDSafe είναι εντελώς εθελοντική. Μπορείτε να εγκαταστήσετε ή να διαγράψετε την εφαρμογή ανά πάσα στιγμή. Εάν διαγράψετε την COVIDSafe, *μπορείτε επίσης να ζητήσετε τη διαγραφή των στοιχείων σας* από τον ασφαλή διακομιστή. \
+\
+Για να εγγραφείτε στην COVIDSafe, θα πρέπει να εισάγετε όνομα, αριθμό κινητού τηλεφώνου, ηλικιακή ομάδα και ταχυδρομικό κώδικα. \
+\
+Οι πληροφορίες που υποβάλετε κατά την εγγραφή σας και οι πληροφορίες για τη χρήση της COVIDSafe από εσάς θα συλλέγονται και θα αποθηκεύονται σε έναν εξαιρετικά ασφαλή διακομιστή. \
+\
+Η COVIDSafe δε θα συλλέξει τις πληροφορίες τοποθεσίας σας. \
+\
+Η COVIDSafe θα σημειώσει την ώρα της επικοινωνίας και έναν ανώνυμο κωδικό ταυτότητας άλλων χρηστών COVIDSafe με τους οποίους έρχεστε σε επαφή. \
+\
+Άλλοι χρήστες της COVIDSafe με τους οποίους έρχεστε σε επαφή θα σημειώσουν έναν ανώνυμο κωδικό ταυτότητας και την ώρα επαφής μαζί σας στη συσκευή τους. \
+\
+Εάν ένας άλλος χρήστης διαγνωστεί θετικά με COVID-19, μπορεί να αναρτήσει τα στοιχεία επικοινωνίας του και ένας υπάλληλος υγείας της Πολιτείας ή της Επικράτειάς σας μπορεί να επικοινωνήσει μαζί σας για λόγους ανίχνευσης επαφών. \
+\
+Τα στοιχεία εγγραφής σας θα χρησιμοποιηθούν ή θα αποκαλυφθούν μόνο για τον εντοπισμό επαφών και για την ορθή και νόμιμη λειτουργία της COVIDSafe. \
+\
+Περισσότερες πληροφορίες διατίθενται στον ιστότοπο *Υπουργείο Υγείας της Αυστραλιανής Κυβέρνησης*. \
+\
+Διαβάστε την *πολιτική απορρήτου* της COVIDSafe για περισσότερες λεπτομέρειες σχετικά με τα δικαιώματά σας σχετικά με τις πληροφορίες σας και τον τρόπο χειρισμού και κοινοποίησής τους.";
+"dialog_error_uploading_negative" = "Ακύρωση";
+"home_header_active_no_action_required" = "Δε χρειάζονται περαιτέρω ενέργειες.";
+"country_region_name_dm" = "Δομινίκα";
+"enter_number_relative" = "Προσπαθείτε να εγγραφείτε εκ μέρους φίλου ή συγγενή; \
+\
+Η εγγραφή θα πρέπει να γίνει χρησιμοποιώντας τη δική τους συσκευή και τον αριθμό τηλεφώνου τους, για να λειτουργήσει η COVIDSafe για αυτούς.";
+"GetCoronaVirusApp_VOLabel" = "Αποκτήστε την εφαρμογή για τον Κορωνοϊό. Κατεβάστε την κυβερνητική εφαρμογή για τις τελευταίες ειδήσεις και συμβουλές.";
+"upload_step_verify_pin_sub_header" = "Ένας υπάλληλος υγείας της Πολιτείας ή της Επικράτειάς σας θα στείλει ένα PIN στη συσκευή σας μέσω μηνύματος. Εισάγετέ το παρακάτω για να αναρτήσετε τα στοιχεία σας.";
+"upload_step_4_sub_header" = "Εάν δε συναινέσετε, τα στοιχεία επικοινωνίας σας δε θα αναρτηθούν.\
+\
+Εάν συναινείτε, τα στοιχεία στενής επαφής σας θα αναρτηθούν και θα κοινοποιηθούν σε υπαλλήλους υγείας της Πολιτείας ή της Επικράτειάς σας για σκοπούς ανίχνευσης επαφών.\
+\
+Για περισσότερες λεπτομέρειες διαβάστε την πολιτική προστασίας προσωπικών δεδομένων της COVIDSafe *.";
+"personal_details_headline" = "Εισάγετε τα στοιχεία σας";
+"permission_success_warning" = "Να έχετε τις αυτόματες γνωστοποιήσεις ανοιχτές για την COVIDSafe, ώστε να μπορούμε να σας ειδοποιήσουμε γρήγορα εάν η εφαρμογή δε λειτουργεί σωστά.";
+"enter_pin_headline" = "Εισάγετε το PIN που στάλθηκε στο %s %s";
+"home_set_complete_external_link_share_content" = "Ζητήστε τη βοήθεια και άλλων. Μαζί, είμαστε πιο δυνατοί.";
+"home_set_complete_external_link_news_content" = "Επισκεφτείτε τη σελίδα aus.gov.au για τις τελευταίες ειδήσεις για τον Κορωνοϊό.";
+"intro_content" = "Η COVIDSafe έχει αναπτυχθεί από την Αυστραλιανή Κυβέρνηση για την ασφάλεια της κοινότητας από την εξάπλωση του κορωνοϊού. \
+\
+Η COVIDSafe θα σημειώσει με ασφάλεια την επαφή που έχετε με άλλους χρήστες της εφαρμογής. Αυτό θα επιτρέπει στους υπαλλήλους της Πολιτείας ή Επικράτειάς σας να επικοινωνήσουν μαζί σας, εάν έχετε στενή επαφή με κάποιον που έχει διαγνωστεί θετικά στον ιό.\
+\
+Μαζί μπορούμε να βοηθήσουμε να σταματήσουμε την εξάπλωση και να παραμείνουμε υγιείς.";
+"enter_number_headline" = "Εισάγετε τον αριθμό του κινητού σας";
+"country_region_name_tt" = "Τρίνινταντ και Τομπάγκο";
+"country_region_name_tc" = "Νήσοι Τερκς και Κάικος";
+"BluetoothOFF" = "Bluetooth®: ΑΠΕΝΕΡΓΟΠΟΙΗΜΕΝΟ";
+"country_region_name_kg" = "Κιργιζιστάν";
+"country_region_name_ht" = "Αϊτή";
+"country_region_name_ky" = "Νησιά Κέιμαν";
+"country_region_name_ai" = "Ανγκουίλα";
+"country_region_name_ad" = "Ανδόρρα";
+"home_set_complete_external_link_notifications_content_iOS_off" = "Δε θα λάβετε ειδοποιήσεις εάν η COVIDSafe δεν είναι ενεργή.";
+"EnterPhoneReVerify" = "Εισάγετε τον αριθμό του κινητού σας για επαλήθευση εκ νέου";
+"EnterPINSent" = "Εισάγετε το PIN που στάλθηκε στο % @";
+"PhoneNumberFormatErrorMessage" = "Εισάγετε τον αριθμό του κινητού σας.";
+"permission_button" = "Προχωρήστε";
+"ShareCovidSafe_VOLabel" = "Μοιραστείτε την COVIDSafe. Καλέστε και άλλους να βοηθήσουν. Μαζί, είμαστε ισχυρότεροι.";
+"UploadData_VOLabel" = "Έχει επικοινωνήσει μαζί σας υπάλληλος υγείας; Μπορείτε να αναρτήσετε τις πληροφορίες σας μόνο αν έχετε διαγνωστεί θετικά.";
+"upload_step_4_header" = "Αναρτήστε τη συναίνεσή σας";
+"upload_step_1_body" = "Υπάλληλος υγείας της Πολιτείας ή της Επικράτειάς σας θα επικοινωνήσει μαζί σας μόνο εάν διαγνωστείτε θετικά στο COVID-19, για να σας βοηθήσει με την εθελοντική ανάρτηση των πληροφοριών σας. \
+\
+Μόλις πατήσετε «Ναι», θα πρέπει να δώσετε τη συναίνεσή σας για να αναρτήσετε τα στοιχεία σας.";
+"under_sixteen_first_paragraph" = "Τα στοιχεία μου εγγραφής επιτρέπουν την ανίχνευση επαφών από υπαλλήλους υγείας των Πολιτειών και Επικρατειών.";
+"Select_country_or_region_headline" = "Επιλέξτε χώρα ή περιοχή";
+"ReportAnIssue" = "Αναφέρετε ένα πρόβλημα";
+"registration_consent_headline" = "Συναίνεση εγγραφής";
+"registration_consent_first_paragraph" = "Τα στοιχεία εγγραφής μου για να επιτραπεί η ανίχνευση επαφών από υπαλλήλους υγείας των Πολιτειών ή Επικρατειών.";
+"PostcodeValidationErrorMessage" = "Εισάγετε έναν έγκυρο ταχυδρομικό κώδικα της Αυστραλίας.";
+"PN_ReminderBody" = "Ανοίξτε την COVIDSafe για να βεβαιωθείτε ότι λειτουργεί.";
+"PINNumber_VO_Label" = "Κωδικός PΙΝ";
+"personal_details_name_characters_prompt" = "Χρησιμοποιήστε Λατινικούς χαρακτήρες για το ονοματεπώνυμό σας. Μη χρησιμοποιείτε άλλες γλώσσες ή σύμβολα όπως ',' ή '?'.";
+"personal_details_age_error_prompt" = "Επιλέξτε την ηλικιακή ομάδα.";
+"permission_success_headline" = "Έχετε εγγραφεί επιτυχώς";
+"permission_success_button" = "Συνεχίστε";
+"permission_headline" = "Ρυθμίσεις εφαρμογής";
+"permission_content_iOS_VOLabel" = "Η COVIDSafe για να λειτουργήσει θα πρέπει το Bluetooth να είναι ενεργοποιημένο. Όταν ενεργοποιήσετε τις Ειδοποιήσεις, θα λάβετε τις ενημερώσεις που υπενθυμίζουν πότε η COVIDSafe δεν είναι ενεργή. \
+\
+ Επιλέξτε «Συνέχεια» για ενεργοποίηση:";
+"permission_content_iOS_2_VOLabel" = "1. Bluetooth \
+2. Ειδοποιήσεις \
+\
+ Η COVIDSafe δεν αποστέλλει αιτήματα σύζευξης.";
+"permission_content_iOS" = "Για να λειτουργήσει η COVIDSafe θα πρέπει το Bluetooth® να είναι ενεργοποιημένο. Όταν ενεργοποιήσετε τις Ειδοποιήσεις, θα λάβετε τις ενημερώσεις που υπενθυμίζουν πότε η COVIDSafe δεν είναι ενεργή. \
+\
+ Επιλέξτε «Συνέχεια» για ενεργοποίηση:";
+"OS1b_TopParagraph_VOLabel" = "Τα σήματα Bluetooth χρησιμοποιούνται για να προσδιορίσουν πότε βρίσκεστε κοντά σε άλλο χρήστη της COVIDSafe. \
+Κάθε στενή επαφή σας με άλλους χρήστες της COVIDSafe σημειώνεται για να δημιουργεί στενά στοιχεία επικοινωνίας. Οι πληροφορίες είναι κρυπτογραφημένες και αποθηκεύονται μόνο στο τηλέφωνό σας. \
+Εάν έχετε διαγνωστεί θετικά στον COVID-19 κατόπιν χρήσης της COVIDSafe, ένας υπεύθυνος υγείας της Πολιτείας ή της Επικράτειάς σας θα επικοινωνήσει μαζί σας. Θα βοηθήσει με την εθελοντική ανάρτηση των προσωπικών στοιχείων επικοινωνίας σας σε ένα εξαιρετικά ασφαλές σύστημα αποθήκευσης πληροφοριών. \
+Οι υπεύθυνοι υγείας της Πολιτείας ή της Επικράτειάς σας μπορούν επίσης να επικοινωνήσουν μαζί σας εάν ήρθατε σε στενή επαφή με άλλο χρήστη της COVIDSafe που επίσης διαγνώστηκε θετικά. \
+Για περισσότερες πληροφορίες, πηγαίνετε στη σελίδα Θέματα Βοήθειας.";
+"NotificationsEnabledBlurb" = "Θα λάβετε ειδοποίηση εάν η COVIDSafe δεν είναι ενεργή. \n Αλλάξετε τις ρυθμίσεις ειδοποιήσεων";
+"NotificationsDisabledBlurb" = "Δε θα λάβετε ειδοποίηση εάν η COVIDSafe δεν είναι ενεργή. \n Αλλαγή στις ρυθμίσεις ειδοποιήσεων";
+"NotificationsDisabled_VOLabel" = "Οι ειδοποιήσεις είναι απενεργοποιημένες. Δε θα λάβετε ειδοποίηση εάν η COVIDSafe δεν είναι ενεργή. \
+Αλλάξετε τις ρυθμίσεις ειδοποίησης";
+"norfolk_hint" = "Για παράδειγμα: 51234";
+"LatestNews_VOLabel" = "Τελευταίες ειδήσεις και ενημερώσεις. Επισκεφτείτε τη σελίδα aus.gov.au για τα τελευταία νέα του Κορωνοϊού.";
+"IssueThankYou" = "Ευχαριστούμε! Λάβαμε τα σχόλια σας.";
+"IssueFooter" = "Μπορεί να επικοινωνήσουμε μαζί σας για περισσότερες λεπτομέρειες σχετικά με τα σχόλια σας. Η διεύθυνση email σας δε θα χρησιμοποιηθεί για κανέναν άλλο σκοπό.";
+"IntroLabel" = "Βοηθήστε να σταματήσουμε την εξάπλωση \
+και σώστε ζωές.";
+"home_header_inactive_title" = "Η COVIDSafe δεν είναι ενεργή";
+"home_header_active_title" = "Η COVIDSafe είναι ενεργή";
+"home_app_permission_status_title" = "Ελέγξτε τις ρυθμίσεις σας";
+"enter_pin_wrong_number" = "Είναι ο αριθμός κινητού λάθος;";
+"enter_pin_timer_expire" = "Το PIN σας θα λήξει σε &#160;";
+"enter_pin_resend_pin" = "Στείλτε ξανά το PIN";
+"country_region_name_au2" = "Νήσος Νόρφολκ";
+"home_app_permission_status_subtitle" = "Η COVIDSafe δε θα λειτουργήσει χωρίς τις σωστές ρυθμίσεις.";
+"home_header_inactive_check_your_permissions" = "Ελέγξτε τις ρυθμίσεις σας";
+"home_setup_help" = "Βοήθεια";
+"home_data_uploaded_message" = "Βοηθήστε να σταματήσει η εξάπλωση του COVID-19 και παρακολουθείτε τα συμπτώματά σας.";
+"home_set_complete_external_link_share_title" = "Μοιραστείτε την COVIDSafe";
+"home_set_complete_external_link_news_title" = "Τελευταίες ειδήσεις και ενημερώσεις";
+"home_set_complete_external_link_news_url" = "https://www.australia.gov.au";
+"home_set_complete_external_link_self_isolation_register_url" = "https://covid-form.service.gov.au";
+"home_set_complete_external_link_app_title" = "Αποκτήστε την εφαρμογή για τον Κορωνοϊό";
+"home_set_complete_external_link_app_content" = "Κατεβάστε την εφαρμογή της κυβέρνησης για τις τελευταίες ειδήσεις και συμβουλές.";
+"home_set_complete_external_link_been_contacted_title" = "Έχει επικοινωνήσει μαζί σας υπάλληλος υγείας;";
+"home_set_complete_external_link_been_contacted_content" = "Μπορείτε να αναρτήσετε τα στοιχεία σας μόνο εάν έχετε διαγνωστεί θετικά.";
+"home_set_complete_external_link_help_topics_title" = "Θέματα βοήθειας";
+"home_set_complete_external_link_help_topics_content" = "Εάν έχετε προβλήματα ή απορίες για την εφαρμογή.";
+"upload_answer_yes" = "Ναι";
+"upload_answer_no" = "Όχι";
+"upload_step_1_header" = "Σας ζητάει υπάλληλος υγείας σας να αναρτήσετε τα στοιχεία σας;";
+"upload_step_verify_pin_header" = "Αναρτήστε τα στοιχεία σας";
+"upload_finished_header" = "Σας ευχαριστούμε που βοηθήσατε να σταματήσει η εξάπλωση του COVID-19!";
+"upload_finished_sub_header" = "Έχετε ανεβάσει με επιτυχία τις πληροφορίες σας στο σύστημα αποθήκευσης υψηλής ασφάλειας COVIDSafe.\
+\
+Οι υγειονομικοί υπάλληλοι της Πολιτείας ή της Επικράτειάς σας θα ενημερώσουν άλλους χρήστες της COVIDSafe που έχουν καταγράψει στενή επαφή μαζί σας. Η ταυτότητά σας θα παραμείνει ανώνυμη σε άλλους χρήστες.";
+"upload_failed" = "Η ανάρτηση απέτυχε";
+"under_sixteen_registration_consent_first_paragraph" = "Τα στοιχεία εγγραφής μου επιτρέπουν την ανίχνευση επαφών από υπαλλήλους υγείας της Πολιτείας ή της Επικράτειάς σας.";
+"under-sixteen_consent_call_for_action" = "Επιλέξτε «Συμφωνώ» για επιβεβαίωση της συναίνεσής σας.";
+"Enter_your_mobile_number_label" = "Εισάγετε τον αριθμό του κινητού σας";
+"permission_content_iOS_2" = "1. Bluetooth® \
+2. Ειδοποιήσεις \
+\
+ Η COVIDSafe δεν αποστέλλει αιτήματα σύζευξης.";
+"PN_ReminderTitle" = "Δεν εντοπίστηκαν συναντήσεις για 48 ώρες";
+"OS2b_Item3" = "3. Η COVIDSafe δεν αποστέλλει αιτήματα σύζευξης. Μάθετε περισσότερα.";
+"UploadFailed" = "Η ανάρτηση απέτυχε. Δοκιμάστε πάλι αργότερα.";
+"global_cancel_button_title" = "Ακύρωση";
+"enter_pin_button" = "Επιβεβαιώστε";
+"how_it_works_content" = "Τα σήματα Bluetooth χρησιμοποιούνται για να προσδιορίσουν πότε βρίσκεστε κοντά σε άλλο χρήστη της COVIDSafe.\
+\
+Η κάθε στενή επαφή σας με άλλους χρήστες της COVIDSafe σημειώνεται για να δημιουργεί στενά στοιχεία επικοινωνίας. Οι πληροφορίες είναι κρυπτογραφημένες και αποθηκεύονται μόνο στο τηλέφωνό σας.\
+\
+Εάν έχετε διαγνωστεί θετικά στην COVID-19 κατόπιν χρήσης της COVIDSafe, ένας υπεύθυνος υγείας της Πολιτείας ή της Επικράτειάς σας θα επικοινωνήσει μαζί σας. Θα βοηθήσει με την εθελοντική ανάρτηση των προσωπικών στοιχείων επικοινωνίας σας σε ένα εξαιρετικά ασφαλές σύστημα αποθήκευσης πληροφοριών. \
+\
+Οι υπεύθυνοι υγείας της Πολιτείας ή της Επικράτειάς σας μπορούν επίσης να επικοινωνήσουν μαζί σας εάν ήρθατε σε στενή επαφή με άλλο χρήστη της COVIDSafe που επίσης διαγνώσθηκε θετικά.\
+\
+Για περισσότερες πληροφορίες, πηγαίνετε στη σελίδα *Θέματα Βοήθειας*.";
+"dialog_uploading_message" = "Τα στοιχεία σας αναρτίζονται στην COVIDSafe αυτή τη στιγμή. \
+\
+Μην κλείσετε την εφαρμογή.";
+"dialog_error_uploading_message" = "Παρουσιάστηκε πρόβλημα κατά την ανάρτηση των στοιχείων σας. Δοκιμάστε ξανά.";
+"share_this_app_content" = "Ελάτε μαζί μου να σταματήσουμε την εξάπλωση του COVID-19! Κατεβάστε την COVIDSafe, μια εφαρμογή της Αυστραλιανής Κυβέρνησης. # COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
+"migration_in_progress" = "Η ενημέρωση της COVIDSafe συνεχίζεται. \
+\
+Βεβαιωθείτε ότι το τηλέφωνό σας δεν είναι απενεργοποιημένο έως ότου ολοκληρωθεί η ενημέρωση.";
+"intro_headline" = "Μαζί μπορούμε να σταματήσουμε την εξάπλωση του COVID-19";
+"intro_button" = "Θέλω να βοηθήσω";
+"how_it_works_headline" = "Πώς λειτουργεί η COVIDSafe";
+"how_it_works_button" = "Επόμενο";
+"consent_call_for_action" = "Επιλέξτε «Συμφωνώ» για επιβεβαίωση της συγκατάθεσης.";
+"consent_button" = "Συμφωνώ";
+"data_privacy_button" = "Επόμενο";
+"registration_consent_content" = "Συναινώ να συλλέγει το Αυστραλιανό Υπουργείο Υγείας:";
+"registration_consent_second_paragraph" = "Τα στοιχεία επικοινωνίας μου από άλλους χρήστες της COVIDSafe αφού διαγνώστηκαν θετικά για το COVID-19.";
+"personal_details_name_title" = "Ονοματεπώνυμο";
+"personal_details_age_title" = "Ηλικιακή ομάδα (επιλέξτε)";
+"personal_details_post_code" = "Ταχυδρομικός κώδικας στην Αυστραλία";
+"personal_details_name_error_prompt" = "Παρακαλώ εισάγετε το ονοματεπώνυμό σας.";
+"personal_details_age_content_description" = "Επιλέξτε την ηλικιακή ομάδα";
+"personal_details_post_code_error_prompt" = "Ο Αυστραλιανός ταχυδρομικός σας κώδικας πρέπει να περιέχει 4 ψηφία.";
+"personal_details_dialog_ok" = "Επιλέξτε";
+"personal_details_button" = "Συνεχίστε";
+"under_sixteen_headline" = "Χρειάζεστε τη συναίνεση του γονέα/κηδεμόνα σας για να συνεχίσετε";
+"under_sixteen_content" = "Επιβεβαιώνω ότι ως γονέας ή κηδεμόνας συναινώ με το Υπουργείο Υγείας της Αυστραλίας στη συλλογή:";
+"under_sixteen_second_paragraph" = "Τα στοιχεία επικοινωνίας μου από άλλους χρήστες της COVIDSafe αφού διαγνώστηκαν θετικά για το COVID-19.";
+"select_country_or_region" = "Επιλέξτε χώρα ή περιοχή";
+"invalid_australian_phone_number_error_prompt" = "Οι αριθμοί κινητής τηλεφωνίας της Αυστραλίας περιέχουν έως 10 ψηφία.";
+"invalid_norfolk_island_phone_number_error_prompt" = "Οι αριθμοί κινητής τηλεφωνίας στο νησί Νόρφολκ περιέχουν 5 έως 6 ψηφία.";
+"enter_number_content" = "Θα σας στείλουμε ένα 6ψήφιο PIN για να επαληθεύσετε τον αριθμό του κινητού σας.";
+"enter_number_button" = "Αποκτήστε PIN";
+"dialog_error_uploading_positive" = "Προσπαθήστε ξανά";
+"data_privacy_headline" = "Εγγραφή και προστασία του απορρήτου";
+"country_region_name_zw" = "Ζιμπάμπουε";
+"country_region_name_zm" = "Ζάμπια";
+"country_region_name_za" = "Νότια Αφρική";
+"country_region_name_ye" = "Υεμένη";
+"country_region_name_ws" = "Σαμόα";
+"country_region_name_vi" = "Παρθένες Νήσοι, ΗΠΑ";
+"country_region_name_vg" = "Βρετανικές Παρθένες Νήσοι";
+"country_region_name_vu" = "Βανουάτου";
+"country_region_name_vn" = "Βιετνάμ";
+"country_region_name_ve" = "Βενεζουέλα";
+"country_region_name_vc" = "Άγιος Βικέντιος και Γρεναδίνες";
+"country_region_name_uz" = "Ουζμπεκιστάν";
+"country_region_name_uy" = "Ουρουγουάη";
+"country_region_name_us" = "Ηνωμένες Πολιτείες";
+"country_region_name_ug" = "Ουγκάντα";
+"country_region_name_ua" = "Ουκρανία";
+"country_region_name_tz" = "Τανζανία";
+"country_region_name_tw" = "Ταϊβάν";
+"country_region_name_tr" = "Τουρκία";
+"country_region_name_to" = "Τόνγκα";
+"country_region_name_tn" = "Τυνησία";
+"country_region_name_tm" = "Τουρκμενιστάν";
+"country_region_name_tl" = "Τιμόρ-Λέστε";
+"country_region_name_tj" = "Τατζικιστάν";
+"country_region_name_th" = "Ταϊλάνδη";
+"country_region_name_tg" = "Τόγκο";
+"country_region_name_sz" = "Εσουατίνη";
+"country_region_name_st" = "Σάο Τομέ και Πρίνσιπε";
+"country_region_name_ss" = "Νότιο Σουδάν";
+"country_region_name_sr" = "Σουρινάμ";
+"country_region_name_so" = "Σομαλία";
+"country_region_name_sn" = "Σενεγάλη";
+"country_region_name_sl" = "Σιέρρα Λεόνε";
+"country_region_name_si" = "Σλοβενία";
+"country_region_name_sk" = "Σλοβακία";
+"country_region_name_sg" = "Σιγκαπούρη";
+"country_region_name_se" = "Σουηδία";
+"country_region_name_sd" = "Σουδάν";
+"country_region_name_sc" = "Σεϋχέλλες";
+"country_region_name_sb" = "Νησιά Σολομώντα";
+"country_region_name_sa" = "Σαουδική Αραβία";
+"country_region_name_rw" = "Ρουάντα";
+"country_region_name_ru" = "Ρωσία";
+"country_region_name_rs" = "Σερβία";
+"country_region_name_ro" = "Ρουμανία";
+"country_region_name_re" = "Νήσος Ρεϋνιόν";
+"country_region_name_qa" = "Κατάρ";
+"country_region_name_py" = "Παραγουάη";
+"country_region_name_pw" = "Παλάου";
+"country_region_name_pt" = "Πορτογαλία";
+"country_region_name_ps" = "Παλαιστινιακά Εδάφη";
+"country_region_name_pr" = "Πουέρτο Ρίκο";
+"country_region_name_pl" = "Πολωνία";
+"country_region_name_pk" = "Πακιστάν";
+"country_region_name_ph" = "Φιλιππίνες";
+"country_region_name_pg" = "Παπούα Νέα Γουινέα";
+"country_region_name_pe" = "Περού";
+"country_region_name_pa" = "Παναμά";
+"country_region_name_om" = "Ομάν";
+"country_region_name_nz" = "Νέα Ζηλανδία";
+"country_region_name_np" = "Νεπάλ";
+"country_region_name_no" = "Νορβηγία";
+"country_region_name_nl" = "Κάτω Χώρες";
+"country_region_name_ni" = "Νικαράγουα";
+"country_region_name_ng" = "Νιγηρία";
+"country_region_name_ne" = "Νίγηρα";
+"country_region_name_nc" = "Νέα Καληδονία";
+"country_region_name_na" = "Ναμίμπια";
+"country_region_name_mz" = "Μοζαμβίκη";
+"country_region_name_my" = "Μαλαισία";
+"country_region_name_mx" = "Μεξικό";
+"country_region_name_mw" = "Μαλάουι";
+"country_region_name_mv" = "Μαλδίβες";
+"country_region_name_mu" = "Μαυρίκιος";
+"country_region_name_mt" = "Μάλτα";
+"country_region_name_ms" = "Μοντσερράτ";
+"country_region_name_mr" = "Μαυριτανία";
+"country_region_name_mq" = "Μαρτινίκα";
+"country_region_name_mo" = "Μακάο";
+"country_region_name_mn" = "Μογγολία";
+"country_region_name_mm" = "Μιανμάρ";
+"country_region_name_ml" = "Μάλι";
+"country_region_name_mk" = "Βόρεια Μακεδονία";
+"country_region_name_mg" = "Μαδαγασκάρη";
+"country_region_name_me" = "Μαυροβούνι";
+"country_region_name_md" = "Μολδαβία";
+"country_region_name_mc" = "Μονακό";
+"country_region_name_ma" = "Μαρόκο";
+"country_region_name_ly" = "Λιβύη";
+"country_region_name_lu" = "Λουξεμβούργο";
+"country_region_name_lt" = "Λιθουανία";
+"country_region_name_lr" = "Λιβερία";
+"country_region_name_lk" = "Σρι Λάνκα";
+"country_region_name_li" = "Λιχτενστάιν";
+"country_region_name_lc" = "Αγία Λουκία";
+"country_region_name_kr" = "Νότια Κορέα";
+"country_region_name_kn" = "Άγιος Κιτς και Νέβις";
+"country_region_name_ir" = "Ιράν";
+"country_region_name_gb" = "Ηνωμένο Βασίλειο";
+"country_region_name_es" = "Ισπανία";
+"country_region_name_cw" = "Κουρασάο";
+"country_region_name_cu" = "Κούβα";
+"country_region_name_ch" = "Ελβετία";
+"country_region_name_cg" = "Δημοκρατία του Κονγκό";
+"country_region_name_an" = "Ολλανδικές Αντίλλες";
+"country_region_name_ae" = "Ηνωμένα Αραβικά Εμιράτα";
+"AllowBluetoothON" = "Πρόσβαση στο Bluetooth®: ΕΝΕΡΓΟΠΟΙΗΜΕΝΗ";
+"action_verify_upload_pin" = "Ανεβάστε τα στοιχεία μου";
+"action_upload_done" = "Συνεχίστε";
+"allow_bluetooth_call" = "Επιτρέψτε την COVIDSafe να έχει πρόσβαση στο Bluetooth®";
+"action_verify_invalid_pin" = "Μη έγκυρο PIN, ζητήστε από τον υπεύθυνο υγείας να σας στείλει καινούριο PIN.";
+"action_report_an_issue" = "Αναφέρετε το πρόβλημα";
+"action_continue" = "Συνεχίστε";
+"wrong_ping_number" = "Εισήχθη λάθος PIN";
+"country_region_name_ls" = "Λεσόθο";
+"country_region_name_lb" = "Λίβανος";
+"country_region_name_lv" = "Λετονία";
+"country_region_name_la" = "Λάος";
+"country_region_name_kw" = "Κουβέιτ";
+"country_region_name_ki" = "Κιριμπάτι";
+"country_region_name_ke" = "Κένυα";
+"country_region_name_kz" = "Καζακστάν";
+"country_region_name_jo" = "Ιορδανία";
+"country_region_name_jp" = "Ιαπωνία";
+"country_region_name_jm" = "Ιαμαϊκή";
+"country_region_name_ci" = "Ακτή Ελεφαντοστού";
+"country_region_name_it" = "Ιταλία";
+"country_region_name_il" = "Ισραήλ";
+"country_region_name_ie" = "Ιρλανδία";
+"country_region_name_iq" = "Ιράκ";
+"country_region_name_id" = "Ινδονησία";
+"country_region_name_in" = "Ινδία";
+"country_region_name_is" = "Ισλανδία";
+"country_region_name_hu" = "Ουγγαρία";
+"country_region_name_hk" = "Χονγκ Κονγκ";
+"country_region_name_hn" = "Ονδούρα";
+"country_region_name_gy" = "Γουιάνα";
+"country_region_name_gw" = "Γουινέα-Μπισσάου";
+"country_region_name_gn" = "Παπούα Νέα Γουινέα";
+"country_region_name_gt" = "Γουατεμάλα";
+"country_region_name_gu" = "Γκουάμ";
+"country_region_name_gd" = "Γρενάδα";
+"country_region_name_gp" = "Γουαδελούπη";
+"country_region_name_gl" = "Γροιλανδία";
+"country_region_name_gr" = "Ελλάδα";
+"country_region_name_gi" = "Γιβραλτάρ";
+"country_region_name_gh" = "Γκάνα";
+"country_region_name_de" = "Γερμανία";
+"country_region_name_ge" = "Γεωργία";
+"country_region_name_gm" = "Γκάμπια";
+"country_region_name_ga" = "Γκαμπόν";
+"country_region_name_gf" = "Γαλλική Γουιάνα";
+"country_region_name_fr" = "Γαλλία";
+"country_region_name_fi" = "Φινλανδία";
+"country_region_name_fj" = "Φίτζι";
+"country_region_name_fo" = "Νήσοι Φερόες";
+"country_region_name_et" = "Αιθιοπία";
+"country_region_name_ee" = "Εσθονία";
+"country_region_name_gq" = "Ισημερινή Γουινέα";
+"country_region_name_sv" = "Ελ Σαλβαδόρ";
+"country_region_name_eg" = "Αίγυπτος";
+"country_region_name_ec" = "Ισημερινός";
+"country_region_name_do" = "Δομινικανή Δημοκρατία";
+"country_region_name_dj" = "Τζιμπουτί";
+"country_region_name_dk" = "Δανία";
+"country_region_name_cd" = "Λαϊκή Δημοκρατία του Κονγκό";
+"country_region_name_cz" = "Τσεχία";
+"country_region_name_cy" = "Κύπρος";
+"country_region_name_hr" = "Κροατία";
+"country_region_name_cr" = "Κόστα Ρίκα";
+"country_region_name_ck" = "Νήσοι Κουκ";
+"country_region_name_km" = "Κομόρος";
+"country_region_name_co" = "Κολομβία";
+"country_region_name_cn" = "Κίνα";
+"country_region_name_cl" = "Χιλή";
+"country_region_name_td" = "Τσαντ";
+"country_region_name_cf" = "Δημοκρατία Κεντρικής Αφρικής";
+"country_region_name_cv" = "Πράσινο Ακρωτήριο";
+"country_region_name_ca" = "Καναδάς";
+"country_region_name_cm" = "Καμερούν";
+"country_region_name_kh" = "Καμπότζη";
+"country_region_name_bi" = "Μπουρούντι";
+"country_region_name_bf" = "Μπουρκίνα Φάσο";
+"country_region_name_bg" = "Βουλγαρία";
+"country_region_name_bn" = "Μπρουνέι";
+"country_region_name_br" = "Βραζιλία";
+"country_region_name_bw" = "Μποτσουάνα";
+"country_region_name_ba" = "Βοσνία και Ερζεγοβίνη";
+"country_region_name_bo" = "Βολιβία";
+"country_region_name_bt" = "Μπουτάν";
+"country_region_name_bm" = "Βερμούδα";
+"country_region_name_bj" = "Μπενίν";
+"country_region_name_bz" = "Μπελίζ";
+"country_region_name_be" = "Βέλγιο";
+"country_region_name_by" = "Λευκορωσία";
+"country_region_name_bb" = "Μπαρμπάντος";
+"country_region_name_bd" = "Μπαγκλαντές";
+"country_region_name_bh" = "Μπαχρέιν";
+"country_region_name_bs" = "Μπαχάμες";
+"country_region_name_au" = "Αυστραλία";
+"country_region_name_aw" = "Αρούμπα";
+"country_region_name_am" = "Αρμενία";
+"country_region_name_ar" = "Αργεντινή";
+"country_region_name_ag" = "Αντίγκουα και Μπαρμπούντα";
+"country_region_name_ao" = "Αγκόλα";
+"country_region_name_dz" = "Αλγερία";
+"country_region_name_al" = "Αλβανία";
+"country_region_name_af" = "Αφγανιστάν";
+"country_region_name_az" = "Αζερμπαϊτζάν";
+"country_region_name_at" = "Αυστρία";
+"options_for_australia" = "Επιλογές για την Αυστραλία";
+"PN_BluetoothStatusBody" = "Βεβαιωθείτε ότι είναι ενεργή πριν βγείτε από το σπίτι και όταν βρίσκεστε σε δημόσιους χώρους ενεργοποιώντας το Bluetooth®.";
+"BluetoothOFF_content" = "Ενεργοποιήστε το Bluetooth® του τηλεφώνου σας. Επιλέξτε «να επιτρέπονται Νέες Συνδέσεις» εάν εμφανιστεί.";
+"AllowBluetoothOFF_VOLabel" = "Πρόσβαση σε Bluetooth: ΑΠΕΝΕΡΓΟΠΟΙΗΣΗ Να επιτρέπεται στην COVIDSafe πρόσβαση σε Bluetooth";
+"OS2b_Item1" = "1. Όταν βγαίνετε από το σπίτι, να κρατάτε το τηλέφωνό σας πάνω σας και να βεβαιωθείτε ότι η COVIDSafe είναι ενεργή.";
+"PairingRequestsInfo" = "Η COVIDSafe δεν αποστέλλει αιτήματα σύζευξης.";
+"NotificationsEnabled_VOLabel" = "Οι ειδοποιήσεις είναι ενεργοποιημένες. Θα λάβετε ειδοποίηση εάν η COVIDSafe δεν είναι ενεργή. \
+Αλλαγή ρυθμίσεων ειδοποίησης";
+"update_available_message" = "Έχουμε βελτιώσει την COVIDSafe.";
+"PN_BluetoothStatusTitle" = "Η COVIDSafe δεν είναι ενεργή";
+"home_set_complete_external_link_notifications_title_iOS" = "Οι ειδοποιήσεις είναι ενεργοποιημένες";
+"NotificationsBlurbLink" = "Αλλαγή στις ρυθμίσεις ειδοποιήσεων";
+"AllowBluetoothOFF" = "Πρόσβαση στο Bluetooth®: ΑΠΕΝΕΡΓΟΠΟΙΗΜΕΝΗ";
+"home_set_complete_external_link_notifications_title_iOS_off" = "Οι ειδοποιήσεις είναι απενεργοποιημένες";
+"BluetoothON" = "Bluetooth®: ΕΝΕΡΓΟ";
+"us_consent_button" = "Συμφωνώ";
+"home_header_uploaded_on_date_ios" = "Τα στοιχεία σας αναρτήθηκαν στο %@";
+"home_version_number_ios" = "Έκδοση %@, Κατασκευή %@";
+"upload_consent_button" = "Συμφωνώ";
+"SelectedCountryTemplate" = "(+ %@ ) %@ έχει επιλεγεί";
+"AllowBluetoothON_VOLabel" = "Πρόσβαση σε Bluetooth: ΕΝΕΡΓΟ";
+"BluetoothON_VOLabel" = "Bluetooth: ΕΝΕΡΓΟ";
+"BluetoothOFF_VOLabel" = "Bluetooth: ΑΝΕΝΕΡΓΟ Ενεργοποιήστε το Bluetooth του τηλεφώνου σας. Επιλέξτε «Να επιτρέπονται νέες συνδέσεις» εάν εμφανίζεται.";
+"Done" = "Ολοκλήρωση";
+"Next" = "Επόμενο";
+"ValidationError" = "Σφάλμα επικύρωσης";
+"PINWillExpire" = "Το PIN σας θα λήξει σε %@";
+"ReceivePinIssue" = "Προβλήματα με τη λήψη του PIN σας;";
+"CodeHasExpired" = "Ο κωδικός σας έχει λήξει.";
+"InvalidOTP" = "Πρέπει να είναι εξαψήφιος κωδικός";
+"PhoneVerificationErrorTitle" = "Σφάλμα επαλήθευσης του αριθμού τηλεφώνου";
+"PhoneVerificationErrorMessage" = "Ελέγξτε τα στοιχεία σας και προσπαθήστε ξανά.";
+"PhoneNumberFormatErrorTitle" = "Λάθος σύνταξη του αριθμού";
+"FoundIssueWithApp" = "Βρήκατε ένα πρόβλημα στην εφαρμογή COVIDSafe;";
+"IssueDescPlaceholder" = "Περιγράψτε το πρόβλημα";
+"OS2b_Item2" = "2. Το Bluetooth® πρέπει να παραμείνει ενεργοποιημένο.";
+"OS2b_Item2_VOLabel" = "2. Το Bluetooth πρέπει να παραμείνει ενεργοποιημένο.";
+"OS2b_Item3Underline" = "Μάθετε περισσότερα";
+"InformationUploaded" = "Τα στοιχεία σας αναρτήθηκαν στο %@";
+"PairingRequestsInfoUnderline" = "αιτήματα σύζευξης";
+"UploadFailedErrorMessage" = "Δοκιμάστε ξανά αργότερα.";
+"EmailPlaceholder" = "Τοπικοποίηση Εισαγάγετε τη διεύθυνση email σας (απαιτείται)";
+"global_send_button_title" = "Αποστολή";
+"global_sending_indication_title" = "Αποστέλνοντας";
+"global_success_indication_title" = "Επιτυχία";
+"entryPrompt_alert_title" = "Πλαίσιο σχολίων";
+"entryPrompt_alert_message" = "Γεια σας, πώς θα θέλατε να συνεχίσετε;";
+"entryPrompt_newFeedback_button_title" = "Νέα Σχόλια";
+"newFeedbackFlow_navigationTitle" = "Αναφορά προβλήματος";
+"newFeedback_deleteScreenshotConfirmation_message" = "Το στιγμιότυπο οθόνης θα διαγραφεί οριστικά.";
+"newFeedback_deleteScreenshot_actionTitle" = "Διαγράψετε το στιγμιότυπο οθόνης";
+"newFeedback_send_errorMessage" = "Σφάλμα κατά την αποστολή σχολίων";
+"newFeedback_noMessage_errorMessage" = "Πείτε μας κάτι πριν το στείλετε.";
+"newFeedback_invalidEmail_errorMessage" = "Εισάγετε μια έγκυρη διεύθυνση ηλεκτρονικού ταχυδρομείου (email)!";
+"PN_MobileNumber_VOLabel" = "Αριθμός κινητού";
+"global_OK" = "OK";
+"global_back" = "Πίσω";
+"global_close" = "Κλείσε";
+"global_double_tap" = "πατήστε δύο φορές για επεξεργασία";
+"HelpTopics_VOLabel" = "Θέματα βοήθειας. Εάν έχετε προβλήματα ή απορίες σχετικά με την εφαρμογή.";
+"update_available_title" = "Η ενημερωμένη έκδοση είναι διαθέσιμη!";
+"update_available_app_store_btn" = "Πηγαίνετε στο App Store";
+"update_available_dismiss_btn" = "Θύμισέ μου αργότερα";

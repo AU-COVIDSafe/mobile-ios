@@ -17,7 +17,8 @@ class EncounterMessageManager {
                                                  rssi: nil,
                                                  txPower: nil,
                                                  modelP: DeviceIdentifier.getModel(),
-                                                 msg: tempId)
+                                                 msg: tempId,
+                                                 timestamp: Date().timeIntervalSince1970)
             let jsonMsg = try JSONEncoder().encode(broadcastPayload)
             let encryptedJsonMsg = try Crypto.encrypt(dataToEncrypt: jsonMsg)
             let peripheralCharStruct = PeripheralCharacteristicsData(modelP: BluetraceConfig.DummyModel, msg: encryptedJsonMsg, org: BluetraceConfig.OrgID, v: BluetraceConfig.ProtocolVersion)
@@ -61,6 +62,7 @@ class EncounterMessageManager {
                 onComplete(response.tempId)
                 return
             }
+            return
         }
         
         // we know that tempId has not expired
@@ -92,6 +94,7 @@ class EncounterMessageManager {
                 }
                 onComplete(nil)
             }
+            return
          }
          
          // we know that payload has not expired

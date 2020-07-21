@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8X4-AC-7cb">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -13,23 +13,23 @@
             <objects>
                 <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="GaQ-f5-ei6" userLabel="Onboarding Step 2b View Controller" customClass="OnboardingStep2bViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dwh-jN-1SX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yA-6u-BZO">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="586"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="655"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ow2-rP-ZcP" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="483.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="483.66666666666669"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppPermissions2" translatesAutoresizingMaskIntoConstraints="NO" id="zzU-xp-IaB">
-                                                <rect key="frame" x="32" y="8" width="311" height="188"/>
+                                                <rect key="frame" x="51.666666666666657" y="8" width="311" height="188"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="188" id="RBB-eB-cCc"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You’ve successfully registered" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCO-yx-Tur">
-                                                <rect key="frame" x="32" y="220" width="311" height="67.5"/>
+                                                <rect key="frame" x="32" y="220" width="350" height="67.666666666666686"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -41,7 +41,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1u-Qk-m74">
-                                                <rect key="frame" x="32" y="311.5" width="311" height="64.5"/>
+                                                <rect key="frame" x="32" y="311.66666666666669" width="350" height="64.666666666666686"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="1. When you leave home, keep your phone with you and make sure COVIDSafe is active.">
                                                         <attributes>
@@ -56,7 +56,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Bluetooth® should be kept ON." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHp-C7-xCZ">
-                                                <rect key="frame" x="32" y="392" width="311" height="20.5"/>
+                                                <rect key="frame" x="32" y="392.33333333333331" width="350" height="20.333333333333314"/>
                                                 <accessibility key="accessibilityConfiguration" label="2. Bluetooth should be kept ON."/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -67,7 +67,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04D-Hy-djY">
-                                                <rect key="frame" x="32" y="428.5" width="311" height="43"/>
+                                                <rect key="frame" x="32" y="428.66666666666669" width="350" height="43"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="3. COVIDSafe does not send pairing requests. ">
                                                         <attributes>
@@ -150,7 +150,7 @@
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwi-lK-bOF">
-                                <rect key="frame" x="32" y="586" width="311" height="49"/>
+                                <rect key="frame" x="32" y="655" width="350" height="49"/>
                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="mT8-Yb-Gp1"/>
@@ -201,23 +201,23 @@
             <objects>
                 <viewController storyboardIdentifier="onboardingStep1" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="8nR-hO-fWt" userLabel="Onboarding Step 1 View Controller" customClass="OnboardingStep1ViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lOU-q5-7Co">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bpu-gs-E11">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="586"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="655"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Og-8r-Em6" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="636"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="614"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="groupHeroShot" translatesAutoresizingMaskIntoConstraints="NO" id="JYM-TW-Zxf">
-                                                <rect key="frame" x="32" y="12" width="311" height="188"/>
+                                                <rect key="frame" x="32" y="12" width="350" height="188"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="188" id="V87-6w-ecV"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Together we can stop the spread of COVID-19" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00h-JA-MfK">
-                                                <rect key="frame" x="32" y="208" width="308" height="67.5"/>
+                                                <rect key="frame" x="32" y="208" width="307.66666666666669" height="67.666666666666686"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -229,7 +229,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2G-ck-rYV">
-                                                <rect key="frame" x="32" y="291.5" width="311" height="328.5"/>
+                                                <rect key="frame" x="32" y="291.66666666666674" width="350" height="306.33333333333326"/>
                                                 <string key="text">COVIDSafe has been developed by the Australian Government to help keep the community safe from the spread of coronavirus.
 
 COVIDSafe will securely note contact that you have with other users of the app. This will allow state or territory health officials to contact you, if you have been in close contact with someone who has tested positive to the virus.
@@ -290,7 +290,7 @@ Together we can help stop the spread and stay healthy.</string>
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LX0-7p-Shs">
-                                <rect key="frame" x="32" y="586" width="311" height="49"/>
+                                <rect key="frame" x="32" y="655" width="350" height="49"/>
                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="S39-Yn-wML"/>
@@ -329,14 +329,14 @@ Together we can help stop the spread and stay healthy.</string>
             <objects>
                 <viewController storyboardIdentifier="onboardingStep2" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="eME-NJ-Fcz" userLabel="Onboarding Step 2 View Controller" customClass="OnboardingStep2ViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dJg-Mo-aen">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VYy-f9-p2t">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="543"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="612"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SpU-i1-aUA" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="596.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="574.33333333333337"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEd-YX-6P6" userLabel="BackButton">
                                                 <rect key="frame" x="16" y="16" width="44" height="44"/>
@@ -353,13 +353,13 @@ Together we can help stop the spread and stay healthy.</string>
                                                 </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppPermissions1" translatesAutoresizingMaskIntoConstraints="NO" id="cma-Te-Ut1">
-                                                <rect key="frame" x="32" y="60" width="311" height="188"/>
+                                                <rect key="frame" x="51.666666666666657" y="60" width="311" height="188"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="188" id="eEy-03-MeQ"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App settings" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pO-gl-umK">
-                                                <rect key="frame" x="32" y="272" width="311" height="33.5"/>
+                                                <rect key="frame" x="32" y="272" width="350" height="33.666666666666686"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -371,7 +371,7 @@ Together we can help stop the spread and stay healthy.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="npY-9G-r2u">
-                                                <rect key="frame" x="32" y="321.5" width="311" height="130.5"/>
+                                                <rect key="frame" x="32" y="321.66666666666669" width="350" height="130.33333333333331"/>
                                                 <string key="text">COVIDSafe needs Bluetooth® enabled to work. By enabling Notifications, you get updates to remind you when COVIDSafe is not active.
 
 Select ‘Proceed' to enable:</string>
@@ -384,7 +384,7 @@ Select ‘Proceed' to enable:</string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAg-5r-Sgd">
-                                                <rect key="frame" x="32" y="472" width="311" height="108.5"/>
+                                                <rect key="frame" x="32" y="471.99999999999994" width="350" height="86.333333333333314"/>
                                                 <string key="text">1. Bluetooth®
 2. Notifications
 
@@ -448,7 +448,7 @@ COVIDSafe does not send pairing requests.</string>
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmj-3v-POB">
-                                <rect key="frame" x="32" y="586" width="311" height="49"/>
+                                <rect key="frame" x="32" y="655" width="350" height="49"/>
                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="2NT-j7-pun"/>
@@ -465,34 +465,34 @@ COVIDSafe does not send pairing requests.</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CdG-cy-ocX" userLabel="ProgressView">
-                                <rect key="frame" x="32" y="551" width="311" height="4"/>
+                                <rect key="frame" x="32" y="620" width="350" height="4"/>
                                 <subviews>
                                     <stackView userInteractionEnabled="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="71H-WY-iS9">
-                                        <rect key="frame" x="0.0" y="0.0" width="311" height="4"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="4"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L3B-Vy-yv1">
-                                                <rect key="frame" x="0.0" y="0.0" width="75" height="4"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="84.666666666666671" height="4"/>
                                                 <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="fds-3d-hIL"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WVP-Qf-Rsp">
-                                                <rect key="frame" x="79" y="0.0" width="74.5" height="4"/>
+                                                <rect key="frame" x="88.666666666666686" y="0.0" width="84.333333333333314" height="4"/>
                                                 <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="6f4-Ia-7zF"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iyn-hC-7ll">
-                                                <rect key="frame" x="157.5" y="0.0" width="75" height="4"/>
+                                                <rect key="frame" x="177" y="0.0" width="84.666666666666686" height="4"/>
                                                 <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="K6A-BC-wj6"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0oq-fk-314">
-                                                <rect key="frame" x="236.5" y="0.0" width="74.5" height="4"/>
+                                                <rect key="frame" x="265.66666666666669" y="0.0" width="84.333333333333314" height="4"/>
                                                 <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="XPA-lg-yvD"/>
@@ -551,14 +551,14 @@ COVIDSafe does not send pairing requests.</string>
             <objects>
                 <viewController storyboardIdentifier="onboardingStep3" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="mND-9i-sIw" customClass="PhoneNumberViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vgL-lg-QQN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xub-Ry-BNj">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="620"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rcd-mO-xGu" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="547.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="547"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbj-dJ-gHU" userLabel="BackButton">
                                                 <rect key="frame" x="16" y="16" width="44" height="44"/>
@@ -575,10 +575,10 @@ COVIDSafe does not send pairing requests.</string>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="z2j-UO-X53">
-                                                <rect key="frame" x="32" y="56" width="311" height="33.5"/>
+                                                <rect key="frame" x="32" y="56" width="350" height="33.666666666666657"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your mobile number" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6U2-DI-o9Z">
-                                                        <rect key="frame" x="0.0" y="0.0" width="311" height="33.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="33.666666666666664"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                         </accessibility>
@@ -592,7 +592,7 @@ COVIDSafe does not send pairing requests.</string>
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select country or region" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2N-RH-0MU">
-                                                <rect key="frame" x="32" y="113.5" width="311" height="20.5"/>
+                                                <rect key="frame" x="32" y="113.66666666666667" width="350" height="20.333333333333329"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -601,7 +601,7 @@ COVIDSafe does not send pairing requests.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="(+61) Australia" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="18" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bnv-bL-uww">
-                                                <rect key="frame" x="32" y="142" width="311" height="46"/>
+                                                <rect key="frame" x="32" y="142" width="350" height="46"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES"/>
                                                 </accessibility>
@@ -625,7 +625,7 @@ COVIDSafe does not send pairing requests.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We’ll send you a six-digit pin to verify your mobile number." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oa7-Z8-RbO">
-                                                <rect key="frame" x="32" y="308.5" width="311" height="42.5"/>
+                                                <rect key="frame" x="32" y="308.33333333333331" width="350" height="42.333333333333314"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -634,7 +634,7 @@ COVIDSafe does not send pairing requests.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vFl-kK-y4g" userLabel="infoBar">
-                                                <rect key="frame" x="16" y="375" width="343" height="156.5"/>
+                                                <rect key="frame" x="16" y="374.66666666666669" width="382" height="156.33333333333331"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="info" translatesAutoresizingMaskIntoConstraints="NO" id="X9S-JD-BUK">
                                                         <rect key="frame" x="16" y="16" width="24" height="24"/>
@@ -644,7 +644,7 @@ COVIDSafe does not send pairing requests.</string>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xch-AF-g1r">
-                                                        <rect key="frame" x="48" y="16" width="279" height="124.5"/>
+                                                        <rect key="frame" x="48" y="15.999999999999993" width="318" height="124.33333333333331"/>
                                                         <string key="text">Trying to register on behalf of a friend or relative?
 
 They will need to register using their own device and phone number so that COVIDSafe can work for them. </string>
@@ -691,10 +691,10 @@ They will need to register using their own device and phone number so that COVID
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="AMg-Zg-jA1">
-                                                <rect key="frame" x="32" y="212" width="311" height="72.5"/>
+                                                <rect key="frame" x="32" y="212" width="350" height="72.333333333333314"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your mobile number" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q35-js-uRY">
-                                                        <rect key="frame" x="0.0" y="0.0" width="311" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="20.333333333333332"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -703,7 +703,7 @@ They will need to register using their own device and phone number so that COVID
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For example: 351234" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6T-io-z0x">
-                                                        <rect key="frame" x="0.0" y="23.5" width="311" height="0.0"/>
+                                                        <rect key="frame" x="0.0" y="23.333333333333343" width="350" height="0.0"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -712,7 +712,7 @@ They will need to register using their own device and phone number so that COVID
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="16b-Xl-c5b">
-                                                        <rect key="frame" x="0.0" y="26.5" width="311" height="46"/>
+                                                        <rect key="frame" x="0.0" y="26.333333333333343" width="350" height="46"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="46" id="vwA-ek-fdd"/>
                                                         </constraints>
@@ -732,7 +732,7 @@ They will need to register using their own device and phone number so that COVID
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your mobile number" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAk-aI-1Uc">
-                                                        <rect key="frame" x="0.0" y="72.5" width="311" height="0.0"/>
+                                                        <rect key="frame" x="0.0" y="72.333333333333314" width="350" height="0.0"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -777,7 +777,7 @@ They will need to register using their own device and phone number so that COVID
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tuw-g5-oMO" userLabel="Next">
-                                <rect key="frame" x="32" y="586" width="311" height="49"/>
+                                <rect key="frame" x="32" y="655" width="350" height="49"/>
                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="zHB-9L-HZB"/>
@@ -794,34 +794,34 @@ They will need to register using their own device and phone number so that COVID
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ivS-5L-pok">
-                                <rect key="frame" x="32" y="551" width="311" height="4"/>
+                                <rect key="frame" x="32" y="620" width="350" height="4"/>
                                 <subviews>
                                     <stackView userInteractionEnabled="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="0Y6-EY-VRO">
-                                        <rect key="frame" x="0.0" y="0.0" width="311" height="4"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="4"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xuY-VG-dAk">
-                                                <rect key="frame" x="0.0" y="0.0" width="75" height="4"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="84.666666666666671" height="4"/>
                                                 <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="UiD-kf-mim"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rch-KS-AND">
-                                                <rect key="frame" x="79" y="0.0" width="74.5" height="4"/>
+                                                <rect key="frame" x="88.666666666666686" y="0.0" width="84.333333333333314" height="4"/>
                                                 <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="n0a-cd-Uqx"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="de6-tw-k9X">
-                                                <rect key="frame" x="157.5" y="0.0" width="75" height="4"/>
+                                                <rect key="frame" x="177" y="0.0" width="84.666666666666686" height="4"/>
                                                 <color key="backgroundColor" red="0.85882352939999995" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="IHS-LW-e7t"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0UY-us-TKH">
-                                                <rect key="frame" x="236.5" y="0.0" width="74.5" height="4"/>
+                                                <rect key="frame" x="265.66666666666669" y="0.0" width="84.333333333333314" height="4"/>
                                                 <color key="backgroundColor" red="0.85882352939999995" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="bru-BN-l0m"/>
@@ -850,7 +850,7 @@ They will need to register using their own device and phone number so that COVID
                                 </constraints>
                             </view>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="9fc-dI-kw7">
-                                <rect key="frame" x="280" y="592" width="37" height="37"/>
+                                <rect key="frame" x="319" y="661" width="37" height="37"/>
                                 <color key="color" red="0.78432220220000004" green="0.78429466489999999" blue="0.78432160620000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -900,21 +900,21 @@ They will need to register using their own device and phone number so that COVID
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="wiF-c4-qi9" userLabel="Select Country View Controller" customClass="SelectCountryViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="p4Q-Qs-SJV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="sectionIndexColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountryCell" id="8do-WN-Rfo" customClass="CountryCellViewCell" customModule="COVIDSafe" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="66.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="66.333335876464844"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8do-WN-Rfo" id="jdA-4g-Z20">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="66.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="66.333335876464844"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Country Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxc-zW-68B">
-                                            <rect key="frame" x="16" y="11" width="296" height="22"/>
+                                            <rect key="frame" x="20" y="11" width="327" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="22" id="Upn-dY-3by"/>
                                             </constraints>
@@ -923,7 +923,7 @@ They will need to register using their own device and phone number so that COVID
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="+00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4p-eY-0rp">
-                                            <rect key="frame" x="16" y="33" width="30" height="22.5"/>
+                                            <rect key="frame" x="20" y="33" width="30" height="22.333333333333329"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="22" id="fG3-Jb-1RE"/>
                                             </constraints>
@@ -932,7 +932,7 @@ They will need to register using their own device and phone number so that COVID
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dd8-97-cp6">
-                                            <rect key="frame" x="320" y="23.5" width="39" height="20"/>
+                                            <rect key="frame" x="355" y="23.333333333333329" width="39" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="HXI-uT-fqK"/>
                                                 <constraint firstAttribute="width" constant="39" id="Tmd-ez-Quu"/>
@@ -974,14 +974,14 @@ They will need to register using their own device and phone number so that COVID
             <objects>
                 <viewController storyboardIdentifier="otp" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="QXj-uo-Wqr" userLabel="OTP View Controller" customClass="OTPViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rF1-b7-OpB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AhK-OV-Qck">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="558"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="627"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V8B-ij-TAp" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="387.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="387"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLj-O5-Nxm" userLabel="BackButton">
                                                 <rect key="frame" x="16" y="16" width="44" height="44"/>
@@ -1000,7 +1000,7 @@ They will need to register using their own device and phone number so that COVID
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Enter the PIN sent to" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWc-qS-9y6">
-                                                <rect key="frame" x="32" y="60" width="311" height="33.5"/>
+                                                <rect key="frame" x="32" y="60" width="350" height="33.666666666666657"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -1009,7 +1009,7 @@ They will need to register using their own device and phone number so that COVID
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K7X-Ux-SAc">
-                                                <rect key="frame" x="32" y="127.5" width="213" height="31"/>
+                                                <rect key="frame" x="32" y="127.66666666666669" width="213" height="31"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" link="YES"/>
                                                 </accessibility>
@@ -1032,10 +1032,10 @@ They will need to register using their own device and phone number so that COVID
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KLp-Fk-KTm" userLabel="OTPContainerView">
-                                                <rect key="frame" x="0.0" y="158.5" width="375" height="132.5"/>
+                                                <rect key="frame" x="0.0" y="158.66666666666663" width="414" height="132.33333333333337"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5L2-jv-Oa6" customClass="CodeInputView" customModule="COVIDSafe" customModuleProvider="target">
-                                                        <rect key="frame" x="27" y="36" width="321" height="60"/>
+                                                        <rect key="frame" x="27" y="36" width="360" height="60"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="94m-dG-wrd"/>
@@ -1045,7 +1045,7 @@ They will need to register using their own device and phone number so that COVID
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wrong OTP entered" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWN-Zo-GBT">
-                                                        <rect key="frame" x="40" y="104" width="295" height="20.5"/>
+                                                        <rect key="frame" x="40" y="104.00000000000003" width="334" height="20.333333333333329"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <color key="textColor" red="0.63921568627450975" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1065,14 +1065,14 @@ They will need to register using their own device and phone number so that COVID
                                                 </constraints>
                                             </view>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your PIN will expire in 3:00" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kc0-pn-IHx">
-                                                <rect key="frame" x="32" y="300" width="311" height="20.5"/>
+                                                <rect key="frame" x="32" y="300" width="350" height="20.333333333333314"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hzs-ds-Zon">
-                                                <rect key="frame" x="32" y="354" width="212" height="33.5"/>
+                                                <rect key="frame" x="32" y="353.66666666666669" width="212" height="33.333333333333314"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" link="YES"/>
                                                 </accessibility>
@@ -1095,7 +1095,7 @@ They will need to register using their own device and phone number so that COVID
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Rh-JE-cit">
-                                                <rect key="frame" x="32" y="320.5" width="94" height="33.5"/>
+                                                <rect key="frame" x="32" y="320.33333333333331" width="94" height="33.333333333333314"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" link="YES"/>
                                                 </accessibility>
@@ -1151,34 +1151,34 @@ They will need to register using their own device and phone number so that COVID
                                 </constraints>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Fu-sw-mDF">
-                                <rect key="frame" x="32" y="558" width="311" height="4"/>
+                                <rect key="frame" x="32" y="627" width="350" height="4"/>
                                 <subviews>
                                     <stackView userInteractionEnabled="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Oyc-7e-HIY">
-                                        <rect key="frame" x="0.0" y="0.0" width="311" height="4"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="4"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mib-ur-5H9">
-                                                <rect key="frame" x="0.0" y="0.0" width="75" height="4"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="84.666666666666671" height="4"/>
                                                 <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="UOb-ab-tBE"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BuG-pf-jWb">
-                                                <rect key="frame" x="79" y="0.0" width="74.5" height="4"/>
+                                                <rect key="frame" x="88.666666666666686" y="0.0" width="84.333333333333314" height="4"/>
                                                 <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="bNK-eq-RBP"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1X-AJ-wn3">
-                                                <rect key="frame" x="157.5" y="0.0" width="75" height="4"/>
+                                                <rect key="frame" x="177" y="0.0" width="84.666666666666686" height="4"/>
                                                 <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="itH-hQ-Ppt"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEG-ad-4rP">
-                                                <rect key="frame" x="236.5" y="0.0" width="74.5" height="4"/>
+                                                <rect key="frame" x="265.66666666666669" y="0.0" width="84.333333333333314" height="4"/>
                                                 <color key="backgroundColor" red="0.85882352939999995" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="xaL-E8-hPZ"/>
@@ -1208,7 +1208,7 @@ They will need to register using their own device and phone number so that COVID
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQY-RW-yBL">
-                                <rect key="frame" x="32" y="586" width="311" height="49"/>
+                                <rect key="frame" x="32" y="655" width="350" height="49"/>
                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="tZY-kw-zHV"/>
@@ -1225,7 +1225,7 @@ They will need to register using their own device and phone number so that COVID
                                 </connections>
                             </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="ii4-iL-S2Z">
-                                <rect key="frame" x="280" y="592" width="37" height="37"/>
+                                <rect key="frame" x="319" y="661" width="37" height="37"/>
                                 <color key="color" red="0.78432220220000004" green="0.78429466489999999" blue="0.78432160620000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1282,61 +1282,57 @@ They will need to register using their own device and phone number so that COVID
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="2301"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1C-2s-72y" userLabel="Home Header View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="723.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="651"/>
                                         <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49x-lt-ifR">
+                                                <rect key="frame" x="32" y="120.33333333333331" width="311" height="54"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="COVIDSafe is active.">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="systemBold" size="28"/>
+                                                            <font key="NSOriginalFont" metaFont="systemBold" size="28"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">
+No further action is required.</string>
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g8W-pe-Zjl">
-                                                <rect key="frame" x="67.5" y="168" width="240" height="240"/>
+                                                <rect key="frame" x="107.66666666666669" y="234.33333333333337" width="160" height="160"/>
                                                 <subviews>
-                                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CovidPermissionsOff" translatesAutoresizingMaskIntoConstraints="NO" id="Ucd-7w-As6">
-                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inactive_X" translatesAutoresizingMaskIntoConstraints="NO" id="Ucd-7w-As6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
                                                     </imageView>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="240" id="19l-QZ-z0t"/>
+                                                    <constraint firstAttribute="height" constant="160" id="19l-QZ-z0t"/>
                                                     <constraint firstItem="Ucd-7w-As6" firstAttribute="leading" secondItem="g8W-pe-Zjl" secondAttribute="leading" id="IIU-pH-fnG"/>
                                                     <constraint firstAttribute="bottom" secondItem="Ucd-7w-As6" secondAttribute="bottom" id="OqS-Sw-LjW"/>
                                                     <constraint firstItem="Ucd-7w-As6" firstAttribute="top" secondItem="g8W-pe-Zjl" secondAttribute="top" id="QVx-bf-v1v"/>
                                                     <constraint firstAttribute="trailing" secondItem="Ucd-7w-As6" secondAttribute="trailing" id="n6p-He-Itj"/>
-                                                    <constraint firstAttribute="width" constant="240" id="yaP-9d-JNY"/>
+                                                    <constraint firstAttribute="width" constant="160" id="yaP-9d-JNY"/>
                                                 </constraints>
                                             </view>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7vU-Zc-lZj">
-                                                <rect key="frame" x="32" y="468" width="311" height="159.5"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49x-lt-ifR">
-                                                        <rect key="frame" x="0.0" y="0.0" width="311" height="42.5"/>
-                                                        <string key="text">COVIDSafe is active.
-No further action is required.</string>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your information was uploaded on 19 May 2020." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdZ-6A-VIB">
-                                                        <rect key="frame" x="0.0" y="58.5" width="311" height="42.5"/>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COVIDSafe does not send pairing requests." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKm-pz-Cun">
-                                                        <rect key="frame" x="0.0" y="117" width="311" height="42.5"/>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                        <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="f47-5X-eXP" appends="YES" id="5Yi-Zr-9XG"/>
-                                                        </connections>
-                                                    </label>
-                                                </subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash_logo" translatesAutoresizingMaskIntoConstraints="NO" id="x2P-Mu-ik5">
+                                                <rect key="frame" x="16" y="22" width="44" height="44"/>
                                                 <constraints>
-                                                    <constraint firstItem="49x-lt-ifR" firstAttribute="top" secondItem="7vU-Zc-lZj" secondAttribute="top" id="fpf-Dy-hQb"/>
-                                                    <constraint firstAttribute="bottom" secondItem="vKm-pz-Cun" secondAttribute="bottom" id="ozd-TP-CpW"/>
+                                                    <constraint firstAttribute="height" constant="44" id="J4M-l3-4uc"/>
+                                                    <constraint firstAttribute="width" constant="44" id="ldd-zT-YcK"/>
                                                 </constraints>
-                                            </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qN8-7R-eHq">
-                                                <rect key="frame" x="324.5" y="22" width="42.5" height="38.5"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qN8-7R-eHq" userLabel="Help View">
+                                                <rect key="frame" x="324.66666666666669" y="22.000000000000004" width="42.333333333333314" height="38.333333333333343"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzU-Xe-0lZ">
-                                                        <rect key="frame" x="8" y="24" width="26.5" height="14.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzU-Xe-0lZ">
+                                                        <rect key="frame" x="7.9999999999999982" y="24" width="26.333333333333329" height="14.333333333333336"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <bool key="isElement" value="NO"/>
                                                         </accessibility>
@@ -1347,8 +1343,8 @@ No further action is required.</string>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="home_setup_help"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-help-selected" translatesAutoresizingMaskIntoConstraints="NO" id="HLQ-Nf-Kfy">
-                                                        <rect key="frame" x="7" y="0.0" width="29" height="24"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-help-selected" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HLQ-Nf-Kfy">
+                                                        <rect key="frame" x="6.6666666666666288" y="0.0" width="29" height="24"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="29" id="aeh-tb-tC1"/>
                                                         </constraints>
@@ -1374,22 +1370,49 @@ No further action is required.</string>
                                                     <outletCollection property="gestureRecognizers" destination="Hz3-K5-J2t" appends="YES" id="Onj-3r-UDA"/>
                                                 </connections>
                                             </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7vU-Zc-lZj">
+                                                <rect key="frame" x="32" y="454.33333333333331" width="311" height="100.66666666666669"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your information was uploaded on 19 May 2020." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdZ-6A-VIB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="311" height="42.333333333333336"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COVIDSafe does not send pairing requests." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKm-pz-Cun">
+                                                        <rect key="frame" x="0.0" y="58.333333333333314" width="311" height="42.333333333333343"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="f47-5X-eXP" appends="YES" id="5Yi-Zr-9XG"/>
+                                                        </connections>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="vKm-pz-Cun" secondAttribute="bottom" id="ozd-TP-CpW"/>
+                                                </constraints>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.78431372549019607" green="1" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="7vU-Zc-lZj" secondAttribute="trailing" constant="32" id="DOf-h7-0UQ"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="668" id="GPr-en-aZ2"/>
+                                            <constraint firstItem="x2P-Mu-ik5" firstAttribute="leading" secondItem="a1C-2s-72y" secondAttribute="leading" constant="16" id="Fuv-cg-9Ci"/>
                                             <constraint firstItem="g8W-pe-Zjl" firstAttribute="centerX" secondItem="a1C-2s-72y" secondAttribute="centerX" id="NWz-xx-rg2"/>
-                                            <constraint firstItem="g8W-pe-Zjl" firstAttribute="top" secondItem="a1C-2s-72y" secondAttribute="top" constant="168" id="SXW-DN-uaa"/>
                                             <constraint firstAttribute="bottom" secondItem="7vU-Zc-lZj" secondAttribute="bottom" constant="96" id="Sn6-eI-OWc"/>
+                                            <constraint firstItem="x2P-Mu-ik5" firstAttribute="top" secondItem="a1C-2s-72y" secondAttribute="top" constant="22" id="Sxj-uE-vS8"/>
+                                            <constraint firstItem="49x-lt-ifR" firstAttribute="top" secondItem="qN8-7R-eHq" secondAttribute="bottom" constant="60" id="USg-cj-h9M"/>
+                                            <constraint firstAttribute="trailing" secondItem="49x-lt-ifR" secondAttribute="trailing" constant="32" id="VZu-Hk-Jah"/>
                                             <constraint firstAttribute="trailing" secondItem="qN8-7R-eHq" secondAttribute="trailing" constant="8" id="aKr-7e-LCN"/>
+                                            <constraint firstItem="g8W-pe-Zjl" firstAttribute="top" secondItem="49x-lt-ifR" secondAttribute="bottom" constant="60" id="h0p-cR-T7I"/>
                                             <constraint firstItem="7vU-Zc-lZj" firstAttribute="top" secondItem="g8W-pe-Zjl" secondAttribute="bottom" constant="60" id="l3p-ND-WnZ"/>
                                             <constraint firstItem="qN8-7R-eHq" firstAttribute="top" secondItem="a1C-2s-72y" secondAttribute="top" constant="22" id="rtz-bg-rA6"/>
+                                            <constraint firstItem="49x-lt-ifR" firstAttribute="leading" secondItem="a1C-2s-72y" secondAttribute="leading" constant="32" id="sh8-Qk-Sfo"/>
                                             <constraint firstItem="7vU-Zc-lZj" firstAttribute="leading" secondItem="a1C-2s-72y" secondAttribute="leading" constant="32" id="vAy-Ic-q12"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Eim-Z7-BkO">
-                                        <rect key="frame" x="0.0" y="667.5" width="375" height="2086"/>
+                                        <rect key="frame" x="0.0" y="595" width="375" height="2086"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewx-Jj-gLM" userLabel="PermissionsView">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="866"/>
@@ -1407,7 +1430,7 @@ No further action is required.</string>
                                                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="299"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Check your settings" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lM2-pC-IPR">
-                                                                                        <rect key="frame" x="16" y="16" width="311" height="33.5"/>
+                                                                                        <rect key="frame" x="16" y="15.999999999999996" width="311" height="33.666666666666657"/>
                                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                                                         <nil key="textColor"/>
                                                                                         <nil key="highlightedColor"/>
@@ -1416,7 +1439,7 @@ No further action is required.</string>
                                                                                         </userDefinedRuntimeAttributes>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COVIDSafe won't work without the right settings. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQi-hW-1c5">
-                                                                                        <rect key="frame" x="16" y="58.5" width="311" height="225.5"/>
+                                                                                        <rect key="frame" x="16" y="58.666666666666643" width="311" height="225.33333333333337"/>
                                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                                                         <nil key="textColor"/>
                                                                                         <nil key="highlightedColor"/>
@@ -1451,7 +1474,7 @@ No further action is required.</string>
                                                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="85"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow Bluetooth®: On" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkG-8h-L41">
-                                                                                        <rect key="frame" x="16" y="16" width="183.5" height="53"/>
+                                                                                        <rect key="frame" x="16" y="16" width="183.66666666666666" height="53"/>
                                                                                         <accessibility key="accessibilityConfiguration">
                                                                                             <bool key="isElement" value="NO"/>
                                                                                         </accessibility>
@@ -1500,7 +1523,7 @@ No further action is required.</string>
                                                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="119"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow Bluetooth®: Off" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpF-lX-utx">
-                                                                                        <rect key="frame" x="16" y="16" width="185.5" height="24"/>
+                                                                                        <rect key="frame" x="16" y="16" width="185.66666666666666" height="24"/>
                                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                                         <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                                         <nil key="highlightedColor"/>
@@ -1571,7 +1594,7 @@ No further action is required.</string>
                                                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="179"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth®: On" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byz-Ld-DQp">
-                                                                                        <rect key="frame" x="16" y="16" width="131.5" height="147"/>
+                                                                                        <rect key="frame" x="16" y="16" width="131.66666666666666" height="147"/>
                                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                                         <nil key="textColor"/>
                                                                                         <nil key="highlightedColor"/>
@@ -1617,7 +1640,7 @@ No further action is required.</string>
                                                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="179"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth®: Off" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1S-u0-WAI">
-                                                                                        <rect key="frame" x="16" y="16" width="133.5" height="24"/>
+                                                                                        <rect key="frame" x="16" y="16" width="133.66666666666666" height="24"/>
                                                                                         <accessibility key="accessibilityConfiguration">
                                                                                             <bool key="isElement" value="NO"/>
                                                                                         </accessibility>
@@ -1727,7 +1750,7 @@ No further action is required.</string>
                                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="372"/>
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hjj-BO-zNW" userLabel="Share CovidSafe">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="142.5"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="142.66666666666666"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share COVIDSafe" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WFX-AV-wav">
                                                                                         <rect key="frame" x="72" y="16" width="223" height="24"/>
@@ -1756,7 +1779,7 @@ No further action is required.</string>
                                                                                         </userDefinedRuntimeAttributes>
                                                                                     </imageView>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite others to help. Together, we're stronger." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sUJ-t2-Eej">
-                                                                                        <rect key="frame" x="72" y="40" width="223" height="86.5"/>
+                                                                                        <rect key="frame" x="72" y="40.000000000000007" width="223" height="86.666666666666686"/>
                                                                                         <accessibility key="accessibilityConfiguration">
                                                                                             <accessibilityTraits key="traits" none="YES"/>
                                                                                             <bool key="isElement" value="NO"/>
@@ -1802,7 +1825,7 @@ No further action is required.</string>
                                                                                 </connections>
                                                                             </view>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xp-v3-22Q" userLabel="Have you been contacted">
-                                                                                <rect key="frame" x="0.0" y="142.5" width="343" height="229.5"/>
+                                                                                <rect key="frame" x="0.0" y="142.66666666666674" width="343" height="229.33333333333337"/>
                                                                                 <subviews>
                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gCh-j9-5Af">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="1"/>
@@ -1838,7 +1861,7 @@ No further action is required.</string>
                                                                                         </userDefinedRuntimeAttributes>
                                                                                     </imageView>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can only upload your information if you have tested positive." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3e4-WK-QWm">
-                                                                                        <rect key="frame" x="72" y="132" width="223" height="61.5"/>
+                                                                                        <rect key="frame" x="72" y="132" width="223" height="61.333333333333343"/>
                                                                                         <accessibility key="accessibilityConfiguration">
                                                                                             <bool key="isElement" value="NO"/>
                                                                                         </accessibility>
@@ -1942,7 +1965,7 @@ No further action is required.</string>
                                                         <rect key="frame" x="16" y="16" width="343" height="326"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJq-Zl-6IV" userLabel="GetCoronavirusApp">
-                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="219.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="219.66666666666666"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get the Coronavirus app" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y1s-f5-waN">
                                                                         <rect key="frame" x="72" y="16" width="231" height="24"/>
@@ -1978,7 +2001,7 @@ No further action is required.</string>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Download the government app for the latest news and advice." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TK4-iq-vTQ">
-                                                                        <rect key="frame" x="72" y="40" width="239" height="153.5"/>
+                                                                        <rect key="frame" x="72" y="40" width="239" height="153.66666666666666"/>
                                                                         <accessibility key="accessibilityConfiguration">
                                                                             <accessibilityTraits key="traits" none="YES"/>
                                                                             <bool key="isElement" value="NO"/>
@@ -2014,7 +2037,7 @@ No further action is required.</string>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qli-dh-Q2T" userLabel="Latest CoronaVirus News">
-                                                                <rect key="frame" x="0.0" y="220.5" width="343" height="105.5"/>
+                                                                <rect key="frame" x="0.0" y="220.66666666666654" width="343" height="105.33333333333334"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest news and updates" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S5Z-WJ-GcB">
                                                                         <rect key="frame" x="72" y="16" width="231" height="24"/>
@@ -2050,7 +2073,7 @@ No further action is required.</string>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Head to aus.gov.au for the latest Coronavirus news." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7QT-bl-n2h">
-                                                                        <rect key="frame" x="72" y="40" width="231" height="40.5"/>
+                                                                        <rect key="frame" x="72" y="40" width="231" height="40.333333333333343"/>
                                                                         <accessibility key="accessibilityConfiguration">
                                                                             <accessibilityTraits key="traits" notEnabled="YES"/>
                                                                             <bool key="isElement" value="NO"/>
@@ -2421,6 +2444,9 @@ No further action is required.</string>
                     <size key="freeformSize" width="375" height="2350"/>
                     <connections>
                         <outlet property="animatedBluetoothHeader" destination="g8W-pe-Zjl" id="Res-2V-Ag5"/>
+                        <outlet property="animatedBluetoothHeaderBottomMarginConstraint" destination="l3p-ND-WnZ" id="x0G-FH-gQj"/>
+                        <outlet property="animatedBluetoothHeaderHeightConstraint" destination="19l-QZ-z0t" id="AWk-Pv-e1f"/>
+                        <outlet property="animatedBluetoothHeaderTopMarginConstraint" destination="h0p-cR-T7I" id="sTB-g7-OGw"/>
                         <outlet property="appPermissionsLabel" destination="vXJ-wP-bzJ" id="AKb-up-zif"/>
                         <outlet property="bluetoothPermissionOffView" destination="tx3-h9-HD9" id="Ou8-VL-13t"/>
                         <outlet property="bluetoothPermissionOnView" destination="NC9-B7-ZEn" id="Ggj-zx-tSu"/>
@@ -2435,6 +2461,7 @@ No further action is required.</string>
                         <outlet property="pushNotificationStatusLabel" destination="tdm-Nt-WrT" id="1fz-Dj-kEt"/>
                         <outlet property="pushNotificationStatusTitle" destination="gx3-nF-2OD" id="A6K-y6-BFD"/>
                         <outlet property="screenStack" destination="Eim-Z7-BkO" id="vQc-mn-6mJ"/>
+                        <outlet property="topLeftIcon" destination="x2P-Mu-ik5" id="KXg-i8-4It"/>
                         <outlet property="uploadDateLabel" destination="SdZ-6A-VIB" id="2Xb-Nr-mtf"/>
                         <outlet property="uploadView" destination="2xp-v3-22Q" id="diq-zr-YJL"/>
                         <outlet property="versionNumberLabel" destination="CD7-Ft-bQU" id="Lqj-N3-DqH"/>
@@ -2493,7 +2520,7 @@ No further action is required.</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2189.5999999999999" y="-1882.7586206896553"/>
+            <point key="canvasLocation" x="2189.130434782609" y="-1883.1521739130437"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="39N-pk-1gr">
@@ -2516,29 +2543,29 @@ No further action is required.</string>
             <objects>
                 <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="cED-yU-VgW" userLabel="Initial Screen View Controller" customClass="InitialScreenViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yNe-Pg-5Zb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="govLogoWhite" translatesAutoresizingMaskIntoConstraints="NO" id="Df1-JU-hm6">
-                                <rect key="frame" x="113.5" y="32" width="148" height="77"/>
+                                <rect key="frame" x="133" y="32" width="148" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Df1-JU-hm6" secondAttribute="height" multiplier="148:77" id="Zea-Mc-wnH"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hys-VW-nN1" userLabel="Blue background view">
-                                <rect key="frame" x="0.0" y="155" width="375" height="512"/>
+                                <rect key="frame" x="0.0" y="155" width="414" height="581"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u8r-y2-wmT">
-                                        <rect key="frame" x="67.5" y="95" width="240" height="322.5"/>
+                                        <rect key="frame" x="67" y="109.33333333333334" width="280" height="362.33333333333326"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Kg9-pS-hqo">
-                                                <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="280"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Kg9-pS-hqo" secondAttribute="height" multiplier="1:1" id="Qmf-zW-9ZP"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGq-Zb-zBJ" userLabel="Help stop the spread and save lives.">
-                                                <rect key="frame" x="37" y="280" width="166.5" height="42.5"/>
+                                                <rect key="frame" x="0.0" y="320.00000000000006" width="280" height="42.333333333333314"/>
                                                 <string key="text">Help stop the spread
 and save lives.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
@@ -2550,7 +2577,9 @@ and save lives.</string>
                                             </label>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="uGq-Zb-zBJ" firstAttribute="leading" secondItem="u8r-y2-wmT" secondAttribute="leading" id="6jB-sW-hcP"/>
                                             <constraint firstAttribute="bottom" secondItem="uGq-Zb-zBJ" secondAttribute="bottom" id="7yG-QV-Vp5"/>
+                                            <constraint firstAttribute="trailing" secondItem="uGq-Zb-zBJ" secondAttribute="trailing" id="Gre-yu-Sdo"/>
                                             <constraint firstAttribute="trailing" secondItem="Kg9-pS-hqo" secondAttribute="trailing" id="NDH-jx-Tzd"/>
                                             <constraint firstItem="Kg9-pS-hqo" firstAttribute="top" secondItem="u8r-y2-wmT" secondAttribute="top" id="OHa-bO-Kb1"/>
                                             <constraint firstItem="uGq-Zb-zBJ" firstAttribute="top" secondItem="Kg9-pS-hqo" secondAttribute="bottom" constant="40" id="VTC-WV-kVQ"/>
@@ -2561,10 +2590,12 @@ and save lives.</string>
                                 </subviews>
                                 <color key="backgroundColor" red="0.7843137255" green="1" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="u8r-y2-wmT" secondAttribute="trailing" constant="67" id="0DS-kD-lcN"/>
                                     <constraint firstItem="u8r-y2-wmT" firstAttribute="centerX" secondItem="hys-VW-nN1" secondAttribute="centerX" id="9Ir-tA-w6T"/>
                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="u8r-y2-wmT" secondAttribute="bottom" constant="10" id="XhK-z2-zRg"/>
                                     <constraint firstItem="u8r-y2-wmT" firstAttribute="top" relation="greaterThanOrEqual" secondItem="hys-VW-nN1" secondAttribute="top" constant="10" id="hlA-8n-vRs"/>
                                     <constraint firstItem="u8r-y2-wmT" firstAttribute="centerY" secondItem="hys-VW-nN1" secondAttribute="centerY" id="t3S-qI-afC"/>
+                                    <constraint firstItem="u8r-y2-wmT" firstAttribute="leading" secondItem="hys-VW-nN1" secondAttribute="leading" constant="67" id="xtV-fg-S5A"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -2599,20 +2630,20 @@ and save lives.</string>
             <objects>
                 <viewController storyboardIdentifier="migrationInProgress" modalPresentationStyle="fullScreen" id="wD9-lR-1wv" customClass="MigrationViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cPl-cO-Fbz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="govLogoWhite" translatesAutoresizingMaskIntoConstraints="NO" id="Qov-O8-A7L">
-                                <rect key="frame" x="113.5" y="30" width="148" height="77"/>
+                                <rect key="frame" x="133" y="30" width="148" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Qov-O8-A7L" secondAttribute="height" multiplier="148:77" id="aqp-uc-4R5"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SLW-8v-OdL" userLabel="Blue background view">
-                                <rect key="frame" x="0.0" y="137" width="375" height="530"/>
+                                <rect key="frame" x="0.0" y="137" width="414" height="599"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COVIDSafe update is in progress.  Please make sure your phone is not switched off until the update is complete." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Wo-Qe-Wye">
-                                        <rect key="frame" x="32" y="40" width="311" height="86.5"/>
+                                        <rect key="frame" x="32" y="39.999999999999993" width="350" height="64.333333333333314"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2621,7 +2652,7 @@ and save lives.</string>
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SOF-ig-kwj" userLabel="AnimatingView">
-                                        <rect key="frame" x="67.5" y="168.5" width="240" height="240"/>
+                                        <rect key="frame" x="87" y="146.33333333333331" width="240" height="240"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="kxC-N2-PH3"/>
                                             <constraint firstAttribute="height" constant="240" id="ryn-nk-rKK"/>
@@ -2663,23 +2694,23 @@ and save lives.</string>
             <objects>
                 <viewController storyboardIdentifier="onboardingStep1b" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="szA-K1-DiB" userLabel="Onboarding Step 1b View Controller" customClass="OnboardingStep1bViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e8O-pH-ICg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmf-2C-O48">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="586"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="655"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jDA-AT-Vtv" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="873.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="829.66666666666663"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="howItWorks" translatesAutoresizingMaskIntoConstraints="NO" id="Pxu-Q6-QrV">
-                                                <rect key="frame" x="30.5" y="55" width="314" height="188"/>
+                                                <rect key="frame" x="30.666666666666657" y="55" width="353" height="188"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="188" id="2Lj-cM-SUC"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How COVIDSafe works" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5f-cs-P3k">
-                                                <rect key="frame" x="32" y="258" width="311" height="33.5"/>
+                                                <rect key="frame" x="32" y="258" width="350" height="33.666666666666686"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -2705,7 +2736,7 @@ and save lives.</string>
                                                 </connections>
                                             </button>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rRc-fO-exY">
-                                                <rect key="frame" x="32" y="299.5" width="311" height="566"/>
+                                                <rect key="frame" x="32" y="299.66666666666674" width="350" height="522"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <string key="text">Bluetooth® signals are used to determine when you're near another COVIDSafe user.
 
@@ -2773,7 +2804,7 @@ For more information please refer to the *Help Topics* page.</string>
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RA-ER-v0N">
-                                <rect key="frame" x="32" y="586" width="311" height="49"/>
+                                <rect key="frame" x="32" y="655" width="350" height="49"/>
                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="B5O-Nw-mbY"/>
@@ -2815,17 +2846,17 @@ For more information please refer to the *Help Topics* page.</string>
             <objects>
                 <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="2XR-xi-raR" customClass="RegistrationConsentViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M70-rq-coA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yy-tx-zgR">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="573"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="642"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42W-iQ-ZjG" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="367.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="345"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration consent" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZr-Mn-eQ0">
-                                                <rect key="frame" x="32" y="60" width="311" height="33.5"/>
+                                                <rect key="frame" x="32" y="60" width="350" height="33.666666666666657"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -2837,7 +2868,7 @@ For more information please refer to the *Help Topics* page.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My registration information to allow contact tracing by state or territory health officials." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFJ-yh-BcG">
-                                                <rect key="frame" x="46" y="168" width="297" height="64.5"/>
+                                                <rect key="frame" x="46" y="168" width="336" height="42.333333333333343"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -2846,7 +2877,7 @@ For more information please refer to the *Help Topics* page.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My contact information from other COVIDSafe users after they test positive for COVID-19." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eCd-JO-SUg">
-                                                <rect key="frame" x="46" y="248.5" width="297" height="64.5"/>
+                                                <rect key="frame" x="46" y="226.33333333333334" width="336" height="64.333333333333343"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -2855,7 +2886,7 @@ For more information please refer to the *Help Topics* page.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I consent to the Australian Department of Health collecting:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6E-t2-z2H">
-                                                <rect key="frame" x="32" y="109.5" width="311" height="42.5"/>
+                                                <rect key="frame" x="32" y="109.66666666666667" width="350" height="42.333333333333329"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -2863,23 +2894,15 @@ For more information please refer to the *Help Topics* page.</string>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="registration_consent_content"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1i-g9-Bpj">
-                                                <rect key="frame" x="32" y="175" width="8" height="8"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="8" id="lTh-ID-8Dp"/>
-                                                    <constraint firstAttribute="width" constant="8" id="r0G-KI-8Bg"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1i-g9-Bpj">
+                                                <rect key="frame" x="32" y="168" width="7.6666666666666643" height="20.333333333333343"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLh-Jl-tqN">
-                                                <rect key="frame" x="32" y="255.5" width="8" height="8"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="8" id="Fu0-E1-7rw"/>
-                                                    <constraint firstAttribute="height" constant="8" id="zqG-5h-dzr"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLh-Jl-tqN">
+                                                <rect key="frame" x="32" y="226.33333333333334" width="7.6666666666666643" height="20.333333333333343"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -2898,7 +2921,7 @@ For more information please refer to the *Help Topics* page.</string>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select 'I agree' to confirm consent." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBd-BL-7hu">
-                                                <rect key="frame" x="32" y="330" width="311" height="20.5"/>
+                                                <rect key="frame" x="32" y="307.66666666666669" width="350" height="20.333333333333314"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -2913,21 +2936,21 @@ For more information please refer to the *Help Topics* page.</string>
                                             <constraint firstItem="Y1i-g9-Bpj" firstAttribute="leading" secondItem="42W-iQ-ZjG" secondAttribute="leading" constant="32" id="3pb-pB-rtr"/>
                                             <constraint firstItem="Nse-4l-iel" firstAttribute="top" secondItem="42W-iQ-ZjG" secondAttribute="top" constant="16" id="5s3-hb-Kyv"/>
                                             <constraint firstAttribute="trailing" secondItem="l6E-t2-z2H" secondAttribute="trailing" constant="32" id="8j7-Ke-FQT"/>
-                                            <constraint firstItem="Y1i-g9-Bpj" firstAttribute="top" secondItem="SFJ-yh-BcG" secondAttribute="top" constant="7" id="99E-k6-G8O"/>
+                                            <constraint firstItem="Y1i-g9-Bpj" firstAttribute="top" secondItem="SFJ-yh-BcG" secondAttribute="top" id="99E-k6-G8O"/>
                                             <constraint firstAttribute="trailing" secondItem="KBd-BL-7hu" secondAttribute="trailing" constant="32" id="Atz-D7-bbj"/>
                                             <constraint firstItem="SFJ-yh-BcG" firstAttribute="top" secondItem="l6E-t2-z2H" secondAttribute="bottom" constant="16" id="Cvk-ee-vKB"/>
-                                            <constraint firstItem="SFJ-yh-BcG" firstAttribute="leading" secondItem="42W-iQ-ZjG" secondAttribute="leading" constant="46" id="Czx-R0-0rm"/>
+                                            <constraint firstItem="SFJ-yh-BcG" firstAttribute="leading" secondItem="Y1i-g9-Bpj" secondAttribute="leading" constant="14" id="Czx-R0-0rm"/>
                                             <constraint firstItem="XLh-Jl-tqN" firstAttribute="leading" secondItem="42W-iQ-ZjG" secondAttribute="leading" constant="32" id="Io2-jb-jo7"/>
                                             <constraint firstItem="KBd-BL-7hu" firstAttribute="leading" secondItem="42W-iQ-ZjG" secondAttribute="leading" constant="32" id="KMV-zw-sPj"/>
                                             <constraint firstAttribute="trailing" secondItem="SFJ-yh-BcG" secondAttribute="trailing" constant="32" id="XCe-ap-eyH"/>
-                                            <constraint firstItem="XLh-Jl-tqN" firstAttribute="top" secondItem="eCd-JO-SUg" secondAttribute="top" constant="7" id="cDr-37-aEs"/>
+                                            <constraint firstItem="XLh-Jl-tqN" firstAttribute="top" secondItem="eCd-JO-SUg" secondAttribute="top" id="cDr-37-aEs"/>
                                             <constraint firstItem="Nse-4l-iel" firstAttribute="leading" secondItem="42W-iQ-ZjG" secondAttribute="leading" constant="16" id="dpG-ba-n6O"/>
                                             <constraint firstItem="l6E-t2-z2H" firstAttribute="top" secondItem="tZr-Mn-eQ0" secondAttribute="bottom" constant="16" id="h4Q-4C-Z4A"/>
                                             <constraint firstItem="l6E-t2-z2H" firstAttribute="leading" secondItem="42W-iQ-ZjG" secondAttribute="leading" constant="32" id="h9Q-bv-Jfj"/>
                                             <constraint firstAttribute="trailing" secondItem="eCd-JO-SUg" secondAttribute="trailing" constant="32" id="jR9-Ah-FCr"/>
                                             <constraint firstAttribute="trailing" secondItem="tZr-Mn-eQ0" secondAttribute="trailing" constant="32" id="jRT-NZ-iih"/>
                                             <constraint firstItem="tZr-Mn-eQ0" firstAttribute="top" secondItem="Nse-4l-iel" secondAttribute="bottom" id="klq-n6-WcQ"/>
-                                            <constraint firstItem="eCd-JO-SUg" firstAttribute="leading" secondItem="42W-iQ-ZjG" secondAttribute="leading" constant="46" id="q1u-Ka-gRd"/>
+                                            <constraint firstItem="eCd-JO-SUg" firstAttribute="leading" secondItem="XLh-Jl-tqN" secondAttribute="leading" constant="14" id="q1u-Ka-gRd"/>
                                             <constraint firstAttribute="bottom" secondItem="KBd-BL-7hu" secondAttribute="bottom" constant="17" id="sEW-fm-q0K"/>
                                             <constraint firstItem="eCd-JO-SUg" firstAttribute="top" secondItem="SFJ-yh-BcG" secondAttribute="bottom" constant="16" id="sFd-iI-kuS"/>
                                             <constraint firstItem="KBd-BL-7hu" firstAttribute="top" secondItem="eCd-JO-SUg" secondAttribute="bottom" constant="17" id="zrS-mE-6dv"/>
@@ -2943,7 +2966,7 @@ For more information please refer to the *Help Topics* page.</string>
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xK-OR-1CE">
-                                <rect key="frame" x="32" y="586" width="311" height="49"/>
+                                <rect key="frame" x="32" y="655" width="350" height="49"/>
                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="I agree"/>
                                 <constraints>
@@ -2991,14 +3014,14 @@ For more information please refer to the *Help Topics* page.</string>
             <objects>
                 <viewController storyboardIdentifier="onboardingStep1a" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JMg-fD-wpp" customClass="OnboardingStep1aViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NCU-xg-1ta">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhA-8H-f7E">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="586"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="655"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hkk-Gz-zWK" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1550"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1422.6666666666667"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNs-4Z-dJr">
                                                 <rect key="frame" x="16" y="16" width="44" height="44"/>
@@ -3015,13 +3038,13 @@ For more information please refer to the *Help Topics* page.</string>
                                                 </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="privacy" translatesAutoresizingMaskIntoConstraints="NO" id="PXT-mE-qoQ">
-                                                <rect key="frame" x="32" y="56" width="311" height="188"/>
+                                                <rect key="frame" x="32" y="56" width="350" height="188"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="188" id="Klk-tX-GsR"/>
                                                 </constraints>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g4Z-4b-Uce">
-                                                <rect key="frame" x="25" y="286" width="325" height="1248"/>
+                                                <rect key="frame" x="25" y="290.66666666666674" width="364" height="1116"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <string key="text">It is important that you read the COVIDSafe *privacy policy* before you register for COVIDSafe.
 
@@ -3054,13 +3077,10 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 </userDefinedRuntimeAttributes>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration and privacy" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0u-wa-fYL">
-                                                <rect key="frame" x="30" y="244" width="289" height="29"/>
+                                                <rect key="frame" x="30" y="243.99999999999997" width="289" height="33.666666666666657"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="29" id="sDe-pC-UdW"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -3118,7 +3138,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gds-T3-NzS">
-                                <rect key="frame" x="32" y="586" width="311" height="49"/>
+                                <rect key="frame" x="32" y="655" width="350" height="49"/>
                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="gME-zk-9pI"/>
@@ -3160,14 +3180,14 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
             <objects>
                 <viewController storyboardIdentifier="personalDetails" extendedLayoutIncludesOpaqueBars="YES" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tmd-7A-Wz4" customClass="PersonalDetailsViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WfW-Mp-xKj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0l9-L6-g64">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="620"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LCa-Je-nVQ" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="358"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="350.66666666666669"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERG-dG-Bx2">
                                                 <rect key="frame" x="16" y="16" width="44" height="44"/>
@@ -3184,7 +3204,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your details" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kti-qW-XD2">
-                                                <rect key="frame" x="32" y="60" width="311" height="33.5"/>
+                                                <rect key="frame" x="32" y="60" width="350" height="33.666666666666657"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -3196,10 +3216,10 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tk2-6x-mvl">
-                                                <rect key="frame" x="32" y="117.5" width="311" height="240.5"/>
+                                                <rect key="frame" x="32" y="117.66666666666669" width="350" height="233"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIF-xa-lvX">
-                                                        <rect key="frame" x="0.0" y="0.0" width="311" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="20.333333333333332"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -3208,7 +3228,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L4n-0d-pyv">
-                                                        <rect key="frame" x="0.0" y="28.5" width="311" height="34"/>
+                                                        <rect key="frame" x="0.0" y="28.333333333333329" width="350" height="34"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                                         <userDefinedRuntimeAttributes>
@@ -3225,7 +3245,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your full name." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VM-OQ-VUC">
-                                                        <rect key="frame" x="0.0" y="66.5" width="311" height="0.0"/>
+                                                        <rect key="frame" x="0.0" y="66.333333333333329" width="350" height="0.0"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -3233,11 +3253,11 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                             <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="personal_details_name_error_prompt"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3e-GV-yRm">
-                                                        <rect key="frame" x="0.0" y="70.5" width="311" height="37"/>
+                                                    <view contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="h3e-GV-yRm">
+                                                        <rect key="frame" x="0.0" y="70.333333333333329" width="350" height="33.333333333333329"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age range (select)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdJ-6t-GZL">
-                                                                <rect key="frame" x="0.0" y="13" width="141" height="20.5"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Age range (select)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdJ-6t-GZL">
+                                                                <rect key="frame" x="0.0" y="12.999999999999998" width="350" height="20.333333333333329"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -3248,16 +3268,17 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="pdJ-6t-GZL" secondAttribute="bottom" id="6e9-mL-j6i"/>
                                                             <constraint firstItem="pdJ-6t-GZL" firstAttribute="top" secondItem="h3e-GV-yRm" secondAttribute="top" constant="13" id="MuZ-6t-x2e"/>
-                                                            <constraint firstAttribute="height" constant="37" id="kxY-Te-kWP"/>
+                                                            <constraint firstAttribute="trailing" secondItem="pdJ-6t-GZL" secondAttribute="trailing" id="fIy-Vz-WJn"/>
                                                             <constraint firstItem="pdJ-6t-GZL" firstAttribute="leading" secondItem="h3e-GV-yRm" secondAttribute="leading" id="oqh-VJ-hTc"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAO-Fi-CsW" userLabel="Age Range dropdown">
-                                                        <rect key="frame" x="0.0" y="115.5" width="311" height="38"/>
+                                                        <rect key="frame" x="0.0" y="111.66666666666669" width="350" height="38"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pYl-es-7AA" userLabel="Age combobox">
-                                                                <rect key="frame" x="0.0" y="0.0" width="311" height="38"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="38"/>
                                                                 <accessibility key="accessibilityConfiguration">
                                                                     <accessibilityTraits key="traits" staticText="YES"/>
                                                                     <bool key="isElement" value="YES"/>
@@ -3279,7 +3300,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chev-down" translatesAutoresizingMaskIntoConstraints="NO" id="qAZ-v4-ydb">
-                                                                <rect key="frame" x="281" y="15" width="12" height="8"/>
+                                                                <rect key="frame" x="320" y="15" width="12" height="8"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="8" id="E4e-Kt-7Rz"/>
                                                                     <constraint firstAttribute="width" constant="12" id="QNs-P4-1Be"/>
@@ -3298,7 +3319,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                         </constraints>
                                                     </view>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select your age range." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Tp-qk-8iH">
-                                                        <rect key="frame" x="0.0" y="157.5" width="311" height="0.0"/>
+                                                        <rect key="frame" x="0.0" y="153.66666666666663" width="350" height="0.0"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -3306,11 +3327,11 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                             <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="personal_details_age_error_prompt"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zEi-0v-YfD">
-                                                        <rect key="frame" x="0.0" y="161.5" width="311" height="37"/>
+                                                    <view contentMode="scaleToFill" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="zEi-0v-YfD">
+                                                        <rect key="frame" x="0.0" y="157.66666666666663" width="350" height="33.333333333333343"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Postcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7RM-TO-7v0">
-                                                                <rect key="frame" x="0.0" y="13" width="72.5" height="20.5"/>
+                                                                <rect key="frame" x="0.0" y="12.999999999999998" width="72.333333333333329" height="20.333333333333329"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -3321,13 +3342,13 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="37" id="A6s-gB-FzF"/>
+                                                            <constraint firstAttribute="bottom" secondItem="7RM-TO-7v0" secondAttribute="bottom" id="0Dq-4J-01L"/>
                                                             <constraint firstItem="7RM-TO-7v0" firstAttribute="leading" secondItem="zEi-0v-YfD" secondAttribute="leading" id="GYN-GJ-Uct"/>
                                                             <constraint firstItem="7RM-TO-7v0" firstAttribute="top" secondItem="zEi-0v-YfD" secondAttribute="top" constant="13" id="md6-Vq-CTK"/>
                                                         </constraints>
                                                     </view>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ORR-xb-Oh7">
-                                                        <rect key="frame" x="0.0" y="206.5" width="311" height="34"/>
+                                                        <rect key="frame" x="0.0" y="199" width="350" height="34"/>
                                                         <accessibility key="accessibilityConfiguration" label="postcode"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" smartInsertDeleteType="no" textContentType="tel"/>
@@ -3345,7 +3366,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Postcode number must contain 4 digits." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iad-Wm-Swy">
-                                                        <rect key="frame" x="0.0" y="240.5" width="311" height="0.0"/>
+                                                        <rect key="frame" x="0.0" y="233" width="350" height="0.0"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -3379,41 +3400,41 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                 </constraints>
                             </scrollView>
                             <view hidden="YES" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBC-Md-zDE" userLabel="DimView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" red="0.31372549020000001" green="0.31764705879999999" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NsZ-LD-IRu" userLabel="ProgressView">
-                                <rect key="frame" x="32" y="551" width="311" height="4"/>
+                                <rect key="frame" x="32" y="620" width="350" height="4"/>
                                 <subviews>
                                     <stackView userInteractionEnabled="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="mnF-B4-8cv">
-                                        <rect key="frame" x="0.0" y="0.0" width="311" height="4"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="4"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oPu-0L-pd1">
-                                                <rect key="frame" x="0.0" y="0.0" width="75" height="4"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="84.666666666666671" height="4"/>
                                                 <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="62P-B1-DqU"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nD5-mF-MgH">
-                                                <rect key="frame" x="79" y="0.0" width="74.5" height="4"/>
+                                                <rect key="frame" x="88.666666666666686" y="0.0" width="84.333333333333314" height="4"/>
                                                 <color key="backgroundColor" red="0.85882352939999995" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="TDt-84-afB"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mSt-fg-TTv">
-                                                <rect key="frame" x="157.5" y="0.0" width="75" height="4"/>
+                                                <rect key="frame" x="177" y="0.0" width="84.666666666666686" height="4"/>
                                                 <color key="backgroundColor" red="0.85882352939999995" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="rJc-UX-t7N"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HM8-79-eXk">
-                                                <rect key="frame" x="236.5" y="0.0" width="74.5" height="4"/>
+                                                <rect key="frame" x="265.66666666666669" y="0.0" width="84.333333333333314" height="4"/>
                                                 <color key="backgroundColor" red="0.85882352939999995" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="BXG-uq-VeJ"/>
@@ -3442,7 +3463,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wu0-UH-w3R">
-                                <rect key="frame" x="32" y="586" width="311" height="49"/>
+                                <rect key="frame" x="32" y="655" width="350" height="49"/>
                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="BiH-8E-lXO"/>
@@ -3510,17 +3531,17 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
             <objects>
                 <viewController storyboardIdentifier="under16" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GKS-Wl-QbF" customClass="UnderSixteenViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C9Z-le-9Gl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HxI-sW-1by">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="578"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DY3-Bs-8h2" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="455.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="399"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You need the consent of your parent/guardian to proceed" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlW-1W-YqS">
-                                                <rect key="frame" x="32" y="56" width="311" height="101.5"/>
+                                                <rect key="frame" x="32" y="56.000000000000007" width="350" height="67.666666666666686"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -3532,7 +3553,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My registration information to allow contact tracing by state or territory health officials." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXg-tG-JnX">
-                                                <rect key="frame" x="46" y="254" width="297" height="64.5"/>
+                                                <rect key="frame" x="46" y="220" width="336" height="42.333333333333314"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -3541,7 +3562,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My contact information from other COVIDSafe users after they test positive for COVID-19." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ago-Xc-vpG">
-                                                <rect key="frame" x="46" y="334.5" width="297" height="64.5"/>
+                                                <rect key="frame" x="46" y="278.33333333333331" width="336" height="64.333333333333314"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -3550,7 +3571,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select 'I agree' to confirm consent." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ba6-us-91a">
-                                                <rect key="frame" x="32" y="423" width="323" height="20.5"/>
+                                                <rect key="frame" x="32" y="366.66666666666669" width="362" height="20.333333333333314"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -3559,7 +3580,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I confirm my parent or guardian consents to the Australian Department of Health collecting:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDG-kZ-uPM">
-                                                <rect key="frame" x="32" y="173.5" width="311" height="64.5"/>
+                                                <rect key="frame" x="32" y="139.66666666666666" width="350" height="64.333333333333343"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -3567,23 +3588,15 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                     <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="under_sixteen_content"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfb-Qr-RoV">
-                                                <rect key="frame" x="32" y="261" width="8" height="8"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="8" id="9u1-jI-1zd"/>
-                                                    <constraint firstAttribute="width" constant="8" id="D9w-kI-pUd"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfb-Qr-RoV">
+                                                <rect key="frame" x="32" y="220" width="7.6666666666666643" height="20.333333333333343"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8l-U4-ztC">
-                                                <rect key="frame" x="32" y="341.5" width="8" height="8"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="8" id="cNJ-xp-Y3v"/>
-                                                    <constraint firstAttribute="height" constant="8" id="sxS-DO-ENi"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8l-U4-ztC">
+                                                <rect key="frame" x="32" y="278.33333333333331" width="7.6666666666666643" height="20.333333333333314"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -3607,17 +3620,17 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                             <constraint firstAttribute="trailing" secondItem="ago-Xc-vpG" secondAttribute="trailing" constant="32" id="3zw-oe-0g1"/>
                                             <constraint firstItem="rlW-1W-YqS" firstAttribute="leading" secondItem="DY3-Bs-8h2" secondAttribute="leading" constant="32" id="7Yi-8y-TTN"/>
                                             <constraint firstAttribute="bottom" secondItem="Ba6-us-91a" secondAttribute="bottom" constant="12" id="AXo-mh-O77"/>
-                                            <constraint firstItem="ago-Xc-vpG" firstAttribute="leading" secondItem="DY3-Bs-8h2" secondAttribute="leading" constant="46" id="BiL-z3-V1j"/>
+                                            <constraint firstItem="ago-Xc-vpG" firstAttribute="leading" secondItem="S8l-U4-ztC" secondAttribute="leading" constant="14" id="BiL-z3-V1j"/>
                                             <constraint firstItem="zfb-Qr-RoV" firstAttribute="leading" secondItem="DY3-Bs-8h2" secondAttribute="leading" constant="32" id="DBN-X0-yRz"/>
                                             <constraint firstAttribute="trailing" secondItem="PXg-tG-JnX" secondAttribute="trailing" constant="32" id="DEz-Jr-82B"/>
                                             <constraint firstAttribute="trailing" secondItem="rlW-1W-YqS" secondAttribute="trailing" constant="32" id="HLu-gz-eP8"/>
                                             <constraint firstItem="Ba6-us-91a" firstAttribute="leading" secondItem="DY3-Bs-8h2" secondAttribute="leading" constant="32" id="KvJ-lG-fTQ"/>
                                             <constraint firstItem="PXg-tG-JnX" firstAttribute="top" secondItem="QDG-kZ-uPM" secondAttribute="bottom" constant="16" id="Ryv-Pu-pzZ"/>
-                                            <constraint firstItem="PXg-tG-JnX" firstAttribute="leading" secondItem="DY3-Bs-8h2" secondAttribute="leading" constant="46" id="b91-EL-OXe"/>
-                                            <constraint firstItem="S8l-U4-ztC" firstAttribute="top" secondItem="ago-Xc-vpG" secondAttribute="top" constant="7" id="bfD-kE-tdi"/>
+                                            <constraint firstItem="PXg-tG-JnX" firstAttribute="leading" secondItem="zfb-Qr-RoV" secondAttribute="leading" constant="14" id="b91-EL-OXe"/>
+                                            <constraint firstItem="S8l-U4-ztC" firstAttribute="top" secondItem="ago-Xc-vpG" secondAttribute="top" id="bfD-kE-tdi"/>
                                             <constraint firstItem="QDG-kZ-uPM" firstAttribute="leading" secondItem="DY3-Bs-8h2" secondAttribute="leading" constant="32" id="cni-eh-z3M"/>
                                             <constraint firstAttribute="trailing" secondItem="Ba6-us-91a" secondAttribute="trailing" constant="20" id="cvN-TA-jPz"/>
-                                            <constraint firstItem="zfb-Qr-RoV" firstAttribute="top" secondItem="PXg-tG-JnX" secondAttribute="top" constant="7" id="ehC-bB-jIY"/>
+                                            <constraint firstItem="zfb-Qr-RoV" firstAttribute="top" secondItem="PXg-tG-JnX" secondAttribute="top" id="ehC-bB-jIY"/>
                                             <constraint firstItem="HIU-En-ZQe" firstAttribute="top" secondItem="DY3-Bs-8h2" secondAttribute="top" constant="16" id="hcU-mf-G4h"/>
                                             <constraint firstItem="Ba6-us-91a" firstAttribute="top" secondItem="ago-Xc-vpG" secondAttribute="bottom" constant="24" id="iyF-fT-xcv"/>
                                             <constraint firstAttribute="trailing" secondItem="QDG-kZ-uPM" secondAttribute="trailing" constant="32" id="jre-Ei-31C"/>
@@ -3638,7 +3651,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8B-6S-UGU">
-                                <rect key="frame" x="32" y="586" width="311" height="49"/>
+                                <rect key="frame" x="32" y="655" width="350" height="49"/>
                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" hint="please consent to proceed"/>
                                 <constraints>
@@ -3679,17 +3692,17 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="h8R-i7-zdK"/>
+        <segue reference="cLu-Ng-v4y"/>
         <segue reference="ALe-An-dsT"/>
-        <segue reference="Yi1-Hr-f9s"/>
-        <segue reference="iUa-3s-4XB"/>
+        <segue reference="8rs-ZD-VFl"/>
+        <segue reference="bMl-IY-pjw"/>
         <segue reference="4eL-1Z-MtW"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AppPermissions1" width="311" height="188"/>
         <image name="AppPermissions2" width="311" height="188"/>
         <image name="ChevronRight" width="24" height="24"/>
-        <image name="CovidPermissionsOff" width="240" height="240"/>
+        <image name="Inactive_X" width="80" height="80"/>
         <image name="ShareApp" width="24" height="24"/>
         <image name="Splash_logo" width="240" height="240"/>
         <image name="WhiteSmallGovCrest" width="44" height="31"/>

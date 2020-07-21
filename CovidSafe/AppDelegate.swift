@@ -51,7 +51,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Remote config setup
         let _ = TracerRemoteConfig()
-                
+        
+        registerForPushNotifications()
+
         return true
     }
     
@@ -87,6 +89,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.topmostPresentedViewController?.present(navigationController, animated: true, completion: nil)
         }
     }
+    
+    // - Local Notifications
     
     fileprivate func setupBluetoothPNStatusCallback() {
         
@@ -208,6 +212,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         scheduleReminderNotifications()
     }
     
+    // - Application lifecycle
+    
     func applicationDidBecomeActive(_ application: UIApplication) {
         DLog("applicationDidBecomeActive")
         
@@ -286,6 +292,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+      
+    // - Wallpaper with watermark
     
     let blackScreenTag = 123
     
@@ -378,6 +387,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         motionManager?.stopAccelerometerUpdates()
     }
     
+    // - Background tasking
+    
     func registerBackgroundTask() {
         backgroundTask = UIApplication.shared.beginBackgroundTask { [weak self] in
             self?.endBackgroundTask()
@@ -391,6 +402,74 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             backgroundTask = .invalid
         }
     }
+    
+    // - Remote Push Notifications
+    
+    func registerForPushNotifications() {
+        // check if permission have been requested, if so, is an existing user and we should register
+        // otherwise the permission will be set in the apprpiate permissions screen
+        guard UserDefaults.standard.bool(forKey: "allowedPermissions") == true else {
+            return
+        }
+        
+        // existing user registering for RPN
+        DispatchQueue.main.async {
+          UIApplication.shared.registerForRemoteNotifications()
+        }
+    }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        // Attach the device token to the user defaults
+        let tokenParts = deviceToken.map { data in String(format: "%02.2hhx", data) }
+        let token = tokenParts.joined()
+        
+        DLog("The APN token received is: \(token)")
+        
+        UserDefaults.standard.set(token, forKey: "deviceTokenForAPN")
+        
+        let messageRequest = MessageRequest(remotePushToken: token)
+        MessageAPI.getMessages(msgRequest: messageRequest) { (response, error) in
+            if let error = error {
+                DLog("Get messages error: \(error.localizedDescription)")
+                return
+            }
+            DLog("Get messages success, device token saved")
+        }
+    }
+
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        DLog("Remote notification received")
+        
+        guard let payload = userInfo["aps"] as? [String: AnyObject] else {
+          completionHandler(.failed)
+          return
+        }
+        
+        #if DEBUG
+        // for debug build only, log all silent notifications regardless of the category
+        if payload["content-available"] as? Int == 1 {
+            var numNotifications = UserDefaults.standard.integer(forKey: "debugSilentNotificationCount")
+            numNotifications += 1
+            UserDefaults.standard.set(numNotifications, forKey: "debugSilentNotificationCount")
+        }
+        #endif
+        
+        if payload["content-available"] as? Int == 1 && payload["category"] as? String == "UPDATE_STATS" {
+            DLog("Notification is category: UPDATE_STATS")
+            MessageAPI.getMessagesIfNeeded() { (messageResponse, error) in
+                if let error = error {
+                    DLog("Get messages error: \(error.localizedDescription)")
+                    completionHandler(.failed)
+                    return
+                }
+                DLog("Messages API success")
+                completionHandler(.newData)
+            }
+            return
+        }
+        completionHandler(.noData)
+        
+    }
 }
 
 extension Notification.Name {
@@ -402,7 +481,6 @@ extension Notification.Name {
     static let encounterRecorded = Notification.Name("encounterRecorded")
 }
 
-@available(iOS 10, *)
 extension AppDelegate : UNUserNotificationCenterDelegate {
     
     // when user receives the notification when app is in foreground
@@ -415,6 +493,21 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         if response.notification.request.identifier == "bluetoothStatusNotifId" && !BluetraceManager.shared.isBluetoothAuthorized() {
             UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+            completionHandler()
+            return
+        }
+        DLog("Remote notification received")
+        let userInfo = response.notification.request.content.userInfo
+        
+        // check payload and notification type
+        if let payload = userInfo["aps"] as? [String: AnyObject],
+            let notificationType = payload["category"] as? String {
+            
+            if notificationType == "UPDATE_APP",
+            let url = URL(string: "itms-apps://itunes.apple.com/app/id1509242894"),
+            UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
         }
         completionHandler()
     }

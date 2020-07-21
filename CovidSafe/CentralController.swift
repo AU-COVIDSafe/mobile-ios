@@ -28,6 +28,7 @@ class CentralController: NSObject {
     private let restoreIdentifierKey = "com.joelkek.tracer.central"
     private var central: CBCentralManager?
     private var recoveredPeripherals: [CBPeripheral] = []
+    private var cleanupPeripherals: [CBPeripheral] = []
     private var queue: DispatchQueue
     
     // This dict is to keep track of discovered android devices, so that i do not connect to the same android device multiple times within the same BluetraceConfig.CentralScanInterval
@@ -97,19 +98,60 @@ class CentralController: NSObject {
     public func getState() -> CBManagerState? {
         return central?.state
     }
+    
+    public func logPeripheralsCount(description: String) {
+        #if DEBUG
+            guard let peripherals = central?.retrieveConnectedPeripherals(withServices: [BluetraceConfig.BluetoothServiceID]) else {
+                return
+            }
+            
+            var connected = 0
+            var connecting = 0
+            var disconnected = 0
+            var disconnecting = 0
+            var unknown = 0
+            
+            for peripheral in peripherals {
+                switch peripheral.state {
+                case .connecting:
+                    connecting+=1
+                case .connected:
+                    connected+=1
+                case .disconnected:
+                    disconnected+=1
+                case .disconnecting:
+                    disconnecting+=1
+                default:
+                    unknown+=1
+                }
+            }
+            
+            let bleLogStr = "CC \(description) Current peripherals \nconnected: \(connected), \nconnecting: \(connecting), \ndisconnected: \(disconnected), \ndisconnecting: \(disconnecting), \nunknown: \(unknown), \nscannedPeripherals: \(scannedPeripherals.count)"
+            let logRecord = BLELogRecord(message: bleLogStr)
+            logRecord.saveToCoreData()
+        #endif
+    }
 }
 
 extension CentralController: CBCentralManagerDelegate {
     
     func centralManager(_ central: CBCentralManager, willRestoreState dict: [String : Any]) {
         DLog("CC willRestoreState. Central state: \(BluetraceUtils.centralStateToString(central.state))")
+        recoveredPeripherals = []
         if let peripheralsObject = dict[CBCentralManagerRestoredStatePeripheralsKey] {
             let peripherals = peripheralsObject as! Array<CBPeripheral>
             DLog("CC restoring \(peripherals.count) peripherals from system.")
+            logPeripheralsCount(description: "Restoring peripherals")
             for peripheral in peripherals {
-                recoveredPeripherals.append(peripheral)
-                peripheral.delegate = self
+                if peripheral.state == .connected {
+                    // only recover connected peripherals, dispose/disconnect otherwise.
+                    recoveredPeripherals.append(peripheral)
+                    peripheral.delegate = self
+                } else {
+                    cleanupPeripherals.append(peripheral)
+                }
             }
+            logPeripheralsCount(description: "Done Restoring peripherals")
         }
     }
     
@@ -135,7 +177,14 @@ extension CentralController: CBCentralManagerDelegate {
                 central.connect(recoveredPeripheral)
             }
             
+            // cant cancel peripheral when BL OFF
+            for cleanupPeripheral in cleanupPeripherals {
+                central.cancelPeripheralConnection(cleanupPeripheral)
+            }
+            cleanupPeripherals = []
+            
             central.scanForPeripherals(withServices: [BluetraceConfig.BluetoothServiceID], options:nil)
+            logPeripheralsCount(description: "Update state powerOn")
         default:
             DLog("State chnged to \(central.state)")
         }
@@ -180,6 +229,16 @@ extension CentralController: CBCentralManagerDelegate {
                          "peripheral": peripheral,
                          "advertisments": advertisementData as AnyObject] as AnyObject
         
+        // dispatch in bluetrace queue
+        queue.async {
+            MessageAPI.getMessagesIfNeeded() { (messageResponse, error) in
+                if let error = error {
+                    DLog("Get messages error: \(error.localizedDescription)")
+                }
+                // We currently dont do anything with the response. Messages are delivered via APN
+            }
+        }
+        
         DLog("\(debugLogs)")
         var initialEncounter = EncounterRecord(rssi: RSSI.doubleValue, txPower: advertisementData[CBAdvertisementDataTxPowerLevelKey] as? Double)
         initialEncounter.timestamp = nil
@@ -200,6 +259,7 @@ extension CentralController: CBCentralManagerDelegate {
         } else {
             // Means not android device, i will check if the peripheral.identifier exist in the scannedPeripherals
             DLog("CBAdvertisementDataManufacturerDataKey Data not found. Peripheral is likely not android")
+            logPeripheralsCount(description: "begin didDiscover iOS device")
             if let encounteredPeripheral = scannedPeripherals[peripheral.identifier] {
                 if shouldReconnectToPeripheral(peripheral: encounteredPeripheral.peripheral) {
                     peripheral.delegate = self
@@ -216,6 +276,7 @@ extension CentralController: CBCentralManagerDelegate {
                 scannedPeripherals.updateValue((peripheral, initialEncounter), forKey: peripheral.identifier)
                 central.connect(peripheral)
             }
+            logPeripheralsCount(description: "finish didDiscover iOS device")
         }
     }
     
@@ -230,18 +291,38 @@ extension CentralController: CBCentralManagerDelegate {
         peripheral.delegate = self
         peripheral.readRSSI()
         peripheral.discoverServices([BluetraceConfig.BluetoothServiceID])
+        logPeripheralsCount(description: "didConnect peripheral")
     }
     
     func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
         DLog("CC didDisconnectPeripheral \(peripheral) , \(error != nil ? "error: \(error.debugDescription)" : "" )")
+        
+        // We check that the periferal has been scanned and that there is no error.
+        // No error indicates that cancelPeripheralConnection was called.
+        // An error may represent that the peripheral is out of range, BL is OFF etc. In that case we don't want to retry.
+        guard scannedPeripherals[peripheral.identifier] != nil && error == nil else {
+            // Remove from scanned peripherals as got diconnected due to error. Also look after memory.
+            scannedPeripherals.removeValue(forKey: peripheral.identifier)
+            return
+        }
+        
+        // only attempt to reconnect if the peripheral is in the scanned dictionary and there was no error.
         if #available(iOS 12, *) {
             let options = [CBConnectPeripheralOptionStartDelayKey: NSNumber(15)]
             central.connect(peripheral, options: options)
         }
+        logPeripheralsCount(description: "didDisconnect peripheral")
     }
     
     func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
         DLog("CC didFailToConnect peripheral \(error != nil ? "error: \(error.debugDescription)" : "" )")
+        // Remove from scanned peripherals as connection failed. Also look after memory.
+        scannedPeripherals.removeValue(forKey: peripheral.identifier)
+        
+        // by cancelling the connection we are being extra sure the peripheral is fully
+        // disconnected and not left in a pending state
+        central.cancelPeripheralConnection(peripheral)
+        logPeripheralsCount(description: "didFailToConnect peripheral")
     }
 }
 
@@ -293,7 +374,8 @@ extension CentralController: CBPeripheralDelegate {
                                                          rssi: rssi,
                                                          txPower: currEncounter.encounter.txPower,
                                                          modelP: nil,
-                                                         msg: tempId)
+                                                         msg: tempId,
+                                                         timestamp: Date().timeIntervalSince1970)
 
                 
                 do {

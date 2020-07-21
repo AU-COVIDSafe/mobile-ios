@@ -1,4 +1,100 @@
-"personal_details_name_characters_prompt" = "Please use English characters for your full name. Do not use other languages or symbols like ',' or '?'.";
+"data_privacy_content_VO" = "在注册COVIDSafe之前，请务必阅读COVIDSafe隐私政策。 \
+\
+如果您未满16岁，您的父母/监护人也必须阅读隐私政策。 \
+\
+使用COVIDSafe属自愿行为。您可以随时安装或删除该应用程序。如果删除COVIDSafe，您也可以要求从安全服务器中删除您的个人信息。 \
+\
+要注册使用COVIDSafe，您需要输入姓名，手机号码，年龄段和邮政编码。 \
+\
+注册时提交的信息以及有关COVIDSafe使用的信息将被收集并储存在高度安全的服务器上。 \
+\
+ COVIDSafe不会收集您的位置信息。 \
+\
+ COVIDSafe将记录发生接触的时间以及与您接触的其他COVIDSafe用户的匿名ID代码。 \
+\
+与您接触的其他COVIDSafe用户将在其手机上看到一个匿名ID代码以及与您发生接触的时间。 \
+\
+如果其他用户对COVID-19的测试结果呈阳性，他们可以上传自己的联系信息。为了追踪接触者，州或领地的卫生官员有可能会与您联系。 \
+\
+您的详细注册信息仅在追踪接触者以及维持COVIDSafe的合法正常运行时候使用或披露。 \
+\
+如需更多信息，请访问澳大利亚政府卫生部网站。 \
+\
+如需进一步了解您对个人信息的权利，以及个人信息的处理和共享方式，请参阅COVIDSafe隐私策略。";
+"UILaunchStoryboardName" = "LaunchScreen_zh_Hans";
+"data_privacy_content" = "在注册COVIDSafe之前，请务必阅读COVIDSafe隐私政策。 \
+\
+如果您未满16岁，您的父母/监护人也必须阅读隐私政策。 \
+\
+使用COVIDSafe属自愿行为。您可以随时安装或删除该应用程序。如果删除COVIDSafe，您也可以要求从安全服务器中删除您的个人信息。 \
+\
+要注册使用COVIDSafe，您需要输入姓名，手机号码，年龄段和邮政编码。 \
+\
+注册时提交的信息以及有关COVIDSafe使用的信息将被收集并储存在高度安全的服务器上。 \
+\
+ COVIDSafe不会收集您的位置信息。 \
+\
+ COVIDSafe将记录发生接触的时间以及与您接触的其他COVIDSafe用户的匿名ID代码。 \
+\
+与您接触的其他COVIDSafe用户将在其手机上看到一个匿名ID代码以及与您发生接触的时间。 \
+\
+如果其他用户对COVID-19的测试结果呈阳性，他们可以上传自己的联系信息。为了追踪接触者，州或领地的卫生官员有可能会与您联系。 \
+\
+您的详细注册信息仅在追踪接触者以及维持COVIDSafe的合法正常运行时候使用或披露。 \
+\
+如需更多信息，请访问澳大利亚政府卫生部网站。 \
+\
+如需进一步了解您对个人信息的权利，以及个人信息的处理和共享方式，请参阅COVIDSafe隐私策略。";
+"AllowBluetoothON_VOLabel" = "访问蓝牙®：开";
+"AllowBluetoothOFF_VOLabel" = "访问蓝牙：关  允许COVIDSafe访问蓝牙";
+"BluetoothON_VOLabel" = "蓝牙®：开";
+"BluetoothOFF_VOLabel" = "蓝牙：关  开启手机的蓝牙。请选择屏幕上显示的“允许新连接”。";
+"OS2b_Item2_VOLabel" = "2.蓝牙®应该保持开启状态。";
+"PINNumber_VO_Label" = "PIN码";
+"PN_MobileNumber_VOLabel" = "手机号码";
+"ShareCovidSafe_VOLabel" = "共享COVIDSafe。邀请他人助力。万众一心，其利断金。";
+"UploadData_VOLabel" = "是否有卫生官员联系过您？只有在您的病毒检测呈阳性时，才能上传个人信息。";
+"GetCoronaVirusApp_VOLabel" = "获取冠状病毒应用程序。下载政府应用程序以获取最新消息和建议。";
+"LatestNews_VOLabel" = "最新消息及更新。前往aus.gov.au了解冠状病毒的最新消息。";
+"HelpTopics_VOLabel" = "帮助主题。如果应用程序在使用时出现问题或者您对其有疑问。";
+"NotificationsEnabled_VOLabel" = "通知已启用。如果COVIDSafe未激活，您将收到通知。 \
+更改通知设置";
+"NotificationsDisabled_VOLabel" = "通知已禁用。如果COVIDSafe未激活，您将不会收到通知。 \
+更改通知设置";
+"permission_content_iOS_2_VOLabel" = "1. 蓝牙®\
+2. 通知\
+\
+COVIDSafe不会发送配对请求。";
+"permission_content_iOS_VOLabel" = "COVIDSafe需要启用蓝牙®才能运行。通过启用通知，您将在COVIDSafe未激活时收到提醒。 \
+\
+选择“继续”以启用：";
+"OS1b_TopParagraph_VOLabel" = "COVIDSafe需要使用蓝牙®信号以确定您靠近另一个COVIDSafe用户的时间。 \
+\
+您与其他COVIDSafe用户之间的每一次密切接触都被记录下来，以创建密切接触信息。该信息经过加密，且仅储存在您的手机中。 \
+\
+如果您使用COVIDSafe并对COVID-19测试呈阳性，则州或领地卫生官员将与您联系。经您同意，他们会协助您将密切接触者信息上传至高度安全的信息储存系统。\
+\
+如果您与测试结果呈阳性的其他COVIDSafe用户发生密切接触，则州或领地卫生官员也会与您联系。 \
+\
+如需更多信息，请参阅*帮助主题*页。";
+"personal_details_name_characters_prompt" = "请输入姓名的英文拼音。请勿使用其他语言或符号，例如“，”'或“？”。";
+"update_available_title" = "更新可用！";
+"update_available_message" = "我们一直在改进COVIDSafe。";
+"update_available_app_store_btn" = "前往App Store";
+"update_available_dismiss_btn" = "稍后提醒我";
+"how_it_works_content" = "COVIDSafe需要使用蓝牙®信号以确定您靠近另一个COVIDSafe用户的时间。 \
+\
+您与其他COVIDSafe用户之间的每一次密切接触都被记录下来，以创建密切接触信息。该信息经过加密，且仅储存在您的手机中。 \
+\
+如果您使用COVIDSafe并对COVID-19测试呈阳性，则州或领地卫生官员将与您联系。经您同意，他们会协助您将密切接触者信息上传至高度安全的信息储存系统。\
+\
+如果您与测试结果呈阳性的其他COVIDSafe用户发生密切接触，则州或领地卫生官员也会与您联系。 \
+\
+如需更多信息，请参阅*帮助主题*页。";
+"upload_finished_sub_header" = "您已成功将个人信息上传到COVIDSafe高度安全的储存系统。 \
+\
+根据记录，其他COVIDSafe用户与您如有密切接触，州或领地卫生官员将通知他们。您的身份对其他用户将保持匿名状态。";
+"registration_consent_first_paragraph" = "我的注册信息，以便州和领地卫生官员追踪接触者。";
 "EmailPlaceholder" = "输入您的电子邮件地址（必填）";
 "personal_details_post_code_error_prompt" = "您的澳大利亚邮政编码必须包含4位数。";
 "enter_number_button" = "获取PIN码";
@@ -7,9 +103,6 @@
 "home_set_complete_external_link_app_title" = "下载冠状病毒应用程序";
 "home_set_complete_external_link_been_contacted_content" = "只有在您的病毒检测呈阳性时，才能上传个人信息。";
 "EnterPhoneReVerify" = "输入您的手机号码以重新验证";
-"upload_finished_sub_header" = "您已成功将个人信息上传到COVIDSafe高度安全的存储系统。 \
-\
-根据记录，其他COVIDSafe用户与您如有密切接触，州或领地卫生官员将通知他们。您的身份对其他用户将保持匿名状态。";
 "permission_content_iOS_2" = "1. 蓝牙®\
 2. 通知\
 \
@@ -66,61 +159,11 @@ COVIDSafe 不会发送配对请求。";
 "global_close" = "关闭";
 "global_double_tap" = "双击进行编辑";
 "PostcodeValidationErrorMessage" = "请输入有效的澳大利亚邮政编码。";
-"data_privacy_content" = "在注册COVIDSafe之前，请务必阅读COVIDSafe隐私政策。 \
-\
-如果您未满16岁，您的父母/监护人也必须阅读隐私政策。 \
-\
-使用COVIDSafe属自愿行为。您可以随时安装或删除该应用程序。如果删除COVIDSafe，您也可以要求从安全服务器中删除您的个人信息。 \
-\
-要注册使用COVIDSafe，您需要输入姓名，手机号码，年龄段和邮政编码。 \
-\
-注册时提交的信息以及有关COVIDSafe使用的信息将被收集并存储在高度安全的服务器上。 \
-\
- COVIDSafe不会收集您的位置信息。 \
-\
- COVIDSafe将记录发生接触的时间以及与您接触的其他COVIDSafe用户的匿名ID代码。 \
-\
-与您接触的其他COVIDSafe用户将在其手机上看到一个匿名ID代码以及与您发生接触的时间。 \
-\
-如果其他用户对COVID-19的测试结果呈阳性，他们可以上传自己的联系信息。为了追踪接触者，州或领地的卫生官员有可能会与您联系。 \
-\
-您的详细注册信息仅在追踪接触者以及维持COVIDSafe的合法正常运行时候使用或披露。 \
-\
-如需更多信息，请访问澳大利亚政府卫生部网站。 \
-\
-如需进一步了解您对个人信息的权利，以及个人信息的处理和共享方式，请参阅COVIDSafe隐私策略。";
-"how_it_works_content" = "蓝牙®信号用于确定您靠近另一个COVIDSafe用户的时间。 \
-\
-您与其他COVIDSafe用户之间的每一次密切接触都被记录下来，以创建密切接触信息。该信息经过加密，且仅存储在您的手机中。 \
-\
-如果您使用COVIDSafe并对COVID-19测试呈阳性，则州或领地卫生官员将与您联系。他们会协助您将密切接触者信息自愿上传至高度安全的信息存储系统。\
-\
-如果您与测试结果呈阳性的其他COVIDSafe用户发生密切接触，则州或领地卫生官员也会与您联系。 \
-\
-如需更多信息，请参阅*帮助主题*页。";
-"pin_issue" = "*接收PIN码时遇到问题？*";
 "upload_step_4_sub_header" = "未经您的同意，您的密切接触者信息不会被上传。 \
 \
 如果您同意，您的密切接触者信息将被上传并与州或领地卫生官员共享，以便追踪密切接触者。 \
 \
 阅读COVIDSafe*隐私政策*以获得更多详细信息。";
-"OS1b_TopParagraph_VOLabel" = "";
-"permission_content_iOS_VOLabel" = "";
-"permission_content_iOS_2_VOLabel" = "";
-"NotificationsDisabled_VOLabel" = "";
-"NotificationsEnabled_VOLabel" = "";
-"HelpTopics_VOLabel" = "";
-"LatestNews_VOLabel" = "";
-"GetCoronaVirusApp_VOLabel" = "";
-"UploadData_VOLabel" = "";
-"ShareCovidSafe_VOLabel" = "";
-"PN_MobileNumber_VOLabel" = "";
-"PINNumber_VO_Label" = "";
-"OS2b_Item2_VOLabel" = "";
-"BluetoothOFF_VOLabel" = "";
-"BluetoothON_VOLabel" = "";
-"AllowBluetoothOFF_VOLabel" = "";
-"AllowBluetoothON_VOLabel" = "";
 "us_consent_button" = "我同意";
 "IntroLabel" = "阻止传播\
 拯救生命";
@@ -150,7 +193,6 @@ COVIDSafe 不会发送配对请求。";
 "consent_button" = "我同意";
 "registration_consent_headline" = "注册同意书";
 "registration_consent_content" = "我同意澳大利亚卫生部收集以下信息：";
-"registration_consent_first_paragraph" = "我的注册资料，以便州和领地卫生官员追踪接触者。";
 "registration_consent_second_paragraph" = "在其他COVIDSafe用户的COVID-19测试呈阳性时，从该用户处获取我的联系信息";
 "under_sixteen_second_paragraph" = "在其他COVIDSafe用户的COVID-19测试呈阳性时，从该用户处获取我的联系信息";
 "personal_details_headline" = "输入您的个人信息";

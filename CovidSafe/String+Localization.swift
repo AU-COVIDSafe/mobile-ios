@@ -12,6 +12,23 @@ extension String {
         if self == "" {
             return ""
         }
-        return NSLocalizedString(self, comment: comment)
+        
+        var localizedString = NSLocalizedString(self, comment: comment)
+        
+        if localizedString == self {
+            // No localized string exists.  Retrieve the display string
+            // from the base strings file.
+            var bundleForString: Bundle
+            if let path = Bundle.main.path(forResource: "en", ofType: "lproj"),
+                let bundle = Bundle(path: path) {
+                bundleForString = bundle
+            } else {
+                bundleForString = Bundle.main
+            }
+
+            localizedString = bundleForString.localizedString(forKey: self, value: self, table: nil)
+        }
+        
+        return localizedString
     }
 }

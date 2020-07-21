@@ -11,4 +11,13 @@ extension UITextView {
         self.attributedText = mutableString
         tintColor = UIColor.covidSafeColor
     }
+    
+    func parseHTMLLinks() {
+        guard let attributedText = attributedText else { return }
+        
+        let mutableString = NSMutableAttributedString(attributedString: attributedText)
+        mutableString.parseHTMLLinks()
+        self.attributedText = mutableString
+        tintColor = UIColor.covidCareColor
+    }
 }
