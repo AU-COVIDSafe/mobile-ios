@@ -36,7 +36,7 @@ class InitialScreenViewController: UIViewController, EncounterDBMigrationProgres
         continueAfterDelay(delay: displayTimeSeconds)
         // add give up action in case the keychain notification in not received after 8 seconds
         giveupTimer = Timer.scheduledTimer(withTimeInterval: giveupTimeSeconds, repeats: false) { timer in
-            self.performSegue(withIdentifier: "initialPersonalDetailsSegue", sender: self)
+            self.performSegue(withIdentifier: "initialScreenToIWantToHelpSegue", sender: self)
         }
         EncounterDB.shared.setup(migrationDelegate: self)
     }
@@ -72,13 +72,11 @@ class InitialScreenViewController: UIViewController, EncounterDBMigrationProgres
             migrationVc.dismiss(animated: true, completion: nil)
         }
         let isLoggedIn: Bool = (keychain.get("JWT_TOKEN") != nil)
-        if !UserDefaults.standard.bool(forKey: "completedIWantToHelp") {
+        if !UserDefaults.standard.bool(forKey: "completedIWantToHelp") ||
+            !UserDefaults.standard.bool(forKey: "hasConsented") ||
+            !isLoggedIn {
             keychain.delete("JWT_TOKEN")
             self.performSegue(withIdentifier: "initialScreenToIWantToHelpSegue", sender: self)
-        } else if !UserDefaults.standard.bool(forKey: "hasConsented") {
-            self.performSegue(withIdentifier: "initialScreenToConsentSegue", sender: self)
-        } else if !isLoggedIn {
-            self.performSegue(withIdentifier: "initialPersonalDetailsSegue", sender: self)
         } else if !UserDefaults.standard.bool(forKey: "allowedPermissions") {
             self.performSegue(withIdentifier: "initialScreenToAllowPermissionsSegue", sender: self)
         } else {

@@ -254,13 +254,13 @@ class HomeViewController: UIViewController {
         toggleViewVisibility(view: homeHeaderPermissionsOffImage, isVisible: !self.allPermissionOn)
         toggleViewVisibility(view: lottieBluetoothView, isVisible: self.allPermissionOn)
 
-        var newAttributedLabel = NSMutableAttributedString(string: "home_header_active_title".localizedString(comment: "Header with no action req"), attributes: [.font: UIFont.preferredFont(forTextStyle: .title1).bold()])
+        var newAttributedLabel = NSMutableAttributedString(string: "home_header_active_title".localizedString(comment: "Header with no action req"), attributes: [.font: UIFont.preferredFont(for: .title1, weight: .bold)])
         newAttributedLabel.append(NSAttributedString(string: "\n" + "home_header_active_no_action_required".localizedString(), attributes: [.font: UIFont.preferredFont(forTextStyle: .body)]))
         
         self.homeHeaderInfoText.attributedText = newAttributedLabel
         
         if (!self.allPermissionOn) {
-            newAttributedLabel = NSMutableAttributedString(string: "home_header_inactive_title".localizedString(comment: "Header with no action req"), attributes: [.font: UIFont.preferredFont(forTextStyle: .title1).bold()])
+            newAttributedLabel = NSMutableAttributedString(string: "home_header_inactive_title".localizedString(comment: "Header with no action req"), attributes: [.font: UIFont.preferredFont(for: .title1, weight: .bold)])
             newAttributedLabel.append(NSAttributedString(string: "\n" + "home_header_inactive_check_your_permissions".localizedString(), attributes: [.font: UIFont.preferredFont(forTextStyle: .body)]))
             
             animatedBluetoothHeaderHeightConstraint.constant = animatedHeaderInactiveHeightConstant
@@ -340,6 +340,22 @@ class HomeViewController: UIViewController {
             return
         }
         UIApplication.shared.open(settingsURL)
+    }
+    
+    @IBAction func onChangeLanguageTapped(_ sender: UITapGestureRecognizer) {
+        if #available(iOS 13.0, *) {
+            guard let settingsURL = URL(string: UIApplication.openSettingsURLString) else {
+                return
+            }
+            UIApplication.shared.open(settingsURL)
+        } else {
+            let nav = HelpNavController()
+            nav.pageSectionId = "other-languages"
+            nav.modalTransitionStyle = .coverVertical
+            nav.modalPresentationStyle = .fullScreen
+            present(nav, animated: true, completion: nil)
+        }
+        
     }
     
     @IBAction func onBluetoothPhoneSettingsTapped(_ sender: Any) {

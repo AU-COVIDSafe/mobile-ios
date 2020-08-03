@@ -24,6 +24,7 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
     @IBOutlet weak var postcodeLabel: UILabel!
     @IBOutlet weak var enterYourDetailsLabel: UILabel!
     @IBOutlet weak var ageRangeLabel: UILabel!
+    @IBOutlet weak var stepCounterLabel: UILabel!
     
     var agePicker: UIPickerView?
     var pickerBarButtonItem: UIBarButtonItem?
@@ -59,6 +60,10 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
         self.firstnameTextField.inputAccessoryView = toolBar
         initialLabelTextColour = fullnameLabel.textColor
         initialTextFieldBorderColour = fullnameLabel.borderColor
+        stepCounterLabel.text = String.localizedStringWithFormat( "stepCounter".localizedString(),
+            1,
+            UserDefaults.standard.bool(forKey: "allowedPermissions") ? 3 : 4
+        )
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -66,7 +71,7 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notif:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeFrame(notif:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         if(UIAccessibility.isVoiceOverRunning){
-            UIAccessibility.post(notification: .screenChanged, argument: enterYourDetailsLabel)
+            UIAccessibility.post(notification: .screenChanged, argument: stepCounterLabel)
         }
     }
     
@@ -303,7 +308,12 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
     
     func updateContinueButton() {
         firstnameTextField.text = firstnameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
-        if (self.ageTextField.text != "" && self.postcodeErrorLabel.isHidden  && self.fullNameErrorLabel.isHidden) {
+        if (self.ageTextField.text != "" &&
+            self.postcodeTextField.text != ""  &&
+            self.firstnameTextField.text != "" &&
+            self.postcodeErrorLabel.isHidden  &&
+            self.fullNameErrorLabel.isHidden) {
+            
             self.continueButton.isEnabled = true
             self.continueButton.backgroundColor = UIColor.covidSafeButtonDarkerColor
         } else {

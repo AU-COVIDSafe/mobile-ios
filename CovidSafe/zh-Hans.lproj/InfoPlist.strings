@@ -1,2 +1,8 @@
+/* InfoPlist.strings
+  CovidSafe
+
+  Copyright © 2020 Australian Government. All rights reserved. */
 "BluetoothUsageDesc" = "COVIDSafe与附近运行同一应用程序的手机交换蓝牙®信号。这些信号包含一组匿名ID，该ID经过加密并不断更改以保护您的隐私。";
+"NSBluetoothAlwaysUsageDescription" = "COVIDSafe与附近运行同一应用程序的手机交换蓝牙®信号。这些信号包含一个匿名ID，该ID经过加密并不断更改以保护您的隐私。";
+"NSBluetoothPeripheralUsageDescription" = "COVIDSafe与附近运行同一应用程序的手机交换蓝牙®信号。这些信号包含一个匿名ID，该ID经过加密并不断更改以保护您的隐私。";
 "UILaunchStoryboardName" = "LaunchScreen_zh-Hans";

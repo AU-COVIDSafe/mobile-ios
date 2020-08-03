@@ -12,8 +12,14 @@ import UserNotifications
 class OnboardingStep2ViewController: UIViewController {
     private var bluetoothDidUpdateStateCallback: ((CBManagerState) -> Void)?
     
-    @IBAction func onBackTapped(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
+    @IBOutlet weak var stepCounterLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        stepCounterLabel.text = String.localizedStringWithFormat( "stepCounter".localizedString(),
+            4,
+            4
+        )
     }
     
     @IBAction func proceedTapped(_ sender: UIButton) {

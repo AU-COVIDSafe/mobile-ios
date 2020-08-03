@@ -37,12 +37,20 @@ class CentralController: NSObject {
     // This dict has 2 purpose
     // 1. To store all the EncounterRecord, because the RSSI and TxPower is gotten at the didDiscoverPeripheral delegate, but the characterstic value is gotten at didUpdateValueForCharacteristic delegate
     // 2. Use to check for duplicated iphones peripheral being discovered, so that i dont connect to the same iphone again in the same scan window
-    private var scannedPeripherals = [UUID: (peripheral: CBPeripheral, encounter: EncounterRecord)]() // stores the peripherals encountered within one scan interval
+    private var scannedPeripherals = [UUID: (lastUpdated: Date, peripheral: CBPeripheral, encounter: EncounterRecord)]() // stores the peripherals encountered within one scan interval
     var timerForScanning: Timer?
+    private var lastCleanedScannedPeripherals = Date()
     
     public init(queue: DispatchQueue) {
         self.queue = queue
         super.init()
+        
+        NotificationCenter.default.addObserver(
+          forName: UIApplication.didReceiveMemoryWarningNotification,
+          object: nil,
+          queue: .main) { [weak self] notification in
+            self?.cleanupScannedPeripherals()
+        }
     }
     
     func turnOn() {
@@ -166,13 +174,13 @@ extension CentralController: CBCentralManagerDelegate {
                 central.cancelPeripheralConnection(scannedPeri.value.peripheral)
             }
             // clear all peripherals, such that a new scan window can take place
-            self.scannedPeripherals = [UUID: (CBPeripheral, EncounterRecord)]()
+            self.scannedPeripherals = [UUID: (Date, CBPeripheral, EncounterRecord)]()
             self.discoveredAndroidPeriManufacturerToUUIDMap = [Data: UUID]()
             // handle a state restoration scenario
             for recoveredPeripheral in recoveredPeripherals {
                 var restoredEncounter = EncounterRecord(rssi: 0, txPower: nil)
                 restoredEncounter.timestamp = nil
-                scannedPeripherals.updateValue((recoveredPeripheral, restoredEncounter),
+                scannedPeripherals.updateValue((Date(), recoveredPeripheral, restoredEncounter),
                                                forKey: recoveredPeripheral.identifier)
                 central.connect(recoveredPeripheral)
             }
@@ -224,13 +232,49 @@ extension CentralController: CBCentralManagerDelegate {
         return
     }
     
+    fileprivate func cleanupScannedPeripherals() {
+       
+        DLog("CC scannedPeripherals/pending connections cleanup \(scannedPeripherals.count)")
+        scannedPeripherals = scannedPeripherals.filter { scannedPeripheral in
+            // if has been sitting in scanned for over 2 mins, remove
+            if abs(scannedPeripheral.value.lastUpdated.timeIntervalSinceNow) > BluetraceConfig.PeripheralCleanInterval {
+                // expired timestamp, remove
+                cleanupPeripherals.append(scannedPeripheral.value.peripheral)
+                return false
+            } else {
+                // not yet expired timestamp, keep this scanned peripheral data
+                return true
+            }
+        }
+        
+        // remove android manufacturer data where peripheral has been removed
+        discoveredAndroidPeriManufacturerToUUIDMap = discoveredAndroidPeriManufacturerToUUIDMap.filter(
+            { andperi in
+                return !scannedPeripherals.keys.contains(andperi.value)}
+        )
+
+        
+        guard let central = central else {
+            DLog("CC central is nil, unable to clean peripherals at the moment")
+            return
+        }
+        
+        for cleanupPeripheral in cleanupPeripherals {
+            central.cancelPeripheralConnection(cleanupPeripheral)
+        }
+        cleanupPeripherals = []
+        lastCleanedScannedPeripherals = Date()
+        DLog("CC post scannedPeripherals/pending connections cleanup \(scannedPeripherals.count)")
+        return
+    }
+    
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         let debugLogs = ["CentralState": BluetraceUtils.centralStateToString(central.state),
                          "peripheral": peripheral,
                          "advertisments": advertisementData as AnyObject] as AnyObject
         
         // dispatch in bluetrace queue
-        queue.async {
+        DispatchQueue.global(qos: .background).async {
             MessageAPI.getMessagesIfNeeded() { (messageResponse, error) in
                 if let error = error {
                     DLog("Get messages error: \(error.localizedDescription)")
@@ -240,12 +284,17 @@ extension CentralController: CBCentralManagerDelegate {
         }
         
         DLog("\(debugLogs)")
+        // regularly cleanup and close pending connections
+        if abs(lastCleanedScannedPeripherals.timeIntervalSince(Date())) > BluetraceConfig.CentralScanInterval {
+            cleanupScannedPeripherals()
+        }
+
         var initialEncounter = EncounterRecord(rssi: RSSI.doubleValue, txPower: advertisementData[CBAdvertisementDataTxPowerLevelKey] as? Double)
         initialEncounter.timestamp = nil
         
         // iphones will "mask" the peripheral's identifier for android devices, resulting in the same android device being discovered multiple times with different peripheral identifier. Hence Android is using use CBAdvertisementDataServiceDataKey data for identifying an android pheripheral
         // Also, check that the length is greater than 2 to prevent crash. Otherwise ignore.
-        if let manuData = advertisementData[CBAdvertisementDataManufacturerDataKey] as? Data, manuData.count > 2 {            
+        if let manuData = advertisementData[CBAdvertisementDataManufacturerDataKey] as? Data, manuData.count > 2 {
             let androidIdentifierData = manuData.subdata(in: 2..<manuData.count)
             if discoveredAndroidPeriManufacturerToUUIDMap.keys.contains(androidIdentifierData) {
                 DLog("Android Peripheral \(peripheral) has been discovered already in this window, will not attempt to connect to it again")
@@ -253,7 +302,7 @@ extension CentralController: CBCentralManagerDelegate {
             } else {
                 peripheral.delegate = self
                 discoveredAndroidPeriManufacturerToUUIDMap.updateValue(peripheral.identifier, forKey: androidIdentifierData)
-                scannedPeripherals.updateValue((peripheral, initialEncounter), forKey: peripheral.identifier)
+                scannedPeripherals.updateValue((Date(), peripheral, initialEncounter), forKey: peripheral.identifier)
                 central.connect(peripheral)
             }
         } else {
@@ -273,7 +322,7 @@ extension CentralController: CBCentralManagerDelegate {
                 }
             } else {
                 peripheral.delegate = self
-                scannedPeripherals.updateValue((peripheral, initialEncounter), forKey: peripheral.identifier)
+                scannedPeripherals.updateValue((Date(), peripheral, initialEncounter), forKey: peripheral.identifier)
                 central.connect(peripheral)
             }
             logPeripheralsCount(description: "finish didDiscover iOS device")
@@ -303,6 +352,7 @@ extension CentralController: CBCentralManagerDelegate {
         guard scannedPeripherals[peripheral.identifier] != nil && error == nil else {
             // Remove from scanned peripherals as got diconnected due to error. Also look after memory.
             scannedPeripherals.removeValue(forKey: peripheral.identifier)
+            central.cancelPeripheralConnection(peripheral)
             return
         }
         
@@ -335,7 +385,7 @@ extension CentralController: CBPeripheralDelegate {
             if let existingPeripheral = scannedPeripherals[peripheral.identifier] {
                 var scannedEncounter = existingPeripheral.encounter
                 scannedEncounter.rssi = RSSI.doubleValue
-                scannedPeripherals.updateValue((existingPeripheral.peripheral, scannedEncounter), forKey: peripheral.identifier)
+                scannedPeripherals.updateValue((Date(), existingPeripheral.peripheral, scannedEncounter), forKey: peripheral.identifier)
             }
         }
     }
@@ -418,7 +468,7 @@ extension CentralController: CBPeripheralDelegate {
                 encounterStruct.org = peripheralCharData.org
                 encounterStruct.v = peripheralCharData.v
                 encounterStruct.timestamp = Date()
-                scannedPeripherals.updateValue((scannedPeri.peripheral, encounterStruct), forKey: peripheral.identifier)
+                scannedPeripherals.updateValue((Date(), scannedPeri.peripheral, encounterStruct), forKey: peripheral.identifier)
                 // here the remote blob will be msg and modelp if v1, msg if v2
                 // local blob will be rssi, txpower, modelc
                 try encounterStruct.saveRemotePeripheralToCoreData()
@@ -428,6 +478,11 @@ extension CentralController: CBPeripheralDelegate {
             }
         } else {
             DLog("Error: scannedPeripherals[peripheral.identifier] is \(String(describing: scannedPeripherals[peripheral.identifier])), characteristic.value is \(String(describing: characteristic.value))")
+        }
+        
+       // regularly cleanup and close pending connections
+        if (abs(lastCleanedScannedPeripherals.timeIntervalSince(Date())) > BluetraceConfig.CentralScanInterval) {
+           cleanupScannedPeripherals()
         }
     }
     

@@ -333,33 +333,19 @@ Together we can help stop the spread and stay healthy.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VYy-f9-p2t">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="612"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="624"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SpU-i1-aUA" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="574.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="617.66666666666663"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEd-YX-6P6" userLabel="BackButton">
-                                                <rect key="frame" x="16" y="16" width="44" height="44"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="44" id="3Cd-fI-NLG"/>
-                                                    <constraint firstAttribute="width" constant="44" id="ni8-A0-ZzO"/>
-                                                </constraints>
-                                                <state key="normal" image="arrow-left"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="global_back"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="onBackTapped:" destination="eME-NJ-Fcz" eventType="touchUpInside" id="aNr-fj-uJe"/>
-                                                </connections>
-                                            </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppPermissions1" translatesAutoresizingMaskIntoConstraints="NO" id="cma-Te-Ut1">
-                                                <rect key="frame" x="51.666666666666657" y="60" width="311" height="188"/>
+                                                <rect key="frame" x="51.666666666666657" y="103.33333333333331" width="311" height="188"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="188" id="eEy-03-MeQ"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App settings" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pO-gl-umK">
-                                                <rect key="frame" x="32" y="272" width="350" height="33.666666666666686"/>
+                                                <rect key="frame" x="32" y="315.33333333333331" width="350" height="33.666666666666686"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -371,7 +357,7 @@ Together we can help stop the spread and stay healthy.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="npY-9G-r2u">
-                                                <rect key="frame" x="32" y="321.66666666666669" width="350" height="130.33333333333331"/>
+                                                <rect key="frame" x="32" y="365" width="350" height="130.33333333333337"/>
                                                 <string key="text">COVIDSafe needs Bluetooth® enabled to work. By enabling Notifications, you get updates to remind you when COVIDSafe is not active.
 
 Select ‘Proceed' to enable:</string>
@@ -384,7 +370,7 @@ Select ‘Proceed' to enable:</string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAg-5r-Sgd">
-                                                <rect key="frame" x="32" y="471.99999999999994" width="350" height="86.333333333333314"/>
+                                                <rect key="frame" x="32" y="515.33333333333337" width="350" height="86.333333333333371"/>
                                                 <string key="text">1. Bluetooth®
 2. Notifications
 
@@ -397,44 +383,39 @@ COVIDSafe does not send pairing requests.</string>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="permission_content_iOS_2_VOLabel"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 4 of 4" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vco-tH-Zts">
+                                                <rect key="frame" x="32" y="60.000000000000007" width="350" height="19.333333333333336"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="0pO-gl-umK" firstAttribute="top" secondItem="BEd-YX-6P6" secondAttribute="bottom" id="19w-D0-a9p"/>
                                             <constraint firstItem="npY-9G-r2u" firstAttribute="leading" secondItem="SpU-i1-aUA" secondAttribute="leading" constant="32" id="1qx-Y1-2Bz"/>
+                                            <constraint firstItem="Vco-tH-Zts" firstAttribute="top" secondItem="SpU-i1-aUA" secondAttribute="top" constant="60" id="A22-Zs-PDI"/>
                                             <constraint firstAttribute="bottom" secondItem="DAg-5r-Sgd" secondAttribute="bottom" constant="16" id="ByQ-uv-A4X"/>
-                                            <constraint firstItem="BEd-YX-6P6" firstAttribute="leading" secondItem="SpU-i1-aUA" secondAttribute="leading" constant="16" id="Fet-v0-s48"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vco-tH-Zts" secondAttribute="trailing" constant="32" id="OUF-2C-mUH"/>
                                             <constraint firstItem="npY-9G-r2u" firstAttribute="top" secondItem="0pO-gl-umK" secondAttribute="bottom" constant="16" id="R2m-S5-4HK"/>
+                                            <constraint firstItem="Vco-tH-Zts" firstAttribute="leading" secondItem="SpU-i1-aUA" secondAttribute="leading" constant="32" id="SNT-kH-ef3"/>
                                             <constraint firstAttribute="trailing" secondItem="DAg-5r-Sgd" secondAttribute="trailing" constant="32" id="SkE-oy-hPa"/>
-                                            <constraint firstItem="BEd-YX-6P6" firstAttribute="top" secondItem="SpU-i1-aUA" secondAttribute="top" constant="16" id="XUV-pM-iGL"/>
                                             <constraint firstItem="DAg-5r-Sgd" firstAttribute="top" secondItem="npY-9G-r2u" secondAttribute="bottom" constant="20" id="c13-ir-irb"/>
                                             <constraint firstItem="cma-Te-Ut1" firstAttribute="centerX" secondItem="SpU-i1-aUA" secondAttribute="centerX" id="cEy-KQ-T2p"/>
                                             <constraint firstAttribute="trailing" secondItem="npY-9G-r2u" secondAttribute="trailing" constant="32" id="eEl-PJ-NbS"/>
                                             <constraint firstItem="0pO-gl-umK" firstAttribute="top" secondItem="cma-Te-Ut1" secondAttribute="bottom" constant="24" id="eqm-MY-nO8"/>
-                                            <constraint firstItem="cma-Te-Ut1" firstAttribute="top" secondItem="BEd-YX-6P6" secondAttribute="bottom" id="f2e-hH-rl0"/>
                                             <constraint firstItem="0pO-gl-umK" firstAttribute="leading" secondItem="SpU-i1-aUA" secondAttribute="leading" constant="32" id="muK-ej-NHt"/>
                                             <constraint firstItem="DAg-5r-Sgd" firstAttribute="leading" secondItem="SpU-i1-aUA" secondAttribute="leading" constant="32" id="qRs-1i-saU"/>
+                                            <constraint firstItem="cma-Te-Ut1" firstAttribute="top" secondItem="Vco-tH-Zts" secondAttribute="bottom" constant="24" id="tAa-dy-jEx"/>
                                             <constraint firstAttribute="trailing" secondItem="0pO-gl-umK" secondAttribute="trailing" constant="32" id="tnK-TI-UxL"/>
                                         </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="19w-D0-a9p"/>
-                                            </mask>
-                                        </variation>
                                         <variation key="heightClass=compact-widthClass=compact">
                                             <mask key="subviews">
                                                 <exclude reference="cma-Te-Ut1"/>
-                                            </mask>
-                                            <mask key="constraints">
-                                                <include reference="19w-D0-a9p"/>
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=compact-widthClass=regular">
                                             <mask key="subviews">
                                                 <exclude reference="cma-Te-Ut1"/>
-                                            </mask>
-                                            <mask key="constraints">
-                                                <include reference="19w-D0-a9p"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -464,81 +445,23 @@ COVIDSafe does not send pairing requests.</string>
                                     <action selector="proceedTapped:" destination="eME-NJ-Fcz" eventType="touchUpInside" id="Umi-Ym-184"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CdG-cy-ocX" userLabel="ProgressView">
-                                <rect key="frame" x="32" y="620" width="350" height="4"/>
-                                <subviews>
-                                    <stackView userInteractionEnabled="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="71H-WY-iS9">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="4"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L3B-Vy-yv1">
-                                                <rect key="frame" x="0.0" y="0.0" width="84.666666666666671" height="4"/>
-                                                <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="fds-3d-hIL"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WVP-Qf-Rsp">
-                                                <rect key="frame" x="88.666666666666686" y="0.0" width="84.333333333333314" height="4"/>
-                                                <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="6f4-Ia-7zF"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iyn-hC-7ll">
-                                                <rect key="frame" x="177" y="0.0" width="84.666666666666686" height="4"/>
-                                                <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="K6A-BC-wj6"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0oq-fk-314">
-                                                <rect key="frame" x="265.66666666666669" y="0.0" width="84.333333333333314" height="4"/>
-                                                <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="XPA-lg-yvD"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.0078431372550000003" green="0.29411764709999999" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstItem="L3B-Vy-yv1" firstAttribute="top" secondItem="71H-WY-iS9" secondAttribute="top" id="8Qa-1V-LC3"/>
-                                            <constraint firstAttribute="bottom" secondItem="Iyn-hC-7ll" secondAttribute="bottom" id="Ax5-DQ-PSw"/>
-                                            <constraint firstItem="Iyn-hC-7ll" firstAttribute="top" secondItem="71H-WY-iS9" secondAttribute="top" id="OBG-ok-VKD"/>
-                                            <constraint firstAttribute="bottom" secondItem="WVP-Qf-Rsp" secondAttribute="bottom" id="SWK-eg-AYh"/>
-                                            <constraint firstItem="WVP-Qf-Rsp" firstAttribute="top" secondItem="71H-WY-iS9" secondAttribute="top" id="djY-gQ-KrX"/>
-                                            <constraint firstAttribute="bottom" secondItem="L3B-Vy-yv1" secondAttribute="bottom" id="m1I-WC-KoN"/>
-                                            <constraint firstAttribute="bottom" secondItem="0oq-fk-314" secondAttribute="bottom" id="qgX-t5-CFd"/>
-                                            <constraint firstItem="0oq-fk-314" firstAttribute="top" secondItem="71H-WY-iS9" secondAttribute="top" id="yOw-SZ-2Kx"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="71H-WY-iS9" firstAttribute="top" secondItem="CdG-cy-ocX" secondAttribute="top" id="L3I-mW-LgJ"/>
-                                    <constraint firstItem="71H-WY-iS9" firstAttribute="leading" secondItem="CdG-cy-ocX" secondAttribute="leading" id="LS8-5p-mUH"/>
-                                    <constraint firstAttribute="bottom" secondItem="71H-WY-iS9" secondAttribute="bottom" id="R80-9U-5Ey"/>
-                                    <constraint firstAttribute="trailing" secondItem="71H-WY-iS9" secondAttribute="trailing" id="jhd-FT-e7q"/>
-                                    <constraint firstAttribute="height" constant="4" id="xbe-L7-c9N"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="VYy-f9-p2t" firstAttribute="leading" secondItem="gTH-Be-3VE" secondAttribute="leading" id="NDr-2L-4lg"/>
-                            <constraint firstItem="CdG-cy-ocX" firstAttribute="top" secondItem="VYy-f9-p2t" secondAttribute="bottom" constant="8" id="OnT-T9-HBE"/>
                             <constraint firstItem="gTH-Be-3VE" firstAttribute="bottom" secondItem="Zmj-3v-POB" secondAttribute="bottom" constant="32" id="TPo-bP-SVN"/>
-                            <constraint firstItem="Zmj-3v-POB" firstAttribute="top" secondItem="CdG-cy-ocX" secondAttribute="bottom" constant="31" id="UzC-aL-z9A"/>
-                            <constraint firstItem="CdG-cy-ocX" firstAttribute="leading" secondItem="gTH-Be-3VE" secondAttribute="leading" constant="32" id="Xcy-Hu-xK2"/>
+                            <constraint firstItem="Zmj-3v-POB" firstAttribute="top" secondItem="VYy-f9-p2t" secondAttribute="bottom" constant="31" id="U6O-tK-RPH"/>
                             <constraint firstItem="VYy-f9-p2t" firstAttribute="trailing" secondItem="gTH-Be-3VE" secondAttribute="trailing" id="Yk2-qB-at3"/>
                             <constraint firstItem="gTH-Be-3VE" firstAttribute="trailing" secondItem="Zmj-3v-POB" secondAttribute="trailing" constant="32" id="Yp1-PC-r5b"/>
                             <constraint firstItem="Zmj-3v-POB" firstAttribute="leading" secondItem="gTH-Be-3VE" secondAttribute="leading" constant="32" id="eMJ-UJ-BF6"/>
                             <constraint firstItem="VYy-f9-p2t" firstAttribute="top" secondItem="gTH-Be-3VE" secondAttribute="top" id="nua-Eb-y9r"/>
-                            <constraint firstItem="gTH-Be-3VE" firstAttribute="trailing" secondItem="CdG-cy-ocX" secondAttribute="trailing" constant="32" id="tzf-3j-lVO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gTH-Be-3VE"/>
                     </view>
                     <navigationItem key="navigationItem" id="B3a-X1-mbg"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="stepCounterLabel" destination="Vco-tH-Zts" id="NsV-Af-g7D"/>
                         <segue destination="GaQ-f5-ei6" kind="show" identifier="showSuccessSegue" id="Fee-nc-b99"/>
                     </connections>
                 </viewController>
@@ -555,10 +478,10 @@ COVIDSafe does not send pairing requests.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xub-Ry-BNj">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="620"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="624"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rcd-mO-xGu" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="547"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="594.33333333333337"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbj-dJ-gHU" userLabel="BackButton">
                                                 <rect key="frame" x="16" y="16" width="44" height="44"/>
@@ -575,7 +498,7 @@ COVIDSafe does not send pairing requests.</string>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="z2j-UO-X53">
-                                                <rect key="frame" x="32" y="56" width="350" height="33.666666666666657"/>
+                                                <rect key="frame" x="32" y="103.33333333333333" width="350" height="33.666666666666671"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your mobile number" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6U2-DI-o9Z">
                                                         <rect key="frame" x="0.0" y="0.0" width="350" height="33.666666666666664"/>
@@ -592,7 +515,7 @@ COVIDSafe does not send pairing requests.</string>
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select country or region" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2N-RH-0MU">
-                                                <rect key="frame" x="32" y="113.66666666666667" width="350" height="20.333333333333329"/>
+                                                <rect key="frame" x="32" y="161" width="350" height="20.333333333333343"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -601,7 +524,7 @@ COVIDSafe does not send pairing requests.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="(+61) Australia" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="18" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bnv-bL-uww">
-                                                <rect key="frame" x="32" y="142" width="350" height="46"/>
+                                                <rect key="frame" x="32" y="189.33333333333334" width="350" height="46"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES"/>
                                                 </accessibility>
@@ -625,7 +548,7 @@ COVIDSafe does not send pairing requests.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We’ll send you a six-digit pin to verify your mobile number." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oa7-Z8-RbO">
-                                                <rect key="frame" x="32" y="308.33333333333331" width="350" height="42.333333333333314"/>
+                                                <rect key="frame" x="32" y="355.66666666666669" width="350" height="42.333333333333314"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -634,7 +557,7 @@ COVIDSafe does not send pairing requests.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vFl-kK-y4g" userLabel="infoBar">
-                                                <rect key="frame" x="16" y="374.66666666666669" width="382" height="156.33333333333331"/>
+                                                <rect key="frame" x="16" y="422" width="382" height="156.33333333333337"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="info" translatesAutoresizingMaskIntoConstraints="NO" id="X9S-JD-BUK">
                                                         <rect key="frame" x="16" y="16" width="24" height="24"/>
@@ -691,7 +614,7 @@ They will need to register using their own device and phone number so that COVID
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="AMg-Zg-jA1">
-                                                <rect key="frame" x="32" y="212" width="350" height="72.333333333333314"/>
+                                                <rect key="frame" x="32" y="259.33333333333331" width="350" height="72.333333333333314"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your mobile number" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q35-js-uRY">
                                                         <rect key="frame" x="0.0" y="0.0" width="350" height="20.333333333333332"/>
@@ -703,7 +626,7 @@ They will need to register using their own device and phone number so that COVID
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For example: 351234" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6T-io-z0x">
-                                                        <rect key="frame" x="0.0" y="23.333333333333343" width="350" height="0.0"/>
+                                                        <rect key="frame" x="0.0" y="23.333333333333371" width="350" height="0.0"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -712,7 +635,7 @@ They will need to register using their own device and phone number so that COVID
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="16b-Xl-c5b">
-                                                        <rect key="frame" x="0.0" y="26.333333333333343" width="350" height="46"/>
+                                                        <rect key="frame" x="0.0" y="26.333333333333371" width="350" height="46"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="46" id="vwA-ek-fdd"/>
                                                         </constraints>
@@ -732,13 +655,19 @@ They will need to register using their own device and phone number so that COVID
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your mobile number" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAk-aI-1Uc">
-                                                        <rect key="frame" x="0.0" y="72.333333333333314" width="350" height="0.0"/>
+                                                        <rect key="frame" x="0.0" y="72.333333333333371" width="350" height="0.0"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 2 of 4" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e40-jM-woN">
+                                                <rect key="frame" x="32" y="60.000000000000007" width="350" height="19.333333333333336"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -746,22 +675,25 @@ They will need to register using their own device and phone number so that COVID
                                             <constraint firstAttribute="trailing" secondItem="bnv-bL-uww" secondAttribute="trailing" constant="32" id="94I-BS-xYg"/>
                                             <constraint firstAttribute="trailing" secondItem="V2N-RH-0MU" secondAttribute="trailing" constant="32" id="9FN-0q-bZV"/>
                                             <constraint firstAttribute="trailing" secondItem="z2j-UO-X53" secondAttribute="trailing" constant="32" id="C22-eK-SZJ"/>
-                                            <constraint firstItem="z2j-UO-X53" firstAttribute="top" secondItem="Rcd-mO-xGu" secondAttribute="top" constant="56" id="DZF-id-0UW"/>
                                             <constraint firstItem="AMg-Zg-jA1" firstAttribute="leading" secondItem="Rcd-mO-xGu" secondAttribute="leading" constant="32" id="HY7-Ue-RM1"/>
                                             <constraint firstAttribute="trailing" secondItem="oa7-Z8-RbO" secondAttribute="trailing" constant="32" id="HuX-3h-oaX"/>
                                             <constraint firstItem="bnv-bL-uww" firstAttribute="top" secondItem="V2N-RH-0MU" secondAttribute="bottom" constant="8" id="Iri-91-yve"/>
+                                            <constraint firstItem="e40-jM-woN" firstAttribute="leading" secondItem="Rcd-mO-xGu" secondAttribute="leading" constant="32" id="MVO-bF-mpt"/>
                                             <constraint firstItem="AMg-Zg-jA1" firstAttribute="top" secondItem="bnv-bL-uww" secondAttribute="bottom" constant="24" id="NVQ-nc-L6h"/>
                                             <constraint firstAttribute="bottom" secondItem="vFl-kK-y4g" secondAttribute="bottom" constant="16" id="O9v-lp-YwG"/>
                                             <constraint firstItem="Cbj-dJ-gHU" firstAttribute="top" secondItem="Rcd-mO-xGu" secondAttribute="top" constant="16" id="S06-Kb-shq"/>
                                             <constraint firstItem="vFl-kK-y4g" firstAttribute="top" secondItem="oa7-Z8-RbO" secondAttribute="bottom" constant="24" id="T14-5x-V87"/>
                                             <constraint firstAttribute="trailing" secondItem="vFl-kK-y4g" secondAttribute="trailing" constant="16" id="XJi-SG-0TZ"/>
+                                            <constraint firstItem="z2j-UO-X53" firstAttribute="top" secondItem="e40-jM-woN" secondAttribute="bottom" constant="24" id="aAi-uX-tfW"/>
                                             <constraint firstItem="oa7-Z8-RbO" firstAttribute="leading" secondItem="Rcd-mO-xGu" secondAttribute="leading" constant="32" id="cko-5j-aUp"/>
                                             <constraint firstItem="oa7-Z8-RbO" firstAttribute="leading" secondItem="Rcd-mO-xGu" secondAttribute="leading" constant="32" id="cmk-xK-BUe"/>
+                                            <constraint firstItem="e40-jM-woN" firstAttribute="top" secondItem="Cbj-dJ-gHU" secondAttribute="bottom" id="daQ-ag-va3"/>
                                             <constraint firstItem="Cbj-dJ-gHU" firstAttribute="leading" secondItem="Rcd-mO-xGu" secondAttribute="leading" constant="16" id="f1c-je-uUB"/>
                                             <constraint firstItem="bnv-bL-uww" firstAttribute="leading" secondItem="Rcd-mO-xGu" secondAttribute="leading" constant="32" id="gre-If-0Wp"/>
                                             <constraint firstItem="oa7-Z8-RbO" firstAttribute="top" secondItem="AMg-Zg-jA1" secondAttribute="bottom" constant="24" id="gwJ-av-5XT"/>
                                             <constraint firstItem="vFl-kK-y4g" firstAttribute="leading" secondItem="Rcd-mO-xGu" secondAttribute="leading" constant="16" id="i9i-iv-7a9"/>
                                             <constraint firstItem="V2N-RH-0MU" firstAttribute="leading" secondItem="Rcd-mO-xGu" secondAttribute="leading" constant="32" id="lDC-sZ-DYL"/>
+                                            <constraint firstAttribute="trailing" secondItem="e40-jM-woN" secondAttribute="trailing" constant="32" id="lu8-Sz-e4Y"/>
                                             <constraint firstItem="z2j-UO-X53" firstAttribute="leading" secondItem="Rcd-mO-xGu" secondAttribute="leading" constant="32" id="wKq-2a-2vL"/>
                                             <constraint firstItem="V2N-RH-0MU" firstAttribute="top" secondItem="z2j-UO-X53" secondAttribute="bottom" constant="24" id="xRl-Cx-K3I"/>
                                             <constraint firstAttribute="trailing" secondItem="oa7-Z8-RbO" secondAttribute="trailing" constant="32" id="yqe-wt-P0j"/>
@@ -793,62 +725,6 @@ They will need to register using their own device and phone number so that COVID
                                     <action selector="nextButtonClicked:" destination="mND-9i-sIw" eventType="touchUpInside" id="DxD-HP-SaN"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ivS-5L-pok">
-                                <rect key="frame" x="32" y="620" width="350" height="4"/>
-                                <subviews>
-                                    <stackView userInteractionEnabled="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="0Y6-EY-VRO">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="4"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xuY-VG-dAk">
-                                                <rect key="frame" x="0.0" y="0.0" width="84.666666666666671" height="4"/>
-                                                <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="UiD-kf-mim"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rch-KS-AND">
-                                                <rect key="frame" x="88.666666666666686" y="0.0" width="84.333333333333314" height="4"/>
-                                                <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="n0a-cd-Uqx"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="de6-tw-k9X">
-                                                <rect key="frame" x="177" y="0.0" width="84.666666666666686" height="4"/>
-                                                <color key="backgroundColor" red="0.85882352939999995" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="IHS-LW-e7t"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0UY-us-TKH">
-                                                <rect key="frame" x="265.66666666666669" y="0.0" width="84.333333333333314" height="4"/>
-                                                <color key="backgroundColor" red="0.85882352939999995" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="bru-BN-l0m"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.0078431372550000003" green="0.29411764709999999" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="Rch-KS-AND" secondAttribute="bottom" id="2aj-ZK-raG"/>
-                                            <constraint firstAttribute="bottom" secondItem="de6-tw-k9X" secondAttribute="bottom" id="9bZ-HA-xVL"/>
-                                            <constraint firstItem="0UY-us-TKH" firstAttribute="top" secondItem="0Y6-EY-VRO" secondAttribute="top" id="O6e-NI-XOG"/>
-                                            <constraint firstItem="Rch-KS-AND" firstAttribute="top" secondItem="0Y6-EY-VRO" secondAttribute="top" id="Oue-B7-FLd"/>
-                                            <constraint firstAttribute="bottom" secondItem="xuY-VG-dAk" secondAttribute="bottom" id="WlM-Ry-5pL"/>
-                                            <constraint firstItem="xuY-VG-dAk" firstAttribute="top" secondItem="0Y6-EY-VRO" secondAttribute="top" id="mH4-u5-LKu"/>
-                                            <constraint firstItem="de6-tw-k9X" firstAttribute="top" secondItem="0Y6-EY-VRO" secondAttribute="top" id="xKu-FT-8aS"/>
-                                            <constraint firstAttribute="bottom" secondItem="0UY-us-TKH" secondAttribute="bottom" id="zGU-8l-oc7"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="0Y6-EY-VRO" secondAttribute="bottom" id="JGv-k4-u9O"/>
-                                    <constraint firstItem="0Y6-EY-VRO" firstAttribute="leading" secondItem="ivS-5L-pok" secondAttribute="leading" id="Lq1-M5-oxa"/>
-                                    <constraint firstAttribute="trailing" secondItem="0Y6-EY-VRO" secondAttribute="trailing" id="T9m-OW-YJJ"/>
-                                    <constraint firstItem="0Y6-EY-VRO" firstAttribute="top" secondItem="ivS-5L-pok" secondAttribute="top" id="lKe-4H-mk8"/>
-                                    <constraint firstAttribute="height" constant="4" id="rUP-at-K6k"/>
-                                </constraints>
-                            </view>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="9fc-dI-kw7">
                                 <rect key="frame" x="319" y="661" width="37" height="37"/>
                                 <color key="color" red="0.78432220220000004" green="0.78429466489999999" blue="0.78432160620000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -861,17 +737,14 @@ They will need to register using their own device and phone number so that COVID
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="ivS-5L-pok" firstAttribute="leading" secondItem="hck-9P-Njf" secondAttribute="leading" constant="32" id="7UT-kL-PlS"/>
                             <constraint firstItem="hck-9P-Njf" firstAttribute="trailing" secondItem="9fc-dI-kw7" secondAttribute="trailing" constant="58" id="Bcj-AX-jog"/>
                             <constraint firstItem="hck-9P-Njf" firstAttribute="trailing" secondItem="Tuw-g5-oMO" secondAttribute="trailing" constant="32" id="CJM-tB-V3b"/>
+                            <constraint firstItem="Tuw-g5-oMO" firstAttribute="top" secondItem="xub-Ry-BNj" secondAttribute="bottom" constant="31" id="Drb-fk-kJZ"/>
                             <constraint firstItem="hck-9P-Njf" firstAttribute="bottom" secondItem="Tuw-g5-oMO" secondAttribute="bottom" constant="32" id="Td5-h1-Qru"/>
                             <constraint firstItem="xub-Ry-BNj" firstAttribute="trailing" secondItem="hck-9P-Njf" secondAttribute="trailing" id="VZ1-H8-xGq"/>
                             <constraint firstItem="9fc-dI-kw7" firstAttribute="centerY" secondItem="Tuw-g5-oMO" secondAttribute="centerY" id="W2J-yA-jKn"/>
-                            <constraint firstItem="ivS-5L-pok" firstAttribute="top" secondItem="xub-Ry-BNj" secondAttribute="bottom" id="ZUr-hX-JcO"/>
                             <constraint firstItem="xub-Ry-BNj" firstAttribute="top" secondItem="hck-9P-Njf" secondAttribute="top" id="cgf-mr-Cht"/>
-                            <constraint firstItem="Tuw-g5-oMO" firstAttribute="top" secondItem="ivS-5L-pok" secondAttribute="bottom" constant="31" id="h68-NO-d3Z"/>
                             <constraint firstItem="xub-Ry-BNj" firstAttribute="leading" secondItem="hck-9P-Njf" secondAttribute="leading" id="lw6-n6-7gJ"/>
-                            <constraint firstItem="hck-9P-Njf" firstAttribute="trailing" secondItem="ivS-5L-pok" secondAttribute="trailing" constant="32" id="mm5-ys-vLe"/>
                             <constraint firstItem="Tuw-g5-oMO" firstAttribute="leading" secondItem="hck-9P-Njf" secondAttribute="leading" constant="32" id="xBM-sP-MLX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hck-9P-Njf"/>
@@ -886,6 +759,7 @@ They will need to register using their own device and phone number so that COVID
                         <outlet property="phoneExample" destination="c6T-io-z0x" id="K8p-RH-yyn"/>
                         <outlet property="phoneLabel" destination="Q35-js-uRY" id="Drp-7N-pcf"/>
                         <outlet property="phoneNumberField" destination="16b-Xl-c5b" id="Rba-DO-ffd"/>
+                        <outlet property="stepCounterLabel" destination="e40-jM-woN" id="cey-Zy-NG5"/>
                         <outlet property="titleLabel" destination="6U2-DI-o9Z" id="spb-d4-dUt"/>
                         <segue destination="QXj-uo-Wqr" kind="show" identifier="segueFromNumberToOTP" id="Vln-72-O1E"/>
                         <segue destination="wiF-c4-qi9" kind="show" identifier="selectCountrySegue" id="kCd-Vd-Lzv"/>
@@ -978,10 +852,10 @@ They will need to register using their own device and phone number so that COVID
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AhK-OV-Qck">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="627"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="624"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V8B-ij-TAp" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="387"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="430.33333333333331"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLj-O5-Nxm" userLabel="BackButton">
                                                 <rect key="frame" x="16" y="16" width="44" height="44"/>
@@ -1000,7 +874,7 @@ They will need to register using their own device and phone number so that COVID
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Enter the PIN sent to" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWc-qS-9y6">
-                                                <rect key="frame" x="32" y="60" width="350" height="33.666666666666657"/>
+                                                <rect key="frame" x="32" y="103.33333333333333" width="350" height="33.666666666666671"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -1009,7 +883,7 @@ They will need to register using their own device and phone number so that COVID
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K7X-Ux-SAc">
-                                                <rect key="frame" x="32" y="127.66666666666669" width="213" height="31"/>
+                                                <rect key="frame" x="32" y="171" width="213" height="31"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" link="YES"/>
                                                 </accessibility>
@@ -1032,7 +906,7 @@ They will need to register using their own device and phone number so that COVID
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KLp-Fk-KTm" userLabel="OTPContainerView">
-                                                <rect key="frame" x="0.0" y="158.66666666666663" width="414" height="132.33333333333337"/>
+                                                <rect key="frame" x="0.0" y="202" width="414" height="132.33333333333337"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5L2-jv-Oa6" customClass="CodeInputView" customModule="COVIDSafe" customModuleProvider="target">
                                                         <rect key="frame" x="27" y="36" width="360" height="60"/>
@@ -1045,7 +919,7 @@ They will need to register using their own device and phone number so that COVID
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wrong OTP entered" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWN-Zo-GBT">
-                                                        <rect key="frame" x="40" y="104.00000000000003" width="334" height="20.333333333333329"/>
+                                                        <rect key="frame" x="40" y="104" width="334" height="20.333333333333329"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <color key="textColor" red="0.63921568627450975" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1065,14 +939,14 @@ They will need to register using their own device and phone number so that COVID
                                                 </constraints>
                                             </view>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your PIN will expire in 3:00" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kc0-pn-IHx">
-                                                <rect key="frame" x="32" y="300" width="350" height="20.333333333333314"/>
+                                                <rect key="frame" x="32" y="343.33333333333331" width="350" height="20.333333333333314"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hzs-ds-Zon">
-                                                <rect key="frame" x="32" y="353.66666666666669" width="212" height="33.333333333333314"/>
+                                                <rect key="frame" x="32" y="397" width="212" height="33.333333333333314"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" link="YES"/>
                                                 </accessibility>
@@ -1095,7 +969,7 @@ They will need to register using their own device and phone number so that COVID
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Rh-JE-cit">
-                                                <rect key="frame" x="32" y="320.33333333333331" width="94" height="33.333333333333314"/>
+                                                <rect key="frame" x="32" y="363.66666666666669" width="94" height="33.333333333333314"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" link="YES"/>
                                                 </accessibility>
@@ -1117,22 +991,31 @@ They will need to register using their own device and phone number so that COVID
                                                     <action selector="resendCode:" destination="QXj-uo-Wqr" eventType="touchUpInside" id="6aS-xE-zYy"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 3 of 4" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0e1-Yu-pmy">
+                                                <rect key="frame" x="32" y="60.000000000000007" width="350" height="19.333333333333336"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="KLp-Fk-KTm" firstAttribute="top" secondItem="K7X-Ux-SAc" secondAttribute="bottom" id="00M-R2-dHN"/>
+                                            <constraint firstItem="GWc-qS-9y6" firstAttribute="top" secondItem="0e1-Yu-pmy" secondAttribute="bottom" constant="24" id="2LN-Qm-O8j"/>
                                             <constraint firstAttribute="bottom" secondItem="Hzs-ds-Zon" secondAttribute="bottom" id="3Q9-oD-j2z"/>
                                             <constraint firstItem="Hzs-ds-Zon" firstAttribute="leading" secondItem="V8B-ij-TAp" secondAttribute="leading" constant="32" id="3WX-Az-UGG"/>
+                                            <constraint firstAttribute="trailing" secondItem="0e1-Yu-pmy" secondAttribute="trailing" constant="32" id="3XY-L7-eaQ"/>
                                             <constraint firstItem="6Rh-JE-cit" firstAttribute="top" secondItem="Kc0-pn-IHx" secondAttribute="bottom" id="87P-lp-y18"/>
+                                            <constraint firstItem="0e1-Yu-pmy" firstAttribute="top" secondItem="sLj-O5-Nxm" secondAttribute="bottom" id="LRY-EJ-lOD"/>
                                             <constraint firstItem="Kc0-pn-IHx" firstAttribute="leading" secondItem="V8B-ij-TAp" secondAttribute="leading" constant="32" id="O1i-Hi-vTj"/>
                                             <constraint firstItem="K7X-Ux-SAc" firstAttribute="leading" secondItem="V8B-ij-TAp" secondAttribute="leading" constant="32" id="TEb-px-9kg"/>
                                             <constraint firstItem="KLp-Fk-KTm" firstAttribute="leading" secondItem="V8B-ij-TAp" secondAttribute="leading" id="WDH-Ex-Yld"/>
                                             <constraint firstItem="sLj-O5-Nxm" firstAttribute="leading" secondItem="V8B-ij-TAp" secondAttribute="leading" constant="16" id="WbK-qf-oht"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Hzs-ds-Zon" secondAttribute="trailing" constant="32" id="X8m-I2-fnX"/>
                                             <constraint firstItem="Hzs-ds-Zon" firstAttribute="top" secondItem="6Rh-JE-cit" secondAttribute="bottom" id="Xgk-MJ-uOG"/>
+                                            <constraint firstItem="0e1-Yu-pmy" firstAttribute="leading" secondItem="V8B-ij-TAp" secondAttribute="leading" constant="32" id="YxW-zY-0qT"/>
                                             <constraint firstItem="sLj-O5-Nxm" firstAttribute="top" secondItem="V8B-ij-TAp" secondAttribute="top" constant="16" id="bVo-ox-d2J"/>
                                             <constraint firstItem="6Rh-JE-cit" firstAttribute="leading" secondItem="V8B-ij-TAp" secondAttribute="leading" constant="32" id="eMl-2p-hwU"/>
-                                            <constraint firstItem="GWc-qS-9y6" firstAttribute="top" secondItem="sLj-O5-Nxm" secondAttribute="bottom" id="i3d-z3-Vhz"/>
                                             <constraint firstItem="K7X-Ux-SAc" firstAttribute="top" secondItem="GWc-qS-9y6" secondAttribute="bottom" constant="34" id="lxx-mN-Zcl"/>
                                             <constraint firstItem="GWc-qS-9y6" firstAttribute="leading" secondItem="V8B-ij-TAp" secondAttribute="leading" constant="32" id="pw7-Qz-5ks"/>
                                             <constraint firstItem="Kc0-pn-IHx" firstAttribute="top" secondItem="KLp-Fk-KTm" secondAttribute="bottom" constant="9" id="pxl-cn-1w9"/>
@@ -1150,63 +1033,6 @@ They will need to register using their own device and phone number so that COVID
                                     <constraint firstItem="V8B-ij-TAp" firstAttribute="width" secondItem="AhK-OV-Qck" secondAttribute="width" id="gMA-47-mp5"/>
                                 </constraints>
                             </scrollView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Fu-sw-mDF">
-                                <rect key="frame" x="32" y="627" width="350" height="4"/>
-                                <subviews>
-                                    <stackView userInteractionEnabled="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Oyc-7e-HIY">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="4"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mib-ur-5H9">
-                                                <rect key="frame" x="0.0" y="0.0" width="84.666666666666671" height="4"/>
-                                                <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="UOb-ab-tBE"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BuG-pf-jWb">
-                                                <rect key="frame" x="88.666666666666686" y="0.0" width="84.333333333333314" height="4"/>
-                                                <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="bNK-eq-RBP"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1X-AJ-wn3">
-                                                <rect key="frame" x="177" y="0.0" width="84.666666666666686" height="4"/>
-                                                <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="itH-hQ-Ppt"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEG-ad-4rP">
-                                                <rect key="frame" x="265.66666666666669" y="0.0" width="84.333333333333314" height="4"/>
-                                                <color key="backgroundColor" red="0.85882352939999995" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="xaL-E8-hPZ"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.0078431372550000003" green="0.29411764709999999" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstItem="f1X-AJ-wn3" firstAttribute="top" secondItem="Oyc-7e-HIY" secondAttribute="top" id="4Lz-Yl-ibh"/>
-                                            <constraint firstItem="EEG-ad-4rP" firstAttribute="top" secondItem="Oyc-7e-HIY" secondAttribute="top" id="Feu-Ds-5o1"/>
-                                            <constraint firstAttribute="bottom" secondItem="EEG-ad-4rP" secondAttribute="bottom" id="U5G-x9-907"/>
-                                            <constraint firstAttribute="bottom" secondItem="BuG-pf-jWb" secondAttribute="bottom" id="UwV-6g-7jd"/>
-                                            <constraint firstItem="Mib-ur-5H9" firstAttribute="top" secondItem="Oyc-7e-HIY" secondAttribute="top" id="dl3-yM-w8B"/>
-                                            <constraint firstItem="BuG-pf-jWb" firstAttribute="top" secondItem="Oyc-7e-HIY" secondAttribute="top" id="t6Q-MW-iN1"/>
-                                            <constraint firstAttribute="bottom" secondItem="Mib-ur-5H9" secondAttribute="bottom" id="u2s-bF-sEq"/>
-                                            <constraint firstAttribute="bottom" secondItem="f1X-AJ-wn3" secondAttribute="bottom" id="x1B-zO-80R"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="4" id="B8w-I4-gas"/>
-                                    <constraint firstAttribute="trailing" secondItem="Oyc-7e-HIY" secondAttribute="trailing" id="RML-Fh-G4L"/>
-                                    <constraint firstItem="Oyc-7e-HIY" firstAttribute="top" secondItem="5Fu-sw-mDF" secondAttribute="top" id="Ytb-Zd-sSS"/>
-                                    <constraint firstItem="Oyc-7e-HIY" firstAttribute="leading" secondItem="5Fu-sw-mDF" secondAttribute="leading" id="e94-dZ-0PS"/>
-                                    <constraint firstAttribute="bottom" secondItem="Oyc-7e-HIY" secondAttribute="bottom" id="grr-SO-JQ7"/>
-                                    <constraint firstAttribute="height" constant="4" id="hDT-WA-vSQ"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQY-RW-yBL">
                                 <rect key="frame" x="32" y="655" width="350" height="49"/>
                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1236,16 +1062,13 @@ They will need to register using their own device and phone number so that COVID
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="5R8-gb-HbO" firstAttribute="trailing" secondItem="5Fu-sw-mDF" secondAttribute="trailing" constant="32" id="Bh4-xt-cX5"/>
                             <constraint firstItem="5R8-gb-HbO" firstAttribute="trailing" secondItem="AhK-OV-Qck" secondAttribute="trailing" id="MCQ-Ud-2VJ"/>
-                            <constraint firstItem="lQY-RW-yBL" firstAttribute="top" secondItem="5Fu-sw-mDF" secondAttribute="bottom" constant="24" id="Ro5-rq-L13"/>
-                            <constraint firstItem="5Fu-sw-mDF" firstAttribute="top" secondItem="AhK-OV-Qck" secondAttribute="bottom" id="VSC-eO-vvz"/>
+                            <constraint firstItem="lQY-RW-yBL" firstAttribute="top" secondItem="AhK-OV-Qck" secondAttribute="bottom" constant="31" id="TCD-Si-GLA"/>
                             <constraint firstItem="5R8-gb-HbO" firstAttribute="bottom" secondItem="lQY-RW-yBL" secondAttribute="bottom" constant="32" id="Vq1-wb-1Pt"/>
                             <constraint firstItem="5R8-gb-HbO" firstAttribute="trailing" secondItem="ii4-iL-S2Z" secondAttribute="trailing" constant="58" id="XgE-GT-Sov"/>
                             <constraint firstItem="AhK-OV-Qck" firstAttribute="top" secondItem="5R8-gb-HbO" secondAttribute="top" id="ffM-sE-M8v"/>
                             <constraint firstItem="5R8-gb-HbO" firstAttribute="trailing" secondItem="lQY-RW-yBL" secondAttribute="trailing" constant="32" id="i2F-4Z-knn"/>
                             <constraint firstItem="ii4-iL-S2Z" firstAttribute="centerY" secondItem="lQY-RW-yBL" secondAttribute="centerY" id="srk-qX-Kk2"/>
-                            <constraint firstItem="5Fu-sw-mDF" firstAttribute="leading" secondItem="5R8-gb-HbO" secondAttribute="leading" constant="32" id="tBV-kN-gAc"/>
                             <constraint firstItem="AhK-OV-Qck" firstAttribute="leading" secondItem="5R8-gb-HbO" secondAttribute="leading" id="wGE-xz-FL9"/>
                             <constraint firstItem="lQY-RW-yBL" firstAttribute="leading" secondItem="5R8-gb-HbO" secondAttribute="leading" constant="32" id="wPw-ok-yQY"/>
                         </constraints>
@@ -1259,6 +1082,7 @@ They will need to register using their own device and phone number so that COVID
                         <outlet property="expiredMessageLabel" destination="Kc0-pn-IHx" id="bqM-bB-5JR"/>
                         <outlet property="pinIssuesButton" destination="Hzs-ds-Zon" id="7Dp-P4-RsM"/>
                         <outlet property="resendCodeButton" destination="6Rh-JE-cit" id="CCr-Yo-7dg"/>
+                        <outlet property="stepCounterLabel" destination="0e1-Yu-pmy" id="iRE-Lw-ecg"/>
                         <outlet property="titleLabel" destination="GWc-qS-9y6" id="0Pc-Ui-Hmq"/>
                         <outlet property="verifyButton" destination="lQY-RW-yBL" id="0Zf-Wz-kba"/>
                         <outlet property="wrongNumberButton" destination="K7X-Ux-SAc" id="yCf-mF-ngh"/>
@@ -1412,7 +1236,7 @@ No further action is required.</string>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Eim-Z7-BkO">
-                                        <rect key="frame" x="0.0" y="595" width="375" height="2086"/>
+                                        <rect key="frame" x="0.0" y="595" width="375" height="2239"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewx-Jj-gLM" userLabel="PermissionsView">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="866"/>
@@ -2394,8 +2218,126 @@ No further action is required.</string>
                                                     <constraint firstItem="zee-qU-mfQ" firstAttribute="leading" secondItem="HeH-6a-T5j" secondAttribute="leading" constant="16" id="ylC-WM-AdN"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k70-df-LmI" userLabel="Change language">
+                                                <rect key="frame" x="0.0" y="2030" width="375" height="153"/>
+                                                <subviews>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f2a-4U-3uN">
+                                                        <rect key="frame" x="16" y="16" width="343" height="121"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSh-Ef-QeA" userLabel="Change language">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="121"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change language" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ZC-Tn-gMT">
+                                                                        <rect key="frame" x="72" y="16" width="231" height="24"/>
+                                                                        <accessibility key="accessibilityConfiguration">
+                                                                            <accessibilityTraits key="traits" none="YES"/>
+                                                                            <bool key="isElement" value="NO"/>
+                                                                        </accessibility>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="change_language"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globe" translatesAutoresizingMaskIntoConstraints="NO" id="bvw-5v-ynA">
+                                                                        <rect key="frame" x="16" y="16" width="40" height="40"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="a7J-Mv-wwa"/>
+                                                                            <constraint firstAttribute="width" constant="40" id="dZ1-XF-rip"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="20"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </imageView>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChevronRight" translatesAutoresizingMaskIntoConstraints="NO" id="2pV-tC-BFL">
+                                                                        <rect key="frame" x="311" y="16" width="24" height="24"/>
+                                                                        <accessibility key="accessibilityConfiguration">
+                                                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                                        </accessibility>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="24" id="BZA-bU-c8K"/>
+                                                                            <constraint firstAttribute="height" constant="24" id="jJQ-7K-dSz"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update your settings to use COVIDSafe in a different language." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGr-iV-rys">
+                                                                        <rect key="frame" x="72" y="40" width="231" height="65"/>
+                                                                        <accessibility key="accessibilityConfiguration">
+                                                                            <accessibilityTraits key="traits" none="YES"/>
+                                                                            <bool key="isElement" value="NO"/>
+                                                                        </accessibility>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="change_language_content"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <accessibility key="accessibilityConfiguration" label="Help topics. If you have issues or questions about the app.">
+                                                                    <accessibilityTraits key="traits" button="YES"/>
+                                                                    <bool key="isElement" value="YES"/>
+                                                                </accessibility>
+                                                                <constraints>
+                                                                    <constraint firstItem="4ZC-Tn-gMT" firstAttribute="top" secondItem="YSh-Ef-QeA" secondAttribute="top" constant="16" id="CoU-W3-70w"/>
+                                                                    <constraint firstItem="4ZC-Tn-gMT" firstAttribute="leading" secondItem="bvw-5v-ynA" secondAttribute="trailing" constant="16" id="Elt-xP-geg"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="2pV-tC-BFL" secondAttribute="trailing" constant="8" id="NQC-e0-DjF"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="zGr-iV-rys" secondAttribute="bottom" constant="16" id="ONY-8i-XX1"/>
+                                                                    <constraint firstItem="2pV-tC-BFL" firstAttribute="top" secondItem="YSh-Ef-QeA" secondAttribute="top" constant="16" id="OOJ-JC-FVW"/>
+                                                                    <constraint firstItem="bvw-5v-ynA" firstAttribute="top" secondItem="YSh-Ef-QeA" secondAttribute="top" constant="16" id="RdE-oA-8gM"/>
+                                                                    <constraint firstItem="2pV-tC-BFL" firstAttribute="leading" secondItem="4ZC-Tn-gMT" secondAttribute="trailing" constant="8" id="axi-O1-D7K"/>
+                                                                    <constraint firstItem="bvw-5v-ynA" firstAttribute="leading" secondItem="YSh-Ef-QeA" secondAttribute="leading" constant="16" id="ci8-0u-nvm"/>
+                                                                    <constraint firstItem="zGr-iV-rys" firstAttribute="leading" secondItem="4ZC-Tn-gMT" secondAttribute="leading" id="fke-a1-UoZ"/>
+                                                                    <constraint firstItem="zGr-iV-rys" firstAttribute="trailing" secondItem="4ZC-Tn-gMT" secondAttribute="trailing" id="n8N-lP-Tlp"/>
+                                                                    <constraint firstItem="zGr-iV-rys" firstAttribute="top" secondItem="4ZC-Tn-gMT" secondAttribute="bottom" id="yEY-iU-F4U"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="change_language_VOLabel"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <outletCollection property="gestureRecognizers" destination="v7B-Aa-sfi" appends="YES" id="2Zh-f3-bV6"/>
+                                                                </connections>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="YSh-Ef-QeA" firstAttribute="leading" secondItem="f2a-4U-3uN" secondAttribute="leading" id="OD6-aG-Omg"/>
+                                                            <constraint firstAttribute="trailing" secondItem="YSh-Ef-QeA" secondAttribute="trailing" id="Tax-g4-nC7"/>
+                                                            <constraint firstItem="YSh-Ef-QeA" firstAttribute="top" secondItem="f2a-4U-3uN" secondAttribute="top" id="gYV-A4-ZL8"/>
+                                                            <constraint firstAttribute="bottom" secondItem="YSh-Ef-QeA" secondAttribute="bottom" id="wU3-AT-jRB"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                                <size key="value" width="0.0" height="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="f2a-4U-3uN" secondAttribute="bottom" constant="16" id="1Od-4p-lC4"/>
+                                                    <constraint firstItem="f2a-4U-3uN" firstAttribute="leading" secondItem="k70-df-LmI" secondAttribute="leading" constant="16" id="A8t-Vo-V8s"/>
+                                                    <constraint firstItem="f2a-4U-3uN" firstAttribute="top" secondItem="k70-df-LmI" secondAttribute="top" constant="16" id="FQn-J8-nUB"/>
+                                                    <constraint firstAttribute="trailing" secondItem="f2a-4U-3uN" secondAttribute="trailing" constant="16" id="Kwl-Wt-GZJ"/>
+                                                </constraints>
+                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEs-yq-szw" userLabel="Version View">
-                                                <rect key="frame" x="0.0" y="2030" width="375" height="56"/>
+                                                <rect key="frame" x="0.0" y="2183" width="375" height="56"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version number:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CD7-Ft-bQU" userLabel="Version">
                                                         <rect key="frame" x="16" y="12" width="343" height="20"/>
@@ -2472,6 +2414,11 @@ No further action is required.</string>
                 <tapGestureRecognizer id="bTB-MH-OYr" userLabel="PNAppSettingsTapped">
                     <connections>
                         <action selector="onAppSettingsTapped:" destination="yl1-rG-jXE" id="9Ft-iy-Wv8"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="v7B-Aa-sfi" userLabel="ChangeLanguageTapped">
+                    <connections>
+                        <action selector="onChangeLanguageTapped:" destination="yl1-rG-jXE" id="GW4-Cc-fKP"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="p9t-xu-RiE" userLabel="BLAppSettingsTapped">
@@ -2616,8 +2563,6 @@ and save lives.</string>
                         <segue destination="mND-9i-sIw" kind="show" identifier="initialScreenToGetOTPSegue" id="rHc-rZ-59x"/>
                         <segue destination="eME-NJ-Fcz" kind="show" identifier="initialScreenToAllowPermissionsSegue" id="XiO-Zp-pOg"/>
                         <segue destination="yl1-rG-jXE" kind="presentation" identifier="initialScreenToHomeSegue" modalPresentationStyle="fullScreen" id="Eya-O4-CPO"/>
-                        <segue destination="2XR-xi-raR" kind="show" identifier="initialScreenToConsentSegue" id="ntT-Wx-kqK"/>
-                        <segue destination="tmd-7A-Wz4" kind="show" identifier="initialPersonalDetailsSegue" id="cLu-Ng-v4y"/>
                         <segue destination="wD9-lR-1wv" kind="presentation" identifier="presentMigrationSegue" id="w3o-Dg-9eW"/>
                     </connections>
                 </viewController>
@@ -3184,10 +3129,10 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0l9-L6-g64">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="620"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="624"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LCa-Je-nVQ" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="350.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="394"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERG-dG-Bx2">
                                                 <rect key="frame" x="16" y="16" width="44" height="44"/>
@@ -3204,7 +3149,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your details" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kti-qW-XD2">
-                                                <rect key="frame" x="32" y="60" width="350" height="33.666666666666657"/>
+                                                <rect key="frame" x="32" y="103.33333333333333" width="350" height="33.666666666666671"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -3216,9 +3161,9 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tk2-6x-mvl">
-                                                <rect key="frame" x="32" y="117.66666666666669" width="350" height="233"/>
+                                                <rect key="frame" x="32" y="161" width="350" height="233"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIF-xa-lvX">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIF-xa-lvX">
                                                         <rect key="frame" x="0.0" y="0.0" width="350" height="20.333333333333332"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <nil key="textColor"/>
@@ -3228,7 +3173,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L4n-0d-pyv">
-                                                        <rect key="frame" x="0.0" y="28.333333333333329" width="350" height="34"/>
+                                                        <rect key="frame" x="0.0" y="28.333333333333343" width="350" height="34"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                                         <userDefinedRuntimeAttributes>
@@ -3245,7 +3190,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your full name." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VM-OQ-VUC">
-                                                        <rect key="frame" x="0.0" y="66.333333333333329" width="350" height="0.0"/>
+                                                        <rect key="frame" x="0.0" y="66.333333333333343" width="350" height="0.0"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -3254,7 +3199,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <view contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="h3e-GV-yRm">
-                                                        <rect key="frame" x="0.0" y="70.333333333333329" width="350" height="33.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="70.333333333333343" width="350" height="33.333333333333343"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Age range (select)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdJ-6t-GZL">
                                                                 <rect key="frame" x="0.0" y="12.999999999999998" width="350" height="20.333333333333329"/>
@@ -3319,7 +3264,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                         </constraints>
                                                     </view>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select your age range." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Tp-qk-8iH">
-                                                        <rect key="frame" x="0.0" y="153.66666666666663" width="350" height="0.0"/>
+                                                        <rect key="frame" x="0.0" y="153.66666666666669" width="350" height="0.0"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -3328,7 +3273,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <view contentMode="scaleToFill" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="zEi-0v-YfD">
-                                                        <rect key="frame" x="0.0" y="157.66666666666663" width="350" height="33.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="157.66666666666669" width="350" height="33.333333333333343"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Postcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7RM-TO-7v0">
                                                                 <rect key="frame" x="0.0" y="12.999999999999998" width="72.333333333333329" height="20.333333333333329"/>
@@ -3376,16 +3321,25 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                     </label>
                                                 </subviews>
                                             </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 1 of 4" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXy-ib-9vr">
+                                                <rect key="frame" x="32" y="60.000000000000007" width="348" height="19.333333333333336"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="kti-qW-XD2" firstAttribute="top" secondItem="ERG-dG-Bx2" secondAttribute="bottom" id="2nt-RH-fdi"/>
                                             <constraint firstAttribute="bottom" secondItem="tk2-6x-mvl" secondAttribute="bottom" id="8jp-20-h5a"/>
+                                            <constraint firstItem="hXy-ib-9vr" firstAttribute="leading" secondItem="LCa-Je-nVQ" secondAttribute="leading" constant="32" id="9rc-ME-RF4"/>
                                             <constraint firstItem="kti-qW-XD2" firstAttribute="leading" secondItem="LCa-Je-nVQ" secondAttribute="leading" constant="32" id="BIN-wU-sUL"/>
                                             <constraint firstAttribute="trailing" secondItem="kti-qW-XD2" secondAttribute="trailing" constant="32" id="DWZ-1q-LJo"/>
+                                            <constraint firstAttribute="trailing" secondItem="hXy-ib-9vr" secondAttribute="trailing" constant="34" id="FKc-6r-QP6"/>
                                             <constraint firstItem="tk2-6x-mvl" firstAttribute="top" secondItem="kti-qW-XD2" secondAttribute="bottom" constant="24" id="IeW-2S-Igh"/>
                                             <constraint firstItem="tk2-6x-mvl" firstAttribute="leading" secondItem="LCa-Je-nVQ" secondAttribute="leading" constant="32" id="JFo-Af-Idz"/>
+                                            <constraint firstItem="hXy-ib-9vr" firstAttribute="top" secondItem="ERG-dG-Bx2" secondAttribute="bottom" id="cPS-sj-Ns4"/>
                                             <constraint firstAttribute="trailing" secondItem="tk2-6x-mvl" secondAttribute="trailing" constant="32" id="cQC-Ob-k2i"/>
+                                            <constraint firstItem="kti-qW-XD2" firstAttribute="top" secondItem="hXy-ib-9vr" secondAttribute="bottom" constant="24" id="ezH-SR-FqE"/>
                                             <constraint firstItem="ERG-dG-Bx2" firstAttribute="top" secondItem="LCa-Je-nVQ" secondAttribute="top" constant="16" id="oh4-Em-vcc"/>
                                             <constraint firstItem="ERG-dG-Bx2" firstAttribute="leading" secondItem="LCa-Je-nVQ" secondAttribute="leading" constant="16" id="yTf-de-3IK"/>
                                         </constraints>
@@ -3405,62 +3359,6 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NsZ-LD-IRu" userLabel="ProgressView">
-                                <rect key="frame" x="32" y="620" width="350" height="4"/>
-                                <subviews>
-                                    <stackView userInteractionEnabled="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="mnF-B4-8cv">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="4"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oPu-0L-pd1">
-                                                <rect key="frame" x="0.0" y="0.0" width="84.666666666666671" height="4"/>
-                                                <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="62P-B1-DqU"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nD5-mF-MgH">
-                                                <rect key="frame" x="88.666666666666686" y="0.0" width="84.333333333333314" height="4"/>
-                                                <color key="backgroundColor" red="0.85882352939999995" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="TDt-84-afB"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mSt-fg-TTv">
-                                                <rect key="frame" x="177" y="0.0" width="84.666666666666686" height="4"/>
-                                                <color key="backgroundColor" red="0.85882352939999995" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="rJc-UX-t7N"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HM8-79-eXk">
-                                                <rect key="frame" x="265.66666666666669" y="0.0" width="84.333333333333314" height="4"/>
-                                                <color key="backgroundColor" red="0.85882352939999995" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="BXG-uq-VeJ"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.0078431372550000003" green="0.29411764709999999" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstItem="oPu-0L-pd1" firstAttribute="top" secondItem="mnF-B4-8cv" secondAttribute="top" id="83G-66-AA6"/>
-                                            <constraint firstAttribute="bottom" secondItem="mSt-fg-TTv" secondAttribute="bottom" id="Lr2-ux-a07"/>
-                                            <constraint firstAttribute="bottom" secondItem="oPu-0L-pd1" secondAttribute="bottom" id="Piz-uc-52Z"/>
-                                            <constraint firstAttribute="bottom" secondItem="nD5-mF-MgH" secondAttribute="bottom" id="aBU-Co-V24"/>
-                                            <constraint firstItem="HM8-79-eXk" firstAttribute="top" secondItem="mnF-B4-8cv" secondAttribute="top" id="cAC-ta-dS7"/>
-                                            <constraint firstItem="nD5-mF-MgH" firstAttribute="top" secondItem="mnF-B4-8cv" secondAttribute="top" id="eZs-ci-hNX"/>
-                                            <constraint firstAttribute="bottom" secondItem="HM8-79-eXk" secondAttribute="bottom" id="pfg-eE-HZb"/>
-                                            <constraint firstItem="mSt-fg-TTv" firstAttribute="top" secondItem="mnF-B4-8cv" secondAttribute="top" id="xr9-3u-5VW"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="4" id="0TC-c7-VwJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="mnF-B4-8cv" secondAttribute="bottom" id="Cb3-pt-Sfz"/>
-                                    <constraint firstItem="mnF-B4-8cv" firstAttribute="top" secondItem="NsZ-LD-IRu" secondAttribute="top" id="DWr-iq-des"/>
-                                    <constraint firstItem="mnF-B4-8cv" firstAttribute="leading" secondItem="NsZ-LD-IRu" secondAttribute="leading" id="oA6-ZW-68J"/>
-                                    <constraint firstAttribute="trailing" secondItem="mnF-B4-8cv" secondAttribute="trailing" id="slp-UV-Ac7"/>
-                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wu0-UH-w3R">
                                 <rect key="frame" x="32" y="655" width="350" height="49"/>
@@ -3485,7 +3383,6 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6ZP-yA-jRS" firstAttribute="trailing" secondItem="NsZ-LD-IRu" secondAttribute="trailing" constant="32" id="2Xq-Pc-d4R"/>
                             <constraint firstItem="0l9-L6-g64" firstAttribute="top" secondItem="6ZP-yA-jRS" secondAttribute="top" id="4Sb-f0-uRo"/>
                             <constraint firstItem="6ZP-yA-jRS" firstAttribute="trailing" secondItem="0l9-L6-g64" secondAttribute="trailing" id="52o-6x-PfB"/>
                             <constraint firstItem="6ZP-yA-jRS" firstAttribute="bottom" secondItem="wu0-UH-w3R" secondAttribute="bottom" constant="32" id="8Pv-yQ-HHW"/>
@@ -3494,11 +3391,9 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                             <constraint firstItem="xBC-Md-zDE" firstAttribute="trailing" secondItem="6ZP-yA-jRS" secondAttribute="trailing" id="MsT-Z5-Rww"/>
                             <constraint firstItem="xBC-Md-zDE" firstAttribute="leading" secondItem="6ZP-yA-jRS" secondAttribute="leading" id="PYS-4n-929"/>
                             <constraint firstItem="xBC-Md-zDE" firstAttribute="top" secondItem="6ZP-yA-jRS" secondAttribute="top" id="U0Q-N8-afG"/>
-                            <constraint firstItem="NsZ-LD-IRu" firstAttribute="leading" secondItem="6ZP-yA-jRS" secondAttribute="leading" constant="32" id="a4s-iH-5Bb"/>
                             <constraint firstItem="6ZP-yA-jRS" firstAttribute="trailing" secondItem="wu0-UH-w3R" secondAttribute="trailing" constant="32" id="dvP-tQ-2L3"/>
                             <constraint firstItem="xBC-Md-zDE" firstAttribute="bottom" secondItem="6ZP-yA-jRS" secondAttribute="bottom" id="fKf-Dz-ITg"/>
-                            <constraint firstItem="NsZ-LD-IRu" firstAttribute="top" secondItem="0l9-L6-g64" secondAttribute="bottom" id="gAS-td-KVm"/>
-                            <constraint firstItem="wu0-UH-w3R" firstAttribute="top" secondItem="NsZ-LD-IRu" secondAttribute="bottom" constant="31" id="s0V-O2-F2b"/>
+                            <constraint firstItem="wu0-UH-w3R" firstAttribute="top" secondItem="0l9-L6-g64" secondAttribute="bottom" constant="31" id="qx2-wZ-55e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6ZP-yA-jRS"/>
                     </view>
@@ -3518,6 +3413,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                         <outlet property="postcodeLabel" destination="7RM-TO-7v0" id="hP8-04-WUR"/>
                         <outlet property="postcodeTextField" destination="ORR-xb-Oh7" id="spb-hY-lAK"/>
                         <outlet property="scrollview" destination="0l9-L6-g64" id="L25-1d-Ltm"/>
+                        <outlet property="stepCounterLabel" destination="hXy-ib-9vr" id="dMl-xv-pyR"/>
                         <segue destination="mND-9i-sIw" kind="show" identifier="PhoneValidationSegue" id="iUa-3s-4XB"/>
                         <segue destination="GKS-Wl-QbF" kind="show" identifier="UnderSixteenSegue" id="dql-or-BRx"/>
                     </connections>
@@ -3538,10 +3434,10 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DY3-Bs-8h2" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="399"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="446.33333333333331"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You need the consent of your parent/guardian to proceed" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlW-1W-YqS">
-                                                <rect key="frame" x="32" y="56.000000000000007" width="350" height="67.666666666666686"/>
+                                                <rect key="frame" x="32" y="103.33333333333331" width="350" height="67.666666666666686"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -3553,7 +3449,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My registration information to allow contact tracing by state or territory health officials." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXg-tG-JnX">
-                                                <rect key="frame" x="46" y="220" width="336" height="42.333333333333314"/>
+                                                <rect key="frame" x="46" y="267.33333333333331" width="336" height="42.333333333333314"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -3562,7 +3458,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My contact information from other COVIDSafe users after they test positive for COVID-19." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ago-Xc-vpG">
-                                                <rect key="frame" x="46" y="278.33333333333331" width="336" height="64.333333333333314"/>
+                                                <rect key="frame" x="46" y="325.66666666666669" width="336" height="64.333333333333314"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -3571,7 +3467,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select 'I agree' to confirm consent." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ba6-us-91a">
-                                                <rect key="frame" x="32" y="366.66666666666669" width="362" height="20.333333333333314"/>
+                                                <rect key="frame" x="32" y="414" width="362" height="20.333333333333314"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -3580,7 +3476,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I confirm my parent or guardian consents to the Australian Department of Health collecting:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDG-kZ-uPM">
-                                                <rect key="frame" x="32" y="139.66666666666666" width="350" height="64.333333333333343"/>
+                                                <rect key="frame" x="32" y="187" width="350" height="64.333333333333314"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -3589,13 +3485,13 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfb-Qr-RoV">
-                                                <rect key="frame" x="32" y="220" width="7.6666666666666643" height="20.333333333333343"/>
+                                                <rect key="frame" x="32" y="267.33333333333331" width="7.6666666666666643" height="20.333333333333314"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8l-U4-ztC">
-                                                <rect key="frame" x="32" y="278.33333333333331" width="7.6666666666666643" height="20.333333333333314"/>
+                                                <rect key="frame" x="32" y="325.66666666666669" width="7.6666666666666643" height="20.333333333333314"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -3614,6 +3510,12 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                     <action selector="onBackTapped:" destination="GKS-Wl-QbF" eventType="touchUpInside" id="M5G-io-jP8"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 1 of 4" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phd-aD-1If">
+                                                <rect key="frame" x="32" y="60.000000000000007" width="350" height="19.333333333333336"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -3624,13 +3526,17 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                             <constraint firstItem="zfb-Qr-RoV" firstAttribute="leading" secondItem="DY3-Bs-8h2" secondAttribute="leading" constant="32" id="DBN-X0-yRz"/>
                                             <constraint firstAttribute="trailing" secondItem="PXg-tG-JnX" secondAttribute="trailing" constant="32" id="DEz-Jr-82B"/>
                                             <constraint firstAttribute="trailing" secondItem="rlW-1W-YqS" secondAttribute="trailing" constant="32" id="HLu-gz-eP8"/>
+                                            <constraint firstItem="rlW-1W-YqS" firstAttribute="top" secondItem="phd-aD-1If" secondAttribute="bottom" constant="24" id="JHB-kQ-zlg"/>
                                             <constraint firstItem="Ba6-us-91a" firstAttribute="leading" secondItem="DY3-Bs-8h2" secondAttribute="leading" constant="32" id="KvJ-lG-fTQ"/>
+                                            <constraint firstItem="phd-aD-1If" firstAttribute="leading" secondItem="DY3-Bs-8h2" secondAttribute="leading" constant="32" id="PGG-EN-21z"/>
                                             <constraint firstItem="PXg-tG-JnX" firstAttribute="top" secondItem="QDG-kZ-uPM" secondAttribute="bottom" constant="16" id="Ryv-Pu-pzZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="phd-aD-1If" secondAttribute="trailing" constant="32" id="TOS-eQ-mGa"/>
                                             <constraint firstItem="PXg-tG-JnX" firstAttribute="leading" secondItem="zfb-Qr-RoV" secondAttribute="leading" constant="14" id="b91-EL-OXe"/>
                                             <constraint firstItem="S8l-U4-ztC" firstAttribute="top" secondItem="ago-Xc-vpG" secondAttribute="top" id="bfD-kE-tdi"/>
                                             <constraint firstItem="QDG-kZ-uPM" firstAttribute="leading" secondItem="DY3-Bs-8h2" secondAttribute="leading" constant="32" id="cni-eh-z3M"/>
                                             <constraint firstAttribute="trailing" secondItem="Ba6-us-91a" secondAttribute="trailing" constant="20" id="cvN-TA-jPz"/>
                                             <constraint firstItem="zfb-Qr-RoV" firstAttribute="top" secondItem="PXg-tG-JnX" secondAttribute="top" id="ehC-bB-jIY"/>
+                                            <constraint firstItem="phd-aD-1If" firstAttribute="top" secondItem="HIU-En-ZQe" secondAttribute="bottom" id="gNw-HG-3U7"/>
                                             <constraint firstItem="HIU-En-ZQe" firstAttribute="top" secondItem="DY3-Bs-8h2" secondAttribute="top" constant="16" id="hcU-mf-G4h"/>
                                             <constraint firstItem="Ba6-us-91a" firstAttribute="top" secondItem="ago-Xc-vpG" secondAttribute="bottom" constant="24" id="iyF-fT-xcv"/>
                                             <constraint firstAttribute="trailing" secondItem="QDG-kZ-uPM" secondAttribute="trailing" constant="32" id="jre-Ei-31C"/>
@@ -3638,7 +3544,6 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                             <constraint firstItem="QDG-kZ-uPM" firstAttribute="top" secondItem="rlW-1W-YqS" secondAttribute="bottom" constant="16" id="umk-pN-NGM"/>
                                             <constraint firstItem="HIU-En-ZQe" firstAttribute="leading" secondItem="DY3-Bs-8h2" secondAttribute="leading" constant="16" id="wEU-WU-ava"/>
                                             <constraint firstItem="S8l-U4-ztC" firstAttribute="leading" secondItem="DY3-Bs-8h2" secondAttribute="leading" constant="32" id="x8w-eS-YlP"/>
-                                            <constraint firstItem="rlW-1W-YqS" firstAttribute="top" secondItem="DY3-Bs-8h2" secondAttribute="top" constant="56" id="xou-rO-qcX"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -3683,6 +3588,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                     </view>
                     <navigationItem key="navigationItem" id="Stz-cr-egJ"/>
                     <connections>
+                        <outlet property="stepCounterLabel" destination="phd-aD-1If" id="Zlo-Ih-5hz"/>
                         <segue destination="mND-9i-sIw" kind="show" identifier="under16Consent" id="bMl-IY-pjw"/>
                     </connections>
                 </viewController>
@@ -3692,11 +3598,9 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cLu-Ng-v4y"/>
-        <segue reference="ALe-An-dsT"/>
-        <segue reference="8rs-ZD-VFl"/>
-        <segue reference="bMl-IY-pjw"/>
-        <segue reference="4eL-1Z-MtW"/>
+        <segue reference="Eya-O4-CPO"/>
+        <segue reference="rHc-rZ-59x"/>
+        <segue reference="XiO-Zp-pOg"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AppPermissions1" width="311" height="188"/>
@@ -3709,6 +3613,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
         <image name="arrow-left" width="24" height="24"/>
         <image name="bell 1" width="40" height="40"/>
         <image name="chev-down" width="12" height="8"/>
+        <image name="globe" width="40" height="40"/>
         <image name="govLogoWhite" width="148" height="77"/>
         <image name="groupHeroShot" width="311" height="188"/>
         <image name="howItWorks" width="311" height="188"/>

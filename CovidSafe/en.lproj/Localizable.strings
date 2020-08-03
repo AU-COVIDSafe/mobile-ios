@@ -1,489 +1,471 @@
-"under_sixteen_content" = "I confirm my parent or guardian consents to the Digital Transformation Agency as data store administrator, under legal determination made by the Secretary of the Australian Government Department of Health collecting:";
-"EmailPlaceholder" = "Enter your email address (required)";
-"data_privacy_content" = "It is important that you read the COVIDSafe *privacy policy* before you register for COVIDSafe.\
-\
-If you are under 16 years of age, your parent/guardian must also read the *privacy policy*.\
-\
-Use of COVIDSafe is completely voluntary. You can install or delete the application at any time. If you delete COVIDSafe, *you may also ask for your information to be deleted* from the secure server.\
-\
-To register for COVIDSafe, you will need to enter a name (or pseudonym), mobile number, age range and postcode.\
-\
-Information you submit when you register, and information about your use of COVIDSafe will be collected and stored on a highly secure server.\
-\
-COVIDSafe will not collect your location information.\
-\
-COVIDSafe will note the time of contact, anonymous ID code of other COVIDSafe users you come into contact with, Bluetooth® signal strength and the phone model of other users, on your device.\
-\
-Other COVIDSafe users you come into contact with will also note your anonymous ID code, the date and time of contact with you, Bluetooth® signal strength and your phone model, on their device.\
-\
-If another user tests positive to COVID-19, they may upload their contact information and a state or territory health official may contact you for contact tracing purposes. \
-\
-Your registration details will only be used or disclosed for contact tracing and for the proper and lawful functioning of COVIDSafe. \
-\
-More information is available at the *Australian Government Department of Health* website.\
-\
-See the COVIDSafe *privacy policy* for further details about your rights about your information and how it will be handled and shared.";
-"data_privacy_content_VO" = "It is important that you read the COVIDSafe privacy policy before you register for COVIDSafe.\
-\
-If you are under 16 years of age, your parent/guardian must also read the privacy policy.\
-\
-Use of COVIDSafe is completely voluntary. You can install or delete the application at any time. If you delete COVIDSafe, you may also ask for your information to be deleted from the secure server.\
-\
-To register for COVIDSafe, you will need to enter a name (or pseudonym), mobile number, age range and postcode.\
-\
-Information you submit when you register, and information about your use of COVIDSafe will be collected and stored on a highly secure server.\
-\
-COVIDSafe will not collect your location information.\
-\
-COVIDSafe will note the time of contact, anonymous ID code of other COVIDSafe users you come into contact with, Bluetooth signal strength and the phone model of other users, on your device.\
-\
-Other COVIDSafe users you come into contact with will also note your anonymous ID code, the date and time of contact with you, Bluetooth signal strength and your phone model, on their device.\
-\
-If another user tests positive to COVID-19, they may upload their contact information and a state or territory health official may contact you for contact tracing purposes. \
-\
-Your registration details will only be used or disclosed for contact tracing and for the proper and lawful functioning of COVIDSafe. \
-\
-More information is available at the Australian Government Department of Health website.\
-\
-See the COVIDSafe privacy policy for further details about your rights about your information and how it will be handled and shared.";
-"upload_step_4_sub_header" = "Unless you consent, your contact data will not be uploaded.\
-\
-If you consent, your contact data will be uploaded and shared with state or territory health officials for contact tracing purposes.\
-\
-State and territory health officials will only be able to access information about your close contacts.\
-\
-Read the COVIDSafe *privacy policy* for further details.";
-"personal_details_name_title" = "Full name (or pseudonym)";
-"under_sixteen_second_paragraph" = "Information about my contact with other COVIDSafe users, if another user I have come into contact with tests positive for COVID-19 and uploads their contact data.";
-"registration_consent_second_paragraph" = "Information about my contact with other COVIDSafe users, if another user I have come into contact with tests positive for COVID-19 and uploads their contact data.";
-"under_sixteen_registration_consent_first_paragraph" = "My registration information.";
-"registration_consent_first_paragraph" = "My registration information.";
-"under_sixteen_first_paragraph" = "My registration information.";
-"registration_consent_content" = "I consent to the Digital Transformation Agency as data store administrator, under legal determination made by the Secretary of the Australian Government Department of Health collecting:";
-"how_it_works_content" = "Bluetooth® signals are used to determine when you're near another COVIDSafe user.\
-\
-Every instance of close contact between you and other COVIDSafe users is noted to create contact data. This information is encrypted and only stored in you the phone.\
-\
-If you test positive to COVID-19 as a COVIDSafe user, a state or territory health official will contact you. They will assist with voluntary upload of your contact data to a highly secure information storage system.\
-\
-State or territory health officials can also contact you if you came in close contact with another COVIDSafe user who tested positive.\
-\
-For more information please refer to the *Help Topics* page.";
-"UILaunchStoryboardName" = "LaunchScreen_en";
-"update_available_dismiss_btn" = "Remind me later";
-"update_available_app_store_btn" = "Go to App Store";
-"update_available_message" = "We’ve been making improvements to COVIDSafe.";
-"update_available_title" = "Update available!";
-"personal_details_name_characters_prompt" = "Please use English characters for your full name. Do not use other languages or symbols like ',' or '?'.";
-"PN_MobileNumber_VOLabel" = "Mobile number";
-"OS1b_TopParagraph_VOLabel" = "Bluetooth signals are used to determine when you're near another COVIDSafe user.\
-Every instance of close contact between you and other COVIDSafe users is noted to create close contact information. This information is encrypted and only stored in your phone.\
-If you test positive to COVID-19 as a COVIDSafe user, a state or territory health official will contact you. They will assist with voluntary upload of your close contact information to a highly secure information storage system.\
-State or territory health officials can also contact you if you came in close contact with another COVIDSafe user who tested positive.\
-For more information please refer to the Help Topics page.";
-"permission_content_iOS_VOLabel" = "COVIDSafe needs Bluetooth enabled to work. By enabling Notifications, you get updates to remind you when COVIDSafe is not active. \
-\
-Select 'Proceed' to enable:";
-"permission_content_iOS_2_VOLabel" = "1. Bluetooth\
-2. Notifications\
-\
-COVIDSafe does not send pairing requests.";
-"NotificationsDisabled_VOLabel" = "Notifications are disabled. You will not receive a notification if COVIDSafe is not active.\
-Change notification settings";
-"NotificationsEnabled_VOLabel" = "Notifications are enabled. You will receive a notification if COVIDSafe is not active.\
-Change notification settings";
-"HelpTopics_VOLabel" = "Help topics. If you have issues or questions about the app.";
-"LatestNews_VOLabel" = "Latest news and updates. Head to aus.gov.au for the latest Coronavirus news.";
-"GetCoronaVirusApp_VOLabel" = "Get the Coronavirus app. Download the government app for the latest news and advice.";
-"UploadData_VOLabel" = "Has a health official contacted you? You can only upload your information if you have tested positive.";
-"ShareCovidSafe_VOLabel" = "Share COVIDSafe. Invite others to help. Together, we're stronger.";
-"PostcodeValidationErrorMessage" = "Please enter a valid Australian postcode.";
-"global_double_tap" = "double tap to edit";
-"global_close" = "Close";
+"action_continue" = "Continue";
+"action_report_an_issue" = "Report an issue";
+"action_upload_done" = "Done";
+"action_verify_invalid_pin" = "Invalid PIN, please ask the health official to send you another PIN.";
+"action_verify_upload_pin" = "Upload my information";
+/* Figma page iOS Screens (05/06) */
+"allow_bluetooth_call" = "Allow COVIDSafe to access Bluetooth®";
+/* Figma page iOS Screens (05/06) */
+"AllowBluetoothOFF" = "Access to Bluetooth®: OFF";
+/* Figma page iOS Screens (05/06) */
+"AllowBluetoothON" = "Access to Bluetooth®: ON";
+/* Figma page iOS Screens (05/06) */
+"BluetoothOFF" = "Bluetooth®: OFF";
+/* Figma page iOS Screens (05/06) */
+"BluetoothOFF_content" = "Turn on your phone’s Bluetooth®. Select ‘Allow New Connections’ if displayed.";
+/* Figma page iOS Screens (05/06) */
+"BluetoothON" = "Bluetooth®: ON";
+"change_language" = "Change language";
+"change_language_content" = "Update your settings to use COVIDSafe in a different language.";
+"consent_button" = "I agree";
+/* Shared Consent Actions */
+"consent_call_for_action" = "Select 'I agree' to confirm consent.";
+"country_region_name_ad" = "Andorra";
+"country_region_name_ae" = "United Arab Emirates";
+/* Countries */
+"country_region_name_af" = "Afghanistan";
+"country_region_name_ag" = "Antigua and Barbuda";
+"country_region_name_ai" = "Anguilla";
+"country_region_name_al" = "Albania";
+"country_region_name_am" = "Armenia";
+"country_region_name_an" = "Netherlands Antilles";
+"country_region_name_ao" = "Angola";
+"country_region_name_ar" = "Argentina";
+"country_region_name_at" = "Austria";
+"country_region_name_au" = "Australia";
+"country_region_name_aw" = "Aruba";
+"country_region_name_az" = "Azerbaijan";
+"country_region_name_ba" = "Bosnia and Herzegovina";
+"country_region_name_bb" = "Barbados";
+"country_region_name_bd" = "Bangladesh";
+"country_region_name_be" = "Belgium";
+"country_region_name_bf" = "Burkina Faso";
+"country_region_name_bg" = "Bulgaria";
+"country_region_name_bh" = "Bahrain";
+"country_region_name_bi" = "Burundi";
+"country_region_name_bj" = "Benin";
+"country_region_name_bm" = "Bermuda";
+"country_region_name_bn" = "Brunei";
+"country_region_name_bo" = "Bolivia";
+"country_region_name_br" = "Brazil";
+"country_region_name_bs" = "Bahamas";
+"country_region_name_bt" = "Bhutan";
+"country_region_name_bw" = "Botswana";
+"country_region_name_by" = "Belarus";
+"country_region_name_bz" = "Belize";
+"country_region_name_ca" = "Canada";
+"country_region_name_cd" = "Democratic Republic of the Congo";
+"country_region_name_cf" = "Central African Republic";
+"country_region_name_cg" = "Republic of the Congo";
+"country_region_name_ch" = "Switzerland";
+"country_region_name_ci" = "Ivory Coast";
+"country_region_name_ck" = "Cook Islands";
+"country_region_name_cl" = "Chile";
+"country_region_name_cm" = "Cameroon";
+"country_region_name_cn" = "China";
+"country_region_name_co" = "Colombia";
+"country_region_name_cr" = "Costa Rica";
+"country_region_name_cu" = "Cuba";
+"country_region_name_cv" = "Cape Verde";
+"country_region_name_cw" = "Curaçao";
+"country_region_name_cy" = "Cyprus";
+"country_region_name_cz" = "Czech Republic";
+"country_region_name_de" = "Germany";
+"country_region_name_dj" = "Djibouti";
+"country_region_name_dk" = "Denmark";
+"country_region_name_dm" = "Dominica";
+"country_region_name_do" = "Dominican Republic";
+"country_region_name_dz" = "Algeria";
+"country_region_name_ec" = "Ecuador";
+"country_region_name_ee" = "Estonia";
+"country_region_name_eg" = "Egypt";
+"country_region_name_es" = "Spain";
+"country_region_name_et" = "Ethiopia";
+"country_region_name_fi" = "Finland";
+"country_region_name_fj" = "Fiji";
+"country_region_name_fo" = "Faroe Islands";
+"country_region_name_fr" = "France";
+"country_region_name_ga" = "Gabon";
+"country_region_name_gb" = "United Kingdom";
+"country_region_name_gd" = "Grenada";
+"country_region_name_ge" = "Georgia";
+"country_region_name_gf" = "French Guiana";
+"country_region_name_gh" = "Ghana";
+"country_region_name_gi" = "Gibraltar";
+"country_region_name_gl" = "Greenland";
+"country_region_name_gm" = "Gambia";
+"country_region_name_gn" = "Guinea";
+"country_region_name_gp" = "Guadeloupe";
+"country_region_name_gq" = "Equatorial Guinea";
+"country_region_name_gr" = "Greece";
+"country_region_name_gt" = "Guatemala";
+"country_region_name_gu" = "Guam";
+"country_region_name_gw" = "Guinea-Bissau";
+"country_region_name_gy" = "Guyana";
+"country_region_name_hk" = "Hong Kong";
+"country_region_name_hn" = "Honduras";
+"country_region_name_hr" = "Croatia";
+"country_region_name_ht" = "Haiti";
+"country_region_name_hu" = "Hungary";
+"country_region_name_id" = "Indonesia";
+"country_region_name_ie" = "Ireland";
+"country_region_name_il" = "Israel";
+"country_region_name_in" = "India";
+"country_region_name_iq" = "Iraq";
+"country_region_name_ir" = "Iran";
+"country_region_name_is" = "Iceland";
+"country_region_name_it" = "Italy";
+"country_region_name_jm" = "Jamaica";
+"country_region_name_jo" = "Jordan";
+"country_region_name_jp" = "Japan";
+"country_region_name_ke" = "Kenya";
+"country_region_name_kg" = "Kyrgyzstan";
+"country_region_name_kh" = "Cambodia";
+"country_region_name_ki" = "Kiribati";
+"country_region_name_km" = "Comoros";
+"country_region_name_kn" = "Saint Kitts and Nevis";
+"country_region_name_kr" = "South Korea";
+"country_region_name_kw" = "Kuwait";
+"country_region_name_ky" = "Cayman Islands";
+"country_region_name_kz" = "Kazakhstan";
+"country_region_name_la" = "Laos";
+"country_region_name_lb" = "Lebanon";
+"country_region_name_lc" = "Saint Lucia";
+"country_region_name_li" = "Liechtenstein";
+"country_region_name_lk" = "Sri Lanka";
+"country_region_name_lr" = "Liberia";
+"country_region_name_ls" = "Lesotho";
+"country_region_name_lt" = "Lithuania";
+"country_region_name_lu" = "Luxembourg";
+"country_region_name_lv" = "Latvia";
+"country_region_name_ly" = "Libya";
+"country_region_name_ma" = "Morocco";
+"country_region_name_mc" = "Monaco";
+"country_region_name_md" = "Moldova";
+"country_region_name_me" = "Montenegro";
+"country_region_name_mg" = "Madagascar";
+"country_region_name_mk" = "Former Yugoslav Republic of Macedonia";
+"country_region_name_ml" = "Mali";
+"country_region_name_mm" = "Myanmar";
+"country_region_name_mn" = "Mongolia";
+"country_region_name_mo" = "Macau";
+"country_region_name_mq" = "Martinique";
+"country_region_name_mr" = "Mauritania";
+"country_region_name_ms" = "Montserrat";
+"country_region_name_mt" = "Malta";
+"country_region_name_mu" = "Mauritius";
+"country_region_name_mv" = "Maldives";
+"country_region_name_mw" = "Malawi";
+"country_region_name_mx" = "Mexico";
+"country_region_name_my" = "Malaysia";
+"country_region_name_mz" = "Mozambique";
+"country_region_name_na" = "Namibia";
+"country_region_name_nc" = "New Caledonia";
+"country_region_name_ne" = "Niger";
+"country_region_name_ng" = "Nigeria";
+"country_region_name_ni" = "Nicaragua";
+"country_region_name_nl" = "Netherlands";
+"country_region_name_no" = "Norway";
+"country_region_name_np" = "Nepal";
+"country_region_name_nz" = "New Zealand";
+"country_region_name_om" = "Oman";
+"country_region_name_pa" = "Panama";
+"country_region_name_pe" = "Peru";
+"country_region_name_pg" = "Papua New Guinea";
+"country_region_name_ph" = "Philippines";
+"country_region_name_pk" = "Pakistan";
+"country_region_name_pl" = "Poland";
+"country_region_name_pr" = "Puerto Rico";
+"country_region_name_ps" = "Palestinian Territories";
+"country_region_name_pt" = "Portugal";
+"country_region_name_pw" = "Palau";
+"country_region_name_py" = "Paraguay";
+"country_region_name_qa" = "Qatar";
+"country_region_name_re" = "Reunion Island";
+"country_region_name_ro" = "Romania";
+"country_region_name_rs" = "Serbia";
+"country_region_name_ru" = "Russia";
+"country_region_name_rw" = "Rwanda";
+"country_region_name_sa" = "Saudi Arabia";
+"country_region_name_sb" = "Solomon Islands";
+"country_region_name_sc" = "Seychelles";
+"country_region_name_sd" = "Sudan";
+"country_region_name_se" = "Sweden";
+"country_region_name_sg" = "Singapore";
+"country_region_name_si" = "Slovenia";
+"country_region_name_sk" = "Slovakia";
+"country_region_name_sl" = "Sierra Leone";
+"country_region_name_sn" = "Senegal";
+"country_region_name_so" = "Somalia";
+"country_region_name_sr" = "Suriname";
+"country_region_name_ss" = "South Sudan";
+"country_region_name_st" = "Sao Tome and Principe";
+"country_region_name_sv" = "El Salvador";
+"country_region_name_sz" = "Swaziland";
+"country_region_name_tc" = "Turks and Caicos Islands";
+"country_region_name_td" = "Chad";
+"country_region_name_tg" = "Togo";
+"country_region_name_th" = "Thailand";
+"country_region_name_tj" = "Tajikistan";
+"country_region_name_tl" = "Timor-Leste";
+"country_region_name_tm" = "Turkmenistan";
+"country_region_name_tn" = "Tunisia";
+"country_region_name_to" = "Tonga";
+"country_region_name_tr" = "Turkey";
+"country_region_name_tt" = "Trinidad and Tobago";
+"country_region_name_tw" = "Taiwan";
+"country_region_name_tz" = "Tanzania";
+"country_region_name_ua" = "Ukraine";
+"country_region_name_ug" = "Uganda";
+"country_region_name_us" = "United States";
+"country_region_name_uy" = "Uruguay";
+"country_region_name_uz" = "Uzbekistan";
+"country_region_name_vc" = "Saint Vincent and the Grenadines";
+"country_region_name_ve" = "Venezuela";
+"country_region_name_vg" = "Virgin Islands, British";
+"country_region_name_vi" = "Virgin Islands, US";
+"country_region_name_vn" = "Vietnam";
+"country_region_name_vu" = "Vanuatu";
+"country_region_name_ws" = "Samoa";
+"country_region_name_ye" = "Yemen";
+"country_region_name_za" = "South Africa";
+"country_region_name_zm" = "Zambia";
+"country_region_name_zw" = "Zimbabwe";
+"data_privacy_button" = "Next";
+"data_privacy_content" = "It is important that you read the COVIDSafe *privacy policy* before you register for COVIDSafe.\n\nIf you are under 16 years of age, your parent/guardian must also read the *privacy policy*.\n\nUse of COVIDSafe is completely voluntary. You can install or delete the application at any time. If you delete COVIDSafe, *you may also ask for your information to be deleted* from the secure server.\n\nTo register for COVIDSafe, you will need to enter a name (or pseudonym), mobile number, age range and postcode.\n\nInformation you submit when you register, and information about your use of COVIDSafe will be collected and stored on a highly secure server.\n\nCOVIDSafe will not collect your location information.\n\nCOVIDSafe will note the time of contact, anonymous ID code of other COVIDSafe users you come into contact with, Bluetooth® signal strength and the phone model of other users, on your device.\n\nOther COVIDSafe users you come into contact with will also note your anonymous ID code, the date and time of contact with you, Bluetooth® signal strength and your phone model, on their device.\n\nIf another user tests positive to COVID-19, they may upload their contact information and a state or territory health official may contact you for contact tracing purposes. \n\nYour registration details will only be used or disclosed for contact tracing and for the proper and lawful functioning of COVIDSafe. \n\nMore information is available at the *Australian Government Department of Health* website.\n\nSee the COVIDSafe *privacy policy* for further details about your rights about your information and how it will be handled and shared.";
+"data_privacy_content_VO" = "It is important that you read the COVIDSafe privacy policy before you register for COVIDSafe.\n\nIf you are under 16 years of age, your parent/guardian must also read the privacy policy.\n\nUse of COVIDSafe is completely voluntary. You can install or delete the application at any time. If you delete COVIDSafe, you may also ask for your information to be deleted from the secure server.\n\nTo register for COVIDSafe, you will need to enter a name (or pseudonym), mobile number, age range and postcode.\n\nInformation you submit when you register, and information about your use of COVIDSafe will be collected and stored on a highly secure server.\n\nCOVIDSafe will not collect your location information.\n\nCOVIDSafe will note the time of contact, anonymous ID code of other COVIDSafe users you come into contact with, Bluetooth signal strength and the phone model of other users, on your device.\n\nOther COVIDSafe users you come into contact with will also note your anonymous ID code, the date and time of contact with you, Bluetooth signal strength and your phone model, on their device.\n\nIf another user tests positive to COVID-19, they may upload their contact information and a state or territory health official may contact you for contact tracing purposes. \n\nYour registration details will only be used or disclosed for contact tracing and for the proper and lawful functioning of COVIDSafe. \n\nMore information is available at the Australian Government Department of Health website.\n\nSee the COVIDSafe privacy policy for further details about your rights about your information and how it will be handled and shared.";
+/* OnBoarding Data Privacy */
+"data_privacy_headline" = "Registration and privacy";
+"dialog_error_uploading_message" = "An error occurred while uploading your information, please try again.";
+"dialog_error_uploading_negative" = "Cancel";
+"dialog_error_uploading_positive" = "Try again";
+"dialog_uploading_message" = "Your COVIDSafe information is currently being uploaded.\n\nPlease do not close the app.";
+"done_success" = "Done";
+"enter_number_button" = "Get PIN";
+"enter_number_content" = "We’ll send you a 6-digit PIN to verify your mobile number.";
+"enter_number_headline" = "Enter your mobile number";
+"enter_number_relative" = "Trying to register on behalf of a friend or relative?\n\nThey will need to register using their own device and phone number so that COVIDSafe can work for them. ";
+"enter_pin_button" = "Verify";
+/* OnBoarding Enter PIN */
+"enter_pin_headline" = "Enter the PIN sent to %s %s";
+"enter_pin_resend_pin" = "Resend PIN";
+"enter_pin_timer_expire" = "Your PIN will expire in";
+"enter_pin_wrong_number" = "Is this mobile number wrong?";
+/* Figma page Android Screens (05/06) */
+"Enter_your_mobile_number_label" = "Enter your mobile number";
 "global_back" = "Back";
+"global_close" = "Close";
+"global_double_tap" = "double tap to edit";
 "global_OK" = "OK";
+"home_app_permission_status_subtitle" = "COVIDSafe won't work without the right settings. ";
+"home_app_permission_status_title" = "Check your settings";
+"home_data_uploaded_message" = "Help stop the spread of COVID-19 and track your symptoms.";
+"home_header_active_no_action_required" = "No further action is required.";
+/* Home */
+"home_header_active_title" = "COVIDSafe is active.";
+/* Home */
+"home_header_active_title_thanks" = "Thanks, COVIDSafe is now active.";
+"home_header_inactive_check_your_permissions" = "Check your settings.";
+"home_header_inactive_title" = "COVIDSafe is not active.";
+"home_header_uploaded_on_date_ios" = "Your information was uploaded on %@.";
+"home_set_complete_external_link_app_content" = "Download the government app for the latest news and advice.";
+"home_set_complete_external_link_app_title" = "Get the Coronavirus app";
+"home_set_complete_external_link_been_contacted_content" = "You can only upload your information if you have tested positive.";
+"home_set_complete_external_link_been_contacted_title" = "Has a health official contacted you?";
+"home_set_complete_external_link_help_topics_content" = "If you have issues or questions about the app.";
+"home_set_complete_external_link_help_topics_title" = "Help topics";
+"home_set_complete_external_link_news_content" = "Head to aus.gov.au for the latest Coronavirus news.";
+"home_set_complete_external_link_news_title" = "Latest news and updates";
+"home_set_complete_external_link_news_url" = "https://www.australia.gov.au";
+/* Figma page iOS Screens (05/06) */
+"home_set_complete_external_link_notifications_content_iOS_off" = "You will not receive any notifications if COVIDSafe is not active.";
+/* Figma page iOS Screens (05/06) */
+"home_set_complete_external_link_notifications_title_iOS" = "Notifications are enabled";
+/* Figma page iOS Screens (05/06) */
+"home_set_complete_external_link_notifications_title_iOS_off" = "Notifications are disabled";
+"home_set_complete_external_link_self_isolation_register_url" = "https://covid-form.service.gov.au";
+"home_set_complete_external_link_share_content" = "Invite others to help. Together, we’re stronger.";
+"home_set_complete_external_link_share_title" = "Share COVIDSafe";
+"home_setup_help" = "Help";
 "home_version_number_ios" = "Version %@, Build %@";
+"how_it_works_button" = "Next";
+"how_it_works_content" = "Bluetooth® signals are used to determine when you're near another COVIDSafe user.\n\nEvery instance of close contact between you and other COVIDSafe users is noted to create contact data. This information is encrypted and only stored in your phone.\n\nIf you test positive to COVID-19 as a COVIDSafe user, a state or territory health official will contact you. They will assist with voluntary upload of your contact data to a highly secure information storage system.\n\nState or territory health officials can also contact you if you came in close contact with another COVIDSafe user who tested positive.\n\nFor more information please refer to the *Help Topics* page.";
+/* OnBoarding How it works */
+"how_it_works_headline" = "How COVIDSafe works";
+"improve_heading" = "Improve the performance of COVIDSafe";
+"internet_connection_content" = "Connect to the internet to ensure you get notified of issues and updates.";
+"internet_connection_heading" = "No internet connection";
+"internet_screen_content" = "COVIDSafe needs to connect to the server from time to time to ensure it can identify issues with the app.\n\nConnecting to the internet ensures you receive notifications on:";
+"internet_screen_content_1" = "how to fix issues and set COVIDSafe active again";
+"internet_screen_content_2" = "when a new version update is available";
+"internet_screen_heading" = "Connect to the internet to improve the performance of COVIDSafe";
+"intro_button" = "I want to help";
+"intro_content" = "COVIDSafe has been developed by the Australian Government to help keep the community safe from the spread of coronavirus.\n\nCOVIDSafe will securely note contact that you have with other users of the app. This will allow state and territory health officials to contact you, if you have been in close contact with someone who has tested positive to the virus.\n\nTogether we can help stop the spread and stay healthy.";
+/* OnBoarding Intro */
+"intro_headline" = "Together we can stop the spread of COVID-19";
+/* Class = "UILabel"; text = "Help stop the spread\nand save lives."; ObjectID = "Cme-9F-deB"; */
+"IntroLabel" = "Help stop the spread\nand save lives.";
+"invalid_australian_phone_number_error_prompt" = "Australian mobile numbers contain a maximum of 10 digits.";
+"invalid_norfolk_island_phone_number_error_prompt" = "Mobile numbers in Norfolk Island contain 5 to 6 digits.";
+/* Splash Screen */
+"migration_in_progress" = " COVIDSafe update in progress. \n\n Please make sure you phone is not switched off until the update is complete.";
+/* Figma page Android Screens (05/06) */
+"norfolk_hint" = "For example: 51234";
+"notification_update_content" = "Update your app to access the latest improvements.";
+"notification_update_heading" = "COVIDSafe update available ";
+/* Figma page iOS Screens (05/06) */
+"NotificationsBlurbLink" = "Change notifications settings";
+/* Figma page iOS Screens (05/06) */
 "NotificationsDisabledBlurb" = "You will not receive a notification if COVIDSafe is not active.\nChange notifications settings";
+/* Figma page iOS Screens (05/06) */
 "NotificationsEnabledBlurb" = "You will receive a notification if COVIDSafe is not active.\nChange notifications settings";
+"options_for_australia" = "Options for Australia";
+"permission_button" = "Proceed";
+/* Figma page iOS Screens (05/06) */
+"permission_content_iOS" = "COVIDSafe needs Bluetooth® enabled to work. By enabling Notifications, you get updates to remind you when COVIDSafe is not active. \n\nSelect ‘Proceed' to enable:";
+/* Figma page iOS Screens (05/06) */
+"permission_content_iOS_2" = "1. Bluetooth®\n2. Notifications\n\nCOVIDSafe does not send pairing requests.";
+/* OnBoarding Permission */
+"permission_headline" = "App settings";
+"permission_success_button" = "Done";
+/* OnBoarding Permission Success */
+"permission_success_headline" = "You've successfully registered";
+"permission_success_warning" = "Keep push notifications on for COVIDSafe so we can notify you quickly if the app isn't working properly.";
+"personal_details_age_content_description" = "Select age range";
+"personal_details_age_error_prompt" = "Please select your age range.";
+"personal_details_age_title" = "Age range (select)";
+"personal_details_button" = "Continue";
+"personal_details_dialog_ok" = "Select";
+/* OnBoarding Personal details */
+"personal_details_headline" = "Enter your details";
+"personal_details_name_characters_prompt" = "Please use English characters for your full name. Do not use other languages or symbols like ',' or '?'.";
+"personal_details_name_error_prompt" = "Please enter your full name.";
+"personal_details_name_title" = "Full name (or pseudonym)";
+"personal_details_post_code" = "Postcode in Australia";
+"personal_details_post_code_error_prompt" = "Your Australian postcode number must contain 4 digits. ";
 "PINNumber_VO_Label" = "PIN number";
-"newFeedback_invalidEmail_errorMessage" = "Please enter a valid email address!";
-"newFeedback_noMessage_errorMessage" = "Tell us something before sending.";
-"newFeedback_send_errorMessage" = "Error Sending Feedback";
-"newFeedback_deleteScreenshot_actionTitle" = "Delete Screenshot";
-"newFeedback_deleteScreenshotConfirmation_message" = "This screenshot will be deleted permanently.";
-"newFeedbackFlow_navigationTitle" = "Report an issue";
-"entryPrompt_newFeedback_button_title" = "New Feedback";
+/* Figma page iOS Screens (05/06) */
+"PN_BluetoothStatusBody" = "Make sure it’s active before you leave home and when in public places by enabling Bluetooth®.";
+/* Figma page iOS Screens (05/06) */
+"PN_BluetoothStatusTitle" = "COVIDSafe is not active";
+"PN_MobileNumber_VOLabel" = "Mobile number";
+/* Figma page iOS Screens (05/06) */
+"PN_ReminderBody" = "Open COVIDSafe to ensure it is running.";
+/* Figma page iOS Screens (05/06) */
+"PN_ReminderTitle" = "No encounters detected for 48 hours";
+"PostcodeValidationErrorMessage" = "Please enter a valid Australian postcode.";
+"registration_consent_content" = "I consent to the Digital Transformation Agency as data store administrator, under legal determination made by the Secretary of the Australian Government Department of Health collecting:";
+"registration_consent_first_paragraph" = "My registration information.";
+/* Onboarding Registration Consent */
+"registration_consent_headline" = "Registration consent";
+"registration_consent_second_paragraph" = "Information about my contact with other COVIDSafe users, if another user I have come into contact with tests positive for COVID-19 and uploads their contact data.";
+/* OnBoarding Enter Number */
+"select_country_or_region" = "Select country or region";
+/* Figma page Android Screens (05/06) */
+"Select_country_or_region_headline" = "Select country or region";
+"share_this_app_content" = "Join me in stopping the spread of COVID-19! Download COVIDSafe, an app from the Australian Government. #COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
+"stepCounter" = "Step %d of %d";
+"UILaunchStoryboardName" = "LaunchScreen_en";
+"under_sixteen_content" = "I confirm my parent or guardian consents to the Digital Transformation Agency as data store administrator, under legal determination made by the Secretary of the Australian Government Department of Health collecting:";
+"under_sixteen_first_paragraph" = "My registration information.";
+/* OnBoarding Under Sixteen */
+"under_sixteen_headline" = "You need the consent of your parent/guardian to proceed";
+/* Figma page Android Screens (05/06) */
+"under_sixteen_registration_consent_first_paragraph" = "My registration information.";
+"under_sixteen_second_paragraph" = "Information about my contact with other COVIDSafe users, if another user I have come into contact with tests positive for COVID-19 and uploads their contact data.";
+/* Figma page Android Screens (05/06) */
+"under-sixteen_consent_call_for_action" = "Select 'I agree' to confirm consent. ";
+"update_available_app_store_btn" = "Go to App Store";
+"update_available_dismiss_btn" = "Remind me later";
+"update_available_message_ios" = "We’ve been making improvements to COVIDSafe. Update via App Store.";
+"update_available_title" = "Update available!";
+"upload_answer_no" = "No";
+/* Upload flow */
+"upload_answer_yes" = "Yes";
+"upload_consent_button" = "I agree";
+"upload_failed" = "Upload failed";
+"upload_finished_header" = "Thank you for helping to stop the spread of COVID-19!";
+"upload_finished_sub_header" = "You have successfully uploaded your information to the COVIDSafe highly secure storage system.\n\nState or territory health officials will notify other COVIDSafe users that have recorded instances of close contact with you. Your identity will remain anonymous to other users.";
+"upload_step_1_body" = "Only if you test positive to COVID-19 will a state or territory health official contact you to assist with voluntary upload of your information.\n\nOnce you press ‘Yes’ you’ll need to provide consent to upload your information. ";
+"upload_step_1_header" = "Is a health official asking you to upload your information?";
+"upload_step_4_header" = " Upload consent";
+"upload_step_4_sub_header" = "Unless you consent, your contact data will not be uploaded.\n\nIf you consent, your contact data will be uploaded and shared with state or territory health officials for contact tracing purposes.\n\nState and territory health officials will only be able to access information about your close contacts.\n\nRead the COVIDSafe *privacy policy* for further details.";
+"upload_step_verify_pin_header" = "Upload your information";
+"upload_step_verify_pin_sub_header" = "A state or territory health official will send a PIN to your device via text message. Enter it below to upload your information.";
+"us_consent_button" = "I agree";
+"wrong_ping_number" = " Wrong PIN entered";
+"country_region_name_au2" = "Norfolk Island";
+"AllowBluetoothOFF_VOLabel" = "Access to Bluetooth: OFF Allow COVIDSafe to access Bluetooth";
+"AllowBluetoothON_VOLabel" = "Access to Bluetooth: ON";
+"BluetoothOFF_VOLabel" = "Bluetooth: OFF Turn on your phone's Bluetooth. Select 'Allow New Connections' if displayed.";
+"BluetoothON_VOLabel" = "Bluetooth: ON";
+"CodeHasExpired" = "Your code has expired.";
+/* details */
+"Done" = "Done";
+/* Feedback */
+"EmailPlaceholder" = "Enter your email address (required)";
+/* Phone number and PIN */
+"EnterPhoneReVerify" = "Enter your mobile number to re-verify";
+"EnterPINSent" = "Enter the PIN sent to %@";
+/* Message for prompt that user sees when opening feeback. Prompt asks user if he/she would like to send new feedback. */
 "entryPrompt_alert_message" = "Hello mate, how would you like to proceed?";
+/* Title for prompt that user sees when opening feeback. Prompt asks user if he/she would like to send new feedback. */
 "entryPrompt_alert_title" = "Feedback Box";
-"global_success_indication_title" = "Success";
-"global_sending_indication_title" = "Sending";
-"global_send_button_title" = "Send";
-"global_cancel_button_title" = "Cancel";
-"UploadFailedErrorMessage" = "Please try again later.";
-"UploadFailed" = "Upload failed. Please try again later.";
-"InformationUploaded" = "Your information was uploaded on %@";
-"PairingRequestsInfoUnderline" = "pairing requests";
-"PairingRequestsInfo" = "COVIDSafe does not send pairing requests.";
-"OS2b_Item3Underline" = "Learn more";
-"OS2b_Item3" = "3. COVIDSafe does not send pairing requests. Learn more.";
-"OS2b_Item2_VOLabel" = "2. Bluetooth should be kept ON.";
-"OS2b_Item2" = "2. Bluetooth® should be kept ON.";
-"OS2b_Item1" = "1. When you leave home, keep your phone with you and make sure COVIDSafe is active.";
-"IssueThankYou" = "Thank you! We have received your feedback.";
-"IssueFooter" = "We may contact you for further details about your feedback. Your email address won’t be used for any other purpose.";
-"IssueDescPlaceholder" = "Please describe the issue";
+/* Title for button that launches new feedback flow. */
+"entryPrompt_newFeedback_button_title" = "New Feedback";
 "FoundIssueWithApp" = "Found an issue in the COVIDSafe app?";
-"ReportAnIssue" = "Report an issue";
+/* *** Feedback localised strings *** */
+"global_cancel_button_title" = "Cancel";
+"global_send_button_title" = "Send";
+"global_sending_indication_title" = "Sending";
+"global_success_indication_title" = "Success";
+/* upload */
+"InformationUploaded" = "Your information was uploaded on %@";
+"InvalidOTP" = "Must be a 6-digit code";
+"IssueDescPlaceholder" = "Please describe the issue";
+"IssueFooter" = "We may contact you for further details about your feedback. Your email address won’t be used for any other purpose.";
+"IssueThankYou" = "Thank you! We have received your feedback.";
+/* Delete screenshot action sheet action button title. */
+"newFeedback_deleteScreenshot_actionTitle" = "Delete Screenshot";
+/* Messsage shown to user asking to confirm screenshot deletion. */
+"newFeedback_deleteScreenshotConfirmation_message" = "This screenshot will be deleted permanently.";
+"newFeedback_invalidEmail_errorMessage" = "Please enter a valid email address!";
+/* Error message displayed to users when feedback has empty description */
+"newFeedback_noMessage_errorMessage" = "Tell us something before sending.";
+/* Error message displayed to users when feedback fails to send. */
+"newFeedback_send_errorMessage" = "Error Sending Feedback";
+/* Navigation Bar title shown during new feedback flow. */
+"newFeedbackFlow_navigationTitle" = "Report an issue";
+"Next" = "Next";
+/* registration succcess */
+"OS2b_Item1" = "1. When you leave home, keep your phone with you and make sure COVIDSafe is active.";
+"OS2b_Item2" = "2. Bluetooth® should be kept ON.";
+"OS2b_Item2_VOLabel" = "2. Bluetooth should be kept ON.";
+"OS2b_Item3" = "3. COVIDSafe does not send pairing requests. Learn more.";
+"OS2b_Item3Underline" = "Learn more";
+/* home */
+"PairingRequestsInfo" = "COVIDSafe does not send pairing requests.";
+"PairingRequestsInfoUnderline" = "pairing requests";
 "PhoneNumberFormatErrorMessage" = "Please enter a mobile phone number.";
 "PhoneNumberFormatErrorTitle" = "Wrong number format";
 "PhoneVerificationErrorMessage" = "Please check your details and try again.";
 "PhoneVerificationErrorTitle" = "Error verifying phone number";
-"InvalidOTP" = "Must be a 6-digit code";
-"CodeHasExpired" = "Your code has expired.";
-"ReceivePinIssue" = "Issues receiving your PIN?";
 "PINWillExpire" = "Your PIN will expire in %@";
-"EnterPINSent" = "Enter the PIN sent to %@";
-"EnterPhoneReVerify" = "Enter your mobile number to re-verify";
-"ValidationError" = "Validation error";
-"Next" = "Next";
-"Done" = "Done";
-"BluetoothOFF_VOLabel" = "Bluetooth: OFF Turn on your phone's Bluetooth. Select 'Allow New Connections' if displayed.";
-"BluetoothON_VOLabel" = "Bluetooth: ON";
-"AllowBluetoothOFF_VOLabel" = "Access to Bluetooth: OFF Allow COVIDSafe to access Bluetooth";
-"AllowBluetoothON_VOLabel" = "Access to Bluetooth: ON";
+"ReceivePinIssue" = "Issues receiving your PIN?";
+/* help */
+"ReportAnIssue" = "Report an issue";
+/* VO */
 "SelectedCountryTemplate" = "(+%@) %@ is selected";
-"upload_consent_button" = "I agree";
-"home_header_uploaded_on_date_ios" = "Your information was uploaded on %@.";
-"us_consent_button" = "I agree";
-"IntroLabel" = "Help stop the spread\
-and save lives.";
-"BluetoothOFF_content" = "Turn on your phone’s Bluetooth®. Select ‘Allow New Connections’ if displayed.";
-"personal_details_age_error_prompt" = "Please select your age range.";
-"invalid_norfolk_island_phone_number_error_prompt" = "Mobile numbers in Norfolk Island contain 5 to 6 digits.";
-"BluetoothON" = "Bluetooth®: ON";
-"BluetoothOFF" = "Bluetooth®: OFF";
-"home_set_complete_external_link_notifications_content_iOS_off" = "You will not receive any notifications if COVIDSafe is not active.";
-"home_set_complete_external_link_notifications_title_iOS_off" = "Notifications are disabled";
-"allow_bluetooth_call" = "Allow COVIDSafe to access Bluetooth®";
-"AllowBluetoothON" = "Access to Bluetooth®: ON";
-"AllowBluetoothOFF" = "Access to Bluetooth®: OFF";
-"PN_ReminderBody" = "Open COVIDSafe to ensure it is running.";
-"PN_ReminderTitle" = "No encounters detected for 48 hours";
-"PN_BluetoothStatusBody" = "Make sure it’s active before you leave home and when in public places by enabling Bluetooth®.";
-"PN_BluetoothStatusTitle" = "COVIDSafe is not active";
-"NotificationsBlurbLink" = "Change notifications settings";
-"home_set_complete_external_link_notifications_title_iOS" = "Notifications are enabled";
-"permission_content_iOS_2" = "1. Bluetooth®\
-2. Notifications\
-\
-COVIDSafe does not send pairing requests.";
-"permission_content_iOS" = "COVIDSafe needs Bluetooth® enabled to work. By enabling Notifications, you get updates to remind you when COVIDSafe is not active. \
-\
-Select ‘Proceed' to enable:";
-"enter_number_content" = "We’ll send you a 6-digit PIN to verify your mobile number.";
-"home_header_inactive_check_your_permissions" = "Check your settings.";
-"home_set_complete_external_link_share_content" = "Invite others to help. Together, we’re stronger.";
-"home_header_active_no_action_required" = "No further action is required.";
-"enter_pin_timer_expire" = "Your PIN will expire in &#160;";
-"norfolk_hint" = "For example: 51234";
-"Enter_your_mobile_number_label" = "Enter your mobile number";
-"Select_country_or_region_headline" = "Select country or region";
-"under-sixteen_consent_call_for_action" = "Select 'I agree' to confirm consent. ";
-"country_region_name_sd" = "Sudan";
-"country_region_name_ir" = "Iran";
-"country_region_name_cw" = "Curaçao";
-"country_region_name_cu" = "Cuba";
-"country_region_name_au2" = "Norfolk Island";
-"upload_failed" = "Upload failed";
-"action_upload_done" = "Continue";
-"action_continue" = "Continue";
-"upload_finished_sub_header" = "You have successfully uploaded your information to the COVIDSafe highly secure storage system.\
-\
-State or territory health officials will notify other COVIDSafe users that have recorded instances of close contact with you. Your identity will remain anonymous to other users.";
-"upload_finished_header" = "Thank you for helping to stop the spread of COVID-19!";
-"action_verify_invalid_pin" = "Invalid PIN, please ask the health official to send you another PIN.";
-"action_verify_upload_pin" = "Upload my information";
-"upload_step_verify_pin_sub_header" = "A state or territory health official will send a PIN to your device via text message. Enter it below to upload your information.";
-"upload_step_verify_pin_header" = "Upload your information";
-"upload_step_4_header" = " Upload consent";
-"upload_step_1_body" = "Only if you test positive to COVID-19 will a state or territory health official contact you to assist with voluntary upload of your information.\
-\
-Once you press ‘Yes’ you’ll need to provide consent to upload your information. ";
-"upload_step_1_header" = "Is a health official asking you to upload your information?";
-"upload_answer_no" = "No";
-"upload_answer_yes" = "Yes";
-"action_report_an_issue" = "Report an issue";
-"home_set_complete_external_link_help_topics_content" = "If you have issues or questions about the app.";
-"home_set_complete_external_link_help_topics_title" = "Help topics";
-"home_set_complete_external_link_been_contacted_content" = "You can only upload your information if you have tested positive.";
-"home_set_complete_external_link_been_contacted_title" = "Has a health official contacted you?";
-"home_set_complete_external_link_app_content" = "Download the government app for the latest news and advice.";
-"home_set_complete_external_link_app_title" = "Get the Coronavirus app";
-"home_set_complete_external_link_news_content" = "Head to aus.gov.au for the latest Coronavirus news.";
-"home_set_complete_external_link_self_isolation_register_url" = "https://covid-form.service.gov.au";
-"home_set_complete_external_link_news_url" = "https://www.australia.gov.au";
-"home_set_complete_external_link_news_title" = "Latest news and updates";
-"home_set_complete_external_link_share_title" = "Share COVIDSafe";
-"home_data_uploaded_message" = "Help stop the spread of COVID-19 and track your symptoms.";
-"home_app_permission_status_subtitle" = "COVIDSafe won't work without the right settings. ";
-"home_app_permission_status_title" = "Check your settings";
-"home_setup_help" = "Help";
-"home_header_inactive_title" = "COVIDSafe is not active.";
-"home_header_active_title" = "COVIDSafe is active.";
-"permission_success_button" = "Continue";
-"permission_success_warning" = "Keep push notifications on for COVIDSafe so we can notify you quickly if the app isn't working properly.";
-"permission_success_headline" = "You've successfully registered";
-"permission_button" = "Proceed";
-"permission_headline" = "App settings";
-"enter_pin_button" = "Verify";
-"enter_pin_resend_pin" = "Resend PIN";
-"wrong_ping_number" = " Wrong PIN entered";
-"enter_pin_wrong_number" = "Is this mobile number wrong?";
-"enter_pin_headline" = "Enter the PIN sent to %s %s";
-"country_region_name_zw" = "Zimbabwe";
-"country_region_name_zm" = "Zambia";
-"country_region_name_ye" = "Yemen";
-"country_region_name_vi" = "Virgin Islands, US";
-"country_region_name_vg" = "Virgin Islands, British";
-"country_region_name_vn" = "Vietnam";
-"country_region_name_ve" = "Venezuela";
-"country_region_name_vu" = "Vanuatu";
-"country_region_name_uz" = "Uzbekistan";
-"country_region_name_uy" = "Uruguay";
-"country_region_name_us" = "United States";
-"country_region_name_gb" = "United Kingdom";
-"country_region_name_ae" = "United Arab Emirates";
-"country_region_name_ua" = "Ukraine";
-"country_region_name_ug" = "Uganda";
-"country_region_name_tc" = "Turks and Caicos Islands";
-"country_region_name_tm" = "Turkmenistan";
-"country_region_name_tr" = "Turkey";
-"country_region_name_tn" = "Tunisia";
-"country_region_name_tt" = "Trinidad and Tobago";
-"country_region_name_to" = "Tonga";
-"country_region_name_tg" = "Togo";
-"country_region_name_tl" = "Timor-Leste";
-"country_region_name_th" = "Thailand";
-"country_region_name_tz" = "Tanzania";
-"country_region_name_tj" = "Tajikistan";
-"country_region_name_tw" = "Taiwan";
-"country_region_name_ch" = "Switzerland";
-"country_region_name_se" = "Sweden";
-"country_region_name_sz" = "Swaziland";
-"country_region_name_sr" = "Suriname";
-"country_region_name_lk" = "Sri Lanka";
-"country_region_name_es" = "Spain";
-"country_region_name_ss" = "South Sudan";
-"country_region_name_kr" = "South Korea";
-"country_region_name_za" = "South Africa";
-"country_region_name_so" = "Somalia";
-"country_region_name_sb" = "Solomon Islands";
-"country_region_name_si" = "Slovenia";
-"country_region_name_sk" = "Slovakia";
-"country_region_name_sg" = "Singapore";
-"country_region_name_sl" = "Sierra Leone";
-"country_region_name_sc" = "Seychelles";
-"country_region_name_rs" = "Serbia";
-"country_region_name_sn" = "Senegal";
-"country_region_name_sa" = "Saudi Arabia";
-"country_region_name_st" = "Sao Tome and Principe";
-"country_region_name_ws" = "Samoa";
-"country_region_name_vc" = "Saint Vincent and the Grenadines";
-"country_region_name_lc" = "Saint Lucia";
-"country_region_name_kn" = "Saint Kitts and Nevis";
-"country_region_name_rw" = "Rwanda";
-"country_region_name_ru" = "Russia";
-"country_region_name_ro" = "Romania";
-"country_region_name_re" = "Reunion Island";
-"country_region_name_cg" = "Republic of the Congo";
-"country_region_name_qa" = "Qatar";
-"country_region_name_pr" = "Puerto Rico";
-"country_region_name_pt" = "Portugal";
-"country_region_name_pl" = "Poland";
-"country_region_name_ph" = "Philippines";
-"country_region_name_pe" = "Peru";
-"country_region_name_py" = "Paraguay";
-"country_region_name_pg" = "Papua New Guinea";
-"country_region_name_pa" = "Panama";
-"country_region_name_ps" = "Palestinian Territories";
-"country_region_name_pw" = "Palau";
-"country_region_name_pk" = "Pakistan";
-"country_region_name_om" = "Oman";
-"country_region_name_no" = "Norway";
-"country_region_name_ng" = "Nigeria";
-"country_region_name_ne" = "Niger";
-"country_region_name_ni" = "Nicaragua";
-"country_region_name_nz" = "New Zealand";
-"country_region_name_nc" = "New Caledonia";
-"country_region_name_an" = "Netherlands Antilles";
-"country_region_name_nl" = "Netherlands";
-"country_region_name_np" = "Nepal";
-"country_region_name_na" = "Namibia";
-"country_region_name_mm" = "Myanmar";
-"country_region_name_mz" = "Mozambique";
-"country_region_name_ma" = "Morocco";
-"country_region_name_ms" = "Montserrat";
-"country_region_name_me" = "Montenegro";
-"country_region_name_mn" = "Mongolia";
-"country_region_name_mc" = "Monaco";
-"country_region_name_md" = "Moldova";
-"country_region_name_mx" = "Mexico";
-"country_region_name_mu" = "Mauritius";
-"country_region_name_mr" = "Mauritania";
-"country_region_name_mq" = "Martinique";
-"country_region_name_mt" = "Malta";
-"country_region_name_ml" = "Mali";
-"country_region_name_mv" = "Maldives";
-"country_region_name_my" = "Malaysia";
-"country_region_name_mw" = "Malawi";
-"country_region_name_mg" = "Madagascar";
-"country_region_name_mk" = "Former Yugoslav Republic of Macedonia";
-"country_region_name_mo" = "Macau";
-"country_region_name_lu" = "Luxembourg";
-"country_region_name_lt" = "Lithuania";
-"country_region_name_li" = "Liechtenstein";
-"country_region_name_ly" = "Libya";
-"country_region_name_lr" = "Liberia";
-"country_region_name_ls" = "Lesotho";
-"country_region_name_lb" = "Lebanon";
-"country_region_name_lv" = "Latvia";
-"country_region_name_la" = "Laos";
-"country_region_name_kg" = "Kyrgyzstan";
-"country_region_name_kw" = "Kuwait";
-"country_region_name_ki" = "Kiribati";
-"country_region_name_ke" = "Kenya";
-"country_region_name_kz" = "Kazakhstan";
-"country_region_name_jo" = "Jordan";
-"country_region_name_jp" = "Japan";
-"country_region_name_jm" = "Jamaica";
-"country_region_name_ci" = "Ivory Coast";
-"country_region_name_it" = "Italy";
-"country_region_name_il" = "Israel";
-"country_region_name_ie" = "Ireland";
-"country_region_name_iq" = "Iraq";
-"country_region_name_id" = "Indonesia";
-"country_region_name_in" = "India";
-"country_region_name_is" = "Iceland";
-"country_region_name_hu" = "Hungary";
-"country_region_name_hk" = "Hong Kong";
-"country_region_name_hn" = "Honduras";
-"country_region_name_ht" = "Haiti";
-"country_region_name_gy" = "Guyana";
-"country_region_name_gw" = "Guinea-Bissau";
-"country_region_name_gn" = "Guinea";
-"country_region_name_gt" = "Guatemala";
-"country_region_name_gu" = "Guam";
-"country_region_name_gp" = "Guadeloupe";
-"country_region_name_gd" = "Grenada";
-"country_region_name_gl" = "Greenland";
-"country_region_name_gr" = "Greece";
-"country_region_name_gi" = "Gibraltar";
-"country_region_name_gh" = "Ghana";
-"country_region_name_de" = "Germany";
-"country_region_name_ge" = "Georgia";
-"country_region_name_gm" = "Gambia";
-"country_region_name_ga" = "Gabon";
-"country_region_name_gf" = "French Guiana";
-"country_region_name_fr" = "France";
-"country_region_name_fi" = "Finland";
-"country_region_name_fj" = "Fiji";
-"country_region_name_fo" = "Faroe Islands";
-"country_region_name_et" = "Ethiopia";
-"country_region_name_ee" = "Estonia";
-"country_region_name_gq" = "Equatorial Guinea";
-"country_region_name_sv" = "El Salvador";
-"country_region_name_eg" = "Egypt";
-"country_region_name_ec" = "Ecuador";
-"country_region_name_do" = "Dominican Republic";
-"country_region_name_dm" = "Dominica";
-"country_region_name_dj" = "Djibouti";
-"country_region_name_dk" = "Denmark";
-"country_region_name_cd" = "Democratic Republic of the Congo";
-"country_region_name_cz" = "Czech Republic";
-"country_region_name_cy" = "Cyprus";
-"country_region_name_hr" = "Croatia";
-"country_region_name_cr" = "Costa Rica";
-"country_region_name_ck" = "Cook Islands";
-"country_region_name_km" = "Comoros";
-"country_region_name_co" = "Colombia";
-"country_region_name_cn" = "China";
-"country_region_name_cl" = "Chile";
-"country_region_name_td" = "Chad";
-"country_region_name_cf" = "Central African Republic";
-"country_region_name_ky" = "Cayman Islands";
-"country_region_name_cv" = "Cape Verde";
-"country_region_name_ca" = "Canada";
-"country_region_name_cm" = "Cameroon";
-"country_region_name_kh" = "Cambodia";
-"country_region_name_bi" = "Burundi";
-"country_region_name_bf" = "Burkina Faso";
-"country_region_name_bg" = "Bulgaria";
-"country_region_name_bn" = "Brunei";
-"country_region_name_br" = "Brazil";
-"country_region_name_bw" = "Botswana";
-"country_region_name_ba" = "Bosnia and Herzegovina";
-"country_region_name_bo" = "Bolivia";
-"country_region_name_bt" = "Bhutan";
-"country_region_name_bm" = "Bermuda";
-"country_region_name_bj" = "Benin";
-"country_region_name_bz" = "Belize";
-"country_region_name_be" = "Belgium";
-"country_region_name_by" = "Belarus";
-"country_region_name_bb" = "Barbados";
-"country_region_name_bd" = "Bangladesh";
-"country_region_name_bh" = "Bahrain";
-"country_region_name_bs" = "Bahamas";
-"country_region_name_az" = "Azerbaijan";
-"country_region_name_at" = "Austria";
-"country_region_name_au" = "Australia";
-"country_region_name_aw" = "Aruba";
-"country_region_name_am" = "Armenia";
-"country_region_name_ar" = "Argentina";
-"country_region_name_ag" = "Antigua and Barbuda";
-"country_region_name_ai" = "Anguilla";
-"country_region_name_ao" = "Angola";
-"country_region_name_ad" = "Andorra";
-"country_region_name_dz" = "Algeria";
-"country_region_name_al" = "Albania";
-"country_region_name_af" = "Afghanistan";
-"options_for_australia" = "Options for Australia";
-"enter_number_button" = "Get PIN";
-"enter_number_relative" = "Trying to register on behalf of a friend or relative?\
-\
-They will need to register using their own device and phone number so that COVIDSafe can work for them. ";
-"invalid_australian_phone_number_error_prompt" = "Australian mobile numbers contain a maximum of 10 digits.";
-"enter_number_headline" = "Enter your mobile number";
-"select_country_or_region" = "Select country or region";
-"under_sixteen_headline" = "You need the consent of your parent/guardian to proceed";
-"personal_details_button" = "Continue";
-"personal_details_dialog_ok" = "Select";
-"personal_details_post_code_error_prompt" = "Your Australian postcode number must contain 4 digits. ";
-"personal_details_post_code" = "Postcode in Australia";
-"personal_details_age_content_description" = "Select age range";
-"personal_details_age_title" = "Age range (select)";
-"personal_details_name_error_prompt" = "Please enter your full name.";
-"personal_details_headline" = "Enter your details";
-"registration_consent_headline" = "Registration consent";
-"consent_button" = "I agree";
-"consent_call_for_action" = "Select 'I agree' to confirm consent.";
-"data_privacy_button" = "Next";
-"data_privacy_headline" = "Registration and privacy";
-"how_it_works_button" = "Next";
-"how_it_works_headline" = "How COVIDSafe works";
-"intro_button" = "I want to help";
-"intro_content" = "COVIDSafe has been developed by the Australian Government to help keep the community safe from the spread of coronavirus.\
-\
-COVIDSafe will securely note contact that you have with other users of the app. This will allow state and territory health officials to contact you, if you have been in close contact with someone who has tested positive to the virus.\
-\
-Together we can help stop the spread and stay healthy.";
-"intro_headline" = "Together we can stop the spread of COVID-19";
-"migration_in_progress" = " COVIDSafe update in progress. \
-\
- Please make sure you phone is not switched off until the update is complete.";
-"share_this_app_content" = "Join me in stopping the spread of COVID-19! Download COVIDSafe, an app from the Australian Government. #COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
-"dialog_error_uploading_negative" = "Cancel";
-"dialog_error_uploading_positive" = "Try again";
-"dialog_error_uploading_message" = "An error occurred while uploading your information, please try again.";
-"dialog_uploading_message" = "Your COVIDSafe information is currently being uploaded.\
-\
-Please do not close the app.";
+"UploadFailed" = "Upload failed. Please try again later.";
+"UploadFailedErrorMessage" = "Please try again later.";
+"ValidationError" = "Validation error";
+"GetCoronaVirusApp_VOLabel" = "Get the Coronavirus app. Download the government app for the latest news and advice.";
+"HelpTopics_VOLabel" = "Help topics. If you have issues or questions about the app.";
+"LatestNews_VOLabel" = "Latest news and updates. Head to aus.gov.au for the latest Coronavirus news.";
+"NotificationsDisabled_VOLabel" = "Notifications are disabled. You will not receive a notification if COVIDSafe is not active.\nChange notification settings";
+"NotificationsEnabled_VOLabel" = "Notifications are enabled. You will receive a notification if COVIDSafe is not active.\nChange notification settings";
+"OS1b_TopParagraph_VOLabel" = "Bluetooth signals are used to determine when you're near another COVIDSafe user.\nEvery instance of close contact between you and other COVIDSafe users is noted to create close contact information. This information is encrypted and only stored in your phone.\nIf you test positive to COVID-19 as a COVIDSafe user, a state or territory health official will contact you. They will assist with voluntary upload of your close contact information to a highly secure information storage system.\nState or territory health officials can also contact you if you came in close contact with another COVIDSafe user who tested positive.\nFor more information please refer to the Help Topics page.";
+"permission_content_iOS_2_VOLabel" = "1. Bluetooth\n2. Notifications\n\nCOVIDSafe does not send pairing requests.";
+"permission_content_iOS_VOLabel" = "COVIDSafe needs Bluetooth enabled to work. By enabling Notifications, you get updates to remind you when COVIDSafe is not active. \n\nSelect 'Proceed' to enable:";
+"ShareCovidSafe_VOLabel" = "Share COVIDSafe. Invite others to help. Together, we're stronger.";
+"UploadData_VOLabel" = "Has a health official contacted you? You can only upload your information if you have tested positive.";
