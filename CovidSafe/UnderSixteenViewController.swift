@@ -12,6 +12,16 @@ import SafariServices
 class UnderSixteenViewController: UIViewController, RegistrationHandler {
 
     public var registrationInfo: RegistrationRequest?
+    @IBOutlet weak var stepCounterLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        stepCounterLabel.text = String.localizedStringWithFormat( "stepCounter".localizedString(),
+            1,
+            4
+        )
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if var vc = segue.destination as? RegistrationHandler {

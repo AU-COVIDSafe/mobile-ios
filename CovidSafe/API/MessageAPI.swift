@@ -13,15 +13,35 @@ class MessageAPI {
     
     static let keyLastApiUpdate = "keyLastApiUpdate"
 
-    
     static func getMessagesIfNeeded(completion: @escaping (MessageResponse?, Swift.Error?) -> Void) {
         if shouldGetMessages() {
             guard let token = UserDefaults.standard.string(forKey: "deviceTokenForAPN") else {
                 return
             }
-            // Make API call to get messages
-            let messageRequest = MessageRequest(remotePushToken: token)
-            getMessages(msgRequest: messageRequest, completion: completion)
+            //Get relevat encounter data
+            guard let persistentContainer =
+                EncounterDB.shared.persistentContainer else {
+                    return
+            }
+            let managedContext = persistentContainer.viewContext
+            guard let encounterLastWeekRequest = Encounter.fetchEncountersInLast(days: 7) else {
+                return
+            }
+            
+            do {
+                //fetch last week encounters count
+                let weekEncounters = try managedContext.count(for: encounterLastWeekRequest)
+                let healthcheck = (BluetraceManager.shared.isBluetoothOn() &&
+                    BluetraceManager.shared.isBluetoothAuthorized() &&
+                    weekEncounters > 0 ? healthCheckParamValue.OK : healthCheckParamValue.POSSIBLE_ERROR)
+                
+                // Make API call to get messages
+                let messageRequest = MessageRequest(remotePushToken: token, healthcheck: healthcheck)
+                getMessages(msgRequest: messageRequest, completion: completion)
+
+            } catch let error as NSError {
+                DLog("Could not fetch encounter(s) from db. \(error), \(error.userInfo)")
+            }
         }
     }
     
@@ -44,10 +64,10 @@ class MessageAPI {
         return shouldGetMessages
     }
     
-    static func getMessages(msgRequest: MessageRequest,
+    private static func getMessages(msgRequest: MessageRequest,
                             completion: @escaping (MessageResponse?, Swift.Error?) -> Void) {
         let keychain = KeychainSwift()
-        guard let apiHost = PlistHelper.getvalueFromInfoPlist(withKey: "API_Host", plistName: "CovidCare-config") else {
+        guard let apiHost = PlistHelper.getvalueFromInfoPlist(withKey: "API_Host", plistName: "CovidSafe-config") else {
             return
         }
         
@@ -59,8 +79,10 @@ class MessageAPI {
             "Authorization": "Bearer \(token)"
         ]
         
-        var params = [
-            "os" : "ios-\(UIDevice.current.systemVersion)"
+        var params: [String : Any] = [
+            "os" : "ios-\(UIDevice.current.systemVersion)",
+            "healthcheck" : msgRequest.healthcheck.rawValue,
+            "preferredLanguages": Locale.preferredLanguages
             ]
 
         if let buildString = Bundle.main.version {
@@ -91,8 +113,15 @@ class MessageAPI {
     }
 }
 
+enum healthCheckParamValue: String {
+    case OK = "OK"
+    case POSSIBLE_ERROR = "POSSIBLE_ERROR"
+    case ERROR = "ERROR"
+}
+
 struct MessageRequest {
     var remotePushToken: String?
+    var healthcheck: healthCheckParamValue
 }
 
 struct MessageResponse: Decodable {

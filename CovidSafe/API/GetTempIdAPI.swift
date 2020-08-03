@@ -11,6 +11,8 @@ import KeychainSwift
 
 class GetTempIdAPI {
     
+    private static let apiVersion = 2
+    
     static func getTempId(completion: @escaping (String?, Int?, Swift.Error?) -> Void) {
         let keychain = KeychainSwift()
         guard let apiHost = PlistHelper.getvalueFromInfoPlist(withKey: "API_Host", plistName: "CovidSafe-config") else {
@@ -24,9 +26,12 @@ class GetTempIdAPI {
         let headers: HTTPHeaders = [
             "Authorization": "Bearer \(token)"
         ]
+        let params = [
+            "version" : apiVersion
+        ]
         CovidNetworking.shared.session.request("\(apiHost)/getTempId",
             method: .get,
-            encoding: JSONEncoding.default,
+            parameters: params,
             headers: headers,
             interceptor: CovidRequestRetrier(retries: 3)).validate().responseDecodable(of: TempIdResponse.self) { (response) in
                 switch response.result {

@@ -1,2 +1,8 @@
+/* InfoPlist.strings
+  CovidSafe
+
+  Copyright © 2020 Australian Government. All rights reserved. */
 "BluetoothUsageDesc" = "COVIDSafe trao đổi tín hiệu Bluetooth® với các điện thoại chạy cùng ứng dụng xung quanh. Các tín hiệu này chứa mã ID ẩn danh, được mã hóa và thay đổi liên tục để đảm bảo quyền riêng tư của bạn.";
+"NSBluetoothAlwaysUsageDescription" = "COVIDSafe trao đổi tín hiệu Bluetooth® với các điện thoại chạy cùng ứng dụng xung quanh. Các tín hiệu này chứa ID ẩn danh, được mã hóa và thay đổi liên tục để đảm bảo quyền riêng tư của bạn.";
+"NSBluetoothPeripheralUsageDescription" = "COVIDSafe trao đổi tín hiệu Bluetooth® với các điện thoại chạy cùng ứng dụng xung quanh. Các tín hiệu này chứa ID ẩn danh, được mã hóa và thay đổi liên tục để đảm bảo quyền riêng tư của bạn.";
 "UILaunchStoryboardName" = "LaunchScreen_vi";

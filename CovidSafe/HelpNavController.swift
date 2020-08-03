@@ -6,7 +6,7 @@ import UIKit
 class HelpNavController: UINavigationController {
 
     private static let HELP_PAGE_URL = URLHelper.getHelpURL()
-
+    var pageSectionId:String?
     private let loader = UIActivityIndicatorView(style: .gray)
     let webview = WKWebView()
 
@@ -87,7 +87,8 @@ class HelpNavController: UINavigationController {
     }
 
     private func loadHelp() {
-        guard let url = URL(string: HelpNavController.HELP_PAGE_URL) else {
+        let pageId = pageSectionId != nil ? "#\(pageSectionId!)" : ""
+        guard let url = URL(string: "\(HelpNavController.HELP_PAGE_URL)\(pageId)") else {
             assertionFailure("Invalid URL: \(HelpNavController.HELP_PAGE_URL)")
             return
         }
@@ -138,7 +139,7 @@ extension HelpNavController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
 
         guard let url = navigationAction.request.url,
-            url.absoluteString != HelpNavController.HELP_PAGE_URL else {
+            !url.absoluteString.contains(HelpNavController.HELP_PAGE_URL) else {
                 decisionHandler(.allow)
                 return
         }

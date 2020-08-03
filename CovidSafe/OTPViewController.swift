@@ -22,6 +22,7 @@ class OTPViewController: UIViewController, RegistrationHandler {
     @IBOutlet weak var codeInputView: CodeInputView?
     @IBOutlet weak var expiredMessageLabel: UILabel?
     @IBOutlet weak var errorMessageLabel: UILabel?
+    @IBOutlet weak var stepCounterLabel: UILabel!
     
     @IBOutlet weak var wrongNumberButton: UIButton?
     @IBOutlet weak var resendCodeButton: UIButton?
@@ -79,7 +80,10 @@ class OTPViewController: UIViewController, RegistrationHandler {
         let pinIssuesString = NSLocalizedString("ReceivePinIssue", comment: "Text for pin receive issues button")
         let pinIssuesText = NSAttributedString(string: pinIssuesString, attributes: buttonAtt)
         self.pinIssuesButton?.setAttributedTitle(pinIssuesText, for: .normal)
-
+        stepCounterLabel.text = String.localizedStringWithFormat( "stepCounter".localizedString(),
+            3,
+            UserDefaults.standard.bool(forKey: "allowedPermissions") ? 3 : 4
+        )
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -12,6 +12,7 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
     @IBOutlet weak var phoneExample: UILabel!
     @IBOutlet weak var phoneError: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var stepCounterLabel: UILabel!
     var countryFlagContainerView: UIView!
     var flagImageView: UIImageView!
     
@@ -74,7 +75,12 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
         
         initialLabelTextColour = phoneLabel.textColor
         initialTextFieldBorderColour = phoneNumberField.borderColor
-        navigationController?.view.backgroundColor = UIColor.white        
+        navigationController?.view.backgroundColor = UIColor.white
+        
+        stepCounterLabel.text = String.localizedStringWithFormat( "stepCounter".localizedString(),
+            2,
+            UserDefaults.standard.bool(forKey: "allowedPermissions") ? 3 : 4
+        )
     }
     
     @IBAction func onBackTapped(_ sender: UIButton) {

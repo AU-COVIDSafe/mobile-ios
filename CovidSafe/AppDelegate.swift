@@ -427,14 +427,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UserDefaults.standard.set(token, forKey: "deviceTokenForAPN")
         
-        let messageRequest = MessageRequest(remotePushToken: token)
-        MessageAPI.getMessages(msgRequest: messageRequest) { (response, error) in
+        MessageAPI.getMessagesIfNeeded(completion: { (response, error) in
             if let error = error {
                 DLog("Get messages error: \(error.localizedDescription)")
                 return
             }
             DLog("Get messages success, device token saved")
-        }
+        })
     }
 
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {

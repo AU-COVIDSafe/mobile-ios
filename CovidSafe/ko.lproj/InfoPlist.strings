@@ -1,2 +1,8 @@
+/* InfoPlist.strings
+  CovidSafe
+
+  Copyright © 2020 Australian Government. All rights reserved. */
 "BluetoothUsageDesc" = "COVIDSafe는 동일한 앱을 실행하는 근처의 휴대폰과 블루투스® 신호를 교환합니다. 이 신호에는 익명의 ID가 포함되어 있으며, 이 ID는 암호화되어 있고 개인정보를 보호하기 위해 지속적으로 변경됩니다.";
+"NSBluetoothAlwaysUsageDescription" = "COVIDSafe는 동일한 앱을 실행하는 주위의 휴대폰들과 블루투스® 신호들을 교환합니다. 이 신호들에는 익명의 ID가 포함되어 있으며, 이 ID는 암호화되어 있고 귀하의 개인 정보를 보호하기 위해 지속적으로 변경됩니다.";
+"NSBluetoothPeripheralUsageDescription" = "COVIDSafe는 동일한 앱을 실행하는 주위의 휴대폰들과 블루투스® 신호들을 교환합니다. 이 신호들에는 익명의 ID가 포함되어 있으며, 이 ID는 암호화되어 있고 귀하의 개인 정보를 보호하기 위해 지속적으로 변경됩니다.";
 "UILaunchStoryboardName" = "LaunchScreen_ko";

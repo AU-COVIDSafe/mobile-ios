@@ -48,6 +48,23 @@ extension Encounter {
         return fetchRequest
     }
     
+    // Fetch encounters in the number of days given.
+    @nonobjc public class func fetchEncountersInLast(days: Int) -> NSFetchRequest<Encounter>? {
+        let fetchRequest = NSFetchRequest<Encounter>(entityName: "Encounter")
+
+        // Get the current calendar with local time zone
+        var calendar = Calendar.current
+        calendar.timeZone = NSTimeZone.local
+        // Get date x days ago
+        let today = calendar.startOfDay(for: Date())
+        guard let dateTo = calendar.date(byAdding: .day, value: -days, to: today) else {
+            return nil
+        }
+        // Set predicate as date since x days ago
+        fetchRequest.predicate = NSPredicate(format: "timestamp >= %@", dateTo as NSDate)
+        return fetchRequest
+    }
+    
     @NSManaged public var timestamp: Date?
     @NSManaged public var org: String?
     @NSManaged public var v: NSNumber?
