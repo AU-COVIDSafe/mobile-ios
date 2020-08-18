@@ -2,7 +2,7 @@
   CovidSafe
 
   Copyright © 2020 Australian Government. All rights reserved. */
-"BluetoothUsageDesc" = "COVIDSafe 與附近正在執行同一應用程式的手機交換藍牙®訊號。這些訊號包括一條匿名 ID，該 ID 會被加密且會不斷更新以保護您的私隱。";
-"NSBluetoothAlwaysUsageDescription" = "COVIDSafe 與附近運行相同程式的電話交換藍牙® 信號。這些信號含有一個匿名ID，會加密並且不斷改變來保證你的私隱。 \n";
-"NSBluetoothPeripheralUsageDescription" = "COVIDSafe 與附近運行相同程式的電話交換藍牙® 信號。這些信號含有一個匿名ID，會加密並且不斷改變來保證你的私隱。 \n";
+"BluetoothUsageDesc" = "COVIDSafe 與附近正在執行同一應用程式的手機交換藍牙®訊號。這些訊號包括一條匿名 ID，該 ID 會被加密且會不斷更新以保護你的私隱。";
+"NSBluetoothAlwaysUsageDescription" = "COVIDSafe 與附近運行相同程式的電話交換藍牙® 信號。這些信號含有一個匿名ID，會加密並且不斷改變來保證你的私隱。";
+"NSBluetoothPeripheralUsageDescription" = "COVIDSafe 與附近運行相同程式的電話交換藍牙® 信號。這些信號含有一個匿名ID，會加密並且不斷改變來保證你的私隱。";
 "UILaunchStoryboardName" = "LaunchScreen_zh-Hant";

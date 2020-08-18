@@ -1,0 +1,8 @@
+/* InfoPlist.strings
+  CovidSafe
+
+  Copyright © 2020 Australian Government. All rights reserved. */
+"BluetoothUsageDesc" = "COVIDSafe, aynı uygulamayı çalıştıran yakındaki telefonlarla Bluetooth® sinyalleri alışverişinde bulunur. Bu sinyaller, gizliliğinizi sağlamak için şifrelenen ve sürekli değişen anonimleştirilmiş bir kimlik içerir.";
+"NSBluetoothAlwaysUsageDescription" = "COVIDSafe, aynı uygulamayı çalıştıran yakındaki telefonlarla Bluetooth® sinyalleri alışverişinde bulunur. Bu sinyaller, gizliliğinizi sağlamak için şifrelenen ve sürekli değişen anonimleştirilmiş bir kimlik içerir.";
+"NSBluetoothPeripheralUsageDescription" = "COVIDSafe, aynı uygulamayı çalıştıran yakındaki telefonlarla Bluetooth® sinyalleri alışverişinde bulunur. Bu sinyaller, gizliliğinizi sağlamak için şifrelenen ve sürekli değişen anonimleştirilmiş bir kimlik içerir.";
+"UILaunchStoryboardName" = "LaunchScreen_tr";

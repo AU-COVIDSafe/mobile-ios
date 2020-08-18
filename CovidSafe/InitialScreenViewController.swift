@@ -22,6 +22,12 @@ class InitialScreenViewController: UIViewController, EncounterDBMigrationProgres
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        EncounterDB.shared.setup(migrationDelegate: self)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         switch UIApplication.shared.isProtectedDataAvailable {
         case true  :
             isKeychainAvailable = true
@@ -33,12 +39,14 @@ class InitialScreenViewController: UIViewController, EncounterDBMigrationProgres
         
         view.window?.tintColor = .covidSafeColor
         
-        continueAfterDelay(delay: displayTimeSeconds)
-        // add give up action in case the keychain notification in not received after 8 seconds
-        giveupTimer = Timer.scheduledTimer(withTimeInterval: giveupTimeSeconds, repeats: false) { timer in
-            self.performSegue(withIdentifier: "initialScreenToIWantToHelpSegue", sender: self)
+        // if a migration started let the migration delegate handle the timers
+        if migrationStart == nil {
+            continueAfterDelay(delay: displayTimeSeconds)
+            // add give up action in case the keychain notification in not received after 8 seconds
+            giveupTimer = Timer.scheduledTimer(withTimeInterval: giveupTimeSeconds, repeats: false) { timer in
+                self.performSegue(withIdentifier: "initialScreenToIWantToHelpSegue", sender: self)
+            }
         }
-        EncounterDB.shared.setup(migrationDelegate: self)
     }
     
     func continueAfterDelay(delay: TimeInterval) {

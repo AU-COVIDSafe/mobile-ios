@@ -43,13 +43,16 @@ class CentralController: NSObject {
     
     public init(queue: DispatchQueue) {
         self.queue = queue
+        
         super.init()
         
         NotificationCenter.default.addObserver(
           forName: UIApplication.didReceiveMemoryWarningNotification,
           object: nil,
           queue: .main) { [weak self] notification in
-            self?.cleanupScannedPeripherals()
+            self?.queue.async {
+                self?.cleanupScannedPeripherals()
+            }
         }
     }
     
@@ -185,11 +188,11 @@ extension CentralController: CBCentralManagerDelegate {
                 central.connect(recoveredPeripheral)
             }
             
-            // cant cancel peripheral when BL OFF
-            for cleanupPeripheral in cleanupPeripherals {
+            // can't cancel peripheral when BL OFF
+            for cleanupPeripheral in self.cleanupPeripherals {
                 central.cancelPeripheralConnection(cleanupPeripheral)
             }
-            cleanupPeripherals = []
+            self.cleanupPeripherals = []
             
             central.scanForPeripherals(withServices: [BluetraceConfig.BluetoothServiceID], options:nil)
             logPeripheralsCount(description: "Update state powerOn")
@@ -482,7 +485,7 @@ extension CentralController: CBPeripheralDelegate {
         
        // regularly cleanup and close pending connections
         if (abs(lastCleanedScannedPeripherals.timeIntervalSince(Date())) > BluetraceConfig.CentralScanInterval) {
-           cleanupScannedPeripherals()
+            cleanupScannedPeripherals()
         }
     }
     

@@ -311,6 +311,9 @@
 "migration_in_progress" = "Aggiornamento COVIDSafe in corso. \n\nAssicurarsi che il cellulare non sia spento fino al completamento dell'aggiornamento.";
 /* Figma page Android Screens (05/06) */
 "norfolk_hint" = "Per esempio: 51234";
+"notification_bluetooth" = "Attivare il Bluetooth per far funzionare il COVIDSafe.";
+"notification_internet_content" = "Aprire l'app e controllare la connessione Internet per far funzionare il COVIDSafe.";
+"notification_not_active_title" = "Il COVIDSafe non è attivo";
 "notification_update_content" = "Aggiorna la tua app per accedere agli ultimi miglioramenti.";
 "notification_update_heading" = "Aggiornamento COVIDSafe disponibile";
 /* Figma page iOS Screens (05/06) */
@@ -322,7 +325,7 @@
 "options_for_australia" = "Opzioni per l'Australia";
 "permission_button" = "Proceda";
 /* Figma page iOS Screens (05/06) */
-"permission_content_iOS" = "Il COVIDSafe necessita del Bluetooth® abilitato per funzionare. Abilitando Notifiche, ricevi aggiornamenti per ricordarti quando il COVIDSafe non è attivo. \n\nSeleziona 'Procedi' per abilitare:";
+"permission_content_iOS" = "Il COVIDSafe necessita del Bluetooth® abilitato per funzionare. Abilitando Notifiche, ricevi aggiornamenti per ricordarti quando il COVIDSafe non è attivo. \n\nSeleziona 'Proceda' per abilitare:";
 /* Figma page iOS Screens (05/06) */
 "permission_content_iOS_2" = "1. Bluetooth®\n2. Notifiche\n\nIl COVIDSafe non invia richieste di accoppiamento.";
 /* OnBoarding Permission */
@@ -354,7 +357,7 @@
 /* Figma page iOS Screens (05/06) */
 "PN_ReminderTitle" = "Nessun incontro rilevato per 48 ore";
 "PostcodeValidationErrorMessage" = "Si prega inserire un codice postale australiano valido.";
-"registration_consent_content" = "Acconsento alla raccolta da parte dell'Agenzia di trasformazione digitale, secondo la decisione legale presa dal Segretario del Dipartimento della sanità del governo australiano per:";
+"registration_consent_content" = "Acconsento alla raccolta da parte dell'Agenzia di trasformazione digitale come amministratrice dell'archivio dati, in base alla decisione legale presa dal Segretario del Dipartimento della sanità del governo australiano per:";
 "registration_consent_first_paragraph" = "I miei dati di registrazione.";
 /* Onboarding Registration Consent */
 "registration_consent_headline" = "Consenso alla registrazione";
@@ -466,6 +469,6 @@
 "NotificationsEnabled_VOLabel" = "Le notifiche sono abilitate. Riceverai una notifica se COVIDSafe non è attivo. \nModifica le impostazioni di notifica";
 "OS1b_TopParagraph_VOLabel" = "I segnali Bluetooth vengono utilizzati per determinare quando sei vicino a un altro utente COVIDSafe. \nOgni istanza di stretto contatto tra te e gli altri utenti COVIDSafe viene notata per creare informazioni sui stretti contatti. Queste informazioni sono crittografate e memorizzate solo nel tuo cellulare. \nSe risulti positivo al COVID-19 come utente COVIDSafe, sarai contattato da un funzionario sanitario statale o del territorio.\nEssi ti aiuteranno con il caricamento volontario delle tue informazioni di stretto contatto ad un sistema altamente sicuro di archiviazione delle informazioni. \nI funzionari sanitari statali o del territorio possono anche contattarti se sei entrato in stretto contatto con un altro utente COVIDSafe che è risultato positivo. \nPer ulteriori informazioni, consultare la pagina Argomenti della Guida.";
 "permission_content_iOS_2_VOLabel" = "1. Bluetooth\n2. Notifiche\n\nIl COVIDSafe non invia richieste di accoppiamento.";
-"permission_content_iOS_VOLabel" = "Il COVIDSafe necessita il Bluetooth abilitato per funzionare. Abilitando Notifiche, ricevi aggiornamenti per ricordarti quando COVIDSafe non è attivo. \n\n Seleziona 'Procedi' per abilitare:";
+"permission_content_iOS_VOLabel" = "Il COVIDSafe necessita il Bluetooth abilitato per funzionare. Abilitando Notifiche, ricevi aggiornamenti per ricordarti quando COVIDSafe non è attivo. \n\n Seleziona 'Proceda' per abilitare:";
 "ShareCovidSafe_VOLabel" = "Condividi il COVIDSafe. Invita altri ad aiutare. Insieme, siamo più forti.";
 "UploadData_VOLabel" = "Un funzionario sanitario ti ha contattato? Puoi caricare le tue informazioni solo se sei risultato positivo.";

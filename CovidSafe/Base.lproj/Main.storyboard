@@ -1235,7 +1235,7 @@ No further action is required.</string>
                                             <constraint firstItem="7vU-Zc-lZj" firstAttribute="leading" secondItem="a1C-2s-72y" secondAttribute="leading" constant="32" id="vAy-Ic-q12"/>
                                         </constraints>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Eim-Z7-BkO">
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Eim-Z7-BkO">
                                         <rect key="frame" x="0.0" y="595" width="375" height="2239"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewx-Jj-gLM" userLabel="PermissionsView">
@@ -1367,7 +1367,7 @@ No further action is required.</string>
                                                                                         </constraints>
                                                                                         <state key="normal" image="redcross"/>
                                                                                     </button>
-                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow COVIDSafe to access Bluetooth®" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nU4-J7-nnH">
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow COVIDSafe to access Bluetooth®" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nU4-J7-nnH">
                                                                                         <rect key="frame" x="16" y="44" width="269" height="59"/>
                                                                                         <accessibility key="accessibilityConfiguration">
                                                                                             <bool key="isElement" value="NO"/>
@@ -1479,7 +1479,7 @@ No further action is required.</string>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redcross" translatesAutoresizingMaskIntoConstraints="NO" id="0Bq-dX-rBb" userLabel="cross">
                                                                                         <rect key="frame" x="305" y="15" width="22" height="26"/>
                                                                                     </imageView>
-                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn on your phone's Bluetooth®. Select ‘Allow New Connections’ if displayed." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5V-2J-WxQ">
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn on your phone's Bluetooth®. Select ‘Allow New Connections’ if displayed." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5V-2J-WxQ">
                                                                                         <rect key="frame" x="16" y="44" width="282" height="119"/>
                                                                                         <accessibility key="accessibilityConfiguration">
                                                                                             <bool key="isElement" value="NO"/>
@@ -1545,6 +1545,214 @@ No further action is required.</string>
                                                     <constraint firstAttribute="bottom" secondItem="bht-4J-CSp" secondAttribute="bottom" id="cBW-vJ-Z2Y"/>
                                                     <constraint firstItem="bht-4J-CSp" firstAttribute="top" secondItem="ewx-Jj-gLM" secondAttribute="top" id="gvl-po-5MK"/>
                                                     <constraint firstAttribute="trailing" secondItem="bht-4J-CSp" secondAttribute="trailing" constant="16" id="szw-4J-hVe"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0kC-S5-7Ra" userLabel="ImprovementsView">
+                                                <rect key="frame" x="0.0" y="866" width="375" height="49"/>
+                                                <subviews>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p10-bq-Tz2">
+                                                        <rect key="frame" x="16" y="16" width="343" height="33"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9yJ-RJ-zZn">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="33"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rhy-qx-s7G" userLabel="Improvement Label View">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="33"/>
+                                                                        <subviews>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lWj-gK-bDD" userLabel="Content">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="32"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Improve the performance of COVIDSafe" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctU-fG-ecc">
+                                                                                        <rect key="frame" x="16" y="16" width="311" height="0.0"/>
+                                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="improve_heading"/>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="ctU-fG-ecc" firstAttribute="leading" secondItem="lWj-gK-bDD" secondAttribute="leading" constant="16" id="5yC-tI-Esb"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="ctU-fG-ecc" secondAttribute="bottom" constant="16" id="Ulb-tf-GdW"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="ctU-fG-ecc" secondAttribute="trailing" constant="16" id="eci-He-l21"/>
+                                                                                    <constraint firstItem="ctU-fG-ecc" firstAttribute="top" secondItem="lWj-gK-bDD" secondAttribute="top" constant="16" id="wKI-Fd-1Sd"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                        </subviews>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="trailing" secondItem="lWj-gK-bDD" secondAttribute="trailing" id="0gV-wM-3s3"/>
+                                                                            <constraint firstItem="lWj-gK-bDD" firstAttribute="leading" secondItem="Rhy-qx-s7G" secondAttribute="leading" id="RuH-vl-o7h"/>
+                                                                            <constraint firstItem="lWj-gK-bDD" firstAttribute="top" secondItem="Rhy-qx-s7G" secondAttribute="top" id="qxF-YA-C3I"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="lWj-gK-bDD" secondAttribute="bottom" constant="1" id="ryh-RK-9Jk"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view hidden="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="iDk-z1-sMQ" userLabel="No Internet Connection Section">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="37"/>
+                                                                        <subviews>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K3X-fT-HKz" userLabel="No Internet Bar">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="36"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No internet connection" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rge-Wi-sRN">
+                                                                                        <rect key="frame" x="16" y="16" width="197.66666666666666" height="0.0"/>
+                                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                                                        <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="internet_connection_heading"/>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </label>
+                                                                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9T-ex-GYl">
+                                                                                        <rect key="frame" x="293" y="-6" width="44" height="44"/>
+                                                                                        <accessibility key="accessibilityConfiguration">
+                                                                                            <bool key="isElement" value="NO"/>
+                                                                                        </accessibility>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="44" id="a6a-Js-0tI"/>
+                                                                                            <constraint firstAttribute="width" constant="44" id="yW7-eE-gb2"/>
+                                                                                        </constraints>
+                                                                                        <state key="normal" image="chevron-right-red"/>
+                                                                                    </button>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect to the internet to ensure you get notified of issues and updates. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvZ-vf-zzf">
+                                                                                        <rect key="frame" x="16" y="20" width="269" height="0.0"/>
+                                                                                        <accessibility key="accessibilityConfiguration">
+                                                                                            <bool key="isElement" value="NO"/>
+                                                                                        </accessibility>
+                                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                                                        <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="internet_connection_content"/>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="LvZ-vf-zzf" firstAttribute="top" secondItem="Rge-Wi-sRN" secondAttribute="bottom" constant="4" id="3Aq-5v-GP4"/>
+                                                                                    <constraint firstItem="LvZ-vf-zzf" firstAttribute="leading" secondItem="K3X-fT-HKz" secondAttribute="leading" constant="16" id="BZr-pF-uDt"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="LvZ-vf-zzf" secondAttribute="bottom" constant="16" id="WrF-DK-DTp"/>
+                                                                                    <constraint firstItem="b9T-ex-GYl" firstAttribute="centerY" secondItem="Rge-Wi-sRN" secondAttribute="centerY" id="giO-eB-Csi"/>
+                                                                                    <constraint firstItem="b9T-ex-GYl" firstAttribute="leading" secondItem="LvZ-vf-zzf" secondAttribute="trailing" constant="8" id="org-Db-hZk"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="b9T-ex-GYl" secondAttribute="trailing" constant="6" id="ptt-6T-NLk"/>
+                                                                                    <constraint firstItem="Rge-Wi-sRN" firstAttribute="top" secondItem="K3X-fT-HKz" secondAttribute="top" constant="16" id="qym-Hv-aGO"/>
+                                                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Rge-Wi-sRN" secondAttribute="trailing" constant="20" symbolic="YES" id="t5v-cd-oZZ"/>
+                                                                                    <constraint firstItem="Rge-Wi-sRN" firstAttribute="leading" secondItem="K3X-fT-HKz" secondAttribute="leading" constant="16" id="z7k-SP-c4o"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                        </subviews>
+                                                                        <accessibility key="accessibilityConfiguration" label="Bluetooth permissions off">
+                                                                            <accessibilityTraits key="traits" button="YES"/>
+                                                                            <bool key="isElement" value="YES"/>
+                                                                        </accessibility>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="trailing" secondItem="K3X-fT-HKz" secondAttribute="trailing" id="5l3-Fc-ECN"/>
+                                                                            <constraint firstItem="K3X-fT-HKz" firstAttribute="leading" secondItem="iDk-z1-sMQ" secondAttribute="leading" id="hjD-yU-TWd"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="K3X-fT-HKz" secondAttribute="bottom" constant="1" id="klO-ZJ-9If"/>
+                                                                            <constraint firstItem="K3X-fT-HKz" firstAttribute="top" secondItem="iDk-z1-sMQ" secondAttribute="top" id="qNE-a7-yPd"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="AllowBluetoothOFF_VOLabel"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <outletCollection property="gestureRecognizers" destination="OzV-Cr-JAQ" appends="YES" id="5JH-74-1fB"/>
+                                                                        </connections>
+                                                                    </view>
+                                                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ucb-Wr-EyO" userLabel="Update Available Section">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="37"/>
+                                                                        <subviews>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Xb-nd-X2S" userLabel="Update Available Bar">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="36"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update available" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peW-br-Idj">
+                                                                                        <rect key="frame" x="16" y="16" width="145.33333333333334" height="0.0"/>
+                                                                                        <accessibility key="accessibilityConfiguration">
+                                                                                            <bool key="isElement" value="NO"/>
+                                                                                        </accessibility>
+                                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                                                        <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron-right-red" translatesAutoresizingMaskIntoConstraints="NO" id="p9A-sZ-Waa" userLabel="cross">
+                                                                                        <rect key="frame" x="303" y="15" width="24" height="2"/>
+                                                                                    </imageView>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We’ve been making improvements to COVIDSafe. Update via App Store." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8H9-wh-Tf8">
+                                                                                        <rect key="frame" x="16" y="20" width="282" height="0.0"/>
+                                                                                        <accessibility key="accessibilityConfiguration">
+                                                                                            <bool key="isElement" value="NO"/>
+                                                                                        </accessibility>
+                                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                                                        <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="p9A-sZ-Waa" firstAttribute="centerY" secondItem="peW-br-Idj" secondAttribute="centerY" id="39X-Lp-pwq"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="p9A-sZ-Waa" secondAttribute="trailing" constant="16" id="3BP-ZM-Vf6"/>
+                                                                                    <constraint firstItem="8H9-wh-Tf8" firstAttribute="leading" secondItem="6Xb-nd-X2S" secondAttribute="leading" constant="16" id="CeO-E2-Mnc"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="8H9-wh-Tf8" secondAttribute="bottom" constant="16" id="O4k-ha-f0y"/>
+                                                                                    <constraint firstItem="peW-br-Idj" firstAttribute="top" secondItem="6Xb-nd-X2S" secondAttribute="top" constant="16" id="ThI-XJ-KYg"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="8H9-wh-Tf8" secondAttribute="trailing" constant="45" id="VgJ-NE-IGp"/>
+                                                                                    <constraint firstItem="8H9-wh-Tf8" firstAttribute="top" secondItem="peW-br-Idj" secondAttribute="bottom" constant="4" id="dK2-Hc-KhL"/>
+                                                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="peW-br-Idj" secondAttribute="trailing" constant="20" symbolic="YES" id="spC-X8-Yml"/>
+                                                                                    <constraint firstItem="p9A-sZ-Waa" firstAttribute="top" secondItem="6Xb-nd-X2S" secondAttribute="top" constant="15" id="u2u-Af-lkt"/>
+                                                                                    <constraint firstItem="peW-br-Idj" firstAttribute="leading" secondItem="6Xb-nd-X2S" secondAttribute="leading" constant="16" id="x0c-t7-jF3"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                        </subviews>
+                                                                        <accessibility key="accessibilityConfiguration">
+                                                                            <accessibilityTraits key="traits" button="YES"/>
+                                                                            <bool key="isElement" value="YES"/>
+                                                                        </accessibility>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="trailing" secondItem="6Xb-nd-X2S" secondAttribute="trailing" id="5Vw-pv-6Wp"/>
+                                                                            <constraint firstItem="6Xb-nd-X2S" firstAttribute="leading" secondItem="ucb-Wr-EyO" secondAttribute="leading" id="77i-Kn-lRj"/>
+                                                                            <constraint firstItem="6Xb-nd-X2S" firstAttribute="top" secondItem="ucb-Wr-EyO" secondAttribute="top" id="hBq-IY-YSZ"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="6Xb-nd-X2S" secondAttribute="bottom" constant="1" id="lYt-Dn-8eS"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="BluetoothOFF_VOLabel"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <outletCollection property="gestureRecognizers" destination="IuM-az-LWh" appends="YES" id="JMA-ap-vA4"/>
+                                                                        </connections>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="9yJ-RJ-zZn" firstAttribute="leading" secondItem="p10-bq-Tz2" secondAttribute="leading" id="8Xj-oR-UhL"/>
+                                                            <constraint firstItem="9yJ-RJ-zZn" firstAttribute="top" secondItem="p10-bq-Tz2" secondAttribute="top" id="mea-Eu-lKC"/>
+                                                            <constraint firstAttribute="bottom" secondItem="9yJ-RJ-zZn" secondAttribute="bottom" id="xhn-L3-Quw"/>
+                                                            <constraint firstAttribute="trailing" secondItem="9yJ-RJ-zZn" secondAttribute="trailing" id="xsJ-7u-yPs"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="p10-bq-Tz2" firstAttribute="top" secondItem="0kC-S5-7Ra" secondAttribute="top" constant="16" id="Dva-kP-lza"/>
+                                                    <constraint firstAttribute="trailing" secondItem="p10-bq-Tz2" secondAttribute="trailing" constant="16" id="Hpx-Qx-vS6"/>
+                                                    <constraint firstItem="p10-bq-Tz2" firstAttribute="leading" secondItem="0kC-S5-7Ra" secondAttribute="leading" constant="16" id="Lwu-GV-7fg"/>
+                                                    <constraint firstAttribute="bottom" secondItem="p10-bq-Tz2" secondAttribute="bottom" id="bKj-CI-JH5"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
@@ -2397,6 +2605,9 @@ No further action is required.</string>
                         <outlet property="homeHeaderInfoText" destination="49x-lt-ifR" id="LaH-0n-zSz"/>
                         <outlet property="homeHeaderPermissionsOffImage" destination="Ucd-7w-As6" id="OSh-pw-pNM"/>
                         <outlet property="homeHeaderView" destination="a1C-2s-72y" id="d2V-b3-F4U"/>
+                        <outlet property="improvementsContainerView" destination="0kC-S5-7Ra" id="32L-FO-Jdz"/>
+                        <outlet property="improvementsInternetConnectionView" destination="iDk-z1-sMQ" id="ZgR-3k-iFt"/>
+                        <outlet property="improvementsUpdateAvailableView" destination="ucb-Wr-EyO" id="L4C-qk-Jkv"/>
                         <outlet property="pairingRequestsLabel" destination="vKm-pz-Cun" id="tiD-f1-DDL"/>
                         <outlet property="pushNotificationContainerView" destination="A0C-VM-931" id="ijc-cF-J4G"/>
                         <outlet property="pushNotificationStatusIcon" destination="Jcc-FQ-CcV" id="P3m-Nz-ahy"/>
@@ -2408,12 +2619,23 @@ No further action is required.</string>
                         <outlet property="uploadView" destination="2xp-v3-22Q" id="diq-zr-YJL"/>
                         <outlet property="versionNumberLabel" destination="CD7-Ft-bQU" id="Lqj-N3-DqH"/>
                         <outlet property="versionView" destination="KEs-yq-szw" id="zPn-dc-ce9"/>
+                        <segue destination="AB6-lU-20n" kind="presentation" identifier="internetConnectionSegue" id="9xd-8F-Roz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJa-Mu-MXq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="bTB-MH-OYr" userLabel="PNAppSettingsTapped">
                     <connections>
                         <action selector="onAppSettingsTapped:" destination="yl1-rG-jXE" id="9Ft-iy-Wv8"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="OzV-Cr-JAQ" userLabel="NoInternetTapped">
+                    <connections>
+                        <action selector="noInternetTapped:" destination="yl1-rG-jXE" id="deu-CE-OSJ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="IuM-az-LWh" userLabel="UpdateAvailableTapped">
+                    <connections>
+                        <action selector="updateAvailableTapped:" destination="yl1-rG-jXE" id="u4a-d1-IKd"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="v7B-Aa-sfi" userLabel="ChangeLanguageTapped">
@@ -2467,7 +2689,7 @@ No further action is required.</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2189.130434782609" y="-1883.1521739130437"/>
+            <point key="canvasLocation" x="2391" y="-1883"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="39N-pk-1gr">
@@ -2953,6 +3175,146 @@ For more information please refer to the *Help Topics* page.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hzX-4B-EMw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3633" y="-1212"/>
+        </scene>
+        <!--Internet Connection View Controller-->
+        <scene sceneID="Ote-h8-itH">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="AB6-lU-20n" customClass="InternetConnectionViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3eC-Nf-yK3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OoD-bD-DFD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0zC-IO-0sZ" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="611.66666666666663"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect to the internet to improve the performance of COVIDSafe" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcc-2B-Mk9">
+                                                <rect key="frame" x="32" y="252.99999999999997" width="350" height="101.66666666666666"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="internet_screen_heading"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="how to fix issues and set COVIDSafe active again" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQb-Xs-UD8">
+                                                <rect key="frame" x="46" y="517" width="336" height="42.333333333333371"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="internet_screen_content_1"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="when a new version update is available" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9D0-V4-u6G">
+                                                <rect key="frame" x="46" y="575.33333333333337" width="336" height="20.333333333333371"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="internet_screen_content_2"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXb-h2-5fe">
+                                                <rect key="frame" x="32" y="370.66666666666669" width="350" height="130.33333333333331"/>
+                                                <string key="text">COVIDSafe needs to connect to the server from time to time to ensure it can identify issues with the app.
+
+Connecting to the internet ensures you receive notifications on:</string>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="internet_screen_content"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKe-vW-TeX">
+                                                <rect key="frame" x="32" y="517" width="7.6666666666666643" height="20.333333333333371"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOU-vO-IwS">
+                                                <rect key="frame" x="32" y="575.33333333333337" width="7.6666666666666643" height="20.333333333333371"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfq-Ga-gCU">
+                                                <rect key="frame" x="16" y="16" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="KOp-0d-xzD"/>
+                                                    <constraint firstAttribute="width" constant="44" id="MHB-tI-AT1"/>
+                                                </constraints>
+                                                <state key="normal" image="arrow-left"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="global_back"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onBack:" destination="AB6-lU-20n" eventType="touchUpInside" id="aLc-FO-1FU"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="internet_connection" translatesAutoresizingMaskIntoConstraints="NO" id="ZWJ-Yv-FcL">
+                                                <rect key="frame" x="130" y="76" width="154" height="138"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="138" id="mHz-C1-NOO"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Yfq-Ga-gCU" firstAttribute="top" secondItem="0zC-IO-0sZ" secondAttribute="top" constant="16" id="5as-oq-zyK"/>
+                                            <constraint firstItem="ZWJ-Yv-FcL" firstAttribute="top" secondItem="Yfq-Ga-gCU" secondAttribute="bottom" constant="16" id="AC4-UP-UL0"/>
+                                            <constraint firstAttribute="trailing" secondItem="bcc-2B-Mk9" secondAttribute="trailing" constant="32" id="C7E-jx-b5c"/>
+                                            <constraint firstItem="aQb-Xs-UD8" firstAttribute="top" secondItem="VXb-h2-5fe" secondAttribute="bottom" constant="16" id="CyL-eU-a5K"/>
+                                            <constraint firstItem="bcc-2B-Mk9" firstAttribute="leading" secondItem="0zC-IO-0sZ" secondAttribute="leading" constant="32" id="HY3-hf-9xK"/>
+                                            <constraint firstItem="bcc-2B-Mk9" firstAttribute="top" secondItem="ZWJ-Yv-FcL" secondAttribute="bottom" constant="39" id="NyL-0y-lwU"/>
+                                            <constraint firstItem="VXb-h2-5fe" firstAttribute="leading" secondItem="0zC-IO-0sZ" secondAttribute="leading" constant="32" id="QFd-2w-Pnq"/>
+                                            <constraint firstItem="Yfq-Ga-gCU" firstAttribute="leading" secondItem="0zC-IO-0sZ" secondAttribute="leading" constant="16" id="Y0D-mJ-ieH"/>
+                                            <constraint firstItem="wOU-vO-IwS" firstAttribute="leading" secondItem="0zC-IO-0sZ" secondAttribute="leading" constant="32" id="YBD-BS-zIx"/>
+                                            <constraint firstAttribute="trailing" secondItem="9D0-V4-u6G" secondAttribute="trailing" constant="32" id="aXw-h2-G7A"/>
+                                            <constraint firstItem="9D0-V4-u6G" firstAttribute="leading" secondItem="wOU-vO-IwS" secondAttribute="leading" constant="14" id="d8f-hy-5L1"/>
+                                            <constraint firstItem="ZWJ-Yv-FcL" firstAttribute="centerX" secondItem="0zC-IO-0sZ" secondAttribute="centerX" id="eIh-mb-Jmt"/>
+                                            <constraint firstItem="VXb-h2-5fe" firstAttribute="top" secondItem="bcc-2B-Mk9" secondAttribute="bottom" constant="16" id="eqq-b1-x04"/>
+                                            <constraint firstItem="aQb-Xs-UD8" firstAttribute="leading" secondItem="FKe-vW-TeX" secondAttribute="leading" constant="14" id="ic1-m9-hVS"/>
+                                            <constraint firstItem="wOU-vO-IwS" firstAttribute="top" secondItem="9D0-V4-u6G" secondAttribute="top" id="nrd-yw-rhh"/>
+                                            <constraint firstItem="9D0-V4-u6G" firstAttribute="top" secondItem="aQb-Xs-UD8" secondAttribute="bottom" constant="16" id="oJ9-Av-Uqa"/>
+                                            <constraint firstItem="FKe-vW-TeX" firstAttribute="top" secondItem="aQb-Xs-UD8" secondAttribute="top" id="tt6-NY-HlO"/>
+                                            <constraint firstAttribute="trailing" secondItem="aQb-Xs-UD8" secondAttribute="trailing" constant="32" id="vFW-Em-O8M"/>
+                                            <constraint firstAttribute="trailing" secondItem="VXb-h2-5fe" secondAttribute="trailing" constant="32" id="vjh-Ay-aaI"/>
+                                            <constraint firstAttribute="bottom" secondItem="9D0-V4-u6G" secondAttribute="bottom" constant="16" id="yuN-kH-LnH"/>
+                                            <constraint firstItem="FKe-vW-TeX" firstAttribute="leading" secondItem="0zC-IO-0sZ" secondAttribute="leading" constant="32" id="z4w-xm-0vn"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0zC-IO-0sZ" firstAttribute="width" secondItem="OoD-bD-DFD" secondAttribute="width" id="FGa-pp-vPH"/>
+                                    <constraint firstItem="0zC-IO-0sZ" firstAttribute="top" secondItem="OoD-bD-DFD" secondAttribute="top" id="JwZ-Rh-Jsk"/>
+                                    <constraint firstAttribute="trailing" secondItem="0zC-IO-0sZ" secondAttribute="trailing" id="WCh-VM-s21"/>
+                                    <constraint firstAttribute="bottom" secondItem="0zC-IO-0sZ" secondAttribute="bottom" id="c3x-yE-gge"/>
+                                    <constraint firstItem="0zC-IO-0sZ" firstAttribute="leading" secondItem="OoD-bD-DFD" secondAttribute="leading" id="cgI-YS-kVg"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OoD-bD-DFD" firstAttribute="leading" secondItem="DEs-fN-XAh" secondAttribute="leading" id="eFu-St-fgl"/>
+                            <constraint firstItem="OoD-bD-DFD" firstAttribute="top" secondItem="DEs-fN-XAh" secondAttribute="top" id="fhd-pL-xYS"/>
+                            <constraint firstItem="DEs-fN-XAh" firstAttribute="bottom" secondItem="OoD-bD-DFD" secondAttribute="bottom" id="g0t-XN-umo"/>
+                            <constraint firstItem="OoD-bD-DFD" firstAttribute="trailing" secondItem="DEs-fN-XAh" secondAttribute="trailing" id="vzu-D0-KPH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DEs-fN-XAh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Nr-vZ-Ecl"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6dH-XR-yEt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3462" y="-2541"/>
         </scene>
         <!--Onboarding Step 1a View Controller-->
         <scene sceneID="R6W-kj-4rq">
@@ -3599,7 +3961,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Eya-O4-CPO"/>
-        <segue reference="rHc-rZ-59x"/>
+        <segue reference="bMl-IY-pjw"/>
         <segue reference="XiO-Zp-pOg"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -3613,6 +3975,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
         <image name="arrow-left" width="24" height="24"/>
         <image name="bell 1" width="40" height="40"/>
         <image name="chev-down" width="12" height="8"/>
+        <image name="chevron-right-red" width="24" height="24"/>
         <image name="globe" width="40" height="40"/>
         <image name="govLogoWhite" width="148" height="77"/>
         <image name="groupHeroShot" width="311" height="188"/>
@@ -3622,6 +3985,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
         <image name="ic-home-selected" width="24" height="24"/>
         <image name="ic-upload" width="24" height="24"/>
         <image name="info" width="24" height="24"/>
+        <image name="internet_connection" width="154" height="138"/>
         <image name="privacy" width="311" height="188"/>
         <image name="redcross" width="22" height="22"/>
         <image name="small tick" width="22" height="22"/>

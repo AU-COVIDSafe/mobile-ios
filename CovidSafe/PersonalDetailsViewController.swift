@@ -273,7 +273,7 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
                 hasError = true
                 fullNameErrorLabel.text = "personal_details_name_error_prompt".localizedString()
             }
-            else if textField.text?.range(of: #"^[A-Za-z0-9][A-Za-z'0-9\-\x{00C0}-\x{017F} ]{0,80}$"#, options: .regularExpression) == nil {
+            else if textField.text?.range(of: #"^[A-Za-z0-9\x{00C0}-\x{017F}][A-Za-z'0-9\-\x{00C0}-\x{017F} ]{0,80}$"#, options: .regularExpression) == nil {
                 hasError = true
                 fullNameErrorLabel.text = "personal_details_name_characters_prompt".localizedString()
             }

@@ -311,6 +311,9 @@
 "migration_in_progress" = "COVIDSafe正在更新。 \n\n请保持开机状态直至更新完成。";
 /* Figma page Android Screens (05/06) */
 "norfolk_hint" = "例如：51234";
+"notification_bluetooth" = "请开启蓝牙，以便COVIDSafe可以正常运行。";
+"notification_internet_content" = "请打开应用程序并检查网络连接，以便COVIDSafe可以正常运行。";
+"notification_not_active_title" = "COVIDSafe未激活";
 "notification_update_content" = "请更新您的应用程序以获得改进后的版本。";
 "notification_update_heading" = "COVIDSafe 更新可用";
 /* Figma page iOS Screens (05/06) */
