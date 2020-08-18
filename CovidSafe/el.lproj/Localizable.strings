@@ -254,7 +254,7 @@
 /* Figma page Android Screens (05/06) */
 "Enter_your_mobile_number_label" = "Εισάγετε τον αριθμό του κινητού σας";
 "global_back" = "Πίσω";
-"global_close" = "Κλείσε";
+"global_close" = "Κλείσετε";
 "global_double_tap" = "πατήστε δύο φορές για επεξεργασία";
 "global_OK" = "OK";
 "home_app_permission_status_subtitle" = "Η COVIDSafe δε θα λειτουργήσει χωρίς τις σωστές ρυθμίσεις.";
@@ -311,6 +311,9 @@
 "migration_in_progress" = "Η ενημέρωση της COVIDSafe συνεχίζεται. \n\nΒεβαιωθείτε ότι το τηλέφωνό σας δεν είναι απενεργοποιημένο έως ότου ολοκληρωθεί η ενημέρωση.";
 /* Figma page Android Screens (05/06) */
 "norfolk_hint" = "Για παράδειγμα: 51234";
+"notification_bluetooth" = "Ενεργοποιήστε το Bluetooth για να λειτουργεί η COVIDSafe.";
+"notification_internet_content" = "Ανοίξτε την εφαρμογή και ελέγξτε τη σύνδεσή σας στο internet για να λειτουργήσει η COVIDSafe.";
+"notification_not_active_title" = "Η COVIDSafe δεν είναι ενεργή";
 "notification_update_content" = "Ανανεώστε την εφαρμογή σας για πρόσβαση στις πιο πρόσφατες βελτιώσεις.";
 "notification_update_heading" = "Η ενημερωμένη έκδοση είναι διαθέσιμη!";
 /* Figma page iOS Screens (05/06) */
@@ -322,7 +325,7 @@
 "options_for_australia" = "Επιλογές για την Αυστραλία";
 "permission_button" = "Προχωρήστε";
 /* Figma page iOS Screens (05/06) */
-"permission_content_iOS" = "Για να λειτουργήσει η COVIDSafe θα πρέπει το Bluetooth® να είναι ενεργοποιημένο. Όταν ενεργοποιήσετε τις Ειδοποιήσεις, θα λάβετε τις ενημερώσεις που υπενθυμίζουν πότε η COVIDSafe δεν είναι ενεργή. \n\n Επιλέξτε «Συνέχεια» για ενεργοποίηση:";
+"permission_content_iOS" = "Για να λειτουργήσει η COVIDSafe θα πρέπει το Bluetooth® να είναι ενεργοποιημένο. Όταν ενεργοποιήσετε τις Ειδοποιήσεις, θα λάβετε τις ενημερώσεις που υπενθυμίζουν πότε η COVIDSafe δεν είναι ενεργή. \n\n Επιλέξτε «Προχωρήστε» για ενεργοποίηση:";
 /* Figma page iOS Screens (05/06) */
 "permission_content_iOS_2" = "1. Bluetooth® \n2. Ειδοποιήσεις \n\n Η COVIDSafe δεν αποστέλλει αιτήματα σύζευξης.";
 /* OnBoarding Permission */

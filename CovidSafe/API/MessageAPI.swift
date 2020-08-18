@@ -12,6 +12,7 @@ import KeychainSwift
 class MessageAPI {
     
     static let keyLastApiUpdate = "keyLastApiUpdate"
+    static let keyLastVersionChecked = "keyLastVersionChecked"
 
     static func getMessagesIfNeeded(completion: @escaping (MessageResponse?, Swift.Error?) -> Void) {
         if shouldGetMessages() {
@@ -23,7 +24,7 @@ class MessageAPI {
                 EncounterDB.shared.persistentContainer else {
                     return
             }
-            let managedContext = persistentContainer.viewContext
+            let managedContext = persistentContainer.newBackgroundContext()
             guard let encounterLastWeekRequest = Encounter.fetchEncountersInLast(days: 7) else {
                 return
             }
@@ -47,10 +48,17 @@ class MessageAPI {
     
     private static func shouldGetMessages() -> Bool {
         let lastChecked = UserDefaults.standard.double(forKey: keyLastApiUpdate)
+        let versionChecked = UserDefaults.standard.integer(forKey: keyLastVersionChecked)
+        
         var shouldGetMessages = true
         
         let calendar = NSCalendar.current
         let currentDate = calendar.startOfDay(for: Date())
+        
+        // if the current version is newer than the last version checked, allow messages call
+        if let currVersionStr = Bundle.main.version, let currVersion = Int(currVersionStr), currVersion > versionChecked {
+            return true
+        }
         
         if lastChecked > 0 {
             let lastCheckedDate = Date(timeIntervalSince1970: lastChecked)
@@ -82,7 +90,7 @@ class MessageAPI {
         var params: [String : Any] = [
             "os" : "ios-\(UIDevice.current.systemVersion)",
             "healthcheck" : msgRequest.healthcheck.rawValue,
-            "preferredLanguages": Locale.preferredLanguages
+            "preferredlanguages": Locale.preferredLanguages
             ]
 
         if let buildString = Bundle.main.version {
@@ -99,12 +107,13 @@ class MessageAPI {
                 switch response.result {
                 case .success:
                     guard let messageResponse = response.value else { return }
-                    
+
                     // save successful timestamp
                     let calendar = NSCalendar.current
                     let currentDate = calendar.startOfDay(for: Date())
                     UserDefaults.standard.set(currentDate.timeIntervalSince1970, forKey: keyLastApiUpdate)
-                    
+                    UserDefaults.standard.set(Bundle.main.version, forKey: keyLastVersionChecked)
+
                     completion(messageResponse, nil)
                 case let .failure(error):
                     completion(nil, error)
@@ -125,7 +134,23 @@ struct MessageRequest {
 }
 
 struct MessageResponse: Decodable {
-  let message: String
-  let forceappupgrade: Bool
-  
+    let messages: [Message]?
+    let forceappupgrade: Bool
+    
+    enum CodingKeys: String, CodingKey {
+        case messages
+        case forceappupgrade
+    }
+}
+
+struct Message: Decodable {
+    let title: String?
+    let body: String?
+    let destination: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case title
+        case body
+        case destination
+    }
 }

@@ -16,6 +16,7 @@ enum SecurityError: Error {
     case EncryptionLengthError
     case EncryptionKeyLengthError
     case UnexpectedNilKeys
+    case NonceCopyError
 }
 
 
@@ -112,17 +113,19 @@ class Crypto {
     }
     
     static func buildSecretData(_ serverPublicKey: Data, _ plaintext: Data) throws -> Data {
-        // Get our ephemeral secrets that will de disposed at the end of this function
         let (cachedExportPublicKey, cachedAESKey, cachedMacKey, nonce) = try keyCacheQueue.sync { () -> (Data?, Data?, Data?, Data) in
-            if Crypto.keyGenTime <= Int64(Date().timeIntervalSince1970) - KEY_GEN_TIME_DELTA || Crypto.counter >= 65535 {
+            if Crypto.keyGenTime <= Int64(Date().timeIntervalSince1970) - KEY_GEN_TIME_DELTA || Crypto.counter >= 255 {
                 (Crypto.cachedExportPublicKey, Crypto.cachedAesKey, Crypto.cachedMacKey) = try getEphemeralSecrets(serverPublicKey)
                 Crypto.keyGenTime = Int64(Date().timeIntervalSince1970)
                 Crypto.counter = 0
             } else {
                 Crypto.counter += 1
             }
-            let nonce = withUnsafeBytes(of: Crypto.counter.bigEndian) { Data($0) }
-            return (Crypto.cachedExportPublicKey, Crypto.cachedAesKey, Crypto.cachedMacKey, nonce)
+            var nonce = [UInt8](repeating: 0, count: 2)
+            let status = SecRandomCopyBytes(kSecRandomDefault, nonce.count, &nonce)
+            guard status == errSecSuccess else { throw SecurityError.NonceCopyError }
+            return (Crypto.cachedExportPublicKey, Crypto.cachedAesKey, Crypto.cachedMacKey, Data(nonce))
+
         }
         guard let exportPublicKey = cachedExportPublicKey, let aesKey = cachedAESKey, let macKey = cachedMacKey else {
             throw SecurityError.UnexpectedNilKeys

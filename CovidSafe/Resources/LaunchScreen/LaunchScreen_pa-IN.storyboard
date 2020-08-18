@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ndM-0H-HLb">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Initial Screen View Controller-->
+        <scene sceneID="3KM-vg-9Ea">
+            <objects>
+                <viewController id="ndM-0H-HLb" userLabel="Initial Screen View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ccJ-n5-IxS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="govLogoWhite" translatesAutoresizingMaskIntoConstraints="NO" id="21S-jo-kCt">
+                                <rect key="frame" x="133" y="32" width="148" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="21S-jo-kCt" secondAttribute="height" multiplier="148:77" id="a08-bz-dFI"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="byk-eZ-Cpa" userLabel="GREEN background view">
+                                <rect key="frame" x="0.0" y="155" width="414" height="581"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffR-XF-3zY">
+                                        <rect key="frame" x="67" y="109.33333333333334" width="280" height="362.33333333333326"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Lns-hM-mdb">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="280"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Lns-hM-mdb" secondAttribute="height" multiplier="1:1" id="v9k-g8-SR7"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZS-BI-D7Z">
+                                                <rect key="frame" x="0.0" y="320.00000000000006" width="280" height="42.333333333333314"/>
+                                                <string key="text">ਫੈਲਣ ਨੂੰ ਰੋਕਣ ਵਿੱਚ ਸਹਾਇਤਾ ਕਰੋ
+ਅਤੇ ਜ਼ਿੰਦਗੀਆਂ  ਬਚਾਓ।</string>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Lns-hM-mdb" secondAttribute="trailing" id="3O3-PD-3fy"/>
+                                            <constraint firstItem="Lns-hM-mdb" firstAttribute="top" secondItem="ffR-XF-3zY" secondAttribute="top" id="9I9-JR-v99"/>
+                                            <constraint firstItem="Lns-hM-mdb" firstAttribute="leading" secondItem="ffR-XF-3zY" secondAttribute="leading" id="9lM-TA-Uhg"/>
+                                            <constraint firstAttribute="bottom" secondItem="eZS-BI-D7Z" secondAttribute="bottom" id="FaE-b8-5YY"/>
+                                            <constraint firstAttribute="trailing" secondItem="eZS-BI-D7Z" secondAttribute="trailing" id="ZeH-mN-NMD"/>
+                                            <constraint firstItem="eZS-BI-D7Z" firstAttribute="leading" secondItem="ffR-XF-3zY" secondAttribute="leading" id="g4k-9R-LIx"/>
+                                            <constraint firstItem="eZS-BI-D7Z" firstAttribute="centerX" secondItem="ffR-XF-3zY" secondAttribute="centerX" id="nRo-Vh-rBQ"/>
+                                            <constraint firstItem="eZS-BI-D7Z" firstAttribute="top" secondItem="Lns-hM-mdb" secondAttribute="bottom" constant="40" id="oNj-AQ-Ies"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.78431372549019607" green="1" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ffR-XF-3zY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="byk-eZ-Cpa" secondAttribute="top" constant="10" id="42X-bp-isz"/>
+                                    <constraint firstItem="ffR-XF-3zY" firstAttribute="centerX" secondItem="byk-eZ-Cpa" secondAttribute="centerX" id="Csu-ZS-HCo"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ffR-XF-3zY" secondAttribute="bottom" constant="10" id="k6e-ma-vPy"/>
+                                    <constraint firstAttribute="trailing" secondItem="ffR-XF-3zY" secondAttribute="trailing" constant="67" id="q1o-6R-0vG"/>
+                                    <constraint firstItem="ffR-XF-3zY" firstAttribute="leading" secondItem="byk-eZ-Cpa" secondAttribute="leading" constant="67" id="qvW-nR-Vxf"/>
+                                    <constraint firstItem="ffR-XF-3zY" firstAttribute="centerY" secondItem="byk-eZ-Cpa" secondAttribute="centerY" id="zXR-uc-tzt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="byk-eZ-Cpa" firstAttribute="top" secondItem="21S-jo-kCt" secondAttribute="bottom" constant="46" id="QDG-ti-md6"/>
+                            <constraint firstItem="21S-jo-kCt" firstAttribute="top" secondItem="dqz-nd-ma4" secondAttribute="top" constant="32" id="dkQ-8V-GvR"/>
+                            <constraint firstItem="21S-jo-kCt" firstAttribute="centerX" secondItem="ccJ-n5-IxS" secondAttribute="centerX" id="hyp-Iu-rfr"/>
+                            <constraint firstItem="byk-eZ-Cpa" firstAttribute="bottom" secondItem="dqz-nd-ma4" secondAttribute="bottom" id="j5B-ny-qsO"/>
+                            <constraint firstItem="21S-jo-kCt" firstAttribute="centerX" secondItem="byk-eZ-Cpa" secondAttribute="centerX" id="oOH-3M-97h"/>
+                            <constraint firstItem="byk-eZ-Cpa" firstAttribute="leading" secondItem="dqz-nd-ma4" secondAttribute="leading" id="sAQ-Vm-eEu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dqz-nd-ma4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1sA-Bl-Xp3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pkq-4F-YCB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1267.5" y="335.91549295774649"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Splash_logo" width="240" height="240"/>
+        <image name="govLogoWhite" width="148" height="77"/>
+    </resources>
+</document>

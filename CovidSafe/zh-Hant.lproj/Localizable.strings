@@ -1,7 +1,7 @@
 "action_continue" = "繼續";
 "action_report_an_issue" = "回報問題";
 "action_upload_done" = "完成";
-"action_verify_invalid_pin" = "PIN 碼無效，請要求衛生部官員再傳送另一條 PIN 給您。";
+"action_verify_invalid_pin" = "PIN 碼無效，請要求衛生部官員再傳送另一條 PIN 給你。";
 "action_verify_upload_pin" = "上傳我的資料";
 /* Figma page iOS Screens (05/06) */
 "allow_bluetooth_call" = "允許 COVIDSafe 接入藍牙®";
@@ -158,7 +158,7 @@
 "country_region_name_mw" = "馬拉威";
 "country_region_name_mx" = "墨西哥";
 "country_region_name_my" = "馬來西亞";
-"country_region_name_mz" = "莫三比克";
+"country_region_name_mz" = "莫桑比克";
 "country_region_name_na" = "納米比亞";
 "country_region_name_nc" = "新喀里多尼亞";
 "country_region_name_ne" = "尼日爾";
@@ -239,46 +239,46 @@
 "dialog_error_uploading_message" = "個人資料上傳時發生錯誤，請重試。";
 "dialog_error_uploading_negative" = "取消";
 "dialog_error_uploading_positive" = "重試";
-"dialog_uploading_message" = "正在上傳您的 COVIDSafe 資料。 \n\n請勿關閉應用程式。";
+"dialog_uploading_message" = "正在上傳你的 COVIDSafe 資料。 \n\n請勿關閉應用程式。";
 "done_success" = "完成";
 "enter_number_button" = "收取 PIN 碼";
-"enter_number_content" = "我們將向您傳送一條 6 數位的 PIN 碼來驗證您的手機號碼。";
-"enter_number_headline" = "輸入您的手機號碼";
+"enter_number_content" = "我們將向你傳送一條 6 數位的 PIN 碼來驗證你的手機號碼。";
+"enter_number_headline" = "輸入你的手機號碼";
 "enter_number_relative" = "是否替朋友或親戚註册？\n\n他們需用自己的設備及電話號碼進行註册才能使用 COVIDSafe。";
 "enter_pin_button" = "驗證";
 /* OnBoarding Enter PIN */
 "enter_pin_headline" = "輸入傳送到%s%s的 PIN 碼";
 "enter_pin_resend_pin" = "重新寄出 PIN 碼";
-"enter_pin_timer_expire" = "您的 PIN 碼將在此時間後無效";
+"enter_pin_timer_expire" = "你的 PIN 碼將在此時間後無效";
 "enter_pin_wrong_number" = "請確認手機號碼是否正確";
 /* Figma page Android Screens (05/06) */
-"Enter_your_mobile_number_label" = "請輸入您的手機號碼";
+"Enter_your_mobile_number_label" = "請輸入你的手機號碼";
 "global_back" = "返回";
 "global_close" = "關閉";
 "global_double_tap" = "點觸兩次來編輯";
 "global_OK" = "確定";
 "home_app_permission_status_subtitle" = "若設定錯誤，將無法執行 COVIDSafe。";
-"home_app_permission_status_title" = "檢查您的設定";
-"home_data_uploaded_message" = "協助遏止 COVID-19 擴散，追蹤您的症狀。";
+"home_app_permission_status_title" = "檢查你的設定";
+"home_data_uploaded_message" = "協助遏止 COVID-19 擴散，追蹤你的症狀。";
 "home_header_active_no_action_required" = "無需採取進一步行動。";
 /* Home */
 "home_header_active_title" = "COVIDSafe 已在啓用狀態";
 /* Home */
 "home_header_active_title_thanks" = "感謝，COVIDSafe 現在已激活。";
-"home_header_inactive_check_your_permissions" = "檢查您的設定。";
+"home_header_inactive_check_your_permissions" = "檢查你的設定。";
 "home_header_inactive_title" = "COVIDSafe 未在啓用狀態。";
-"home_header_uploaded_on_date_ios" = "您的資料已在%@上傳 。";
+"home_header_uploaded_on_date_ios" = "你的資料已在%@上傳 。";
 "home_set_complete_external_link_app_content" = "下載政府應用程式來收取最新資訊及忠告。";
 "home_set_complete_external_link_app_title" = "收取冠狀病毒應用程式";
-"home_set_complete_external_link_been_contacted_content" = "只有在您被驗出病毒陽性時，才能上傳個人資料。";
-"home_set_complete_external_link_been_contacted_title" = "是否有衛生部官員聯絡您？";
-"home_set_complete_external_link_help_topics_content" = "如果您對應用程式有疑難或疑問。";
+"home_set_complete_external_link_been_contacted_content" = "只有在你被驗出病毒陽性時，才能上傳個人資料。";
+"home_set_complete_external_link_been_contacted_title" = "是否有衛生部官員聯絡你？";
+"home_set_complete_external_link_help_topics_content" = "如果你對應用程式有疑難或疑問。";
 "home_set_complete_external_link_help_topics_title" = "求助主題";
 "home_set_complete_external_link_news_content" = "請到 aus.gov.au 了解冠狀病毒的最新資訊。";
 "home_set_complete_external_link_news_title" = "最新資訊及更新事宜";
 "home_set_complete_external_link_news_url" = "https://www.australia.gov.au";
 /* Figma page iOS Screens (05/06) */
-"home_set_complete_external_link_notifications_content_iOS_off" = "如果 COVIDSafe 尚未處於啟用狀態，您將不會收到通知。";
+"home_set_complete_external_link_notifications_content_iOS_off" = "如果 COVIDSafe 尚未處於啟用狀態，你將不會收到通知。";
 /* Figma page iOS Screens (05/06) */
 "home_set_complete_external_link_notifications_title_iOS" = "「傳送通知」功能已開啟";
 /* Figma page iOS Screens (05/06) */
@@ -289,7 +289,7 @@
 "home_setup_help" = "求助";
 "home_version_number_ios" = "發行版本%@ ，建構版本%@";
 "how_it_works_button" = "下一步";
-"how_it_works_content" = "COVIDSafe 需要使用藍牙®訊號以確定你在何時接近另一名用戶。 \n\n你與其他COVIDSafe用戶之間的每一次密切接觸都會被記錄下來，以建立密切接觸者資料。該資料會被加密，並僅儲存在您的手機内。\n\n如果你是COVIDSafe用户並被驗出 COVID-19 陽性，州或領地衛生部官員將會與你聯絡。他們會協助您自願地將密切接觸者資料上傳到高度保密的資料儲存系統。\n\n如果你曾密切接觸過另一名被驗出 COVID-19 陽性的 COVIDSafe 用戶，則州或領地的衛生部官員亦會聯絡你。 \n\n欲知詳情，請參閱*求助主題*頁";
+"how_it_works_content" = "COVIDSafe 需要使用藍牙®訊號以確定你在何時接近另一名用戶。 \n\n你與其他COVIDSafe用戶之間的每一次密切接觸都會被記錄下來，以建立密切接觸者資料。該資料會被加密，並僅儲存在你的手機内。\n\n如果你是COVIDSafe用户並被驗出 COVID-19 陽性，州或領地衛生部官員將會與你聯絡。他們會協助你自願地將密切接觸者資料上傳到高度保密的資料儲存系統。\n\n如果你曾密切接觸過另一名被驗出 COVID-19 陽性的 COVIDSafe 用戶，則州或領地的衛生部官員亦會聯絡你。 \n\n欲知詳情，請參閱*求助主題*頁";
 /* OnBoarding How it works */
 "how_it_works_headline" = "COVIDSafe 是如何執行的";
 "improve_heading" = "改良COVIDSafe的性能";
@@ -298,9 +298,9 @@
 "internet_screen_content" = "COVIDSafe時不時需要連接到服務器來確保它可以找出應用程式的問題。\n\n連接到互聯網，確保你可以收到有關以下內容的通知:";
 "internet_screen_content_1" = "如何修補問題並且再次使COVIDSafe激活";
 "internet_screen_content_2" = "當一個新版本更新可用時";
-"internet_screen_heading" = "連接到互聯網來改良COVIDSafe的性能\n";
+"internet_screen_heading" = "連接到互聯網來改良COVIDSafe的性能";
 "intro_button" = "我肯出一分力";
-"intro_content" = "爲了避免冠狀病毒在社區擴散，澳洲政府開發了 COVIDSafe。 \n\nCOVIDSafe 會保密地記錄您與其他用戶之間的接觸。如果您曾密切接觸過被驗出病毒陽性的人士，各州和領地的衛生部官員就可以聯絡您。 \n\n讓我們齊心協力，遏止病毒傳播，確保生活健康。";
+"intro_content" = "爲了避免冠狀病毒在社區擴散，澳洲政府開發了 COVIDSafe。 \n\nCOVIDSafe 會保密地記錄你與其他用戶之間的接觸。如果你曾密切接觸過被驗出病毒陽性的人士，各州和領地的衛生部官員就可以聯絡你。 \n\n讓我們齊心協力，遏止病毒傳播，確保生活健康。";
 /* OnBoarding Intro */
 "intro_headline" = "齊心協力，遏止 COVID-19 的擴散。";
 /* Class = "UILabel"; text = "Help stop the spread\nand save lives."; ObjectID = "Cme-9F-deB"; */
@@ -311,38 +311,41 @@
 "migration_in_progress" = "正在更新 COVIDSafe。\n\n請保持開機狀態直至更新完成為止。";
 /* Figma page Android Screens (05/06) */
 "norfolk_hint" = "例如：51234";
+"notification_bluetooth" = "要使COVIDSafe運作，請開啟藍牙。";
+"notification_internet_content" = "要使COVIDSafe運作，請打開應用程式，檢查網絡連接。";
+"notification_not_active_title" = "COVIDSafe 未在啓用狀態";
 "notification_update_content" = "更新你的應用程式來獲取最新的改良。";
 "notification_update_heading" = "COVIDSafe更新可用";
 /* Figma page iOS Screens (05/06) */
 "NotificationsBlurbLink" = "更改通知設定";
 /* Figma page iOS Screens (05/06) */
-"NotificationsDisabledBlurb" = "如果 COVIDSafe 尚未處於啟用狀態，您將不會收到通知。 \n更改通知設定";
+"NotificationsDisabledBlurb" = "如果 COVIDSafe 尚未處於啟用狀態，你將不會收到通知。 \n更改通知設定";
 /* Figma page iOS Screens (05/06) */
-"NotificationsEnabledBlurb" = "如果 COVIDSafe 尚未處於啟用狀態，您將會收到通知。 \n更改通知設定";
+"NotificationsEnabledBlurb" = "如果 COVIDSafe 尚未處於啟用狀態，你將會收到通知。 \n更改通知設定";
 "options_for_australia" = "澳洲適用選項";
 "permission_button" = "繼續";
 /* Figma page iOS Screens (05/06) */
-"permission_content_iOS" = "COVIDSafe  需要開啓藍牙®才能執行。透過開啟「通知傳送」功能，您會在 COVIDSafe 仍未處於啟用狀態時收到提醒。\n\n請選擇「繼續」來開啟：";
+"permission_content_iOS" = "COVIDSafe  需要開啓藍牙®才能執行。透過開啟「通知傳送」功能，你會在 COVIDSafe 仍未處於啟用狀態時收到提醒。\n\n請選擇「繼續」來開啟：";
 /* Figma page iOS Screens (05/06) */
 "permission_content_iOS_2" = "1. 藍牙®\n2. 通知\n\nCOVIDSafe 不會寄出配對請求。";
 /* OnBoarding Permission */
 "permission_headline" = "應用程式設定";
 "permission_success_button" = "完成";
 /* OnBoarding Permission Success */
-"permission_success_headline" = "您已成功註册";
-"permission_success_warning" = "開啓 COVIDSafe 的傳送通知功能，以便在無法正常執行應用程式時及時通知您。";
+"permission_success_headline" = "你已成功註册";
+"permission_success_warning" = "開啓 COVIDSafe 的傳送通知功能，以便在無法正常執行應用程式時及時通知你。";
 "personal_details_age_content_description" = "選擇年齡組別";
-"personal_details_age_error_prompt" = "請選擇您的年齡組別。";
+"personal_details_age_error_prompt" = "請選擇你的年齡組別。";
 "personal_details_age_title" = "年齡組別（選擇）";
 "personal_details_button" = "繼續";
 "personal_details_dialog_ok" = "選擇";
 /* OnBoarding Personal details */
-"personal_details_headline" = "輸入您的詳細資料";
+"personal_details_headline" = "輸入你的詳細資料";
 "personal_details_name_characters_prompt" = "請用英文字母輸入你的全名。請勿使用其他語言的文字或符號，例如 ‘，’ '或 ‘？’。";
-"personal_details_name_error_prompt" = "請輸入您的全名。";
+"personal_details_name_error_prompt" = "請輸入你的全名。";
 "personal_details_name_title" = "全名（或假名）";
 "personal_details_post_code" = "澳洲郵遞區號";
-"personal_details_post_code_error_prompt" = "您的澳洲郵遞區號必須是個 4 位數字。";
+"personal_details_post_code_error_prompt" = "你的澳洲郵遞區號必須是個 4 位數字。";
 "PINNumber_VO_Label" = "PIN 碼";
 /* Figma page iOS Screens (05/06) */
 "PN_BluetoothStatusBody" = "在離家前及在公共場所時，務必開啟藍牙®以確保 COVIDSafe 處於啟用狀態。";
@@ -369,7 +372,7 @@
 "under_sixteen_content" = "我確認我的父母或監護人同意數字化轉型局作為數據儲存管理者，根據澳大利亞政府衛生部常務副部長的合法決定，收集以下資訊：";
 "under_sixteen_first_paragraph" = "我的註册資料。";
 /* OnBoarding Under Sixteen */
-"under_sixteen_headline" = "您需要經父母/監護人同意才能繼續";
+"under_sixteen_headline" = "你需要經父母/監護人同意才能繼續";
 /* Figma page Android Screens (05/06) */
 "under_sixteen_registration_consent_first_paragraph" = "我的註册資料";
 "under_sixteen_second_paragraph" = "我與其他COVIDSafe用戶的接觸資料，如果我接觸過的另一用戶COVID-19測試呈陽性並且上傳了其接觸者數據。";
@@ -384,14 +387,14 @@
 "upload_answer_yes" = "是";
 "upload_consent_button" = "我同意";
 "upload_failed" = "上傳失敗";
-"upload_finished_header" = "感謝您協助遏止 COVID-19 的擴散！";
-"upload_finished_sub_header" = "您已成功將個人資料上傳到 COVIDSafe 高度保密的儲存系統。\n\n若錄得有其他 COVIDSafe 用户曾密切接觸過您，各州或領地的衛生部官員將會通知他們。您的身份仍舊予以保密。";
-"upload_step_1_body" = "只在您被驗出 COVID-19 陽性時，各州或領地的衛生部官員才會聯絡您，協助您自願上傳您的資料。\n\n按「是」後，請同意上傳您的資料。";
-"upload_step_1_header" = "是否有衛生部官員要求您上傳您的資料？";
+"upload_finished_header" = "感謝你協助遏止 COVID-19 的擴散！";
+"upload_finished_sub_header" = "你已成功將個人資料上傳到 COVIDSafe 高度保密的儲存系統。\n\n若錄得有其他 COVIDSafe 用户曾密切接觸過你，各州或領地的衛生部官員將會通知他們。你的身份仍舊予以保密。";
+"upload_step_1_body" = "只在你被驗出 COVID-19 陽性時，各州或領地的衛生部官員才會聯絡你，協助你自願上傳你的資料。\n\n按「是」後，請同意上傳你的資料。";
+"upload_step_1_header" = "是否有衛生部官員要求你上傳你的資料？";
 "upload_step_4_header" = "上傳同意聲明";
 "upload_step_4_sub_header" = "除非你同意，否則你的密切接觸者資料不會被上傳。\n\n如果你同意，你的密切接觸者資料將會被上傳並與各州或領地的衛生部官員共享，作為追蹤接觸者之用。\n\n州和領地衛生官員將只能獲取關於你的密切接觸者的資料。\n\n欲知詳情，請參閱 COVIDSafe *私隱政策*。";
-"upload_step_verify_pin_header" = "上傳您的資料";
-"upload_step_verify_pin_sub_header" = "各州或領地的衛生部官員將會透過簡訊傳送一條 PIN 碼到您的設備。請在下面輸入 PIN 碼來上傳個人資料。";
+"upload_step_verify_pin_header" = "上傳你的資料";
+"upload_step_verify_pin_sub_header" = "各州或領地的衛生部官員將會透過簡訊傳送一條 PIN 碼到你的設備。請在下面輸入 PIN 碼來上傳個人資料。";
 "us_consent_button" = "我同意";
 "wrong_ping_number" = "輸入了錯誤的 PIN 碼";
 "country_region_name_au2" = "諾福克島";
@@ -399,16 +402,16 @@
 "AllowBluetoothON_VOLabel" = "接入藍牙：開";
 "BluetoothOFF_VOLabel" = "藍牙：關 請打開手機藍牙®。如有顯示，請選擇「允許新連接」選項。";
 "BluetoothON_VOLabel" = "藍牙®：開";
-"CodeHasExpired" = "您的 PIN 碼已無效。";
+"CodeHasExpired" = "你的 PIN 碼已無效。";
 /* details */
 "Done" = "完成";
 /* Feedback */
-"EmailPlaceholder" = "輸入您的電子郵件（必填）";
+"EmailPlaceholder" = "輸入你的電子郵件（必填）";
 /* Phone number and PIN */
-"EnterPhoneReVerify" = "輸入您的手機號碼以重新驗證";
+"EnterPhoneReVerify" = "輸入你的手機號碼以重新驗證";
 "EnterPINSent" = "輸入傳送到%@的 PIN 碼";
 /* Message for prompt that user sees when opening feeback. Prompt asks user if he/she would like to send new feedback. */
-"entryPrompt_alert_message" = "您好，想選擇執行那一項呢？";
+"entryPrompt_alert_message" = "你好，想選擇執行那一項呢？";
 /* Title for prompt that user sees when opening feeback. Prompt asks user if he/she would like to send new feedback. */
 "entryPrompt_alert_title" = "意見箱";
 /* Title for button that launches new feedback flow. */
@@ -423,19 +426,19 @@
 "InformationUploaded" = "個人資料已在%@ 上傳。";
 "InvalidOTP" = "必須是個 6 位數字";
 "IssueDescPlaceholder" = "請描述該問題";
-"IssueFooter" = "我們可能會聯絡您以進一步了解反饋的詳情。您的電郵地址不會被用於其他目的。";
-"IssueThankYou" = "多謝！我們已經收到您的反饋。";
+"IssueFooter" = "我們可能會聯絡你以進一步了解反饋的詳情。你的電郵地址不會被用於其他目的。";
+"IssueThankYou" = "多謝！我們已經收到你的反饋。";
 /* Delete screenshot action sheet action button title. */
 "newFeedback_deleteScreenshot_actionTitle" = "刪除熒幕截圖";
 /* Messsage shown to user asking to confirm screenshot deletion. */
 "newFeedback_deleteScreenshotConfirmation_message" = "此熒幕截圖會被永久刪除。";
 "newFeedback_invalidEmail_errorMessage" = "請輸入有效的電郵地址！";
 /* Error message displayed to users when feedback has empty description */
-"newFeedback_noMessage_errorMessage" = "請在傳送前向我們提供您的意見。";
+"newFeedback_noMessage_errorMessage" = "請在傳送前向我們提供你的意見。";
 /* Error message displayed to users when feedback fails to send. */
 "newFeedback_send_errorMessage" = "傳送反饋時出錯";
 /* Navigation Bar title shown during new feedback flow. */
-"newFeedbackFlow_navigationTitle" = "回報問題";
+"newFeedbackFlow_navigationTitle" = "報告問題";
 "Next" = "下一步";
 /* registration succcess */
 "OS2b_Item1" = "1. 請在離家時隨身攜帶手機，並確保 COVIDSafe 處於開啟狀態。";
@@ -450,7 +453,7 @@
 "PhoneNumberFormatErrorTitle" = "號碼格式錯誤";
 "PhoneVerificationErrorMessage" = "請檢查個人資料，然後重試。";
 "PhoneVerificationErrorTitle" = "驗證電話號碼時出錯";
-"PINWillExpire" = "您的 PIN 碼將在%@無效";
+"PINWillExpire" = "你的 PIN 碼將在%@無效";
 "ReceivePinIssue" = "接收 PIN 碼時遇到問題？";
 /* help */
 "ReportAnIssue" = "回報問題";

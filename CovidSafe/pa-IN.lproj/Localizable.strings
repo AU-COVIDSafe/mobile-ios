@@ -1,0 +1,474 @@
+"action_continue" = "ਜਾਰੀ ਰੱਖੋ";
+"action_report_an_issue" = "ਮੁੱਦਾ ਰਿਪੋਰਟ ਕਰੋ|";
+"action_upload_done" = "ਕੀਤਾ";
+"action_verify_invalid_pin" = "ਨਾਜਾਇਜ ਪਿੰਨ, ਕਿਰਪਾ ਕਰਕੇ ਸਿਹਤ ਅਧਿਕਾਰੀ ਨੂੰ ਤੁਹਾਨੂੰ ਇੱਕ ਹੋਰ  ਪਿੰਨ ਭੇਜਣ ਲਈ ਕਹੋ।";
+"action_verify_upload_pin" = "ਮੇਰੀ ਜਾਣਕਾਰੀ ਅੱਪਲੋਡ ਕਰੋ";
+/* Figma page iOS Screens (05/06) */
+"allow_bluetooth_call" = "ਕੋਵਿਡਸੇਫ ਨੂੰ ਬਲੂਟੁੱਥ® ਤੱਕ ਪਹੁੰਚ ਦਿਓ";
+/* Figma page iOS Screens (05/06) */
+"AllowBluetoothOFF" = "ਬਲੂਟੁੱਥ® ਤੱਕ ਪਹੁੰਚ: ਔੱਫ";
+/* Figma page iOS Screens (05/06) */
+"AllowBluetoothON" = "ਬਲੂਟੁੱਥ ਤੱਕ ਪਹੁੰਚ: ਔਨ";
+/* Figma page iOS Screens (05/06) */
+"BluetoothOFF" = "ਬਲੂਟੁੱਥ®: ਔੱਫ";
+/* Figma page iOS Screens (05/06) */
+"BluetoothOFF_content" = "ਆਪਣੇ ਫ਼ੋਨ ਦੇ ਬਲੂਟੁੱਥ® ਨੂੰ ਚਾਲੂ ਕਰੋ। ਜੇਕਰ ਡਿਸਪਲੇ ਹੈ ਤਾਂ 'ਨਵੇਂ ਕੁਨੈਕਸ਼ਨ ਆਉਣ ਦਿਓ - Allow New Connections' ਚੁਣੋ ।";
+/* Figma page iOS Screens (05/06) */
+"BluetoothON" = "ਬਲੂਟੁੱਥ®: ਔਨ";
+"change_language" = "ਭਾਸ਼ਾ ਬਦਲੋ";
+"change_language_content" = "ਕੋਵਿਡਸੇਫ ਦੀ ਵਰਤੋਂ ਕਿਸੇ ਹੋਰ ਭਾਸ਼ਾ ਵਿੱਚ ਕਰਨ ਲਈ ਆਪਣੀਆਂ ਸੈਟਿੰਗਾਂ ਨੂੰ ਅੱਪਡੇਟ ਕਰੋ।";
+"consent_button" = "ਮੈਂ ਸਹਿਮਤ ਹਾਂ";
+/* Shared Consent Actions */
+"consent_call_for_action" = "ਸਹਿਮਤੀ ਦੀ ਪੁਸ਼ਟੀ ਲਈ 'ਮੈਂ ਸਹਿਮਤ ਹਾਂ - I agree' ਚੋਣ ਕਰੋ।";
+"country_region_name_ad" = "ਆਂਦਰਾ";
+"country_region_name_ae" = "ਸਯੁੰਕਤ ਅਰਬ ਅਮੀਰਾਤ";
+/* Countries */
+"country_region_name_af" = "ਅਫਗਾਨਿਸਤਾਨ";
+"country_region_name_ag" = "ਐਂਟੀਗੁਆ ਅਤੇ ਬਾਰਬੁਡਾ";
+"country_region_name_ai" = "ਐਂਗੁਏਲਾ";
+"country_region_name_al" = "ਅਲਬਾਨੀਆ";
+"country_region_name_am" = "ਅਰਮੇਨੀਆ";
+"country_region_name_an" = "ਨੀਦਰਲੈਂਡ ਐਂਟੀਲਸ";
+"country_region_name_ao" = "ਅੰਗੋਲਾ";
+"country_region_name_ar" = "ਅਰਜਨਟੀਨਾ";
+"country_region_name_at" = "ਆਸਟ੍ਰੀਆ";
+"country_region_name_au" = "ਆਸਟ੍ਰੇਲੀਆ";
+"country_region_name_aw" = "ਅਰੁਬਾ";
+"country_region_name_az" = "ਅਜ਼ਰਬਾਈਜਾਨ";
+"country_region_name_ba" = "ਬੋਸਨੀਆ ਅਤੇ ਹੈਰਟਸਗੋਵੀਨਾ";
+"country_region_name_bb" = "ਬਾਰਬਾਡੋਸ";
+"country_region_name_bd" = "ਬੰਗਲਾਦੇਸ਼";
+"country_region_name_be" = "ਬੈਲਜੀਅਮ";
+"country_region_name_bf" = "ਬੁਰਕੀਨਾ ਫਾਸੋ";
+"country_region_name_bg" = "ਬੁਲਗਾਰੀਆ";
+"country_region_name_bh" = "ਬਹਿਰੀਨ";
+"country_region_name_bi" = "ਬੁਰੂੰਡੀ";
+"country_region_name_bj" = "ਬੇਨਿਨ";
+"country_region_name_bm" = "ਬਰਮੂਡਾ";
+"country_region_name_bn" = "ਬਰੂਨੀ";
+"country_region_name_bo" = "ਬੋਲੀਵੀਆ";
+"country_region_name_br" = "ਬ੍ਰਾਜੀਲ";
+"country_region_name_bs" = "ਬਹਾਮਾਸ";
+"country_region_name_bt" = "ਭੂਟਾਨ";
+"country_region_name_bw" = "ਬੋਤਸਵਾਨਾ";
+"country_region_name_by" = "ਬੇਲਾਰੂਸ";
+"country_region_name_bz" = "ਬੇਲੀਜ਼";
+"country_region_name_ca" = "ਕਨੇਡਾ";
+"country_region_name_cd" = "ਕਾਂਗੋ ਡੇਮੋਕ੍ਰੇਟਿਕ ਰਿਪਬਲਿਕ";
+"country_region_name_cf" = "ਸੇੰਟ੍ਰਲ ਅਫ਼ਰੀਕੀ ਰਿਪਬਲਿਕ";
+"country_region_name_cg" = "ਕਾਂਗੋ ਰਿਪਬਲਿਕ";
+"country_region_name_ch" = "ਸਵਿਟਜ਼ਰਲੈਂਡ";
+"country_region_name_ci" = "ਆਈਵਰੀ ਕੋਸਟ";
+"country_region_name_ck" = "ਕੁੱਕ ਆਈਲੈਂਡਜ਼";
+"country_region_name_cl" = "ਚਿੱਲੀ";
+"country_region_name_cm" = "ਕੈਮਰੂਨ";
+"country_region_name_cn" = "ਚੀਨ";
+"country_region_name_co" = "ਕੋਲੰਬੀਆ";
+"country_region_name_cr" = "ਕੋਸਟਾ ਰੀਕਾ";
+"country_region_name_cu" = "ਕਿਊਬਾ";
+"country_region_name_cv" = "ਕੇਪ ਵਰਡੇ";
+"country_region_name_cw" = "ਕੁਰਕੈਓ";
+"country_region_name_cy" = "ਸਾਈਪ੍ਰਸ";
+"country_region_name_cz" = "ਚੈੱਕ ਰਿਪਬਲਿਕ";
+"country_region_name_de" = "ਜਰਮਨੀ";
+"country_region_name_dj" = "ਜਿਬੂਤੀ";
+"country_region_name_dk" = "ਡੈੱਨਮਾਰਕ";
+"country_region_name_dm" = "ਡੋਮਿਨਿਕਾ";
+"country_region_name_do" = "ਡੋਮੀਨੀਕਨ ਰਿਪਬਲਿਕ";
+"country_region_name_dz" = "ਅਲਜੀਰੀਆ";
+"country_region_name_ec" = "ਇਕਵਾਡੋਰ";
+"country_region_name_ee" = "ਐਸਟੋਨੀਆ";
+"country_region_name_eg" = "ਇਜ਼ਿਪਟ";
+"country_region_name_es" = "ਸਪੇਨ";
+"country_region_name_et" = "ਇਥੋਪੀਆ";
+"country_region_name_fi" = "ਫਿਨਲੈਂਡ";
+"country_region_name_fj" = "ਫੀਜੀ";
+"country_region_name_fo" = "ਫੈਰੋ ਆਈਲੈਂਡਜ਼";
+"country_region_name_fr" = "ਫਰਾਂਸ";
+"country_region_name_ga" = "ਗਾਬੋਨ";
+"country_region_name_gb" = "ਯੂਨਾਈਟਡ ਕਿੰਗਡਮ";
+"country_region_name_gd" = "ਗਰੇਨਾਡਾ";
+"country_region_name_ge" = "ਜੋਰਜੀਆ";
+"country_region_name_gf" = "ਫਰੈਂਚ ਗੁਆਨਾ";
+"country_region_name_gh" = "ਘਾਨਾ";
+"country_region_name_gi" = "ਜਿਬਰਾਲਟਰ";
+"country_region_name_gl" = "ਗਰੀਨਲੈਂਡ";
+"country_region_name_gm" = "ਗੈਂਬੀਆ";
+"country_region_name_gn" = "ਗਿਨੀ";
+"country_region_name_gp" = "ਗੁਆਡਲੂਪ";
+"country_region_name_gq" = "ਇਕਾਟੋਰੀਅਲ ਗਿਨੀ";
+"country_region_name_gr" = "ਗ੍ਰੀਸ";
+"country_region_name_gt" = "ਗੁਆਟੇਮਾਲਾ";
+"country_region_name_gu" = "ਗੁਆਮ";
+"country_region_name_gw" = "ਗਿਨੀ- ਬਿਸਾਊ";
+"country_region_name_gy" = "ਗੁਆਨਾ";
+"country_region_name_hk" = "ਹਾਂਗਕਾਂਗ";
+"country_region_name_hn" = "ਹਾਂਡੂਰਸ";
+"country_region_name_hr" = "ਕਰੋਸ਼ੀਆ";
+"country_region_name_ht" = "ਹੈਤੀ";
+"country_region_name_hu" = "ਹੰਗਰੀ";
+"country_region_name_id" = "ਇੰਡੋਨੇਸ਼ੀਆ";
+"country_region_name_ie" = "ਆਇਰਲੈਂਡ";
+"country_region_name_il" = "ਇਜ਼ਰਾਈਲ";
+"country_region_name_in" = "ਇੰਡੀਆ";
+"country_region_name_iq" = "ਇਰਾਕ";
+"country_region_name_ir" = "ਇਰਾਨ";
+"country_region_name_is" = "ਆਈਸਲੈਂਡ";
+"country_region_name_it" = "ਇਟਲੀ";
+"country_region_name_jm" = "ਜਮਾਈਕਾ";
+"country_region_name_jo" = "ਜਾਰਡਨ";
+"country_region_name_jp" = "ਜਪਾਨ";
+"country_region_name_ke" = "ਕੀਨੀਆ";
+"country_region_name_kg" = "ਕਿਰਗਿਜ਼ਸਤਾਨ";
+"country_region_name_kh" = "ਕੰਬੋਡੀਆ";
+"country_region_name_ki" = "ਕਿਰੀਬਾਤੀ";
+"country_region_name_km" = "ਕੋਮੋਰੋਸ";
+"country_region_name_kn" = "ਸੇਂਟ ਕਿੱਟਸ ਅਤੇ ਨੇਵਿਸ";
+"country_region_name_kr" = "ਦੱਖਣੀ ਕੋਰੀਆ";
+"country_region_name_kw" = "ਕਵੈਤ";
+"country_region_name_ky" = "ਕੇਮੈਨ ਆਈਲੈਂਡਜ਼";
+"country_region_name_kz" = "ਕਜਾਖਸਤਾਨ";
+"country_region_name_la" = "ਲਾਓਸ";
+"country_region_name_lb" = "ਲਿਬਨਾਨ";
+"country_region_name_lc" = "ਸੇਂਟ ਲੂਸੀਆ";
+"country_region_name_li" = "ਲਿਕਟਨਸਟਾਈਨ";
+"country_region_name_lk" = "ਸ਼੍ਰੀਲੰਕਾ";
+"country_region_name_lr" = "ਲਾਈਬੇਰੀਆ";
+"country_region_name_ls" = "ਲੇਸੋਥੋ";
+"country_region_name_lt" = "ਲਿਥੁਆਨੀਆ";
+"country_region_name_lu" = "ਲਕਜ਼ਮਬਰਗ";
+"country_region_name_lv" = "ਲਾਤਵੀਆ";
+"country_region_name_ly" = "ਲੀਬੀਆ";
+"country_region_name_ma" = "ਮੋਰੱਕੋ";
+"country_region_name_mc" = "ਮੋਨਾਕੋ";
+"country_region_name_md" = "ਮੋਲਦੋਵਾ";
+"country_region_name_me" = "ਮੋਂਟੇਨੇਗਰੋ";
+"country_region_name_mg" = "ਮੈਡਾਗਾਸਕਰ";
+"country_region_name_mk" = "ਮੈਸੇਡੋਨੀਆ ਦੇ ਸਾਬਕਾ ਯੂਗੋਸਲਾਵ ਗਣਤੰਤਰ";
+"country_region_name_ml" = "ਮਾਲੀ";
+"country_region_name_mm" = "ਮਿਆਂਮਾਰ";
+"country_region_name_mn" = "ਮੰਗੋਲੀਆ";
+"country_region_name_mo" = "ਮਕਾਊ";
+"country_region_name_mq" = "ਮਾਰਟੀਨਿਕ";
+"country_region_name_mr" = "ਮੌਰੀਟਾਨੀਆ";
+"country_region_name_ms" = "ਮਾਂਟਸੀਰਾਟ";
+"country_region_name_mt" = "ਮਾਲਟਾ";
+"country_region_name_mu" = "ਮਾਰੀਸ਼ਸ";
+"country_region_name_mv" = "ਮਾਲਦੀਵ";
+"country_region_name_mw" = "ਮਲਾਵੀ";
+"country_region_name_mx" = "ਮੈਕਸੀਕੋ";
+"country_region_name_my" = "ਮਲੇਸ਼ੀਆ";
+"country_region_name_mz" = "ਮੋਜ਼ੰਬੀਕ";
+"country_region_name_na" = "ਨਾਮੀਬੀਆ";
+"country_region_name_nc" = "ਨਿਊ ਕੈਲੇਡੋਨੀਆ";
+"country_region_name_ne" = "ਨਾਈਜਰ";
+"country_region_name_ng" = "ਨਾਈਜੀਰੀਆ";
+"country_region_name_ni" = "ਨਿਕਾਰਾਗੁਆ";
+"country_region_name_nl" = "ਨੀਦਰਲੈਂਡ";
+"country_region_name_no" = "ਨਾਰਵੇ";
+"country_region_name_np" = "ਨੇਪਾਲ";
+"country_region_name_nz" = "ਨਿਊਜੀਲੈਂਡ";
+"country_region_name_om" = "ਓਮਾਨ";
+"country_region_name_pa" = "ਪਨਾਮਾ";
+"country_region_name_pe" = "ਪੇਰੂ";
+"country_region_name_pg" = "ਪਾਪੂਆ ਨਿਊ ਗਿਨੀ";
+"country_region_name_ph" = "ਫਿਲੀਪੀਨਜ਼";
+"country_region_name_pk" = "ਪਾਕਿਸਤਾਨ";
+"country_region_name_pl" = "ਪੋਲੈਂਡ";
+"country_region_name_pr" = "ਪੁਇਰਤੋ ਰੀਕੋ";
+"country_region_name_ps" = "ਫਲਸਤੀਨੀ  ਟੈਰੀਟਰੀਜ਼";
+"country_region_name_pt" = "ਪੁਰਤਗਾਲ";
+"country_region_name_pw" = "ਪਾਲੂ";
+"country_region_name_py" = "ਪਰਾਗਵੇ";
+"country_region_name_qa" = "ਕਤਰ";
+"country_region_name_re" = "ਰੀਯੂਨੀਅਨ ਆਈਲੈਂਡਜ਼";
+"country_region_name_ro" = "ਰੋਮਾਨੀਆ";
+"country_region_name_rs" = "ਸਰਬੀਆ";
+"country_region_name_ru" = "ਰੂਸ";
+"country_region_name_rw" = "ਰਵਾਂਡਾ";
+"country_region_name_sa" = "ਸਾਊਦੀ ਅਰਬ";
+"country_region_name_sb" = "ਸੋਲੋਮਨ ਆਈਲੈਂਡਜ਼";
+"country_region_name_sc" = "ਸ਼ੇਚੇਲੀਜ਼";
+"country_region_name_sd" = "ਸੂਡਾਨ";
+"country_region_name_se" = "ਸਵੀਡਨ";
+"country_region_name_sg" = "ਸਿੰਗਾਪੁਰ";
+"country_region_name_si" = "ਸਲੋਵੇਨੀਆ";
+"country_region_name_sk" = "ਸਲੋਵਾਕੀਆ";
+"country_region_name_sl" = "ਸਿਏਰਾ ਲਿਓਨ";
+"country_region_name_sn" = "ਸੇਨੇਗਲ";
+"country_region_name_so" = "ਸੋਮਾਲੀਆ";
+"country_region_name_sr" = "ਸੂਰੀਨਾਮ";
+"country_region_name_ss" = "ਦੱਖਣੀ ਸੂਡਾਨ";
+"country_region_name_st" = "ਸਾਓ ਟੌਮ ਅਤੇ ਪ੍ਰਿੰਸੀਪ";
+"country_region_name_sv" = "ਐਲ ਸਾਲਵਾਡੋਰ";
+"country_region_name_sz" = "ਸਵਾਜ਼ੀਲੈਂਡ";
+"country_region_name_tc" = "ਤੁਰਕ ਅਤੇ ਕੈਕੋਸ ਆਈਲੈਂਡਜ਼";
+"country_region_name_td" = "ਚਾਡ";
+"country_region_name_tg" = "ਟੋਗੋ";
+"country_region_name_th" = "ਥਾਈਲੈਂਡ";
+"country_region_name_tj" = "ਤਾਜਿਕਸਤਾਨ";
+"country_region_name_tl" = "ਤਿਮੋਰ- ਲੈਸਟ";
+"country_region_name_tm" = "ਤੁਰਕਮੇਨਿਸਤਾਨ";
+"country_region_name_tn" = "ਟਿਊਨੀਸ਼ੀਆ";
+"country_region_name_to" = "ਟਾਂਗਾ";
+"country_region_name_tr" = "ਤੁਰਕੀ";
+"country_region_name_tt" = "ਤ੍ਰਿਨੀਦਾਦ ਅਤੇ ਤੋਬਾਗੋ";
+"country_region_name_tw" = "ਤਾਈਵਾਨ";
+"country_region_name_tz" = "ਤਨਜ਼ਾਨੀਆ";
+"country_region_name_ua" = "ਯੂਕਰੇਨ";
+"country_region_name_ug" = "ਯੁਗਾਂਡਾ";
+"country_region_name_us" = "ਯੂਨਾਈਟਿਡ ਸਟੇਟਸ ";
+"country_region_name_uy" = "ਉਰੂਗੁਏ";
+"country_region_name_uz" = "ਉਜ਼ਬੇਕੀਸਤਾਨ";
+"country_region_name_vc" = "ਸੇਂਟ ਵਿਨਸੈਂਟ ਐਂਡ ਦ ਗਰੇਨਾਡੀਨਜ਼";
+"country_region_name_ve" = "ਵੇਨੇਜ਼ੂਏਲਾ";
+"country_region_name_vg" = "ਵਰਜਿਨ ਆਈਲੈਂਡਜ਼, ਬ੍ਰਿਟਿਸ਼";
+"country_region_name_vi" = "ਵਰਜਿਨ ਆਈਲੈਂਡਜ਼, ਯੂ.ਐੱਸ.";
+"country_region_name_vn" = "ਵੀਅਤਨਾਮ";
+"country_region_name_vu" = "ਵਾਨੁਆਤੂ";
+"country_region_name_ws" = "ਸਮੋਆ";
+"country_region_name_ye" = "ਯਮਨ";
+"country_region_name_za" = "ਦੱਖਣੀ ਅਫਰੀਕਾ";
+"country_region_name_zm" = "ਜ਼ਾਂਬੀਆ";
+"country_region_name_zw" = "ਜਿੰਮਬਾਬਵੇ";
+"data_privacy_button" = "ਅੱਗੇ";
+"data_privacy_content" = "ਇਹ ਮਹੱਤਵਪੂਰਨ ਹੈ ਕਿ ਤੁਸੀਂ ਕੋਵਿਡਸੇਫ ਪੰਜੀਕਰਨ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ  ਕੋਵਿਡਸੇਫ *ਪ੍ਰਾਈਵੇਸੀ ਨੀਤੀ* ਪੜ੍ਹੋ।\n\nਜੇ ਤੁਹਾਡੀ ਉਮਰ 16 ਸਾਲ ਤੋਂ ਘੱਟ ਹੈ, ਤਾਂ ਤੁਹਾਡੇ ਮਾਪੇ/ਸਰਪ੍ਰਸਤ ਨੂੰ ਵੀ *ਪ੍ਰਾਈਵੇਸੀ ਨੀਤੀ* ਪੜ੍ਹਨੀ ਚਾਹੀਦੀ ਹੈ।\n\nਕੋਵਿਡਸੇਫ ਦੀ ਵਰਤੋਂ ਪੂਰੀ ਤਰ੍ਹਾਂ ਸਵੈ-ਇੱਛਤ ਹੈ। ਤੁਸੀਂ ਕਿਸੇ ਵੀ ਸਮੇਂ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਇੰਸਟਾਲ ਜਾਂ ਡਿਲੀਟ ਕਰ ਸਕਦੇ ਹੋ। ਜੇ ਤੁਸੀਂ ਕੋਵਿਡਸੇਫ ਨੂੰ ਡਿਲੀਟ ਕਰ ਦਿੰਦੇ ਹੋ,  ਤਾਂ ਸੁਰੱਖਿਅਤ ਸਰਵਰ ਤੋਂ *ਤੁਸੀਂ ਆਪਣੀ ਜਾਣਕਾਰੀ ਨੂੰ ਮਿਟਾਉਣ ਲਈ ਵੀ ਕਹਿ ਸਕਦੇ ਹੋ*।\n\nਕੋਵਿਡਸੇਫ ਪੰਜੀਕਰਨ ਲਈ, ਤੁਹਾਨੂੰ ਅਪਣਾ ਨਾਮ (ਜਾਂ ਨਕਲੀ ਨਾਮ), ਮੋਬਾਈਲ ਨੰਬਰ, ਉਮਰ ਸੀਮਾ ਅਤੇ ਪੋਸਟਕੋਡ ਭਰਨਾ ਪਵੇਗਾ।\n\nਜਦ ਤੁਸੀਂ ਰਜਿਸਟਰ ਕਰਦੇ ਹੋ ਅਤੇ ਕੋਵਿਡਸੇਫ ਦੀ ਤੁਹਾਡੀ ਵਰਤੋਂ ਬਾਰੇ ਜਾਣਕਾਰੀ ਨੂੰ ਇਕੱਤਰ ਕੀਤਾ ਜਾਵੇਗਾ ਅਤੇ ਇੱਕ ਬੇਹੱਦ ਸੁਰੱਖਿਅਤ ਸਰਵਰ 'ਤੇ ਸਟੋਰ ਕੀਤਾ ਜਾਵੇਗਾ।\n\nਕੋਵਿਡਸੇਫ ਤੁਹਾਡੀ ਲੋਕੇਸ਼ਨ ਜਾਣਕਾਰੀ ਨੂੰ ਇਕੱਤਰ ਨਹੀਂ ਕਰੇਗਾ।\n\nਕੋਵਿਡਸੇਫ ਤੁਹਾਡੀ  ਡਿਵਾਈਸ 'ਤੇ, ਤੁਹਾਡੇ ਸੰਪਰਕ ਦੇ ਸਮੇਂ, ਹੋਰ ਕੋਵਿਡਸੇਫ ਵਰਤੋਂਕਾਰਾਂ ਦੇ ਗੁੰਮਨਾਮ ਆਈਡੀ ਕੋਡ, ਬਲੂਟੁੱਥ® ਸਿਗਨਲ ਸ਼ਕਤੀ ਅਤੇ ਹੋਰ ਵਰਤੋਂਕਾਰਾਂ ਦੇ ਫ਼ੋਨ ਮਾਡਲ ਨੋਟ ਕਰੇਗਾ।\n\nਹੋਰ ਕੋਵਿਡਸੇਫ ਵਰਤੋਂਕਾਰ ਜਿੰਨ੍ਹਾਂ ਨਾਲ ਤੁਸੀਂ ਸੰਪਰਕ ਵਿੱਚ ਆਉਂਦੇ ਹੋ, ਤੁਹਾਡੇ ਗੁੰਮਨਾਮ ਆਈਡੀ ਕੋਡ, ਤੁਹਾਡੇ ਨਾਲ ਸੰਪਰਕ ਦੀ ਤਾਰੀਖ਼ ਅਤੇ ਸਮਾਂ, ਬਲੂਟੁੱਥ® ਸਿਗਨਲ ਸ਼ਕਤੀ ਅਤੇ ਤੁਹਾਡੇ ਫ਼ੋਨ ਮਾਡਲ ਨੂੰ ਉਹਨਾਂ ਦੀ ਡੀਵਾਈਸ 'ਤੇ ਨੋਟ ਕਰਨਗੇ।\n\nਜੇ ਕੋਈ ਹੋਰ ਵਰਤੋਂਕਾਰ ਕੋਵਿਡ-19 ਪਾਜੇਟਿਵ ਟੈਸਟ ਕਰਦਾ ਹੈ, ਤਾਂ ਉਹ ਆਪਣੀ ਸੰਪਰਕ ਜਾਣਕਾਰੀ ਨੂੰ ਅੱਪਲੋਡ ਕਰ ਸਕਦੇ ਹਨ ਅਤੇ ਕੋਈ  ਪ੍ਰਾਂਤਿਕ ਜਾਂ ਹਲਕਾ ਸਿਹਤ ਅਧਿਕਾਰੀ ਸੰਪਰਕ ਟਰੇਸਿੰਗ ਲਈ ਤੁਹਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰ ਸਕਦਾ ਹੈ। \n\nਤੁਹਾਡੇ ਪੰਜੀਕਰਨ ਦੇ ਵਿਸਥਾਰਾਂ ਨੂੰ ਕੇਵਲ ਸੰਪਰਕ ਟਰੇਸਿੰਗ ਲਈ ਅਤੇ ਕੋਵਿਡਸੇਫ ਦੇ ਉਚਿਤ ਅਤੇ ਕਨੂੰਨੀ ਕਾਰਜ-ਖੇਤਰ ਲਈ ਹੀ ਵਰਤਿਆ ਜਾਂ ਖੁਲਾਸਾ ਕੀਤਾ ਜਾਵੇਗਾ। \n\nਵਧੇਰੇ ਜਾਣਕਾਰੀ *ਆਸਟਰੇਲੀਆਈ ਸਰਕਾਰ ਦੇ ਸਿਹਤ ਵਿਭਾਗ* ਦੀ ਵੈੱਬਸਾਈਟ 'ਤੇ ਉਪਲਬਧ ਹੈ।\n\nਤੁਹਾਡੀ ਜਾਣਕਾਰੀ ਅਤੇ ਅਧਿਕਾਰਾਂ ਬਾਰੇ ਅਤੇ ਇਸ ਨਾਲ ਕਿਵੇਂ ਨਿਪਟਿਆ ਜਾਵੇਗਾ ਅਤੇ ਇਸਨੂੰ ਸਾਂਝਾ ਕਿਵੇਂ ਕੀਤਾ ਜਾਵੇਗਾ, ਇਸ ਬਾਰੇ ਹੋਰ ਵਿਸਥਾਰਾਂ ਲਈ ਕੋਵਿਡਸੇਫ *ਪ੍ਰਾਈਵੇਸੀ ਨੀਤੀ* ਦੇਖੋ।";
+"data_privacy_content_VO" = "ਕੋਵਿਡਸੇਫ ਪੰਜੀਕਰਨ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਇਹ ਮਹੱਤਵਪੂਰਨ ਹੈ ਕਿ ਤੁਸੀਂ ਕੋਵਿਡਸੇਫ ਪ੍ਰਾਈਵੇਸੀ ਨੀਤੀ ਪੜ੍ਹੋ।\n\nਜੇ ਤੁਸੀਂ 16 ਸਾਲ ਤੋਂ ਘੱਟ ਉਮਰ ਦੇ ਹੋ, ਤਾਂ ਤੁਹਾਡੇ ਮਾਪੇ/ਸਰਪ੍ਰਸਤ ਨੂੰ ਵੀ ਪ੍ਰਾਈਵੇਸੀ ਨੀਤੀ ਪੜ੍ਹਨੀ ਚਾਹੀਦੀ ਹੈ।\n\nਕੋਵਿਡਸੇਫ ਦੀ ਵਰਤੋਂ ਪੂਰੀ ਤਰ੍ਹਾਂ ਸਵੈ-ਇੱਛਤ ਹੈ। ਤੁਸੀਂ ਕਿਸੇ ਵੀ ਸਮੇਂ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਇੰਸਟਾਲ ਜਾਂ ਡਿਲੀਟ ਕਰ ਸਕਦੇ ਹੋ। ਜੇ ਤੁਸੀਂ ਕੋਵਿਡਸੇਫ ਨੂੰ ਡਿਲੀਟ ਕਰਦੇ  ਹੋ, ਤਾਂ ਤੁਸੀਂ ਆਪਣੀ ਜਾਣਕਾਰੀ ਨੂੰ ਸੁਰੱਖਿਅਤ ਸਰਵਰ ਤੋਂ ਡਿਲੀਟ ਕਰਨ ਲਈ ਵੀ ਕਹਿ ਸਕਦੇ ਹੋ।\n\nਕੋਵਿਡਸੇਫ ਪੰਜੀਕਰਨ ਲਈ, ਤੁਹਾਨੂੰ ਅਪਣਾ ਨਾਮ (ਜਾਂ ਨਕਲੀ ਨਾਮ), ਮੋਬਾਈਲ ਨੰਬਰ, ਉਮਰ ਸੀਮਾ ਅਤੇ ਪੋਸਟਕੋਡ ਭਰਨਾ ਪਵੇਗਾ|\n\nਪੰਜੀਕਰਨ ਵੇਲੇ ਦਿਤੀ ਜਾਣਕਾਰੀ ਅਤੇ ਕੋਵਿਡਸੇਫ ਦੀ ਵਰਤੋਂ ਬਾਰੇ ਤੁਹਾਡੀ ਜਾਣਕਾਰੀ ਇਕੱਠੀ ਕੀਤੀ ਜਾਵੇਗੀ\nਅਤੇ ਇੱਕ ਬੇਹੱਦ ਸੁਰੱਖਿਅਤ ਸਰਵਰ 'ਤੇ ਸਟੋਰ ਕੀਤੀ ਜਾਵੇਗੀ।\n\nਕੋਵਿਡਸੇਫ ਤੁਹਾਡੀ  ਲੋਕੇਸ਼ਨ ਜਾਣਕਾਰੀ ਨੂੰ ਇਕੱਠਾ ਨਹੀਂ ਕਰੇਗਾ।\n\nਕੋਵਿਡਸੇਫ ਤੁਹਾਡੇ ਡਿਵਾਈਸ 'ਤੇ, ਤੁਹਾਡੇ ਸੰਪਰਕ ਵਿੱਚ ਆਉਣ ਵਾਲੇ ਹੋਰ  ਕੋਵਿਡਸੇਫ ਵਰਤੋਂਕਾਰਾਂ ਦੇ ਸੰਪਰਕ ਦਾ ਸਮਾਂ, ਗੁੰਮਨਾਮ ਆਈਡੀ ਕੋਡ, ਬਲੂਟੁੱਥ ਸਿਗਨਲ ਸ਼ਕਤੀ ਅਤੇ ਹੋਰ ਵਰਤੋਂਕਾਰਾਂ ਦੇ ਫ਼ੋਨ ਮਾਡਲ ਨੂੰ ਨੋਟ ਕਰੇਗਾ।\n\nਹੋਰ ਕੋਵਿਡਸੇਫ ਵਰਤੋਂਕਾਰ ਜਿੰਨ੍ਹਾਂ ਨਾਲ ਤੁਸੀਂ ਸੰਪਰਕ ਵਿੱਚ ਆਉਂਦੇ ਹੋ, ਉਹ ਤੁਹਾਡੇ ਗੁੰਮਨਾਮ ਆਈਡੀ ਕੋਡ, ਤੁਹਾਡੇ ਨਾਲ ਸੰਪਰਕ ਦੀ ਤਾਰੀਖ਼ ਅਤੇ ਸਮਾਂ, ਬਲੂਟੁੱਥ ਸਿਗਨਲ ਸ਼ਕਤੀ ਅਤੇ ਤੁਹਾਡੇ ਫ਼ੋਨ ਮਾਡਲ ਨੂੰ ਵੀ ਉਹਨਾਂ ਦੀ ਡੀਵਾਈਸ 'ਤੇ ਨੋਟ ਕਰਨਗੇ।\n\nਜੇ ਕੋਈ ਹੋਰ ਵਰਤੋਂਕਾਰ ਕੋਵਿਡਸੇਫ ਪਾਜੇਟਿਵ ਟੈਸਟ ਕਰਦਾ ਹੈ, ਤਾਂ ਉਹ ਆਪਣੀ ਸੰਪਰਕ ਜਾਣਕਾਰੀ ਨੂੰ ਅੱਪਲੋਡ ਕਰ ਸਕਦੇ ਹਨ ਅਤੇ ਕੋਈ  ਪ੍ਰਾਂਤਿਕ ਜਾਂ ਇਲਾਕਾ  ਸਿਹਤ ਅਧਿਕਾਰੀ ਤੁਹਾਡੇ ਕੰਟੈਕਟ ਟਰੇਸ ਕਰਨ ਲਈ ਸੰਪਰਕ ਕਰ ਸਕਦਾ ਹੈ। \n\nਤੁਹਾਡੇ ਪੰਜੀਕਰਨ ਦੇ ਵਿਸਥਾਰਾਂ ਨੂੰ ਕੇਵਲ ਸੰਪਰਕ ਟਰੇਸਿੰਗ ਵਾਸਤੇ ਅਤੇ ਕੋਵਿਡਸੇਫ ਦੇ ਉਚਿਤ ਅਤੇ ਕਨੂੰਨੀ ਕਾਰਜ-ਖੇਤਰ ਵਾਸਤੇ ਵਰਤਿਆ ਜਾਵੇਗਾ ਜਾਂ ਖੁਲਾਸਾ ਕੀਤਾ ਜਾਵੇਗਾ। \n\nਵਧੇਰੇ ਜਾਣਕਾਰੀ ਆਸਟਰੇਲੀਆ ਸਰਕਾਰ ਦੇ ਸਿਹਤ ਵਿਭਾਗ ਦੀ ਵੈੱਬਸਾਈਟ 'ਤੇ ਉਪਲਬਧ ਹੈ।\n\nਤੁਹਾਡੇ ਅਧਿਕਾਰਾਂ ਦੀ ਜਾਣਕਾਰੀ ਅਤੇ ਇਹਨਾਂ ਨਾਲ ਕਿਵੇਂ ਨਿਪਟਿਆ ਅਤੇ ਇਹਨਾਂ ਨੂੰ ਕਿਵੇਂ ਸਾਂਝਾ ਕੀਤਾ ਜਾਵੇਗਾ, ਇਸ ਬਾਰੇ ਹੋਰ ਵਿਸਥਾਰਾਂ ਲਈ ਕੋਵਿਡਸੇਫ ਪ੍ਰਾਈਵੇਸੀ ਨੀਤੀ ਦੇਖੋ।";
+/* OnBoarding Data Privacy */
+"data_privacy_headline" = "ਪੰਜੀਕਰਨ ਅਤੇ ਪ੍ਰਾਈਵੇਸੀ";
+"dialog_error_uploading_message" = "ਤੁਹਾਡੀ ਜਾਣਕਾਰੀ ਨੂੰ ਅੱਪਲੋਡ ਕਰਨ ਦੌਰਾਨ ਇੱਕ ਗਲਤੀ ਆਈ, ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।";
+"dialog_error_uploading_negative" = "ਰੱਦ";
+"dialog_error_uploading_positive" = "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ";
+"dialog_uploading_message" = "ਤੁਹਾਡੀ ਕੋਵਿਡਸੇਫ ਜਾਣਕਾਰੀ ਨੂੰ  ਇਸ ਵੇਲੇ ਅੱਪਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ।\n\nਕਿਰਪਾ ਕਰਕੇ ਐਪ ਬੰਦ ਨਾ ਕਰੋ।";
+"done_success" = "ਕੀਤਾ";
+"enter_number_button" = "ਪਿੰਨ ਲਓ";
+"enter_number_content" = "ਤੁਹਾਡੇ ਮੋਬਾਈਲ ਨੰਬਰ ਦੀ ਪੁਸ਼ਟੀ ਕਰਨ ਲਈ ਅਸੀਂ ਤੁਹਾਨੂੰ 6-ਅੰਕਾਂ ਦਾ ਪਿੰਨ ਭੇਜਾਂਗੇ।";
+"enter_number_headline" = "ਆਪਣਾ ਮੋਬਾਈਲ ਨੰਬਰ ਭਰੋ";
+"enter_number_relative" = "ਕਿਸੇ ਦੋਸਤ ਜਾਂ ਰਿਸ਼ਤੇਦਾਰ ਵੱਲੋਂ ਪੰਜੀਕਰਨ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ?\n\nਉਹਨਾਂ ਨੂੰ ਆਪਣੀ ਖੁਦ ਦੀ ਡੀਵਾਈਸ ਅਤੇ ਫ਼ੋਨ ਨੰਬਰ ਵਰਤ ਕੇ ਪੰਜੀਕਰਨ ਕਰਨਾ ਪਵੇਗਾ ਤਾਂ ਜੋ ਕੋਵਿਡਸੇਫ ਉਹਨਾਂ ਲਈ ਕੰਮ ਕਰ ਸਕੇ।";
+"enter_pin_button" = "ਜਾਂਚੋ";
+/* OnBoarding Enter PIN */
+"enter_pin_headline" = "%s %s  ਨੂੰ ਭੇਜਿਆ ਪਿੰਨ ਭਰੋ\n";
+"enter_pin_resend_pin" = "ਪਿੰਨ ਦੋਬਾਰਾ ਭੇਜੋ";
+"enter_pin_timer_expire" = "ਤੁਹਾਡਾ ਪਿੰਨ .... ਵਿੱਚ ਸਮਾਪਤ ਹੋ ਜਾਵੇਗਾ";
+"enter_pin_wrong_number" = "ਕੀ ਇਹ ਮੋਬਾਈਲ ਨੰਬਰ ਗਲਤ ਹੈ?";
+/* Figma page Android Screens (05/06) */
+"Enter_your_mobile_number_label" = "ਆਪਣਾ ਮੋਬਾਈਲ ਨੰਬਰ ਭਰੋ";
+"global_back" = "ਪਿੱਛੇ";
+"global_close" = "ਬੰਦ ਕਰੋ";
+"global_double_tap" = "ਸੋਧਣ ਲਈ ਡਬਲ ਟੈਪ ਕਰੋ";
+"global_OK" = "ਠੀਕ ਹੈ";
+"home_app_permission_status_subtitle" = "ਕੋਵਿਡਸੇਫ ਸਹੀ ਸੈਟਿੰਗਾਂ ਤੋਂ ਬਿਨਾਂ ਕੰਮ ਨਹੀਂ ਕਰੇਗਾ।";
+"home_app_permission_status_title" = "ਆਪਣੀਆਂ ਸੈਟਿੰਗਾਂ ਚੈੱਕ ਕਰੋ";
+"home_data_uploaded_message" = "ਕੋਵਿਡ-19 ਦੇ ਫੈਲਣ ਨੂੰ ਰੋਕਣ ਵਿੱਚ ਸਹਾਇਤਾ ਕਰੋ ਅਤੇ ਆਪਣੇ ਲੱਛਣਾਂ 'ਤੇ ਨਜ਼ਰ ਰੱਖੋ।";
+"home_header_active_no_action_required" = "ਕੋਈ ਹੋਰ ਕਾਰਵਾਈ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ।";
+/* Home */
+"home_header_active_title" = "ਕੋਵਿਡਸੇਫ ਐਕਟਿਵ ਹੈ|";
+/* Home */
+"home_header_active_title_thanks" = "ਧੰਨਵਾਦ,  ਕੋਵਿਡਸੇਫ ਹੁਣ ਐਕਟਿਵ ਹੈ।";
+"home_header_inactive_check_your_permissions" = "ਆਪਣੀਆਂ ਸੈਟਿੰਗਾਂ ਚੈੱਕ ਕਰੋ|";
+"home_header_inactive_title" = "ਕੋਵਿਡਸੇਫ ਐਕਟਿਵ ਨਹੀਂ ਹੈ|";
+"home_header_uploaded_on_date_ios" = "ਤੁਹਾਡੀ ਜਾਣਕਾਰੀ %@  'ਤੇ  ਅੱਪਲੋਡ ਕੀਤੀ ਗਈ ਸੀ।";
+"home_set_complete_external_link_app_content" = "ਤਾਜ਼ਾ ਖ਼ਬਰਾਂ ਅਤੇ ਸਲਾਹ ਲਈ ਸਰਕਾਰੀ ਐਪ ਡਾਊਨਲੋਡ ਕਰੋ।";
+"home_set_complete_external_link_app_title" = "ਕੋਰੋਨਵਾਇਰਸ ਐਪ ਪ੍ਰਾਪਤ ਕਰੋ";
+"home_set_complete_external_link_been_contacted_content" = "ਤੁਸੀਂ ਆਪਣੀ ਜਾਣਕਾਰੀ ਤਾਂ ਹੀ ਅੱਪਲੋਡ ਕਰ ਸਕਦੇ ਹੋ ਜੇਕਰ ਤੁਹਾਡਾ ਟੈਸਟ ਪੋਜ਼ਿਟਿਵ ਆਇਆ ਹੋਵੇ| ";
+"home_set_complete_external_link_been_contacted_title" = "ਕੀ ਕਿਸੇ ਸਿਹਤ ਅਧਿਕਾਰੀ ਨੇ ਤੁਹਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕੀਤਾ ਹੈ?";
+"home_set_complete_external_link_help_topics_content" = "ਜੇ ਐਪ ਬਾਰੇ ਤੁਹਾਡੇ ਕੋਈ ਮੁੱਦੇ ਜਾਂ ਸਵਾਲ ਹਨ।";
+"home_set_complete_external_link_help_topics_title" = "ਸਹਾਇਤਾ ਵਿਸ਼ੇ";
+"home_set_complete_external_link_news_content" = "ਤਾਜ਼ਾ ਕੋਰੋਨਵਾਇਰਸ ਖ਼ਬਰਾਂ  ਲਈ aus.gov.au ਵੱਲ ਜਾਓ।";
+"home_set_complete_external_link_news_title" = "ਤਾਜ਼ਾ ਖ਼ਬਰਾਂ ਅਤੇ ਅੱਪਡੇਟ";
+"home_set_complete_external_link_news_url" = "https://www.australia.gov.au";
+/* Figma page iOS Screens (05/06) */
+"home_set_complete_external_link_notifications_content_iOS_off" = "ਜੇ ਕੋਵਿਡਸੇਫ ਐਕਟਿਵ ਨਹੀਂ  ਤਾਂ ਤੁਹਾਨੂੰ ਸੂਚਨਾ ਨਹੀਂ  ਮਿਲੇਗੀ|";
+/* Figma page iOS Screens (05/06) */
+"home_set_complete_external_link_notifications_title_iOS" = "ਸੂਚਨਾਵਾਂ ਸਮਰੱਥ (ਅਨੇਬਲਡ) ਹਨ";
+/* Figma page iOS Screens (05/06) */
+"home_set_complete_external_link_notifications_title_iOS_off" = "ਸੂਚਨਾਵਾਂ ਬੰਦ ਹਨ";
+"home_set_complete_external_link_self_isolation_register_url" = "https://covid-form.service.gov.au";
+"home_set_complete_external_link_share_content" = "ਹੋਰਨਾਂ ਨੂੰ ਸਹਾਇਤਾ ਲਈ ਬੁਲਾਓ। ਇਕੱਠੇ ਅਸੀਂ ਵਧੇਰੇ ਮਜ਼ਬੂਤ ਹਾਂ।";
+"home_set_complete_external_link_share_title" = "ਕੋਵਿਡਸੇਫ ਸਾਂਝਾ ਕਰੋ";
+"home_setup_help" = "ਸਹਾਇਤਾ";
+"home_version_number_ios" = "ਵਰਜਨ %@, ਬਿਲਡ %@";
+"how_it_works_button" = "ਅੱਗੇ";
+"how_it_works_content" = "ਬਲੂਟੁੱਥ ਸਿਗਨਲਾਂ ਦੀ ਵਰਤੋਂ ਇਹ ਦੱਸਦੀ ਹੈ ਜਦੋਂ ਤੁਸੀਂ ਕਿਸੇ ਹੋਰ ਕੋਵਿਡਸੇਫ ਵਰਤੋਂਕਾਰ ਦੇ ਨੇੜੇ ਹੁੰਦੇ ਹੋ।\n\nਤੁਹਾਡੇ ਅਤੇ ਹੋਰ ਕੋਵਿਡਸੇਫ ਵਰਤੋਂਕਾਰਾਂ ਵਿਚਕਾਰ ਨਜ਼ਦੀਕੀ ਸੰਪਰਕ ਦੀ ਹਰੇਕ ਇਕਾਈ ਨੂੰ ਨਜ਼ਦੀਕੀ ਸੰਪਰਕ ਜਾਣਕਾਰੀ ਲਈ ਨੋਟ ਕੀਤਾ ਜਾਂਦਾ ਹੈ। ਇਹ ਜਾਣਕਾਰੀ ਏਨਕ੍ਰਿਪਟਿਡ ਹੁੰਦੀ ਹੈ ਅਤੇ ਕੇਵਲ ਤੁਹਾਡੇ ਫ਼ੋਨ ਵਿੱਚ ਹੀ ਸਟੋਰ ਕੀਤੀ ਜਾਂਦੀ ਹੈ।\n\nਜੇ ਤੁਸੀਂ ਕੋਵਿਡਸੇਫ ਵਰਤੋਂਕਾਰ ਵਜੋਂ  ਕੋਵਿਡ-19 ਪਾਜੇਟਿਵ ਟੈਸਟ ਕਰਦੇ ਹੋ, ਤਾਂ ਕੋਈ ਪ੍ਰਾਂਤਿਕ ਜਾਂ ਹਲਕਾ ਸਿਹਤ ਅਧਿਕਾਰੀ ਤੁਹਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੇਗਾ। ਉਹ ਤੁਹਾਡੀ ਨਜ਼ਦੀਕੀ ਸੰਪਰਕ ਜਾਣਕਾਰੀ ਨੂੰ ਇੱਕ ਬੇਹੱਦ ਸੁਰੱਖਿਅਤ ਜਾਣਕਾਰੀ ਸਟੋਰੇਜ ਸਿਸਟਮ ਵਿੱਚ ਅੱਪਲੋਡ ਕਰਨ ਵਿੱਚ ਸਹਾਇਤਾ ਕਰਨਗੇ।  \n\nਜੇ ਤੁਸੀਂ ਕਿਸੇ ਹੋਰ ਕੋਵਿਡਸੇਫ ਵਰਤੋਂਕਾਰ  ਜੋ ਪਾਜ਼ੇਟਿਵ ਟੈਸਟ ਹੋਇਆ ਸੀ ਦੇ ਸੰਪਰਕ ਵਿੱਚ ਆਏ ਤਾਂ ਭੀ ਪ੍ਰਾਂਤਿਕ ਜਾਂ ਹਲਕਾ ਸਿਹਤ ਅਧਿਕਾਰੀ ਤੁਹਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰ ਸਕਦੇ ਹਨ|\n\nਵਧੇਰੇ ਜਾਣਕਾਰੀ ਲਈ ਕਿਰਪਾ ਕਰਕੇ *ਸਹਾਇਤਾ ਵਿਸ਼ੇ* ਪੰਨਾ  ਦੇਖੋ।\n";
+/* OnBoarding How it works */
+"how_it_works_headline" = "ਕੋਵਿਡਸੇਫ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ";
+"improve_heading" = "ਕੋਵਿਡਸੇਫ  ਦੇ ਪ੍ਰਦਰਸ਼ਨ (ਪਰਫਾਰਮੈਂਸ) ਵਿੱਚ ਸੁਧਾਰ ਕਰਨ ਬਾਰੇ";
+"internet_connection_content" = "ਇਹ ਯਕੀਨੀ ਬਣਾਉਣ ਲਈ ਇੰਟਰਨੈੱਟ ਨਾਲ ਕਨੈਕਟ ਕਰੋ ਕਿ ਤੁਹਾਨੂੰ ਮੁੱਦਿਆਂ ਅਤੇ ਅੱਪਡੇਟਾਂ ਬਾਰੇ ਸੂਚਿਤ ਕੀਤਾ ਜਾਂਦਾ ਹੈ।";
+"internet_connection_heading" = "ਕੋਈ ਇੰਟਰਨੈੱਟ ਕੁਨੈਕਸ਼ਨ ਨਹੀਂ|";
+"internet_screen_content" = "ਕੋਵਿਡਸੇਫ ਨੂੰ ਸਮੇਂ-ਸਮੇਂ 'ਤੇ ਸਰਵਰ ਨਾਲ ਕਨੈਕਟ ਕਰਨ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ ਤਾਂ ਜੋ ਇਹ ਯਕੀਨੀ ਬਣਾਇਆ ਜਾ ਸਕੇ ਕਿ ਇਹ ਐਪ ਉਪਰ  ਸਮੱਸਿਆਵਾਂ ਦੀ ਪਛਾਣ ਕਰ ਸਕੇ।\n\nਇੰਟਰਨੈੱਟ ਨਾਲ ਕਨੈਕਟ ਕਰਨਾ ਇਹ ਯਕੀਨ ਬਣਾਉਂਦਾ ਹੈ ਕਿ ਤੁਹਾਨੂੰ ਇਸ ਬਾਰੇ ਸੂਚਨਾਵਾਂ ਪ੍ਰਾਪਤ ਹੋਣ:";
+"internet_screen_content_1" = "ਮੁੱਦੇ ਕਿਵੇਂ ਨਜਿੱਠਨੇ ਹਨ ਅਤੇ  ਕੋਵਿਡਸੇਫ ਨੂੰ ਦੁਬਾਰਾ ਕਿਵੇਂ ਐਕਟਿਵ ਕਰਨਾ ਹੈ|";
+"internet_screen_content_2" = "ਜਦੋਂ ਕੋਈ ਅੱਪਡੇਟ ਦਾ ਨਵਾਂ ਵਰਜਨ  ਉਪਲਬਧ ਹੋਵੇ|";
+"internet_screen_heading" = "ਕੋਵਿਡਸੇਫ ਦੇ ਪ੍ਰਦਰਸ਼ਨ ਵਿੱਚ ਸੁਧਾਰ ਕਰਨ ਲਈ ਇੰਟਰਨੈੱਟ ਨਾਲ ਕਨੈਕਟ ਕਰਨ ਬਾਰੇ";
+"intro_button" = "ਮੈਂ ਸਹਾਇਤਾ ਕਰਨਾ ਚਾਹੁੰਦਾ ਹਾਂ";
+"intro_content" = "ਕੋਵਿਡਸੇਫ ਨੂੰ ਆਸਟਰੇਲੀਆਈ ਸਰਕਾਰ ਦੁਆਰਾ ਵਿਕਸਤ ਕੀਤਾ ਗਿਆ ਹੈ ਤਾਂ ਜੋ ਸਮਾਜ ਨੂੰ ਕੋਰੋਨਵਾਇਰਸ ਦੇ ਫੈਲਣ ਤੋਂ ਸੁਰੱਖਿਅਤ ਰੱਖਣ ਵਿੱਚ ਸਹਾਇਤਾ ਮਿਲ ਸਕੇ।\n\nਕੋਵਿਡਸੇਫ ਤੁਹਾਡੇ ਐਪ ਦੇ ਹੋਰ ਵਰਤੋਂਕਾਰਾਂ ਨਾਲ ਸੰਪਰਕ ਸੁਰੱਖਿਅਤ ਤਰੀਕੇ ਨਾਲ ਨੋਟ ਕਰੇਗਾ। ਜੇ ਤੁਸੀਂ ਕਿਸੇ ਅਜਿਹੇ ਵਿਅਕਤੀ ਦੇ ਸੰਪਰਕ ਵਿੱਚ ਆਏ ਹੋ ਜਿਸਦਾ ਵਾਇਰਸ ਟੈਸਟ ਪਾਜੇਟਿਵ ਆਇਆ ਹੈ ਤਾਂ ਇਹ ਰਾਜ ਅਤੇ ਹਲਕਾ ਸਿਹਤ ਅਧਿਕਾਰੀਆਂ ਨੂੰ ਤੁਹਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰਨ ਦੇ ਯੋਗ ਬਣਾਵੇਗਾ|\n\nਇਕੱਠੇ ਅਸੀਂ ਫੈਲਣ ਨੂੰ ਰੋਕਣ ਅਤੇ ਸਿਹਤਮੰਦ ਬਣੇ ਰਹਿਣ ਵਿੱਚ ਸਹਾਈ ਹੋ ਸਕਦੇ ਹਾਂ।\n\n\n\n\n\n\n";
+/* OnBoarding Intro */
+"intro_headline" = "ਇਕੱਠੇ ਅਸੀਂ ਕੋਵਿਡ-19 ਦੇ ਫੈਲਾਅ ਨੂੰ ਰੋਕ ਸਕਦੇ ਹਾਂ।";
+/* Class = "UILabel"; text = "Help stop the spread\nand save lives."; ObjectID = "Cme-9F-deB"; */
+"IntroLabel" = "ਫੈਲਣ ਨੂੰ ਰੋਕਣ ਵਿੱਚ ਸਹਾਇਤਾ ਕਰੋ\nਅਤੇ ਜ਼ਿੰਦਗੀਆਂ  ਬਚਾਓ।";
+"invalid_australian_phone_number_error_prompt" = "ਆਸਟਰੇਲੀਆਈ ਮੋਬਾਈਲ ਨੰਬਰਾਂ ਵਿੱਚ ਅਧਿਕਤਮ 10 ਅੰਕ ਹੁੰਦੇ ਹਨ।";
+"invalid_norfolk_island_phone_number_error_prompt" = "ਨੋਰਫੋਕ ਆਈਲੈਂਡਜ਼ ਵਿਖੇ  ਮੋਬਾਈਲ ਨੰਬਰਾਂ ਦੇ 5 ਤੋਂ 6 ਅੰਕ ਹੁੰਦੇ ਹਨ।";
+/* Splash Screen */
+"migration_in_progress" = "ਕੋਵਿਡਸੇਫ ਅੱਪਡੇਟ ਚੱਲ ਰਿਹਾ ਹੈ। \n\nਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਹਾਡਾ ਫ਼ੋਨ ਤਦ ਤੱਕ ਬੰਦ ਨਹੀਂ ਹੋਣਾ ਚਾਹੀਦਾ ਜਦ ਤੱਕ ਅੱਪਡੇਟ ਪੂਰਾ ਨਹੀਂ ਹੋ ਜਾਂਦਾ।";
+/* Figma page Android Screens (05/06) */
+"norfolk_hint" = "ਉਦਾਹਰਣ ਵਜੋਂ: 51234";
+"notification_bluetooth" = "ਕੋਵਿਡਸੇਫ ਕੰਮ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰੇ ਇਸਦੇ ਲਈ ਬਲੂਟੁਥ ਔਨ ਕਰੋ|";
+"notification_internet_content" = "ਕੋਵਿਡਸੇਫ ਕੰਮ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰੇ, ਇਸਦੇ ਲਈ ਐਪ ਖੋਲੋ ਅਤੇ ਆਪਣਾ ਇੰਟਰਨੇਟ ਕੁਨੈਕਸ਼ਨ ਚੈਕ ਕਰੋ।";
+"notification_not_active_title" = "ਕੋਵਿਡਸੇਫ ਐਕਟਿਵ ਨਹੀਂ ਹੈ|";
+"notification_update_content" = "ਤਾਜ਼ਾ ਸੁਧਾਰਾਂ ਲਈ ਆਪਣੀ ਐਪ ਨੂੰ ਅੱਪਡੇਟ ਕਰੋ।";
+"notification_update_heading" = "ਕੋਵਿਡਸੇਫ ਅੱਪਡੇਟ ਉਪਲਬਧ ਹੈ|";
+/* Figma page iOS Screens (05/06) */
+"NotificationsBlurbLink" = "ਸੂਚਨਾ ਸੈਟਿੰਗ ਬਦਲੋ";
+/* Figma page iOS Screens (05/06) */
+"NotificationsDisabledBlurb" = "ਜੇ ਕੋਵਿਡਸੇਫ ਐਕਟਿਵ ਨਹੀਂ  ਤਾਂ ਤੁਹਾਨੂੰ ਸੂਚਨਾ ਨਹੀਂ ਮਿਲੇਗੀ| ਸੂਚਨਾਵਾਂ ਸੈਟਿੰਗ ਬਦਲੋ";
+/* Figma page iOS Screens (05/06) */
+"NotificationsEnabledBlurb" = "ਜੇ ਕੋਵਿਡਸੇਫ ਐਕਟਿਵ ਨਹੀਂ  ਤਾਂ ਤੁਹਾਨੂੰ ਸੂਚਨਾ ਮਿਲੇਗੀ|\nਸੂਚਨਾ ਸੈਟਿੰਗ ਬਦਲੋ";
+"options_for_australia" = "ਆਸਟਰੇਲੀਆ ਲਈ ਵਿਕਲਪ";
+"permission_button" = "ਅੱਗੇ ਵਧੋ";
+/* Figma page iOS Screens (05/06) */
+"permission_content_iOS" = "ਕੋਵਿਡਸੇਫ ਲਈ ਬਲੂਟੁਥ ਚਾਲੂ ਕਰੋ| ਸੂਚਨਾਵਾਂ ਨੂੰ ਚਾਲੂ ਕਰਣ ਤੇ ਤੁਹਾਨੂੰ ਅੱਪਡੇਟ ਪ੍ਰਾਪਤ ਹੁੰਦੇ ਹਨ ਜੋ ਯਾਦ ਕਰਾਉਂਦੇ ਹਨ ਜਦੋਂ ਕੋਵਿਡਸੇਫ ਐਕਟਿਵ ਨਹੀਂ ਹੁੰਦਾ|\n\nਚਲਾਉਣ ਲਈ 'ਅੱਗੇ ਵਧੋ' ਚੁਣੋ:";
+/* Figma page iOS Screens (05/06) */
+"permission_content_iOS_2" = "1. ਬਲੂਟੁੱਥ®\n2. ਸੂਚਨਾਵਾਂ\n\nਕੋਵਿਡਸੇਫ ਜੋੜੇ ਦੀਆਂ ਬੇਨਤੀਆਂ ਨਹੀਂ ਭੇਜਦੀ।";
+/* OnBoarding Permission */
+"permission_headline" = "ਐਪ ਸੈਟਿੰਗਾਂ";
+"permission_success_button" = "ਕੀਤਾ";
+/* OnBoarding Permission Success */
+"permission_success_headline" = "ਤੁਸੀਂ ਸਫਲਤਾਪੂਰਵਕ ਰਜਿਸਟਰ ਕੀਤਾ ਹੈ";
+"permission_success_warning" = "ਕੋਵਿਡਸੇਫ ਲਈ ਪੁਸ਼ ਸੂਚਨਾਵਾਂ ਨੂੰ ਚਾਲੂ ਰੱਖੋ ਤਾਂ ਜੋ ਜੇ ਐਪ ਸਹੀ ਕੰਮ ਨਹੀਂ ਕਰ ਰਹੀ ਤਾਂ ਅਸੀਂ ਤੁਹਾਨੂੰ ਤੁਰੰਤ ਸੂਚਿਤ ਕਰ ਸਕੀਏ|";
+"personal_details_age_content_description" = "ਉਮਰ ਰੇਂਜ ਚੁਣੋ";
+"personal_details_age_error_prompt" = "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਉਮਰ ਰੇਂਜ ਚੋਣ ਕਰੋ।";
+"personal_details_age_title" = "ਉਮਰ ਰੇਂਜ (ਚੁਣੋ)";
+"personal_details_button" = "ਜਾਰੀ ਰੱਖੋ";
+"personal_details_dialog_ok" = "ਚੁਣੋ";
+/* OnBoarding Personal details */
+"personal_details_headline" = "ਆਪਣੇ ਵੇਰਵੇ ਭਰੋ";
+"personal_details_name_characters_prompt" = "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੇ ਪੂਰੇ ਨਾਮ ਲਈ ਅੰਗਰੇਜ਼ੀ ਅੱਖਰਾਂ ਦੀ ਵਰਤੋਂ ਕਰੋ। ਹੋਰ ਭਾਸ਼ਾਵਾਂ ਜਾਂ ਚਿੰਨ੍ਹਾਂ ਜਿਵੇਂ ਕਿ ',' ਜਾਂ '?' ਦੀ ਵਰਤੋਂ ਨਾ ਕਰੋ|";
+"personal_details_name_error_prompt" = "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਪੂਰਾ ਨਾਮ ਭਰੋ।";
+"personal_details_name_title" = "ਪੂਰਾ ਨਾਮ (ਜਾਂ ਨਕਲੀ ਨਾਮ)";
+"personal_details_post_code" = "ਆਸਟਰੇਲੀਆ ਵਿੱਚ ਪੋਸਟਕੋਡ";
+"personal_details_post_code_error_prompt" = "ਤੁਹਾਡੇ ਆਸਟਰੇਲੀਆਈ ਪੋਸਟਕੋਡ ਨੰਬਰ ਵਿੱਚ ਲਾਜ਼ਮੀ ਤੌਰ 'ਤੇ 4 ਅੰਕ ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ।";
+"PINNumber_VO_Label" = "ਪਿੰਨ ਨੰਬਰ";
+/* Figma page iOS Screens (05/06) */
+"PN_BluetoothStatusBody" = "ਤੁਸੀਂ ਘਰੋਂ ਬਾਹਰ  ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਜਾਂ ਜਨਤਕ ਸਥਾਨਾਂ 'ਤੇ ਹੁੰਦੇ ਹੋ ਤਾਂ ਬਲੂਟੁੱਥ® ਨੂੰ ਸਮਰੱਥ (ਅਨੇਬਲਡ) ਕਰਕੇ ਇਹ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਇਹ ਐਕਟਿਵ ਹੈ|";
+/* Figma page iOS Screens (05/06) */
+"PN_BluetoothStatusTitle" = "ਕੋਵਿਡਸੇਫ ਐਕਟਿਵ ਨਹੀਂ ਹੈ|";
+"PN_MobileNumber_VOLabel" = "ਮੋਬਾਈਲ ਨੰਬਰ";
+/* Figma page iOS Screens (05/06) */
+"PN_ReminderBody" = "ਯਕੀਨੀ ਬਣਾਉਣ ਲਈ ਕੋਵਿਡਸੇਫ ਖੋਲ੍ਹੋ ਕਿ ਇਹ ਚੱਲ ਰਿਹਾ ਹੈ।";
+/* Figma page iOS Screens (05/06) */
+"PN_ReminderTitle" = "48 ਘੰਟਿਆਂ ਵਿੱਚ ਕੋਈ ਐਨਕਾਊਂਟਰ ਨਹੀਂ ਲੱਭੇ";
+"PostcodeValidationErrorMessage" = "ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਜਾਇਜ (ਵੈਲਡ) ਆਸਟਰੇਲੀਆਈ ਪੋਸਟਕੋਡ ਭਰੋ|";
+"registration_consent_content" = "ਮੈਂ ਆਸਟਰੇਲੀਆਈ ਸਰਕਾਰ ਦੇ ਸਿਹਤ ਵਿਭਾਗ ਦੇ ਸਕੱਤਰ ਦੁਆਰਾ ਕੀਤੇ ਕਨੂੰਨੀ ਨਿਰਣੇ ਦੇ ਤਹਿਤ, ਡੇਟਾ ਸਟੋਰ ਪ੍ਰਸ਼ਾਸ਼ਕ ਵਜੋਂ ਡਿਜ਼ਿਟਲ ਤਬਦੀਲੀ ਏਜੰਸੀ ਨੂੰ ਸਹਿਮਤੀ ਦਿੰਦਾ/ਦਿੰਦੀ ਹਾਂ|";
+"registration_consent_first_paragraph" = "ਮੇਰੀ ਪੰਜੀਕਰਨ ਜਾਣਕਾਰੀ।";
+/* Onboarding Registration Consent */
+"registration_consent_headline" = "ਰਜਿਸਟਰੇਸ਼ਨ ਸਹਿਮਤੀ";
+"registration_consent_second_paragraph" = "ਹੋਰ ਕੋਵਿਡਸੇਫ ਵਰਤੋਂਕਾਰਾਂ ਨਾਲ ਮੇਰੇ ਸੰਪਰਕ ਬਾਰੇ ਜਾਣਕਾਰੀ: ਜੇ ਕੋਈ ਹੋਰ ਵਰਤੋਂਕਾਰ ਮੇਰੇ ਸੰਪਰਕ ਵਿੱਚ ਆਇਆ ਹੈ ਅਤੇ ਕੋਵਿਡ-19 ਪਾਜੇਟਿਵ ਟੈਸਟ ਹੁੰਦਾ ਹੈ ਅਤੇ ਅਪਣਾ ਸੰਪਰਕ ਡੇਟਾ ਅੱਪਲੋਡ ਕਰਦਾ ਹੈ|";
+/* OnBoarding Enter Number */
+"select_country_or_region" = "ਦੇਸ਼ ਜਾਂ ਖੇਤਰ ਚੁਣੋ";
+/* Figma page Android Screens (05/06) */
+"Select_country_or_region_headline" = "ਦੇਸ਼ ਜਾਂ ਖੇਤਰ ਚੁਣੋ";
+"share_this_app_content" = "ਕੋਵਿਡ-19 ਦੇ ਫੈਲਾਅ ਨੂੰ ਰੋਕਣ ਲਈ ਮੇਰੇ ਨਾਲ ਜੁੜੋ!  ਕੋਵਿਡਸੇਫ ਨੂੰ ਡਾਊਨਲੋਡ ਕਰੋ, ਜੋ ਕਿ ਆਸਟਰੇਲੀਆਈ ਸਰਕਾਰ ਦੀ ਐਪ ਹੈ। #COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
+"stepCounter" = "ਸਟੈਪ %d ਦਾ%d";
+"UILaunchStoryboardName" = "";
+"under_sixteen_content" = "ਮੈਂ ਆਸਟਰੇਲੀਆਈ ਸਰਕਾਰ ਦੇ ਸਿਹਤ ਵਿਭਾਗ ਦੇ ਸਕੱਤਰ ਦੁਆਰਾ ਕੀਤੇ ਕਨੂੰਨੀ ਨਿਰਣੇ ਦੇ ਤਹਿਤ, ਡੇਟਾ ਸਟੋਰ ਪ੍ਰਸ਼ਾਸ਼ਕ ਵਜੋਂ ਡਿਜ਼ਿਟਲ ਤਬਦੀਲੀ ਏਜੰਸੀ ਨੂੰ ਮੇਰੇ ਮਾਪੇ ਜਾਂ ਸਰਪ੍ਰਸਤ ਦੀਆਂ ਸਹਿਮਤੀਆਂ ਦੀ ਪੁਸ਼ਟੀ ਕਰਦਾ/ਕਰਦੀ ਹਾਂ:";
+"under_sixteen_first_paragraph" = "ਮੇਰੀ ਪੰਜੀਕਰਨ ਜਾਣਕਾਰੀ।";
+/* OnBoarding Under Sixteen */
+"under_sixteen_headline" = "ਅੱਗੇ ਵਧਣ ਲਈ ਤੁਹਾਨੂੰ ਆਪਣੇ ਮਾਪੇ/ਸਰਪ੍ਰਸਤ ਦੀ ਸਹਿਮਤੀ ਦੀ ਲੋੜ ਹੈ";
+/* Figma page Android Screens (05/06) */
+"under_sixteen_registration_consent_first_paragraph" = "ਮੇਰੀ ਪੰਜੀਕਰਨ ਜਾਣਕਾਰੀ।";
+"under_sixteen_second_paragraph" = "ਹੋਰ ਕੋਵਿਡਸੇਫ ਵਰਤੋਂਕਾਰਾਂ ਨਾਲ ਮੇਰੇ ਸੰਪਰਕ ਬਾਰੇ ਜਾਣਕਾਰੀ: ਜੇ ਕੋਈ ਹੋਰ ਵਰਤੋਂਕਾਰ ਮੇਰੇ ਸੰਪਰਕ ਵਿੱਚ ਆਇਆ ਹੈ ਜਿਸਦਾ ਕੋਵਿਡ-19 ਟੈਸਟ ਪਾਜੇਟਿਵ ਆਇਆ ਹੈ ਅਤੇ ਉਹ ਆਪਣਾ ਸੰਪਰਕ ਡੇਟਾ ਅੱਪਲੋਡ ਕਰਦਾ ਹੈ ";
+/* Figma page Android Screens (05/06) */
+"under-sixteen_consent_call_for_action" = "ਸਹਿਮਤੀ ਲਈ 'ਮੈਂ ਸਹਿਮਤ ਹਾਂ - I agree' ਚੁਣੋ|";
+"update_available_app_store_btn" = "ਐਪ ਸਟੋਰ 'ਤੇ ਜਾਓ";
+"update_available_dismiss_btn" = "ਮੈਨੂੰ ਬਾਅਦ ਵਿੱਚ ਯਾਦ ਕਰਵਾਓ";
+"update_available_message_ios" = "ਅਸੀਂ  ਕੋਵਿਡਸੇਫ ਵਿੱਚ ਸੁਧਾਰ ਕਰਦੇ ਆ ਰਹੇ ਹਾਂ। ਐਪ ਸਟੋਰ ਰਾਹੀਂ ਅੱਪਡੇਟ।";
+"update_available_title" = "ਅੱਪਡੇਟ ਉਪਲਬਧ ਹੈ|";
+"upload_answer_no" = "ਨਹੀਂ";
+/* Upload flow */
+"upload_answer_yes" = "ਹਾਂ";
+"upload_consent_button" = "ਮੈਂ ਸਹਿਮਤ ਹਾਂ";
+"upload_failed" = "ਅੱਪਲੋਡ ਅਸਫਲ।";
+"upload_finished_header" = "ਕੋਵਿਡਸੇਫ ਦੇ ਫੈਲਾਅ ਨੂੰ ਰੋਕਣ ਵਿੱਚ ਸਹਾਇਤਾ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ!";
+"upload_finished_sub_header" = "ਤੁਸੀਂ ਆਪਣੀ ਜਾਣਕਾਰੀ ਨੂੰ ਕੋਵਿਡਸੇਫ ਦੇ ਬੇਹੱਦ ਸੁਰੱਖਿਅਤ ਸਟੋਰੇਜ ਸਿਸਟਮ 'ਤੇ ਸਫਲਤਾਪੂਰਵਕ ਅੱਪਲੋਡ ਕਰ ਦਿੱਤਾ ਹੈ।\n\nਰਾਜ ਜਾਂ ਹਲਕਾ ਸਿਹਤ ਅਧਿਕਾਰੀ ਹੋਰ  ਕੋਵਿਡਸੇਫ ਵਰਤੋਂਕਾਰਾਂ ਨੂੰ ਸੂਚਿਤ ਕਰਨਗੇ ਜਿੰਨ੍ਹਾਂ ਨੇ ਤੁਹਾਡੇ ਨਾਲ ਨਜ਼ਦੀਕੀ ਸੰਪਰਕ ਦੀਆਂ ਉਦਾਹਰਨਾਂ ਰਿਕਾਰਡ ਕੀਤੀਆਂ ਹਨ। ਤੁਹਾਡੀ ਪਛਾਣ ਹੋਰਨਾਂ ਵਰਤੋਂਕਾਰਾਂ ਵਾਸਤੇ ਗੁੰਮਨਾਮ ਰਹੇਗੀ।";
+"upload_step_1_body" = "ਜੇਕਰ COVID-19 ਲਈ ਤੁਹਾਡਾ ਟੈਸਟ ਪਾਜੇਟਿਵ ਆਉਂਦਾ ਹੈ ਤਾਂ ਹੀ ਕੋਈ ਰਾਜ ਜਾਂ ਹਲਕਾ ਸਿਹਤ ਅਧਿਕਾਰੀ ਤੁਹਾਡੀ ਜਾਣਕਾਰੀ ਨੂੰ ਸਵੈਇੱਛਤ ਅੱਪਲੋਡ ਕਰਨ ਵਿੱਚ ਸਹਾਇਤਾ ਕਰਨ ਲਈ ਤੁਹਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੇਗਾ।\n\nਜੇ ਤੁਸੀਂ 'ਹਾਂ' ਦਬਾਉਂਦੇ ਹੋ ਤਾਂ ਤੁਹਾਨੂੰ ਆਪਣੀ ਜਾਣਕਾਰੀ ਅੱਪਲੋਡ ਕਰਨ ਲਈ ਸਹਿਮਤੀ ਦੇਣੀ ਪਵੇਗੀ|";
+"upload_step_1_header" = "ਕੀ ਕੋਈ ਸਿਹਤ ਅਧਿਕਾਰੀ ਤੁਹਾਨੂੰ ਆਪਣੀ ਜਾਣਕਾਰੀ ਅੱਪਲੋਡ ਕਰਨ ਲਈ ਕਹਿ ਰਿਹਾ ਹੈ?";
+"upload_step_4_header" = "ਸਹਿਮਤੀ ਅੱਪਲੋਡ ਕਰੋ";
+"upload_step_4_sub_header" = "ਜਦ ਤੱਕ ਤੁਸੀਂ ਸਹਿਮਤ ਨਹੀਂ ਹੁੰਦੇ, ਤੁਹਾਡਾ ਸੰਪਰਕ ਡੇਟਾ ਅੱਪਲੋਡ ਨਹੀਂ ਕੀਤਾ ਜਾਵੇਗਾ।\n\nਜੇ ਤੁਸੀਂ ਸਹਿਮਤ ਹੁੰਦੇ ਹੋ, ਤਾਂ ਤੁਹਾਡਾ ਸੰਪਰਕ ਡੇਟਾ ਰਾਜ ਜਾਂ ਹਲਕਾ ਸਿਹਤ ਅਧਿਕਾਰੀਆਂ ਨਾਲ ਟਰੇਸ ਕਰਨ ਲਈ ਅੱਪਲੋਡ ਅਤੇ ਸਾਂਝਾ ਕੀਤਾ ਜਾਵੇਗਾ।\n\nਰਾਜ ਜਾਂ ਹਲਕਾ ਸਿਹਤ ਅਧਿਕਾਰੀ ਕੇਵਲ ਤੁਹਾਡੇ ਨਜ਼ਦੀਕੀ ਸੰਪਰਕਾਂ ਬਾਰੇ ਜਾਣਕਾਰੀ ਲੈ ਸਕਣਗੇ|\n\nਹੋਰ ਵਿਸਥਾਰ ਲਈ ਕੋਵਿਡਸੇਫ *ਪ੍ਰਾਈਵੇਸੀ ਨੀਤੀ* ਪੜ੍ਹੋ।";
+"upload_step_verify_pin_header" = "ਆਪਣੀ ਜਾਣਕਾਰੀ ਅੱਪਲੋਡ ਕਰੋ";
+"upload_step_verify_pin_sub_header" = "ਕੋਈ ਰਾਜ ਜਾਂ ਹਲਕਾ ਸਿਹਤ ਅਧਿਕਾਰੀ ਲਿਖਤੀ ਸੰਦੇਸ਼ ਰਾਹੀਂ ਤੁਹਾਡੀ ਡੀਵਾਈਸ 'ਤੇ ਪਿੰਨ ਭੇਜੇਗਾ। ਆਪਣੀ ਜਾਣਕਾਰੀ ਨੂੰ ਅੱਪਲੋਡ ਕਰਨ ਲਈ ਹੇਠਾਂ ਭਰੋ।";
+"us_consent_button" = "ਮੈਂ ਸਹਿਮਤ ਹਾਂ";
+"wrong_ping_number" = "ਗਲਤ ਪਿੰਨ ਭਰਿਆ";
+"country_region_name_au2" = "ਨੋਰਫੋਕ ਆਈਲੈਂਡ";
+"AllowBluetoothOFF_VOLabel" = "ਬਲੂਟੁੱਥ ਤੱਕ ਪਹੁੰਚ: ਔੱਫ,ਕੋਵਿਡਸੇਫ ਨੂੰ ਬਲੂਟੁੱਥ ਤੱਕ ਪਹੁੰਚ ਦਿਓ";
+"AllowBluetoothON_VOLabel" = "ਬਲੂਟੁੱਥ ਤੱਕ ਪਹੁੰਚ: ਔਨ";
+"BluetoothOFF_VOLabel" = "ਬਲੂਟੁੱਥ: ਔੱਫ, ਆਪਣੇ ਫ਼ੋਨ ਦੇ ਬਲੂਟੁੱਥ ਨੂੰ ਚਾਲੂ ਕਰੋ। ਜੇਕਰ ਡਿਸਪਲੇ ਹੁੰਦਾ ਹੈ ਤਾਂ 'ਨਵੇਂ ਕੁਨੈਕਸ਼ਨ ਆਉਣ ਦਿਓ' ਚੁਣੋ ।";
+"BluetoothON_VOLabel" = "ਬਲੂਟੁੱਥ: ਔਨ";
+"CodeHasExpired" = "ਤੁਹਾਡਾ ਕੋਡ ਖਤਮ ਹੋ ਗਿਆ ਹੈ।";
+/* details */
+"Done" = "ਕੀਤਾ";
+/* Feedback */
+"EmailPlaceholder" = "ਆਪਣਾ ਈਮੇਲ ਪਤਾ ਭਰੋ (ਚਾਹੀਦਾ ਹੈ)";
+/* Phone number and PIN */
+"EnterPhoneReVerify" = "ਮੁੜ-ਪੁਸ਼ਟੀ ਕਰਨ ਲਈ ਆਪਣਾ ਮੋਬਾਈਲ ਨੰਬਰ ਭਰੋ";
+"EnterPINSent" = "%@ 'ਤੇ   ਭੇਜਿਆ ਪਿੰਨ ਭਰੋ";
+/* Message for prompt that user sees when opening feeback. Prompt asks user if he/she would like to send new feedback. */
+"entryPrompt_alert_message" = "ਸਤਿ ਸ਼੍ਰੀ ਅਕਾਲ ਜੀ, ਤੁਸੀਂ ਅੱਗੇ ਕਿੰਵੇਂ ਵਧਣਾ ਚਾਹੁੰਦੇ ਹੋ? ";
+/* Title for prompt that user sees when opening feeback. Prompt asks user if he/she would like to send new feedback. */
+"entryPrompt_alert_title" = "ਫੀਡਬੈਕ ਬਾਕਸ";
+/* Title for button that launches new feedback flow. */
+"entryPrompt_newFeedback_button_title" = "ਨਵਾਂ ਫੀਡਬੈਕ";
+"FoundIssueWithApp" = "ਕੋਵਿਡਸੇਫ ਐਪ ਤੇ ਇੱਕ ਮੁੱਦਾ ਮਿਲਿਆ?";
+/* *** Feedback localised strings *** */
+"global_cancel_button_title" = "ਰੱਦ";
+"global_send_button_title" = "ਭੇਜੋ";
+"global_sending_indication_title" = "ਭੇਜਿਆ ਜਾ ਰਿਹਾ ਹੈ";
+"global_success_indication_title" = "ਸਫਲ";
+/* upload */
+"InformationUploaded" = "ਤੁਹਾਡੀ ਜਾਣਕਾਰੀ %@ 'ਤੇ ਅੱਪਲੋਡ ਕੀਤੀ ਗਈ ਸੀ|";
+"InvalidOTP" = "6-ਅੰਕਾਂ ਦਾ ਕੋਡ ਹੋਣਾ ਲਾਜ਼ਮੀ ਹੈ";
+"IssueDescPlaceholder" = "ਕਿਰਪਾ ਕਰਕੇ ਮੁੱਦਾ ਵਰਣਨ ਕਰੋ";
+"IssueFooter" = "ਤੁਹਾਡੇ ਫੀਡਬੈਕ ਬਾਰੇ ਹੋਰ ਵਿਸਥਾਰਾਂ ਲਈ ਅਸੀਂ ਤੁਹਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰ ਸਕਦੇ ਹਾਂ| ਤੁਹਾਡੀ ਈਮੇਲ ਦੀ ਵਰਤੋਂ ਕਿਸੇ ਹੋਰ ਉਦੇਸ਼ ਲਈ ਨਹੀਂ ਕੀਤੀ ਜਾਵੇਗੀ| ";
+"IssueThankYou" = "ਧੰਨਵਾਦ, ਤੁਹਾਡਾ ਫੀਡਬੈਕ ਮਿਲ ਗਿਆ।";
+/* Delete screenshot action sheet action button title. */
+"newFeedback_deleteScreenshot_actionTitle" = "ਸਕਰੀਨਸ਼ਾਟ ਡਿਲੀਟ ਕਰੋ";
+/* Messsage shown to user asking to confirm screenshot deletion. */
+"newFeedback_deleteScreenshotConfirmation_message" = "ਇਸ ਸਕ੍ਰੀਨਸ਼ੌਟ ਨੂੰ ਸਥਾਈ ਤੌਰ 'ਤੇ ਮਿਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ।";
+"newFeedback_invalidEmail_errorMessage" = "ਕਿਰਪਾ ਕਰਕੇ ਜਾਇਜ (ਵੈਲਡ) ਈਮੇਲ ਪਤਾ ਭਰੋ|";
+/* Error message displayed to users when feedback has empty description */
+"newFeedback_noMessage_errorMessage" = "ਭੇਜਣ ਤੋਂ ਪਹਿਲਾਂ ਸਾਨੂੰ ਕੁਝ ਦੱਸੋ।";
+/* Error message displayed to users when feedback fails to send. */
+"newFeedback_send_errorMessage" = "ਫੀਡਬੈਕ ਭੇਜਣ ਦੌਰਾਨ ਗਲਤੀ";
+/* Navigation Bar title shown during new feedback flow. */
+"newFeedbackFlow_navigationTitle" = "ਮੁੱਦਾ ਰਿਪੋਰਟ ਕਰੋ|";
+"Next" = "ਅੱਗੇ";
+/* registration succcess */
+"OS2b_Item1" = "1. ਜਦੋਂ ਤੁਸੀਂ ਘਰੋਂ ਬਾਹਰ ਜਾਂਦੇ ਹੋ, ਤਾਂ ਆਪਣੇ ਫ਼ੋਨ ਨੂੰ ਨਾਲ ਰੱਖੋ ਅਤੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਕੋਵਿਡਸੇਫ ਐਕਟਿਵ ਹੈ।";
+"OS2b_Item2" = "2. ਬਲੂਟੁੱਥ® ਚਾਲੂ ਰੱਖੋ|";
+"OS2b_Item2_VOLabel" = "2. ਬਲੂਟੁੱਥ ਚਾਲੂ ਰੱਖੋ।";
+"OS2b_Item3" = "ਕੋਵਿਡਸੇਫ ਪੈਰੀਂਗ ਦੀਆਂ ਬੇਨਤੀਆਂ ਨਹੀਂ ਭੇਜਦੀ। ਹੋਰ ਸਿੱਖੋ|";
+"OS2b_Item3Underline" = "ਹੋਰ ਸਿੱਖੋ|";
+/* home */
+"PairingRequestsInfo" = "ਕੋਵਿਡਸੇਫ ਪੈਰੀਂਗ ਦੀਆਂ ਬੇਨਤੀਆਂ ਨਹੀਂ ਭੇਜਦੀ।";
+"PairingRequestsInfoUnderline" = "ਪੈਰੀਂਗ ਬੇਨਤੀਆਂ";
+"PhoneNumberFormatErrorMessage" = "ਕਿਰਪਾ ਕਰਕੇ ਮੋਬਾਈਲ ਫ਼ੋਨ ਨੰਬਰ ਭਰੋ।";
+"PhoneNumberFormatErrorTitle" = "ਗਲਤ ਨੰਬਰ ਫਾਰਮੈਟ";
+"PhoneVerificationErrorMessage" = "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੇ ਵਿਸਥਾਰਾਂ ਦੀ ਜਾਂਚ ਕਰੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।";
+"PhoneVerificationErrorTitle" = "ਫੋਨ ਨੰਬਰ ਦੀ ਜਾਂਚ ਦੌਰਾਨ ਗ਼ਲਤੀ";
+"PINWillExpire" = "ਤੁਹਾਡਾ ਪਿੰਨ  %@ ਵਿੱਚ ਸਮਾਪਤ ਹੋ ਜਾਵੇਗਾ";
+"ReceivePinIssue" = "ਤੁਹਾਡੇ ਪਿੰਨ ਮਿਲਣ ਵਿੱਚ ਮੁੱਦੇ?";
+/* help */
+"ReportAnIssue" = "ਮੁੱਦਾ ਰਿਪੋਰਟ ਕਰੋ|";
+/* VO */
+"SelectedCountryTemplate" = "(+%@) %@ ਚੁਣਿਆ ਗਿਆ ਹੈ";
+"UploadFailed" = "ਅੱਪਲੋਡ ਅਸਫਲ। ਕਿਰਪਾ ਕਰਕੇ ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।";
+"UploadFailedErrorMessage" = "ਕਿਰਪਾ ਕਰਕੇ ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।";
+"ValidationError" = "ਜਾਇਜਤਾ (ਵੈਲੀਡੇਸ਼ਨ) ਗਲਤੀ";
+"GetCoronaVirusApp_VOLabel" = "ਕੋਰੋਨਵਾਇਰਸ ਐਪ ਪ੍ਰਾਪਤ ਕਰੋ। ਤਾਜ਼ਾ ਖ਼ਬਰਾਂ ਅਤੇ ਸਲਾਹ ਲਈ ਸਰਕਾਰੀ ਐਪ ਡਾਊਨਲੋਡ ਕਰੋ।";
+"HelpTopics_VOLabel" = "ਸਹਾਇਤਾ ਵਿਸ਼ੇ| ਜੇ ਐਪ ਬਾਰੇ ਤੁਹਾਨੂੰ ਕੋਈ ਸਮੱਸਿਆਵਾਂ ਜਾਂ ਸਵਾਲ ਹਨ।";
+"LatestNews_VOLabel" = "ਤਾਜ਼ਾ ਖ਼ਬਰਾਂ ਅਤੇ ਅੱਪਡੇਟ। ਤਾਜ਼ਾ ਕੋਰੋਨਵਾਇਰਸ ਖ਼ਬਰਾਂ ਵਾਸਤੇ aus.gov.au ਵੱਲ ਜਾਓ।";
+"NotificationsDisabled_VOLabel" = "ਸੂਚਨਾਵਾਂ ਅਸਮਰੱਥ (ਡਿਸੇਬਲੇਡ)\nਹਨ। ਜੇ ਕੋਵਿਡਸੇਫ ਐਕਟਿਵ ਨਹੀਂ ਤਾਂ ਤੁਹਾਨੂੰ ਕੋਈ ਸੂਚਨਾ ਨਹੀਂ ਮਿਲੇਗੀ|\nਸੂਚਨਾ ਸੈਟਿੰਗ ਬਦਲੋ";
+"NotificationsEnabled_VOLabel" = "ਸੂਚਨਾਵਾਂ ਸਮਰੱਥ  (ਅਨੇਬਲਡ)\nਹਨ। ਜੇ ਕੋਵਿਡਸੇਫ ਐਕਟਿਵ ਨਹੀਂ  ਤਾਂ ਤੁਹਾਨੂੰ ਸੂਚਨਾ ਮਿਲੇਗੀ|\nਸੂਚਨਾ ਸੈਟਿੰਗ ਬਦਲੋ";
+"OS1b_TopParagraph_VOLabel" = "ਬਲੂਟੁੱਥ ਸਿਗਨਲਾਂ ਦੀ ਵਰਤੋਂ ਇਹ ਦੱਸਦੀ ਹੈ ਜਦੋਂ ਤੁਸੀਂ ਕਿਸੇ ਹੋਰ ਕੋਵਿਡਸੇਫ ਵਰਤੋਂਕਾਰ ਦੇ ਨੇੜੇ ਹੁੰਦੇ ਹੋ।\nਤੁਹਾਡੇ ਅਤੇ ਹੋਰ ਕੋਵਿਡਸੇਫ ਵਰਤੋਂਕਾਰਾਂ ਵਿਚਕਾਰ ਨਜ਼ਦੀਕੀ ਸੰਪਰਕ ਦੀ ਹਰੇਕ ਉਦਾਹਰਨ ਨੂੰ ਨਜ਼ਦੀਕੀ ਸੰਪਰਕ ਜਾਣਕਾਰੀ ਲਈ ਨੋਟ ਕੀਤਾ ਜਾਂਦਾ ਹੈ। ਇਹ ਜਾਣਕਾਰੀ ਏਨਕ੍ਰਿਪਟਿਡ ਹੁੰਦੀ ਹੈ ਅਤੇ ਕੇਵਲ ਤੁਹਾਡੇ ਫ਼ੋਨ ਵਿੱਚ ਹੀ ਸਟੋਰ ਕੀਤੀ ਜਾਂਦੀ ਹੈ।\nਜੇ ਕੋਵਿਡਸੇਫ ਵਰਤੋਂਕਾਰ ਵਜੋਂ  ਕੋਵਿਡ-19 ਲਈ ਤੁਹਾਡਾ ਟੈਸਟ ਪਾਜੇਟਿਵ ਆਉਂਦਾ ਹੈ, ਤਾਂ ਕੋਈ ਰਾਜ ਜਾਂ ਹਲਕਾ ਸਿਹਤ ਅਧਿਕਾਰੀ ਤੁਹਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੇਗਾ। ਉਹ ਤੁਹਾਡੀ ਨਜ਼ਦੀਕੀ ਸੰਪਰਕ ਜਾਣਕਾਰੀ ਨੂੰ ਇੱਕ ਬੇਹੱਦ ਸੁਰੱਖਿਅਤ ਜਾਣਕਾਰੀ ਸਟੋਰੇਜ ਸਿਸਟਮ ਵਿੱਚ ਅੱਪਲੋਡ ਕਰਨ ਵਿੱਚ ਸਹਾਇਤਾ ਕਰਨਗੇ।\nਜੇ ਤੁਸੀਂ ਕਿਸੇ ਹੋਰ ਕੋਵਿਡਸੇਫ ਵਰਤੋਂਕਾਰ ਜਿਸਦਾ ਪਾਜ਼ੇਟਿਵ ਟੈਸਟ ਹੋਇਆ ਸੀ, ਦੇ ਸੰਪਰਕ ਵਿੱਚ ਆਏ ਹੋ ਤਾਂ ਵੀ ਰਾਜ ਜਾਂ ਹਲਕਾ ਸਿਹਤ ਅਧਿਕਾਰੀ ਤੁਹਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰ ਸਕਦੇ ਹਨ|\nਵਧੇਰੇ ਜਾਣਕਾਰੀ ਲਈ ਕਿਰਪਾ ਕਰਕੇ ਸਹਾਇਤਾ ਵਿਸ਼ੇ ਪੰਨਾ  ਦੇਖੋ।";
+"permission_content_iOS_2_VOLabel" = "1. ਬਲੂਟੁੱਥ\n2. ਸੂਚਨਾਵਾਂ\n\nਕੋਵਿਡਸੇਫ ਪੈਰੀਂਗ ਦੀਆਂ ਬੇਨਤੀਆਂ ਨਹੀਂ ਭੇਜਦੀ।";
+"permission_content_iOS_VOLabel" = "ਕੋਵਿਡਸੇਫ ਦੇ ਕੰਮ ਕਰਨ ਲਈ ਬਲੂਟੁਥ ਚਾਲੂ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ| ਸੂਚਨਾਵਾਂ ਨੂੰ ਚਾਲੂ ਕਰਣ ਤੇ ਤੁਹਾਨੂੰ ਅੱਪਡੇਟ ਪ੍ਰਾਪਤ ਹੁੰਦੇ ਹਨ ਜੋ ਯਾਦ ਕਰਾਉਂਦੇ ਹਨ ਜਦੋਂ ਕੋਵਿਡਸੇਫ ਐਕਟਿਵ ਨਹੀਂ ਹੁੰਦਾ|\n\nਚਲਾਉਣ ਲਈ 'ਅੱਗੇ ਵਧੋ (Proceed)' ਚੁਣੋ:";
+"ShareCovidSafe_VOLabel" = "ਕੋਵਿਡਸੇਫ ਸਾਂਝਾ ਕਰੋ। ਹੋਰਨਾਂ ਨੂੰ ਸਹਾਇਤਾ ਲਈ ਬੁਲਾਓ । ਇਕੱਠੇ ਅਸੀਂ ਵਧੇਰੇ ਮਜ਼ਬੂਤ ਹਾਂ।";
+"UploadData_VOLabel" = "ਕੀ ਕਿਸੇ ਸਿਹਤ ਅਧਿਕਾਰੀ ਨੇ ਤੁਹਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕੀਤਾ ਹੈ? ਤੁਸੀਂ ਆਪਣੀ ਜਾਣਕਾਰੀ ਨੂੰ ਕੇਵਲ ਤਾਂ ਹੀ ਅੱਪਲੋਡ ਕਰ ਸਕਦੇ ਹੋ ਜੇਕਰ ਤੁਹਾਡਾ ਟੈਸਟ ਪਾਜੇਟਿਵ ਆਇਆ ਹੋਵੇ|";

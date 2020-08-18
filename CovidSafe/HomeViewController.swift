@@ -2,6 +2,7 @@ import UIKit
 import Lottie
 import KeychainSwift
 import SafariServices
+import Reachability
 
 class HomeViewController: UIViewController {
     private var observer: NSObjectProtocol?
@@ -37,6 +38,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var animatedBluetoothHeaderHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var animatedBluetoothHeaderTopMarginConstraint: NSLayoutConstraint!
     @IBOutlet weak var animatedBluetoothHeaderBottomMarginConstraint: NSLayoutConstraint!
+    @IBOutlet weak var improvementsContainerView: UIView!
+    @IBOutlet weak var improvementsInternetConnectionView: UIView!
+    @IBOutlet weak var improvementsUpdateAvailableView: UIView!
     
     var lottieBluetoothView: AnimationView!
 
@@ -86,6 +90,8 @@ class HomeViewController: UIViewController {
         return _preferredScreenEdgesDeferringSystemGestures
     }
     
+    private let reachability = try! Reachability()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -132,10 +138,18 @@ class HomeViewController: UIViewController {
         if let observer = observer {
             NotificationCenter.default.removeObserver(observer)
         }
+        reachability.stopNotifier()
+        NotificationCenter.default.removeObserver(self, name: .reachabilityChanged, object: reachability)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChanged(note:)), name: .reachabilityChanged, object: reachability)
+        do {
+          try reachability.startNotifier()
+        } catch {
+          DLog("Could not start reachability notifier")
+        }
         self.toggleViews()
     }
     
@@ -144,12 +158,16 @@ class HomeViewController: UIViewController {
         self.lottieBluetoothView?.play()
         self.becomeFirstResponder()
         self.updateJWTKeychainAccess()
-        getMessagesFromServer()
+        DispatchQueue.global(qos: .background).async {
+            self.getMessagesFromServer()
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.lottieBluetoothView?.stop()
+        reachability.stopNotifier()
+        NotificationCenter.default.removeObserver(self, name: .reachabilityChanged, object: reachability)
     }
     
     override var canBecomeFirstResponder: Bool {
@@ -190,7 +208,18 @@ class HomeViewController: UIViewController {
             if let error = error {
                 DLog("Get messages error: \(error.localizedDescription)")
             }
-            // We currently dont do anything with the response. Messages are delivered via APN
+            
+            // show update available section
+            guard let messages = messageResponse?.messages else {
+                DispatchQueue.main.async {
+                    self.toggleAppVersionAvailableView(isVisible: false)
+                }
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self.toggleAppVersionAvailableView(isVisible: messages.count > 0)
+            }
         }
     }
     
@@ -206,6 +235,7 @@ class HomeViewController: UIViewController {
                     self?.toggleHeaderView()
                     self?.toggleUploadView()
                     self?.toggleUploadDateView()
+                    self?.toggleImprovementsContainerView()
                 }
             })
         }
@@ -273,6 +303,7 @@ class HomeViewController: UIViewController {
             animatedBluetoothHeaderHeightConstraint.constant = animatedHeaderActiveHeightConstant
             animatedBluetoothHeaderTopMarginConstraint.constant = animatedHeaderActiveVerticalMarginConstant
             animatedBluetoothHeaderBottomMarginConstraint.constant = animatedHeaderActiveVerticalMarginConstant
+            animatedBluetoothHeader.layoutIfNeeded()
             self.homeHeaderView.backgroundColor = UIColor.covidHomeActiveColor
             updateAnimationViewWithAnimationName(name: "Spinner_home")
             topLeftIcon.isHidden = true
@@ -286,6 +317,7 @@ class HomeViewController: UIViewController {
     }
     
     fileprivate func toggleBluetoothPermissionStatusView() {
+        toggleImprovementsContainerView()
         toggleViewVisibility(view: bluetoothPermissionOnView, isVisible: !self.allPermissionOn && self.bluetoothPermissionOn)
         toggleViewVisibility(view: bluetoothPermissionOffView, isVisible: !self.allPermissionOn && !self.bluetoothPermissionOn)
     }
@@ -328,9 +360,43 @@ class HomeViewController: UIViewController {
         }
     }
     
+    fileprivate func toggleImprovementsContainerView() {
+        // only show if the app has the right settings
+        let canShowSection = bluetoothStatusOn && bluetoothPermissionOn
+        let areChildrenShown = !improvementsUpdateAvailableView.isHidden || !improvementsInternetConnectionView.isHidden
+        
+        toggleViewVisibility(view: improvementsContainerView, isVisible: canShowSection && areChildrenShown)
+    }
+    
+    fileprivate func toggleInternetConnectionView(isVisible: Bool) {
+        toggleViewVisibility(view: improvementsInternetConnectionView, isVisible: isVisible)
+        toggleImprovementsContainerView()
+    }
+    
+    fileprivate func toggleAppVersionAvailableView(isVisible: Bool) {
+        toggleViewVisibility(view: improvementsUpdateAvailableView, isVisible: isVisible)
+        toggleImprovementsContainerView()
+    }
+    
     func attemptTurnOnBluetooth() {
         BluetraceManager.shared.toggleScanning(false)
         BluetraceManager.shared.turnOn()
+    }
+    
+    // MARK: Reachability
+    
+    @objc func reachabilityChanged(note: Notification) {
+        
+        let reachability = note.object as! Reachability
+        
+        switch reachability.connection {
+        case .wifi,
+             .cellular:
+            toggleInternetConnectionView(isVisible: false)
+        case .unavailable,
+             .none:
+            toggleInternetConnectionView(isVisible: true)
+        }
     }
     
     // MARK: IBActions
@@ -342,20 +408,23 @@ class HomeViewController: UIViewController {
         UIApplication.shared.open(settingsURL)
     }
     
-    @IBAction func onChangeLanguageTapped(_ sender: UITapGestureRecognizer) {
-        if #available(iOS 13.0, *) {
-            guard let settingsURL = URL(string: UIApplication.openSettingsURLString) else {
-                return
-            }
-            UIApplication.shared.open(settingsURL)
-        } else {
-            let nav = HelpNavController()
-            nav.pageSectionId = "other-languages"
-            nav.modalTransitionStyle = .coverVertical
-            nav.modalPresentationStyle = .fullScreen
-            present(nav, animated: true, completion: nil)
+    @IBAction func noInternetTapped(_ sender: Any) {
+        performSegue(withIdentifier: "internetConnectionSegue", sender: nil)
+    }
+    
+    @IBAction func updateAvailableTapped(_ sender: Any) {
+        if let url = URL(string: "itms-apps://itunes.apple.com/app/id1509242894"),
+            UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
-        
+    }
+    
+    @IBAction func onChangeLanguageTapped(_ sender: UITapGestureRecognizer) {
+        let nav = HelpNavController()
+        nav.pageSectionId = "other-languages"
+        nav.modalTransitionStyle = .coverVertical
+        nav.modalPresentationStyle = .fullScreen
+        present(nav, animated: true, completion: nil)
     }
     
     @IBAction func onBluetoothPhoneSettingsTapped(_ sender: Any) {

@@ -13,7 +13,7 @@ final class UploadDataHomeViewController: UIViewController {
         
     private func setupMessageTextView() {
         messageTextView.textContainer.lineFragmentPadding = 0.0
-        messageTextView.addLink("https://www.health.gov.au/using-our-websites/privacy/privacy-notice-for-covidsafe-app", enclosedIn: "*")
+        messageTextView.addLink(URLHelper.getPrivacyPolicyURL(), enclosedIn: "*")
     }
     
     @IBAction func onBackTapped(_ sender: UIButton) {

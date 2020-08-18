@@ -311,6 +311,9 @@
 "migration_in_progress" = " COVIDSafe update in progress. \n\n Please make sure you phone is not switched off until the update is complete.";
 /* Figma page Android Screens (05/06) */
 "norfolk_hint" = "For example: 51234";
+"notification_bluetooth" = "Turn on Bluetooth for COVIDSafe to work.";
+"notification_internet_content" = "Open the app and check your internet connection for COVIDSafe to work.";
+"notification_not_active_title" = "COVIDSafe is not active";
 "notification_update_content" = "Update your app to access the latest improvements.";
 "notification_update_heading" = "COVIDSafe update available ";
 /* Figma page iOS Screens (05/06) */

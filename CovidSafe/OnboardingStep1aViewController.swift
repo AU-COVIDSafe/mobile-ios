@@ -48,12 +48,13 @@ class OnboardingStep1aViewController: UIViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let privacyPolicyUrl = URLHelper.getPrivacyPolicyURL()
         privacyText.delegate = self
-        privacyText.addLink("https://www.health.gov.au/using-our-websites/privacy/privacy-notice-for-covidsafe-app", enclosedIn: "*")
-        privacyText.addLink("https://www.health.gov.au/using-our-websites/privacy/privacy-notice-for-covidsafe-app", enclosedIn: "*")
+        privacyText.addLink(privacyPolicyUrl, enclosedIn: "*")
+        privacyText.addLink(privacyPolicyUrl, enclosedIn: "*")
         privacyText.addLink(URLHelper.getHelpURL(), enclosedIn: "*")
         privacyText.addLink("https://www.health.gov.au", enclosedIn: "*")
-        privacyText.addLink("https://www.health.gov.au/using-our-websites/privacy/privacy-notice-for-covidsafe-app", enclosedIn: "*")
+        privacyText.addLink(privacyPolicyUrl, enclosedIn: "*")
     }
 
 }

@@ -42,7 +42,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UNUserNotificationCenter.current().delegate = self
         NotificationCenter.default.addObserver(self, selector:#selector(jwtExpired(_:)),name: .jwtExpired, object: nil)
-        NotificationCenter.default.addObserver(self, selector:#selector(deferReminderNotifications(_:)),name: .encounterRecorded, object: nil)
         
         setupBluetoothPNStatusCallback()
         
@@ -108,15 +107,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     return
                 }
             }
-            switch state {                
-            case .poweredOff, .unauthorized:
-                DLog("*** Setup reminders - BL OFF, UNAUTH check/set reminders")
-                self.checkAndScheduleReminderNotifications()
-            default:
-                // leave reminder notifications as they are, when an encounter occurs the notifications will be deferred
-                // or removed when app becomes active
-                DLog("*** Setup reminders - Default leave reminders")
-            }
         }
     }
     
@@ -130,8 +120,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     fileprivate func cancelScheduledReminderNotifications() {
         DLog("*** Cancel reminders")
-        let identifiers = getReminderNotificationsIdentifiers()
+        var identifiers = getReminderNotificationsIdentifiers()
+        // appending the old daily notification to cancel in case is still lingering
+        identifiers.append("appBackgroundNotifId")
         UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: identifiers)
+        
     }
         
     fileprivate func triggerIntervalLocalPushNotifications(pnContent: [String : String], identifier: String) {
@@ -159,60 +152,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return "reminder-\(interval)"
     }
     
-    fileprivate func checkAndScheduleReminderNotifications() {
-        let identifiers = getReminderNotificationsIdentifiers()
-        DLog("*** Setup reminders - checking pending reminders")
-        // check all reminders are scheduled and pending
-        UNUserNotificationCenter.current().getPendingNotificationRequests { (notificationsRequest) in
-            var scheduledRemindersCount = 0
-            for notification in notificationsRequest {
-                if identifiers.firstIndex(of: notification.identifier) != nil {
-                    scheduledRemindersCount += 1
-                }
-            }
-            // re-schedule reminders unless they are all pending
-            if scheduledRemindersCount != identifiers.count {
-                self.scheduleReminderNotifications()
-            }
-        }
-    }
-        
-    fileprivate func scheduleReminderNotifications() {
-        DLog("*** Set reminders")
-        let reminderContent = PushNotificationConstants.reminderPushNotifContents
-        guard
-            let title = reminderContent["contentTitle"],
-            let body = reminderContent["contentBody"] else {
-                return
-        }
-        
-        let notificationCenter = UNUserNotificationCenter.current()
-        
-        for interval in intervals {
-            let content = UNMutableNotificationContent()
-            let identifier = getReminderNotificationIdentifier(interval: interval)
-            #if DEBUG
-                content.title = "\(title) \(interval / 60) min"
-            #else
-                content.title = title
-            #endif
-            
-            content.body = body
-            
-            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: interval, repeats: false)
-            
-            let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
-            notificationCenter.add(request)
-        }
-    }
-    
-    @objc
-    func deferReminderNotifications(_ notification: Notification) {
-        // no need to cancel, if same ID used the notification is updated
-        scheduleReminderNotifications()
-    }
-    
-    // - Application lifecycle
+    // MARK: - Application lifecycle
     
     func applicationDidBecomeActive(_ application: UIApplication) {
         DLog("applicationDidBecomeActive")
@@ -220,19 +160,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         startAccelerometerUpdates()
         clearOldDataInContext()
         
-        // if Bluetooth is ON, remove reminders, leave otherwise.
-        if BluetraceManager.shared.isBluetoothOn() {
-            cancelScheduledReminderNotifications()
-        }
+        // remove old reminders
+        cancelScheduledReminderNotifications()
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
         DLog("applicationWillResignActive")
         // Retry in case it failed on become active
         clearOldDataInContext()
-        
-        // check if reminders pending and set if needed
-        checkAndScheduleReminderNotifications()
     }
     
     func applicationDidEnterBackground(_ application: UIApplication) {
@@ -274,7 +209,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     self.endBackgroundTask()
                     return
                 }
-                let managedContext = persistentContainer.viewContext
+                let managedContext = persistentContainer.newBackgroundContext()
                 if let oldFetchRequest = Encounter.fetchOldEncounters() {
                     let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: oldFetchRequest)
                     do {
@@ -426,14 +361,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         DLog("The APN token received is: \(token)")
         
         UserDefaults.standard.set(token, forKey: "deviceTokenForAPN")
-        
-        MessageAPI.getMessagesIfNeeded(completion: { (response, error) in
-            if let error = error {
-                DLog("Get messages error: \(error.localizedDescription)")
-                return
-            }
-            DLog("Get messages success, device token saved")
-        })
     }
 
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {

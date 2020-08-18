@@ -102,7 +102,7 @@ final class InfoViewController: UIViewController {
     
     @objc
     func clearLogsButtonClicked() {
-                    guard let persistentContainer =
+        guard let persistentContainer =
             EncounterDB.shared.persistentContainer else {
                 return
         }
@@ -119,14 +119,19 @@ final class InfoViewController: UIViewController {
             print("Could not perform delete. \(error)")
         }
         
+        guard let logPersistentContainer =
+            BLELogDB.shared.persistentContainer else {
+                return
+        }
+        let logManagedContext = logPersistentContainer.viewContext
         let logFetchRequest = NSFetchRequest<BLELog>(entityName: "BLELog")
         logFetchRequest.includesPropertyValues = false
         do {
-            let logs = try managedContext.fetch(logFetchRequest)
+            let logs = try logManagedContext.fetch(logFetchRequest)
             for bleLog in logs {
-                managedContext.delete(bleLog)
+                logManagedContext.delete(bleLog)
             }
-            try managedContext.save()
+            try logManagedContext.save()
         } catch {
             print("Could not perform delete. \(error)")
         }

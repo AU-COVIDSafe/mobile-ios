@@ -28,4 +28,5 @@ target 'CovidSafe-staging' do
   pod 'KeychainSwift'
   pod 'lottie-ios'
   pod 'FlagKit'
+  pod 'ReachabilitySwift'
 end
