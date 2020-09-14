@@ -9,6 +9,7 @@
 "AllowBluetoothOFF" = "Access to Bluetooth®: OFF";
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothON" = "Access to Bluetooth®: ON";
+"australian_capital_territory" = "Australian Capital Territory";
 /* Figma page iOS Screens (05/06) */
 "BluetoothOFF" = "Bluetooth®: OFF";
 /* Figma page iOS Screens (05/06) */
@@ -16,7 +17,7 @@
 /* Figma page iOS Screens (05/06) */
 "BluetoothON" = "Bluetooth®: ON";
 "change_language" = "Change language";
-"change_language_content" = "Update your settings to use COVIDSafe in a different language.";
+"change_language_content" = "Read the guide on using COVIDSafe in a different language.";
 "consent_button" = "I agree";
 /* Shared Consent Actions */
 "consent_call_for_action" = "Select 'I agree' to confirm consent.";
@@ -236,6 +237,7 @@
 "data_privacy_content_VO" = "It is important that you read the COVIDSafe privacy policy before you register for COVIDSafe.\n\nIf you are under 16 years of age, your parent/guardian must also read the privacy policy.\n\nUse of COVIDSafe is completely voluntary. You can install or delete the application at any time. If you delete COVIDSafe, you may also ask for your information to be deleted from the secure server.\n\nTo register for COVIDSafe, you will need to enter a name (or pseudonym), mobile number, age range and postcode.\n\nInformation you submit when you register, and information about your use of COVIDSafe will be collected and stored on a highly secure server.\n\nCOVIDSafe will not collect your location information.\n\nCOVIDSafe will note the time of contact, anonymous ID code of other COVIDSafe users you come into contact with, Bluetooth signal strength and the phone model of other users, on your device.\n\nOther COVIDSafe users you come into contact with will also note your anonymous ID code, the date and time of contact with you, Bluetooth signal strength and your phone model, on their device.\n\nIf another user tests positive to COVID-19, they may upload their contact information and a state or territory health official may contact you for contact tracing purposes. \n\nYour registration details will only be used or disclosed for contact tracing and for the proper and lawful functioning of COVIDSafe. \n\nMore information is available at the Australian Government Department of Health website.\n\nSee the COVIDSafe privacy policy for further details about your rights about your information and how it will be handled and shared.";
 /* OnBoarding Data Privacy */
 "data_privacy_headline" = "Registration and privacy";
+"deaths" = "Deaths";
 "dialog_error_uploading_message" = "An error occurred while uploading your information, please try again.";
 "dialog_error_uploading_negative" = "Cancel";
 "dialog_error_uploading_positive" = "Try again";
@@ -266,13 +268,13 @@
 /* Home */
 "home_header_active_title_thanks" = "Thanks, COVIDSafe is now active.";
 "home_header_inactive_check_your_permissions" = "Check your settings.";
-"home_header_inactive_title" = "COVIDSafe is not active.";
+"home_header_inactive_title" = "COVIDSafe is not active";
 "home_header_uploaded_on_date_ios" = "Your information was uploaded on %@.";
 "home_set_complete_external_link_app_content" = "Download the government app for the latest news and advice.";
 "home_set_complete_external_link_app_title" = "Get the Coronavirus app";
 "home_set_complete_external_link_been_contacted_content" = "You can only upload your information if you have tested positive.";
 "home_set_complete_external_link_been_contacted_title" = "Has a health official contacted you?";
-"home_set_complete_external_link_help_topics_content" = "If you have issues or questions about the app.";
+"home_set_complete_external_link_help_topics_content" = "Guidance on how to troubleshoot and fix technical issues";
 "home_set_complete_external_link_help_topics_title" = "Help topics";
 "home_set_complete_external_link_news_content" = "Head to aus.gov.au for the latest Coronavirus news.";
 "home_set_complete_external_link_news_title" = "Latest news and updates";
@@ -292,6 +294,7 @@
 "how_it_works_content" = "Bluetooth® signals are used to determine when you're near another COVIDSafe user.\n\nEvery instance of close contact between you and other COVIDSafe users is noted to create contact data. This information is encrypted and only stored in your phone.\n\nIf you test positive to COVID-19 as a COVIDSafe user, a state or territory health official will contact you. They will assist with voluntary upload of your contact data to a highly secure information storage system.\n\nState or territory health officials can also contact you if you came in close contact with another COVIDSafe user who tested positive.\n\nFor more information please refer to the *Help Topics* page.";
 /* OnBoarding How it works */
 "how_it_works_headline" = "How COVIDSafe works";
+"improve" = "Improve app performance";
 "improve_heading" = "Improve the performance of COVIDSafe";
 "internet_connection_content" = "Connect to the internet to ensure you get notified of issues and updates.";
 "internet_connection_heading" = "No internet connection";
@@ -307,13 +310,19 @@
 "IntroLabel" = "Help stop the spread\nand save lives.";
 "invalid_australian_phone_number_error_prompt" = "Australian mobile numbers contain a maximum of 10 digits.";
 "invalid_norfolk_island_phone_number_error_prompt" = "Mobile numbers in Norfolk Island contain 5 to 6 digits.";
+"loading_numbers" = "Loading latest numbers";
 /* Splash Screen */
 "migration_in_progress" = " COVIDSafe update in progress. \n\n Please make sure you phone is not switched off until the update is complete.";
+"national_numbers" = "National numbers";
+"new_cases" = "New cases in the last 24 hours";
+"new_south_wales" = "New South Wales";
 /* Figma page Android Screens (05/06) */
 "norfolk_hint" = "For example: 51234";
+"northern_territory" = "Northern Territory";
 "notification_bluetooth" = "Turn on Bluetooth for COVIDSafe to work.";
 "notification_internet_content" = "Open the app and check your internet connection for COVIDSafe to work.";
 "notification_not_active_title" = "COVIDSafe is not active";
+"notification_settings" = "Open the app to check your settings.";
 "notification_update_content" = "Update your app to access the latest improvements.";
 "notification_update_heading" = "COVIDSafe update available ";
 /* Figma page iOS Screens (05/06) */
@@ -322,6 +331,9 @@
 "NotificationsDisabledBlurb" = "You will not receive a notification if COVIDSafe is not active.\nChange notifications settings";
 /* Figma page iOS Screens (05/06) */
 "NotificationsEnabledBlurb" = "You will receive a notification if COVIDSafe is not active.\nChange notifications settings";
+"numbers_error" = "Unable to check for updated numbers.";
+"numbers_no_internet" = "Connect to the internet to ensure you get updated numbers.";
+"numbers_refresh" = "Refresh now";
 "options_for_australia" = "Options for Australia";
 "permission_button" = "Proceed";
 /* Figma page iOS Screens (05/06) */
@@ -357,6 +369,8 @@
 /* Figma page iOS Screens (05/06) */
 "PN_ReminderTitle" = "No encounters detected for 48 hours";
 "PostcodeValidationErrorMessage" = "Please enter a valid Australian postcode.";
+"queensland" = "Queensland";
+"recovered" = "Total cases recovered";
 "registration_consent_content" = "I consent to the Digital Transformation Agency as data store administrator, under legal determination made by the Secretary of the Australian Government Department of Health collecting:";
 "registration_consent_first_paragraph" = "My registration information.";
 /* Onboarding Registration Consent */
@@ -366,8 +380,16 @@
 "select_country_or_region" = "Select country or region";
 /* Figma page Android Screens (05/06) */
 "Select_country_or_region_headline" = "Select country or region";
+"settings" = "Settings";
 "share_this_app_content" = "Join me in stopping the spread of COVID-19! Download COVIDSafe, an app from the Australian Government. #COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
+"south_australia" = "South Australia";
 "stepCounter" = "Step %d of %d";
+"support" = "Support";
+"support_content" = "For assistance on issues not covered by Help topics";
+"Support_VOLabel" = "Support. For assistance on issues not covered by Help topics";
+"tasmania" = "Tasmania";
+"total_confirmed_cases" = "Total confirmed cases";
+"total_per_state" = "Total confirmed cases by state and territory";
 "UILaunchStoryboardName" = "LaunchScreen_en";
 "under_sixteen_content" = "I confirm my parent or guardian consents to the Digital Transformation Agency as data store administrator, under legal determination made by the Secretary of the Australian Government Department of Health collecting:";
 "under_sixteen_first_paragraph" = "My registration information.";
@@ -380,7 +402,7 @@
 "under-sixteen_consent_call_for_action" = "Select 'I agree' to confirm consent. ";
 "update_available_app_store_btn" = "Go to App Store";
 "update_available_dismiss_btn" = "Remind me later";
-"update_available_message_ios" = "We’ve been making improvements to COVIDSafe. Update via App Store.";
+"update_available_message_ios" = "We’ve been making improvements to COVIDSafe. Update through the App Store";
 "update_available_title" = "Update available!";
 "upload_answer_no" = "No";
 /* Upload flow */
@@ -396,13 +418,15 @@
 "upload_step_verify_pin_header" = "Upload your information";
 "upload_step_verify_pin_sub_header" = "A state or territory health official will send a PIN to your device via text message. Enter it below to upload your information.";
 "us_consent_button" = "I agree";
+"victoria" = "Victoria";
+"western_australia" = "Western Australia";
 "wrong_ping_number" = " Wrong PIN entered";
 "country_region_name_au2" = "Norfolk Island";
 "AllowBluetoothOFF_VOLabel" = "Access to Bluetooth: OFF Allow COVIDSafe to access Bluetooth";
 "AllowBluetoothON_VOLabel" = "Access to Bluetooth: ON";
 "BluetoothOFF_VOLabel" = "Bluetooth: OFF Turn on your phone's Bluetooth. Select 'Allow New Connections' if displayed.";
 "BluetoothON_VOLabel" = "Bluetooth: ON";
-"CodeHasExpired" = "Your code has expired.";
+"CodeHasExpired" = "Your PIN has expired.";
 /* details */
 "Done" = "Done";
 /* Feedback */
@@ -463,7 +487,7 @@
 "UploadFailedErrorMessage" = "Please try again later.";
 "ValidationError" = "Validation error";
 "GetCoronaVirusApp_VOLabel" = "Get the Coronavirus app. Download the government app for the latest news and advice.";
-"HelpTopics_VOLabel" = "Help topics. If you have issues or questions about the app.";
+"HelpTopics_VOLabel" = "Help topics. Guidance on how to troubleshoot and fix technical issues";
 "LatestNews_VOLabel" = "Latest news and updates. Head to aus.gov.au for the latest Coronavirus news.";
 "NotificationsDisabled_VOLabel" = "Notifications are disabled. You will not receive a notification if COVIDSafe is not active.\nChange notification settings";
 "NotificationsEnabled_VOLabel" = "Notifications are enabled. You will receive a notification if COVIDSafe is not active.\nChange notification settings";

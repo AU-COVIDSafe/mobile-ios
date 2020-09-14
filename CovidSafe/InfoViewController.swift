@@ -15,8 +15,12 @@ final class InfoViewController: UIViewController {
     @IBOutlet weak var silentNotificationsCountLabel: UILabel!
     @IBOutlet weak var apnTokenLabel: UILabel!
     private var devicesEncounteredCount: Int?
+    @IBOutlet weak var messagesAPILastDateLabel: UILabel!
+    @IBOutlet weak var messagesAPILastVersionLabel: UILabel!
     
     @IBOutlet weak var versionNumLabel: UILabel!
+    
+    let dateFormatter = DateFormatter()
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -24,16 +28,23 @@ final class InfoViewController: UIViewController {
         fetchDevicesEncounteredCount()
         self.identifierLabel.text = DeviceIdentifier.getID()
         self.versionNumLabel.text = "\(PlistHelper.getvalueFromInfoPlist(withKey: kCFBundleVersionKey as String) ?? "no commit hash")"
+        
+        let lastAPICall = UserDefaults.standard.double(forKey: MessageAPI.keyLastApiUpdate)
+        guard let lastVersion = UserDefaults.standard.string(forKey: MessageAPI.keyLastVersionChecked), lastAPICall > 0 else {
+            return
+        }
+        messagesAPILastVersionLabel.text = lastVersion
+        messagesAPILastDateLabel.text = dateFormatter.string(from:  Date(timeIntervalSince1970: lastAPICall))
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
         advertisementSwitch.addTarget(self, action: #selector(self.advertisementSwitchChanged), for: UIControl.Event.valueChanged)
         scanningSwitch.addTarget(self, action: #selector(self.scanningSwitchChanged), for: UIControl.Event.valueChanged)
         clearLogsButton.addTarget(self, action:#selector(self.clearLogsButtonClicked), for: .touchUpInside)
         silentNotificationsCountLabel.text = "\(UserDefaults.standard.integer(forKey: "debugSilentNotificationCount"))"
         apnTokenLabel.text = UserDefaults.standard.string(forKey: "deviceTokenForAPN")
-        
     }
     
     @IBAction func logoutBtn(_ sender: UIButton) {
@@ -140,5 +151,12 @@ final class InfoViewController: UIViewController {
     @IBAction func resetSilentNotificationsCounter(_ sender: Any) {
         UserDefaults.standard.set(0, forKey: "debugSilentNotificationCount")
         silentNotificationsCountLabel.text = "0"
+    }
+    
+    @IBAction func resetMessagesAPILocks(_ sender: Any) {
+        UserDefaults.standard.removeObject(forKey: MessageAPI.keyLastApiUpdate)
+        UserDefaults.standard.removeObject(forKey: MessageAPI.keyLastVersionChecked)
+        messagesAPILastDateLabel.text = "-"
+        messagesAPILastVersionLabel.text = "-"
     }
 }

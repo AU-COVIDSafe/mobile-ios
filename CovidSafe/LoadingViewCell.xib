@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoadingViewCell" customModule="COVIDSafe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FNN-gM-aky">
+                    <rect key="frame" x="148" y="24" width="118" height="118"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="118" id="lHd-fR-SnZ"/>
+                        <constraint firstAttribute="width" constant="118" id="z1A-SZ-1VS"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKG-0H-Jzf">
+                    <rect key="frame" x="16" y="166" width="382" height="26"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="loading_numbers"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="FNN-gM-aky" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DJD-87-SLX"/>
+                <constraint firstItem="fKG-0H-Jzf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Dst-0q-a4a"/>
+                <constraint firstAttribute="trailing" secondItem="fKG-0H-Jzf" secondAttribute="trailing" constant="16" id="aSt-lu-dMC"/>
+                <constraint firstItem="FNN-gM-aky" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="eGU-T6-BIs"/>
+                <constraint firstItem="fKG-0H-Jzf" firstAttribute="top" secondItem="FNN-gM-aky" secondAttribute="bottom" constant="24" id="frP-xH-OFR"/>
+                <constraint firstAttribute="bottom" secondItem="fKG-0H-Jzf" secondAttribute="bottom" constant="24" id="l3p-QU-7OR"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="loadingAnimationView" destination="FNN-gM-aky" id="toY-vK-MX5"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="5.3571428571428568"/>
+        </view>
+    </objects>
+</document>

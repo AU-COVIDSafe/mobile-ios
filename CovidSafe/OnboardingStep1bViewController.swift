@@ -16,6 +16,7 @@ class OnboardingStep1bViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         textView.textContainer.lineFragmentPadding = 0.0
         textView.addLink(URLHelper.getHelpURL(), enclosedIn: "*")
     }

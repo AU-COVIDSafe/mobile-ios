@@ -271,7 +271,12 @@ class OTPViewController: UIViewController, RegistrationHandler {
                 if !UserDefaults.standard.bool(forKey: "allowedPermissions") {
                     viewController.performSegue(withIdentifier: "showAllowPermissionsFromOTPSegue", sender: self)
                 } else {
-                    self.performSegue(withIdentifier: "OTPToHomeSegue", sender: self)
+                    DispatchQueue.main.async {
+                        let homeVC = HomeViewController(nibName: "HomeView", bundle: nil)
+                        homeVC.modalPresentationStyle = .overFullScreen
+                        homeVC.modalTransitionStyle = .coverVertical
+                        self.present(homeVC, animated: true, completion: nil)
+                    }
                 }
             }
         }

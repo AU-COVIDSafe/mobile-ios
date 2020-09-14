@@ -9,6 +9,7 @@
 "AllowBluetoothOFF" = "访问蓝牙®：关";
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothON" = "访问蓝牙®：开";
+"australian_capital_territory" = "澳大利亚首都领地";
 /* Figma page iOS Screens (05/06) */
 "BluetoothOFF" = "蓝牙®：关";
 /* Figma page iOS Screens (05/06) */
@@ -16,7 +17,7 @@
 /* Figma page iOS Screens (05/06) */
 "BluetoothON" = "蓝牙®：开";
 "change_language" = "更改语言";
-"change_language_content" = "请更新您的设置以便使用其他语言版本的 COVIDSafe。";
+"change_language_content" = "阅读其他语言版本的COVIDSafe使用指南。";
 "consent_button" = "我同意";
 /* Shared Consent Actions */
 "consent_call_for_action" = "选择“我同意”以确认同意。";
@@ -236,6 +237,7 @@
 "data_privacy_content_VO" = "注册COVIDSafe之前，请务必阅读COVIDSafe的*隐私政策*。 \n\n如果您未满16岁，您的父母/监护人也必须阅读*隐私政策*。 \n\n使用COVIDSafe属自愿行为。您可以随时安装或删除该应用程序。如果删除COVIDSafe，*您也可以要求从安全服务器上删除您的信息*。 \n\n您需要输入姓名（或化名），手机号码，年龄段和邮政编码来注册使用COVIDSafe。 \n\n注册时提交的信息以及有关COVIDSafe使用的信息将被收集并存储在高度安全的服务器上。 \n\nCOVIDSafe不会收集您的位置信息。 \n\nCOVIDSafe将在您的设备上记录发生接触的时间、与您发生过接触的其他用户的匿名ID码、蓝牙®信号强度以及其他用户的手机型号。 \n\n与您发生过接触的其他COVIDSafe用户的设备上也会记录您的匿名ID代码、与您发生接触的日期和时间、蓝牙®信号强度以及您的手机型号。 \n\n如果其他用户的COVID-19检测结果为阳性，他们可以上传自己的接触者信息，而州或领地的卫生官员可能会出于追踪接触者的目的与您联系。 \n\n您的详细注册信息仅在追踪接触者以及维持COVIDSafe的合法正常运行时使用或披露。  \n\n如需了解更多信息，请访问*澳大利亚政府卫生部*网站。 \n\n如需进一步了解您对个人信息的权利，以及个人信息的处理和共享方式，请参阅COVIDSafe *隐私政策*。";
 /* OnBoarding Data Privacy */
 "data_privacy_headline" = "注册及隐私";
+"deaths" = "死亡人数";
 "dialog_error_uploading_message" = "个人信息上传时发生错误，请重试。";
 "dialog_error_uploading_negative" = "取消";
 "dialog_error_uploading_positive" = "重试";
@@ -266,13 +268,13 @@
 /* Home */
 "home_header_active_title_thanks" = "谢谢，COVIDSafe已激活。";
 "home_header_inactive_check_your_permissions" = "检查您的设置";
-"home_header_inactive_title" = "COVIDSafe未激活。";
+"home_header_inactive_title" = "COVIDSafe未激活";
 "home_header_uploaded_on_date_ios" = "个人信息已在%@ 上传。";
 "home_set_complete_external_link_app_content" = "下载政府应用程序，了解最新消息和建议。";
 "home_set_complete_external_link_app_title" = "下载冠状病毒应用程序";
 "home_set_complete_external_link_been_contacted_content" = "只有在您的病毒检测呈阳性时，才能上传个人信息。";
 "home_set_complete_external_link_been_contacted_title" = "是否有卫生官员联系过您？";
-"home_set_complete_external_link_help_topics_content" = "如果应用程序在使用时出现问题或者您对其有疑问。";
+"home_set_complete_external_link_help_topics_content" = "排除故障和修复技术问题指南。";
 "home_set_complete_external_link_help_topics_title" = "帮助主题";
 "home_set_complete_external_link_news_content" = "前往aus.gov.au了解冠状病毒的最新消息。";
 "home_set_complete_external_link_news_title" = "最新消息和情况更新";
@@ -292,6 +294,7 @@
 "how_it_works_content" = "COVIDSafe需要使用蓝牙®信号以确定您在何时靠近另一个COVIDSafe用户。 \n\n您与其他COVIDSafe用户之间的每一次密切接触都会被记录下来，以创建接触者数据。该信息经过加密，且仅储存在您的手机中。 \n\n如果您是COVIDSafe用户并且COVID-19检测呈阳性，则州或领地卫生官员将与您联系。他们会协助您自愿将密切接触者数据上传至高度安全的信息储存系统。\n\n如果您与检测结果呈阳性的其他COVIDSafe用户发生过密切接触，则州或领地卫生官员也会与您联系。 \n\n如需更多信息，请参阅*帮助主题*页。";
 /* OnBoarding How it works */
 "how_it_works_headline" = "COVIDSafe 的工作原理";
+"improve" = "";
 "improve_heading" = "提升COVIDSafe 的性能";
 "internet_connection_content" = "连接到互联网，以确保您可以收到有关应用程序问题和更新的通知。";
 "internet_connection_heading" = "无网络连接";
@@ -307,13 +310,19 @@
 "IntroLabel" = "阻止传播\n拯救生命";
 "invalid_australian_phone_number_error_prompt" = "澳大利亚手机号码最多包含10位数。";
 "invalid_norfolk_island_phone_number_error_prompt" = "诺福克岛的手机号码包含5到6位数。";
+"loading_numbers" = "";
 /* Splash Screen */
 "migration_in_progress" = "COVIDSafe正在更新。 \n\n请保持开机状态直至更新完成。";
+"national_numbers" = "全国统计数字";
+"new_cases" = "过去24小时内新增病例";
+"new_south_wales" = "新南威尔士州";
 /* Figma page Android Screens (05/06) */
 "norfolk_hint" = "例如：51234";
+"northern_territory" = "北领地";
 "notification_bluetooth" = "请开启蓝牙，以便COVIDSafe可以正常运行。";
 "notification_internet_content" = "请打开应用程序并检查网络连接，以便COVIDSafe可以正常运行。";
 "notification_not_active_title" = "COVIDSafe未激活";
+"notification_settings" = "请打开应用程序以检查您的设置。";
 "notification_update_content" = "请更新您的应用程序以获得改进后的版本。";
 "notification_update_heading" = "COVIDSafe 更新可用";
 /* Figma page iOS Screens (05/06) */
@@ -322,6 +331,9 @@
 "NotificationsDisabledBlurb" = "如果COVIDSafe未激活，您不会收到任何通知。 \n更改通知设置";
 /* Figma page iOS Screens (05/06) */
 "NotificationsEnabledBlurb" = "如果COVIDSafe未激活，您将收到通知。 \n更改通知设置";
+"numbers_error" = "";
+"numbers_no_internet" = "";
+"numbers_refresh" = "";
 "options_for_australia" = "澳大利亚选项";
 "permission_button" = "继续";
 /* Figma page iOS Screens (05/06) */
@@ -357,6 +369,8 @@
 /* Figma page iOS Screens (05/06) */
 "PN_ReminderTitle" = "48 小时内未检测到任何接触";
 "PostcodeValidationErrorMessage" = "请输入有效的澳大利亚邮政编码。";
+"queensland" = "昆士兰州";
+"recovered" = "康复患者总数";
 "registration_consent_content" = "我同意数字转换局作为数据存储管理方可以根据澳大利亚政府卫生部常务副部长依法作出的决议，收集以下信息：";
 "registration_consent_first_paragraph" = "我的注册信息。";
 /* Onboarding Registration Consent */
@@ -366,8 +380,16 @@
 "select_country_or_region" = "选择国家或地区";
 /* Figma page Android Screens (05/06) */
 "Select_country_or_region_headline" = "选择国家或地区";
+"settings" = "";
 "share_this_app_content" = "让我们一起阻止COVID-19的传播！下载 COVIDSafe—澳大利亚政府开发的一款应用程序。 #COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
+"south_australia" = "南澳大利亚州";
 "stepCounter" = "第%d步，共%d步";
+"support" = "支持";
+"support_content" = "获取帮助，解决帮助主题未涵盖的问题";
+"Support_VOLabel" = "支持。获取帮助，解决帮助主题未涵盖的问题";
+"tasmania" = "塔斯马尼亚州";
+"total_confirmed_cases" = "确诊病例总数";
+"total_per_state" = "各州和领地确诊病例总数";
 "UILaunchStoryboardName" = "LaunchScreen_zh_Hans";
 "under_sixteen_content" = "我确认我的父母或监护人同意数字转换局作为数据存储管理方可以根据澳大利亚政府卫生部常务副部长依法作出的决议，收集以下信息：";
 "under_sixteen_first_paragraph" = "我的注册信息。";
@@ -396,6 +418,8 @@
 "upload_step_verify_pin_header" = "上传个人信息";
 "upload_step_verify_pin_sub_header" = "州或领地卫生官员将通过短信向您的手机发送 PIN码。请在下面输入PIN码以上传个人信息。";
 "us_consent_button" = "我同意";
+"victoria" = "维多利亚州";
+"western_australia" = "西澳大利亚州";
 "wrong_ping_number" = "错误的PIN码";
 "country_region_name_au2" = "诺福克岛";
 "AllowBluetoothOFF_VOLabel" = "访问蓝牙：关  允许COVIDSafe访问蓝牙";
@@ -463,7 +487,7 @@
 "UploadFailedErrorMessage" = "请稍后再试。";
 "ValidationError" = "验证出错";
 "GetCoronaVirusApp_VOLabel" = "获取冠状病毒应用程序。下载政府应用程序以获取最新消息和建议。";
-"HelpTopics_VOLabel" = "帮助主题。如果应用程序在使用时出现问题或者您对其有疑问。";
+"HelpTopics_VOLabel" = "帮助主题。排除故障和修复技术问题指南。";
 "LatestNews_VOLabel" = "最新消息及更新。前往aus.gov.au了解冠状病毒的最新消息。";
 "NotificationsDisabled_VOLabel" = "通知已禁用。如果COVIDSafe未激活，您将不会收到通知。 \n更改通知设置";
 "NotificationsEnabled_VOLabel" = "通知已启用。如果COVIDSafe未激活，您将收到通知。 \n更改通知设置";

@@ -37,12 +37,9 @@ class OnboardingStep1ViewController: UIViewController {
         
         if isLoggedIn {
             DispatchQueue.main.async {
-                guard let homeVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeVC") as? HomeViewController else {
-                    return
-                }
+                let homeVC = HomeViewController(nibName: "HomeView", bundle: nil)
                 homeVC.modalPresentationStyle = .overFullScreen
                 homeVC.modalTransitionStyle = .coverVertical
-                
                 self.present(homeVC, animated: true, completion: nil)
             }
         }
