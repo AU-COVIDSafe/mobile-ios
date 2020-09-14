@@ -43,8 +43,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UNUserNotificationCenter.current().delegate = self
         NotificationCenter.default.addObserver(self, selector:#selector(jwtExpired(_:)),name: .jwtExpired, object: nil)
         
-        setupBluetoothPNStatusCallback()
-        
         motionManager = CMMotionManager()
         startAccelerometerUpdates()
         
@@ -90,25 +88,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     // - Local Notifications
-    
-    fileprivate func setupBluetoothPNStatusCallback() {
-        
-        let btStatusMagicNumber = Int.random(in: 0 ... PushNotificationConstants.btStatusPushNotifContents.count - 1)
-        
-        BluetraceManager.shared.bluetoothDidUpdateStateCallback = { [unowned self] state in
-            guard state != .resetting else {
-                // If the bt is just resetting no need to prompt the user here
-                return
-            }
-            if UserDefaults.standard.bool(forKey: "turnedOnBluetooth") && !BluetraceManager.shared.isBluetoothOn() {
-                if !UserDefaults.standard.bool(forKey: "sentBluetoothStatusNotif") {
-                    UserDefaults.standard.set(true, forKey: "sentBluetoothStatusNotif")
-                    self.triggerIntervalLocalPushNotifications(pnContent: PushNotificationConstants.btStatusPushNotifContents[btStatusMagicNumber], identifier: "bluetoothStatusNotifId")
-                    return
-                }
-            }
-        }
-    }
     
     fileprivate func getReminderNotificationsIdentifiers() -> [String] {
         var identifiers: [String] = []
@@ -380,7 +359,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         #endif
         
-        if payload["content-available"] as? Int == 1 && payload["category"] as? String == "UPDATE_STATS" {
+        if payload["content-available"] as? Int == 1 && payload["category"] as? String == PushNotificationCategory.UPDATE_STATS {
             DLog("Notification is category: UPDATE_STATS")
             MessageAPI.getMessagesIfNeeded() { (messageResponse, error) in
                 if let error = error {
@@ -405,6 +384,15 @@ extension Notification.Name {
     static let enableUserInteraction = Notification.Name("enableUserInteraction")
     static let jwtExpired = Notification.Name("jwtExpired")
     static let encounterRecorded = Notification.Name("encounterRecorded")
+    static let shouldUpdateAppFromMessages = Notification.Name("shouldUpdateAppFromMessages")
+}
+
+struct PushNotificationCategory {
+    static let UPDATE_STATS = "UPDATE_STATS"
+    static let UPDATE_APP = "UPDATE_APP"
+    static let POSSIBLE_ISSUE = "POSSIBLE_ISSUE"
+    static let NO_CHECKIN = "NO_CHECKIN"
+    static let POSSIBLE_ENCOUNTER_ERROR = "POSSIBLE_ENCOUNTER_ERROR"
 }
 
 extension AppDelegate : UNUserNotificationCenterDelegate {
@@ -429,10 +417,15 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
         if let payload = userInfo["aps"] as? [String: AnyObject],
             let notificationType = payload["category"] as? String {
             
-            if notificationType == "UPDATE_APP",
+            if notificationType == PushNotificationCategory.UPDATE_APP,
             let url = URL(string: "itms-apps://itunes.apple.com/app/id1509242894"),
             UIApplication.shared.canOpenURL(url) {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+            else if notificationType == PushNotificationCategory.POSSIBLE_ISSUE ||
+                notificationType == PushNotificationCategory.NO_CHECKIN ||
+                notificationType == PushNotificationCategory.POSSIBLE_ENCOUNTER_ERROR {
+                UserDefaults.standard.set(true, forKey: "PerformHealthChecks")
             }
         }
         completionHandler()

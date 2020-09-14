@@ -17,12 +17,7 @@ class OnboardingStep1aViewController: UIViewController, UITextViewDelegate {
     
     @IBAction func iWantToHelpBtnClick(_ sender: UIButton) {
         UserDefaults.standard.set(true, forKey: "completedIWantToHelp")
-        let isLoggedIn: Bool = KeychainSwift().get("JWT_TOKEN") != nil
-        if !isLoggedIn {
-            self.performSegue(withIdentifier: "personalDetailsSegue", sender: self)
-        } else {
-            self.performSegue(withIdentifier: "iWantToHelpToConsentSegue", sender: self)
-        }
+        self.performSegue(withIdentifier: "personalDetailsSegue", sender: self)
     }
 
     @IBAction func onBackTapped(_ sender: UIButton) {

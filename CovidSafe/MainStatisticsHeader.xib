@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MainStatisticsHeaderViewCell" customModule="COVIDSafe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" verticalHuggingPriority="150" translatesAutoresizingMaskIntoConstraints="NO" id="LNU-3k-bH8">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="139"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="200" verticalCompressionResistancePriority="250" axis="vertical" distribution="equalCentering" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="3KU-hY-cXW">
+                            <rect key="frame" x="16" y="16" width="382" height="108"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="National Numbers" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUK-tN-ZWJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="26.5"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="national_numbers"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="19 August 2020 at 9pm AEST" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szv-Ly-NAe">
+                                    <rect key="frame" x="0.0" y="32.5" width="382" height="19.5"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Connect to the internet to ensure you get updated numbers." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJd-vH-SuQ">
+                                    <rect key="frame" x="0.0" y="55" width="382" height="0.0"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                    <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yGy-cF-2ss">
+                                    <rect key="frame" x="0.0" y="58" width="382" height="50"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ye-oo-sh0" userLabel="RefreshNow">
+                                            <rect key="frame" x="0.0" y="0.0" width="87" height="50"/>
+                                            <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="15"/>
+                                            <state key="normal" title="Refresh Now">
+                                                <color key="titleColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="numbers_refresh"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="refreshButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="zbw-X6-vI2"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="0ye-oo-sh0" secondAttribute="bottom" id="QVj-eL-Os0"/>
+                                        <constraint firstItem="0ye-oo-sh0" firstAttribute="leading" secondItem="yGy-cF-2ss" secondAttribute="leading" id="kyg-C6-oG1"/>
+                                        <constraint firstItem="0ye-oo-sh0" firstAttribute="top" secondItem="yGy-cF-2ss" secondAttribute="top" id="t3C-Gb-UDD"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="3KU-hY-cXW" secondAttribute="bottom" constant="15" id="8HZ-16-M66"/>
+                        <constraint firstAttribute="trailing" secondItem="3KU-hY-cXW" secondAttribute="trailing" constant="16" id="DWd-Sg-YC5"/>
+                        <constraint firstItem="3KU-hY-cXW" firstAttribute="leading" secondItem="LNU-3k-bH8" secondAttribute="leading" constant="16" id="ZPK-gK-ayb"/>
+                        <constraint firstItem="3KU-hY-cXW" firstAttribute="top" secondItem="LNU-3k-bH8" secondAttribute="top" constant="16" id="fbb-8s-Hch"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LNU-3k-bH8" secondAttribute="bottom" constant="1" id="1ky-wJ-WLp"/>
+                <constraint firstAttribute="trailing" secondItem="LNU-3k-bH8" secondAttribute="trailing" id="Gyk-V9-IkT"/>
+                <constraint firstItem="LNU-3k-bH8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MbS-Uc-ecX"/>
+                <constraint firstItem="LNU-3k-bH8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kYn-fV-Em1"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateLabel" destination="Szv-Ly-NAe" id="K1g-54-6dB"/>
+                <outlet property="errorLabel" destination="hJd-vH-SuQ" id="cXx-zR-cHb"/>
+                <outlet property="refreshViewContainer" destination="yGy-cF-2ss" id="4tz-HJ-nkf"/>
+                <outlet property="titleLabel" destination="LUK-tN-ZWJ" id="FjT-za-hlQ"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="-99.776785714285708"/>
+        </view>
+    </objects>
+</document>

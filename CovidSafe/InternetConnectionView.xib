@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InternetConnectionViewController" customModule="COVIDSafe" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="Nl4-1P-4Xf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cw9-CI-9hs">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I5a-ug-TEu" userLabel="ContentView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="612"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect to the internet to improve the performance of COVIDSafe" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTE-3c-MVb">
+                                    <rect key="frame" x="32" y="253" width="350" height="101.5"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                                    </accessibility>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="internet_screen_heading"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="how to fix issues and set COVIDSafe active again" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaK-Dx-CoG">
+                                    <rect key="frame" x="46" y="517" width="336" height="42.5"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="internet_screen_content_1"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="when a new version update is available" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HXA-Ok-dTB">
+                                    <rect key="frame" x="46" y="575.5" width="336" height="20.5"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="internet_screen_content_2"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUW-hD-qGY">
+                                    <rect key="frame" x="32" y="370.5" width="350" height="130.5"/>
+                                    <string key="text">COVIDSafe needs to connect to the server from time to time to ensure it can identify issues with the app.
+
+Connecting to the internet ensures you receive notifications on:</string>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="internet_screen_content"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vba-w3-WLV">
+                                    <rect key="frame" x="32" y="517" width="7.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e64-MB-CCW">
+                                    <rect key="frame" x="32" y="575.5" width="7.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fK-3u-nQk">
+                                    <rect key="frame" x="16" y="16" width="44" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="44" id="oP5-6j-9yw"/>
+                                        <constraint firstAttribute="height" constant="44" id="xe4-W1-nk3"/>
+                                    </constraints>
+                                    <state key="normal" image="arrow-left"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="global_back"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="onBack:" destination="-1" eventType="touchUpInside" id="Cdg-H8-rIN"/>
+                                    </connections>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="internet_connection" translatesAutoresizingMaskIntoConstraints="NO" id="AA2-lK-450">
+                                    <rect key="frame" x="130" y="76" width="154" height="138"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="138" id="Ng5-V9-a51"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="dUW-hD-qGY" secondAttribute="trailing" constant="32" id="0W6-Yt-G6d"/>
+                                <constraint firstItem="Vba-w3-WLV" firstAttribute="top" secondItem="UaK-Dx-CoG" secondAttribute="top" id="6tb-Us-N0M"/>
+                                <constraint firstAttribute="bottom" secondItem="HXA-Ok-dTB" secondAttribute="bottom" constant="16" id="7cG-yk-P2f"/>
+                                <constraint firstItem="HXA-Ok-dTB" firstAttribute="leading" secondItem="e64-MB-CCW" secondAttribute="leading" constant="14" id="8eK-wC-uFc"/>
+                                <constraint firstItem="zTE-3c-MVb" firstAttribute="top" secondItem="AA2-lK-450" secondAttribute="bottom" constant="39" id="A36-Lx-Nue"/>
+                                <constraint firstItem="HXA-Ok-dTB" firstAttribute="top" secondItem="UaK-Dx-CoG" secondAttribute="bottom" constant="16" id="AkN-ID-GmT"/>
+                                <constraint firstAttribute="trailing" secondItem="zTE-3c-MVb" secondAttribute="trailing" constant="32" id="B3f-Ue-j6t"/>
+                                <constraint firstAttribute="trailing" secondItem="UaK-Dx-CoG" secondAttribute="trailing" constant="32" id="Bse-Ue-F9v"/>
+                                <constraint firstItem="AA2-lK-450" firstAttribute="top" secondItem="3fK-3u-nQk" secondAttribute="bottom" constant="16" id="EKn-Pn-kvW"/>
+                                <constraint firstItem="3fK-3u-nQk" firstAttribute="leading" secondItem="I5a-ug-TEu" secondAttribute="leading" constant="16" id="RAE-9E-HZK"/>
+                                <constraint firstItem="e64-MB-CCW" firstAttribute="top" secondItem="HXA-Ok-dTB" secondAttribute="top" id="U24-uP-3Db"/>
+                                <constraint firstItem="Vba-w3-WLV" firstAttribute="leading" secondItem="I5a-ug-TEu" secondAttribute="leading" constant="32" id="Uei-Et-hPg"/>
+                                <constraint firstAttribute="trailing" secondItem="HXA-Ok-dTB" secondAttribute="trailing" constant="32" id="ZLR-Wt-qMM"/>
+                                <constraint firstItem="zTE-3c-MVb" firstAttribute="leading" secondItem="I5a-ug-TEu" secondAttribute="leading" constant="32" id="dSn-CK-e1F"/>
+                                <constraint firstItem="3fK-3u-nQk" firstAttribute="top" secondItem="I5a-ug-TEu" secondAttribute="top" constant="16" id="dyp-zV-wGP"/>
+                                <constraint firstItem="dUW-hD-qGY" firstAttribute="top" secondItem="zTE-3c-MVb" secondAttribute="bottom" constant="16" id="e1G-Vh-8Se"/>
+                                <constraint firstItem="UaK-Dx-CoG" firstAttribute="leading" secondItem="Vba-w3-WLV" secondAttribute="leading" constant="14" id="j4H-0p-KMh"/>
+                                <constraint firstItem="e64-MB-CCW" firstAttribute="leading" secondItem="I5a-ug-TEu" secondAttribute="leading" constant="32" id="jbX-6Y-Uwk"/>
+                                <constraint firstItem="dUW-hD-qGY" firstAttribute="leading" secondItem="I5a-ug-TEu" secondAttribute="leading" constant="32" id="nU1-wZ-70X"/>
+                                <constraint firstItem="AA2-lK-450" firstAttribute="centerX" secondItem="I5a-ug-TEu" secondAttribute="centerX" id="pZf-72-Yi5"/>
+                                <constraint firstItem="UaK-Dx-CoG" firstAttribute="top" secondItem="dUW-hD-qGY" secondAttribute="bottom" constant="16" id="q6X-Ve-Te2"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="I5a-ug-TEu" firstAttribute="leading" secondItem="cw9-CI-9hs" secondAttribute="leading" id="Frd-vt-UJf"/>
+                        <constraint firstItem="I5a-ug-TEu" firstAttribute="width" secondItem="cw9-CI-9hs" secondAttribute="width" id="JwF-pI-iYu"/>
+                        <constraint firstAttribute="trailing" secondItem="I5a-ug-TEu" secondAttribute="trailing" id="Qf9-Wt-W0L"/>
+                        <constraint firstItem="I5a-ug-TEu" firstAttribute="top" secondItem="cw9-CI-9hs" secondAttribute="top" id="Ua0-hK-es0"/>
+                        <constraint firstAttribute="bottom" secondItem="I5a-ug-TEu" secondAttribute="bottom" id="rNM-Yp-hyV"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="cw9-CI-9hs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="05r-az-p8c"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="cw9-CI-9hs" secondAttribute="bottom" id="Ei8-M2-koo"/>
+                <constraint firstItem="cw9-CI-9hs" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="h2S-0e-Uub"/>
+                <constraint firstItem="cw9-CI-9hs" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="iLc-JW-seH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow-left" width="24" height="24"/>
+        <image name="internet_connection" width="154" height="138"/>
+    </resources>
+</document>

@@ -13,36 +13,45 @@ class MessageAPI {
     
     static let keyLastApiUpdate = "keyLastApiUpdate"
     static let keyLastVersionChecked = "keyLastVersionChecked"
-
-    static func getMessagesIfNeeded(completion: @escaping (MessageResponse?, Swift.Error?) -> Void) {
+    
+    static func getMessagesIfNeeded(completion: @escaping (MessageResponse?, MessageAPIError?) -> Void) {
         if shouldGetMessages() {
-            guard let token = UserDefaults.standard.string(forKey: "deviceTokenForAPN") else {
+            getMessages(completion: completion)
+        }
+    }
+    
+    static func getMessages(completion: @escaping (MessageResponse?, MessageAPIError?) -> Void) {
+        guard let token = UserDefaults.standard.string(forKey: "deviceTokenForAPN") else {
+            completion(nil, .RequestError)
+            return
+        }
+        //Get relevat encounter data
+        guard let persistentContainer =
+            EncounterDB.shared.persistentContainer else {
+                completion(nil, .RequestError)
                 return
-            }
-            //Get relevat encounter data
-            guard let persistentContainer =
-                EncounterDB.shared.persistentContainer else {
-                    return
-            }
-            let managedContext = persistentContainer.newBackgroundContext()
-            guard let encounterLastWeekRequest = Encounter.fetchEncountersInLast(days: 7) else {
-                return
-            }
+        }
+        let managedContext = persistentContainer.newBackgroundContext()
+        guard let encounterLastWeekRequest = Encounter.fetchEncountersInLast(days: 7) else {
+            completion(nil, .RequestError)
+            return
+        }
+        
+        do {
+            //fetch last week encounters count
+            let weekEncounters = try managedContext.count(for: encounterLastWeekRequest)
+            let healthcheck = BluetraceManager.shared.isBluetoothOn() && BluetraceManager.shared.isBluetoothAuthorized() ?
+                healthCheckParamValue.OK :
+                healthCheckParamValue.POSSIBLE_ERROR
+            let encounterCheck = weekEncounters > 0 ? healthCheckParamValue.OK : healthCheckParamValue.POSSIBLE_ERROR
             
-            do {
-                //fetch last week encounters count
-                let weekEncounters = try managedContext.count(for: encounterLastWeekRequest)
-                let healthcheck = (BluetraceManager.shared.isBluetoothOn() &&
-                    BluetraceManager.shared.isBluetoothAuthorized() &&
-                    weekEncounters > 0 ? healthCheckParamValue.OK : healthCheckParamValue.POSSIBLE_ERROR)
-                
-                // Make API call to get messages
-                let messageRequest = MessageRequest(remotePushToken: token, healthcheck: healthcheck)
-                getMessages(msgRequest: messageRequest, completion: completion)
-
-            } catch let error as NSError {
-                DLog("Could not fetch encounter(s) from db. \(error), \(error.userInfo)")
-            }
+            // Make API call to get messages
+            let messageRequest = MessageRequest(remotePushToken: token, healthcheck: healthcheck, encountershealth: encounterCheck)
+            getMessages(msgRequest: messageRequest, completion: completion)
+            
+        } catch let error as NSError {
+            completion(nil, .RequestError)
+            DLog("Could not fetch encounter(s) from db. \(error), \(error.userInfo)")
         }
     }
     
@@ -62,10 +71,10 @@ class MessageAPI {
         
         if lastChecked > 0 {
             let lastCheckedDate = Date(timeIntervalSince1970: lastChecked)
-            let components = calendar.dateComponents([.day], from: lastCheckedDate, to: currentDate)
+            let components = calendar.dateComponents([.hour], from: lastCheckedDate, to: currentDate)
             
-            if let numDays = components.day {
-                shouldGetMessages = numDays > 0
+            if let numHours = components.hour {
+                shouldGetMessages = numHours > 4
             }
         }
         
@@ -73,25 +82,29 @@ class MessageAPI {
     }
     
     private static func getMessages(msgRequest: MessageRequest,
-                            completion: @escaping (MessageResponse?, Swift.Error?) -> Void) {
+                                    completion: @escaping (MessageResponse?, MessageAPIError?) -> Void) {
         let keychain = KeychainSwift()
         guard let apiHost = PlistHelper.getvalueFromInfoPlist(withKey: "API_Host", plistName: "CovidSafe-config") else {
+            completion(nil, .RequestError)
             return
         }
         
         guard let token = keychain.get("JWT_TOKEN") else {
-            completion(nil, nil)
+            completion(nil, .RequestError)
             return
         }
         let headers: HTTPHeaders = [
             "Authorization": "Bearer \(token)"
         ]
         
+        let preferredLanguages = Locale.preferredLanguages.count > 5 ? Locale.preferredLanguages[0...5].joined(separator: ",") : Locale.preferredLanguages.joined(separator: ",")
+        
         var params: [String : Any] = [
             "os" : "ios-\(UIDevice.current.systemVersion)",
             "healthcheck" : msgRequest.healthcheck.rawValue,
-            "preferredlanguages": Locale.preferredLanguages
-            ]
+            "encountershealth" : msgRequest.encountershealth.rawValue,
+            "preferredlanguages": preferredLanguages
+        ]
 
         if let buildString = Bundle.main.version {
             params["appversion"] = "\(buildString)"
@@ -104,20 +117,35 @@ class MessageAPI {
             parameters: params,
             headers: headers
         ).validate().responseDecodable(of: MessageResponse.self) { (response) in
-                switch response.result {
-                case .success:
-                    guard let messageResponse = response.value else { return }
-
-                    // save successful timestamp
-                    let calendar = NSCalendar.current
-                    let currentDate = calendar.startOfDay(for: Date())
+            switch response.result {
+            case .success:
+                guard let messageResponse = response.value else { return }
+                
+                // save successful timestamp
+                let minutesToDefer = Int.random(in: 0..<10)
+                let calendar = NSCalendar.current
+                let currentDate = Date()
+                if let deferredDate = calendar.date(byAdding: .minute, value: minutesToDefer, to: currentDate) {
+                    UserDefaults.standard.set(deferredDate.timeIntervalSince1970, forKey: keyLastApiUpdate)
+                } else {
                     UserDefaults.standard.set(currentDate.timeIntervalSince1970, forKey: keyLastApiUpdate)
-                    UserDefaults.standard.set(Bundle.main.version, forKey: keyLastVersionChecked)
-
-                    completion(messageResponse, nil)
-                case let .failure(error):
-                    completion(nil, error)
                 }
+                UserDefaults.standard.set(Bundle.main.version, forKey: keyLastVersionChecked)
+                
+                completion(messageResponse, nil)
+            case .failure(_):
+                guard let statusCode = response.response?.statusCode else {
+                    completion(nil, .UnknownError)
+                    return
+                }
+                if (statusCode == 200) {
+                    completion(nil, .ResponseError)
+                }
+                if (statusCode >= 400 && statusCode < 500) {
+                    completion(nil, .RequestError)
+                }
+                completion(nil, .ServerError)
+            }
         }
     }
 }
@@ -131,6 +159,7 @@ enum healthCheckParamValue: String {
 struct MessageRequest {
     var remotePushToken: String?
     var healthcheck: healthCheckParamValue
+    var encountershealth: healthCheckParamValue
 }
 
 struct MessageResponse: Decodable {
@@ -153,4 +182,11 @@ struct Message: Decodable {
         case body
         case destination
     }
+}
+
+enum MessageAPIError: Error {
+    case RequestError
+    case ResponseError
+    case ServerError
+    case UnknownError
 }

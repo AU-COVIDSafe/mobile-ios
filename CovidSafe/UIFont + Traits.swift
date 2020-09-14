@@ -11,10 +11,9 @@ extension UIFont {
     
     static func preferredFont(for style: TextStyle, weight: Weight) -> UIFont {
         if #available(iOS 11.0, *) {
-            let metrics = UIFontMetrics(forTextStyle: style)
             let desc = UIFontDescriptor.preferredFontDescriptor(withTextStyle: style)
             let font = UIFont.systemFont(ofSize: desc.pointSize, weight: weight)
-            return metrics.scaledFont(for: font)
+            return font
         } else {
             if weight == .bold {
                 return UIFont.preferredFont(forTextStyle: style).bold()

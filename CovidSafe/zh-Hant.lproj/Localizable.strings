@@ -1,5 +1,5 @@
 "action_continue" = "繼續";
-"action_report_an_issue" = "回報問題";
+"action_report_an_issue" = "報告問題";
 "action_upload_done" = "完成";
 "action_verify_invalid_pin" = "PIN 碼無效，請要求衛生部官員再傳送另一條 PIN 給你。";
 "action_verify_upload_pin" = "上傳我的資料";
@@ -9,6 +9,7 @@
 "AllowBluetoothOFF" = "連接藍牙®：關";
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothON" = "連接藍牙®：開";
+"australian_capital_territory" = "澳大利亞首都領地";
 /* Figma page iOS Screens (05/06) */
 "BluetoothOFF" = "藍牙®：關";
 /* Figma page iOS Screens (05/06) */
@@ -16,7 +17,7 @@
 /* Figma page iOS Screens (05/06) */
 "BluetoothON" = "藍牙®：開";
 "change_language" = "更換語言";
-"change_language_content" = "更新你的設定，用其他語言使用COVIDSafe。";
+"change_language_content" = "用其他語言閱讀COVIDSafe使用指南。";
 "consent_button" = "我同意";
 /* Shared Consent Actions */
 "consent_call_for_action" = "選擇「我同意」以確認同意聲明。";
@@ -236,6 +237,7 @@
 "data_privacy_content_VO" = "在註册 COVIDSafe 之前，請務必閱讀 COVIDSafe *私隱政策*。 \n\n如果你未滿 16 歲，你的父母/監護人亦必須閱讀*私隱政策*。 \n\n使用 COVIDSafe 純屬自願性質。你可以隨時安裝或刪除本應用程式。如果刪除 COVIDSafe，*你亦可以要求刪除在保密伺服器內的個人資料*。\n\n要註册使用 COVIDSafe，你需要輸入一個名字（或者假名）、手機號碼、年齡組别及郵遞區號。 \n\n我們會收集你註冊時提供的資料和關於你使用COVIDSafe的資料並且儲存在一個高度保密的伺服器內。 \n\nCOVIDSafe 不會收集你的位置資訊。 \n\nCOVIDSafe 將會在你的設備上記錄與你接觸過的其他 COVIDSafe 用戶的接觸時間，其匿名 ID，藍牙信號強度和其手機型號。\n\n其他與你接觸過的 COVIDSafe 用戶的設備上亦會記錄你的匿名 ID 及與你接觸的日期時間，藍牙信號強度和你的手機型號。 \n\n如果其他用戶被驗出 COVID-19 陽性，他們可以上傳其接觸者資料。為了追蹤接觸者，州或領地的衛生部官員可能會聯絡你。 \n\n我們在追蹤接觸者和確保COVIDSafe 正常且合法運作時才會使用並且透露你的詳細註冊資料。 \n\n欲了解更多資訊，請瀏覧*澳洲政府衛生部*的網站。 \n\n如需進一步了解你對個人資料的權利，及個人資料的處理和共享方式，請參閱 COVIDSafe *私隱政策*。";
 /* OnBoarding Data Privacy */
 "data_privacy_headline" = "註册及私隱權";
+"deaths" = "死亡人數";
 "dialog_error_uploading_message" = "個人資料上傳時發生錯誤，請重試。";
 "dialog_error_uploading_negative" = "取消";
 "dialog_error_uploading_positive" = "重試";
@@ -266,13 +268,13 @@
 /* Home */
 "home_header_active_title_thanks" = "感謝，COVIDSafe 現在已激活。";
 "home_header_inactive_check_your_permissions" = "檢查你的設定。";
-"home_header_inactive_title" = "COVIDSafe 未在啓用狀態。";
+"home_header_inactive_title" = "COVIDSafe 未在啓用狀態";
 "home_header_uploaded_on_date_ios" = "你的資料已在%@上傳 。";
 "home_set_complete_external_link_app_content" = "下載政府應用程式來收取最新資訊及忠告。";
 "home_set_complete_external_link_app_title" = "收取冠狀病毒應用程式";
 "home_set_complete_external_link_been_contacted_content" = "只有在你被驗出病毒陽性時，才能上傳個人資料。";
 "home_set_complete_external_link_been_contacted_title" = "是否有衛生部官員聯絡你？";
-"home_set_complete_external_link_help_topics_content" = "如果你對應用程式有疑難或疑問。";
+"home_set_complete_external_link_help_topics_content" = "排除故障和修復技術問題指南。";
 "home_set_complete_external_link_help_topics_title" = "求助主題";
 "home_set_complete_external_link_news_content" = "請到 aus.gov.au 了解冠狀病毒的最新資訊。";
 "home_set_complete_external_link_news_title" = "最新資訊及更新事宜";
@@ -292,6 +294,7 @@
 "how_it_works_content" = "COVIDSafe 需要使用藍牙®訊號以確定你在何時接近另一名用戶。 \n\n你與其他COVIDSafe用戶之間的每一次密切接觸都會被記錄下來，以建立密切接觸者資料。該資料會被加密，並僅儲存在你的手機内。\n\n如果你是COVIDSafe用户並被驗出 COVID-19 陽性，州或領地衛生部官員將會與你聯絡。他們會協助你自願地將密切接觸者資料上傳到高度保密的資料儲存系統。\n\n如果你曾密切接觸過另一名被驗出 COVID-19 陽性的 COVIDSafe 用戶，則州或領地的衛生部官員亦會聯絡你。 \n\n欲知詳情，請參閱*求助主題*頁";
 /* OnBoarding How it works */
 "how_it_works_headline" = "COVIDSafe 是如何執行的";
+"improve" = "提高應用程式性能";
 "improve_heading" = "改良COVIDSafe的性能";
 "internet_connection_content" = "連接到互聯網，確保你獲得問題和更新的通知。";
 "internet_connection_heading" = "無互聯網連接";
@@ -307,13 +310,19 @@
 "IntroLabel" = "請協助遏止病毒擴散\n拯救生命";
 "invalid_australian_phone_number_error_prompt" = "澳洲手機號碼最多有10 個數位。";
 "invalid_norfolk_island_phone_number_error_prompt" = "諾福克島的手機號碼是個5至6位數字。";
+"loading_numbers" = "";
 /* Splash Screen */
 "migration_in_progress" = "正在更新 COVIDSafe。\n\n請保持開機狀態直至更新完成為止。";
+"national_numbers" = "全國統計數字";
+"new_cases" = "過去24小時內新增病例";
+"new_south_wales" = "新南威爾士州";
 /* Figma page Android Screens (05/06) */
 "norfolk_hint" = "例如：51234";
+"northern_territory" = "北領地";
 "notification_bluetooth" = "要使COVIDSafe運作，請開啟藍牙。";
 "notification_internet_content" = "要使COVIDSafe運作，請打開應用程式，檢查網絡連接。";
 "notification_not_active_title" = "COVIDSafe 未在啓用狀態";
+"notification_settings" = "打開應用程式以檢查你的設置。";
 "notification_update_content" = "更新你的應用程式來獲取最新的改良。";
 "notification_update_heading" = "COVIDSafe更新可用";
 /* Figma page iOS Screens (05/06) */
@@ -322,12 +331,15 @@
 "NotificationsDisabledBlurb" = "如果 COVIDSafe 尚未處於啟用狀態，你將不會收到通知。 \n更改通知設定";
 /* Figma page iOS Screens (05/06) */
 "NotificationsEnabledBlurb" = "如果 COVIDSafe 尚未處於啟用狀態，你將會收到通知。 \n更改通知設定";
+"numbers_error" = "";
+"numbers_no_internet" = "";
+"numbers_refresh" = "";
 "options_for_australia" = "澳洲適用選項";
 "permission_button" = "繼續";
 /* Figma page iOS Screens (05/06) */
 "permission_content_iOS" = "COVIDSafe  需要開啓藍牙®才能執行。透過開啟「通知傳送」功能，你會在 COVIDSafe 仍未處於啟用狀態時收到提醒。\n\n請選擇「繼續」來開啟：";
 /* Figma page iOS Screens (05/06) */
-"permission_content_iOS_2" = "1. 藍牙®\n2. 通知\n\nCOVIDSafe 不會寄出配對請求。";
+"permission_content_iOS_2" = "1. 藍牙®\n2. 通知\n\nCOVIDSafe 不會傳送配對請求。";
 /* OnBoarding Permission */
 "permission_headline" = "應用程式設定";
 "permission_success_button" = "完成";
@@ -357,6 +369,8 @@
 /* Figma page iOS Screens (05/06) */
 "PN_ReminderTitle" = "48 小時內未探測到任何接觸";
 "PostcodeValidationErrorMessage" = "請輸入有效的澳洲郵遞區號。";
+"queensland" = "昆士蘭州";
+"recovered" = "康復者總數";
 "registration_consent_content" = "我同意數字化轉型局作為數據儲存管理者，根據澳大利亞政府衛生部常務副部長的合法決定，收集以下信息：";
 "registration_consent_first_paragraph" = "我的註册資料。";
 /* Onboarding Registration Consent */
@@ -366,8 +380,16 @@
 "select_country_or_region" = "選擇國家或地區";
 /* Figma page Android Screens (05/06) */
 "Select_country_or_region_headline" = "選擇國家或地區";
+"settings" = "設置";
 "share_this_app_content" = "同我一齊遏止 COVID-19 的擴散！下載澳洲政府提供的 COVIDSafe 應用程式。 ＃COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
+"south_australia" = "南澳";
 "stepCounter" = "第%d步，共%d步";
+"support" = "支持";
+"support_content" = "獲取幫助，解決求助主題未涵蓋的問題。";
+"Support_VOLabel" = "支持。獲取幫助，解決求助主題未涵蓋的問題。";
+"tasmania" = "塔斯曼尼亞州";
+"total_confirmed_cases" = "確診病例總數";
+"total_per_state" = "各州和領地確診病例總數";
 "UILaunchStoryboardName" = "LaunchScreen_zh_Hant";
 "under_sixteen_content" = "我確認我的父母或監護人同意數字化轉型局作為數據儲存管理者，根據澳大利亞政府衛生部常務副部長的合法決定，收集以下資訊：";
 "under_sixteen_first_paragraph" = "我的註册資料。";
@@ -380,7 +402,7 @@
 "under-sixteen_consent_call_for_action" = "選擇 「我同意」以確認同意聲明。";
 "update_available_app_store_btn" = "轉往應用程式商店";
 "update_available_dismiss_btn" = "請稍後提醒";
-"update_available_message_ios" = "我們一直都在改良 COVIDSafe。通過應用程式商店更新。";
+"update_available_message_ios" = "我們一直都在改良 COVIDSafe。通過App Store更新。";
 "update_available_title" = "更新可用！";
 "upload_answer_no" = "否";
 /* Upload flow */
@@ -396,6 +418,8 @@
 "upload_step_verify_pin_header" = "上傳你的資料";
 "upload_step_verify_pin_sub_header" = "各州或領地的衛生部官員將會透過簡訊傳送一條 PIN 碼到你的設備。請在下面輸入 PIN 碼來上傳個人資料。";
 "us_consent_button" = "我同意";
+"victoria" = "維多利亞州";
+"western_australia" = "西澳";
 "wrong_ping_number" = "輸入了錯誤的 PIN 碼";
 "country_region_name_au2" = "諾福克島";
 "AllowBluetoothOFF_VOLabel" = "接入藍牙：關  請允許 COVIDSafe 接入藍牙";
@@ -463,7 +487,7 @@
 "UploadFailedErrorMessage" = "請稍後再試。";
 "ValidationError" = "驗證出錯";
 "GetCoronaVirusApp_VOLabel" = "收取冠狀病毒應用程式。下載政府應用程式來收取最新資訊及忠告。";
-"HelpTopics_VOLabel" = "求助主題。如果你對應用程式有疑難或疑問。";
+"HelpTopics_VOLabel" = "求助主題。排除故障和修復技術問題指南。";
 "LatestNews_VOLabel" = "要獲得最新資訊及更新事宜，請到 aus.gov.au 收取最新的冠狀病毒資訊。";
 "NotificationsDisabled_VOLabel" = "「通知傳送」功能已被闗閉。如果 COVIDSafe 尚未處於啟用狀態，你將不會收到通知。更改「通知傳送」設定";
 "NotificationsEnabled_VOLabel" = "「通知傳送」功能已被開啓。如果 COVIDSafe 尚未處於啟用狀態，你將會收到通知。更改「通知傳送」設定";

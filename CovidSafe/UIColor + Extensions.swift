@@ -6,7 +6,9 @@ extension UIColor {
     static let covidHomeActiveColor = UIColor(0xC8FFB9)
     static let covidHomePermissionErrorColor = UIColor(0xE2E2E2)
     static let covidSafeColor = UIColor(0x00661B)
+    static let covidSafeDarkFontColor = UIColor(0x131313)
     static let covidSafeLighterColor = UIColor(0x008A23)
+    static let covidSafeLightGreyColor = UIColor(0xDDDDDD)
     static let covidSafeButtonDarkerColor = UIColor(0x00661B)
     static let covidSafeErrorColor = UIColor(0xA31919)
     

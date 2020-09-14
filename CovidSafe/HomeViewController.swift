@@ -7,47 +7,42 @@ import Reachability
 class HomeViewController: UIViewController {
     private var observer: NSObjectProtocol?
     
-    let animatedHeaderActiveHeightConstant: CGFloat = 160
-    let animatedHeaderInactiveHeightConstant: CGFloat = 80
-    let animatedHeaderActiveVerticalMarginConstant: CGFloat = 60
-    let animatedHeaderInactiveVerticalMarginConstant: CGFloat = 24
-    
-    @IBOutlet weak var screenStack: UIStackView!
     @IBOutlet weak var bluetoothStatusOffView: UIView!
     @IBOutlet weak var bluetoothStatusOnView: UIView!
     @IBOutlet weak var bluetoothPermissionOffView: UIView!
     @IBOutlet weak var bluetoothPermissionOnView: UIView!
-    @IBOutlet weak var homeHeaderView: UIView!
-    @IBOutlet weak var homeHeaderInfoText: UILabel!
-    @IBOutlet weak var homeHeaderPermissionsOffImage: UIImageView!
     @IBOutlet weak var shareView: UIView!
-    @IBOutlet weak var appPermissionsLabel: UIView!
+    @IBOutlet weak var inactiveAppSectionView: UIView!
+    @IBOutlet weak var activeAppSectionView: UIView!
+    @IBOutlet weak var covidInactiveLabel: UILabel!
+    @IBOutlet weak var covidActiveLabel: UILabel!
     @IBOutlet weak var animatedBluetoothHeader: UIView!
     @IBOutlet weak var versionNumberLabel: UILabel!
     @IBOutlet weak var versionView: UIView!
     @IBOutlet weak var uploadView: UIView!
-    @IBOutlet weak var helpButton: UIButton!
-    @IBOutlet weak var seeOurFAQ: UIButton!
-    @IBOutlet weak var pushNotificationStatusTitle: UILabel!
-    @IBOutlet weak var pushNotificationStatusIcon: UIImageView!
-    @IBOutlet weak var pushNotificationStatusLabel: UILabel!
-    @IBOutlet weak var pushNotificationContainerView: UIView!
+    @IBOutlet weak var uploadDateView: UIView!
     @IBOutlet weak var uploadDateLabel: UILabel!
     @IBOutlet weak var pairingRequestsLabel: UILabel!
-    @IBOutlet weak var topLeftIcon: UIImageView!
-    @IBOutlet weak var animatedBluetoothHeaderHeightConstraint: NSLayoutConstraint!
-    @IBOutlet weak var animatedBluetoothHeaderTopMarginConstraint: NSLayoutConstraint!
-    @IBOutlet weak var animatedBluetoothHeaderBottomMarginConstraint: NSLayoutConstraint!
-    @IBOutlet weak var improvementsContainerView: UIView!
-    @IBOutlet weak var improvementsInternetConnectionView: UIView!
-    @IBOutlet weak var improvementsUpdateAvailableView: UIView!
+    @IBOutlet weak var appActiveSubtitleLabel: UILabel!
+    @IBOutlet weak var uploadDataContentLabel: UILabel!
+    @IBOutlet weak var uploadDataTitleLabel: UILabel!
+    @IBOutlet weak var covidStatisticsContainer: UIView!
+    @IBOutlet weak var contentStackView: UIStackView!
+    @IBOutlet weak var statisticsSectionHeight: NSLayoutConstraint!
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    var appActiveSubtitleLabelInitialColor: UIColor?
     
     var lottieBluetoothView: AnimationView!
 
+    let covidStatisticsViewController: CovidStatisticsViewController = CovidStatisticsViewController(nibName: "CovidStatisticsView", bundle: nil)
+    
     var allPermissionOn = true
     var bluetoothStatusOn = true
     var bluetoothPermissionOn = true
     var pushNotificationOn = true
+    var shouldShowUpdateApp = false
+    
     var didUploadData: Bool {
         let uploadTimestamp = UserDefaults.standard.double(forKey: "uploadDataDate")
         let lastUpload = Date(timeIntervalSince1970: uploadTimestamp)
@@ -69,7 +64,7 @@ class HomeViewController: UIViewController {
             guard let dateRange = newAttributedString.string.range(of: formattedDate) else { return nil }
             let nsRange = NSRange(dateRange, in: newAttributedString.string)
             newAttributedString.addAttribute(.font,
-                                            value: UIFont.boldSystemFont(ofSize: 18),
+                                             value: UIFont.preferredFont(for: .body, weight: .bold),
                                      range: nsRange)
             return newAttributedString
         }
@@ -95,13 +90,17 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        scrollView.refreshControl = UIRefreshControl()
+        scrollView.refreshControl?.addTarget(self, action: #selector(refreshControlEvent), for: .valueChanged)
+        
+        
         // this is to show the settings prompt initially if bluetooth is off
         if !BluetraceManager.shared.isBluetoothOn() {
             BluetraceManager.shared.turnOn()
         }
         
         observer = NotificationCenter.default.addObserver(forName: UIApplication.didBecomeActiveNotification, object: nil, queue: .main) { [unowned self] notification in
-            self.toggleViews()
+            self.refreshView()
         }
         
         updateAnimationViewWithAnimationName(name: "Spinner_home")
@@ -132,6 +131,14 @@ class HomeViewController: UIViewController {
             pairingRequestText.addAttribute(.underlineStyle, value: NSUnderlineStyle.single.rawValue, range: nsRange)
             pairingRequestsLabel.attributedText = pairingRequestText
         }
+        
+        uploadDataTitleLabel.font = UIFont.preferredFont(for: .title3, weight: .bold)
+        uploadDataContentLabel.font = UIFont.preferredFont(for: .callout, weight: .bold)
+        covidInactiveLabel.font = UIFont.preferredFont(for: .title3, weight: .bold)
+        appActiveSubtitleLabelInitialColor = appActiveSubtitleLabel.textColor
+        
+        setupStatisticsView()
+        getStatistics()
     }
     
     deinit {
@@ -151,6 +158,13 @@ class HomeViewController: UIViewController {
           DLog("Could not start reachability notifier")
         }
         self.toggleViews()
+        if !UserDefaults.standard.bool(forKey: "PerformHealthChecks") {
+            DispatchQueue.global(qos: .background).async {
+                self.getMessagesFromServer()
+            }
+        }
+        performHealthCheck()
+        covidStatisticsViewController.statisticsDelegate = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -158,9 +172,6 @@ class HomeViewController: UIViewController {
         self.lottieBluetoothView?.play()
         self.becomeFirstResponder()
         self.updateJWTKeychainAccess()
-        DispatchQueue.global(qos: .background).async {
-            self.getMessagesFromServer()
-        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -202,25 +213,25 @@ class HomeViewController: UIViewController {
             }
         }
     }
+    
+    fileprivate func refreshView() {
+        toggleViews()
+        performHealthCheck()
+        getStatistics()
+    }
+    
+    fileprivate func setupStatisticsView() {
+        addChild(covidStatisticsViewController)
+        covidStatisticsViewController.view.translatesAutoresizingMaskIntoConstraints = false
+        covidStatisticsContainer.addSubview(covidStatisticsViewController.view)
         
-    func getMessagesFromServer() {
-        MessageAPI.getMessagesIfNeeded() { (messageResponse, error) in
-            if let error = error {
-                DLog("Get messages error: \(error.localizedDescription)")
-            }
-            
-            // show update available section
-            guard let messages = messageResponse?.messages else {
-                DispatchQueue.main.async {
-                    self.toggleAppVersionAvailableView(isVisible: false)
-                }
-                return
-            }
-            
-            DispatchQueue.main.async {
-                self.toggleAppVersionAvailableView(isVisible: messages.count > 0)
-            }
-        }
+        NSLayoutConstraint.activate([
+            covidStatisticsViewController.view.leadingAnchor.constraint(equalTo: covidStatisticsContainer.leadingAnchor),
+            covidStatisticsViewController.view.trailingAnchor.constraint(equalTo: covidStatisticsContainer.trailingAnchor),
+            covidStatisticsViewController.view.topAnchor.constraint(equalTo: covidStatisticsContainer.topAnchor),
+            covidStatisticsViewController.view.bottomAnchor.constraint(equalTo: covidStatisticsContainer.bottomAnchor)
+        ])
+        covidStatisticsViewController.didMove(toParent: self)
     }
     
     fileprivate func toggleViews() {
@@ -229,24 +240,52 @@ class HomeViewController: UIViewController {
                 DispatchQueue.main.async {
                     self?.readPermissions(notificationSettings: settings)
                     
-                    self?.togglePushNotificationsStatusView()
                     self?.toggleBluetoothStatusView()
                     self?.toggleBluetoothPermissionStatusView()
                     self?.toggleHeaderView()
                     self?.toggleUploadView()
                     self?.toggleUploadDateView()
-                    self?.toggleImprovementsContainerView()
                 }
             })
         }
     }
     
+    fileprivate func performHealthCheck() {
+        if UserDefaults.standard.bool(forKey: "PerformHealthChecks") {
+            UserDefaults.standard.set(false, forKey: "PerformHealthChecks")
+            guard allPermissionOn else {
+                // if all permission not ON, stay in home screen
+                return
+            }
+            
+            getMessagesFromServer(force: true) {
+            
+                if  (self.reachability.connection != .cellular && self.reachability.connection != .wifi) ||
+                    self.shouldShowUpdateApp {
+                    DispatchQueue.main.async {
+                        self.onSettingsTapped(self)
+                    }
+                } else if self.allPermissionOn &&
+                    self.isInternetReachable() &&
+                    !self.shouldShowUpdateApp {
+                    DispatchQueue.main.async {
+                        self.covidActiveLabel.text = "home_header_active_title_thanks".localizedString()
+                    }
+                }
+            }
+        }
+    }
+    
+    fileprivate func isInternetReachable() -> Bool {
+        return reachability.connection == .cellular || reachability.connection == .wifi
+    }
+    
     fileprivate func toggleUploadDateView() {
         if shouldShowUploadDate, let lastUploadText = self.dataUploadedAttributedString {
             uploadDateLabel.attributedText = lastUploadText
-            uploadDateLabel.isHidden = false
+            uploadDateView.isHidden = false
         } else {
-            uploadDateLabel.isHidden = true
+            uploadDateView.isHidden = true
         }
     }
     
@@ -254,7 +293,14 @@ class HomeViewController: UIViewController {
         self.bluetoothStatusOn = BluetraceManager.shared.isBluetoothOn()
         self.bluetoothPermissionOn = BluetraceManager.shared.isBluetoothAuthorized()
         self.pushNotificationOn = notificationSettings.authorizationStatus == .authorized
-        self.allPermissionOn = self.bluetoothStatusOn && self.bluetoothPermissionOn
+        let newAllPermissionsOn = self.bluetoothStatusOn && self.bluetoothPermissionOn
+            
+        if newAllPermissionsOn != self.allPermissionOn {
+            self.allPermissionOn = newAllPermissionsOn
+            DispatchQueue.global(qos: .background).async {
+                self.getMessagesFromServer(force: true)
+            }
+        }
     }
     
     fileprivate func toggleViewVisibility(view: UIView, isVisible: Bool) {
@@ -279,36 +325,8 @@ class HomeViewController: UIViewController {
     }
     
     fileprivate func toggleHeaderView() {
-        self.allPermissionOn ? self.lottieBluetoothView?.play() : self.lottieBluetoothView?.stop()
-        toggleViewVisibility(view: appPermissionsLabel, isVisible: !self.allPermissionOn)
-        toggleViewVisibility(view: homeHeaderPermissionsOffImage, isVisible: !self.allPermissionOn)
-        toggleViewVisibility(view: lottieBluetoothView, isVisible: self.allPermissionOn)
-
-        var newAttributedLabel = NSMutableAttributedString(string: "home_header_active_title".localizedString(comment: "Header with no action req"), attributes: [.font: UIFont.preferredFont(for: .title1, weight: .bold)])
-        newAttributedLabel.append(NSAttributedString(string: "\n" + "home_header_active_no_action_required".localizedString(), attributes: [.font: UIFont.preferredFont(forTextStyle: .body)]))
-        
-        self.homeHeaderInfoText.attributedText = newAttributedLabel
-        
-        if (!self.allPermissionOn) {
-            newAttributedLabel = NSMutableAttributedString(string: "home_header_inactive_title".localizedString(comment: "Header with no action req"), attributes: [.font: UIFont.preferredFont(for: .title1, weight: .bold)])
-            newAttributedLabel.append(NSAttributedString(string: "\n" + "home_header_inactive_check_your_permissions".localizedString(), attributes: [.font: UIFont.preferredFont(forTextStyle: .body)]))
-            
-            animatedBluetoothHeaderHeightConstraint.constant = animatedHeaderInactiveHeightConstant
-            animatedBluetoothHeaderTopMarginConstraint.constant = animatedHeaderInactiveVerticalMarginConstant
-            animatedBluetoothHeaderBottomMarginConstraint.constant = animatedHeaderInactiveVerticalMarginConstant
-            self.homeHeaderInfoText.attributedText = newAttributedLabel
-            self.homeHeaderView.backgroundColor = UIColor.covidHomePermissionErrorColor
-            topLeftIcon.isHidden = false
-        } else {
-            animatedBluetoothHeaderHeightConstraint.constant = animatedHeaderActiveHeightConstant
-            animatedBluetoothHeaderTopMarginConstraint.constant = animatedHeaderActiveVerticalMarginConstant
-            animatedBluetoothHeaderBottomMarginConstraint.constant = animatedHeaderActiveVerticalMarginConstant
-            animatedBluetoothHeader.layoutIfNeeded()
-            self.homeHeaderView.backgroundColor = UIColor.covidHomeActiveColor
-            updateAnimationViewWithAnimationName(name: "Spinner_home")
-            topLeftIcon.isHidden = true
-        }
-        
+        toggleViewVisibility(view: inactiveAppSectionView, isVisible: !self.allPermissionOn)
+        toggleViewVisibility(view: activeAppSectionView, isVisible: self.allPermissionOn)
     }
     
     fileprivate func toggleBluetoothStatusView() {
@@ -317,70 +335,69 @@ class HomeViewController: UIViewController {
     }
     
     fileprivate func toggleBluetoothPermissionStatusView() {
-        toggleImprovementsContainerView()
         toggleViewVisibility(view: bluetoothPermissionOnView, isVisible: !self.allPermissionOn && self.bluetoothPermissionOn)
         toggleViewVisibility(view: bluetoothPermissionOffView, isVisible: !self.allPermissionOn && !self.bluetoothPermissionOn)
-    }
-    
-    fileprivate func togglePushNotificationsStatusView() {
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineSpacing = 4
-        
-        switch self.pushNotificationOn {
-        case true:
-            pushNotificationContainerView.accessibilityLabel = "NotificationsEnabled_VOLabel".localizedString()
-            pushNotificationStatusIcon.isHighlighted = false
-            pushNotificationStatusTitle.text = NSLocalizedString("home_set_complete_external_link_notifications_title_iOS", comment: "Notifications Enabled")
-            let newAttributedLabel = NSMutableAttributedString(string: NSLocalizedString("NotificationsEnabledBlurb", comment: "Notifications Enabled content blurb"), attributes: [.font: UIFont.preferredFont(forTextStyle: .callout)])
-
-            //set some attributes
-            guard let linkRange = newAttributedLabel.string.range(of: "NotificationsBlurbLink".localizedString( comment: "Notifications blurb link")) else { return }
-            let nsRange = NSRange(linkRange, in: newAttributedLabel.string)
-            newAttributedLabel.addAttribute(.foregroundColor,
-                                     value: UIColor.covidSafeColor,
-                                     range: nsRange)
-            newAttributedLabel.addAttribute(.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, newAttributedLabel.length))
-            pushNotificationStatusLabel.attributedText = newAttributedLabel
-            
-        default:
-            pushNotificationContainerView.accessibilityLabel = "NotificationsDisabled_VOLabel".localizedString()
-            pushNotificationStatusIcon.isHighlighted = true
-            pushNotificationStatusTitle.text = "home_set_complete_external_link_notifications_title_iOS_off".localizedString(comment: "Notifications Disabled")
-            let newAttributedLabel = NSMutableAttributedString(string:
-                NSLocalizedString("NotificationsDisabledBlurb", comment: "Notifications Disabled content blurb"), attributes: [.font: UIFont.preferredFont(forTextStyle: .callout)])
-
-            //set some attributes
-            guard let linkRange = newAttributedLabel.string.range(of: "NotificationsBlurbLink".localizedString()) else { return }
-            let nsRange = NSRange(linkRange, in: newAttributedLabel.string)
-            newAttributedLabel.addAttribute(.foregroundColor,
-                                     value: UIColor.covidSafeColor,
-                                     range: nsRange)
-            newAttributedLabel.addAttribute(.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, newAttributedLabel.length))
-            pushNotificationStatusLabel.attributedText = newAttributedLabel
-        }
-    }
-    
-    fileprivate func toggleImprovementsContainerView() {
-        // only show if the app has the right settings
-        let canShowSection = bluetoothStatusOn && bluetoothPermissionOn
-        let areChildrenShown = !improvementsUpdateAvailableView.isHidden || !improvementsInternetConnectionView.isHidden
-        
-        toggleViewVisibility(view: improvementsContainerView, isVisible: canShowSection && areChildrenShown)
-    }
-    
-    fileprivate func toggleInternetConnectionView(isVisible: Bool) {
-        toggleViewVisibility(view: improvementsInternetConnectionView, isVisible: isVisible)
-        toggleImprovementsContainerView()
-    }
-    
-    fileprivate func toggleAppVersionAvailableView(isVisible: Bool) {
-        toggleViewVisibility(view: improvementsUpdateAvailableView, isVisible: isVisible)
-        toggleImprovementsContainerView()
     }
     
     func attemptTurnOnBluetooth() {
         BluetraceManager.shared.toggleScanning(false)
         BluetraceManager.shared.turnOn()
+    }
+    
+    fileprivate func updateAppActiveSubtitle() {
+        let haveInternet = self.reachability.connection == .cellular || self.reachability.connection == .wifi
+        if shouldShowUpdateApp || !haveInternet {
+            appActiveSubtitleLabel.font = UIFont.preferredFont(for: .callout, weight: .bold)
+            appActiveSubtitleLabel.textColor = UIColor.covidSafeErrorColor
+            appActiveSubtitleLabel.text = "improve".localizedString()
+        } else {
+            appActiveSubtitleLabel.font = UIFont.preferredFont(for: .callout, weight: .regular)
+            appActiveSubtitleLabel.textColor = appActiveSubtitleLabelInitialColor
+            appActiveSubtitleLabel.text = "home_header_active_no_action_required".localizedString()
+        }
+    }
+    
+    // MARK: API calls
+    
+    func getMessagesFromServer(force: Bool = false, completion: @escaping () -> Void = {}) {
+        let onMessagesDone: (MessageResponse?, Swift.Error?) -> Void = { (messageResponse, error) in
+            if let error = error {
+                DLog("Get messages error: \(error.localizedDescription)")
+                completion()
+                return
+            }
+            
+            // show update available section
+            guard let messages = messageResponse?.messages else {
+                self.shouldShowUpdateApp = false
+                DispatchQueue.main.async {
+                    self.updateAppActiveSubtitle()
+                }
+                completion()
+                return
+            }
+            
+            self.shouldShowUpdateApp = messages.count > 0
+            DispatchQueue.main.async {
+                self.updateAppActiveSubtitle()
+            }
+            NotificationCenter.default.post(name: .shouldUpdateAppFromMessages, object: nil)
+            completion()
+        }
+        
+        if force {
+            MessageAPI.getMessages(completion: onMessagesDone)
+        } else {
+            MessageAPI.getMessagesIfNeeded(completion: onMessagesDone)
+        }
+    }
+    
+    func getStatistics() {
+        self.covidStatisticsViewController.isLoading = true
+        StatisticsAPI.getStatistics { (stats, error) in
+            self.covidStatisticsViewController.isLoading = false
+            self.covidStatisticsViewController.setupData(statistics: stats, errorType: error, hasInternet: self.isInternetReachable())
+        }
     }
     
     // MARK: Reachability
@@ -392,10 +409,10 @@ class HomeViewController: UIViewController {
         switch reachability.connection {
         case .wifi,
              .cellular:
-            toggleInternetConnectionView(isVisible: false)
+            updateAppActiveSubtitle()
         case .unavailable,
              .none:
-            toggleInternetConnectionView(isVisible: true)
+            updateAppActiveSubtitle()
         }
     }
     
@@ -439,25 +456,6 @@ class HomeViewController: UIViewController {
         present(activity, animated: true, completion: nil)
     }
     
-    @IBAction func onLatestNewsTapped(_ sender: UITapGestureRecognizer) {
-        // open in safari https://www.australia.gov.au
-        guard let url = URL(string: "https://www.australia.gov.au") else {
-            return
-        }
-        
-        let safariVC = SFSafariViewController(url: url)
-        present(safariVC, animated: true, completion: nil)
-    }
-    
-    @IBAction func getCoronaVirusApp(_ sender: UITapGestureRecognizer) {
-        guard let url = URL(string: "https://www.health.gov.au/resources/apps-and-tools/coronavirus-australia-app") else {
-            return
-        }
-        
-        let safariVC = SFSafariViewController(url: url)
-        present(safariVC, animated: true, completion: nil)
-    }
-    
     @IBAction func bluetoothPairingTapped(_ sender: Any) {
         guard let url = URL(string: "\(URLHelper.getHelpURL())#bluetooth-pairing-request") else {
             return
@@ -482,6 +480,20 @@ class HomeViewController: UIViewController {
         nav.modalTransitionStyle = .coverVertical
         nav.modalPresentationStyle = .fullScreen
         present(nav, animated: true, completion: nil)
+    }
+    
+    @IBAction func improvementAvailableTapped(_ sender: Any) {
+        if shouldShowUpdateApp || !isInternetReachable() {
+            onSettingsTapped(sender)
+        }
+    }
+    
+    @IBAction func onSettingsTapped(_ sender: Any) {
+        let settingsVC = SettingsViewController(nibName: "SettingsView", bundle: nil)
+        settingsVC.showUpdateAvailable = shouldShowUpdateApp
+        settingsVC.modalPresentationStyle = .overFullScreen
+        settingsVC.modalTransitionStyle = .coverVertical
+        self.present(settingsVC, animated: true, completion: nil)
     }
     
     @objc
@@ -519,6 +531,31 @@ class HomeViewController: UIViewController {
         if #available(iOS 11.0, *) {
             _preferredScreenEdgesDeferringSystemGestures = []
             setNeedsUpdateOfScreenEdgesDeferringSystemGestures()
+        }
+    }
+    
+    @objc
+    func refreshControlEvent() {
+        refreshView()
+        DispatchQueue.main.async {
+            self.scrollView.refreshControl?.endRefreshing()
+        }
+    }
+}
+
+// MARK: Statistics delegate
+
+extension HomeViewController: StatisticsDelegate {
+    
+    func refreshStatistics() {
+        self.getStatistics()
+    }
+    
+    func setStatisticsContainerHeight(height: CGFloat) {
+        
+        self.statisticsSectionHeight.constant = height
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
         }
     }
 }

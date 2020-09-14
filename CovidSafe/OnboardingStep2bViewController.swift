@@ -48,6 +48,9 @@ class OnboardingStep2bViewController: UIViewController {
     }
     
     @IBAction func continueBtnTapped(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "showHomeSegue", sender: self)
+        let homeVC = HomeViewController(nibName: "HomeView", bundle: nil)
+        homeVC.modalPresentationStyle = .overFullScreen
+        homeVC.modalTransitionStyle = .coverVertical
+        self.present(homeVC, animated: true, completion: nil)
     }
 }

@@ -1,7 +1,7 @@
 "action_continue" = "Devam";
 "action_report_an_issue" = "Sorun bildir";
 "action_upload_done" = "Bitti";
-"action_verify_invalid_pin" = "Geçersiz PIN, lütfen sağlık yetkilisinden size başka bir PIN göndermesini isteyin.";
+"action_verify_invalid_pin" = "Geçersiz PIN, lütfen sağlık yetkilisinden size başka bir PIN göndermesini isteyiniz.";
 "action_verify_upload_pin" = "Bilgilerimi sisteme yükle";
 /* Figma page iOS Screens (05/06) */
 "allow_bluetooth_call" = "COVIDSafe'in Bluetooth®'a erişmesine izin verin";
@@ -9,6 +9,7 @@
 "AllowBluetoothOFF" = "Bluetooth®'a erişim: KAPALI";
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothON" = "Bluetooth®'a erişim: AÇIK";
+"australian_capital_territory" = "Avustralya Başkent Bölgesi";
 /* Figma page iOS Screens (05/06) */
 "BluetoothOFF" = "Bluetooth®: KAPALI";
 /* Figma page iOS Screens (05/06) */
@@ -16,10 +17,10 @@
 /* Figma page iOS Screens (05/06) */
 "BluetoothON" = "Bluetooth®: AÇIK";
 "change_language" = "Dili değiştir";
-"change_language_content" = "COVIDSafe'i farklı bir dilde kullanmak için ayarlarınızı güncelleyin.";
+"change_language_content" = "COVIDSafe'i farklı bir dilde kullanmak için ilgili kılavuzu okuyunuz.";
 "consent_button" = "Kabul ediyorum";
 /* Shared Consent Actions */
-"consent_call_for_action" = "Rızanızı onaylamak için 'Kabul ediyorum'u seçin.";
+"consent_call_for_action" = "Rızanızı onaylamak için 'Kabul ediyorum'u seçiniz.";
 "country_region_name_ad" = "Andorra";
 "country_region_name_ae" = "Birleşik Arap Emirlikleri";
 /* Countries */
@@ -232,10 +233,11 @@
 "country_region_name_zm" = "Zambiya";
 "country_region_name_zw" = "Zimbabve";
 "data_privacy_button" = "Sonraki";
-"data_privacy_content" = "COVIDSafe'a kaydolmadan önce *COVIDSafe gizlilik ilkesini* okumanız önemlidir. \n\n16 yaşından küçükseniz, ebeveyniniz/veliniz de *gizlilik ilkesini* okumalıdır. \n\nCOVIDSafe kullanımı tamamen isteğe bağlıdır. Uygulamayı istediğiniz zaman yükleyebilir veya silebilirsiniz. COVIDSafe'i silerseniz *bilgilerinizin güvenli sunucudan silinmesini de* isteyebilirsiniz. \n\nCOVIDSafe'e kaydolmak için bir ad (veya takma ad), cep telefonu numarası, yaş aralığı ve posta kodu girmeniz gerekir. \n\nKayıt olurken gönderdiğiniz bilgiler ve COVIDSafe kullanımınızla ilgili bilgiler yüksek düzeyde güvenli bir sunucuda toplanacak ve saklanacaktır. \n\nCOVIDSafe konum bilgilerinizi toplamaz. \n\nCOVIDSafe temas saatini, temas ettiğiniz diğer COVIDSafe kullanıcılarının gizli kimlik kodlarını, Bluetooth® sinyal gücünü ve diğer kullanıcıların telefon modellerini cihazınıza kaydeder. \n\nTemas ettiğiniz diğer COVIDSafe kullanıcıları da gizli  kimlik kodunuzu, sizinle temas tarih ve saatini, Bluetooth® sinyal gücünü ve telefon modelinizi kendi cihazlarında kaydedecektir. \n\nBaşka bir kullanıcının COVID-19 testi pozitif çıkarsa iletişim bilgilerini sisteme yükleyebilir ve bir eyalet veya bölge sağlık yetkilisi temas takibi amacıyla sizinle iletişim kurabilir. \n\nKayıt bilgileriniz yalnızca temas takibi ve COVIDSafe'in düzgün ve yasalara uygun çalışması için kullanılacak ya da açıklanacaktır. \n\nDaha fazla bilgiyi *Avustralya Hükümeti Sağlık Bakanlığı* web sitesinde bulabilirsiniz. \n\nBilgileriniz ve bu bilgilerin nasıl işleneceği ve paylaşılacağına dair haklarınızla ilgili daha fazla bilgi için COVIDSafe *izlilik ilkesine* bakın.";
+"data_privacy_content" = "COVIDSafe'a kaydolmadan önce *COVIDSafe gizlilik ilkesini* okumanız önemlidir. \n\n16 yaşından küçükseniz, ebeveyniniz/veliniz de *gizlilik ilkesini* okumalıdır. \n\nCOVIDSafe kullanımı tamamen isteğe bağlıdır. Uygulamayı istediğiniz zaman yükleyebilir veya silebilirsiniz. COVIDSafe'i silerseniz *bilgilerinizin güvenli sunucudan silinmesini de* isteyebilirsiniz. \n\nCOVIDSafe'e kaydolmak için bir ad (veya takma ad), cep telefonu numarası, yaş aralığı ve posta kodu girmeniz gerekir. \n\nKayıt olurken gönderdiğiniz bilgiler ve COVIDSafe kullanımınızla ilgili bilgiler yüksek düzeyde güvenli bir sunucuda toplanacak ve saklanacaktır. \n\nCOVIDSafe konum bilgilerinizi toplamaz. \n\nCOVIDSafe temas saatini, temas ettiğiniz diğer COVIDSafe kullanıcılarının gizli kimlik kodlarını, Bluetooth® sinyal gücünü ve diğer kullanıcıların telefon modellerini cihazınıza kaydeder. \n\nTemas ettiğiniz diğer COVIDSafe kullanıcıları da gizli  kimlik kodunuzu, sizinle temas tarih ve saatini, Bluetooth® sinyal gücünü ve telefon modelinizi kendi cihazlarında kaydedecektir. \n\nBaşka bir kullanıcının COVID-19 testinin pozitif çıkması durumunda kendi iletişim bilgilerini sisteme yükleyebilir ve bir eyalet veya bölge sağlık yetkilisi temas takibi amacıyla sizinle iletişime geçebilir. \n\nKayıt bilgileriniz yalnızca temas takibi ve COVIDSafe'in düzgün ve yasalara uygun çalışması için kullanılacak ya da açıklanacaktır. \n\nDaha fazla bilgiyi *Avustralya Hükümeti Sağlık Bakanlığı* web sitesinde bulabilirsiniz. \n\nBilgileriniz ve bu bilgilerin nasıl işleneceği ve paylaşılacağına dair haklarınızla ilgili daha fazla bilgi için COVIDSafe *gizlilik ilkesine* bakınız.";
 "data_privacy_content_VO" = "COVIDSafe'a kaydolmadan önce COVIDSafe gizlilik ilkesini okumanız önemlidir. \n\n16 yaşından küçükseniz, ebeveyniniz/veliniz de gizlilik ilkesini okumalıdır. \n\nCOVIDSafe kullanımı tamamen isteğe bağlıdır. Uygulamayı istediğiniz zaman yükleyebilir veya silebilirsiniz. COVIDSafe'i silerseniz bilgilerinizin güvenli sunucudan silinmesini de isteyebilirsiniz. \n\nCOVIDSafe'e kaydolmak için bir ad (veya takma ad), cep telefonu numarası, yaş aralığı ve posta kodu girmeniz gerekir. \n\nKayıt olurken gönderdiğiniz bilgiler ve COVIDSafe kullanımınızla ilgili bilgiler yüksek düzeyde güvenli bir sunucuda toplanacak ve saklanacaktır. \n\nCOVIDSafe konum bilgilerinizi toplamaz. \n\nCOVIDSafe temas saatini, temas ettiğiniz diğer COVIDSafe kullanıcılarının anonim kimlik kodlarını, Bluetooth sinyal gücünü ve diğer kullanıcıların telefon modellerini cihazınıza kaydeder. \n\nTemas ettiğiniz diğer COVIDSafe kullanıcıları da anonim kimlik kodunuzu, sizinle temas tarih ve saatini, Bluetooth sinyal gücünü ve telefon modelinizi kendi cihazlarında kaydedecektir. \n\nBaşka bir kullanıcının COVID-19 testi pozitif çıkması halinde  iletişim bilgilerini sisteme yükleyebilir ve bu durumda bir eyalet veya bölge sağlık yetkilisi temas takibi amacıyla sizinle iletişim kurabilir. \n\nKayıt bilgileriniz yalnızca temas takibi ve COVIDSafe'in düzgün ve yasalara uygun çalışması için kullanılacak ya da açıklanacaktır. \n\nDaha fazla bilgiyi Avustralya Hükümeti Sağlık Bakanlığı web sitesinde bulabilirsiniz. \n\nBilgileriniz ve bu bilgilerin nasıl işleneceği ve paylaşılacağına dair haklarınızla ilgili daha fazla bilgi için COVIDSafe gizlilik ilkesine bakınız.";
 /* OnBoarding Data Privacy */
 "data_privacy_headline" = "Kayıt ve gizlilik";
+"deaths" = "Ölümler";
 "dialog_error_uploading_message" = "Bilgileriniz sisteme yüklerken bir hata oluştu, lütfen tekrar deneyin.";
 "dialog_error_uploading_negative" = "İptal";
 "dialog_error_uploading_positive" = "Tekrar deneyin";
@@ -252,29 +254,29 @@
 "enter_pin_timer_expire" = "PIN sürenizin bitişi:";
 "enter_pin_wrong_number" = "Bu cep telefonu numarası yanlış mı?";
 /* Figma page Android Screens (05/06) */
-"Enter_your_mobile_number_label" = "Cep telefonu numaranızı girin";
+"Enter_your_mobile_number_label" = "Cep telefonu numaranızı giriniz";
 "global_back" = "Geri";
 "global_close" = "Kapat";
-"global_double_tap" = "düzeltme yapmak için iki defa tıklayın";
+"global_double_tap" = "düzeltme yapmak için iki defa tıklayınız";
 "global_OK" = "Tamam";
 "home_app_permission_status_subtitle" = "COVIDSafe doğru ayarlar olmadan çalışmaz. ";
 "home_app_permission_status_title" = "Ayarlarınızı kontrol edin";
 "home_data_uploaded_message" = "COVID-19'un yayılmasını durdurmaya ve belirtilerinizin takibine yardımcı olun.";
 "home_header_active_no_action_required" = "Başka bir eylem gerekmez.";
 /* Home */
-"home_header_active_title" = "COVIDSafe aktif.";
+"home_header_active_title" = "COVIDSafe aktif durumdadır.";
 /* Home */
 "home_header_active_title_thanks" = "Teşekkürler, COVIDSafe artık aktif durumdadır";
 "home_header_inactive_check_your_permissions" = "Ayarlarınızı kontrol edin.";
-"home_header_inactive_title" = "COVIDSafe aktif değil.";
+"home_header_inactive_title" = "COVIDSafe aktif değil";
 "home_header_uploaded_on_date_ios" = "Bilgileriniz sisteme %@ tarihinde yüklendi.";
 "home_set_complete_external_link_app_content" = "En son haberler ve tavsiyeler için hükümet uygulamasını indirin.";
 "home_set_complete_external_link_app_title" = "Coronavirus uygulamasını edinin";
-"home_set_complete_external_link_been_contacted_content" = "Bilgilerinizi yalnızca testiniz pozitif çıktığı durumda sisteme yükleyebilirsiniz.";
+"home_set_complete_external_link_been_contacted_content" = "Bilgilerinizi yalnızca testinizin pozitif çıktığı durumda sisteme yükleyebilirsiniz.";
 "home_set_complete_external_link_been_contacted_title" = "Bir sağlık yetkilisi sizinle iletişime geçti mi?";
-"home_set_complete_external_link_help_topics_content" = "Uygulama hakkında sorun veya sorularınız varsa.";
+"home_set_complete_external_link_help_topics_content" = "Teknik sorunların nasıl giderileceği ve düzeltileceği konusunda yol gösterme";
 "home_set_complete_external_link_help_topics_title" = "Yardım konuları";
-"home_set_complete_external_link_news_content" = "En yeni Coronavirus haberleri için aus.gov.au'ya gidin.";
+"home_set_complete_external_link_news_content" = "En son Coronavirus haberleri için aus.gov.au'ya gidiniz.";
 "home_set_complete_external_link_news_title" = "En son haberler ve güncellemeler";
 "home_set_complete_external_link_news_url" = "https://www.australia.gov.au";
 /* Figma page iOS Screens (05/06) */
@@ -289,11 +291,12 @@
 "home_setup_help" = "Yardım";
 "home_version_number_ios" = "Sürüm %@, Derleme %@";
 "how_it_works_button" = "Sonraki";
-"how_it_works_content" = "Bluetooth® sinyalleri başka bir COVIDSafe kullanıcısının yakınınızda olduğunuzu belirlemek için kullanılır. \n\nSizinle diğer COVIDSafe kullanıcıları arasındaki her yakın temas, yakın temas bilgileri oluşturmak için not edilir. Bu bilgiler şifrelenir ve yalnızca telefonunuzda saklanır. \n\nBir COVIDSafe kullanıcısı olarak COVID-19 testiniz pozitif çıkması halinde bir eyalet veya bölge sağlık yetkilisi sizinle iletişime geçecektir. İletişim bilgilerinizin son derece güvenli bir bilgi depolama sistemine gönüllü olarak yüklemenize yardımcı olacaklardır.\n\nEyalet veya bölge sağlık yetkilileri testi pozitif çıkan başka bir COVIDSafe kullanıcısıyla yakın temas kurduğunuz hallerde sizinle iletişime geçebilir.\n\nDaha fazla bilgi için lütfen *Yardım Konuları* sayfasına bakın.";
+"how_it_works_content" = "Bluetooth® sinyalleri başka bir COVIDSafe kullanıcısının yakınınızda olduğunuzu belirlemek için kullanılır. \n\nSizinle diğer COVIDSafe kullanıcıları arasındaki her yakın temas, yakın temas bilgileri oluşturmak için not edilir. Bu bilgiler şifrelenir ve yalnızca telefonunuzda saklanır. \n\nCOVIDSafe kullanıcısı olarak COVID-19 testinizin pozitif çıkması halinde bir eyalet veya bölge sağlık yetkilisi sizinle iletişime geçecektir. İletişim bilgilerinizin son derece güvenli bir bilgi depolama sistemine gönüllü olarak yüklemenize yardımcı olacaklardır.\n\nEyalet veya bölge sağlık yetkilileri testi pozitif çıkan başka bir COVIDSafe kullanıcısıyla yakın temas kurduğunuz hallerde sizinle iletişime geçebilir.\n\nDaha fazla bilgi için lütfen *Yardım Konuları* sayfasına bakınız.";
 /* OnBoarding How it works */
 "how_it_works_headline" = "COVIDSafe nasıl çalışır?";
+"improve" = "Uygulama performansını iyileştir";
 "improve_heading" = "COVIDSafe'in işlevselliğini arttırın";
-"internet_connection_content" = "Sorunlar ve güncellemeler hakkında bildirim almak için internete bağlanın.";
+"internet_connection_content" = "Sorunlar ve güncellemeler hakkında bildirim alabilmek için internete bağlanın.";
 "internet_connection_heading" = "İnternet bağlantısı yok";
 "internet_screen_content" = "COVIDSafe'in uygulama ile ilgili sorunları tanımlayabilmesi için zaman zaman sunucuya bağlanması gerekir. \n\n İnternete bağlanmak, aşağıdaki konularda bildirim almanızı sağlar:";
 "internet_screen_content_1" = "sorunları düzeltme ve COVIDSafe'i tekrar etkinleştirme";
@@ -307,14 +310,20 @@
 "IntroLabel" = "Yayılmayı durdurmaya yardımcı olun \nve hayatları kurtarın.";
 "invalid_australian_phone_number_error_prompt" = "Avustralya cep telefonu numaraları en fazla 10 rakam içerir.";
 "invalid_norfolk_island_phone_number_error_prompt" = "Norfolk Adası'ndaki cep telefonu numaraları 5 ila 6 rakam içerir.";
+"loading_numbers" = "En son sayıla yükleniyor";
 /* Splash Screen */
 "migration_in_progress" = " COVIDSafe güncellemesi devam ediyor. \n\n Lütfen güncelleme tamamlanana kadar telefonunuzu kapatmayın.";
+"national_numbers" = "Ulusal sayılar";
+"new_cases" = "Son 24 saatte çıkan yeni vakalar";
+"new_south_wales" = "Yeni Güney Galler";
 /* Figma page Android Screens (05/06) */
 "norfolk_hint" = "Örneğin: 51234";
-"notification_bluetooth" = "COVIDSafe'in çalışması için Bluetooth'u açın.";
-"notification_internet_content" = "Uygulamayı açın ve COVIDSafe'in çalışması için internet bağlantınızı kontrol edin.";
+"northern_territory" = "Kuzey Bölgesi";
+"notification_bluetooth" = "COVIDSafe'in çalışması için Bluetooth'u açınız.";
+"notification_internet_content" = "Uygulamayı açınız ve COVIDSafe'in çalışması için internet bağlantınızı kontrol ediniz.";
 "notification_not_active_title" = "COVIDSafe aktif değil";
-"notification_update_content" = "En son iyileştirmelelere erişmek için uygulamanızı güncelleyin.";
+"notification_settings" = "Ayarlarınızı kontrol etmek için uygulamayı açın.";
+"notification_update_content" = "En son gelişmelere erişmek için uygulamanızı güncelleyinız.";
 "notification_update_heading" = "COVIDSafe güncellemesi mevcut ";
 /* Figma page iOS Screens (05/06) */
 "NotificationsBlurbLink" = "Bildirim ayarlarını değiştir";
@@ -322,6 +331,9 @@
 "NotificationsDisabledBlurb" = "COVIDSafe aktif olmadığında bildirim almayacaksınız.\nBildirim ayarlarını değiştir";
 /* Figma page iOS Screens (05/06) */
 "NotificationsEnabledBlurb" = "COVIDSafe aktif olmadığında bildirim alacaksınız.\nBildirim ayarlarını değiştir";
+"numbers_error" = "Güncellenen sayılar kontrol edilemiyor.";
+"numbers_no_internet" = "Güncellenen sayıları aldığınızdan emin olmak için internete bağlanın";
+"numbers_refresh" = "Şimdi yenile";
 "options_for_australia" = "Avustralya için seçenekler";
 "permission_button" = "İlerle";
 /* Figma page iOS Screens (05/06) */
@@ -340,9 +352,9 @@
 "personal_details_button" = "Devam";
 "personal_details_dialog_ok" = "Seç";
 /* OnBoarding Personal details */
-"personal_details_headline" = "Bilgilerinizi girin";
-"personal_details_name_characters_prompt" = "Lütfen ad ve soyadınız için İngilizce karakterler kullanın. Başka diller ya da ',' veya '?' gibi semboller kullanmayın.";
-"personal_details_name_error_prompt" = "Lütfen tam adınızı girin.";
+"personal_details_headline" = "Bilgilerinizi giriniz";
+"personal_details_name_characters_prompt" = "Lütfen ad ve soyadınız için İngilizce karakterler kullanınız. Başka diller ya da ',' veya '?' gibi semboller kullanmayınız.";
+"personal_details_name_error_prompt" = "Lütfen tam adınızı giriniz.";
 "personal_details_name_title" = "Tam ad (veya takma ad)";
 "personal_details_post_code" = "Avustralya'da posta kodu";
 "personal_details_post_code_error_prompt" = "Avustralya posta kodu numaranız 4 rakam içermelidir. ";
@@ -356,7 +368,9 @@
 "PN_ReminderBody" = "Çalıştığından emin olmak için COVIDSafe'i açın.";
 /* Figma page iOS Screens (05/06) */
 "PN_ReminderTitle" = "48 saat boyunca karşılaşma tespit edilmedi";
-"PostcodeValidationErrorMessage" = "Lütfen geçerli bir Avustralya posta kodu girin.";
+"PostcodeValidationErrorMessage" = "Lütfen geçerli bir Avustralya posta kodu giriniz.";
+"queensland" = "Queensland";
+"recovered" = "İyileşen toplam vakalar";
 "registration_consent_content" = "Avustralya Hükümeti Sağlık Bakanının yasal olarak belirlediğine uygun olarak aşağıdaki bilgileri toplayan Dijital Dönüşüm Ajansı'nı veri deposu yöneticisi olarak onaylıyorum:";
 "registration_consent_first_paragraph" = "Kayıt bilgilerim.";
 /* Onboarding Registration Consent */
@@ -365,9 +379,17 @@
 /* OnBoarding Enter Number */
 "select_country_or_region" = "Ülke veya bölge seçin";
 /* Figma page Android Screens (05/06) */
-"Select_country_or_region_headline" = "Ülke veya bölge seçin";
+"Select_country_or_region_headline" = "Ülke veya bölge seçiniz";
+"settings" = "Ayarlar";
 "share_this_app_content" = "COVID-19'un yayılmasını durdurmada bana katılın! Avustralya Hükümeti'nin bir uygulaması olan COVIDSafe'i indirin. # COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
+"south_australia" = "Güney Avustralya";
 "stepCounter" = "Adım %d / %d";
+"support" = "Destek";
+"support_content" = "Yardım konuları bölümünde belirtilmemiş hususlarda destek  için";
+"Support_VOLabel" = "Destek. Yardım konuları bölümünde belirtilmemiş hususlarda destek için";
+"tasmania" = "Tazmanya";
+"total_confirmed_cases" = "Toplam doğrulanmış vakalar";
+"total_per_state" = "Eyalet ve bölgelere göre toplam doğrulanmış vakalar";
 "UILaunchStoryboardName" = "";
 "under_sixteen_content" = "Ebeveynimin ya da vasimin aşağıdaki bilgileri toplayan Dijital Dönüşüm Ajansı'na veri deposu yöneticisi olarak Avustralya Hükümeti Sağlık Bakanının yasal olarak belirlediğine uygun olarak rızası olduğunu onaylıyorum:";
 "under_sixteen_first_paragraph" = "Kayıt bilgilerim.";
@@ -377,7 +399,7 @@
 "under_sixteen_registration_consent_first_paragraph" = "Kayıt bilgilerim.";
 "under_sixteen_second_paragraph" = "Başka bir kullanıcının COVID-19 testi pozitif çıkması ve temas verilerini sisteme yüklemesi halinde diğer COVIDSafe kullanıcıları ile paylaşılacak şahsıma ait temas bilgileri.";
 /* Figma page Android Screens (05/06) */
-"under-sixteen_consent_call_for_action" = "Rızanızı onaylamak için 'Kabul ediyorum'u seçin. ";
+"under-sixteen_consent_call_for_action" = "Rızanızı onaylamak için 'Kabul ediyorum'u seçiniz. ";
 "update_available_app_store_btn" = "App Store'a git";
 "update_available_dismiss_btn" = "Daha sonra hatırlat";
 "update_available_message_ios" = "COVIDSafe'de iyileştirmeler yapmaktayız. App Store üzerinden güncelleme yapın.";
@@ -389,13 +411,15 @@
 "upload_failed" = "Karşıya yükleme başarısız";
 "upload_finished_header" = "COVID-19'un yayılmasını durdurmaya yardım ettiğiniz için teşekkür ederiz!";
 "upload_finished_sub_header" = "Bilgilerinizi yüksek güvenlikli COVIDSafe depolama sistemine başarıyla yüklediniz. \n\nEyalet veya bölge sağlık yetkilileri sizinle yakın temas durumlarını kaydeden diğer COVIDSafe kullanıcılarını bilgilendirecektir. Kimliğiniz diğer kullanıcılar için gizli kalacaktır.";
-"upload_step_1_body" = "Yalnızca COVID-19 testiniz pozitif çıktığı durumda  bir eyalet veya bölge sağlık yetkilisi bilgilerinizin sisteme gönüllü olarak yüklenmesine yardımcı olmak amacıyla sizinle iletişime geçer.\n\n'Evet' düğmesine bastıktan sonra bilgilerinizin sisteme yüklenmesi için onay vermeniz gerekmektedir. ";
+"upload_step_1_body" = "Yalnızca COVID-19 testinizin pozitif çıktığı durumda  bir eyalet veya bölge sağlık yetkilisi bilgilerinizin sisteme gönüllü olarak yüklenmesine yardımcı olmak amacıyla sizinle iletişime geçer.\n\n'Evet' düğmesine bastıktan sonra bilgilerinizin sisteme yüklenmesi için onay vermeniz gerekmektedir. ";
 "upload_step_1_header" = "Bir sağlık yetkilisi bilgilerinizi sisteme yüklemenizi istiyor mu?";
 "upload_step_4_header" = " Sisteme yükleme onayı";
 "upload_step_4_sub_header" = "Siz onaylamadıkça temas verileriniz sisteme yüklenmez. \n\nOnaylarsanız temas verileriniz sisteme yüklenir ve temas takibi amacıyla eyalet veya bölge sağlık yetkilileriyle paylaşılır. \n\nEyalet ve bölge sağlık yetkilileri yalnızca yakın temaslarınızla ilgili bilgilere erişebilecektir. \n\nDaha fazla bilgi için COVIDSafe *gizlilik ilkesini* okuyunuz.";
-"upload_step_verify_pin_header" = "Bilgilerinizi sisteme yükleyin";
-"upload_step_verify_pin_sub_header" = "Bir eyalet veya bölge sağlık yetkilisi cihazınıza mesaj olarak bir PIN gönderecektir. Bilgilerinizi sisteme yüklemek için PIN'i aşağıya girin.";
+"upload_step_verify_pin_header" = "Bilgilerinizi sisteme yükleyiniz";
+"upload_step_verify_pin_sub_header" = "Eyalet veya bölge sağlık yetkilisi cihazınıza mesaj olarak bir PIN gönderecektir. Bilgilerinizi sisteme yüklemek için PIN'i aşağıya giriniz.";
 "us_consent_button" = "Kabul ediyorum";
+"victoria" = "Viktorya";
+"western_australia" = "Batı Avustralya";
 "wrong_ping_number" = " Yanlış PIN girildi";
 "country_region_name_au2" = "Norfolk Adası";
 "AllowBluetoothOFF_VOLabel" = "Bluetooth'a erişim: KAPALI COVIDSafe'in Bluetooth'a erişmesine izin verin";
@@ -406,9 +430,9 @@
 /* details */
 "Done" = "Bitti";
 /* Feedback */
-"EmailPlaceholder" = "E-posta adresinizi girin (gerekli)";
+"EmailPlaceholder" = "E-posta adresinizi giriniz (gerekli)";
 /* Phone number and PIN */
-"EnterPhoneReVerify" = "Yeniden doğrulamak için cep telefonu numaranızı girin";
+"EnterPhoneReVerify" = "Yeniden doğrulamak için cep telefonu numaranızı giriniz";
 "EnterPINSent" = "%@ adresine gönderilen PIN'i girin";
 /* Message for prompt that user sees when opening feeback. Prompt asks user if he/she would like to send new feedback. */
 "entryPrompt_alert_message" = "Merhaba dostum, nasıl devam etmek istersin?";
@@ -449,9 +473,9 @@
 /* home */
 "PairingRequestsInfo" = "COVIDSafe eşleştirme istekleri göndermez.";
 "PairingRequestsInfoUnderline" = "eşleştirme istekleri";
-"PhoneNumberFormatErrorMessage" = "Lütfen bir cep telefonu numarası girin.";
+"PhoneNumberFormatErrorMessage" = "Lütfen bir cep telefonu numarası giriniz.";
 "PhoneNumberFormatErrorTitle" = "Yanlış sayı formatı";
-"PhoneVerificationErrorMessage" = "Lütfen bilgilerinizi kontrol edip tekrar deneyin.";
+"PhoneVerificationErrorMessage" = "Lütfen bilgilerinizi kontrol edip tekrar deneyiniz.";
 "PhoneVerificationErrorTitle" = "Telefon numarasını doğrulama hatası";
 "PINWillExpire" = "PIN'inizin dolma süresi %@ ";
 "ReceivePinIssue" = "PIN alma sorunu mu yaşıyorsunuz?";
@@ -459,16 +483,16 @@
 "ReportAnIssue" = "Sorun bildir";
 /* VO */
 "SelectedCountryTemplate" = "(+%@) %@ seçildi";
-"UploadFailed" = "Sisteme yükleme başarısız. Lütfen daha sonra tekrar deneyin.";
-"UploadFailedErrorMessage" = "Lütfen daha sonra tekrar deneyin.";
+"UploadFailed" = "Sisteme yükleme başarısız. Lütfen daha sonra tekrar deneyiniz.";
+"UploadFailedErrorMessage" = "Lütfen daha sonra tekrar deneyiniz.";
 "ValidationError" = "Doğrulama hatası";
 "GetCoronaVirusApp_VOLabel" = "Coronavirus uygulamasını  edinin. En son haberler ve tavsiyeler için hükümet uygulamasını indirin.";
-"HelpTopics_VOLabel" = "Yardım konuları. Uygulama hakkında sorun veya sorularınız varsa.";
-"LatestNews_VOLabel" = "En son haberler ve güncellemeler. En yeni Coronavirus haberleri için aus.gov.au'ya gidin.";
+"HelpTopics_VOLabel" = "Yardım konuları. Teknik sorunların nasıl giderileceği ve düzeltileceği konusunda yol gösterme";
+"LatestNews_VOLabel" = "En son haberler ve güncellemeler. En son Coronavirus haberleri için aus.gov.au'ya gidiniz.";
 "NotificationsDisabled_VOLabel" = "Bildirimler devre dışı bırakıldı. COVIDSafe aktif olmadığında bildirim almayacaksınız. \nBildirim ayarlarını değiştirin";
-"NotificationsEnabled_VOLabel" = "Bildirimler etkinleştirildi. COVIDSafe aktif değil ise bildirim alacaksınız. \nBildirim ayarlarını değiştirin";
-"OS1b_TopParagraph_VOLabel" = "Bluetooth sinyalleri başka bir COVIDSafe kullanıcısının yakınınızda olduğunuzu belirlemek için kullanılır. \nSizinle diğer COVIDSafe kullanıcıları arasındaki her yakın temas, yakın temas bilgileri oluşturmak için not edilir. Bu bilgiler şifrelenir ve yalnızca telefonunuzda saklanır. \nBir COVIDSafe kullanıcısı olarak COVID-19 testiniz pozitif çıkarsa bir eyalet veya bölge sağlık yetkilisi sizinle iletişime geçecektir. Yakın iletişim bilgilerinizin son derece güvenli bir bilgi depolama sistemine gönüllü olarak yüklemenize yardımcı olacaklardır. \nEyalet veya bölge sağlık yetkilileri testi pozitif çıkan başka bir COVIDSafe kullanıcısıyla yakın temas kurduysanız yine sizinle iletişime geçebilir. \nDaha fazla bilgi için lütfen Yardım Konuları sayfasına bakın.";
+"NotificationsEnabled_VOLabel" = "Bildirimler etkinleştirildi. COVIDSafe aktif olmadığı durumda bildirim alacaksınız. \nBildirim ayarlarını değiştirin";
+"OS1b_TopParagraph_VOLabel" = "Bluetooth sinyalleri başka bir COVIDSafe kullanıcısının yakınınızda olduğunuzu belirlemek için kullanılır. \nSizinle diğer COVIDSafe kullanıcıları arasındaki her yakın temas, yakın temas bilgileri oluşturmak için not edilir. Bu bilgiler şifrelenir ve yalnızca telefonunuzda saklanır. \nCOVIDSafe kullanıcısı olarak COVID-19 testinizin pozitif çıkması durumunda eyalet veya bölge sağlık yetkilisi sizinle iletişime geçecektir. Yakın iletişim bilgilerinizin son derece güvenli bir bilgi depolama sistemine gönüllü olarak yüklemenize yardımcı olacaklardır. \nEyalet veya bölge sağlık yetkilileri testi pozitif çıkan başka bir COVIDSafe kullanıcısıyla yakın temas kurdugunuz durumda  yine sizinle iletişime geçebilir. \nDaha fazla bilgi için lütfen Yardım Konuları sayfasına bakınız.";
 "permission_content_iOS_2_VOLabel" = "1. Bluetooth\n2. Bildirimler \n\nCOVIDSafe eşleştirme istekleri göndermez.";
-"permission_content_iOS_VOLabel" = "COVIDSafe'nin çalışabilmesi için Bluetooth etkinleştirilmiş olmalıdır. Bildirimleri etkinleştirerek COVIDSafe aktif olmadığında size hatırlatan güncellemeleri alabilirsiniz. \n\nEtkinleştirmek için 'Devam Et'i seçin:";
+"permission_content_iOS_VOLabel" = "COVIDSafe'nin çalışabilmesi için Bluetooth etkinleştirilmiş olmalıdır. Bildirimleri etkinleştirerek COVIDSafe aktif olmadığında size hatırlatan güncellemeleri alabilirsiniz. \n\nEtkinleştirmek için 'Devam Et'i seçiniz:";
 "ShareCovidSafe_VOLabel" = "COVIDSafe'i paylaşın. Başkalarını yardıma davet edin. Birlikte daha da güçlüyüz.";
 "UploadData_VOLabel" = "Bir sağlık yetkilisi sizinle iletişime geçti mi? Bilgilerinizi yalnızca testiniz pozitifse sisteme yükleyebilirsiniz.";
