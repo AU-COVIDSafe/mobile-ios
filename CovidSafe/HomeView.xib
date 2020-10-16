@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -14,9 +15,7 @@
                 <outlet property="animatedBluetoothHeader" destination="agZ-x5-SNR" id="ixY-i5-G2e"/>
                 <outlet property="appActiveSubtitleLabel" destination="sPX-9E-2VC" id="mkd-xY-bt4"/>
                 <outlet property="bluetoothPermissionOffView" destination="a5D-xk-n0n" id="BJE-Vo-NVV"/>
-                <outlet property="bluetoothPermissionOnView" destination="AH7-69-ECr" id="kox-af-7oa"/>
                 <outlet property="bluetoothStatusOffView" destination="ers-f9-BFH" id="lOQ-d0-Kd6"/>
-                <outlet property="bluetoothStatusOnView" destination="LbY-Xi-nuS" id="skW-GQ-vfQ"/>
                 <outlet property="covidActiveLabel" destination="rMJ-xf-l8j" id="LUF-bC-A7I"/>
                 <outlet property="covidInactiveLabel" destination="uOm-Hj-Pyl" id="0f4-KJ-XRB"/>
                 <outlet property="covidStatisticsContainer" destination="eZl-C5-gSv" id="37c-CV-VgS"/>
@@ -157,10 +156,10 @@
                             </constraints>
                         </view>
                         <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="h36-8c-K2n">
-                            <rect key="frame" x="0.0" y="120" width="414" height="1449"/>
+                            <rect key="frame" x="0.0" y="120" width="414" height="1461"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRs-XW-qzv" userLabel="StatusView">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="670.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="682.5"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rcS-nL-IAO">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="658.5"/>
@@ -202,10 +201,10 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AUW-C2-ven" userLabel="App Permission Label View">
-                                                                    <rect key="frame" x="0.0" y="82" width="414" height="76.5"/>
+                                                                    <rect key="frame" x="0.0" y="82" width="414" height="192.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="COVIDSafe won't work without the right settings. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6I-eD-3rn">
-                                                                            <rect key="frame" x="16" y="16" width="382" height="44.5"/>
+                                                                            <rect key="frame" x="16" y="16" width="382" height="160.5"/>
                                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -222,63 +221,14 @@
                                                                         <constraint firstItem="f6I-eD-3rn" firstAttribute="top" secondItem="AUW-C2-ven" secondAttribute="top" constant="16" id="uCJ-Kd-QuD"/>
                                                                     </constraints>
                                                                 </view>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AH7-69-ECr" userLabel="Bluetooth Permission On Section">
-                                                                    <rect key="frame" x="0.0" y="159.5" width="414" height="57"/>
-                                                                    <subviews>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yg7-4A-W6T" userLabel="Bluetooth Permission On Bar">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
-                                                                            <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow Bluetooth®: On" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQ2-WQ-jOP">
-                                                                                    <rect key="frame" x="16" y="16" width="183.5" height="25"/>
-                                                                                    <accessibility key="accessibilityConfiguration">
-                                                                                        <bool key="isElement" value="NO"/>
-                                                                                    </accessibility>
-                                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
-                                                                                    <nil key="textColor"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                    <userDefinedRuntimeAttributes>
-                                                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="AllowBluetoothON"/>
-                                                                                        <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="AllowBluetoothON_VOLabel"/>
-                                                                                    </userDefinedRuntimeAttributes>
-                                                                                </label>
-                                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="small tick" translatesAutoresizingMaskIntoConstraints="NO" id="HhW-4G-9oq">
-                                                                                    <rect key="frame" x="374" y="15" width="24" height="27"/>
-                                                                                </imageView>
-                                                                            </subviews>
-                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="trailing" secondItem="HhW-4G-9oq" secondAttribute="trailing" constant="16" id="MYO-q5-ZPO"/>
-                                                                                <constraint firstItem="HhW-4G-9oq" firstAttribute="top" secondItem="Yg7-4A-W6T" secondAttribute="top" constant="15" id="X0z-c1-uTo"/>
-                                                                                <constraint firstItem="FQ2-WQ-jOP" firstAttribute="leading" secondItem="Yg7-4A-W6T" secondAttribute="leading" constant="16" id="efQ-Hi-4nI"/>
-                                                                                <constraint firstAttribute="bottom" secondItem="FQ2-WQ-jOP" secondAttribute="bottom" constant="16" id="inN-V2-hUO"/>
-                                                                                <constraint firstItem="FQ2-WQ-jOP" firstAttribute="top" secondItem="Yg7-4A-W6T" secondAttribute="top" constant="16" id="q3b-FD-Spc"/>
-                                                                                <constraint firstAttribute="bottom" secondItem="HhW-4G-9oq" secondAttribute="bottom" constant="15" id="sXK-pG-LoG"/>
-                                                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FQ2-WQ-jOP" secondAttribute="trailing" constant="20" symbolic="YES" id="vQh-nu-ltT"/>
-                                                                            </constraints>
-                                                                        </view>
-                                                                    </subviews>
-                                                                    <accessibility key="accessibilityConfiguration">
-                                                                        <accessibilityTraits key="traits" button="YES"/>
-                                                                        <bool key="isElement" value="YES"/>
-                                                                    </accessibility>
-                                                                    <constraints>
-                                                                        <constraint firstItem="Yg7-4A-W6T" firstAttribute="leading" secondItem="AH7-69-ECr" secondAttribute="leading" id="3Bu-ge-TvP"/>
-                                                                        <constraint firstItem="Yg7-4A-W6T" firstAttribute="top" secondItem="AH7-69-ECr" secondAttribute="top" id="5xA-fG-0cM"/>
-                                                                        <constraint firstAttribute="bottom" secondItem="Yg7-4A-W6T" secondAttribute="bottom" id="68T-gv-I7B"/>
-                                                                        <constraint firstAttribute="trailing" secondItem="Yg7-4A-W6T" secondAttribute="trailing" id="ePN-a9-LtA"/>
-                                                                    </constraints>
-                                                                    <userDefinedRuntimeAttributes>
-                                                                        <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="AllowBluetoothON_VOLabel"/>
-                                                                    </userDefinedRuntimeAttributes>
-                                                                </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a5D-xk-n0n" userLabel="Bluetooth Permission Off Section">
-                                                                    <rect key="frame" x="0.0" y="217.5" width="414" height="80.5"/>
+                                                                    <rect key="frame" x="0.0" y="275.5" width="414" height="80.5"/>
                                                                     <subviews>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZoL-pC-0bR" userLabel="Bluetooth Permission Off Bar">
                                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="80.5"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow Bluetooth®: Off" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssc-jo-9nS">
-                                                                                    <rect key="frame" x="16" y="16" width="185.5" height="25"/>
+                                                                                    <rect key="frame" x="16" y="16" width="187.5" height="25"/>
                                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                                     <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <nil key="highlightedColor"/>
@@ -311,7 +261,7 @@
                                                                                     </userDefinedRuntimeAttributes>
                                                                                 </label>
                                                                             </subviews>
-                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                             <constraints>
                                                                                 <constraint firstItem="ssc-jo-9nS" firstAttribute="top" secondItem="ZoL-pC-0bR" secondAttribute="top" constant="16" id="3Im-Uh-fZN"/>
                                                                                 <constraint firstItem="xNI-ci-c0m" firstAttribute="leading" secondItem="ZoL-pC-0bR" secondAttribute="leading" constant="16" id="4Nv-BT-6lX"/>
@@ -342,52 +292,6 @@
                                                                         <outletCollection property="gestureRecognizers" destination="zO2-1f-TbO" appends="YES" id="hQV-Pt-ZVn"/>
                                                                     </connections>
                                                                 </view>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LbY-Xi-nuS" userLabel="Bluetooth Status On Section">
-                                                                    <rect key="frame" x="0.0" y="299" width="414" height="57"/>
-                                                                    <subviews>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nWv-tT-ULX" userLabel="Bluetooth Status Bar On">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
-                                                                            <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth®: On" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahB-1i-uO9">
-                                                                                    <rect key="frame" x="16" y="16" width="131.5" height="25"/>
-                                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
-                                                                                    <nil key="textColor"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                    <userDefinedRuntimeAttributes>
-                                                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="BluetoothON"/>
-                                                                                        <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="BluetoothON_VOLabel"/>
-                                                                                    </userDefinedRuntimeAttributes>
-                                                                                </label>
-                                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="small tick" translatesAutoresizingMaskIntoConstraints="NO" id="9uR-MG-hNP">
-                                                                                    <rect key="frame" x="374" y="15" width="24" height="27"/>
-                                                                                </imageView>
-                                                                            </subviews>
-                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="bottom" secondItem="9uR-MG-hNP" secondAttribute="bottom" constant="15" id="7mc-Yk-bMa"/>
-                                                                                <constraint firstItem="ahB-1i-uO9" firstAttribute="top" secondItem="nWv-tT-ULX" secondAttribute="top" constant="16" id="8k7-LY-XVK"/>
-                                                                                <constraint firstAttribute="bottom" secondItem="ahB-1i-uO9" secondAttribute="bottom" constant="16" id="JvF-fG-Nz4"/>
-                                                                                <constraint firstItem="ahB-1i-uO9" firstAttribute="leading" secondItem="nWv-tT-ULX" secondAttribute="leading" constant="16" id="LV5-om-ii1"/>
-                                                                                <constraint firstAttribute="trailing" secondItem="9uR-MG-hNP" secondAttribute="trailing" constant="16" id="buQ-kV-N6Y"/>
-                                                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ahB-1i-uO9" secondAttribute="trailing" constant="20" symbolic="YES" id="gyB-VE-4Qj"/>
-                                                                                <constraint firstItem="9uR-MG-hNP" firstAttribute="top" secondItem="nWv-tT-ULX" secondAttribute="top" constant="15" id="h6B-MM-kch"/>
-                                                                            </constraints>
-                                                                        </view>
-                                                                    </subviews>
-                                                                    <accessibility key="accessibilityConfiguration">
-                                                                        <accessibilityTraits key="traits" button="YES"/>
-                                                                        <bool key="isElement" value="YES"/>
-                                                                    </accessibility>
-                                                                    <constraints>
-                                                                        <constraint firstItem="nWv-tT-ULX" firstAttribute="top" secondItem="LbY-Xi-nuS" secondAttribute="top" id="1z0-xx-Bm2"/>
-                                                                        <constraint firstItem="nWv-tT-ULX" firstAttribute="leading" secondItem="LbY-Xi-nuS" secondAttribute="leading" id="Y3b-C2-Rkl"/>
-                                                                        <constraint firstAttribute="trailing" secondItem="nWv-tT-ULX" secondAttribute="trailing" id="det-Jd-bBz"/>
-                                                                        <constraint firstAttribute="bottom" secondItem="nWv-tT-ULX" secondAttribute="bottom" id="trg-gW-sHZ"/>
-                                                                    </constraints>
-                                                                    <userDefinedRuntimeAttributes>
-                                                                        <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="BluetoothON_VOLabel"/>
-                                                                    </userDefinedRuntimeAttributes>
-                                                                </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ers-f9-BFH" userLabel="Bluetooth Status  Off Section">
                                                                     <rect key="frame" x="0.0" y="357" width="414" height="101.5"/>
                                                                     <subviews>
@@ -395,7 +299,7 @@
                                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="101.5"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth®: Off" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0P-dF-xcR">
-                                                                                    <rect key="frame" x="16" y="16" width="133.5" height="24"/>
+                                                                                    <rect key="frame" x="16" y="16" width="135.5" height="24"/>
                                                                                     <accessibility key="accessibilityConfiguration">
                                                                                         <bool key="isElement" value="NO"/>
                                                                                     </accessibility>
@@ -423,7 +327,7 @@
                                                                                     </userDefinedRuntimeAttributes>
                                                                                 </label>
                                                                             </subviews>
-                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                             <constraints>
                                                                                 <constraint firstItem="g0P-dF-xcR" firstAttribute="top" secondItem="p5d-dk-foR" secondAttribute="top" constant="16" id="1oo-da-bcl"/>
                                                                                 <constraint firstItem="4ba-M6-iM2" firstAttribute="top" secondItem="g0P-dF-xcR" secondAttribute="bottom" constant="4" id="9WI-Jo-vNv"/>
@@ -509,7 +413,7 @@
                                                                             </userDefinedRuntimeAttributes>
                                                                         </label>
                                                                     </subviews>
-                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                     <constraints>
                                                                         <constraint firstItem="rMJ-xf-l8j" firstAttribute="leading" secondItem="F4Z-1Y-tG8" secondAttribute="leading" constant="16" id="LHw-3n-r6o"/>
                                                                         <constraint firstItem="sPX-9E-2VC" firstAttribute="leading" secondItem="F4Z-1Y-tG8" secondAttribute="leading" constant="16" id="LJY-nO-RML"/>
@@ -535,7 +439,7 @@
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
-                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="bottom" secondItem="Axa-OY-2R9" secondAttribute="bottom" constant="16" id="55q-2C-SLN"/>
                                                                         <constraint firstItem="Axa-OY-2R9" firstAttribute="leading" secondItem="D9q-sl-43r" secondAttribute="leading" constant="16" id="CyL-cv-iQb"/>
@@ -556,7 +460,7 @@
                                                                             </connections>
                                                                         </label>
                                                                     </subviews>
-                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="bottom" secondItem="EF2-ER-Q6h" secondAttribute="bottom" constant="16" id="2ek-LK-Gxt"/>
                                                                         <constraint firstAttribute="trailing" secondItem="EF2-ER-Q6h" secondAttribute="trailing" constant="16" id="EB2-VT-a1g"/>
@@ -579,27 +483,27 @@
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="rcS-nL-IAO" secondAttribute="bottom" constant="12" id="JPm-Iq-0ld"/>
+                                        <constraint firstAttribute="bottom" secondItem="rcS-nL-IAO" secondAttribute="bottom" constant="24" id="JPm-Iq-0ld"/>
                                         <constraint firstItem="rcS-nL-IAO" firstAttribute="top" secondItem="bRs-XW-qzv" secondAttribute="top" id="O4a-lq-CQv"/>
                                         <constraint firstAttribute="trailing" secondItem="rcS-nL-IAO" secondAttribute="trailing" id="ecY-Dd-693"/>
                                         <constraint firstItem="rcS-nL-IAO" firstAttribute="leading" secondItem="bRs-XW-qzv" secondAttribute="leading" id="oHN-Ig-LSm"/>
                                     </constraints>
                                 </view>
                                 <view clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="eZl-C5-gSv" userLabel="StatisticsView">
-                                    <rect key="frame" x="0.0" y="670.5" width="414" height="100"/>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <rect key="frame" x="0.0" y="682.5" width="414" height="100"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="100" id="BpM-8d-yWh"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9cE-NC-A20" userLabel="Help">
-                                    <rect key="frame" x="0.0" y="770.5" width="414" height="153"/>
+                                    <rect key="frame" x="0.0" y="782.5" width="414" height="153"/>
                                     <subviews>
                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="co1-dK-1WU">
-                                            <rect key="frame" x="0.0" y="12" width="414" height="129"/>
+                                            <rect key="frame" x="0.0" y="24" width="414" height="117"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5t-Qr-RVi" userLabel="Help topics">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="129"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="117"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help topics" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jVQ-W4-wBu">
                                                             <rect key="frame" x="72" y="16" width="302" height="24"/>
@@ -625,7 +529,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you have issues or questions about the app." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPI-2b-Hmb">
-                                                            <rect key="frame" x="72" y="40" width="302" height="73"/>
+                                                            <rect key="frame" x="72" y="40" width="302" height="61"/>
                                                             <accessibility key="accessibilityConfiguration">
                                                                 <accessibilityTraits key="traits" none="YES"/>
                                                                 <bool key="isElement" value="NO"/>
@@ -666,7 +570,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </view>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <accessibility key="accessibilityConfiguration" label="Help topics. If you have issues or questions about the app.">
                                                         <accessibilityTraits key="traits" button="YES"/>
                                                         <bool key="isElement" value="YES"/>
@@ -721,12 +625,12 @@
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="co1-dK-1WU" secondAttribute="bottom" constant="12" id="4w8-R7-BDK"/>
                                         <constraint firstItem="co1-dK-1WU" firstAttribute="leading" secondItem="9cE-NC-A20" secondAttribute="leading" id="ZyR-zR-Hzk"/>
-                                        <constraint firstItem="co1-dK-1WU" firstAttribute="top" secondItem="9cE-NC-A20" secondAttribute="top" constant="12" id="gRj-Wk-s6U"/>
+                                        <constraint firstItem="co1-dK-1WU" firstAttribute="top" secondItem="9cE-NC-A20" secondAttribute="top" constant="24" id="gRj-Wk-s6U"/>
                                         <constraint firstAttribute="trailing" secondItem="co1-dK-1WU" secondAttribute="trailing" id="jMu-zb-CUh"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cN-DY-lc3" userLabel="Change language">
-                                    <rect key="frame" x="0.0" y="923.5" width="414" height="153"/>
+                                    <rect key="frame" x="0.0" y="935.5" width="414" height="153"/>
                                     <subviews>
                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bE9-gT-Hba">
                                             <rect key="frame" x="0.0" y="12" width="414" height="129"/>
@@ -799,7 +703,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </view>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <accessibility key="accessibilityConfiguration" label="Help topics. If you have issues or questions about the app.">
                                                         <accessibilityTraits key="traits" button="YES"/>
                                                         <bool key="isElement" value="YES"/>
@@ -859,7 +763,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vs9-rS-UOM" userLabel="Share CovidSafe">
-                                    <rect key="frame" x="0.0" y="1076.5" width="414" height="151"/>
+                                    <rect key="frame" x="0.0" y="1088.5" width="414" height="151"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RCa-zU-3Vo">
                                             <rect key="frame" x="0.0" y="12" width="414" height="127"/>
@@ -914,7 +818,7 @@
                                                             </constraints>
                                                         </imageView>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <accessibility key="accessibilityConfiguration" label="Share COVIDSafe. Invite others to help. Together, we're stronger.">
                                                         <accessibilityTraits key="traits" button="YES"/>
                                                         <bool key="isElement" value="YES"/>
@@ -970,7 +874,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JSe-D6-hyV" userLabel="Upload Data">
-                                    <rect key="frame" x="0.0" y="1227.5" width="414" height="165.5"/>
+                                    <rect key="frame" x="0.0" y="1239.5" width="414" height="165.5"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8pS-Df-p0U">
                                             <rect key="frame" x="0.0" y="12" width="414" height="141.5"/>
@@ -1090,7 +994,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZ2-CQ-dtQ" userLabel="Version View">
-                                    <rect key="frame" x="0.0" y="1393" width="414" height="56"/>
+                                    <rect key="frame" x="0.0" y="1405" width="414" height="56"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version number:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1w-Sl-OIH" userLabel="Version">
                                             <rect key="frame" x="16" y="12" width="382" height="20"/>
@@ -1124,6 +1028,7 @@
                     </constraints>
                 </scrollView>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="yMg-iM-Wi8"/>
             <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="A0e-eD-gwN" firstAttribute="leading" secondItem="yMg-iM-Wi8" secondAttribute="leading" id="6Ub-Yd-0kS"/>
@@ -1135,7 +1040,6 @@
                 <constraint firstItem="Lws-gT-pWp" firstAttribute="top" secondItem="yMg-iM-Wi8" secondAttribute="top" id="kmT-bg-yhK"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="yMg-iM-Wi8"/>
             <point key="canvasLocation" x="802.89855072463774" y="1050.6696428571429"/>
         </view>
     </objects>
@@ -1151,5 +1055,8 @@
         <image name="redcross" width="22" height="22"/>
         <image name="settings" width="24" height="24"/>
         <image name="small tick" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

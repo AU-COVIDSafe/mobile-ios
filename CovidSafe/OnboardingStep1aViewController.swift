@@ -48,7 +48,7 @@ class OnboardingStep1aViewController: UIViewController, UITextViewDelegate {
         privacyText.addLink(privacyPolicyUrl, enclosedIn: "*")
         privacyText.addLink(privacyPolicyUrl, enclosedIn: "*")
         privacyText.addLink(URLHelper.getHelpURL(), enclosedIn: "*")
-        privacyText.addLink("https://www.health.gov.au", enclosedIn: "*")
+        privacyText.addLink("https://covidsafe.gov.au", enclosedIn: "*")
         privacyText.addLink(privacyPolicyUrl, enclosedIn: "*")
     }
 

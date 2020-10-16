@@ -18,6 +18,7 @@
 "BluetoothON" = "Bluetooth®: ΕΝΕΡΓΟ";
 "change_language" = "Αλλάξτε γλώσσα";
 "change_language_content" = "Διαβάστε τον οδηγό για τη χρήση του COVIDSafe σε διαφορετική γλώσσα.";
+"collection_message" = "Η COVIDSafe συλλέγει τώρα διαγνωστικές πληροφορίες για να σας βοηθήσει να αντιμετωπίσετε προβλήματα με την εφαρμογή σας. *Μάθετε περισσότερα*";
 "consent_button" = "Συμφωνώ";
 /* Shared Consent Actions */
 "consent_call_for_action" = "Επιλέξτε «Συμφωνώ» για επιβεβαίωση της συγκατάθεσης.";
@@ -242,6 +243,7 @@
 "dialog_error_uploading_negative" = "Ακύρωση";
 "dialog_error_uploading_positive" = "Προσπαθήστε ξανά";
 "dialog_uploading_message" = "Τα στοιχεία σας αναρτίζονται στην COVIDSafe αυτή τη στιγμή. \n\nΜην κλείσετε την εφαρμογή.";
+"dismiss" = "Απόρριψη";
 "done_success" = "Ολοκλήρωση";
 "enter_number_button" = "Αποκτήστε PIN";
 "enter_number_content" = "Θα σας στείλουμε ένα 6ψήφιο PIN για να επαληθεύσετε τον αριθμό του κινητού σας.";
@@ -259,6 +261,7 @@
 "global_close" = "Κλείσετε";
 "global_double_tap" = "πατήστε δύο φορές για επεξεργασία";
 "global_OK" = "OK";
+"hide" = "Απόκρυψη";
 "home_app_permission_status_subtitle" = "Η COVIDSafe δε θα λειτουργήσει χωρίς τις σωστές ρυθμίσεις.";
 "home_app_permission_status_title" = "Ελέγξτε τις ρυθμίσεις σας";
 "home_data_uploaded_message" = "Βοηθήστε να σταματήσει η εξάπλωση του COVID-19 και παρακολουθείτε τα συμπτώματά σας.";
@@ -294,7 +297,7 @@
 "how_it_works_content" = "Τα σήματα Bluetooth® χρησιμοποιούνται για να προσδιορίσουν πότε βρίσκεστε κοντά σε άλλο χρήστη της COVIDSafe.\n\nΗ κάθε στενή επαφή σας με άλλους χρήστες της COVIDSafe σημειώνεται για να δημιουργεί στενά στοιχεία επικοινωνίας. Οι πληροφορίες είναι κρυπτογραφημένες και αποθηκεύονται μόνο στο τηλέφωνό σας.\n\nΕάν διαγνωστείτε θετικά στην COVID-19 ως χρήστης της COVIDSafe, υπεύθυνος υγείας της Πολιτείας ή της Επικράτειάς σας θα επικοινωνήσει μαζί σας. Θα βοηθήσει με την εθελοντική ανάρτηση των προσωπικών στοιχείων επικοινωνίας σας σε ένα εξαιρετικά ασφαλές σύστημα αποθήκευσης πληροφοριών. \n\nΟι υπεύθυνοι υγείας της Πολιτείας ή της Επικράτειάς σας μπορούν επίσης να επικοινωνήσουν μαζί σας εάν ήρθατε σε στενή επαφή με άλλο χρήστη της COVIDSafe που επίσης διαγνώσθηκε θετικά.\n\nΓια περισσότερες πληροφορίες, πηγαίνετε στη σελίδα *Θέματα Βοήθειας*.";
 /* OnBoarding How it works */
 "how_it_works_headline" = "Πώς λειτουργεί η COVIDSafe";
-"improve" = "";
+"improve" = "Βελτιώστε την απόδοση της εφαρμογής";
 "improve_heading" = "Βελτιώστε την απόδοση της COVIDSafe";
 "internet_connection_content" = "Συνδεθείτε στο Διαδίκτυο για να βεβαιωθείτε ότι λαμβάνετε ειδοποιήσεις για ζητήματα και ανανεώσεις.";
 "internet_connection_heading" = "Δεν υπάρχει σύνδεση στο διαδίκτυο";
@@ -310,7 +313,9 @@
 "IntroLabel" = "Βοηθήστε να σταματήσουμε την εξάπλωση \nκαι σώστε ζωές.";
 "invalid_australian_phone_number_error_prompt" = "Οι αριθμοί κινητής τηλεφωνίας της Αυστραλίας περιέχουν έως 10 ψηφία.";
 "invalid_norfolk_island_phone_number_error_prompt" = "Οι αριθμοί κινητής τηλεφωνίας στο νησί Νόρφολκ περιέχουν 5 έως 6 ψηφία.";
-"loading_numbers" = "";
+"jwt_description" = "Υπάρχει ένα πρόβλημα με τα στοιχεία εγγραφής σας.";
+"jwt_heading" = "Παρακαλούμε εγγραφείτε ξανά";
+"loading_numbers" = "Φόρτωση τελευταίων αριθμών";
 /* Splash Screen */
 "migration_in_progress" = "Η ενημέρωση της COVIDSafe συνεχίζεται. \n\nΒεβαιωθείτε ότι το τηλέφωνό σας δεν είναι απενεργοποιημένο έως ότου ολοκληρωθεί η ενημέρωση.";
 "national_numbers" = "Στατιστικές για όλη την Αυστραλία";
@@ -331,9 +336,9 @@
 "NotificationsDisabledBlurb" = "Δε θα λάβετε ειδοποίηση εάν η COVIDSafe δεν είναι ενεργή. \n Αλλαγή στις ρυθμίσεις ειδοποιήσεων";
 /* Figma page iOS Screens (05/06) */
 "NotificationsEnabledBlurb" = "Θα λάβετε ειδοποίηση εάν η COVIDSafe δεν είναι ενεργή. \n Αλλάξετε τις ρυθμίσεις ειδοποιήσεων";
-"numbers_error" = "";
-"numbers_no_internet" = "";
-"numbers_refresh" = "";
+"numbers_error" = "Δεν είναι δυνατός ο έλεγχος για ενημερωμένους αριθμούς.";
+"numbers_no_internet" = "Συνδεθείτε στο Διαδίκτυο για να βεβαιωθείτε ότι λαμβάνετε ενημερωμένους αριθμούς.";
+"numbers_refresh" = "Ανανεώστε τώρα";
 "options_for_australia" = "Επιλογές για την Αυστραλία";
 "permission_button" = "Προχωρήστε";
 /* Figma page iOS Screens (05/06) */
@@ -372,6 +377,7 @@
 "queensland" = "Κουίνσλαντ";
 "recovered" = "Σύνολο ασθενών που ανάρρωσαν";
 "registration_consent_content" = "Συναινώ στον Οργανισμό Ψηφιακού Μετασχηματισμού ως διαχειριστή της αποθήκευσης δεδομένων, σύμφωνα με τη νομική απόφαση του Γενικού Γραμματέα Υγείας της Αυστραλίας που συλλέγει:";
+"registration_consent_diagnostic" = "Πληροφορίες για να διασφαλιστεί ότι η COVIDSafe λειτουργεί σωστά στη συσκευή μου.";
 "registration_consent_first_paragraph" = "Τα στοιχεία εγγραφής μου.";
 /* Onboarding Registration Consent */
 "registration_consent_headline" = "Συναίνεση εγγραφής";
@@ -380,8 +386,9 @@
 "select_country_or_region" = "Επιλέξτε χώρα ή περιοχή";
 /* Figma page Android Screens (05/06) */
 "Select_country_or_region_headline" = "Επιλέξτε χώρα ή περιοχή";
-"settings" = "";
+"settings" = "Ρυθμίσεις";
 "share_this_app_content" = "Ελάτε μαζί μου να σταματήσουμε την εξάπλωση του COVID-19! Κατεβάστε την COVIDSafe, μια εφαρμογή της Αυστραλιανής Κυβέρνησης. # COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
+"show" = "Εμφάνιση";
 "south_australia" = "Νότια Αυστραλία";
 "stepCounter" = "Βήμα %d του %d";
 "support" = "Υποστήριξη";
@@ -418,6 +425,7 @@
 "upload_step_verify_pin_header" = "Αναρτήστε τα στοιχεία σας";
 "upload_step_verify_pin_sub_header" = "Ένας υπάλληλος υγείας της Πολιτείας ή της Επικράτειάς σας θα στείλει ένα PIN στη συσκευή σας μέσω μηνύματος. Εισάγετέ το παρακάτω για να αναρτήσετε τα στοιχεία σας.";
 "us_consent_button" = "Συμφωνώ";
+"us_registration_consent_diagnostic" = "Πληροφορίες για να διασφαλιστεί ότι η COVIDSafe λειτουργεί σωστά στη συσκευή μου.";
 "victoria" = "Βικτώρια";
 "western_australia" = "Δυτική Αυστραλία";
 "wrong_ping_number" = "Εισήχθη λάθος PIN";

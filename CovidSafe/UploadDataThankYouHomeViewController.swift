@@ -19,6 +19,6 @@ final class UploadDataThankYouHomeViewController: UIViewController {
     }
 
     @IBAction func doneBtnTapped(_ sender: UIButton) {
-        dismiss(animated: true)
+        navigationController?.popToRootViewController(animated: true)
     }
 }

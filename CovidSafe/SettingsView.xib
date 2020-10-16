@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -80,7 +81,7 @@
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZp-27-AWI">
-                                    <rect key="frame" x="16" y="70" width="120.5" height="41"/>
+                                    <rect key="frame" x="16" y="70" width="121" height="41"/>
                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -126,7 +127,7 @@
                                                                             </userDefinedRuntimeAttributes>
                                                                         </label>
                                                                     </subviews>
-                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                     <constraints>
                                                                         <constraint firstItem="Oci-wt-fut" firstAttribute="leading" secondItem="Tjs-7H-YLp" secondAttribute="leading" constant="16" id="9qE-9C-gAu"/>
                                                                         <constraint firstAttribute="trailing" secondItem="Oci-wt-fut" secondAttribute="trailing" constant="16" id="CeX-9T-RKg"/>
@@ -149,7 +150,7 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="36"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No internet connection" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7t-Sn-iLm">
-                                                                            <rect key="frame" x="16" y="16" width="198" height="0.0"/>
+                                                                            <rect key="frame" x="16" y="16" width="200" height="0.0"/>
                                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                             <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
@@ -181,7 +182,7 @@
                                                                             </userDefinedRuntimeAttributes>
                                                                         </label>
                                                                     </subviews>
-                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="trailing" secondItem="TaR-nF-icP" secondAttribute="trailing" constant="6" id="E7V-kF-nta"/>
                                                                         <constraint firstItem="s7t-Sn-iLm" firstAttribute="leading" secondItem="nm4-W8-yfz" secondAttribute="leading" constant="16" id="GFy-Uc-2jx"/>
@@ -240,7 +241,7 @@
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
-                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                     <constraints>
                                                                         <constraint firstItem="K8R-1I-GXu" firstAttribute="leading" secondItem="2Uq-lN-t0Y" secondAttribute="leading" constant="16" id="4bq-7J-B5x"/>
                                                                         <constraint firstAttribute="trailing" secondItem="OCr-fR-PSi" secondAttribute="trailing" constant="16" id="9i5-Mm-mL6"/>
@@ -393,7 +394,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <accessibilityTraits key="traits" link="YES"/>
                                                         <bool key="isElement" value="YES"/>
@@ -523,7 +524,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </view>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <accessibility key="accessibilityConfiguration" label="Help topics. If you have issues or questions about the app.">
                                                         <accessibilityTraits key="traits" button="YES"/>
                                                         <bool key="isElement" value="YES"/>
@@ -600,6 +601,9 @@
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="support"/>
+                                                            </userDefinedRuntimeAttributes>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChevronRight" translatesAutoresizingMaskIntoConstraints="NO" id="Pfd-lj-r1k">
                                                             <rect key="frame" x="382" y="16" width="24" height="24"/>
@@ -620,6 +624,9 @@
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="support_content"/>
+                                                            </userDefinedRuntimeAttributes>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujZ-Re-wBC">
                                                             <rect key="frame" x="16" y="16" width="40" height="40"/>
@@ -650,7 +657,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </view>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <accessibility key="accessibilityConfiguration" label="Help topics. If you have issues or questions about the app.">
                                                         <accessibilityTraits key="traits" button="YES"/>
                                                         <bool key="isElement" value="YES"/>
@@ -668,6 +675,9 @@
                                                         <constraint firstItem="8L3-Mj-r6x" firstAttribute="top" secondItem="OaS-gp-jFt" secondAttribute="top" constant="16" id="swV-KH-uDW"/>
                                                         <constraint firstAttribute="bottom" secondItem="DGq-gH-3wa" secondAttribute="bottom" constant="16" id="v4w-4g-BMi"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="Support_VOLabel"/>
+                                                    </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <outletCollection property="gestureRecognizers" destination="hgQ-bq-uf6" appends="YES" id="gxA-an-nML"/>
                                                     </connections>
@@ -762,7 +772,7 @@
                                                             </constraints>
                                                         </imageView>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <accessibility key="accessibilityConfiguration" label="Share COVIDSafe. Invite others to help. Together, we're stronger.">
                                                         <accessibilityTraits key="traits" button="YES"/>
                                                         <bool key="isElement" value="YES"/>
@@ -873,7 +883,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <accessibilityTraits key="traits" button="YES"/>
                                                         <bool key="isElement" value="YES"/>
@@ -945,7 +955,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <accessibilityTraits key="traits" button="YES"/>
                                                         <bool key="isElement" value="YES"/>
@@ -1039,6 +1049,7 @@
                     </constraints>
                 </scrollView>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="yMg-iM-Wi8"/>
             <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="yMg-iM-Wi8" firstAttribute="bottom" secondItem="Lws-gT-pWp" secondAttribute="bottom" id="7ha-Sn-bjS"/>
@@ -1050,7 +1061,6 @@
                 <constraint firstItem="Toa-Nz-phA" firstAttribute="top" secondItem="eRJ-sP-D5g" secondAttribute="top" id="yYO-ht-dbf"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="yMg-iM-Wi8"/>
             <point key="canvasLocation" x="834.78260869565224" y="837.05357142857144"/>
         </view>
         <tapGestureRecognizer id="zAK-Wn-nIg" userLabel="ShareTapped">
@@ -1070,5 +1080,8 @@
         <image name="question-mark" width="13" height="20"/>
         <image name="redcross" width="22" height="22"/>
         <image name="small tick" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

@@ -159,4 +159,8 @@ final class InfoViewController: UIViewController {
         messagesAPILastDateLabel.text = "-"
         messagesAPILastVersionLabel.text = "-"
     }
+    
+    @IBAction func resetDisclaimerUpdateMessage(_ sender: Any) {
+        UserDefaults.standard.removeObject(forKey: "latestPolicyUpdateVersionShown")
+    }
 }

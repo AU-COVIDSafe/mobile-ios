@@ -10,6 +10,8 @@ import Lottie
 
 class CovidStatisticsViewController: UITableViewController {
     
+    private let showHideStatisticsKey = "showHideStatisticsKey"
+    
     private let heartImage = UIImage(named: "heart")
     private let virusMoleculeImage = UIImage(named: "virus-molecule")
     private let trendUpImage = UIImage(named: "trending-up")
@@ -18,6 +20,16 @@ class CovidStatisticsViewController: UITableViewController {
     private var showError: Bool = false
     private var showInternetError: Bool = false
     private var showRefresh: Bool = false
+    lazy var showStatistics: Bool = {
+        guard let value = UserDefaults.standard.value(forKey: showHideStatisticsKey) as? Bool else {
+            return true
+        }
+        return value
+    }(){
+        didSet {
+            UserDefaults.standard.set(showStatistics, forKey: showHideStatisticsKey)
+        }
+    }
     
     private var statisticSections: [[StatisticRowModel]] = []
     
@@ -163,15 +175,24 @@ class CovidStatisticsViewController: UITableViewController {
         
         if section == 0 {
             let headerView = tableView.dequeueReusableCell(withIdentifier: "MainStatisticsHeader") as! MainStatisticsHeaderViewCell
-            headerView.titleLabel.font = UIFont.preferredFont(for: .title1, weight: .semibold)
+            headerView.titleLabel.font = UIFont.preferredFont(for: .title3, weight: .semibold)
             headerView.statisticsDelegate = statisticsDelegate
+            headerView.statisticsTableDelegate = self
             
-            if let updateDate = statisticsUpdatedDate {
+            let hideShowLabel = showStatistics ? "hide".localizedString() : "show".localizedString()
+            headerView.hideShowButton.setTitle(hideShowLabel, for: .normal)
+            
+            
+            if let updateDate = statisticsUpdatedDate, showStatistics {
                 let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "dd MMMM yyyy h a 'AEST'"
-                headerView.dateLabel.text = dateFormatter.string(from: updateDate)
+                dateFormatter.dateStyle = .medium
+                dateFormatter.timeStyle = .short
+                headerView.dateLabelContainer.isHidden = false
+                headerView.dateLabelDivider.isHidden = false
+                headerView.dateLabel.text = "\(dateFormatter.string(from: updateDate)) AEST"
             } else {
-                headerView.dateLabel.isHidden = true
+                headerView.dateLabelContainer.isHidden = true
+                headerView.dateLabelDivider.isHidden = true
             }
             
             if showInternetError {
@@ -180,8 +201,8 @@ class CovidStatisticsViewController: UITableViewController {
                 headerView.errorLabel.text = "numbers_error".localizedString()
             }
             
-            headerView.errorLabel.isHidden = !showError
-            headerView.refreshViewContainer.isHidden = !showRefresh
+            headerView.errorLabel.isHidden = !showError || !showStatistics
+            headerView.refreshViewContainer.isHidden = !showRefresh || !showStatistics
             return headerView
         }
         
@@ -199,8 +220,15 @@ class CovidStatisticsViewController: UITableViewController {
         return -1 // automatic
     }
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    override func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
         if isLoading {
+            return 0 // no header for section
+        }
+        return 53
+    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        if isLoading || !showStatistics {
             return 1
         }
         return statisticSections.count
@@ -210,12 +238,27 @@ class CovidStatisticsViewController: UITableViewController {
         if isLoading {
             return 1
         }
+        if !showStatistics {
+            return 0
+        }
         return statisticSections[section].count
     }
     
     override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if let loadingCell = cell as? LoadingViewCell {
             loadingCell.stopAnimation()
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        UIView.performWithoutAnimation {
+            view.layoutIfNeeded()
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        UIView.performWithoutAnimation {
+            cell.layoutIfNeeded()
         }
     }
     
@@ -267,6 +310,23 @@ class CovidStatisticsViewController: UITableViewController {
     
 }
 
+// MARK: Statistics Table Delegate Implementation
+
+extension CovidStatisticsViewController: StatisticsTableDelegate {
+    func toggleDisplayStatistics() {
+        showStatistics = !showStatistics
+        
+        if showStatistics && statisticSections.count == 0 {
+            statisticsDelegate?.refreshStatistics()
+        } else {
+            UIView.transition(with: tableView,
+                              duration: 0.3,
+                              options: .transitionCrossDissolve,
+                              animations: { self.reloadTable() })
+        }
+    }
+}
+
 // MARK: Table view cells
 
 class StatDetailedViewCell: UITableViewCell {
@@ -285,14 +345,22 @@ class StatDetailedViewCell: UITableViewCell {
 class MainStatisticsHeaderViewCell: UITableViewCell {
     
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var dateLabelContainer: UIView!
+    @IBOutlet weak var dateLabelDivider: UIView!
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var refreshViewContainer: UIView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var hideShowButton: UIButton!
     
     var statisticsDelegate: StatisticsDelegate?
+    var statisticsTableDelegate: StatisticsTableDelegate?
     
     @IBAction func refreshButtonTapped(_ sender: Any) {
         statisticsDelegate?.refreshStatistics()
+    }
+    
+    @IBAction func showHideButtonTapped(_ sender: Any) {
+        statisticsTableDelegate?.toggleDisplayStatistics()
     }
 }
 
@@ -319,6 +387,10 @@ class LoadingViewCell: UITableViewCell {
 }
 
 // MARK: Statistics delegate
+
+protocol StatisticsTableDelegate {
+    func toggleDisplayStatistics()
+}
 
 protocol StatisticsDelegate {
     func refreshStatistics()

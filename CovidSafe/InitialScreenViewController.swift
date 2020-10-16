@@ -88,12 +88,9 @@ class InitialScreenViewController: UIViewController, EncounterDBMigrationProgres
         } else if !UserDefaults.standard.bool(forKey: "allowedPermissions") {
             self.performSegue(withIdentifier: "initialScreenToAllowPermissionsSegue", sender: self)
         } else {
-            
             DispatchQueue.main.async {
                 let homeVC = HomeViewController(nibName: "HomeView", bundle: nil)
-                homeVC.modalPresentationStyle = .overFullScreen
-                homeVC.modalTransitionStyle = .coverVertical
-                self.present(homeVC, animated: true, completion: nil)
+                self.navigationController?.setViewControllers([homeVC], animated: true)
             }
         }
     }

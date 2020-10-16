@@ -80,10 +80,14 @@ class OTPViewController: UIViewController, RegistrationHandler {
         let pinIssuesString = NSLocalizedString("ReceivePinIssue", comment: "Text for pin receive issues button")
         let pinIssuesText = NSAttributedString(string: pinIssuesString, attributes: buttonAtt)
         self.pinIssuesButton?.setAttributedTitle(pinIssuesText, for: .normal)
-        stepCounterLabel.text = String.localizedStringWithFormat( "stepCounter".localizedString(),
-            3,
-            UserDefaults.standard.bool(forKey: "allowedPermissions") ? 3 : 4
-        )
+        if reauthenticating {
+            stepCounterLabel.text = String.localizedStringWithFormat( "stepCounter".localizedString(), 2, 2)
+        } else {
+            stepCounterLabel.text = String.localizedStringWithFormat( "stepCounter".localizedString(),
+                                                                      3,
+                                                                      UserDefaults.standard.bool(forKey: "allowedPermissions") ? 3 : 4
+            )
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -143,6 +147,7 @@ class OTPViewController: UIViewController, RegistrationHandler {
             }
         } else {
             timer?.invalidate()
+            resendCodeButton?.isHidden = false
             expiredMessageLabel?.text = "CodeHasExpired".localizedString()
             expiredMessageLabel?.textColor = UIColor(0xA31919)
             
@@ -173,6 +178,7 @@ class OTPViewController: UIViewController, RegistrationHandler {
             UserDefaults.standard.set(session, forKey: "session")
         }
         startTimer()
+        resendCodeButton?.isHidden = true
     }
     
     @IBAction func issuesWithPinTapped(_ sender: UIButton) {
@@ -273,9 +279,7 @@ class OTPViewController: UIViewController, RegistrationHandler {
                 } else {
                     DispatchQueue.main.async {
                         let homeVC = HomeViewController(nibName: "HomeView", bundle: nil)
-                        homeVC.modalPresentationStyle = .overFullScreen
-                        homeVC.modalTransitionStyle = .coverVertical
-                        self.present(homeVC, animated: true, completion: nil)
+                        self.navigationController?.setViewControllers([homeVC], animated: true)
                     }
                 }
             }

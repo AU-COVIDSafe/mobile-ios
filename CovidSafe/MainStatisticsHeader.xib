@@ -1,50 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MainStatisticsHeaderViewCell" customModule="COVIDSafe" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="141"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" verticalHuggingPriority="150" translatesAutoresizingMaskIntoConstraints="NO" id="LNU-3k-bH8">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="139"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="141"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="200" verticalCompressionResistancePriority="250" axis="vertical" distribution="equalCentering" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="3KU-hY-cXW">
-                            <rect key="frame" x="16" y="16" width="382" height="108"/>
+                            <rect key="frame" x="16" y="10" width="382" height="121"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="National Numbers" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUK-tN-ZWJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="382" height="26.5"/>
-                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="national_numbers"/>
-                                    </userDefinedRuntimeAttributes>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="19 August 2020 at 9pm AEST" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szv-Ly-NAe">
-                                    <rect key="frame" x="0.0" y="32.5" width="382" height="19.5"/>
-                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yiG-0H-5h8">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="32"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="200" horizontalCompressionResistancePriority="200" text="National Numbers" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUK-tN-ZWJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="332" height="32"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="national_numbers"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIZ-FU-gPZ" userLabel="RefreshNow">
+                                            <rect key="frame" x="332" y="0.0" width="50" height="32"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="i77-4x-1qg"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                            <state key="normal" title="Hide">
+                                                <color key="titleColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="showHideButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="T32-je-Y3z"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQV-Ve-FBH" userLabel="I">
+                                    <rect key="frame" x="0.0" y="38" width="382" height="4"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Bt-uv-S3P">
+                                            <rect key="frame" x="-16" y="3" width="414" height="1"/>
+                                            <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="leE-sm-vmd"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="5Bt-uv-S3P" firstAttribute="top" secondItem="HQV-Ve-FBH" secondAttribute="top" constant="3" id="T8m-7X-0kN"/>
+                                        <constraint firstAttribute="trailing" secondItem="5Bt-uv-S3P" secondAttribute="trailing" constant="-16" id="WcC-wS-z6L"/>
+                                        <constraint firstItem="5Bt-uv-S3P" firstAttribute="leading" secondItem="HQV-Ve-FBH" secondAttribute="leading" constant="-16" id="eqB-f8-3Um"/>
+                                        <constraint firstAttribute="bottom" secondItem="5Bt-uv-S3P" secondAttribute="bottom" id="quf-kd-WvG"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Buq-AE-Tec">
+                                    <rect key="frame" x="0.0" y="48" width="382" height="37"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="19 August 2020 at 9pm AEST" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szv-Ly-NAe">
+                                            <rect key="frame" x="0.0" y="9" width="382" height="28"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Szv-Ly-NAe" secondAttribute="bottom" id="KG5-C7-aEy"/>
+                                        <constraint firstItem="Szv-Ly-NAe" firstAttribute="leading" secondItem="Buq-AE-Tec" secondAttribute="leading" id="YDf-qt-KCT"/>
+                                        <constraint firstAttribute="trailing" secondItem="Szv-Ly-NAe" secondAttribute="trailing" id="bUk-6J-Ayy"/>
+                                        <constraint firstItem="Szv-Ly-NAe" firstAttribute="top" secondItem="Buq-AE-Tec" secondAttribute="top" constant="9" id="xCx-2F-2Sf"/>
+                                    </constraints>
+                                </view>
                                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Connect to the internet to ensure you get updated numbers." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJd-vH-SuQ">
-                                    <rect key="frame" x="0.0" y="55" width="382" height="0.0"/>
+                                    <rect key="frame" x="0.0" y="88" width="382" height="0.0"/>
                                     <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                     <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yGy-cF-2ss">
-                                    <rect key="frame" x="0.0" y="58" width="382" height="50"/>
+                                    <rect key="frame" x="0.0" y="91" width="382" height="30"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ye-oo-sh0" userLabel="RefreshNow">
-                                            <rect key="frame" x="0.0" y="0.0" width="87" height="50"/>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ye-oo-sh0" userLabel="RefreshNow">
+                                            <rect key="frame" x="0.0" y="0.0" width="87" height="30"/>
                                             <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="15"/>
                                             <state key="normal" title="Refresh Now">
                                                 <color key="titleColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -57,7 +107,7 @@
                                             </connections>
                                         </button>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="0ye-oo-sh0" secondAttribute="bottom" id="QVj-eL-Os0"/>
                                         <constraint firstItem="0ye-oo-sh0" firstAttribute="leading" secondItem="yGy-cF-2ss" secondAttribute="leading" id="kyg-C6-oG1"/>
@@ -67,18 +117,18 @@
                             </subviews>
                         </stackView>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="3KU-hY-cXW" secondAttribute="bottom" constant="15" id="8HZ-16-M66"/>
+                        <constraint firstAttribute="bottom" secondItem="3KU-hY-cXW" secondAttribute="bottom" constant="10" id="8HZ-16-M66"/>
                         <constraint firstAttribute="trailing" secondItem="3KU-hY-cXW" secondAttribute="trailing" constant="16" id="DWd-Sg-YC5"/>
                         <constraint firstItem="3KU-hY-cXW" firstAttribute="leading" secondItem="LNU-3k-bH8" secondAttribute="leading" constant="16" id="ZPK-gK-ayb"/>
-                        <constraint firstItem="3KU-hY-cXW" firstAttribute="top" secondItem="LNU-3k-bH8" secondAttribute="top" constant="16" id="fbb-8s-Hch"/>
+                        <constraint firstItem="3KU-hY-cXW" firstAttribute="top" secondItem="LNU-3k-bH8" secondAttribute="top" constant="10" id="fbb-8s-Hch"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="LNU-3k-bH8" secondAttribute="bottom" constant="1" id="1ky-wJ-WLp"/>
+                <constraint firstAttribute="bottom" secondItem="LNU-3k-bH8" secondAttribute="bottom" id="1ky-wJ-WLp"/>
                 <constraint firstAttribute="trailing" secondItem="LNU-3k-bH8" secondAttribute="trailing" id="Gyk-V9-IkT"/>
                 <constraint firstItem="LNU-3k-bH8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MbS-Uc-ecX"/>
                 <constraint firstItem="LNU-3k-bH8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kYn-fV-Em1"/>
@@ -88,11 +138,19 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="dateLabel" destination="Szv-Ly-NAe" id="K1g-54-6dB"/>
+                <outlet property="dateLabelContainer" destination="Buq-AE-Tec" id="JHf-1C-JoC"/>
+                <outlet property="dateLabelDivider" destination="HQV-Ve-FBH" id="0lR-kj-lSQ"/>
                 <outlet property="errorLabel" destination="hJd-vH-SuQ" id="cXx-zR-cHb"/>
+                <outlet property="hideShowButton" destination="YIZ-FU-gPZ" id="6fn-pc-fYr"/>
                 <outlet property="refreshViewContainer" destination="yGy-cF-2ss" id="4tz-HJ-nkf"/>
                 <outlet property="titleLabel" destination="LUK-tN-ZWJ" id="FjT-za-hlQ"/>
             </connections>
-            <point key="canvasLocation" x="140.57971014492756" y="-99.776785714285708"/>
+            <point key="canvasLocation" x="140.57971014492756" y="-95.758928571428569"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
