@@ -18,6 +18,7 @@
 "BluetoothON" = "Bluetooth®: AÇIK";
 "change_language" = "Dili değiştir";
 "change_language_content" = "COVIDSafe'i farklı bir dilde kullanmak için ilgili kılavuzu okuyunuz.";
+"collection_message" = "COVIDSafe artık uygulamanızla ilgili sorunları gidermenize yardımcı olmak için tanılama bilgileri toplamaktadır. *Daha fazla bilgi edin*";
 "consent_button" = "Kabul ediyorum";
 /* Shared Consent Actions */
 "consent_call_for_action" = "Rızanızı onaylamak için 'Kabul ediyorum'u seçiniz.";
@@ -233,8 +234,8 @@
 "country_region_name_zm" = "Zambiya";
 "country_region_name_zw" = "Zimbabve";
 "data_privacy_button" = "Sonraki";
-"data_privacy_content" = "COVIDSafe'a kaydolmadan önce *COVIDSafe gizlilik ilkesini* okumanız önemlidir. \n\n16 yaşından küçükseniz, ebeveyniniz/veliniz de *gizlilik ilkesini* okumalıdır. \n\nCOVIDSafe kullanımı tamamen isteğe bağlıdır. Uygulamayı istediğiniz zaman yükleyebilir veya silebilirsiniz. COVIDSafe'i silerseniz *bilgilerinizin güvenli sunucudan silinmesini de* isteyebilirsiniz. \n\nCOVIDSafe'e kaydolmak için bir ad (veya takma ad), cep telefonu numarası, yaş aralığı ve posta kodu girmeniz gerekir. \n\nKayıt olurken gönderdiğiniz bilgiler ve COVIDSafe kullanımınızla ilgili bilgiler yüksek düzeyde güvenli bir sunucuda toplanacak ve saklanacaktır. \n\nCOVIDSafe konum bilgilerinizi toplamaz. \n\nCOVIDSafe temas saatini, temas ettiğiniz diğer COVIDSafe kullanıcılarının gizli kimlik kodlarını, Bluetooth® sinyal gücünü ve diğer kullanıcıların telefon modellerini cihazınıza kaydeder. \n\nTemas ettiğiniz diğer COVIDSafe kullanıcıları da gizli  kimlik kodunuzu, sizinle temas tarih ve saatini, Bluetooth® sinyal gücünü ve telefon modelinizi kendi cihazlarında kaydedecektir. \n\nBaşka bir kullanıcının COVID-19 testinin pozitif çıkması durumunda kendi iletişim bilgilerini sisteme yükleyebilir ve bir eyalet veya bölge sağlık yetkilisi temas takibi amacıyla sizinle iletişime geçebilir. \n\nKayıt bilgileriniz yalnızca temas takibi ve COVIDSafe'in düzgün ve yasalara uygun çalışması için kullanılacak ya da açıklanacaktır. \n\nDaha fazla bilgiyi *Avustralya Hükümeti Sağlık Bakanlığı* web sitesinde bulabilirsiniz. \n\nBilgileriniz ve bu bilgilerin nasıl işleneceği ve paylaşılacağına dair haklarınızla ilgili daha fazla bilgi için COVIDSafe *gizlilik ilkesine* bakınız.";
-"data_privacy_content_VO" = "COVIDSafe'a kaydolmadan önce COVIDSafe gizlilik ilkesini okumanız önemlidir. \n\n16 yaşından küçükseniz, ebeveyniniz/veliniz de gizlilik ilkesini okumalıdır. \n\nCOVIDSafe kullanımı tamamen isteğe bağlıdır. Uygulamayı istediğiniz zaman yükleyebilir veya silebilirsiniz. COVIDSafe'i silerseniz bilgilerinizin güvenli sunucudan silinmesini de isteyebilirsiniz. \n\nCOVIDSafe'e kaydolmak için bir ad (veya takma ad), cep telefonu numarası, yaş aralığı ve posta kodu girmeniz gerekir. \n\nKayıt olurken gönderdiğiniz bilgiler ve COVIDSafe kullanımınızla ilgili bilgiler yüksek düzeyde güvenli bir sunucuda toplanacak ve saklanacaktır. \n\nCOVIDSafe konum bilgilerinizi toplamaz. \n\nCOVIDSafe temas saatini, temas ettiğiniz diğer COVIDSafe kullanıcılarının anonim kimlik kodlarını, Bluetooth sinyal gücünü ve diğer kullanıcıların telefon modellerini cihazınıza kaydeder. \n\nTemas ettiğiniz diğer COVIDSafe kullanıcıları da anonim kimlik kodunuzu, sizinle temas tarih ve saatini, Bluetooth sinyal gücünü ve telefon modelinizi kendi cihazlarında kaydedecektir. \n\nBaşka bir kullanıcının COVID-19 testi pozitif çıkması halinde  iletişim bilgilerini sisteme yükleyebilir ve bu durumda bir eyalet veya bölge sağlık yetkilisi temas takibi amacıyla sizinle iletişim kurabilir. \n\nKayıt bilgileriniz yalnızca temas takibi ve COVIDSafe'in düzgün ve yasalara uygun çalışması için kullanılacak ya da açıklanacaktır. \n\nDaha fazla bilgiyi Avustralya Hükümeti Sağlık Bakanlığı web sitesinde bulabilirsiniz. \n\nBilgileriniz ve bu bilgilerin nasıl işleneceği ve paylaşılacağına dair haklarınızla ilgili daha fazla bilgi için COVIDSafe gizlilik ilkesine bakınız.";
+"data_privacy_content" = "COVIDSafe'a kaydolmadan önce COVIDSafe *gizlilik ilkesini* okumanız önemlidir. \n\n16 yaşından küçükseniz, ebeveyniniz/veliniz de *gizlilik ilkesini* okumalıdır. \n\nCOVIDSafe kullanımı tamamen isteğe bağlıdır. Uygulamayı istediğiniz zaman yükleyebilir veya silebilirsiniz. COVIDSafe'i silerseniz *bilgilerinizin güvenli sunucudan silinmesini de isteyebilirsiniz*. \n\nCOVIDSafe'e kaydolmak için bir ad (veya takma ad), cep telefonu numarası, yaş aralığı ve posta kodu girmeniz gerekir. \n\nKayıt olurken gönderdiğiniz bilgiler ve COVIDSafe kullanımınızla ilgili bilgiler yüksek düzeyde güvenli bir sunucuda toplanacak ve saklanacaktır.\n\nCOVIDSafe'in cihazınızda düzgün çalıştığından emin olmak için de bilgiler toplanmaktadır. Buna işletim sisteminiz, yüklediğiniz uygulamanın sürümü, cihazınızda ayarlanmış olan dil, Bluetooth'un çalışıp çalışmadığı ve uygulamanızın son yedi günde herhangi bir karşılaşma kaydedip kaydetmediği dahildir.\n\nCOVIDSafe konum bilgilerinizi toplamaz. \n\nCOVIDSafe temas tarihini ve saatini, temas ettiğiniz diğer COVIDSafe kullanıcılarının gizli kimlik kodunu, Bluetooth sinyal gücünü ve diğer kullanıcıların telefon modelini cihazınıza kaydeder. \n\nTemas ettiğiniz diğer COVIDSafe kullanıcıları gizli kimlik kodunuzu, sizinle temas tarih ve saatini, Bluetooth sinyal gücünü ve telefon modelinizi kendi cihazlarında kaydedecektir. \n\nBaşka bir kullanıcının COVID-19 testi pozitif çıkması halinde kendi iletişim bilgilerini sisteme yükleyebilir ve bu durumda bir eyalet veya bölge sağlık yetkilisi temas takibi amacıyla sizinle iletişim kurabilir. \n\nKayıt bilgileriniz yalnızca temas takibi ve COVIDSafe'in düzgün ve yasalara uygun çalışması için kullanılacak ya da açıklanacaktır. \n\nDaha fazla bilgiyi *covidsafe.gov.au* web sitesinde bulabilirsiniz. \n\nBilgileriniz ve bu bilgilerin nasıl işleneceği ve paylaşılacağına dair haklarınızla ilgili daha fazla bilgi için COVIDSafe *gizlilik ilkesine* bakın.";
+"data_privacy_content_VO" = "COVIDSafe'a kaydolmadan önce COVIDSafe gizlilik ilkesini okumanız önemlidir. \n\n16 yaşından küçükseniz, ebeveyniniz/veliniz de gizlilik ilkesini okumalıdır. \n\nCOVIDSafe kullanımı tamamen isteğe bağlıdır. Uygulamayı istediğiniz zaman yükleyebilir veya silebilirsiniz. COVIDSafe'i silerseniz bilgilerinizin güvenli sunucudan silinmesini de isteyebilirsiniz. \n\nCOVIDSafe'e kaydolmak için bir ad (veya takma ad), cep telefonu numarası, yaş aralığı ve posta kodu girmeniz gerekir. \n\nKayıt olurken gönderdiğiniz bilgiler ve COVIDSafe kullanımınızla ilgili bilgiler yüksek düzeyde güvenli bir sunucuda toplanacak ve saklanacaktır.\n\nCOVIDSafe'in cihazınızda düzgün çalıştığından emin olmak için de bilgiler toplanmaktadır. Buna işletim sisteminiz, yüklediğiniz uygulamanın sürümü, cihazınızda ayarlanmış olan dil, Bluetooth'un çalışıp çalışmadığı ve uygulamanızın son yedi günde herhangi bir karşılaşma kaydedip kaydetmediği dahildir.\n\nCOVIDSafe konum bilgilerinizi toplamaz. \n\nCOVIDSafe temas tarihini ve saatini, temas ettiğiniz diğer COVIDSafe kullanıcılarının gizli kimlik kodunu, Bluetooth sinyal gücünü ve diğer kullanıcıların telefon modelini cihazınıza kaydeder. \n\nTemas ettiğiniz diğer COVIDSafe kullanıcıları gizli kimlik kodunuzu, sizinle temas tarih ve saatini, Bluetooth sinyal gücünü ve telefon modelinizi kendi cihazlarında kaydedecektir. \n\nBaşka bir kullanıcının COVID-19 testi pozitif çıkması halinde kendi iletişim bilgilerini sisteme yükleyebilir ve bu durumda bir eyalet veya bölge sağlık yetkilisi temas takibi amacıyla sizinle iletişim kurabilir. \n\nKayıt bilgileriniz yalnızca temas takibi ve COVIDSafe'in düzgün ve yasalara uygun çalışması için kullanılacak ya da açıklanacaktır. \n\nDaha fazla bilgiyi covidsafe.gov.au web sitesinde bulabilirsiniz. \n\nBilgileriniz ve bu bilgilerin nasıl işleneceği ve paylaşılacağına dair haklarınızla ilgili daha fazla bilgi için COVIDSafe gizlilik ilkesine bakın.";
 /* OnBoarding Data Privacy */
 "data_privacy_headline" = "Kayıt ve gizlilik";
 "deaths" = "Ölümler";
@@ -242,6 +243,7 @@
 "dialog_error_uploading_negative" = "İptal";
 "dialog_error_uploading_positive" = "Tekrar deneyin";
 "dialog_uploading_message" = "COVIDSafe bilgileriniz şu anda sisteme yükleniyor. \n\n Lütfen uygulamayı kapatmayın.";
+"dismiss" = "Reddet";
 "done_success" = "Bitti";
 "enter_number_button" = "PIN al";
 "enter_number_content" = "Cep telefonu numaranızı doğrulamak için size 6 haneli bir PIN göndereceğiz.";
@@ -259,6 +261,7 @@
 "global_close" = "Kapat";
 "global_double_tap" = "düzeltme yapmak için iki defa tıklayınız";
 "global_OK" = "Tamam";
+"hide" = "Gizle";
 "home_app_permission_status_subtitle" = "COVIDSafe doğru ayarlar olmadan çalışmaz. ";
 "home_app_permission_status_title" = "Ayarlarınızı kontrol edin";
 "home_data_uploaded_message" = "COVID-19'un yayılmasını durdurmaya ve belirtilerinizin takibine yardımcı olun.";
@@ -310,7 +313,9 @@
 "IntroLabel" = "Yayılmayı durdurmaya yardımcı olun \nve hayatları kurtarın.";
 "invalid_australian_phone_number_error_prompt" = "Avustralya cep telefonu numaraları en fazla 10 rakam içerir.";
 "invalid_norfolk_island_phone_number_error_prompt" = "Norfolk Adası'ndaki cep telefonu numaraları 5 ila 6 rakam içerir.";
-"loading_numbers" = "En son sayıla yükleniyor";
+"jwt_description" = "Kayıt bilgilerinizle ilgili bir sorun var.";
+"jwt_heading" = "Lütfen tekrar kayıt olun";
+"loading_numbers" = "En son sayılar yükleniyor";
 /* Splash Screen */
 "migration_in_progress" = " COVIDSafe güncellemesi devam ediyor. \n\n Lütfen güncelleme tamamlanana kadar telefonunuzu kapatmayın.";
 "national_numbers" = "Ulusal sayılar";
@@ -332,7 +337,7 @@
 /* Figma page iOS Screens (05/06) */
 "NotificationsEnabledBlurb" = "COVIDSafe aktif olmadığında bildirim alacaksınız.\nBildirim ayarlarını değiştir";
 "numbers_error" = "Güncellenen sayılar kontrol edilemiyor.";
-"numbers_no_internet" = "Güncellenen sayıları aldığınızdan emin olmak için internete bağlanın";
+"numbers_no_internet" = "Güncellenen sayıları aldığınızdan emin olmak için internete bağlanın.";
 "numbers_refresh" = "Şimdi yenile";
 "options_for_australia" = "Avustralya için seçenekler";
 "permission_button" = "İlerle";
@@ -370,8 +375,9 @@
 "PN_ReminderTitle" = "48 saat boyunca karşılaşma tespit edilmedi";
 "PostcodeValidationErrorMessage" = "Lütfen geçerli bir Avustralya posta kodu giriniz.";
 "queensland" = "Queensland";
-"recovered" = "İyileşen toplam vakalar";
+"recovered" = "Toplam iyileşen vakalar";
 "registration_consent_content" = "Avustralya Hükümeti Sağlık Bakanının yasal olarak belirlediğine uygun olarak aşağıdaki bilgileri toplayan Dijital Dönüşüm Ajansı'nı veri deposu yöneticisi olarak onaylıyorum:";
+"registration_consent_diagnostic" = "COVIDSafe'in cihazımda düzgün çalıştığından emin olmak için gereken bilgiler.";
 "registration_consent_first_paragraph" = "Kayıt bilgilerim.";
 /* Onboarding Registration Consent */
 "registration_consent_headline" = "Kayıt onayı";
@@ -382,6 +388,7 @@
 "Select_country_or_region_headline" = "Ülke veya bölge seçiniz";
 "settings" = "Ayarlar";
 "share_this_app_content" = "COVID-19'un yayılmasını durdurmada bana katılın! Avustralya Hükümeti'nin bir uygulaması olan COVIDSafe'i indirin. # COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
+"show" = "Göster";
 "south_australia" = "Güney Avustralya";
 "stepCounter" = "Adım %d / %d";
 "support" = "Destek";
@@ -418,6 +425,7 @@
 "upload_step_verify_pin_header" = "Bilgilerinizi sisteme yükleyiniz";
 "upload_step_verify_pin_sub_header" = "Eyalet veya bölge sağlık yetkilisi cihazınıza mesaj olarak bir PIN gönderecektir. Bilgilerinizi sisteme yüklemek için PIN'i aşağıya giriniz.";
 "us_consent_button" = "Kabul ediyorum";
+"us_registration_consent_diagnostic" = "COVIDSafe'in cihazımda düzgün çalıştığından emin olmak için gereken bilgiler.";
 "victoria" = "Viktorya";
 "western_australia" = "Batı Avustralya";
 "wrong_ping_number" = " Yanlış PIN girildi";
@@ -426,7 +434,7 @@
 "AllowBluetoothON_VOLabel" = "Bluetooth'a erişim: AÇIK";
 "BluetoothOFF_VOLabel" = "Bluetooth: KAPALI Telefonunuzun Bluetooth özelliğini açın. Görüntüleniyorsa 'Yeni Bağlantılara İzin Ver'i seçin.";
 "BluetoothON_VOLabel" = "Bluetooth: AÇIK";
-"CodeHasExpired" = "Kodunuzun süresi doldu.";
+"CodeHasExpired" = "PIN kodunuzun süresi doldu.";
 /* details */
 "Done" = "Bitti";
 /* Feedback */

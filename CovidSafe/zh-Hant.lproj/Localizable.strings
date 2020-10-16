@@ -18,6 +18,7 @@
 "BluetoothON" = "藍牙®：開";
 "change_language" = "更換語言";
 "change_language_content" = "用其他語言閱讀COVIDSafe使用指南。";
+"collection_message" = "COVIDSafe現在會收集診斷資訊，以幫助你解決應用程式中的問題。 *了解更多*";
 "consent_button" = "我同意";
 /* Shared Consent Actions */
 "consent_call_for_action" = "選擇「我同意」以確認同意聲明。";
@@ -233,8 +234,8 @@
 "country_region_name_zm" = "贊比亞";
 "country_region_name_zw" = "津巴布韋";
 "data_privacy_button" = "下一步";
-"data_privacy_content" = "在註册 COVIDSafe 之前，請務必閱讀 COVIDSafe *私隱政策*。 \n\n如果你未滿 16 歲，你的父母/監護人亦必須閱讀*私隱政策*。 \n\n使用 COVIDSafe 純屬自願性質。你可以隨時安裝或刪除本應用程式。如果刪除 COVIDSafe，*你亦可以要求刪除在保密伺服器内的個人資料*。\n\n要註册使用 COVIDSafe，你需要輸入一个名字（或假名）、手機號碼、年齡組别及郵遞區號。 \n\n我們會收集你註冊時提供的資料和關於你使用COVIDSafe的資料並且儲存在一個高度保密的伺服器內。 \n\nCOVIDSafe 不會收集你的位置資訊。 \n\nCOVIDSafe 將會在你的設備上記錄與你接觸過的其他 COVIDSafe 用戶的接觸時間，其匿名 ID，藍牙®信號強度和其手機型號。\n\n其他與你接觸過的 COVIDSafe 用戶的設備上亦會記錄你的匿名 ID 及與你接觸的日期時間，藍牙®信號強度和你的手機型號。 \n\n如果其他用戶被驗出 COVID-19 陽性，他們可以上傳其接觸者資料。為了追蹤接觸者，各州或領地的衛生部官員可能會聯絡你。 \n\n我們在追蹤接觸者和確保COVIDSafe 正常且合法運作時才會使用並且透露你的詳細註冊資料。 \n\n欲了解更多資訊，請瀏覧*澳洲政府衛生部*的網站。 \n\n如需進一步了解你對個人資料的權利，及個人資料的處理和共享方式，請參閱 COVIDSafe *私隱政策*。";
-"data_privacy_content_VO" = "在註册 COVIDSafe 之前，請務必閱讀 COVIDSafe *私隱政策*。 \n\n如果你未滿 16 歲，你的父母/監護人亦必須閱讀*私隱政策*。 \n\n使用 COVIDSafe 純屬自願性質。你可以隨時安裝或刪除本應用程式。如果刪除 COVIDSafe，*你亦可以要求刪除在保密伺服器內的個人資料*。\n\n要註册使用 COVIDSafe，你需要輸入一個名字（或者假名）、手機號碼、年齡組别及郵遞區號。 \n\n我們會收集你註冊時提供的資料和關於你使用COVIDSafe的資料並且儲存在一個高度保密的伺服器內。 \n\nCOVIDSafe 不會收集你的位置資訊。 \n\nCOVIDSafe 將會在你的設備上記錄與你接觸過的其他 COVIDSafe 用戶的接觸時間，其匿名 ID，藍牙信號強度和其手機型號。\n\n其他與你接觸過的 COVIDSafe 用戶的設備上亦會記錄你的匿名 ID 及與你接觸的日期時間，藍牙信號強度和你的手機型號。 \n\n如果其他用戶被驗出 COVID-19 陽性，他們可以上傳其接觸者資料。為了追蹤接觸者，州或領地的衛生部官員可能會聯絡你。 \n\n我們在追蹤接觸者和確保COVIDSafe 正常且合法運作時才會使用並且透露你的詳細註冊資料。 \n\n欲了解更多資訊，請瀏覧*澳洲政府衛生部*的網站。 \n\n如需進一步了解你對個人資料的權利，及個人資料的處理和共享方式，請參閱 COVIDSafe *私隱政策*。";
+"data_privacy_content" = "在註册 COVIDSafe 之前，請務必閱讀 COVIDSafe *私隱政策*。 \n\n如果你未滿 16 歲，你的父母/監護人亦必須閱讀*私隱政策*。 \n\n使用 COVIDSafe 純屬自願性質。你可以隨時安裝或刪除本應用程式。如果刪除 COVIDSafe，*你亦可以要求刪除在保密伺服器內的個人資料*。\n\n要註册使用 COVIDSafe，你需要輸入一個名字（或者假名）、手機號碼、年齡組别及郵遞區號。 \n\n你註冊時提交的資料以及有關COVIDSafe的使用資料將被儲存在高度安全的伺服器上。\n\n為了確保COVIDSafe可以正常運行，需要收集有關你的設備的以下信息：操作系統、應用程式版本、語言設置、藍牙®是否正在運行以及過去7天應用程式上的接觸記錄。\n\nCOVIDSafe不會收集你的位置信息。\n\nCOVIDSafe將在你的設備上記錄發生接觸的時間、與你發生過接觸的其他COVIDSafe用戶的匿名ID碼、藍牙®信號強度以及手機型號。 \n\n與你發生接觸的其他COVIDSafe使用者的設備上也會記錄你的匿名ID代碼、與你發生接觸的日期和時間、藍牙®信號強度以及你的手機型號。 \n\n如果其他使用者的COVID-19檢測結果為陽性，他們可以上傳自己的接觸者資訊，而州或領地的衛生官員可能會出於追蹤接觸者的目的與你聯繫。 \n\n你的註冊詳情僅在追蹤接觸者以及維持COVIDSafe的合法正常運行時使用或披露。  \n\n更多資訊可在*covidsafe.gov.au*網站上查閱。 \n\n如需進一步了解你對個人資訊的權利，以及個人資訊的處理和共用方式，請參閱COVIDSafe *隱私政策*。";
+"data_privacy_content_VO" = "在註册 COVIDSafe 之前，請務必閱讀 COVIDSafe 私隱政策。 \n\n如果你未滿 16 歲，你的父母/監護人亦必須閱讀私隱政策。 \n\n使用 COVIDSafe 純屬自願性質。你可以隨時安裝或刪除本應用程式。如果刪除 COVIDSafe，你亦可以要求刪除在保密伺服器內的個人資料。\n\n要註册使用 COVIDSafe，你需要輸入一個名字（或者假名）、手機號碼、年齡組别及郵遞區號。 \n\n你註冊時提交的資料以及有關COVIDSafe的使用資料將被儲存在高度安全的伺服器上。\n\n為了確保COVIDSafe可以正常運行，需要收集有關你的設備的以下資訊：操作系統、應用程式版本、語言設置、藍牙®是否正在運行以及過去7天應用程式上的接觸記錄。\n\nCOVIDSafe不會收集你的位置資訊。\n\nCOVIDSafe將在你的設備上記錄發生接觸的時間、與你發生過接觸的其他COVIDSafe用戶的匿名ID碼、藍牙®信號強度以及手機型號。 \n\n與你發生接觸的其他COVIDSafe使用者的設備上也會記錄你的匿名ID代碼、與你發生接觸的日期和時間、藍牙®信號強度以及你的手機型號。 \n\n如果其他使用者的COVID-19檢測結果為陽性，他們可以上傳自己的接觸者資訊，而州或領地的衛生官員可能會出於追蹤接觸者的目的與你聯繫。 \n\n你的註冊詳情僅在追蹤接觸者以及維持COVIDSafe的合法正常運行時使用或披露。  \n\n更多資訊可在covidsafe.gov.au網站上查閱。 \n\n如需進一步了解你對個人資訊的權利，以及個人資訊的處理和共用方式，請參閱COVIDSafe 隱私政策。";
 /* OnBoarding Data Privacy */
 "data_privacy_headline" = "註册及私隱權";
 "deaths" = "死亡人數";
@@ -242,6 +243,7 @@
 "dialog_error_uploading_negative" = "取消";
 "dialog_error_uploading_positive" = "重試";
 "dialog_uploading_message" = "正在上傳你的 COVIDSafe 資料。 \n\n請勿關閉應用程式。";
+"dismiss" = "取消";
 "done_success" = "完成";
 "enter_number_button" = "收取 PIN 碼";
 "enter_number_content" = "我們將向你傳送一條 6 數位的 PIN 碼來驗證你的手機號碼。";
@@ -259,6 +261,7 @@
 "global_close" = "關閉";
 "global_double_tap" = "點觸兩次來編輯";
 "global_OK" = "確定";
+"hide" = "隱藏";
 "home_app_permission_status_subtitle" = "若設定錯誤，將無法執行 COVIDSafe。";
 "home_app_permission_status_title" = "檢查你的設定";
 "home_data_uploaded_message" = "協助遏止 COVID-19 擴散，追蹤你的症狀。";
@@ -310,7 +313,9 @@
 "IntroLabel" = "請協助遏止病毒擴散\n拯救生命";
 "invalid_australian_phone_number_error_prompt" = "澳洲手機號碼最多有10 個數位。";
 "invalid_norfolk_island_phone_number_error_prompt" = "諾福克島的手機號碼是個5至6位數字。";
-"loading_numbers" = "";
+"jwt_description" = "你的註冊詳情存在問題。";
+"jwt_heading" = "請重新註冊。";
+"loading_numbers" = "正在載入最新統計數字";
 /* Splash Screen */
 "migration_in_progress" = "正在更新 COVIDSafe。\n\n請保持開機狀態直至更新完成為止。";
 "national_numbers" = "全國統計數字";
@@ -331,9 +336,9 @@
 "NotificationsDisabledBlurb" = "如果 COVIDSafe 尚未處於啟用狀態，你將不會收到通知。 \n更改通知設定";
 /* Figma page iOS Screens (05/06) */
 "NotificationsEnabledBlurb" = "如果 COVIDSafe 尚未處於啟用狀態，你將會收到通知。 \n更改通知設定";
-"numbers_error" = "";
-"numbers_no_internet" = "";
-"numbers_refresh" = "";
+"numbers_error" = "無法查詢最新統計數字。";
+"numbers_no_internet" = "請連接到互聯網，以獲取最新統計數字。";
+"numbers_refresh" = "現在刷新";
 "options_for_australia" = "澳洲適用選項";
 "permission_button" = "繼續";
 /* Figma page iOS Screens (05/06) */
@@ -372,6 +377,7 @@
 "queensland" = "昆士蘭州";
 "recovered" = "康復者總數";
 "registration_consent_content" = "我同意數字化轉型局作為數據儲存管理者，根據澳大利亞政府衛生部常務副部長的合法決定，收集以下信息：";
+"registration_consent_diagnostic" = "確保 COVIDSafe 在我的設備上正常運行的資訊。";
 "registration_consent_first_paragraph" = "我的註册資料。";
 /* Onboarding Registration Consent */
 "registration_consent_headline" = "註册同意書";
@@ -382,6 +388,7 @@
 "Select_country_or_region_headline" = "選擇國家或地區";
 "settings" = "設置";
 "share_this_app_content" = "同我一齊遏止 COVID-19 的擴散！下載澳洲政府提供的 COVIDSafe 應用程式。 ＃COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
+"show" = "顯示";
 "south_australia" = "南澳";
 "stepCounter" = "第%d步，共%d步";
 "support" = "支持";
@@ -418,6 +425,7 @@
 "upload_step_verify_pin_header" = "上傳你的資料";
 "upload_step_verify_pin_sub_header" = "各州或領地的衛生部官員將會透過簡訊傳送一條 PIN 碼到你的設備。請在下面輸入 PIN 碼來上傳個人資料。";
 "us_consent_button" = "我同意";
+"us_registration_consent_diagnostic" = "確保 COVIDSafe 在我的設備上正常運行的資訊。";
 "victoria" = "維多利亞州";
 "western_australia" = "西澳";
 "wrong_ping_number" = "輸入了錯誤的 PIN 碼";

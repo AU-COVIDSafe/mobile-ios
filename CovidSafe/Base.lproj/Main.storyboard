@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8X4-AC-7cb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8X4-AC-7cb">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -99,7 +100,7 @@
                                                 </connections>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="sHp-C7-xCZ" firstAttribute="top" secondItem="x1u-Qk-m74" secondAttribute="bottom" constant="16" id="49k-D3-nTJ"/>
                                             <constraint firstAttribute="trailing" secondItem="04D-Hy-djY" secondAttribute="trailing" constant="32" id="5Qv-Ob-yoq"/>
@@ -149,7 +150,7 @@
                                     <constraint firstAttribute="trailing" secondItem="ow2-rP-ZcP" secondAttribute="trailing" id="yRr-ib-CnW"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwi-lK-bOF">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwi-lK-bOF">
                                 <rect key="frame" x="32" y="655" width="350" height="49"/>
                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -167,7 +168,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="PHO-4j-w6y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="PHO-4j-w6y" firstAttribute="bottom" secondItem="fwi-lK-bOF" secondAttribute="bottom" constant="32" id="0GI-N8-leQ"/>
                             <constraint firstItem="PHO-4j-w6y" firstAttribute="trailing" secondItem="fwi-lK-bOF" secondAttribute="trailing" constant="32" id="ENd-Wu-aZ6"/>
@@ -177,7 +179,6 @@
                             <constraint firstItem="fwi-lK-bOF" firstAttribute="leading" secondItem="PHO-4j-w6y" secondAttribute="leading" constant="32" id="bmW-cP-98P"/>
                             <constraint firstItem="8yA-6u-BZO" firstAttribute="top" secondItem="PHO-4j-w6y" secondAttribute="top" id="iBj-lk-HCR"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="PHO-4j-w6y"/>
                     </view>
                     <navigationItem key="navigationItem" id="Qmi-E0-d5C"/>
                     <connections>
@@ -216,7 +217,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Together we can stop the spread of COVID-19" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00h-JA-MfK">
-                                                <rect key="frame" x="32" y="208" width="307.66666666666669" height="67.666666666666686"/>
+                                                <rect key="frame" x="32" y="208" width="308.33333333333331" height="67.666666666666686"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -242,7 +243,7 @@ Together we can help stop the spread and stay healthy.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="JYM-TW-Zxf" firstAttribute="leading" secondItem="0Og-8r-Em6" secondAttribute="leading" constant="32" id="AX5-t6-DWN"/>
                                             <constraint firstItem="JYM-TW-Zxf" firstAttribute="top" secondItem="0Og-8r-Em6" secondAttribute="top" constant="12" id="IoO-AX-vTX"/>
@@ -304,7 +305,8 @@ Together we can help stop the spread and stay healthy.</string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="nOG-gl-32p"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="LX0-7p-Shs" firstAttribute="leading" secondItem="nOG-gl-32p" secondAttribute="leading" constant="32" id="2RI-Og-uUL"/>
                             <constraint firstItem="Bpu-gs-E11" firstAttribute="leading" secondItem="nOG-gl-32p" secondAttribute="leading" id="OsF-wY-dmT"/>
@@ -314,7 +316,6 @@ Together we can help stop the spread and stay healthy.</string>
                             <constraint firstItem="nOG-gl-32p" firstAttribute="bottom" secondItem="LX0-7p-Shs" secondAttribute="bottom" constant="32" id="nQE-01-ds1"/>
                             <constraint firstItem="Bpu-gs-E11" firstAttribute="top" secondItem="nOG-gl-32p" secondAttribute="top" id="ovp-Mu-Rna"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="nOG-gl-32p"/>
                     </view>
                     <navigationItem key="navigationItem" id="M5c-Sc-QmX"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -389,7 +390,7 @@ COVIDSafe does not send pairing requests.</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="npY-9G-r2u" firstAttribute="leading" secondItem="SpU-i1-aUA" secondAttribute="leading" constant="32" id="1qx-Y1-2Bz"/>
                                             <constraint firstItem="Vco-tH-Zts" firstAttribute="top" secondItem="SpU-i1-aUA" secondAttribute="top" constant="60" id="A22-Zs-PDI"/>
@@ -427,7 +428,7 @@ COVIDSafe does not send pairing requests.</string>
                                     <constraint firstAttribute="trailing" secondItem="SpU-i1-aUA" secondAttribute="trailing" id="zoL-Zp-hd6"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmj-3v-POB">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmj-3v-POB">
                                 <rect key="frame" x="32" y="655" width="350" height="49"/>
                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -445,7 +446,8 @@ COVIDSafe does not send pairing requests.</string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gTH-Be-3VE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="VYy-f9-p2t" firstAttribute="leading" secondItem="gTH-Be-3VE" secondAttribute="leading" id="NDr-2L-4lg"/>
                             <constraint firstItem="gTH-Be-3VE" firstAttribute="bottom" secondItem="Zmj-3v-POB" secondAttribute="bottom" constant="32" id="TPo-bP-SVN"/>
@@ -455,7 +457,6 @@ COVIDSafe does not send pairing requests.</string>
                             <constraint firstItem="Zmj-3v-POB" firstAttribute="leading" secondItem="gTH-Be-3VE" secondAttribute="leading" constant="32" id="eMJ-UJ-BF6"/>
                             <constraint firstItem="VYy-f9-p2t" firstAttribute="top" secondItem="gTH-Be-3VE" secondAttribute="top" id="nua-Eb-y9r"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="gTH-Be-3VE"/>
                     </view>
                     <navigationItem key="navigationItem" id="B3a-X1-mbg"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -668,7 +669,7 @@ They will need to register using their own device and phone number so that COVID
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="AMg-Zg-jA1" secondAttribute="trailing" constant="32" id="1fX-5g-0gD"/>
                                             <constraint firstAttribute="trailing" secondItem="bnv-bL-uww" secondAttribute="trailing" constant="32" id="94I-BS-xYg"/>
@@ -707,7 +708,7 @@ They will need to register using their own device and phone number so that COVID
                                     <constraint firstItem="Rcd-mO-xGu" firstAttribute="leading" secondItem="xub-Ry-BNj" secondAttribute="leading" id="tss-tk-mgI"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tuw-g5-oMO" userLabel="Next">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tuw-g5-oMO" userLabel="Next">
                                 <rect key="frame" x="32" y="655" width="350" height="49"/>
                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -734,7 +735,8 @@ They will need to register using their own device and phone number so that COVID
                                 </userDefinedRuntimeAttributes>
                             </activityIndicatorView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hck-9P-Njf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="hck-9P-Njf" firstAttribute="trailing" secondItem="9fc-dI-kw7" secondAttribute="trailing" constant="58" id="Bcj-AX-jog"/>
                             <constraint firstItem="hck-9P-Njf" firstAttribute="trailing" secondItem="Tuw-g5-oMO" secondAttribute="trailing" constant="32" id="CJM-tB-V3b"/>
@@ -746,12 +748,12 @@ They will need to register using their own device and phone number so that COVID
                             <constraint firstItem="xub-Ry-BNj" firstAttribute="leading" secondItem="hck-9P-Njf" secondAttribute="leading" id="lw6-n6-7gJ"/>
                             <constraint firstItem="Tuw-g5-oMO" firstAttribute="leading" secondItem="hck-9P-Njf" secondAttribute="leading" constant="32" id="xBM-sP-MLX"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="hck-9P-Njf"/>
                     </view>
                     <navigationItem key="navigationItem" id="yu2-9q-yeC"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="activityIndicator" destination="9fc-dI-kw7" id="0m9-uc-KP2"/>
+                        <outlet property="backButton" destination="Cbj-dJ-gHU" id="3A4-5w-dsd"/>
                         <outlet property="countryCodeField" destination="bnv-bL-uww" id="MX0-VR-STY"/>
                         <outlet property="getOTPButton" destination="Tuw-g5-oMO" id="V1f-GW-Nyu"/>
                         <outlet property="phoneError" destination="tAk-aI-1Uc" id="SuX-K7-3vA"/>
@@ -775,7 +777,7 @@ They will need to register using their own device and phone number so that COVID
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="p4Q-Qs-SJV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="sectionIndexColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -881,7 +883,7 @@ They will need to register using their own device and phone number so that COVID
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K7X-Ux-SAc">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K7X-Ux-SAc">
                                                 <rect key="frame" x="32" y="171" width="213" height="31"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" link="YES"/>
@@ -909,7 +911,7 @@ They will need to register using their own device and phone number so that COVID
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5L2-jv-Oa6" customClass="CodeInputView" customModule="COVIDSafe" customModuleProvider="target">
                                                         <rect key="frame" x="27" y="36" width="360" height="60"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="94m-dG-wrd"/>
                                                         </constraints>
@@ -944,8 +946,8 @@ They will need to register using their own device and phone number so that COVID
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hzs-ds-Zon">
-                                                <rect key="frame" x="32" y="397" width="212" height="33.333333333333314"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hzs-ds-Zon">
+                                                <rect key="frame" x="32" y="397" width="210" height="33.333333333333314"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" link="YES"/>
                                                 </accessibility>
@@ -967,8 +969,8 @@ They will need to register using their own device and phone number so that COVID
                                                     <action selector="issuesWithPinTapped:" destination="QXj-uo-Wqr" eventType="touchUpInside" id="HuY-wx-77W"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Rh-JE-cit">
-                                                <rect key="frame" x="32" y="363.66666666666669" width="94" height="33.333333333333314"/>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Rh-JE-cit">
+                                                <rect key="frame" x="32" y="363.66666666666669" width="93" height="33.333333333333314"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" link="YES"/>
                                                 </accessibility>
@@ -997,7 +999,7 @@ They will need to register using their own device and phone number so that COVID
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="KLp-Fk-KTm" firstAttribute="top" secondItem="K7X-Ux-SAc" secondAttribute="bottom" id="00M-R2-dHN"/>
                                             <constraint firstItem="GWc-qS-9y6" firstAttribute="top" secondItem="0e1-Yu-pmy" secondAttribute="bottom" constant="24" id="2LN-Qm-O8j"/>
@@ -1032,7 +1034,7 @@ They will need to register using their own device and phone number so that COVID
                                     <constraint firstItem="V8B-ij-TAp" firstAttribute="width" secondItem="AhK-OV-Qck" secondAttribute="width" id="gMA-47-mp5"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQY-RW-yBL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQY-RW-yBL">
                                 <rect key="frame" x="32" y="655" width="350" height="49"/>
                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1059,7 +1061,8 @@ They will need to register using their own device and phone number so that COVID
                                 </userDefinedRuntimeAttributes>
                             </activityIndicatorView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5R8-gb-HbO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="5R8-gb-HbO" firstAttribute="trailing" secondItem="AhK-OV-Qck" secondAttribute="trailing" id="MCQ-Ud-2VJ"/>
                             <constraint firstItem="lQY-RW-yBL" firstAttribute="top" secondItem="AhK-OV-Qck" secondAttribute="bottom" constant="31" id="TCD-Si-GLA"/>
@@ -1071,7 +1074,6 @@ They will need to register using their own device and phone number so that COVID
                             <constraint firstItem="AhK-OV-Qck" firstAttribute="leading" secondItem="5R8-gb-HbO" secondAttribute="leading" id="wGE-xz-FL9"/>
                             <constraint firstItem="lQY-RW-yBL" firstAttribute="leading" secondItem="5R8-gb-HbO" secondAttribute="leading" constant="32" id="wPw-ok-yQY"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="5R8-gb-HbO"/>
                     </view>
                     <navigationItem key="navigationItem" id="aB2-Gn-4Z6"/>
                     <connections>
@@ -1169,6 +1171,7 @@ and save lives.</string>
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vsg-6A-skc"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Df1-JU-hm6" firstAttribute="centerX" secondItem="hys-VW-nN1" secondAttribute="centerX" id="CwG-zh-Yaz"/>
@@ -1178,7 +1181,6 @@ and save lives.</string>
                             <constraint firstItem="hys-VW-nN1" firstAttribute="top" secondItem="Df1-JU-hm6" secondAttribute="bottom" constant="46" id="uz9-2G-roN"/>
                             <constraint firstItem="Df1-JU-hm6" firstAttribute="centerX" secondItem="yNe-Pg-5Zb" secondAttribute="centerX" id="wJx-tm-HcT"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Vsg-6A-skc"/>
                     </view>
                     <navigationItem key="navigationItem" id="apU-ck-XY9"/>
                     <connections>
@@ -1236,6 +1238,7 @@ and save lives.</string>
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZLv-lh-E2f"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Qov-O8-A7L" firstAttribute="width" secondItem="Qov-O8-A7L" secondAttribute="height" multiplier="148:77" id="1iI-wS-6LY"/>
@@ -1246,7 +1249,6 @@ and save lives.</string>
                             <constraint firstItem="SLW-8v-OdL" firstAttribute="top" secondItem="Qov-O8-A7L" secondAttribute="bottom" constant="30" id="nKo-BV-iiu"/>
                             <constraint firstItem="Qov-O8-A7L" firstAttribute="top" secondItem="ZLv-lh-E2f" secondAttribute="top" constant="30" id="u5Z-1m-FSD"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ZLv-lh-E2f"/>
                     </view>
                     <connections>
                         <outlet property="animationContainer" destination="SOF-ig-kwj" id="24K-l5-R3z"/>
@@ -1304,7 +1306,7 @@ and save lives.</string>
                                             </button>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rRc-fO-exY">
                                                 <rect key="frame" x="32" y="299.66666666666674" width="350" height="522"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <string key="text">Bluetooth® signals are used to determine when you're near another COVIDSafe user.
 
 Every instance of close contact between you and other COVIDSafe users is noted to create close contact information. This information is encrypted and only stored in your phone.
@@ -1314,7 +1316,7 @@ If you test positive to COVID-19 as a COVIDSafe user, a state or territory healt
 State or territory health officials can also contact you if you came in close contact with another COVIDSafe user who tested positive.
 
 For more information please refer to the *Help Topics* page.</string>
-                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
@@ -1323,7 +1325,7 @@ For more information please refer to the *Help Topics* page.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </textView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="rRc-fO-exY" secondAttribute="trailing" constant="32" id="CDz-YV-Lp5"/>
                                             <constraint firstItem="Pxu-Q6-QrV" firstAttribute="leading" secondItem="jDA-AT-Vtv" secondAttribute="leading" constant="30.5" id="Fvq-SA-a9x"/>
@@ -1386,7 +1388,8 @@ For more information please refer to the *Help Topics* page.</string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Zbo-54-kdf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="nmf-2C-O48" firstAttribute="leading" secondItem="Zbo-54-kdf" secondAttribute="leading" id="996-lF-ecz"/>
                             <constraint firstItem="Zbo-54-kdf" firstAttribute="bottom" secondItem="2RA-ER-v0N" secondAttribute="bottom" constant="32" id="B6w-1z-CMx"/>
@@ -1396,7 +1399,6 @@ For more information please refer to the *Help Topics* page.</string>
                             <constraint firstItem="2RA-ER-v0N" firstAttribute="top" secondItem="nmf-2C-O48" secondAttribute="bottom" id="eNJ-FO-Sh5"/>
                             <constraint firstItem="nmf-2C-O48" firstAttribute="top" secondItem="Zbo-54-kdf" secondAttribute="top" id="fHq-2Y-Iyh"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Zbo-54-kdf"/>
                     </view>
                     <navigationItem key="navigationItem" id="lTd-N2-ef4"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -1420,7 +1422,7 @@ For more information please refer to the *Help Topics* page.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="642"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42W-iQ-ZjG" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="345"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="403.33333333333331"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration consent" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZr-Mn-eQ0">
                                                 <rect key="frame" x="32" y="60" width="350" height="33.666666666666657"/>
@@ -1488,7 +1490,7 @@ For more information please refer to the *Help Topics* page.</string>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select 'I agree' to confirm consent." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBd-BL-7hu">
-                                                <rect key="frame" x="32" y="307.66666666666669" width="350" height="20.333333333333314"/>
+                                                <rect key="frame" x="32" y="366" width="350" height="20.333333333333314"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1496,8 +1498,23 @@ For more information please refer to the *Help Topics* page.</string>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="consent_call_for_action"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information to ensure that COVIDSafe is working properly on my device." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rCo-p1-lc5">
+                                                <rect key="frame" x="46" y="306.66666666666669" width="336" height="42.333333333333314"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="registration_consent_diagnostic"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4NZ-4K-48S">
+                                                <rect key="frame" x="32" y="306.66666666666669" width="7.6666666666666643" height="20.333333333333314"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="tZr-Mn-eQ0" firstAttribute="leading" secondItem="42W-iQ-ZjG" secondAttribute="leading" constant="32" id="0f9-HS-iIl"/>
                                             <constraint firstItem="Y1i-g9-Bpj" firstAttribute="leading" secondItem="42W-iQ-ZjG" secondAttribute="leading" constant="32" id="3pb-pB-rtr"/>
@@ -1509,18 +1526,23 @@ For more information please refer to the *Help Topics* page.</string>
                                             <constraint firstItem="SFJ-yh-BcG" firstAttribute="leading" secondItem="Y1i-g9-Bpj" secondAttribute="leading" constant="14" id="Czx-R0-0rm"/>
                                             <constraint firstItem="XLh-Jl-tqN" firstAttribute="leading" secondItem="42W-iQ-ZjG" secondAttribute="leading" constant="32" id="Io2-jb-jo7"/>
                                             <constraint firstItem="KBd-BL-7hu" firstAttribute="leading" secondItem="42W-iQ-ZjG" secondAttribute="leading" constant="32" id="KMV-zw-sPj"/>
+                                            <constraint firstItem="4NZ-4K-48S" firstAttribute="leading" secondItem="42W-iQ-ZjG" secondAttribute="leading" constant="32" id="OwD-8A-khA"/>
                                             <constraint firstAttribute="trailing" secondItem="SFJ-yh-BcG" secondAttribute="trailing" constant="32" id="XCe-ap-eyH"/>
+                                            <constraint firstItem="4NZ-4K-48S" firstAttribute="top" secondItem="rCo-p1-lc5" secondAttribute="top" id="XHZ-8M-P64"/>
+                                            <constraint firstItem="KBd-BL-7hu" firstAttribute="top" secondItem="rCo-p1-lc5" secondAttribute="bottom" constant="17" id="bFv-p1-A8j"/>
                                             <constraint firstItem="XLh-Jl-tqN" firstAttribute="top" secondItem="eCd-JO-SUg" secondAttribute="top" id="cDr-37-aEs"/>
                                             <constraint firstItem="Nse-4l-iel" firstAttribute="leading" secondItem="42W-iQ-ZjG" secondAttribute="leading" constant="16" id="dpG-ba-n6O"/>
+                                            <constraint firstItem="rCo-p1-lc5" firstAttribute="leading" secondItem="4NZ-4K-48S" secondAttribute="leading" constant="14" id="eR1-XO-4S3"/>
                                             <constraint firstItem="l6E-t2-z2H" firstAttribute="top" secondItem="tZr-Mn-eQ0" secondAttribute="bottom" constant="16" id="h4Q-4C-Z4A"/>
                                             <constraint firstItem="l6E-t2-z2H" firstAttribute="leading" secondItem="42W-iQ-ZjG" secondAttribute="leading" constant="32" id="h9Q-bv-Jfj"/>
                                             <constraint firstAttribute="trailing" secondItem="eCd-JO-SUg" secondAttribute="trailing" constant="32" id="jR9-Ah-FCr"/>
                                             <constraint firstAttribute="trailing" secondItem="tZr-Mn-eQ0" secondAttribute="trailing" constant="32" id="jRT-NZ-iih"/>
                                             <constraint firstItem="tZr-Mn-eQ0" firstAttribute="top" secondItem="Nse-4l-iel" secondAttribute="bottom" id="klq-n6-WcQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="rCo-p1-lc5" secondAttribute="trailing" constant="32" id="lFW-ou-tRV"/>
                                             <constraint firstItem="eCd-JO-SUg" firstAttribute="leading" secondItem="XLh-Jl-tqN" secondAttribute="leading" constant="14" id="q1u-Ka-gRd"/>
                                             <constraint firstAttribute="bottom" secondItem="KBd-BL-7hu" secondAttribute="bottom" constant="17" id="sEW-fm-q0K"/>
                                             <constraint firstItem="eCd-JO-SUg" firstAttribute="top" secondItem="SFJ-yh-BcG" secondAttribute="bottom" constant="16" id="sFd-iI-kuS"/>
-                                            <constraint firstItem="KBd-BL-7hu" firstAttribute="top" secondItem="eCd-JO-SUg" secondAttribute="bottom" constant="17" id="zrS-mE-6dv"/>
+                                            <constraint firstItem="rCo-p1-lc5" firstAttribute="top" secondItem="eCd-JO-SUg" secondAttribute="bottom" constant="16" id="xV4-eX-ulG"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -1532,7 +1554,7 @@ For more information please refer to the *Help Topics* page.</string>
                                     <constraint firstItem="42W-iQ-ZjG" firstAttribute="top" secondItem="9yy-tx-zgR" secondAttribute="top" id="sgu-7F-wMR"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xK-OR-1CE">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xK-OR-1CE">
                                 <rect key="frame" x="32" y="655" width="350" height="49"/>
                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="I agree"/>
@@ -1554,7 +1576,8 @@ For more information please refer to the *Help Topics* page.</string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="R54-H5-iGW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="9yy-tx-zgR" firstAttribute="top" secondItem="R54-H5-iGW" secondAttribute="top" id="CcJ-FM-1vT"/>
                             <constraint firstItem="9yy-tx-zgR" firstAttribute="trailing" secondItem="R54-H5-iGW" secondAttribute="trailing" id="Rmu-Ec-rfj"/>
@@ -1564,7 +1587,6 @@ For more information please refer to the *Help Topics* page.</string>
                             <constraint firstItem="9yy-tx-zgR" firstAttribute="leading" secondItem="R54-H5-iGW" secondAttribute="leading" id="utg-A1-0wM"/>
                             <constraint firstItem="R54-H5-iGW" firstAttribute="trailing" secondItem="7xK-OR-1CE" secondAttribute="trailing" constant="32" id="vq0-iV-8Ss"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="R54-H5-iGW"/>
                     </view>
                     <navigationItem key="navigationItem" id="CfU-xv-EVP"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -1574,7 +1596,7 @@ For more information please refer to the *Help Topics* page.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hzX-4B-EMw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3633" y="-1212"/>
+            <point key="canvasLocation" x="-3633.3333333333335" y="-1212.2282608695652"/>
         </scene>
         <!--Onboarding Step 1a View Controller-->
         <scene sceneID="R6W-kj-4rq">
@@ -1588,7 +1610,7 @@ For more information please refer to the *Help Topics* page.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="655"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hkk-Gz-zWK" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1422.6666666666667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1400.6666666666667"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNs-4Z-dJr">
                                                 <rect key="frame" x="16" y="16" width="44" height="44"/>
@@ -1611,8 +1633,8 @@ For more information please refer to the *Help Topics* page.</string>
                                                 </constraints>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g4Z-4b-Uce">
-                                                <rect key="frame" x="25" y="290.66666666666674" width="364" height="1116"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <rect key="frame" x="25" y="290.66666666666674" width="364" height="1094"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <string key="text">It is important that you read the COVIDSafe *privacy policy* before you register for COVIDSafe.
 
 If you are under 16 years of age, your parent/guardian must also read the *privacy policy*. 
@@ -1636,7 +1658,7 @@ Your registration details will only be used or disclosed for contact tracing and
 More information is available at the *Australian Government Department of Health website*.
 
 See the COVIDSafe *privacy policy* for further details about your rights about your information and how it will be handled and shared.</string>
-                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <userDefinedRuntimeAttributes>
@@ -1644,7 +1666,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 </userDefinedRuntimeAttributes>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration and privacy" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0u-wa-fYL">
-                                                <rect key="frame" x="30" y="243.99999999999997" width="289" height="33.666666666666657"/>
+                                                <rect key="frame" x="30" y="243.99999999999997" width="289.66666666666669" height="33.666666666666657"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -1656,7 +1678,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="g4Z-4b-Uce" secondAttribute="trailing" constant="25" id="6sF-Nn-FxT"/>
                                             <constraint firstItem="Q0u-wa-fYL" firstAttribute="leading" secondItem="Hkk-Gz-zWK" secondAttribute="leading" constant="30" id="Ias-ue-vLs"/>
@@ -1720,7 +1742,8 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="SOQ-Ep-V20"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="SOQ-Ep-V20" firstAttribute="bottom" secondItem="gds-T3-NzS" secondAttribute="bottom" constant="32" id="8KE-w4-YjI"/>
                             <constraint firstItem="gds-T3-NzS" firstAttribute="leading" secondItem="SOQ-Ep-V20" secondAttribute="leading" constant="32" id="9eh-64-cuq"/>
@@ -1730,7 +1753,6 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                             <constraint firstItem="DhA-8H-f7E" firstAttribute="leading" secondItem="SOQ-Ep-V20" secondAttribute="leading" id="ZWf-0n-zHO"/>
                             <constraint firstItem="DhA-8H-f7E" firstAttribute="top" secondItem="SOQ-Ep-V20" secondAttribute="top" id="mor-jV-Sob"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="SOQ-Ep-V20"/>
                     </view>
                     <navigationItem key="navigationItem" id="cgd-rJ-Tij"/>
                     <connections>
@@ -1833,7 +1855,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="bottom" secondItem="pdJ-6t-GZL" secondAttribute="bottom" id="6e9-mL-j6i"/>
                                                             <constraint firstItem="pdJ-6t-GZL" firstAttribute="top" secondItem="h3e-GV-yRm" secondAttribute="top" constant="13" id="MuZ-6t-x2e"/>
@@ -1874,7 +1896,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                                 </constraints>
                                                             </imageView>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="38" id="8kF-vV-1zb"/>
                                                             <constraint firstItem="pYl-es-7AA" firstAttribute="leading" secondItem="bAO-Fi-CsW" secondAttribute="leading" id="DpK-l9-aWs"/>
@@ -1898,7 +1920,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                         <rect key="frame" x="0.0" y="157.66666666666669" width="350" height="33.333333333333343"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Postcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7RM-TO-7v0">
-                                                                <rect key="frame" x="0.0" y="12.999999999999998" width="72.333333333333329" height="20.333333333333329"/>
+                                                                <rect key="frame" x="0.0" y="12.999999999999998" width="72" height="20.333333333333329"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -1907,7 +1929,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="bottom" secondItem="7RM-TO-7v0" secondAttribute="bottom" id="0Dq-4J-01L"/>
                                                             <constraint firstItem="7RM-TO-7v0" firstAttribute="leading" secondItem="zEi-0v-YfD" secondAttribute="leading" id="GYN-GJ-Uct"/>
@@ -1950,7 +1972,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="tk2-6x-mvl" secondAttribute="bottom" id="8jp-20-h5a"/>
                                             <constraint firstItem="hXy-ib-9vr" firstAttribute="leading" secondItem="LCa-Je-nVQ" secondAttribute="leading" constant="32" id="9rc-ME-RF4"/>
@@ -1982,7 +2004,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wu0-UH-w3R">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wu0-UH-w3R">
                                 <rect key="frame" x="32" y="655" width="350" height="49"/>
                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -2003,7 +2025,8 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6ZP-yA-jRS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="0l9-L6-g64" firstAttribute="top" secondItem="6ZP-yA-jRS" secondAttribute="top" id="4Sb-f0-uRo"/>
                             <constraint firstItem="6ZP-yA-jRS" firstAttribute="trailing" secondItem="0l9-L6-g64" secondAttribute="trailing" id="52o-6x-PfB"/>
@@ -2017,7 +2040,6 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                             <constraint firstItem="xBC-Md-zDE" firstAttribute="bottom" secondItem="6ZP-yA-jRS" secondAttribute="bottom" id="fKf-Dz-ITg"/>
                             <constraint firstItem="wu0-UH-w3R" firstAttribute="top" secondItem="0l9-L6-g64" secondAttribute="bottom" constant="31" id="qx2-wZ-55e"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6ZP-yA-jRS"/>
                     </view>
                     <navigationItem key="navigationItem" id="K7o-JJ-E0j"/>
                     <connections>
@@ -2056,7 +2078,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DY3-Bs-8h2" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="446.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="497.66666666666669"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You need the consent of your parent/guardian to proceed" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlW-1W-YqS">
                                                 <rect key="frame" x="32" y="103.33333333333331" width="350" height="67.666666666666686"/>
@@ -2089,7 +2111,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select 'I agree' to confirm consent." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ba6-us-91a">
-                                                <rect key="frame" x="32" y="414" width="362" height="20.333333333333314"/>
+                                                <rect key="frame" x="32" y="465.33333333333331" width="362" height="20.333333333333314"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -2138,10 +2160,26 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information to ensure that COVIDSafe is working properly on my device." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nfU-tC-WBE">
+                                                <rect key="frame" x="46" y="406" width="336" height="42.333333333333314"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="us_registration_consent_diagnostic_copy"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3d-zY-MSz">
+                                                <rect key="frame" x="32" y="406" width="7.6666666666666643" height="20.333333333333314"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="ago-Xc-vpG" secondAttribute="trailing" constant="32" id="3zw-oe-0g1"/>
+                                            <constraint firstAttribute="trailing" secondItem="nfU-tC-WBE" secondAttribute="trailing" constant="32" id="4cO-Xi-LnA"/>
                                             <constraint firstItem="rlW-1W-YqS" firstAttribute="leading" secondItem="DY3-Bs-8h2" secondAttribute="leading" constant="32" id="7Yi-8y-TTN"/>
                                             <constraint firstAttribute="bottom" secondItem="Ba6-us-91a" secondAttribute="bottom" constant="12" id="AXo-mh-O77"/>
                                             <constraint firstItem="ago-Xc-vpG" firstAttribute="leading" secondItem="S8l-U4-ztC" secondAttribute="leading" constant="14" id="BiL-z3-V1j"/>
@@ -2155,16 +2193,20 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                             <constraint firstAttribute="trailing" secondItem="phd-aD-1If" secondAttribute="trailing" constant="32" id="TOS-eQ-mGa"/>
                                             <constraint firstItem="PXg-tG-JnX" firstAttribute="leading" secondItem="zfb-Qr-RoV" secondAttribute="leading" constant="14" id="b91-EL-OXe"/>
                                             <constraint firstItem="S8l-U4-ztC" firstAttribute="top" secondItem="ago-Xc-vpG" secondAttribute="top" id="bfD-kE-tdi"/>
+                                            <constraint firstItem="nfU-tC-WBE" firstAttribute="top" secondItem="ago-Xc-vpG" secondAttribute="bottom" constant="16" id="bl8-1M-QdA"/>
+                                            <constraint firstItem="A3d-zY-MSz" firstAttribute="leading" secondItem="DY3-Bs-8h2" secondAttribute="leading" constant="32" id="cDp-Ed-0qH"/>
+                                            <constraint firstItem="Ba6-us-91a" firstAttribute="top" secondItem="nfU-tC-WBE" secondAttribute="bottom" constant="17" id="cJZ-W4-XTQ"/>
                                             <constraint firstItem="QDG-kZ-uPM" firstAttribute="leading" secondItem="DY3-Bs-8h2" secondAttribute="leading" constant="32" id="cni-eh-z3M"/>
                                             <constraint firstAttribute="trailing" secondItem="Ba6-us-91a" secondAttribute="trailing" constant="20" id="cvN-TA-jPz"/>
                                             <constraint firstItem="zfb-Qr-RoV" firstAttribute="top" secondItem="PXg-tG-JnX" secondAttribute="top" id="ehC-bB-jIY"/>
                                             <constraint firstItem="phd-aD-1If" firstAttribute="top" secondItem="HIU-En-ZQe" secondAttribute="bottom" id="gNw-HG-3U7"/>
                                             <constraint firstItem="HIU-En-ZQe" firstAttribute="top" secondItem="DY3-Bs-8h2" secondAttribute="top" constant="16" id="hcU-mf-G4h"/>
-                                            <constraint firstItem="Ba6-us-91a" firstAttribute="top" secondItem="ago-Xc-vpG" secondAttribute="bottom" constant="24" id="iyF-fT-xcv"/>
                                             <constraint firstAttribute="trailing" secondItem="QDG-kZ-uPM" secondAttribute="trailing" constant="32" id="jre-Ei-31C"/>
                                             <constraint firstItem="ago-Xc-vpG" firstAttribute="top" secondItem="PXg-tG-JnX" secondAttribute="bottom" constant="16" id="qaN-Gw-1uR"/>
                                             <constraint firstItem="QDG-kZ-uPM" firstAttribute="top" secondItem="rlW-1W-YqS" secondAttribute="bottom" constant="16" id="umk-pN-NGM"/>
+                                            <constraint firstItem="A3d-zY-MSz" firstAttribute="top" secondItem="nfU-tC-WBE" secondAttribute="top" id="vxQ-sP-Ei2"/>
                                             <constraint firstItem="HIU-En-ZQe" firstAttribute="leading" secondItem="DY3-Bs-8h2" secondAttribute="leading" constant="16" id="wEU-WU-ava"/>
+                                            <constraint firstItem="nfU-tC-WBE" firstAttribute="leading" secondItem="A3d-zY-MSz" secondAttribute="leading" constant="14" id="ws0-aO-sZu"/>
                                             <constraint firstItem="S8l-U4-ztC" firstAttribute="leading" secondItem="DY3-Bs-8h2" secondAttribute="leading" constant="32" id="x8w-eS-YlP"/>
                                         </constraints>
                                     </view>
@@ -2177,7 +2219,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                     <constraint firstItem="DY3-Bs-8h2" firstAttribute="top" secondItem="HxI-sW-1by" secondAttribute="top" id="khk-zh-kMz"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8B-6S-UGU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8B-6S-UGU">
                                 <rect key="frame" x="32" y="655" width="350" height="49"/>
                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" hint="please consent to proceed"/>
@@ -2196,7 +2238,8 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="sEQ-sW-LBI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="C8B-6S-UGU" firstAttribute="leading" secondItem="sEQ-sW-LBI" secondAttribute="leading" constant="32" id="Dqh-2I-raE"/>
                             <constraint firstItem="C8B-6S-UGU" firstAttribute="top" secondItem="HxI-sW-1by" secondAttribute="bottom" constant="8" id="Vzy-X6-5Gx"/>
@@ -2206,7 +2249,6 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                             <constraint firstItem="HxI-sW-1by" firstAttribute="leading" secondItem="sEQ-sW-LBI" secondAttribute="leading" id="sCn-WT-Ne1"/>
                             <constraint firstItem="sEQ-sW-LBI" firstAttribute="trailing" secondItem="C8B-6S-UGU" secondAttribute="trailing" constant="32" id="t6r-v9-G5t"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="sEQ-sW-LBI"/>
                     </view>
                     <navigationItem key="navigationItem" id="Stz-cr-egJ"/>
                     <connections>
@@ -2216,11 +2258,11 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="70d-y6-jME" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1692" y="-1239.1304347826087"/>
+            <point key="canvasLocation" x="-1692.753623188406" y="-1239.1304347826087"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rHc-rZ-59x"/>
+        <segue reference="bMl-IY-pjw"/>
         <segue reference="4eL-1Z-MtW"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -2234,5 +2276,11 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
         <image name="howItWorks" width="311" height="188"/>
         <image name="info" width="24" height="24"/>
         <image name="privacy" width="311" height="188"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

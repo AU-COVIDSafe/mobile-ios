@@ -36,6 +36,11 @@ class OnboardingStep2bViewController: UIViewController {
             pointThreeText.addAttributes([.underlineStyle: NSUnderlineStyle.single.rawValue, .foregroundColor: UIColor.covidSafeColor], range: nsRange)
             pointThreeLabel.attributedText = pointThreeText
         }
+        
+        guard let currentVersion = (Bundle.main.version as NSString?)?.integerValue else {
+            return
+        }
+        UserDefaults.standard.set(currentVersion, forKey: "latestPolicyUpdateVersionShown")
     }
     
     @IBAction func learnMoreTapped(_ sender: Any) {
@@ -49,8 +54,6 @@ class OnboardingStep2bViewController: UIViewController {
     
     @IBAction func continueBtnTapped(_ sender: UIButton) {
         let homeVC = HomeViewController(nibName: "HomeView", bundle: nil)
-        homeVC.modalPresentationStyle = .overFullScreen
-        homeVC.modalTransitionStyle = .coverVertical
-        self.present(homeVC, animated: true, completion: nil)
+        self.navigationController?.setViewControllers([homeVC], animated: true)
     }
 }

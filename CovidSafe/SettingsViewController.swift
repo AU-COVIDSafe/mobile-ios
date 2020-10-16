@@ -216,6 +216,6 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func onBackTapped(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
 }

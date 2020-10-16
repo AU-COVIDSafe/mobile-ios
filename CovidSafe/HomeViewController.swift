@@ -8,9 +8,7 @@ class HomeViewController: UIViewController {
     private var observer: NSObjectProtocol?
     
     @IBOutlet weak var bluetoothStatusOffView: UIView!
-    @IBOutlet weak var bluetoothStatusOnView: UIView!
     @IBOutlet weak var bluetoothPermissionOffView: UIView!
-    @IBOutlet weak var bluetoothPermissionOnView: UIView!
     @IBOutlet weak var shareView: UIView!
     @IBOutlet weak var inactiveAppSectionView: UIView!
     @IBOutlet weak var activeAppSectionView: UIView!
@@ -172,6 +170,10 @@ class HomeViewController: UIViewController {
         self.lottieBluetoothView?.play()
         self.becomeFirstResponder()
         self.updateJWTKeychainAccess()
+        
+        if shouldShowPolicyUpdateMessage() {
+            showPolicyUpdateMessage()
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -330,12 +332,10 @@ class HomeViewController: UIViewController {
     }
     
     fileprivate func toggleBluetoothStatusView() {
-        toggleViewVisibility(view: bluetoothStatusOnView, isVisible: !self.bluetoothPermissionOn && self.bluetoothStatusOn)
         toggleViewVisibility(view: bluetoothStatusOffView, isVisible: self.bluetoothPermissionOn && !self.bluetoothStatusOn)
     }
     
     fileprivate func toggleBluetoothPermissionStatusView() {
-        toggleViewVisibility(view: bluetoothPermissionOnView, isVisible: !self.allPermissionOn && self.bluetoothPermissionOn)
         toggleViewVisibility(view: bluetoothPermissionOffView, isVisible: !self.allPermissionOn && !self.bluetoothPermissionOn)
     }
     
@@ -355,6 +355,36 @@ class HomeViewController: UIViewController {
             appActiveSubtitleLabel.textColor = appActiveSubtitleLabelInitialColor
             appActiveSubtitleLabel.text = "home_header_active_no_action_required".localizedString()
         }
+    }
+    
+    // MARK: policy update message
+    
+    func shouldShowPolicyUpdateMessage() -> Bool {
+        // this is the min version that the disclamer should be diplayed on.
+        let minVersionShowPolicyUpdate = 77
+        
+        let latestVersionShown = UserDefaults.standard.integer(forKey: "latestPolicyUpdateVersionShown")
+        guard let currentVersion = (Bundle.main.version as NSString?)?.integerValue else {
+            return false
+        }
+        if currentVersion >= minVersionShowPolicyUpdate && currentVersion > latestVersionShown {
+            UserDefaults.standard.set(currentVersion, forKey: "latestPolicyUpdateVersionShown")
+            return true
+        }
+        return false
+    }
+    
+    func showPolicyUpdateMessage() {
+        
+        let privacyPolicyUrl = URLHelper.getPrivacyPolicyURL()
+        let disclaimerAlert = CSAlertViewController(nibName: "CSAlertView", bundle: nil)
+        let disclaimerMsg = NSMutableAttributedString(string: "collection_message".localizedString(), attributes: [.font : UIFont.preferredFont(forTextStyle: .body)])
+        disclaimerMsg.addLink(enclosedIn: "*", urlString: privacyPolicyUrl)
+        disclaimerAlert.set(message: disclaimerMsg, buttonLabel: "dismiss".localizedString())
+        
+        disclaimerAlert.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        disclaimerAlert.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        present(disclaimerAlert, animated: true, completion: nil)
     }
     
     // MARK: API calls
@@ -393,10 +423,12 @@ class HomeViewController: UIViewController {
     }
     
     func getStatistics() {
-        self.covidStatisticsViewController.isLoading = true
-        StatisticsAPI.getStatistics { (stats, error) in
-            self.covidStatisticsViewController.isLoading = false
-            self.covidStatisticsViewController.setupData(statistics: stats, errorType: error, hasInternet: self.isInternetReachable())
+        if covidStatisticsViewController.showStatistics {
+            self.covidStatisticsViewController.isLoading = true
+            StatisticsAPI.getStatistics { (stats, error) in
+                self.covidStatisticsViewController.isLoading = false
+                self.covidStatisticsViewController.setupData(statistics: stats, errorType: error, hasInternet: self.isInternetReachable())
+            }
         }
     }
     
@@ -466,13 +498,10 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func onPositiveButtonTapped(_ sender: UITapGestureRecognizer) {
-        guard let helpVC = UIStoryboard(name: "UploadData", bundle: nil).instantiateInitialViewController() else {
+        guard let uploadVC = UIStoryboard(name: "UploadData", bundle: nil).instantiateInitialViewController() else {
             return
         }
-        let nav = UploadDataNavigationController(rootViewController: helpVC)
-        nav.modalTransitionStyle = .coverVertical
-        nav.modalPresentationStyle = .fullScreen
-        present(nav, animated: true, completion: nil)
+        navigationController?.pushViewController(uploadVC, animated: true)
     }
     
     @IBAction func onHelpButtonTapped(_ sender: Any) {
@@ -491,9 +520,7 @@ class HomeViewController: UIViewController {
     @IBAction func onSettingsTapped(_ sender: Any) {
         let settingsVC = SettingsViewController(nibName: "SettingsView", bundle: nil)
         settingsVC.showUpdateAvailable = shouldShowUpdateApp
-        settingsVC.modalPresentationStyle = .overFullScreen
-        settingsVC.modalTransitionStyle = .coverVertical
-        self.present(settingsVC, animated: true, completion: nil)
+        navigationController?.pushViewController(settingsVC, animated: true)
     }
     
     @objc

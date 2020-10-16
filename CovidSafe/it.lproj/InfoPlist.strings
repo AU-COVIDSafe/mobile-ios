@@ -2,7 +2,7 @@
   CovidSafe
 
   Copyright © 2020 Australian Government. All rights reserved. */
-"BluetoothUsageDesc" = "Il COVIDSafe scambia segnali Bluetooth® con telefonini vicini che utilizzano la stessa app. Questi segnali contengono un ID anonimo, che è crittografato e cambia continuamente per garantire la tua privacy.";
-"NSBluetoothAlwaysUsageDescription" = "Il COVIDSafe scambia segnali Bluetooth® con cellulari vicini che utilizzano la stessa app. Questi segnali contengono un ID anonimo crittografato che cambia continuamente per garantire la tua privacy.";
-"NSBluetoothPeripheralUsageDescription" = "Il COVIDSafe scambia segnali Bluetooth® con cellulari vicini che utilizzano la stessa app. Questi segnali contengono un ID anonimo crittografato che cambia continuamente per garantire la tua privacy.";
+"BluetoothUsageDesc" = "COVIDSafe scambia segnali Bluetooth® con cellulari vicini che utilizzano la stessa app. Questi segnali contengono un ID anonimo crittografato che cambia continuamente per garantire la privacy.";
+"NSBluetoothAlwaysUsageDescription" = "COVIDSafe scambia segnali Bluetooth® con cellulari vicini che utilizzano la stessa app. Questi segnali contengono un ID anonimo crittografato che cambia continuamente per garantire la privacy.";
+"NSBluetoothPeripheralUsageDescription" = "COVIDSafe scambia segnali Bluetooth® con i cellulari vicini che utilizzano la stessa app. Questi segnali contengono un ID anonimo crittografato che cambia continuamente per garantire la privacy.";
 "UILaunchStoryboardName" = "LaunchScreen_it";

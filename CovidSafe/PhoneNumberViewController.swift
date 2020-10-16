@@ -13,6 +13,7 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
     @IBOutlet weak var phoneError: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var stepCounterLabel: UILabel!
+    @IBOutlet weak var backButton: UIButton!
     var countryFlagContainerView: UIView!
     var flagImageView: UIImageView!
     
@@ -77,10 +78,19 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
         initialTextFieldBorderColour = phoneNumberField.borderColor
         navigationController?.view.backgroundColor = UIColor.white
         
-        stepCounterLabel.text = String.localizedStringWithFormat( "stepCounter".localizedString(),
-            2,
-            UserDefaults.standard.bool(forKey: "allowedPermissions") ? 3 : 4
-        )
+        if reauthenticating {
+            backButton.isHidden = true
+            registrationInfo = RegistrationRequest(fullName: "", postcode: "", age: 20, isMinor: false, phoneNumber: "")
+            stepCounterLabel.text = String.localizedStringWithFormat( "stepCounter".localizedString(),
+                                                                      1,
+                                                                      2
+            )
+        } else {
+            stepCounterLabel.text = String.localizedStringWithFormat( "stepCounter".localizedString(),
+                                                                      2,
+                                                                      UserDefaults.standard.bool(forKey: "allowedPermissions") ? 3 : 4
+            )
+        }
     }
     
     @IBAction func onBackTapped(_ sender: UIButton) {

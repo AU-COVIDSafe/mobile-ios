@@ -18,6 +18,7 @@
 "BluetoothON" = "Bluetooth®: BẬT";
 "change_language" = "Thay đổi ngôn ngữ";
 "change_language_content" = "Đọc hướng dẫn về cách sử dụng COVIDSafe bằng ngôn ngữ khác.";
+"collection_message" = "COVIDSafe hiện đang thu thập thông tin chẩn đoán để giúp bạn khắc phục sự cố với Ứng dụng của mình. *Tìm hiểu thêm *";
 "consent_button" = "Tôi đồng ý";
 /* Shared Consent Actions */
 "consent_call_for_action" = "Chọn 'Tôi đồng ý' để xác nhận đồng ý.";
@@ -233,8 +234,8 @@
 "country_region_name_zm" = "Zambia";
 "country_region_name_zw" = "Zimbabwe";
 "data_privacy_button" = "Tiếp theo";
-"data_privacy_content" = "Điều quan trọng là bạn phải đọc *chính sách bảo mật* COVIDSafe trước khi đăng ký COVIDSafe. \n\nNếu bạn dưới 16 tuổi, cha mẹ/người giám hộ của bạn cũng phải đọc *chính sách bảo mật *. \n\nSử dụng COVIDSafe là hoàn toàn tự nguyện. Bạn có thể cài đặt hoặc xóa ứng dụng bất cứ lúc nào. Nếu bạn xóa COVIDSafe, *bạn cũng có thể yêu cầu xóa thông tin của mình* khỏi máy chủ bảo mật. \n\nĐể đăng ký COVIDSafe, bạn sẽ cần nhập tên (hoặc biệt danh), số điện thoại di động, độ tuổi và mã bưu điện. \n\nThông tin bạn gửi khi đăng ký và thông tin về việc sử dụng COVIDSafe của bạn sẽ được thu thập và lưu trữ trên một máy chủ có độ an toàn cao. \n\nCOVIDSafe sẽ không thu thập thông tin vị trí của bạn. \n\nCOVIDSafe sẽ ghi nhớ thời gian tiếp xúc, mã ID ẩn danh của những người dùng COVIDSafe khác mà bạn tiếp xúc, cường độ tín hiệu Bluetooth® và kiểu điện thoại của người dùng khác trên thiết bị của bạn. \n\nNhững người dùng COVIDSafe khác mà bạn tiếp xúc cũng sẽ ghi nhớ mã ID ẩn danh của bạn, thời gian tiếp xúc, cường độ tín hiệu Bluetooth® và kiểu điện thoại của bạn, trên thiết bị của họ.\n\nNếu người dùng khác xét nghiệm dương tính với COVID-19, họ có thể đăng tải thông tin tiếp xúc của họ và nhân viên y tế của tiểu bang hoặc lãnh thổ có thể liên hệ với bạn nhằm mục đích truy tìm tiếp xúc. \n\nChi tiết đăng ký của bạn sẽ chỉ được sử dụng hoặc tiết lộ để theo dõi việc tiếp xúc và hoạt động đúng đắn và hợp pháp của COVIDSafe. \n\nThông tin để tìm hiểu thêm có tại trang mạng của *Bộ Y tế Chính phủ Úc*. \n\n Xem *chính sách bảo mật* của COVIDSafe để biết thêm chi tiết các quyền về thông tin của bạn và cách xử lý và chia sẻ thông tin đó.\n ";
-"data_privacy_content_VO" = "Điều quan trọng là bạn phải đọc chính sách bảo mật của COVIDSafe trước khi đăng ký COVIDSafe. \n\nNếu bạn dưới 16 tuổi, cha mẹ/người giám hộ của bạn cũng phải đọc chính sách bảo mật. \n\nSử dụng COVIDSafe là hoàn toàn tự nguyện. Bạn có thể cài đặt hoặc xóa ứng dụng này bất cứ lúc nào. Nếu bạn xóa COVIDSafe, bạn cũng có thể yêu cầu xóa thông tin của mình khỏi máy chủ bảo mật. \n\nĐể đăng ký COVIDSafe, bạn cần nhập tên (hoặc biệt danh), số điện thoại di động, độ tuổi và mã bưu điện. \n\nThông tin bạn gửi khi đăng ký, và thông tin về việc sử dụng COVIDSafe của bạn sẽ được thu thập và lưu trữ trên một máy chủ có độ an toàn cao. \n\nCOVIDSafe sẽ không thu thập thông tin về vị trí của bạn. \n\nCOVIDSafe sẽ ghi nhớ thời gian tiếp xúc và mã ID ẩn danh của những người dùng COVIDSafe khác mà bạn tiếp xúc, cường độ tín hiệu Bluetooth và kiểu điện thoại của người dùng khác, trên thiết bị của bạn. \n\nNhững người dùng COVIDSafe khác mà bạn tiếp xúc sẽ ghi nhớ mã ID ẩn danh và thời gian tiếp xúc với bạn, cường độ tín hiệu Bluetooth và kiểu điện thoại của bạn, trên thiết bị của họ. \n\nNếu người dùng khác xét nghiệm dương tính với COVID-19, họ có thể đăng tải thông tin tiếp xúc của họ và nhân viên y tế của tiểu bang hoặc lãnh thổ có thể liên hệ với bạn nhằm mục đích truy tìm việc tiếp xúc. \n\nChi tiết đăng ký của bạn sẽ chỉ được sử dụng hoặc tiết lộ để theo dõi việc tiếp xúc và hoạt động đúng đắn và hợp pháp của COVIDSafe. \n\nThông tin thêm có sẵn tại trang mạng của Bộ Y tế Chính phủ Úc. \n\nXem chính sách bảo mật của COVIDSafe để biết thêm chi tiết quyền về thông tin của bạn và cách xử lý và chia sẻ thông tin đó.";
+"data_privacy_content" = "Điều quan trọng là bạn phải đọc *chính sách bảo mật* COVIDSafe trước khi đăng ký COVIDSafe. \n\nNếu bạn dưới 16 tuổi, cha mẹ/người giám hộ của bạn cũng phải đọc *chính sách bảo mật *. \n\nSử dụng COVIDSafe là hoàn toàn tự nguyện. Bạn có thể cài đặt hoặc xóa ứng dụng bất cứ lúc nào. Nếu bạn xóa COVIDSafe, *bạn cũng có thể yêu cầu xóa thông tin của mình* khỏi máy chủ bảo mật. \n\nĐể đăng ký COVIDSafe, bạn sẽ cần nhập tên (hoặc biệt danh), số điện thoại di động, độ tuổi và mã bưu điện. \n\nThông tin bạn gửi khi đăng ký và thông tin về việc sử dụng COVIDSafe của bạn sẽ được thu thập và lưu trữ trên một máy chủ có độ an toàn cao. \n\nThông tin cũng được thu thập để đảm bảo rằng COVIDSafe đang hoạt động bình thường trên thiết bị của bạn. Điều này bao gồm hệ điều hành, phiên bản Ứng dụng bạn đã cài đặt, ngôn ngữ được thiết lập trên thiết bị của bạn, Bluetooth® có hoạt động hay không và liệu Ứng dụng của bạn có ghi lại bất kỳ cuộc gặp gỡ nào trong bảy ngày trước đó hay không.\n\nCOVIDSafe sẽ không thu thập thông tin vị trí của bạn. \n\nCOVIDSafe sẽ ghi nhớ thời gian tiếp xúc, mã ID ẩn danh của những người dùng COVIDSafe khác mà bạn tiếp xúc, cường độ tín hiệu Bluetooth và kiểu điện thoại của người dùng khác trên thiết bị của bạn. \n\nNhững người dùng COVIDSafe khác mà bạn tiếp xúc cũng sẽ ghi nhớ mã ID ẩn danh của bạn, thời gian tiếp xúc, cường độ tín hiệu Bluetooth và kiểu điện thoại của bạn, trên thiết bị của họ.\n\nNếu người dùng khác xét nghiệm dương tính với COVID-19, họ có thể đăng tải thông tin tiếp xúc của họ và nhân viên y tế của tiểu bang hoặc lãnh thổ có thể liên hệ với bạn nhằm mục đích truy tìm tiếp xúc. \n\nThông tin đăng ký của bạn sẽ chỉ được sử dụng hoặc tiết lộ để truy tìm tiếp xúc và để COVIDSafe hoạt động đúng đắn và hợp pháp. \n\nThông tin thêm có tại trang mạng *covidsafe.gov.au*. \n\nXem *chính sách bảo mật* của COVIDSafe để biết thêm chi tiết về quyền của bạn đối với thông tin của mình cũng như cách xử lý và chia sẻ thông tin đó.\n ";
+"data_privacy_content_VO" = "Điều quan trọng là bạn phải đọc chính sách bảo mật của COVIDSafe trước khi đăng ký COVIDSafe.\n\nNếu bạn dưới 16 tuổi, cha mẹ/người giám hộ của bạn cũng phải đọc chính sách bảo mật.\n\nViệc sử dụng COVIDSafe là hoàn toàn tự nguyện. Bạn có thể cài đặt hoặc xóa ứng dụng bất kỳ lúc nào. Nếu bạn xóa COVIDSafe, bạn cũng có thể yêu cầu xóa thông tin của mình khỏi máy chủ bảo mật.\n\nĐể đăng ký COVIDSafe, bạn sẽ cần nhập tên (hoặc biệt danh), số điện thoại di động, độ tuổi và mã bưu điện.\n\nThông tin bạn gửi khi đăng ký và thông tin về việc sử dụng COVIDSafe của bạn được lưu trữ trên một máy chủ có độ bảo mật cao.\n\nThông tin cũng được thu thập để đảm bảo rằng COVIDSafe đang hoạt động bình thường trên thiết bị của bạn. Điều này bao gồm hệ điều hành, phiên bản Ứng dụng bạn đã cài đặt, ngôn ngữ được thiết lập trên thiết bị của bạn, Bluetooth có hoạt động hay không và liệu Ứng dụng của bạn có ghi lại bất kỳ cuộc gặp gỡ nào trong bảy ngày trước đó hay không.\n\nCOVIDSafe sẽ không thu thập thông tin vị trí của bạn.\n\nCOVIDSafe sẽ ghi nhớ ngày và giờ tiếp xúc, mã ID ẩn danh của những người dùng COVIDSafe khác mà bạn tiếp xúc, cường độ tín hiệu Bluetooth và kiểu điện thoại của những người dùng khác trên thiết bị của bạn.\n\nNhững người dùng COVIDSafe khác mà bạn tiếp xúc sẽ ghi nhớ mã ID ẩn danh, ngày và giờ tiếp xúc với bạn, cường độ tín hiệu Bluetooth và kiểu điện thoại của bạn trên thiết bị của họ.\n\nNếu một người dùng khác xét nghiệm dương tính với COVID-19, họ có thể đăng tải thông tin liên hệ của mình và nhân viên y tế của tiểu bang hoặc vùng lãnh thổ có thể liên hệ với bạn nhằm mục đích truy tìm tiếp xúc.\n\nCác thông tin đăng ký của bạn sẽ chỉ được sử dụng hoặc tiết lộ để theo dõi tiếp xúc và để COVIDSafe hoạt động đúng đắn và hợp pháp.\n\nThông tin thêm có tại trang mạng covidsafe.gov.au.\n\nXem chính sách bảo mật của COVIDSafe để biết thêm chi tiết về các quyền của bạn đối với thông tin của mình cũng như cách xử lý và chia sẻ thông tin đó.";
 /* OnBoarding Data Privacy */
 "data_privacy_headline" = "Đăng ký và bảo mật";
 "deaths" = "Tử vong";
@@ -242,6 +243,7 @@
 "dialog_error_uploading_negative" = "Hủy bỏ";
 "dialog_error_uploading_positive" = "Thử lại";
 "dialog_uploading_message" = "Thông tin COVIDSafe của bạn hiện đang được đăng tải. \n\n Vui lòng không đóng ứng dụng.";
+"dismiss" = "Bỏ qua";
 "done_success" = "Hoàn tất";
 "enter_number_button" = "Nhận mã PIN";
 "enter_number_content" = "Chúng tôi sẽ gửi cho bạn mã PIN gồm 6 chữ số để xác minh số điện thoại của bạn.";
@@ -259,6 +261,7 @@
 "global_close" = "Đóng";
 "global_double_tap" = "nhấn đúp để chỉnh sửa";
 "global_OK" = "Đồng ý";
+"hide" = "Ẩn";
 "home_app_permission_status_subtitle" = "COVIDSafe sẽ không hoạt động nếu không có cài đặt phù hợp.";
 "home_app_permission_status_title" = "Kiểm tra cài đặt của bạn";
 "home_data_uploaded_message" = "Giúp ngăn chặn sự lây lan của COVID-19 và theo dõi các triệu chứng của bạn.";
@@ -274,7 +277,7 @@
 "home_set_complete_external_link_app_title" = "Tải ứng dụng Coronavirus";
 "home_set_complete_external_link_been_contacted_content" = "Bạn chỉ có thể đăng tải thông tin của mình nếu bạn được xét nghiệm có kết quả dương tính.";
 "home_set_complete_external_link_been_contacted_title" = "Nhân viên y tế có liên lạc với bạn không?";
-"home_set_complete_external_link_help_topics_content" = "Hướng dẫn cách khắc phục và sửa chữa sự cố kỹ thuật";
+"home_set_complete_external_link_help_topics_content" = "Hướng dẫn cách khắc phục và sửa chữa các sự cố kỹ thuật";
 "home_set_complete_external_link_help_topics_title" = "Các chủ đề trợ giúp";
 "home_set_complete_external_link_news_content" = "Vào aus.gov.au để biết tin tức mới nhất về Coronavirus.";
 "home_set_complete_external_link_news_title" = "Tin tức và cập nhật mới nhất";
@@ -294,7 +297,7 @@
 "how_it_works_content" = "Tín hiệu Bluetooth® được sử dụng để xác định khi bạn đang ở gần người dùng COVIDSafe khác. \n\nMọi trường hợp tiếp xúc gần giữa bạn và những người dùng COVIDSafe khác đều được ghi nhận để tạo dữ liệu tiếp xúc. Thông tin này được mã hóa và chỉ được lưu trữ trong điện thoại của bạn. \n\nNếu bạn xét nghiệm dương tính với COVID-19 và là người dùng COVIDSafe, nhân viên y tế của tiểu bang hoặc lãnh thổ sẽ liên hệ với bạn. Họ sẽ tự nguyện hỗ trợ đăng tải dữ liệu tiếp xúc của bạn lên hệ thống lưu trữ thông tin có độ an toàn cao.\n\nCác nhân viên y tế của tiểu bang hoặc lãnh thổ cũng có thể liên hệ với bạn nếu bạn đã tiếp xúc gần với một người dùng COVIDSafe khác có kết quả xét nghiệm dương tính. \n\nĐể biết thêm thông tin, vui lòng tham khảo trang *Chủ đề Trợ giúp*";
 /* OnBoarding How it works */
 "how_it_works_headline" = "COVIDSafe hoạt động như thế nào";
-"improve" = "";
+"improve" = "Cải thiện hiệu năng của ứng dụng";
 "improve_heading" = "Cải thiện hoạt động của COVIDSafe";
 "internet_connection_content" = "Kết nối với internet để đảm bảo nhận được thông báo về các sự cố và cập nhật.";
 "internet_connection_heading" = "Không có kết nối Internet";
@@ -310,7 +313,9 @@
 "IntroLabel" = "Giúp ngăn chặn sự lây lan\nvà cứu mạng sống.";
 "invalid_australian_phone_number_error_prompt" = "Số điện thoại di động ở Úc chứa tối đa 10 chữ số.";
 "invalid_norfolk_island_phone_number_error_prompt" = "Số điện thoại di động ở Đảo Norfolk chứa từ 5 đến 6 chữ số.";
-"loading_numbers" = "";
+"jwt_description" = "Có vấn đề với thông tin đăng ký của bạn.";
+"jwt_heading" = "Vui lòng đăng ký lại";
+"loading_numbers" = "Đang tải các số mới nhất";
 /* Splash Screen */
 "migration_in_progress" = "COVIDSafe trong tiến trình cập nhật. \n\nVui lòng đảm bảo điện thoại của bạn không bị tắt cho đến khi cập nhật hoàn tất.";
 "national_numbers" = "Số ca nhiễm trên toàn quốc";
@@ -331,9 +336,9 @@
 "NotificationsDisabledBlurb" = "Bạn sẽ không nhận được thông báo nếu COVIDSafe không hoạt động. \nThay đổi cài đặt thông báo";
 /* Figma page iOS Screens (05/06) */
 "NotificationsEnabledBlurb" = "Bạn sẽ nhận được thông báo nếu COVIDSafe không hoạt động. \nThay đổi cài đặt thông báo";
-"numbers_error" = "";
-"numbers_no_internet" = "";
-"numbers_refresh" = "";
+"numbers_error" = "Không thể kiểm tra các số đã cập nhật.";
+"numbers_no_internet" = "Kết nối với internet để đảm bảo bạn nhận được các số cập nhật.";
+"numbers_refresh" = "Làm mới ngay";
 "options_for_australia" = "Tùy chọn cho Úc";
 "permission_button" = "Kích hoạt";
 /* Figma page iOS Screens (05/06) */
@@ -371,7 +376,8 @@
 "PostcodeValidationErrorMessage" = "Vui lòng nhập mã bưu điện Úc hợp lệ.";
 "queensland" = "Queensland";
 "recovered" = "Tổng số ca phục hồi";
-"registration_consent_content" = "Tôi đồng ý cho Cơ quan Chuyển đổi Kỹ thuật số với tư cách là nhà quản trị cửa hàng dữ liệu, theo quyết định pháp lý của Bộ trưởng Bộ Y tế Chính phủ Úc thu thập:";
+"registration_consent_content" = "Tôi đồng ý cho Cơ quan Chuyển đổi Kỹ thuật số với tư cách là nhà quản trị kho dữ liệu, theo quyết định pháp lý của Bộ trưởng Bộ Y tế Chính phủ Úc thu thập:";
+"registration_consent_diagnostic" = "Thông tin để đảm bảo rằng COVIDSafe đang hoạt động bình thường trên thiết bị của tôi.";
 "registration_consent_first_paragraph" = "Thông tin đăng ký của tôi.";
 /* Onboarding Registration Consent */
 "registration_consent_headline" = "Đồng ý đăng ký";
@@ -380,13 +386,14 @@
 "select_country_or_region" = "Chọn quốc gia hoặc khu vực";
 /* Figma page Android Screens (05/06) */
 "Select_country_or_region_headline" = "Chọn quốc gia hoặc khu vực";
-"settings" = "";
+"settings" = "Cài đặt";
 "share_this_app_content" = "Hãy cùng tôi ngăn chặn sự lây lan của COVID-19! Tải COVIDSafe, ứng dụng của Chính phủ Úc. # COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
+"show" = "Hiển thị";
 "south_australia" = "Nam Úc";
 "stepCounter" = "Bước %d của %d";
 "support" = "Hỗ trợ";
-"support_content" = "Để được hỗ trợ về các vấn đề không có trong chủ đề Trợ giúp";
-"Support_VOLabel" = "Hỗ trợ. Để được hỗ trợ về các vấn đề không có trong chủ đề Trợ giúp";
+"support_content" = "Để được trợ giúp về các vấn đề không có trong chủ đề Trợ giúp";
+"Support_VOLabel" = "Hỗ trợ. Để được trợ giúp về các vấn đề không có trong chủ đề Trợ giúp";
 "tasmania" = "Tasmania";
 "total_confirmed_cases" = "Tổng số ca nhiễm";
 "total_per_state" = "Tổng số ca nhiễm theo tiểu bang và lãnh thổ";
@@ -402,7 +409,7 @@
 "under-sixteen_consent_call_for_action" = "Chọn 'Tôi đồng ý' để xác nhận sự đồng ý.";
 "update_available_app_store_btn" = "Vào App Store";
 "update_available_dismiss_btn" = "Nhắc tôi sau";
-"update_available_message_ios" = "Chúng tôi đã và đang cải thiện COVIDSafe. Cập nhật qua Cửa hàng Ứng dụng (App Store).";
+"update_available_message_ios" = "Chúng tôi đã và đang cải thiện COVIDSafe. Cập nhật qua Kho Ứng dụng (App Store).";
 "update_available_title" = "Cập nhật có sẵn!";
 "upload_answer_no" = "Không";
 /* Upload flow */
@@ -418,6 +425,7 @@
 "upload_step_verify_pin_header" = "Đăng tải thông tin của bạn";
 "upload_step_verify_pin_sub_header" = "Nhân viên y tế của tiểu bang hoặc lãnh thổ sẽ gửi mã PIN qua tin nhắn đến thiết bị của bạn. Nhập mã PIN vào đây để đăng tải thông tin của bạn.";
 "us_consent_button" = "Tôi đồng ý";
+"us_registration_consent_diagnostic" = "Thông tin để đảm bảo rằng COVIDSafe đang hoạt động bình thường trên thiết bị của tôi.";
 "victoria" = "Victoria";
 "western_australia" = "Tây Úc";
 "wrong_ping_number" = "Nhập sai mã PIN";
@@ -426,7 +434,7 @@
 "AllowBluetoothON_VOLabel" = "Truy cập Bluetooth: BẬT";
 "BluetoothOFF_VOLabel" = "Bluetooth: TẮT Bật Bluetooth trên điện thoại của bạn. Chọn 'Cho phép Kết nối Mới' nếu thấy hiển thị.";
 "BluetoothON_VOLabel" = "Bluetooth: BẬT";
-"CodeHasExpired" = "Mã của bạn đã hết hạn.";
+"CodeHasExpired" = "Mã PIN của bạn đã hết hạn.";
 /* details */
 "Done" = "Hoàn tất";
 /* Feedback */
@@ -487,12 +495,12 @@
 "UploadFailedErrorMessage" = "Vui lòng thử lại sau.";
 "ValidationError" = "Lỗi xác nhận";
 "GetCoronaVirusApp_VOLabel" = "Tải ứng dụng Coronavirus. Tải ứng dụng của chính phủ để biết những tin tức và lời khuyên mới nhất.";
-"HelpTopics_VOLabel" = "Chủ đề Trợ giúp. Hướng dẫn cách khắc phục và sửa chữa sự cố kỹ thuật";
+"HelpTopics_VOLabel" = "Chủ đề Trợ giúp. Hướng dẫn cách khắc phục và sửa chữa các sự cố kỹ thuật";
 "LatestNews_VOLabel" = "Tin tức và cập nhật mới nhất. Vào trang aus.gov.au để biết tin tức mới nhất về coronavirus.";
 "NotificationsDisabled_VOLabel" = "Thông báo bị vô hiệu hóa. Bạn sẽ không nhận được thông báo nếu COVIDSafe không hoạt động. \nThay đổi cài đặt thông báo";
 "NotificationsEnabled_VOLabel" = "Thông báo được kích hoạt. Bạn sẽ nhận được thông báo nếu COVIDSafe không hoạt động. \nThay đổi cài đặt thông báo";
 "OS1b_TopParagraph_VOLabel" = "Tín hiệu Bluetooth được sử dụng để xác định khi bạn ở gần người dùng COVIDSafe khác. \nMọi trường hợp tiếp xúc gần giữa bạn và những người dùng COVIDSafe khác đều được ghi nhận để tạo thông tin về mối tiếp xúc gần. Thông tin này sẽ được mã hóa và chỉ lưu trữ trong điện thoại của bạn. \nNếu bạn xét nghiệm dương tính với COVID-19 và là người dùng COVIDSafe, nhân viên y tế của tiểu bang hoặc lãnh thổ sẽ liên hệ với bạn. Họ sẽ tự nguyện hỗ trợ đăng tải thông tin về tiếp xúc gần của bạn vào hệ thống lưu trữ thông tin có độ an toàn cao \nCác nhân viên y tế của tiểu bang hoặc lãnh thổ cũng có thể liên hệ với bạn nếu bạn tiếp xúc gần với một người dùng COVIDSafe khác có kết quả xét nghiệm dương tính. \nĐể biết thêm thông tin, vui lòng tham khảo trang Chủ đề Trợ giúp";
-"permission_content_iOS_2_VOLabel" = "1. Bluetooth \n2. Thông báo \n\n COVIDSafe không gửi yêu cầu kết nối.";
+"permission_content_iOS_2_VOLabel" = "1. Bluetooth \n2. Thông báo \n\n COVIDSafe không gửi yêu cầu ghép nối.";
 "permission_content_iOS_VOLabel" = "Cần bật Bluetooth để COVIDSafe hoạt động. Khi bật Thông báo, bạn nhận được các cập nhật để nhắc nhở khi COVIDSafe không hoạt động. \n\n Chọn 'Kích hoạt' để bật:";
 "ShareCovidSafe_VOLabel" = "Chia sẻ COVIDSafe. Mời người khác giúp đỡ. Cùng nhau, chúng ta mạnh mẽ hơn.";
 "UploadData_VOLabel" = "Nhân viên y tế có liên lạc với bạn không? Bạn chỉ có thể đăng tải thông tin của mình nếu bạn có kết quả xét nghiệm dương tính.";

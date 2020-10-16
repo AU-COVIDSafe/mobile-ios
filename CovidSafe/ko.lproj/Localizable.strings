@@ -18,6 +18,7 @@
 "BluetoothON" = "블루투스®: ON";
 "change_language" = "언어를 변경하십시오";
 "change_language_content" = "다른 언어로 COVIDSafe 사용에 대한 안내서를 읽으십시오.";
+"collection_message" = "이제 COVIDSafe는 앱 문제를 해결하는 데 도움이 되는 진단 정보를 수집합니다. *더 알아보기*";
 "consent_button" = "동의";
 /* Shared Consent Actions */
 "consent_call_for_action" = "동의 확인을 위해 '동의'를 선택하세요. ";
@@ -242,6 +243,7 @@
 "dialog_error_uploading_negative" = "취소";
 "dialog_error_uploading_positive" = "다시 시도";
 "dialog_uploading_message" = "당신의 COVIDSafe 정보가 현재 업로드 중입니다. \n\n앱을 닫지 마세요.";
+"dismiss" = "무시하기";
 "done_success" = "완료";
 "enter_number_button" = "PIN 받기";
 "enter_number_content" = "본 휴대폰 번호 확인을 위해 6자리 PIN을 보내겠습니다.";
@@ -259,6 +261,7 @@
 "global_close" = "닫기";
 "global_double_tap" = "두 번 탭해서 수정하세요";
 "global_OK" = "확인";
+"hide" = "숨기기";
 "home_app_permission_status_subtitle" = "COVIDSafe는 올바른 설정없이는 작동되지 않습니다.";
 "home_app_permission_status_title" = "설정을 확인하세요.";
 "home_data_uploaded_message" = "COVID-19의 확산방지에 협조하고 자신의 증상을 추적하세요.";
@@ -310,7 +313,9 @@
 "IntroLabel" = "바이러스 확산을 방지해서 \n생명을 구합시다.";
 "invalid_australian_phone_number_error_prompt" = "호주 휴대폰 번호는 최대 10자리입니다.";
 "invalid_norfolk_island_phone_number_error_prompt" = "노퍽 섬의 휴대폰 번호는 5-6자리입니다.";
-"loading_numbers" = "";
+"jwt_description" = "등록 세부 정보에 문제가 있습니다.";
+"jwt_heading" = "다시 등록하십시오";
+"loading_numbers" = "최신 번호 로드 중";
 /* Splash Screen */
 "migration_in_progress" = "COVIDSafe 업데이트 진행 중. \n\n업데이트가 완료될 때까지 휴대폰이 꺼지지 않도록 해주세요.";
 "national_numbers" = "전국 수";
@@ -331,9 +336,9 @@
 "NotificationsDisabledBlurb" = "COVIDSafe가 비활성화되어 있으면 알림을 받을 것입니다.";
 /* Figma page iOS Screens (05/06) */
 "NotificationsEnabledBlurb" = "COVIDSafe가 비활성화되어 있으면 알림을 받을 것입니다.\n알림 설정 변경하기";
-"numbers_error" = "";
-"numbers_no_internet" = "";
-"numbers_refresh" = "";
+"numbers_error" = "업데이트된 번호를 확인할 수 없습니다.";
+"numbers_no_internet" = "업데이트된 번호를 얻으려면 인터넷에 연결하십시오.";
+"numbers_refresh" = "지금 새로 고침";
 "options_for_australia" = "호주 관련 옵션";
 "permission_button" = "진행";
 /* Figma page iOS Screens (05/06) */
@@ -372,6 +377,7 @@
 "queensland" = "퀸즐랜드";
 "recovered" = "회복된 총 확진자 수";
 "registration_consent_content" = "본인은 호주 정부 보건부 장관의 법적 결정에 따라, 데이터 저장소 관리자로서 Digital Transformation Agency가 다음 정보를 수집하는 것에 동의합니다:";
+"registration_consent_diagnostic" = "COVIDSafe가 내 장치에서 제대로 작동하는지 확인하기 위한 정보.";
 "registration_consent_first_paragraph" = "나의 등록 정보.";
 /* Onboarding Registration Consent */
 "registration_consent_headline" = "등록 동의";
@@ -382,6 +388,7 @@
 "Select_country_or_region_headline" = "국가 또는 지역을 선택하세요";
 "settings" = "설정";
 "share_this_app_content" = "COVID-19의 확산을 막아주세요! 호주 정부의 앱인 COVIDSafe를 다운로드하세요. # COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
+"show" = "보여주기";
 "south_australia" = "남호주";
 "stepCounter" = "%d 의 단계들 중 %d 단계";
 "support" = "지원";
@@ -418,6 +425,7 @@
 "upload_step_verify_pin_header" = "본인의 정보를 업로드하세요";
 "upload_step_verify_pin_sub_header" = "주 또는 테리토리 보건 담당자가 당신의 장치에 문자 메시지로 PIN을 보낼 것입니다. 본인의 정보를 업로드하려면 아래에 그 번호를 입력하십시오.";
 "us_consent_button" = "동의";
+"us_registration_consent_diagnostic" = "COVIDSafe가 내 장치에서 제대로 작동하는지 확인하기 위한 정보.";
 "victoria" = "빅토리아";
 "western_australia" = "서호주";
 "wrong_ping_number" = "잘못된 PIN 입력";
