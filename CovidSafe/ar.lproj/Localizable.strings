@@ -315,6 +315,7 @@
 "invalid_norfolk_island_phone_number_error_prompt" = "تتألف أرقام الهواتف المحمولة في جزيرة نورفولك من 5 إلى 6 أرقام.";
 "jwt_description" = "هناك مشكلة في تفاصيل التسجيل الخاصة بك.";
 "jwt_heading" = "يرجى التسجيل مرة أخرى";
+"jwt_success" = "";
 "loading_numbers" = "تحميل أحدث الأرقام";
 /* Splash Screen */
 "migration_in_progress" = "تحديث تطبيق COVIDSafe قيد الإنجاز. \n\nيُرجى التأكد من عدم إغلاق هاتفك إلى أن يتم اكتمال التحديث.";

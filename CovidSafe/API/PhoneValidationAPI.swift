@@ -62,4 +62,5 @@ struct AuthResponse: Decodable {
 
 protocol RegistrationHandler {
     var registrationInfo: RegistrationRequest? { get set }
+    var reauthenticating: Bool { get set }
 }

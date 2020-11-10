@@ -333,7 +333,6 @@
 		0BA617CD242E09B200E6C631 /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		0BC141AB24305D9C00399FA8 /* NSMutableString + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableString + Extensions.swift"; sourceTree = "<group>"; };
 		0BC141AD2430685800399FA8 /* UIColor + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extensions.swift"; sourceTree = "<group>"; };
-		122AF4E79D17C983066C1CEB /* Pods-CovidSafe-staging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe-staging.release.xcconfig"; path = "Target Support Files/Pods-CovidSafe-staging/Pods-CovidSafe-staging.release.xcconfig"; sourceTree = "<group>"; };
 		1925EA5F4413AD52AC198894 /* Pods-CovidSafe.covid-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe.covid-production.xcconfig"; path = "Target Support Files/Pods-CovidSafe/Pods-CovidSafe.covid-production.xcconfig"; sourceTree = "<group>"; };
 		1B86119024303EF200EA4B6B /* Question1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question1ViewController.swift; sourceTree = "<group>"; };
 		1B86119224303F4A00EA4B6B /* Question2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question2ViewController.swift; sourceTree = "<group>"; };
@@ -342,7 +341,6 @@
 		1B86119824303F9600EA4B6B /* Question2ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question2ErrorViewController.swift; sourceTree = "<group>"; };
 		1B86119A24303FA200EA4B6B /* Question3ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question3ErrorViewController.swift; sourceTree = "<group>"; };
 		1B86119C24303FC000EA4B6B /* QuestionUploadDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionUploadDataViewController.swift; sourceTree = "<group>"; };
-		20A0AADA27329C83CFAB5A7C /* Pods-CovidSafe.covid-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe.covid-staging.xcconfig"; path = "Target Support Files/Pods-CovidSafe/Pods-CovidSafe.covid-staging.xcconfig"; sourceTree = "<group>"; };
 		2B916D8946F8A94E32E569C7 /* Pods-CovidSafe.covid-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe.covid-staging.xcconfig"; path = "Target Support Files/Pods-CovidSafe/Pods-CovidSafe.covid-staging.xcconfig"; sourceTree = "<group>"; };
 		30BE1CA923F108BA005DCE4F /* UploadFileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadFileData.swift; sourceTree = "<group>"; };
 		30BE1CAE23F1349F005DCE4F /* EncounterRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterRecord.swift; sourceTree = "<group>"; };
@@ -350,12 +348,9 @@
 		30BE1CB423F15D47005DCE4F /* OTPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		30E91BE823EFE514002D592A /* UploadDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadDataVC.swift; sourceTree = "<group>"; };
 		30E91BEA23EFEA0B002D592A /* CodeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeInputView.swift; sourceTree = "<group>"; };
-		342FF717762F714E56F4412D /* Pods-CovidSafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe.release.xcconfig"; path = "Target Support Files/Pods-CovidSafe/Pods-CovidSafe.release.xcconfig"; sourceTree = "<group>"; };
 		34E9EB96EA6E42A571E73C8E /* Pods_CovidSafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidSafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39E21BD3842669F051A5D6D8 /* Pods-CovidSafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe.debug.xcconfig"; path = "Target Support Files/Pods-CovidSafe/Pods-CovidSafe.debug.xcconfig"; sourceTree = "<group>"; };
-		3A403F07F3B7C5A94CBFC43D /* Pods-CovidSafe-staging.covid-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe-staging.covid-staging.xcconfig"; path = "Target Support Files/Pods-CovidSafe-staging/Pods-CovidSafe-staging.covid-staging.xcconfig"; sourceTree = "<group>"; };
 		46A5730925DA6B664DFE9546 /* Pods-CovidSafe-staging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe-staging.debug.xcconfig"; path = "Target Support Files/Pods-CovidSafe-staging/Pods-CovidSafe-staging.debug.xcconfig"; sourceTree = "<group>"; };
-		46D0C3F015CA753BB4D4787D /* Pods-CovidSafe-staging.covid-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe-staging.covid-production.xcconfig"; path = "Target Support Files/Pods-CovidSafe-staging/Pods-CovidSafe-staging.covid-production.xcconfig"; sourceTree = "<group>"; };
 		49A22E09D113DF058C94C6E6 /* Pods-CovidSafe-staging.covid-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe-staging.covid-staging.xcconfig"; path = "Target Support Files/Pods-CovidSafe-staging/Pods-CovidSafe-staging.covid-staging.xcconfig"; sourceTree = "<group>"; };
 		5904A5C12462471A008C8012 /* EncounterV1toV2.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = EncounterV1toV2.xcmappingmodel; sourceTree = "<group>"; };
 		5909E4AA245043C400D41C26 /* CovidPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidPersistentContainer.swift; sourceTree = "<group>"; };
@@ -474,8 +469,6 @@
 		5DD41D5223DD4CA400FD4AB0 /* PeripheralController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralController.swift; sourceTree = "<group>"; };
 		5DD41D7823DE141700FD4AB0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		5DDB85EA23EE39C000B186BC /* Project Bluetrace.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Project Bluetrace.entitlements"; sourceTree = "<group>"; };
-		679DE00E3E364DA756795844 /* Pods-CovidSafe.covid-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe.covid-production.xcconfig"; path = "Target Support Files/Pods-CovidSafe/Pods-CovidSafe.covid-production.xcconfig"; sourceTree = "<group>"; };
-		6EBCA1AD6D10F8DF7BBDC660 /* Pods-CovidSafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe.debug.xcconfig"; path = "Target Support Files/Pods-CovidSafe/Pods-CovidSafe.debug.xcconfig"; sourceTree = "<group>"; };
 		7F19B4DC23F565850071A11E /* PogoInstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PogoInstructionsViewController.swift; sourceTree = "<group>"; };
 		7F2F0BA123EFFF75006D7404 /* OnboardingStep2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStep2ViewController.swift; sourceTree = "<group>"; };
 		7F36305E23F7F81400CC6E1D /* PushNotificationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationConstants.swift; sourceTree = "<group>"; };
@@ -522,7 +515,6 @@
 		D8EB201A23FA722D001C60EC /* HelpNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpNavController.swift; sourceTree = "<group>"; };
 		D8EB201C23FBE216001C60EC /* help_center_article_style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = help_center_article_style.css; sourceTree = "<group>"; };
 		DC24373E23F51531007BDBDF /* covid-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "covid-Bridging-Header.h"; sourceTree = "<group>"; };
-		E3B9CCF78D93EFF0EF2A0ADB /* Pods-CovidSafe-staging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe-staging.debug.xcconfig"; path = "Target Support Files/Pods-CovidSafe-staging/Pods-CovidSafe-staging.debug.xcconfig"; sourceTree = "<group>"; };
 		FB12C4C0242F047F007E893B /* RespondToAuthChallengeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RespondToAuthChallengeAPI.swift; sourceTree = "<group>"; };
 		FB12C4C2242F0FE9007E893B /* GetTempIdAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTempIdAPI.swift; sourceTree = "<group>"; };
 		FB12C4C424304AF0007E893B /* OnboardingStep1aViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingStep1aViewController.swift; sourceTree = "<group>"; };
@@ -954,14 +946,6 @@
 		C1FDFBCD3FA29CDE38625AB0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				20A0AADA27329C83CFAB5A7C /* Pods-CovidSafe.covid-staging.xcconfig */,
-				679DE00E3E364DA756795844 /* Pods-CovidSafe.covid-production.xcconfig */,
-				3A403F07F3B7C5A94CBFC43D /* Pods-CovidSafe-staging.covid-staging.xcconfig */,
-				46D0C3F015CA753BB4D4787D /* Pods-CovidSafe-staging.covid-production.xcconfig */,
-				6EBCA1AD6D10F8DF7BBDC660 /* Pods-CovidSafe.debug.xcconfig */,
-				342FF717762F714E56F4412D /* Pods-CovidSafe.release.xcconfig */,
-				E3B9CCF78D93EFF0EF2A0ADB /* Pods-CovidSafe-staging.debug.xcconfig */,
-				122AF4E79D17C983066C1CEB /* Pods-CovidSafe-staging.release.xcconfig */,
 				39E21BD3842669F051A5D6D8 /* Pods-CovidSafe.debug.xcconfig */,
 				2B916D8946F8A94E32E569C7 /* Pods-CovidSafe.covid-staging.xcconfig */,
 				03E2D9045555F5F013130375 /* Pods-CovidSafe.release.xcconfig */,
@@ -1643,7 +1627,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 80;
+				CURRENT_PROJECT_VERSION = 83;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1651,7 +1635,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.13;
+				MARKETING_VERSION = 1.14;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
@@ -1727,7 +1711,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 80;
+				CURRENT_PROJECT_VERSION = 83;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1735,7 +1719,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.13;
+				MARKETING_VERSION = 1.14;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1755,7 +1739,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 80;
+				CURRENT_PROJECT_VERSION = 83;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1763,7 +1747,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.13;
+				MARKETING_VERSION = 1.14;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
@@ -1785,7 +1769,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 80;
+				CURRENT_PROJECT_VERSION = 83;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1793,7 +1777,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.13;
+				MARKETING_VERSION = 1.14;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
@@ -1815,7 +1799,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 80;
+				CURRENT_PROJECT_VERSION = 83;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1823,7 +1807,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.13;
+				MARKETING_VERSION = 1.14;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_MODULE_NAME = COVIDSafe;
@@ -1845,7 +1829,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 80;
+				CURRENT_PROJECT_VERSION = 83;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1853,7 +1837,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.13;
+				MARKETING_VERSION = 1.14;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_MODULE_NAME = COVIDSafe;
@@ -1993,7 +1977,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 80;
+				CURRENT_PROJECT_VERSION = 83;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -2001,7 +1985,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.13;
+				MARKETING_VERSION = 1.14;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
@@ -2021,7 +2005,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 80;
+				CURRENT_PROJECT_VERSION = 83;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -2029,7 +2013,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.13;
+				MARKETING_VERSION = 1.14;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
 				PROVISIONING_PROFILE_SPECIFIER = "";

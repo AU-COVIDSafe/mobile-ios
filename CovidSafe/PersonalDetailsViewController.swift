@@ -34,6 +34,7 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
     let ages = ["0 - 15", "16 - 29", "30 - 39", "40 - 49", "50 - 59", "60 - 69", "70 - 79", "80 - 89", "90+"]
     var initialLabelTextColour: UIColor?
     var initialTextFieldBorderColour: UIColor?
+    var reauthenticating: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -323,7 +324,11 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
     }
     
     @IBAction func onBackTapped(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
+        if reauthenticating {
+            dismiss(animated: true, completion: nil)
+        } else {
+            self.navigationController?.popViewController(animated: true)
+        }
     }
 
     
@@ -382,6 +387,7 @@ class PersonalDetailsViewController: UIViewController, UITextFieldDelegate, UIPi
         if var vc = segue.destination as? RegistrationHandler {
             let regInfo = RegistrationRequest(fullName: fullName, postcode: postcode, age: age, isMinor: age < 16, phoneNumber: "")
             vc.registrationInfo = regInfo
+            vc.reauthenticating = self.reauthenticating
         }
     }
 

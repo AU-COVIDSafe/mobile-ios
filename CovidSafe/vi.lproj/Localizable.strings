@@ -315,6 +315,7 @@
 "invalid_norfolk_island_phone_number_error_prompt" = "Số điện thoại di động ở Đảo Norfolk chứa từ 5 đến 6 chữ số.";
 "jwt_description" = "Có vấn đề với thông tin đăng ký của bạn.";
 "jwt_heading" = "Vui lòng đăng ký lại";
+"jwt_success" = "";
 "loading_numbers" = "Đang tải các số mới nhất";
 /* Splash Screen */
 "migration_in_progress" = "COVIDSafe trong tiến trình cập nhật. \n\nVui lòng đảm bảo điện thoại của bạn không bị tắt cho đến khi cập nhật hoàn tất.";

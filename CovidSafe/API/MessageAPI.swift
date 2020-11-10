@@ -7,20 +7,19 @@
 
 import Foundation
 import Alamofire
-import KeychainSwift
 
-class MessageAPI {
+class MessageAPI: CovidSafeAuthenticatedAPI {
     
     static let keyLastApiUpdate = "keyLastApiUpdate"
     static let keyLastVersionChecked = "keyLastVersionChecked"
     
-    static func getMessagesIfNeeded(completion: @escaping (MessageResponse?, MessageAPIError?) -> Void) {
+    static func getMessagesIfNeeded(completion: @escaping (MessageResponse?, CovidSafeAPIError?) -> Void) {
         if shouldGetMessages() {
             getMessages(completion: completion)
         }
     }
     
-    static func getMessages(completion: @escaping (MessageResponse?, MessageAPIError?) -> Void) {
+    static func getMessages(completion: @escaping (MessageResponse?, CovidSafeAPIError?) -> Void) {
         guard let token = UserDefaults.standard.string(forKey: "deviceTokenForAPN") else {
             completion(nil, .RequestError)
             return
@@ -82,20 +81,16 @@ class MessageAPI {
     }
     
     private static func getMessages(msgRequest: MessageRequest,
-                                    completion: @escaping (MessageResponse?, MessageAPIError?) -> Void) {
-        let keychain = KeychainSwift()
+                                    completion: @escaping (MessageResponse?, CovidSafeAPIError?) -> Void) {
         guard let apiHost = PlistHelper.getvalueFromInfoPlist(withKey: "API_Host", plistName: "CovidSafe-config") else {
             completion(nil, .RequestError)
             return
         }
         
-        guard let token = keychain.get("JWT_TOKEN") else {
-            completion(nil, .RequestError)
+        guard let headers = try? authenticatedHeaders() else {
+            completion(nil, .TokenExpiredError)
             return
         }
-        let headers: HTTPHeaders = [
-            "Authorization": "Bearer \(token)"
-        ]
         
         let preferredLanguages = Locale.preferredLanguages.count > 5 ? Locale.preferredLanguages[0...5].joined(separator: ",") : Locale.preferredLanguages.joined(separator: ",")
         
@@ -138,11 +133,19 @@ class MessageAPI {
                     completion(nil, .UnknownError)
                     return
                 }
+                
                 if (statusCode == 200) {
                     completion(nil, .ResponseError)
+                    return
+                }
+                
+                if statusCode == 401, let respData = response.data {
+                    completion(nil, processUnauthorizedError(respData))
+                    return
                 }
                 if (statusCode >= 400 && statusCode < 500) {
                     completion(nil, .RequestError)
+                    return
                 }
                 completion(nil, .ServerError)
             }
@@ -182,11 +185,4 @@ struct Message: Decodable {
         case body
         case destination
     }
-}
-
-enum MessageAPIError: Error {
-    case RequestError
-    case ResponseError
-    case ServerError
-    case UnknownError
 }

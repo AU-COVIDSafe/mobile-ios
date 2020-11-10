@@ -315,6 +315,7 @@
 "invalid_norfolk_island_phone_number_error_prompt" = "노퍽 섬의 휴대폰 번호는 5-6자리입니다.";
 "jwt_description" = "등록 세부 정보에 문제가 있습니다.";
 "jwt_heading" = "다시 등록하십시오";
+"jwt_success" = "";
 "loading_numbers" = "최신 번호 로드 중";
 /* Splash Screen */
 "migration_in_progress" = "COVIDSafe 업데이트 진행 중. \n\n업데이트가 완료될 때까지 휴대폰이 꺼지지 않도록 해주세요.";

@@ -315,6 +315,7 @@
 "invalid_norfolk_island_phone_number_error_prompt" = "I numeri di cellulare nell'Isola di Norfolk contengono da 5 a 6 cifre.";
 "jwt_description" = "C'è un problema con i dati di registrazione.";
 "jwt_heading" = "Si prega di registrarsi di nuovo";
+"jwt_success" = "";
 "loading_numbers" = "Caricamento degli ultimi numeri";
 /* Splash Screen */
 "migration_in_progress" = "Aggiornamento COVIDSafe in corso. \n\nAssicurarsi che il cellulare non sia spento fino al completamento dell'aggiornamento.";

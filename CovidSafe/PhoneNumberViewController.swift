@@ -78,19 +78,10 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
         initialTextFieldBorderColour = phoneNumberField.borderColor
         navigationController?.view.backgroundColor = UIColor.white
         
-        if reauthenticating {
-            backButton.isHidden = true
-            registrationInfo = RegistrationRequest(fullName: "", postcode: "", age: 20, isMinor: false, phoneNumber: "")
-            stepCounterLabel.text = String.localizedStringWithFormat( "stepCounter".localizedString(),
-                                                                      1,
-                                                                      2
-            )
-        } else {
-            stepCounterLabel.text = String.localizedStringWithFormat( "stepCounter".localizedString(),
-                                                                      2,
-                                                                      UserDefaults.standard.bool(forKey: "allowedPermissions") ? 3 : 4
-            )
-        }
+        stepCounterLabel.text = String.localizedStringWithFormat( "stepCounter".localizedString(),
+                                                                  2,
+                                                                  UserDefaults.standard.bool(forKey: "allowedPermissions") ? 3 : 4
+        )
     }
     
     @IBAction func onBackTapped(_ sender: UIButton) {
@@ -160,7 +151,7 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? OTPViewController {
+        if var vc = segue.destination as? RegistrationHandler {
             vc.reauthenticating = self.reauthenticating
             vc.registrationInfo = self.registrationInfo
         }

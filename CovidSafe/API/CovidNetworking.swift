@@ -7,6 +7,7 @@
 
 import Foundation
 import Alamofire
+import KeychainSwift
 
 final class CovidServerTrustManager: ServerTrustManager {
     override func serverTrustEvaluator(forHost host: String) throws -> ServerTrustEvaluating? {
@@ -44,4 +45,45 @@ class CovidNetworking {
 enum APIError: Error {
     case ExpireSession
     case ServerError
+}
+
+struct CovidSafeErrorResponse: Decodable {
+    let message: String?
+}
+
+enum CovidSafeAPIError: Error {
+    case RequestError
+    case ResponseError
+    case ServerError
+    case TokenExpiredError
+    case UnknownError
+}
+
+class CovidSafeAuthenticatedAPI {
+    
+    static func authenticatedHeaders() throws -> HTTPHeaders? {
+        let keychain = KeychainSwift()
+        
+        guard let token = keychain.get("JWT_TOKEN") else {
+            throw CovidSafeAPIError.TokenExpiredError
+        }
+        let headers: HTTPHeaders = [
+            "Authorization": "Bearer \(token)"
+        ]
+        return headers
+    }
+    
+    static func processUnauthorizedError(_ data: Data) -> CovidSafeAPIError {
+        var errorType = CovidSafeAPIError.RequestError
+        do {
+            let errorResponse = try JSONDecoder().decode(CovidSafeErrorResponse.self, from: data)
+            if errorResponse.message == "Unauthorized" {
+                errorType = .TokenExpiredError
+            }
+        } catch {
+            // unable to parse response
+            errorType = .ResponseError
+        }
+        return errorType
+    }
 }

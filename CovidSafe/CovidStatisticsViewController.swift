@@ -74,7 +74,7 @@ class CovidStatisticsViewController: UITableViewController {
     
     // MARK: Process data for the table
     
-    func setupData(statistics: StatisticsResponse?, errorType: MessageAPIError?, hasInternet: Bool) {
+    func setupData(statistics: StatisticsResponse?, errorType: CovidSafeAPIError?, hasInternet: Bool) {
         showInternetError = false
         showError = false
         showRefresh = false
@@ -189,7 +189,7 @@ class CovidStatisticsViewController: UITableViewController {
                 dateFormatter.timeStyle = .short
                 headerView.dateLabelContainer.isHidden = false
                 headerView.dateLabelDivider.isHidden = false
-                headerView.dateLabel.text = "\(dateFormatter.string(from: updateDate)) AEST"
+                headerView.dateLabel.text = "\(dateFormatter.string(from: updateDate))"
             } else {
                 headerView.dateLabelContainer.isHidden = true
                 headerView.dateLabelDivider.isHidden = true

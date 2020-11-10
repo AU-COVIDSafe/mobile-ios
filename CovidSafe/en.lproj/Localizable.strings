@@ -315,6 +315,7 @@
 "invalid_norfolk_island_phone_number_error_prompt" = "Mobile numbers in Norfolk Island contain 5 to 6 digits.";
 "jwt_description" = "There is an issue with your registration details.";
 "jwt_heading" = "Please register again";
+"jwt_success" = "Registration successfully renewed";
 "loading_numbers" = "Loading latest numbers";
 /* Splash Screen */
 "migration_in_progress" = " COVIDSafe update in progress. \n\n Please make sure you phone is not switched off until the update is complete.";

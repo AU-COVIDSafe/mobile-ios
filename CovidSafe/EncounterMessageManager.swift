@@ -109,7 +109,7 @@ class EncounterMessageManager {
     
     private func fetchTempIdFromApi(onComplete: ((Error?, (String, Date)?) -> Void)?) {
         DLog("Fetching tempId from API")
-        GetTempIdAPI.getTempId { (tempId: String?, expiry: Int?, error: Error?) in
+        GetTempIdAPI.getTempId { (tempId: String?, expiry: Int?, error: Error?, covidSafeError: CovidSafeAPIError?) in
             guard error == nil else {
                 if let error = error as NSError? {
                     let code = error.code
@@ -119,6 +119,13 @@ class EncounterMessageManager {
                 } else {
                     DLog("Cloud function error, unable to convert error to NSError.\(error!)")
                 }
+                
+                if covidSafeError == .TokenExpiredError {
+                    UserDefaults.standard.set(true, forKey: "ReauthenticationNeededKey")
+                    onComplete?(CovidSafeAPIError.TokenExpiredError, nil)
+                    return
+                }
+                
                 // if we have an existing tempid and expiry, use that
                 if let msg = self.tempId, let exp = self.advertisementPayloadExpiry {
                     onComplete?(nil, (msg, exp))
