@@ -37,9 +37,6 @@
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="permission_success_headline"/>
-                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1u-Qk-m74">
                                                 <rect key="frame" x="32" y="311.66666666666669" width="350" height="64.666666666666686"/>
@@ -185,6 +182,7 @@
                         <outlet property="pointOneLabel" destination="x1u-Qk-m74" id="MyD-Bn-oWp"/>
                         <outlet property="pointThreeLabel" destination="04D-Hy-djY" id="aQ9-Fd-TYo"/>
                         <outlet property="pointTwoLabel" destination="sHp-C7-xCZ" id="WXE-vT-GC5"/>
+                        <outlet property="titleLabel" destination="jCO-yx-Tur" id="9ed-Nc-Lbt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SqF-IF-P8L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -194,7 +192,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-2980" y="3394"/>
+            <point key="canvasLocation" x="-1630" y="2374"/>
         </scene>
         <!--Onboarding Step 1 View Controller-->
         <scene sceneID="26D-Zd-57d">
@@ -1088,6 +1086,7 @@ They will need to register using their own device and phone number so that COVID
                         <outlet property="verifyButton" destination="lQY-RW-yBL" id="0Zf-Wz-kba"/>
                         <outlet property="wrongNumberButton" destination="K7X-Ux-SAc" id="yCf-mF-ngh"/>
                         <segue destination="eME-NJ-Fcz" kind="show" identifier="showAllowPermissionsFromOTPSegue" id="4eL-1Z-MtW"/>
+                        <segue destination="GaQ-f5-ei6" kind="show" identifier="showSuccessFromOTPSegue" id="dge-8I-Ehz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0yd-3A-Qct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2264,6 +2263,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
     <inferredMetricsTieBreakers>
         <segue reference="bMl-IY-pjw"/>
         <segue reference="4eL-1Z-MtW"/>
+        <segue reference="dge-8I-Ehz"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AppPermissions1" width="311" height="188"/>

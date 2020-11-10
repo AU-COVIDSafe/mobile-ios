@@ -12,6 +12,8 @@ import SafariServices
 class UnderSixteenViewController: UIViewController, RegistrationHandler {
 
     public var registrationInfo: RegistrationRequest?
+    public var reauthenticating: Bool = false
+    
     @IBOutlet weak var stepCounterLabel: UILabel!
     
     override func viewDidLoad() {

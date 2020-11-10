@@ -6,9 +6,12 @@ import Reachability
 
 class HomeViewController: UIViewController {
     private var observer: NSObjectProtocol?
+    private let reauthenticationNeededKey = "ReauthenticationNeededKey"
     
     @IBOutlet weak var bluetoothStatusOffView: UIView!
     @IBOutlet weak var bluetoothPermissionOffView: UIView!
+    @IBOutlet weak var inactiveSettingsContent: UIView!
+    @IBOutlet weak var inactiveTokenExpiredView: UIView!
     @IBOutlet weak var shareView: UIView!
     @IBOutlet weak var inactiveAppSectionView: UIView!
     @IBOutlet weak var activeAppSectionView: UIView!
@@ -24,6 +27,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var appActiveSubtitleLabel: UILabel!
     @IBOutlet weak var uploadDataContentLabel: UILabel!
     @IBOutlet weak var uploadDataTitleLabel: UILabel!
+    @IBOutlet weak var covidStatisticsSection: UIView!
     @IBOutlet weak var covidStatisticsContainer: UIView!
     @IBOutlet weak var contentStackView: UIStackView!
     @IBOutlet weak var statisticsSectionHeight: NSLayoutConstraint!
@@ -36,6 +40,11 @@ class HomeViewController: UIViewController {
     let covidStatisticsViewController: CovidStatisticsViewController = CovidStatisticsViewController(nibName: "CovidStatisticsView", bundle: nil)
     
     var allPermissionOn = true
+    
+    var registrationNeeded: Bool {
+       return UserDefaults.standard.bool(forKey: reauthenticationNeededKey)
+    }
+    
     var bluetoothStatusOn = true
     var bluetoothPermissionOn = true
     var pushNotificationOn = true
@@ -247,6 +256,9 @@ class HomeViewController: UIViewController {
                     self?.toggleHeaderView()
                     self?.toggleUploadView()
                     self?.toggleUploadDateView()
+                    self?.toggleShareView()
+                    self?.toggleStatisticsView()
+                    self?.toggleRegistrationNeededView()
                 }
             })
         }
@@ -323,20 +335,33 @@ class HomeViewController: UIViewController {
     }
     
     fileprivate func toggleUploadView() {
-        toggleViewVisibility(view: self.uploadView, isVisible: !self.didUploadData)
+        toggleViewVisibility(view: self.uploadView, isVisible: !self.didUploadData && !self.registrationNeeded)
+    }
+    
+    fileprivate func toggleShareView() {
+        toggleViewVisibility(view: shareView, isVisible: !registrationNeeded)
+    }
+    
+    fileprivate func toggleStatisticsView() {
+        toggleViewVisibility(view: covidStatisticsSection, isVisible: !registrationNeeded)
     }
     
     fileprivate func toggleHeaderView() {
-        toggleViewVisibility(view: inactiveAppSectionView, isVisible: !self.allPermissionOn)
+        toggleViewVisibility(view: inactiveAppSectionView, isVisible: !self.allPermissionOn || registrationNeeded)
+        toggleViewVisibility(view: inactiveSettingsContent, isVisible: !self.allPermissionOn && !registrationNeeded)
         toggleViewVisibility(view: activeAppSectionView, isVisible: self.allPermissionOn)
     }
     
     fileprivate func toggleBluetoothStatusView() {
-        toggleViewVisibility(view: bluetoothStatusOffView, isVisible: self.bluetoothPermissionOn && !self.bluetoothStatusOn)
+        toggleViewVisibility(view: bluetoothStatusOffView, isVisible: self.bluetoothPermissionOn && !self.bluetoothStatusOn && !registrationNeeded)
     }
     
     fileprivate func toggleBluetoothPermissionStatusView() {
-        toggleViewVisibility(view: bluetoothPermissionOffView, isVisible: !self.allPermissionOn && !self.bluetoothPermissionOn)
+        toggleViewVisibility(view: bluetoothPermissionOffView, isVisible: !self.allPermissionOn && !self.bluetoothPermissionOn && !registrationNeeded)
+    }
+    
+    fileprivate func toggleRegistrationNeededView() {
+        toggleViewVisibility(view: inactiveTokenExpiredView, isVisible: registrationNeeded)
     }
     
     func attemptTurnOnBluetooth() {
@@ -387,12 +412,19 @@ class HomeViewController: UIViewController {
         present(disclaimerAlert, animated: true, completion: nil)
     }
     
-    // MARK: API calls
+    func showTokenExpiredMessage() {
+        UserDefaults.standard.set(true, forKey: reauthenticationNeededKey)
+        toggleViews()
+    }
     
+    // MARK: API calls
     func getMessagesFromServer(force: Bool = false, completion: @escaping () -> Void = {}) {
-        let onMessagesDone: (MessageResponse?, Swift.Error?) -> Void = { (messageResponse, error) in
+        let onMessagesDone: (MessageResponse?, CovidSafeAPIError?) -> Void = { (messageResponse, error) in
             if let error = error {
                 DLog("Get messages error: \(error.localizedDescription)")
+                if error == .TokenExpiredError {
+                    self.showTokenExpiredMessage()
+                }
                 completion()
                 return
             }
@@ -426,8 +458,18 @@ class HomeViewController: UIViewController {
         if covidStatisticsViewController.showStatistics {
             self.covidStatisticsViewController.isLoading = true
             StatisticsAPI.getStatistics { (stats, error) in
+                if error != nil {
+                    switch error {
+                    case .TokenExpiredError:
+                        self.showTokenExpiredMessage()
+                    default:
+                        return
+                    }
+                }
+                
                 self.covidStatisticsViewController.isLoading = false
                 self.covidStatisticsViewController.setupData(statistics: stats, errorType: error, hasInternet: self.isInternetReachable())
+                
             }
         }
     }
@@ -521,6 +563,19 @@ class HomeViewController: UIViewController {
         let settingsVC = SettingsViewController(nibName: "SettingsView", bundle: nil)
         settingsVC.showUpdateAvailable = shouldShowUpdateApp
         navigationController?.pushViewController(settingsVC, animated: true)
+    }
+    
+    @IBAction func registerAgainTapped(_ sender: Any) {
+        guard let regVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "personalDetails") as? PersonalDetailsViewController else {
+            return
+        }
+        regVC.reauthenticating = true
+        let navigationController = UINavigationController(rootViewController: regVC)
+        navigationController.setToolbarHidden(true, animated: false)
+        navigationController.isNavigationBarHidden = true
+        navigationController.modalPresentationStyle = .fullScreen
+        navigationController.modalTransitionStyle = .coverVertical
+        present(navigationController, animated: true, completion: nil)
     }
     
     @objc

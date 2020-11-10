@@ -315,6 +315,7 @@
 "invalid_norfolk_island_phone_number_error_prompt" = "诺福克岛的手机号码包含5到6位数。";
 "jwt_description" = "您的注册信息存在问题。";
 "jwt_heading" = "请重新注册";
+"jwt_success" = "";
 "loading_numbers" = "正在加载最新统计数字";
 /* Splash Screen */
 "migration_in_progress" = "COVIDSafe正在更新。 \n\n请保持开机状态直至更新完成。";

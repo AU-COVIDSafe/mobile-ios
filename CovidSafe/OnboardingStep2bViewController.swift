@@ -12,6 +12,9 @@ class OnboardingStep2bViewController: UIViewController {
     @IBOutlet weak var pointOneLabel: UILabel!
     @IBOutlet weak var pointTwoLabel: UILabel!
     @IBOutlet weak var pointThreeLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    var reauthenticating = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +24,8 @@ class OnboardingStep2bViewController: UIViewController {
             .paragraphStyle: paragraphStyle,
             .font: UIFont.preferredFont(forTextStyle: .body)
         ]
+        let titleText = reauthenticating ? "jwt_success".localizedString(comment: "Title when JWT renewed") : "permission_success_headline".localizedString(comment: "Title when not refreshing JWT toek")
+        titleLabel.text = titleText
         let pointOneText = NSAttributedString(string: NSLocalizedString("OS2b_Item1", comment: "Keep phone on you when you leave home"),
                                                      attributes: labelAtt)
         pointOneLabel.attributedText = pointOneText
@@ -53,7 +58,11 @@ class OnboardingStep2bViewController: UIViewController {
     }
     
     @IBAction func continueBtnTapped(_ sender: UIButton) {
-        let homeVC = HomeViewController(nibName: "HomeView", bundle: nil)
-        self.navigationController?.setViewControllers([homeVC], animated: true)
+        if reauthenticating {
+            dismiss(animated: true, completion: nil)
+        } else {
+            let homeVC = HomeViewController(nibName: "HomeView", bundle: nil)
+            self.navigationController?.setViewControllers([homeVC], animated: true)
+        }
     }
 }

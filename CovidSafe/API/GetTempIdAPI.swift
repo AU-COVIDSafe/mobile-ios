@@ -7,25 +7,20 @@
 
 import Foundation
 import Alamofire
-import KeychainSwift
 
-class GetTempIdAPI {
+class GetTempIdAPI: CovidSafeAuthenticatedAPI {
     
     private static let apiVersion = 2
     
-    static func getTempId(completion: @escaping (String?, Int?, Swift.Error?) -> Void) {
-        let keychain = KeychainSwift()
+    static func getTempId(completion: @escaping (String?, Int?, Swift.Error?, CovidSafeAPIError?) -> Void) {
         guard let apiHost = PlistHelper.getvalueFromInfoPlist(withKey: "API_Host", plistName: "CovidSafe-config") else {
            return
        }
        
-        guard let token = keychain.get("JWT_TOKEN") else {
-            completion(nil, nil, nil)
+        guard let headers = try? authenticatedHeaders() else {
+            completion(nil, nil, nil, .TokenExpiredError)
             return
         }
-        let headers: HTTPHeaders = [
-            "Authorization": "Bearer \(token)"
-        ]
         let params = [
             "version" : apiVersion
         ]
@@ -37,9 +32,17 @@ class GetTempIdAPI {
                 switch response.result {
                 case .success:
                     guard let tempIdResponse = response.value else { return }
-                    completion(tempIdResponse.tempId, tempIdResponse.expiryTime, nil)
+                    completion(tempIdResponse.tempId, tempIdResponse.expiryTime, nil, nil)
                 case let .failure(error):
-                    completion(nil, nil, error)
+                    guard let statusCode = response.response?.statusCode else {
+                        completion(nil, nil, error, .UnknownError)
+                        return
+                    }
+                    if statusCode == 401, let respData = response.data {
+                        completion(nil, nil, error, processUnauthorizedError(respData))
+                        return
+                    }
+                    completion(nil, nil, error, .ServerError)
                 }
         }
     }

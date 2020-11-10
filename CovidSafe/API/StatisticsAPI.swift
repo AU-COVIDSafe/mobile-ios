@@ -7,26 +7,21 @@
 
 import Foundation
 import Alamofire
-import KeychainSwift
 
-class StatisticsAPI {
+class StatisticsAPI: CovidSafeAuthenticatedAPI {
     
     static let keyCovidStatistics = "keyCovidStatistics"
     
-    static func getStatistics(completion: @escaping (StatisticsResponse?, MessageAPIError?) -> Void) {
-        let keychain = KeychainSwift()
+    static func getStatistics(completion: @escaping (StatisticsResponse?, CovidSafeAPIError?) -> Void) {
         guard let apiHost = PlistHelper.getvalueFromInfoPlist(withKey: "API_Host", plistName: "CovidSafe-config") else {
             completion(nil, .RequestError)
             return
         }
         
-        guard let token = keychain.get("JWT_TOKEN") else {
-            completion(nil, .RequestError)
+        guard let headers = try? authenticatedHeaders() else {
+            completion(nil, .TokenExpiredError)
             return
         }
-        let headers: HTTPHeaders = [
-            "Authorization": "Bearer \(token)"
-        ]
         
         CovidNetworking.shared.session.request("\(apiHost)/statistics",
             method: .get,
@@ -50,9 +45,17 @@ class StatisticsAPI {
                 }
                 if (statusCode == 200) {
                     completion(lastStats, .ResponseError)
+                    return
                 }
+                
+                if statusCode == 401, let respData = response.data {
+                    completion(nil, processUnauthorizedError(respData))
+                    return
+                }
+                
                 if (statusCode >= 400 && statusCode < 500) {
                     completion(lastStats, .RequestError)
+                    return
                 }
                 completion(lastStats, .ServerError)
             }

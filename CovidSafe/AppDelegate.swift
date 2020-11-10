@@ -72,17 +72,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     @objc
     func jwtExpired(_ notification: Notification) {
         DispatchQueue.main.async {
-            guard let regVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "onboardingStep3") as? PhoneNumberViewController else {
+            guard let regVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "personalDetails") as? PersonalDetailsViewController else {
                 return
             }
             regVC.reauthenticating = true
-            regVC.modalPresentationStyle = .overFullScreen
-            regVC.modalTransitionStyle = .coverVertical
             let navigationController = UINavigationController(rootViewController: regVC)
             navigationController.setToolbarHidden(true, animated: false)
-            if #available(iOS 13.0, *) {
-                navigationController.isModalInPresentation = true
-            }
+            navigationController.isNavigationBarHidden = true
+            navigationController.modalPresentationStyle = .overFullScreen
+            navigationController.modalTransitionStyle = .coverVertical
             self.window?.topmostPresentedViewController?.present(navigationController, animated: true, completion: nil)
         }
     }

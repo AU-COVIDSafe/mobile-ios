@@ -46,10 +46,10 @@
                                 <rect key="frame" x="0.0" y="111" width="414" height="702"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eTh-XD-RKI" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="736.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="797.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vW3-bA-wgt">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="736.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="797.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="T1Q-yS-0Qz">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="14.5"/>
@@ -496,6 +496,34 @@
                                                             <constraint firstItem="vVm-e2-Qef" firstAttribute="top" secondItem="lI5-dG-ihI" secondAttribute="top" id="NWO-ph-GNk"/>
                                                             <constraint firstAttribute="bottom" secondItem="vVm-e2-Qef" secondAttribute="bottom" id="YEi-Ep-mMc"/>
                                                             <constraint firstItem="vVm-e2-Qef" firstAttribute="leading" secondItem="lI5-dG-ihI" secondAttribute="leading" constant="16" id="tYZ-d5-vWt"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLN-pP-2n9">
+                                                        <rect key="frame" x="0.0" y="744.5" width="414" height="1"/>
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="lJS-eQ-wih"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ipc-oI-MqM">
+                                                        <rect key="frame" x="0.0" y="753.5" width="414" height="44"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyo-xa-V5o">
+                                                                <rect key="frame" x="16" y="0.0" width="194" height="44"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="44" id="XBh-fU-uLK"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Set reauthentication needed"/>
+                                                                <connections>
+                                                                    <action selector="setReauthenticationNeeded:" destination="dhe-6o-fvJ" eventType="touchUpInside" id="Iwa-z0-GbI"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="oyo-xa-V5o" firstAttribute="top" secondItem="ipc-oI-MqM" secondAttribute="top" id="PfS-sc-Wfr"/>
+                                                            <constraint firstAttribute="bottom" secondItem="oyo-xa-V5o" secondAttribute="bottom" id="gjW-vL-8tw"/>
+                                                            <constraint firstItem="oyo-xa-V5o" firstAttribute="leading" secondItem="ipc-oI-MqM" secondAttribute="leading" constant="16" id="vJc-Uw-JWi"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>

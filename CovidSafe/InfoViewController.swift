@@ -163,4 +163,9 @@ final class InfoViewController: UIViewController {
     @IBAction func resetDisclaimerUpdateMessage(_ sender: Any) {
         UserDefaults.standard.removeObject(forKey: "latestPolicyUpdateVersionShown")
     }
+    
+    @IBAction func setReauthenticationNeeded(_ sender: Any) {
+        let keychain = KeychainSwift()
+        keychain.set("corruptedjwt", forKey: "JWT_TOKEN", withAccess: .accessibleAfterFirstUnlock)
+    }
 }

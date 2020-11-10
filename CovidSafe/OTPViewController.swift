@@ -80,14 +80,11 @@ class OTPViewController: UIViewController, RegistrationHandler {
         let pinIssuesString = NSLocalizedString("ReceivePinIssue", comment: "Text for pin receive issues button")
         let pinIssuesText = NSAttributedString(string: pinIssuesString, attributes: buttonAtt)
         self.pinIssuesButton?.setAttributedTitle(pinIssuesText, for: .normal)
-        if reauthenticating {
-            stepCounterLabel.text = String.localizedStringWithFormat( "stepCounter".localizedString(), 2, 2)
-        } else {
-            stepCounterLabel.text = String.localizedStringWithFormat( "stepCounter".localizedString(),
-                                                                      3,
-                                                                      UserDefaults.standard.bool(forKey: "allowedPermissions") ? 3 : 4
-            )
-        }
+        
+        stepCounterLabel.text = String.localizedStringWithFormat( "stepCounter".localizedString(),
+                                                                  3,
+                                                                  UserDefaults.standard.bool(forKey: "allowedPermissions") ? 3 : 4
+        )
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -245,6 +242,7 @@ class OTPViewController: UIViewController, RegistrationHandler {
             let keychain = KeychainSwift()
             keychain.set(tokenToStore, forKey: "JWT_TOKEN", withAccess: .accessibleAfterFirstUnlock)
             UserDefaults.standard.set(true, forKey: "HasUpdatedKeychainAccess")
+            UserDefaults.standard.set(false, forKey: "ReauthenticationNeededKey")
             result(.Success)
         }
     }
@@ -271,7 +269,8 @@ class OTPViewController: UIViewController, RegistrationHandler {
                 }
             case .Success:
                 if (self.reauthenticating) {
-                    self.dismiss(animated: true, completion: nil)
+                    viewController.performSegue(withIdentifier: "showSuccessFromOTPSegue", sender: self)
+//                    self.dismiss(animated: true, completion: nil)
                     return
                 }
                 if !UserDefaults.standard.bool(forKey: "allowedPermissions") {
@@ -283,6 +282,12 @@ class OTPViewController: UIViewController, RegistrationHandler {
                     }
                 }
             }
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let successVC = segue.destination as? OnboardingStep2bViewController  {
+            successVC.reauthenticating = true
         }
     }
 }
