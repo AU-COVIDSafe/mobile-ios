@@ -12,11 +12,22 @@ extension UITextView {
         tintColor = UIColor.covidSafeColor
     }
     
-    func parseHTMLLinks() {
+    func addAllBold(enclosedIn marker: String) {
+        guard let attributedText = attributedText else { return }
+        
+        let mutableString = NSMutableAttributedString(attributedString: attributedText)
+        while mutableString.canParseOccurence(elementStartRegex: marker, elementEndRegex: marker) {
+            mutableString.addBold(enclosedIn: marker)
+        }
+        self.attributedText = mutableString
+    }
+    
+    func parseHTMLTags() {
         guard let attributedText = attributedText else { return }
         
         let mutableString = NSMutableAttributedString(attributedString: attributedText)
         mutableString.parseHTMLLinks()
+        mutableString.parseBoldTags()
         self.attributedText = mutableString
         tintColor = UIColor.covidSafeColor
     }

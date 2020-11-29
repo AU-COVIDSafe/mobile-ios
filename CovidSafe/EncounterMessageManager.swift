@@ -1,9 +1,33 @@
 import Foundation
+import CoreBluetooth
+
+struct CentralWriteData: Codable {
+    var modelC: String // phone model of central
+    var rssi: Double
+    var txPower: Double?
+    var msg: String // tempID
+    var org: String
+    var v: Int
+}
+
+public struct PeripheralCharacteristicsData: Codable {
+    var modelP: String // phone model of peripheral
+    var msg: String // tempID
+    var org: String
+    var v: Int
+}
 
 class EncounterMessageManager {
     let userDefaultsTempIdKey = "BROADCAST_MSG"
     let userDefaultsAdvtKey = "ADVT_DATA"
     let userDefaultsAdvtExpiryKey = "ADVT_EXPIRY"
+    
+    struct CachedPayload {
+        var payload: Data,
+        expiry: TimeInterval
+    }
+
+    private var payloadLookaside = [UUID: CachedPayload]()
     
     static let shared = EncounterMessageManager()
     
@@ -75,6 +99,92 @@ class EncounterMessageManager {
         }
     }
     
+    fileprivate func cleanUpExpiredCachedPayloads() {
+        for payloadKey in payloadLookaside.keys {
+            let currentTime = Date().timeIntervalSince1970
+            guard let payload = payloadLookaside[payloadKey], payload.expiry < currentTime else {
+                continue
+            }
+            // if payload exists and expiry time is less than current time, remove.
+            payloadLookaside.removeValue(forKey: payloadKey)
+        }
+    }
+    
+    func getWritePayloadForCentral(device: BLEDevice, onComplete: @escaping (Data?) -> Void) {
+        guard let rssi = device.rssi else {
+            DLog("getWritePayloadForCentral failed, no rssi")
+            onComplete(nil)
+            return
+        }
+        guard device.legacyPayloadCharacteristic != nil else {
+            DLog("getWritePayloadForCentral failed, no legacyPayloadCharacteristic")
+            onComplete(nil)
+            return
+        }
+        getTempId { (result) in
+            guard let tempId = result else {
+                DLog("getWritePayloadForCentral failed, no tempid")
+                onComplete(nil)
+                return
+            }
+            var txPower: Double? = nil
+            if let bleTxPower = device.txPower {
+                txPower = Double(bleTxPower)
+            }
+
+            let encounterToBroadcast = EncounterBlob(modelC: DeviceIdentifier.getModel(),
+                                                     rssi: Double(rssi),
+                                                     txPower: txPower,
+                                                     modelP: nil,
+                                                     msg: tempId,
+                                                     timestamp: Date().timeIntervalSince1970)
+
+            
+            do {
+                let jsonMsg = try JSONEncoder().encode(encounterToBroadcast)
+                let encryptedMsg = try Crypto.encrypt(dataToEncrypt: jsonMsg)
+                let dataToWrite = CentralWriteData(modelC: BluetraceConfig.DummyModel,
+                                                   rssi: Double(BluetraceConfig.DummyRSSI),
+                                                   txPower: Double(BluetraceConfig.DummyTxPower),
+                                                   msg:  encryptedMsg,
+                                                   org: BluetraceConfig.OrgID,
+                                                   v: BluetraceConfig.ProtocolVersion)
+                let encodedData = try JSONEncoder().encode(dataToWrite)
+                onComplete(encodedData)
+            } catch {
+                DLog("Error: \(error)")
+            }
+        }
+    }
+    
+    func getAdvertisementPayload(identifier: UUID, offset: Int, onComplete: @escaping (Data?) -> Void) {
+        cleanUpExpiredCachedPayloads()
+        guard offset > 0 else {
+            // new request coming in
+            getAdvertisementPayload{ (payloadToAdvertise) in
+                if let payload = payloadToAdvertise {
+                    self.payloadLookaside[identifier] = CachedPayload(payload: payload, expiry: Date().timeIntervalSince1970 + BluetraceConfig.PayloadExpiry);
+                }
+                onComplete(payloadToAdvertise)
+            }
+            return
+        }
+        guard let cachedPayload = self.payloadLookaside[identifier] else {
+            // subsequent request but nothing cached
+            onComplete(nil)
+            return
+        }
+        onComplete(cachedPayload.payload)
+    }
+    
+    func getLastKnownAdvertisementPayload(identifier: UUID) -> Data? {
+        guard let cachedPayload = self.payloadLookaside[identifier] else {
+            return nil
+        }
+        return cachedPayload.payload
+    }
+    
+    // this will give herald the payload it's after
     // gets the anon tempid for broadcasting
     func getAdvertisementPayload(onComplete: @escaping (Data?) -> Void) {
          // check expiry date of payload
@@ -144,6 +254,39 @@ class EncounterMessageManager {
 
             let date = Date(timeIntervalSince1970: TimeInterval(expiry))
             onComplete?(nil, (tempId, date))
+        }
+    }
+}
+
+
+extension EncounterMessageManager: PayloadDataSupplier {
+    
+    func payload(_ timestamp: PayloadTimestamp) -> PayloadData {
+        return advertisedPayload!
+    }
+    
+    func payload(_ identifier: UUID, offset: Int, onComplete: @escaping (PayloadData?) -> Void) -> Void {
+        getAdvertisementPayload(identifier: identifier, offset: offset, onComplete: onComplete)
+    }
+    
+    func payload(_ data: Data) -> [PayloadData] {
+        // We share only one payload at a time due to the length.
+        // No need to split payloads based on length or delimiter.
+        return [PayloadData(data)]
+    }
+    
+}
+
+public extension PayloadData {
+    var shortName: String {
+        do {
+            let decodedPayload = try JSONDecoder().decode(PeripheralCharacteristicsData.self, from: self)
+            let message = decodedPayload.msg
+            return String(message.suffix(25))
+        } catch {
+            let startIndex = count >= 3 ? 3 : 0
+            let endIndex = count >= 3 ? count-3 : 0
+            return String(subdata(in: startIndex..<endIndex).base64EncodedString().prefix(6))
         }
     }
 }

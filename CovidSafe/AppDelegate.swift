@@ -29,14 +29,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIBarButtonItem.appearance().setTitleTextAttributes([.foregroundColor: UIColor.covidSafeColor], for: .normal)
         UINavigationBar.appearance().tintColor = UIColor.covidSafeColor
         
-        let hasUserConsent = true
-        let hasUserCompletedOnboarding = UserDefaults.standard.bool(forKey: "turnedOnBluetooth")
-        let bluetoothAuthorised = BluetraceManager.shared.isBluetoothAuthorized()
-        if (hasUserConsent && hasUserCompletedOnboarding && bluetoothAuthorised) {
-            BluetraceManager.shared.turnOn()
-        } else {
-            print("Onboarding not yet done.")
-        }
         EncounterMessageManager.shared.setup()
         UIApplication.shared.isIdleTimerDisabled = true
         

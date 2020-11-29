@@ -1,5 +1,5 @@
 //
-//  OnboardingStep2bViewController.swift
+//  RegistrationSuccessViewController.swift
 //  CovidSafe
 //
 //  Copyright © 2020 Australian Government. All rights reserved.
@@ -8,7 +8,7 @@
 import UIKit
 import SafariServices
 
-class OnboardingStep2bViewController: UIViewController {
+class RegistrationSuccessViewController: UIViewController {
     @IBOutlet weak var pointOneLabel: UILabel!
     @IBOutlet weak var pointTwoLabel: UILabel!
     @IBOutlet weak var pointThreeLabel: UILabel!

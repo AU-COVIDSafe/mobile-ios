@@ -239,7 +239,7 @@
 /* OnBoarding Data Privacy */
 "data_privacy_headline" = "註册及私隱權";
 "deaths" = "死亡人數";
-"dialog_error_uploading_message" = "個人資料上傳時發生錯誤，請重試。";
+"dialog_error_uploading_message" = "";
 "dialog_error_uploading_negative" = "取消";
 "dialog_error_uploading_positive" = "重試";
 "dialog_uploading_message" = "正在上傳你的 COVIDSafe 資料。 \n\n請勿關閉應用程式。";
@@ -317,6 +317,8 @@
 "jwt_heading" = "請重新註冊。";
 "jwt_success" = "";
 "loading_numbers" = "正在載入最新統計數字";
+"location_off" = "";
+"location_off_description" = "";
 /* Splash Screen */
 "migration_in_progress" = "正在更新 COVIDSafe。\n\n請保持開機狀態直至更新完成為止。";
 "national_numbers" = "全國統計數字";
@@ -343,9 +345,8 @@
 "options_for_australia" = "澳洲適用選項";
 "permission_button" = "繼續";
 /* Figma page iOS Screens (05/06) */
-"permission_content_iOS" = "COVIDSafe  需要開啓藍牙®才能執行。透過開啟「通知傳送」功能，你會在 COVIDSafe 仍未處於啟用狀態時收到提醒。\n\n請選擇「繼續」來開啟：";
-/* Figma page iOS Screens (05/06) */
-"permission_content_iOS_2" = "1. 藍牙®\n2. 通知\n\nCOVIDSafe 不會傳送配對請求。";
+"permission_content_iOS" = "";
+"permission_content_iOS_2" = "";
 /* OnBoarding Permission */
 "permission_headline" = "應用程式設定";
 "permission_success_button" = "完成";
@@ -412,10 +413,15 @@
 "update_available_dismiss_btn" = "請稍後提醒";
 "update_available_message_ios" = "我們一直都在改良 COVIDSafe。通過App Store更新。";
 "update_available_title" = "更新可用！";
+"update_description" = "";
+"update_description_VO" = "";
+"update_heading" = "";
+"update_modal_button" = "繼續";
 "upload_answer_no" = "否";
 /* Upload flow */
 "upload_answer_yes" = "是";
 "upload_consent_button" = "我同意";
+"upload_fail_heading" = "";
 "upload_failed" = "上傳失敗";
 "upload_finished_header" = "感謝你協助遏止 COVID-19 的擴散！";
 "upload_finished_sub_header" = "你已成功將個人資料上傳到 COVIDSafe 高度保密的儲存系統。\n\n若錄得有其他 COVIDSafe 用户曾密切接觸過你，各州或領地的衛生部官員將會通知他們。你的身份仍舊予以保密。";
@@ -501,7 +507,7 @@
 "NotificationsDisabled_VOLabel" = "「通知傳送」功能已被闗閉。如果 COVIDSafe 尚未處於啟用狀態，你將不會收到通知。更改「通知傳送」設定";
 "NotificationsEnabled_VOLabel" = "「通知傳送」功能已被開啓。如果 COVIDSafe 尚未處於啟用狀態，你將會收到通知。更改「通知傳送」設定";
 "OS1b_TopParagraph_VOLabel" = "藍牙®訊號用於確定你在何時接近另一名 COVIDSafe 用戶。 \n你與其他 COVIDSafe 用戶的每次密切接觸都會被記錄下來，以創建密切接觸者資料。該資料會被加密，並僅儲存在你的手機内。 \n如果你是一名 COVIDSafe 用戶，而又被驗出 COVID-19 陽性，則州或領地衛生官員將會與你聯絡。他們將會協助你自願把你自己的密切接觸者資料上傳到高度保密的資料儲存系統。\n如果你曾密切接觸過另一名化驗結果呈陽性的 COVIDSafe 用戶，則州或領地衛生官員也可能會聯絡你。 \n欲知詳情，請參閱「求助主題」頁。";
-"permission_content_iOS_2_VOLabel" = "1. 藍牙®\n2. 通知\n\nCOVIDSafe 不會傳送配對請求。";
-"permission_content_iOS_VOLabel" = "需開啓藍牙®才能執行 COVIDSafe  。透過開啟「通知傳送」功能，你會在 COVIDSafe 尚未處於啟用狀態時收到提醒。\n\n請選擇「繼續」來開啟：";
+"permission_content_iOS_2_VOLabel" = "";
+"permission_content_iOS_VOLabel" = "";
 "ShareCovidSafe_VOLabel" = "分享使用 COVIDSafe，邀請他人參與防疫。團結便是力量！";
 "UploadData_VOLabel" = "曾有衛官員聯絡過你嗎？只有在你被驗出病毒陽性時，才能上傳個人資料。";

@@ -10,6 +10,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var bluetoothStatusOffView: UIView!
     @IBOutlet weak var bluetoothPermissionOffView: UIView!
+    @IBOutlet weak var locationPermissionsView: UIView!
     @IBOutlet weak var inactiveSettingsContent: UIView!
     @IBOutlet weak var inactiveTokenExpiredView: UIView!
     @IBOutlet weak var shareView: UIView!
@@ -48,6 +49,7 @@ class HomeViewController: UIViewController {
     var bluetoothStatusOn = true
     var bluetoothPermissionOn = true
     var pushNotificationOn = true
+    var locationPermissionOn = true
     var shouldShowUpdateApp = false
     
     var didUploadData: Bool {
@@ -100,14 +102,17 @@ class HomeViewController: UIViewController {
         scrollView.refreshControl = UIRefreshControl()
         scrollView.refreshControl?.addTarget(self, action: #selector(refreshControlEvent), for: .valueChanged)
         
-        
-        // this is to show the settings prompt initially if bluetooth is off
-        if !BluetraceManager.shared.isBluetoothOn() {
-            BluetraceManager.shared.turnOn()
-        }
-        
         observer = NotificationCenter.default.addObserver(forName: UIApplication.didBecomeActiveNotification, object: nil, queue: .main) { [unowned self] notification in
             self.refreshView()
+        }
+        BluetraceManager.shared.sensorDidUpdateStateCallback = { state, sensorType in
+            if let sensor = sensorType, sensor == .AWAKE {
+                self.locationPermissionOn = state == .on
+                self.toggleViews()
+            }
+        }
+        if !shouldShowPolicyUpdateMessage() {
+            startAllSensors()
         }
         
         updateAnimationViewWithAnimationName(name: "Spinner_home")
@@ -253,6 +258,7 @@ class HomeViewController: UIViewController {
                     
                     self?.toggleBluetoothStatusView()
                     self?.toggleBluetoothPermissionStatusView()
+                    self?.toggleLocationPermissionStatusView()
                     self?.toggleHeaderView()
                     self?.toggleUploadView()
                     self?.toggleUploadDateView()
@@ -306,8 +312,9 @@ class HomeViewController: UIViewController {
     fileprivate func readPermissions(notificationSettings: UNNotificationSettings) {
         self.bluetoothStatusOn = BluetraceManager.shared.isBluetoothOn()
         self.bluetoothPermissionOn = BluetraceManager.shared.isBluetoothAuthorized()
+        self.locationPermissionOn = BluetraceManager.shared.isLocationOnAuthorized()
         self.pushNotificationOn = notificationSettings.authorizationStatus == .authorized
-        let newAllPermissionsOn = self.bluetoothStatusOn && self.bluetoothPermissionOn
+        let newAllPermissionsOn = self.bluetoothStatusOn && self.bluetoothPermissionOn && self.locationPermissionOn
             
         if newAllPermissionsOn != self.allPermissionOn {
             self.allPermissionOn = newAllPermissionsOn
@@ -360,13 +367,17 @@ class HomeViewController: UIViewController {
         toggleViewVisibility(view: bluetoothPermissionOffView, isVisible: !self.allPermissionOn && !self.bluetoothPermissionOn && !registrationNeeded)
     }
     
+    fileprivate func toggleLocationPermissionStatusView() {
+        toggleViewVisibility(view: locationPermissionsView, isVisible: !allPermissionOn && !locationPermissionOn && (bluetoothPermissionOn && bluetoothStatusOn) && !registrationNeeded)
+    }
+    
     fileprivate func toggleRegistrationNeededView() {
         toggleViewVisibility(view: inactiveTokenExpiredView, isVisible: registrationNeeded)
     }
     
     func attemptTurnOnBluetooth() {
         BluetraceManager.shared.toggleScanning(false)
-        BluetraceManager.shared.turnOn()
+        BluetraceManager.shared.turnOnBLE()
     }
     
     fileprivate func updateAppActiveSubtitle() {
@@ -386,14 +397,13 @@ class HomeViewController: UIViewController {
     
     func shouldShowPolicyUpdateMessage() -> Bool {
         // this is the min version that the disclamer should be diplayed on.
-        let minVersionShowPolicyUpdate = 77
+        let minVersionShowPolicyUpdate = 89
         
         let latestVersionShown = UserDefaults.standard.integer(forKey: "latestPolicyUpdateVersionShown")
         guard let currentVersion = (Bundle.main.version as NSString?)?.integerValue else {
             return false
         }
         if currentVersion >= minVersionShowPolicyUpdate && currentVersion > latestVersionShown {
-            UserDefaults.standard.set(currentVersion, forKey: "latestPolicyUpdateVersionShown")
             return true
         }
         return false
@@ -401,20 +411,36 @@ class HomeViewController: UIViewController {
     
     func showPolicyUpdateMessage() {
         
-        let privacyPolicyUrl = URLHelper.getPrivacyPolicyURL()
-        let disclaimerAlert = CSAlertViewController(nibName: "CSAlertView", bundle: nil)
-        let disclaimerMsg = NSMutableAttributedString(string: "collection_message".localizedString(), attributes: [.font : UIFont.preferredFont(forTextStyle: .body)])
-        disclaimerMsg.addLink(enclosedIn: "*", urlString: privacyPolicyUrl)
-        disclaimerAlert.set(message: disclaimerMsg, buttonLabel: "dismiss".localizedString())
+        guard let currentVersion = (Bundle.main.version as NSString?)?.integerValue else {
+            return
+        }
+        UserDefaults.standard.set(currentVersion, forKey: "latestPolicyUpdateVersionShown")
+        let disclaimerAlert = CSGenericContentViewController(nibName: "CSGenericContentView", bundle: nil)
+        let contentAttributedString = NSMutableAttributedString(string: "update_description".localizedString(), attributes: [
+            .font: UIFont.preferredFont(forTextStyle: .body)
+        ])
+        disclaimerAlert.contentViewModel = CSGenericContentViewModel(viewTitle: "update_heading".localizedString(),
+                                                                     viewContentDescription: contentAttributedString,
+                                                                     buttonLabel: "update_modal_button".localizedString(),
+                                                                     buttonCallback: {
+                                                                        self.startAllSensors()
+                                                                        disclaimerAlert.dismiss(animated: true)
+                                                                     })
         
         disclaimerAlert.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
-        disclaimerAlert.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        disclaimerAlert.modalTransitionStyle = UIModalTransitionStyle.coverVertical
         present(disclaimerAlert, animated: true, completion: nil)
     }
     
     func showTokenExpiredMessage() {
         UserDefaults.standard.set(true, forKey: reauthenticationNeededKey)
         toggleViews()
+    }
+    
+    // MARK: Sensors
+    
+    func startAllSensors() {
+        BluetraceManager.shared.turnOnAllSensors()
     }
     
     // MARK: API calls

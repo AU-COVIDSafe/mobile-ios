@@ -239,7 +239,7 @@
 /* OnBoarding Data Privacy */
 "data_privacy_headline" = "Registrazione e privacy";
 "deaths" = "Decessi";
-"dialog_error_uploading_message" = "Si è verificato un errore durante il caricamento delle informazioni. Riprova.";
+"dialog_error_uploading_message" = "";
 "dialog_error_uploading_negative" = "Annulla";
 "dialog_error_uploading_positive" = "Riprova";
 "dialog_uploading_message" = "I dati di COVIDSafe sono attualmente in fase di caricamento. \n\nNon chiudere l'app.";
@@ -317,6 +317,8 @@
 "jwt_heading" = "Si prega di registrarsi di nuovo";
 "jwt_success" = "";
 "loading_numbers" = "Caricamento degli ultimi numeri";
+"location_off" = "";
+"location_off_description" = "";
 /* Splash Screen */
 "migration_in_progress" = "Aggiornamento COVIDSafe in corso. \n\nAssicurarsi che il cellulare non sia spento fino al completamento dell'aggiornamento.";
 "national_numbers" = "Numeri nazionali";
@@ -343,9 +345,8 @@
 "options_for_australia" = "Opzioni per l'Australia";
 "permission_button" = "Procedi";
 /* Figma page iOS Screens (05/06) */
-"permission_content_iOS" = "COVIDSafe necessita del Bluetooth® abilitato per funzionare. Abilitando Notifiche, ricevi aggiornamenti per ricordarti quando COVIDSafe non è attivo. \n\nSeleziona 'Procedi' per abilitare:";
-/* Figma page iOS Screens (05/06) */
-"permission_content_iOS_2" = "1. Bluetooth®\n2. Notifiche\n\nCOVIDSafe non invia richieste di accoppiamento.";
+"permission_content_iOS" = "";
+"permission_content_iOS_2" = "";
 /* OnBoarding Permission */
 "permission_headline" = "Impostazioni dell'app";
 "permission_success_button" = "Eseguito";
@@ -412,10 +413,15 @@
 "update_available_dismiss_btn" = "Ricordamelo più tardi";
 "update_available_message_ios" = "Abbiamo apportato dei miglioramenti a COVIDSafe. Aggiorna tramite l'App Store";
 "update_available_title" = "Aggiornamento disponibile!";
+"update_description" = "";
+"update_description_VO" = "";
+"update_heading" = "";
+"update_modal_button" = "Procedi";
 "upload_answer_no" = "No";
 /* Upload flow */
 "upload_answer_yes" = "Sì";
 "upload_consent_button" = "Sono d'accordo";
+"upload_fail_heading" = "";
 "upload_failed" = "Caricamento non riuscito";
 "upload_finished_header" = "Grazie per aver aiutato a fermare la diffusione del COVID-19!";
 "upload_finished_sub_header" = "I  vostri dati sono stati caricati sul sistema altamente sicuro di archiviazione di COVIDSafe. \n\nI funzionari sanitari statali o del territorio informeranno gli altri utenti COVIDSafe che hanno registrato casi di stretto contatto con voi. La vostra identità rimarrà anonima per gli altri utenti.";
@@ -501,7 +507,7 @@
 "NotificationsDisabled_VOLabel" = "Le notifiche sono disabilitate. Non si ricevono notifiche se COVIDSafe non è attivo. \nModifica le impostazioni di notifica";
 "NotificationsEnabled_VOLabel" = "Le notifiche sono abilitate. Riceverai una notifica se COVIDSafe non è attivo. \nModifica le impostazioni di notifica";
 "OS1b_TopParagraph_VOLabel" = "I segnali Bluetooth vengono utilizzati per determinare la vicinanza ad altri utenti di COVIDSafe. \nOgni istanza di stretto contatto tra voi e gli altri utenti di COVIDSafe viene annotata per creare informazioni sui contatti. Queste informazioni sono crittografate e memorizzate solo sul vostro cellulare. \nSe risultate positivi al COVID-19, come utenti di COVIDSafe sarete contattati da un funzionario sanitario statale o del territorio per assistervi con il caricamento volontario delle vostre informazioni di stretto contatto in un sistema di archiviazione di informazioni altamente sicuro. \nI funzionari sanitari statali o territoriali possono anche contattarvi se siete entrati in stretto contatto con un altro utente di COVIDSafe risultato positivo. \nPer ulteriori informazioni, consultare la pagina Argomenti della Guida.";
-"permission_content_iOS_2_VOLabel" = "1. Bluetooth\n2. Notifiche\n\nCOVIDSafe non invia richieste di accoppiamento.";
-"permission_content_iOS_VOLabel" = "COVIDSafe necessita il Bluetooth abilitato per funzionare. Abilitando Notifiche, ricevete aggiornamenti per sapere quando COVIDSafe non è attivo. \n\n Seleziona 'Procedi' per abilitare:";
+"permission_content_iOS_2_VOLabel" = "";
+"permission_content_iOS_VOLabel" = "";
 "ShareCovidSafe_VOLabel" = "Condividi COVIDSafe. Invita altri ad collaborare. Insieme, siamo più forti.";
 "UploadData_VOLabel" = "Siete stati contattati da un funzionario sanitario? Potete caricare le vostre informazioni solo se siete risultati positivi.";

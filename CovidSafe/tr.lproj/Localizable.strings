@@ -239,7 +239,7 @@
 /* OnBoarding Data Privacy */
 "data_privacy_headline" = "Kayıt ve gizlilik";
 "deaths" = "Ölümler";
-"dialog_error_uploading_message" = "Bilgileriniz sisteme yüklerken bir hata oluştu, lütfen tekrar deneyin.";
+"dialog_error_uploading_message" = "";
 "dialog_error_uploading_negative" = "İptal";
 "dialog_error_uploading_positive" = "Tekrar deneyin";
 "dialog_uploading_message" = "COVIDSafe bilgileriniz şu anda sisteme yükleniyor. \n\n Lütfen uygulamayı kapatmayın.";
@@ -317,6 +317,8 @@
 "jwt_heading" = "Lütfen tekrar kayıt olun";
 "jwt_success" = "";
 "loading_numbers" = "En son sayılar yükleniyor";
+"location_off" = "";
+"location_off_description" = "";
 /* Splash Screen */
 "migration_in_progress" = " COVIDSafe güncellemesi devam ediyor. \n\n Lütfen güncelleme tamamlanana kadar telefonunuzu kapatmayın.";
 "national_numbers" = "Ulusal sayılar";
@@ -343,9 +345,8 @@
 "options_for_australia" = "Avustralya için seçenekler";
 "permission_button" = "İlerle";
 /* Figma page iOS Screens (05/06) */
-"permission_content_iOS" = "COVIDSafe'nin çalışması için Bluetooth® etkinleştirilmiş olmalıdır. Bildirimleri etkinleştirerek COVIDSafe aktif olmadığında size hatırlatan güncellemeleri alabilirsiniz. \n\nEtkinleştirmek için 'Devam Et'i seçin:";
-/* Figma page iOS Screens (05/06) */
-"permission_content_iOS_2" = "1. Bluetooth®\n2. Bildirimler \n\nCOVIDSafe eşleştirme istekleri göndermez.";
+"permission_content_iOS" = "";
+"permission_content_iOS_2" = "";
 /* OnBoarding Permission */
 "permission_headline" = "Uygulama ayarları";
 "permission_success_button" = "Bitti";
@@ -412,10 +413,15 @@
 "update_available_dismiss_btn" = "Daha sonra hatırlat";
 "update_available_message_ios" = "COVIDSafe'de iyileştirmeler yapmaktayız. App Store üzerinden güncelleme yapın.";
 "update_available_title" = "Güncelleme mevcut!";
+"update_description" = "";
+"update_description_VO" = "";
+"update_heading" = "";
+"update_modal_button" = "İlerle";
 "upload_answer_no" = "Hayır";
 /* Upload flow */
 "upload_answer_yes" = "Evet";
 "upload_consent_button" = "Kabul ediyorum";
+"upload_fail_heading" = "";
 "upload_failed" = "Karşıya yükleme başarısız";
 "upload_finished_header" = "COVID-19'un yayılmasını durdurmaya yardım ettiğiniz için teşekkür ederiz!";
 "upload_finished_sub_header" = "Bilgilerinizi yüksek güvenlikli COVIDSafe depolama sistemine başarıyla yüklediniz. \n\nEyalet veya bölge sağlık yetkilileri sizinle yakın temas durumlarını kaydeden diğer COVIDSafe kullanıcılarını bilgilendirecektir. Kimliğiniz diğer kullanıcılar için gizli kalacaktır.";
@@ -501,7 +507,7 @@
 "NotificationsDisabled_VOLabel" = "Bildirimler devre dışı bırakıldı. COVIDSafe aktif olmadığında bildirim almayacaksınız. \nBildirim ayarlarını değiştirin";
 "NotificationsEnabled_VOLabel" = "Bildirimler etkinleştirildi. COVIDSafe aktif olmadığı durumda bildirim alacaksınız. \nBildirim ayarlarını değiştirin";
 "OS1b_TopParagraph_VOLabel" = "Bluetooth sinyalleri başka bir COVIDSafe kullanıcısının yakınınızda olduğunuzu belirlemek için kullanılır. \nSizinle diğer COVIDSafe kullanıcıları arasındaki her yakın temas, yakın temas bilgileri oluşturmak için not edilir. Bu bilgiler şifrelenir ve yalnızca telefonunuzda saklanır. \nCOVIDSafe kullanıcısı olarak COVID-19 testinizin pozitif çıkması durumunda eyalet veya bölge sağlık yetkilisi sizinle iletişime geçecektir. Yakın iletişim bilgilerinizin son derece güvenli bir bilgi depolama sistemine gönüllü olarak yüklemenize yardımcı olacaklardır. \nEyalet veya bölge sağlık yetkilileri testi pozitif çıkan başka bir COVIDSafe kullanıcısıyla yakın temas kurdugunuz durumda  yine sizinle iletişime geçebilir. \nDaha fazla bilgi için lütfen Yardım Konuları sayfasına bakınız.";
-"permission_content_iOS_2_VOLabel" = "1. Bluetooth\n2. Bildirimler \n\nCOVIDSafe eşleştirme istekleri göndermez.";
-"permission_content_iOS_VOLabel" = "COVIDSafe'nin çalışabilmesi için Bluetooth etkinleştirilmiş olmalıdır. Bildirimleri etkinleştirerek COVIDSafe aktif olmadığında size hatırlatan güncellemeleri alabilirsiniz. \n\nEtkinleştirmek için 'Devam Et'i seçiniz:";
+"permission_content_iOS_2_VOLabel" = "";
+"permission_content_iOS_VOLabel" = "";
 "ShareCovidSafe_VOLabel" = "COVIDSafe'i paylaşın. Başkalarını yardıma davet edin. Birlikte daha da güçlüyüz.";
 "UploadData_VOLabel" = "Bir sağlık yetkilisi sizinle iletişime geçti mi? Bilgilerinizi yalnızca testiniz pozitifse sisteme yükleyebilirsiniz.";

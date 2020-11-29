@@ -239,7 +239,7 @@
 /* OnBoarding Data Privacy */
 "data_privacy_headline" = "ਪੰਜੀਕਰਨ ਅਤੇ ਪ੍ਰਾਈਵੇਸੀ";
 "deaths" = "ਮੌਤਾਂ";
-"dialog_error_uploading_message" = "ਤੁਹਾਡੀ ਜਾਣਕਾਰੀ ਨੂੰ ਅੱਪਲੋਡ ਕਰਨ ਦੌਰਾਨ ਇੱਕ ਗਲਤੀ ਆਈ, ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।";
+"dialog_error_uploading_message" = "";
 "dialog_error_uploading_negative" = "ਰੱਦ";
 "dialog_error_uploading_positive" = "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ";
 "dialog_uploading_message" = "ਤੁਹਾਡੀ COVIDSafe ਜਾਣਕਾਰੀ ਨੂੰ  ਇਸ ਵੇਲੇ ਅੱਪਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ।\n\nਕਿਰਪਾ ਕਰਕੇ ਐਪ ਬੰਦ ਨਾ ਕਰੋ।";
@@ -315,8 +315,10 @@
 "invalid_norfolk_island_phone_number_error_prompt" = "ਨੋਰਫੋਕ ਆਈਲੈਂਡਜ਼ ਵਿਖੇ  ਮੋਬਾਈਲ ਨੰਬਰਾਂ ਦੇ 5 ਤੋਂ 6 ਅੰਕ ਹੁੰਦੇ ਹਨ।";
 "jwt_description" = "ਤੁਹਾਡੇ ਪੰਜੀਕਰਨ (ਰਜ਼ਿਸਟ੍ਰੇਸ਼ਨ) ਦੇ ਵਿਸਥਾਰਾਂ ਵਿੱਚ ਕੋਈ ਸਮੱਸਿਆ ਹੈ।";
 "jwt_heading" = "ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਰਜਿਸਟਰ ਕਰੋ";
-"jwt_success" = "";
+"jwt_success" = "ਰਜਿਸਟਰੇਸ਼ਨ ਸਫਲਤਾਪੂਰਵਕ ਰਿਨਿਯੂ ਕੀਤਾ ਗਿਆ";
 "loading_numbers" = "ਤਾਜ਼ਾ ਅੰਕੜੇ ਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ";
+"location_off" = "";
+"location_off_description" = "";
 /* Splash Screen */
 "migration_in_progress" = "COVIDSafe ਅੱਪਡੇਟ ਚੱਲ ਰਿਹਾ ਹੈ। \n\nਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਹਾਡਾ ਫ਼ੋਨ ਤਦ ਤੱਕ ਬੰਦ ਨਹੀਂ ਹੋਣਾ ਚਾਹੀਦਾ ਜਦ ਤੱਕ ਅੱਪਡੇਟ ਪੂਰਾ ਨਹੀਂ ਹੋ ਜਾਂਦਾ।";
 "national_numbers" = "ਰਾਸ਼ਟਰੀ ਅੰਕੜੇ";
@@ -343,9 +345,8 @@
 "options_for_australia" = "ਆਸਟਰੇਲੀਆ ਲਈ ਵਿਕਲਪ";
 "permission_button" = "ਅੱਗੇ ਵਧੋ";
 /* Figma page iOS Screens (05/06) */
-"permission_content_iOS" = "COVIDSafe ਲਈ ਬਲੂਟੁਥ ਅਨੇਬਲ ਕਰੋ| ਸੂਚਨਾਵਾਂ ਨੂੰ ਅਨੇਬਲ ਕਰਣ ਤੇ ਤੁਹਾਨੂੰ ਅੱਪਡੇਟ ਪ੍ਰਾਪਤ ਹੁੰਦੇ ਹਨ ਜੋ ਯਾਦ ਕਰਾਉਂਦੇ ਹਨ ਜਦੋਂ COVIDSafe ਐਕਟਿਵ ਨਹੀਂ ਹੁੰਦਾ|\n\nਚਲਾਉਣ ਲਈ 'ਅੱਗੇ ਵਧੋ' ਚੁਣੋ:";
-/* Figma page iOS Screens (05/06) */
-"permission_content_iOS_2" = "1. Bluetooth®\n2. ਸੂਚਨਾਵਾਂ\n\nCOVIDSafe ਪੇਅਰਿੰਗ ਦੀਆਂ ਬੇਨਤੀਆਂ ਨਹੀਂ ਭੇਜਦੀ।";
+"permission_content_iOS" = "";
+"permission_content_iOS_2" = "";
 /* OnBoarding Permission */
 "permission_headline" = "ਐਪ ਸੈਟਿੰਗਾਂ";
 "permission_success_button" = "ਕੀਤਾ";
@@ -412,10 +413,15 @@
 "update_available_dismiss_btn" = "ਮੈਨੂੰ ਬਾਅਦ ਵਿੱਚ ਯਾਦ ਕਰਵਾਓ";
 "update_available_message_ios" = "ਅਸੀਂ COVIDSafe ਵਿੱਚ ਸੁਧਾਰ ਕਰਦੇ ਆ ਰਹੇ ਹਾਂ| ਐਪ ਸਟੋਰ ਰਾਹੀਂ ਅਪਡੇਟ ਕਰੋ।";
 "update_available_title" = "ਅੱਪਡੇਟ ਉਪਲਬਧ ਹੈ|";
+"update_description" = "";
+"update_description_VO" = "";
+"update_heading" = "";
+"update_modal_button" = "ਅੱਗੇ ਵਧੋ";
 "upload_answer_no" = "ਨਹੀਂ";
 /* Upload flow */
 "upload_answer_yes" = "ਹਾਂ";
 "upload_consent_button" = "ਮੈਂ ਸਹਿਮਤ ਹਾਂ";
+"upload_fail_heading" = "";
 "upload_failed" = "ਅੱਪਲੋਡ ਅਸਫਲ";
 "upload_finished_header" = "COVIDSafe ਦੇ ਫੈਲਾਅ ਨੂੰ ਰੋਕਣ ਵਿੱਚ ਸਹਾਇਤਾ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ!";
 "upload_finished_sub_header" = "ਤੁਸੀਂ ਆਪਣੀ ਜਾਣਕਾਰੀ ਨੂੰ COVIDSafe ਦੇ ਬੇਹੱਦ ਸੁਰੱਖਿਅਤ ਸਟੋਰੇਜ ਸਿਸਟਮ 'ਤੇ ਸਫਲਤਾ ਪੂਰਵਕ ਅੱਪਲੋਡ ਕਰ ਦਿੱਤਾ ਹੈ।\n\nਰਾਜ ਜਾਂ ਹਲਕਾ ਸਿਹਤ ਅਧਿਕਾਰੀ ਹੋਰ  COVIDSafe ਵਰਤੋਂਕਾਰਾਂ ਨੂੰ ਸੂਚਿਤ ਕਰਨਗੇ ਜਿੰਨ੍ਹਾਂ ਨੇ ਤੁਹਾਡੇ ਨਾਲ ਨਜ਼ਦੀਕੀ ਸੰਪਰਕ ਦੀਆਂ ਉਦਾਹਰਨਾਂ ਰਿਕਾਰਡ ਕੀਤੀਆਂ ਹਨ। ਤੁਹਾਡੀ ਪਛਾਣ ਹੋਰਨਾਂ ਵਰਤੋਂਕਾਰਾਂ ਵਾਸਤੇ ਗੁੰਮਨਾਮ ਰਹੇਗੀ।";
@@ -501,7 +507,7 @@
 "NotificationsDisabled_VOLabel" = "ਸੂਚਨਾਵਾਂ  ਬੰਦ  (ਡਿਸੇਬਲੇਡ) ਹਨ। ਜੇ COVIDSafe ਐਕਟਿਵ ਨਹੀਂ ਤਾਂ ਤੁਹਾਨੂੰ ਕੋਈ ਸੂਚਨਾ ਨਹੀਂ ਮਿਲੇਗੀ|\nਸੂਚਨਾ ਸੈਟਿੰਗਜ਼ ਨੂੰ ਬਦਲੋ";
 "NotificationsEnabled_VOLabel" = "ਸੂਚਨਾਵਾਂ ਚਾਲੂ (ਅਨੇਬਲਡ) ਹਨ। ਜੇ COVIDSafe ਐਕਟਿਵ ਨਹੀਂ ਤਾਂ ਤੁਹਾਨੂੰ ਸੂਚਨਾ ਮਿਲੇਗੀ|\nਸੂਚਨਾ ਸੈਟਿੰਗਜ਼ ਨੂੰ ਬਦਲੋ";
 "OS1b_TopParagraph_VOLabel" = "ਬਲੂਟੁੱਥ ਸਿਗਨਲਾਂ ਦੀ ਵਰਤੋਂ ਇਹ ਦੱਸਦੀ ਹੈ ਜਦੋਂ ਤੁਸੀਂ ਕਿਸੇ ਹੋਰ COVIDSafe ਵਰਤੋਂਕਾਰ ਦੇ ਨੇੜੇ ਹੁੰਦੇ ਹੋ।\nਤੁਹਾਡੇ ਅਤੇ ਹੋਰ COVIDSafe ਵਰਤੋਂਕਾਰਾਂ ਵਿਚਕਾਰ ਨਜ਼ਦੀਕੀ ਸੰਪਰਕ ਦੀ ਹਰੇਕ ਉਦਾਹਰਨ ਨੂੰ ਨਜ਼ਦੀਕੀ ਸੰਪਰਕ ਜਾਣਕਾਰੀ ਲਈ ਨੋਟ ਕੀਤਾ ਜਾਂਦਾ ਹੈ। ਇਹ ਜਾਣਕਾਰੀ ਏਨਕ੍ਰਿਪਟਿਡ ਹੁੰਦੀ ਹੈ ਅਤੇ ਕੇਵਲ ਤੁਹਾਡੇ ਫ਼ੋਨ ਵਿੱਚ ਹੀ ਸਟੋਰ ਕੀਤੀ ਜਾਂਦੀ ਹੈ।\nਜੇ COVIDSafe ਵਰਤੋਂਕਾਰ ਵਜੋਂ  ਕੋਵਿਡ-19 ਲਈ ਤੁਹਾਡਾ ਟੈਸਟ ਪਾਜੇਟਿਵ ਆਉਂਦਾ ਹੈ, ਤਾਂ ਕੋਈ ਰਾਜ ਜਾਂ ਹਲਕਾ ਸਿਹਤ ਅਧਿਕਾਰੀ ਤੁਹਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੇਗਾ। ਉਹ ਤੁਹਾਡੀ ਨਜ਼ਦੀਕੀ ਸੰਪਰਕ ਜਾਣਕਾਰੀ ਨੂੰ ਇੱਕ ਬੇਹੱਦ ਸੁਰੱਖਿਅਤ ਜਾਣਕਾਰੀ ਸਟੋਰੇਜ ਸਿਸਟਮ ਵਿੱਚ ਅੱਪਲੋਡ ਕਰਨ ਵਿੱਚ ਸਹਾਇਤਾ ਕਰਨਗੇ।\nਜੇ ਤੁਸੀਂ ਕਿਸੇ ਹੋਰ  COVIDSafe ਵਰਤੋਂਕਾਰ ਜਿਸਦਾ ਪਾਜ਼ੇਟਿਵ ਟੈਸਟ ਹੋਇਆ ਸੀ, ਦੇ ਸੰਪਰਕ ਵਿੱਚ ਆਏ ਹੋ ਤਾਂ ਵੀ ਰਾਜ ਜਾਂ ਹਲਕਾ ਸਿਹਤ ਅਧਿਕਾਰੀ ਤੁਹਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰ ਸਕਦੇ ਹਨ|\nਵਧੇਰੇ ਜਾਣਕਾਰੀ ਲਈ ਕਿਰਪਾ ਕਰਕੇ ਸਹਾਇਤਾ ਵਿਸ਼ੇ ਪੰਨਾ  ਦੇਖੋ।";
-"permission_content_iOS_2_VOLabel" = "1. ਬਲੂਟੁੱਥ\n2. ਸੂਚਨਾਵਾਂ\n\nCOVIDSafe  ਪੇਅਰਿੰਗ ਦੀਆਂ ਬੇਨਤੀਆਂ ਨਹੀਂ ਭੇਜਦੀ।";
-"permission_content_iOS_VOLabel" = "COVIDSafe ਦੇ ਕੰਮ ਕਰਨ ਲਈ ਬਲੂਟੁਥ ਚਾਲੂ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ| ਸੂਚਨਾਵਾਂ ਨੂੰ ਚਾਲੂ ਕਰਣ ਤੇ ਤੁਹਾਨੂੰ ਅੱਪਡੇਟ ਪ੍ਰਾਪਤ ਹੁੰਦੇ ਹਨ ਜੋ ਯਾਦ ਕਰਾਉਂਦੇ ਹਨ ਜਦੋਂ COVIDSafe ਐਕਟਿਵ ਨਹੀਂ ਹੁੰਦਾ|\n\nਚਲਾਉਣ ਲਈ 'ਅੱਗੇ ਵਧੋ' ਚੁਣੋ:";
+"permission_content_iOS_2_VOLabel" = "";
+"permission_content_iOS_VOLabel" = "";
 "ShareCovidSafe_VOLabel" = "COVIDSafe ਸਾਂਝਾ ਕਰੋ। ਹੋਰਨਾਂ ਨੂੰ ਸਹਾਇਤਾ ਲਈ ਬੁਲਾਓ । ਇਕੱਠੇ ਅਸੀਂ ਵਧੇਰੇ ਮਜ਼ਬੂਤ ਹਾਂ।";
 "UploadData_VOLabel" = "ਕੀ ਕਿਸੇ ਸਿਹਤ ਅਧਿਕਾਰੀ ਨੇ ਤੁਹਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕੀਤਾ ਹੈ? ਤੁਸੀਂ ਆਪਣੀ ਜਾਣਕਾਰੀ ਨੂੰ ਕੇਵਲ ਤਾਂ ਹੀ ਅੱਪਲੋਡ ਕਰ ਸਕਦੇ ਹੋ ਜੇਕਰ ਤੁਹਾਡਾ ਟੈਸਟ ਪਾਜ਼ੇਟਿਵ ਆਇਆ ਹੋਵੇ|";

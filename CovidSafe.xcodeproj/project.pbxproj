@@ -36,6 +36,38 @@
 		3A8951FDED310D7ABA54259E /* Pods_CovidSafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E9EB96EA6E42A571E73C8E /* Pods_CovidSafe.framework */; };
 		5904A5C22462471A008C8012 /* EncounterV1toV2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5904A5C12462471A008C8012 /* EncounterV1toV2.xcmappingmodel */; };
 		5904A5C32462471A008C8012 /* EncounterV1toV2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5904A5C12462471A008C8012 /* EncounterV1toV2.xcmappingmodel */; };
+		5905460C2543E0F5009B82AD /* BLESensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590545EE2543E0F5009B82AD /* BLESensor.swift */; };
+		5905460D2543E0F5009B82AD /* BLESensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590545EE2543E0F5009B82AD /* BLESensor.swift */; };
+		5905460E2543E0F5009B82AD /* BLEDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590545EF2543E0F5009B82AD /* BLEDatabase.swift */; };
+		5905460F2543E0F5009B82AD /* BLEDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590545EF2543E0F5009B82AD /* BLEDatabase.swift */; };
+		590546102543E0F5009B82AD /* BLEUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590545F02543E0F5009B82AD /* BLEUtilities.swift */; };
+		590546112543E0F5009B82AD /* BLEUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590545F02543E0F5009B82AD /* BLEUtilities.swift */; };
+		590546122543E0F6009B82AD /* BLETransmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590545F12543E0F5009B82AD /* BLETransmitter.swift */; };
+		590546132543E0F6009B82AD /* BLETransmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590545F12543E0F5009B82AD /* BLETransmitter.swift */; };
+		590546142543E0F6009B82AD /* BLEReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590545F22543E0F5009B82AD /* BLEReceiver.swift */; };
+		590546152543E0F6009B82AD /* BLEReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590545F22543E0F5009B82AD /* BLEReceiver.swift */; };
+		590546162543E0F6009B82AD /* AwakeSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590545F42543E0F5009B82AD /* AwakeSensor.swift */; };
+		590546172543E0F6009B82AD /* AwakeSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590545F42543E0F5009B82AD /* AwakeSensor.swift */; };
+		590546182543E0F6009B82AD /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590545F52543E0F5009B82AD /* Sensor.swift */; };
+		590546192543E0F6009B82AD /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590545F52543E0F5009B82AD /* Sensor.swift */; };
+		590546282543E0F6009B82AD /* SensorArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590546012543E0F5009B82AD /* SensorArray.swift */; };
+		590546292543E0F6009B82AD /* SensorArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590546012543E0F5009B82AD /* SensorArray.swift */; };
+		5905462A2543E0F6009B82AD /* PayloadDataSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590546022543E0F5009B82AD /* PayloadDataSupplier.swift */; };
+		5905462B2543E0F6009B82AD /* PayloadDataSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590546022543E0F5009B82AD /* PayloadDataSupplier.swift */; };
+		5905462C2543E0F6009B82AD /* TextFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590546042543E0F5009B82AD /* TextFile.swift */; };
+		5905462D2543E0F6009B82AD /* TextFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590546042543E0F5009B82AD /* TextFile.swift */; };
+		5905462E2543E0F6009B82AD /* BatteryLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590546052543E0F5009B82AD /* BatteryLog.swift */; };
+		5905462F2543E0F6009B82AD /* BatteryLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590546052543E0F5009B82AD /* BatteryLog.swift */; };
+		590546302543E0F6009B82AD /* DetectionLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590546062543E0F5009B82AD /* DetectionLog.swift */; };
+		590546312543E0F6009B82AD /* DetectionLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590546062543E0F5009B82AD /* DetectionLog.swift */; };
+		590546322543E0F6009B82AD /* SensorLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590546072543E0F5009B82AD /* SensorLogger.swift */; };
+		590546332543E0F6009B82AD /* SensorLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590546072543E0F5009B82AD /* SensorLogger.swift */; };
+		590546342543E0F6009B82AD /* ContactLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590546082543E0F5009B82AD /* ContactLog.swift */; };
+		590546352543E0F6009B82AD /* ContactLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590546082543E0F5009B82AD /* ContactLog.swift */; };
+		590546362543E0F6009B82AD /* StatisticsLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590546092543E0F5009B82AD /* StatisticsLog.swift */; };
+		590546372543E0F6009B82AD /* StatisticsLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590546092543E0F5009B82AD /* StatisticsLog.swift */; };
+		590546382543E0F6009B82AD /* SensorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5905460A2543E0F5009B82AD /* SensorDelegate.swift */; };
+		590546392543E0F6009B82AD /* SensorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5905460A2543E0F5009B82AD /* SensorDelegate.swift */; };
 		590888AF2431B9E3008C9B9F /* UITextView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B55E1912430760500C9E798 /* UITextView + Extensions.swift */; };
 		590888B02431B9E7008C9B9F /* UIColor + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC141AD2430685800399FA8 /* UIColor + Extensions.swift */; };
 		590888B12431B9EB008C9B9F /* Question3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B86119424303F5E00EA4B6B /* Question3ViewController.swift */; };
@@ -167,12 +199,11 @@
 		5B92D67F243018040049877B /* PogoInstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F19B4DC23F565850071A11E /* PogoInstructionsViewController.swift */; };
 		5B92D680243018040049877B /* CodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E91BEA23EFEA0B002D592A /* CodeInputView.swift */; };
 		5B92D681243018040049877B /* EncounterRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BE1CAE23F1349F005DCE4F /* EncounterRecord.swift */; };
-		5B92D683243018040049877B /* OnboardingStep2bViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D817623F169DB00345771 /* OnboardingStep2bViewController.swift */; };
+		5B92D683243018040049877B /* RegistrationSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D817623F169DB00345771 /* RegistrationSuccessViewController.swift */; };
 		5B92D684243018040049877B /* AsyncAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767D2F9242DF1B000DC9E2A /* AsyncAction.swift */; };
 		5B92D685243018040049877B /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F8BE3242659810007A641 /* UILabelExtension.swift */; };
 		5B92D686243018040049877B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD41D3A23DCB03B00FD4AB0 /* AppDelegate.swift */; };
 		5B92D687243018040049877B /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8B248A23F146C500DBB74D /* PhoneNumberViewController.swift */; };
-		5B92D688243018040049877B /* BluetraceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7B8D2242B8D87008E1715 /* BluetraceUtils.swift */; };
 		5B92D689243018040049877B /* NewFeedbackFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767D302242DF1B000DC9E2A /* NewFeedbackFlowController.swift */; };
 		5B92D68A243018040049877B /* Outcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767D2EE242DF1B000DC9E2A /* Outcome.swift */; };
 		5B92D68B243018040049877B /* Encounter+EncounterRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BE1CB023F134D0005DCE4F /* Encounter+EncounterRecord.swift */; };
@@ -184,9 +215,8 @@
 		5B92D691243018040049877B /* RespondToAuthChallengeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12C4C0242F047F007E893B /* RespondToAuthChallengeAPI.swift */; };
 		5B92D692243018040049877B /* BluetraceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D269C0C23E2958F00ADF2DE /* BluetraceManager.swift */; };
 		5B92D693243018040049877B /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767D2F0242DF1B000DC9E2A /* UIColor+Hex.swift */; };
-		5B92D694243018040049877B /* OnboardingStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5046D5B23EF18600046E96D /* OnboardingStep1ViewController.swift */; };
+		5B92D694243018040049877B /* RegistrationIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5046D5B23EF18600046E96D /* RegistrationIntroViewController.swift */; };
 		5B92D695243018040049877B /* DeviceInfoExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767D2F5242DF1B000DC9E2A /* DeviceInfoExtension.swift */; };
-		5B92D697243018040049877B /* PeripheralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD41D5223DD4CA400FD4AB0 /* PeripheralController.swift */; };
 		5B92D698243018040049877B /* SendFeedbackAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767D2FA242DF1B000DC9E2A /* SendFeedbackAction.swift */; };
 		5B92D699243018040049877B /* UITextViewFixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D209FB23F4476F007233BE /* UITextViewFixed.swift */; };
 		5B92D69A243018040049877B /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C585C83A23EEB99B0061B7C6 /* GradientButton.swift */; };
@@ -198,9 +228,8 @@
 		5B92D6A1243018040049877B /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767D2F6242DF1B000DC9E2A /* AlertController.swift */; };
 		5B92D6A2243018040049877B /* GetTempIdAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12C4C2242F0FE9007E893B /* GetTempIdAPI.swift */; };
 		5B92D6A3243018040049877B /* PhoneValidationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFFD94A242EC120003AEF4F /* PhoneValidationAPI.swift */; };
-		5B92D6A4243018040049877B /* CentralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD41D4E23DCB05600FD4AB0 /* CentralController.swift */; };
 		5B92D6A5243018040049877B /* UIWindow+TopMost.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767D305242DF1B000DC9E2A /* UIWindow+TopMost.swift */; };
-		5B92D6A6243018040049877B /* OnboardingStep1bViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DEB6812423AE2E00D99925 /* OnboardingStep1bViewController.swift */; };
+		5B92D6A6243018040049877B /* HowItWorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DEB6812423AE2E00D99925 /* HowItWorksViewController.swift */; };
 		5B92D6A7243018040049877B /* OnboardingStep4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56CF43E23F18A15006B05B0 /* OnboardingStep4ViewController.swift */; };
 		5B92D6A8243018040049877B /* PresentFeedbackExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767D2FD242DF1B000DC9E2A /* PresentFeedbackExtensions.swift */; };
 		5B92D6A9243018040049877B /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767D304242DF1B000DC9E2A /* Errors.swift */; };
@@ -210,7 +239,7 @@
 		5B92D6AD243018040049877B /* FeedbackSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767D301242DF1B000DC9E2A /* FeedbackSettings.swift */; };
 		5B92D6AE243018040049877B /* JMCTargetJSONFromDisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767D2EF242DF1B000DC9E2A /* JMCTargetJSONFromDisk.swift */; };
 		5B92D6B0243018040049877B /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767D309242DF1B000DC9E2A /* Action.swift */; };
-		5B92D6B1243018040049877B /* OnboardingStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2F0BA123EFFF75006D7404 /* OnboardingStep2ViewController.swift */; };
+		5B92D6B1243018040049877B /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2F0BA123EFFF75006D7404 /* AppSettingsViewController.swift */; };
 		5B92D6B2243018040049877B /* HTTPPostFeedbackAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767D2F4242DF1B000DC9E2A /* HTTPPostFeedbackAction.swift */; };
 		5B92D6B3243018040049877B /* PushNotificationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F36305E23F7F81400CC6E1D /* PushNotificationConstants.swift */; };
 		5B92D6B4243018040049877B /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B615C5A823FA403400345969 /* UIViewController + Extension.swift */; };
@@ -242,6 +271,11 @@
 		5BA33A7E24B55E7D00D12515 /* BLELogRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA33A7D24B55E7D00D12515 /* BLELogRecord.swift */; };
 		5BA33A8024B55EF200D12515 /* BLELogDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA33A7F24B55EF200D12515 /* BLELogDB.swift */; };
 		5BA33A8224B5602500D12515 /* BLELogRecord+BLELogSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA33A8124B5602500D12515 /* BLELogRecord+BLELogSave.swift */; };
+		5BBC571D25526F99005E90AA /* staging-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BBC571C25526F99005E90AA /* staging-Info.plist */; };
+		5BBE61B125633B6D00B8C983 /* CSGenericContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BBE61B025633B6D00B8C983 /* CSGenericContentView.xib */; };
+		5BBE61B225633B6D00B8C983 /* CSGenericContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BBE61B025633B6D00B8C983 /* CSGenericContentView.xib */; };
+		5BBE61B725633E8D00B8C983 /* CSGenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBE61B625633E8D00B8C983 /* CSGenericViewController.swift */; };
+		5BBE61B825633E8D00B8C983 /* CSGenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBE61B625633E8D00B8C983 /* CSGenericViewController.swift */; };
 		5BD3EE8324330E1A0004A007 /* UploadDataStep2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD3EE8224330E1A0004A007 /* UploadDataStep2VC.swift */; };
 		5BD3EE84243313450004A007 /* UploadDataStep2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD3EE8224330E1A0004A007 /* UploadDataStep2VC.swift */; };
 		5BED1E3A24A96D1C0066C4D2 /* LaunchScreen_ar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BED1E3924A96D1C0066C4D2 /* LaunchScreen_ar.storyboard */; };
@@ -264,15 +298,12 @@
 		5D8DD06223E319B300E097EF /* Encounter+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8DD06023E319B300E097EF /* Encounter+CoreDataProperties.swift */; };
 		5D8DD06723E329A200E097EF /* tracer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DD41D7723DE141700FD4AB0 /* tracer.xcdatamodeld */; };
 		5DC7B8D1242B8536008E1715 /* BluetraceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7B8D0242B8536008E1715 /* BluetraceConfig.swift */; };
-		5DC7B8D3242B8D87008E1715 /* BluetraceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7B8D2242B8D87008E1715 /* BluetraceUtils.swift */; };
 		5DD41D3B23DCB03B00FD4AB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD41D3A23DCB03B00FD4AB0 /* AppDelegate.swift */; };
 		5DD41D4223DCB03B00FD4AB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD41D4023DCB03B00FD4AB0 /* Main.storyboard */; };
 		5DD41D4423DCB03D00FD4AB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DD41D4323DCB03D00FD4AB0 /* Assets.xcassets */; };
 		5DD41D4723DCB03D00FD4AB0 /* LaunchScreen_en.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD41D4523DCB03D00FD4AB0 /* LaunchScreen_en.storyboard */; };
-		5DD41D4F23DCB05600FD4AB0 /* CentralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD41D4E23DCB05600FD4AB0 /* CentralController.swift */; };
-		5DD41D5323DD4CA400FD4AB0 /* PeripheralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD41D5223DD4CA400FD4AB0 /* PeripheralController.swift */; };
 		7F19B4DD23F565850071A11E /* PogoInstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F19B4DC23F565850071A11E /* PogoInstructionsViewController.swift */; };
-		7F2F0BA223EFFF75006D7404 /* OnboardingStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2F0BA123EFFF75006D7404 /* OnboardingStep2ViewController.swift */; };
+		7F2F0BA223EFFF75006D7404 /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2F0BA123EFFF75006D7404 /* AppSettingsViewController.swift */; };
 		7F36305F23F7F81400CC6E1D /* PushNotificationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F36305E23F7F81400CC6E1D /* PushNotificationConstants.swift */; };
 		7FACD53A23F25A9A0042A33A /* InitialScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FACD53923F25A9A0042A33A /* InitialScreenViewController.swift */; };
 		7FEC361523F16A1E00127AFB /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEC361423F16A1E00127AFB /* UIViewExtension.swift */; };
@@ -307,19 +338,19 @@
 		B60F8BE4242659810007A641 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F8BE3242659810007A641 /* UILabelExtension.swift */; };
 		B615C5A723F8EB1700345969 /* UIProgressView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B615C5A623F8EB1700345969 /* UIProgressView + Extension.swift */; };
 		B615C5A923FA403500345969 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B615C5A823FA403400345969 /* UIViewController + Extension.swift */; };
-		C5046D5C23EF18600046E96D /* OnboardingStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5046D5B23EF18600046E96D /* OnboardingStep1ViewController.swift */; };
+		C5046D5C23EF18600046E96D /* RegistrationIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5046D5B23EF18600046E96D /* RegistrationIntroViewController.swift */; };
 		C56CF43F23F18A15006B05B0 /* OnboardingStep4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56CF43E23F18A15006B05B0 /* OnboardingStep4ViewController.swift */; };
 		C585C83B23EEB99B0061B7C6 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C585C83A23EEB99B0061B7C6 /* GradientButton.swift */; };
-		C58D817723F169DB00345771 /* OnboardingStep2bViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D817623F169DB00345771 /* OnboardingStep2bViewController.swift */; };
+		C58D817723F169DB00345771 /* RegistrationSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D817623F169DB00345771 /* RegistrationSuccessViewController.swift */; };
 		C5D209FC23F4476F007233BE /* UITextViewFixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D209FB23F4476F007233BE /* UITextViewFixed.swift */; };
-		D8DEB6822423AE2E00D99925 /* OnboardingStep1bViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DEB6812423AE2E00D99925 /* OnboardingStep1bViewController.swift */; };
+		D8DEB6822423AE2E00D99925 /* HowItWorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DEB6812423AE2E00D99925 /* HowItWorksViewController.swift */; };
 		D8EB201B23FA722D001C60EC /* HelpNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EB201A23FA722D001C60EC /* HelpNavController.swift */; };
 		D8EB201D23FBE216001C60EC /* help_center_article_style.css in Resources */ = {isa = PBXBuildFile; fileRef = D8EB201C23FBE216001C60EC /* help_center_article_style.css */; };
 		F4992D5F7DAE4B13FF4BB47D /* Pods_CovidSafe_staging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB86126400FA51506E1B416 /* Pods_CovidSafe_staging.framework */; };
 		FB12C4C1242F0480007E893B /* RespondToAuthChallengeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12C4C0242F047F007E893B /* RespondToAuthChallengeAPI.swift */; };
 		FB12C4C3242F0FE9007E893B /* GetTempIdAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12C4C2242F0FE9007E893B /* GetTempIdAPI.swift */; };
-		FB12C4C524304AF0007E893B /* OnboardingStep1aViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12C4C424304AF0007E893B /* OnboardingStep1aViewController.swift */; };
-		FBBBFCE82430A933002B174D /* OnboardingStep1aViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12C4C424304AF0007E893B /* OnboardingStep1aViewController.swift */; };
+		FB12C4C524304AF0007E893B /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12C4C424304AF0007E893B /* PrivacyPolicyViewController.swift */; };
+		FBBBFCE82430A933002B174D /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12C4C424304AF0007E893B /* PrivacyPolicyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -353,6 +384,23 @@
 		46A5730925DA6B664DFE9546 /* Pods-CovidSafe-staging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe-staging.debug.xcconfig"; path = "Target Support Files/Pods-CovidSafe-staging/Pods-CovidSafe-staging.debug.xcconfig"; sourceTree = "<group>"; };
 		49A22E09D113DF058C94C6E6 /* Pods-CovidSafe-staging.covid-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe-staging.covid-staging.xcconfig"; path = "Target Support Files/Pods-CovidSafe-staging/Pods-CovidSafe-staging.covid-staging.xcconfig"; sourceTree = "<group>"; };
 		5904A5C12462471A008C8012 /* EncounterV1toV2.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = EncounterV1toV2.xcmappingmodel; sourceTree = "<group>"; };
+		590545EE2543E0F5009B82AD /* BLESensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLESensor.swift; sourceTree = "<group>"; };
+		590545EF2543E0F5009B82AD /* BLEDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEDatabase.swift; sourceTree = "<group>"; };
+		590545F02543E0F5009B82AD /* BLEUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEUtilities.swift; sourceTree = "<group>"; };
+		590545F12543E0F5009B82AD /* BLETransmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLETransmitter.swift; sourceTree = "<group>"; };
+		590545F22543E0F5009B82AD /* BLEReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEReceiver.swift; sourceTree = "<group>"; };
+		590545F42543E0F5009B82AD /* AwakeSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwakeSensor.swift; sourceTree = "<group>"; };
+		590545F52543E0F5009B82AD /* Sensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
+		590546012543E0F5009B82AD /* SensorArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorArray.swift; sourceTree = "<group>"; };
+		590546022543E0F5009B82AD /* PayloadDataSupplier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayloadDataSupplier.swift; sourceTree = "<group>"; };
+		590546042543E0F5009B82AD /* TextFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFile.swift; sourceTree = "<group>"; };
+		590546052543E0F5009B82AD /* BatteryLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryLog.swift; sourceTree = "<group>"; };
+		590546062543E0F5009B82AD /* DetectionLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectionLog.swift; sourceTree = "<group>"; };
+		590546072543E0F5009B82AD /* SensorLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorLogger.swift; sourceTree = "<group>"; };
+		590546082543E0F5009B82AD /* ContactLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactLog.swift; sourceTree = "<group>"; };
+		590546092543E0F5009B82AD /* StatisticsLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsLog.swift; sourceTree = "<group>"; };
+		5905460A2543E0F5009B82AD /* SensorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorDelegate.swift; sourceTree = "<group>"; };
+		5905460B2543E0F5009B82AD /* herald.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = herald.h; sourceTree = "<group>"; };
 		5909E4AA245043C400D41C26 /* CovidPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidPersistentContainer.swift; sourceTree = "<group>"; };
 		592CBB7F2441A583001FFCE9 /* PersonalDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsViewController.swift; sourceTree = "<group>"; };
 		59490B61245FE22C00C9802B /* ModelV2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelV2.xcdatamodel; sourceTree = "<group>"; };
@@ -432,6 +480,9 @@
 		5BA33A7D24B55E7D00D12515 /* BLELogRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLELogRecord.swift; sourceTree = "<group>"; };
 		5BA33A7F24B55EF200D12515 /* BLELogDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLELogDB.swift; sourceTree = "<group>"; };
 		5BA33A8124B5602500D12515 /* BLELogRecord+BLELogSave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BLELogRecord+BLELogSave.swift"; sourceTree = "<group>"; };
+		5BBC571C25526F99005E90AA /* staging-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "staging-Info.plist"; sourceTree = "<group>"; };
+		5BBE61B025633B6D00B8C983 /* CSGenericContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSGenericContentView.xib; sourceTree = "<group>"; };
+		5BBE61B625633E8D00B8C983 /* CSGenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSGenericViewController.swift; sourceTree = "<group>"; };
 		5BD3EE8224330E1A0004A007 /* UploadDataStep2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadDataStep2VC.swift; sourceTree = "<group>"; };
 		5BED1E2F24A95ECB0066C4D2 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5BED1E3024A95ECB0066C4D2 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -460,17 +511,14 @@
 		5D8DD05F23E319B300E097EF /* Encounter+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encounter+CoreDataClass.swift"; sourceTree = "<group>"; };
 		5D8DD06023E319B300E097EF /* Encounter+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encounter+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		5DC7B8D0242B8536008E1715 /* BluetraceConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetraceConfig.swift; sourceTree = "<group>"; };
-		5DC7B8D2242B8D87008E1715 /* BluetraceUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetraceUtils.swift; sourceTree = "<group>"; };
 		5DD41D3723DCB03B00FD4AB0 /* COVIDSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COVIDSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD41D3A23DCB03B00FD4AB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DD41D4323DCB03D00FD4AB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DD41D4823DCB03D00FD4AB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5DD41D4E23DCB05600FD4AB0 /* CentralController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralController.swift; sourceTree = "<group>"; };
-		5DD41D5223DD4CA400FD4AB0 /* PeripheralController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralController.swift; sourceTree = "<group>"; };
 		5DD41D7823DE141700FD4AB0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		5DDB85EA23EE39C000B186BC /* Project Bluetrace.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Project Bluetrace.entitlements"; sourceTree = "<group>"; };
 		7F19B4DC23F565850071A11E /* PogoInstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PogoInstructionsViewController.swift; sourceTree = "<group>"; };
-		7F2F0BA123EFFF75006D7404 /* OnboardingStep2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStep2ViewController.swift; sourceTree = "<group>"; };
+		7F2F0BA123EFFF75006D7404 /* AppSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewController.swift; sourceTree = "<group>"; };
 		7F36305E23F7F81400CC6E1D /* PushNotificationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationConstants.swift; sourceTree = "<group>"; };
 		7FACD53923F25A9A0042A33A /* InitialScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreenViewController.swift; sourceTree = "<group>"; };
 		7FEC361423F16A1E00127AFB /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -506,18 +554,18 @@
 		B60F8BE3242659810007A641 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		B615C5A623F8EB1700345969 /* UIProgressView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIProgressView + Extension.swift"; sourceTree = "<group>"; };
 		B615C5A823FA403400345969 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
-		C5046D5B23EF18600046E96D /* OnboardingStep1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStep1ViewController.swift; sourceTree = "<group>"; };
+		C5046D5B23EF18600046E96D /* RegistrationIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationIntroViewController.swift; sourceTree = "<group>"; };
 		C56CF43E23F18A15006B05B0 /* OnboardingStep4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStep4ViewController.swift; sourceTree = "<group>"; };
 		C585C83A23EEB99B0061B7C6 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
-		C58D817623F169DB00345771 /* OnboardingStep2bViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStep2bViewController.swift; sourceTree = "<group>"; };
+		C58D817623F169DB00345771 /* RegistrationSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationSuccessViewController.swift; sourceTree = "<group>"; };
 		C5D209FB23F4476F007233BE /* UITextViewFixed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewFixed.swift; sourceTree = "<group>"; };
-		D8DEB6812423AE2E00D99925 /* OnboardingStep1bViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStep1bViewController.swift; sourceTree = "<group>"; };
+		D8DEB6812423AE2E00D99925 /* HowItWorksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowItWorksViewController.swift; sourceTree = "<group>"; };
 		D8EB201A23FA722D001C60EC /* HelpNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpNavController.swift; sourceTree = "<group>"; };
 		D8EB201C23FBE216001C60EC /* help_center_article_style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = help_center_article_style.css; sourceTree = "<group>"; };
 		DC24373E23F51531007BDBDF /* covid-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "covid-Bridging-Header.h"; sourceTree = "<group>"; };
 		FB12C4C0242F047F007E893B /* RespondToAuthChallengeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RespondToAuthChallengeAPI.swift; sourceTree = "<group>"; };
 		FB12C4C2242F0FE9007E893B /* GetTempIdAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTempIdAPI.swift; sourceTree = "<group>"; };
-		FB12C4C424304AF0007E893B /* OnboardingStep1aViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingStep1aViewController.swift; sourceTree = "<group>"; };
+		FB12C4C424304AF0007E893B /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		FB81BAD81D73C6FD42202A04 /* Pods-CovidSafe-staging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidSafe-staging.release.xcconfig"; path = "Target Support Files/Pods-CovidSafe-staging/Pods-CovidSafe-staging.release.xcconfig"; sourceTree = "<group>"; };
 		FFB86126400FA51506E1B416 /* Pods_CovidSafe_staging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidSafe_staging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -586,34 +634,22 @@
 		30E91BEC23EFEA14002D592A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5BBE61D625637BB100B8C983 /* Debug */,
+				5BBE61D525637B7600B8C983 /* Registration */,
+				1B86118F24303ED400EA4B6B /* Questions */,
 				5B728B4624B5667000654ABC /* BLELogViewController.swift */,
-				5D8DD05923E2F08400E097EF /* ContactViewController.swift */,
 				5B92B0BF24F4DC3A0069C57D /* CovidStatisticsViewController.swift */,
+				5B9E41112521688700434B25 /* CSAlertViewController.swift */,
+				5BBE61B625633E8D00B8C983 /* CSGenericViewController.swift */,
 				D8EB201A23FA722D001C60EC /* HelpNavController.swift */,
 				5D5F83AF23F045A800770DEF /* HomeViewController.swift */,
-				5B92B0AD24EFADB00069C57D /* SettingsViewController.swift */,
-				5D8DD05D23E2F0BA00E097EF /* InfoViewController.swift */,
 				7FACD53923F25A9A0042A33A /* InitialScreenViewController.swift */,
 				5B92B09324D14AE00069C57D /* InternetConnectionViewController.swift */,
-				5B9E41112521688700434B25 /* CSAlertViewController.swift */,
 				5B7ABF24244D3BC600BB249B /* IsolationSuccessViewController.swift */,
-				5D8DD05B23E2F0A700E097EF /* LogViewController.swift */,
 				5961ABE92474E358004040DF /* MigrationViewController.swift */,
-				FB12C4C424304AF0007E893B /* OnboardingStep1aViewController.swift */,
-				D8DEB6812423AE2E00D99925 /* OnboardingStep1bViewController.swift */,
-				C5046D5B23EF18600046E96D /* OnboardingStep1ViewController.swift */,
-				C58D817623F169DB00345771 /* OnboardingStep2bViewController.swift */,
-				7F2F0BA123EFFF75006D7404 /* OnboardingStep2ViewController.swift */,
-				C56CF43E23F18A15006B05B0 /* OnboardingStep4ViewController.swift */,
-				30BE1CB423F15D47005DCE4F /* OTPViewController.swift */,
-				592CBB7F2441A583001FFCE9 /* PersonalDetailsViewController.swift */,
-				5D8B248A23F146C500DBB74D /* PhoneNumberViewController.swift */,
 				7F19B4DC23F565850071A11E /* PogoInstructionsViewController.swift */,
-				59B7416F24514126006E1EEA /* RegistrationConsentViewController.swift */,
-				5B110C0F248F275A00B68291 /* SelectCountryViewController.swift */,
+				5B92B0AD24EFADB00069C57D /* SettingsViewController.swift */,
 				B615C5A823FA403400345969 /* UIViewController + Extension.swift */,
-				5B7ABF27244D6BE100BB249B /* UnderSixteenViewController.swift */,
-				1B86118F24303ED400EA4B6B /* Questions */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -622,9 +658,6 @@
 			isa = PBXGroup;
 			children = (
 				5D269C0C23E2958F00ADF2DE /* BluetraceManager.swift */,
-				5DD41D4E23DCB05600FD4AB0 /* CentralController.swift */,
-				5DC7B8D2242B8D87008E1715 /* BluetraceUtils.swift */,
-				5DD41D5223DD4CA400FD4AB0 /* PeripheralController.swift */,
 				5D5F83AC23F023F600770DEF /* EncounterMessageManager.swift */,
 				5DC7B8D0242B8536008E1715 /* BluetraceConfig.swift */,
 			);
@@ -636,11 +669,17 @@
 			children = (
 				5B9360EC24F6196A008859FC /* Cells */,
 				30E91BEA23EFEA0B002D592A /* CodeInputView.swift */,
-				5B9E410C2521683500434B25 /* CSAlertView.xib */,
-				B615C5A623F8EB1700345969 /* UIProgressView + Extension.swift */,
 				0BC141AB24305D9C00399FA8 /* NSMutableString + Extensions.swift */,
 				0BC141AD2430685800399FA8 /* UIColor + Extensions.swift */,
+				B615C5A623F8EB1700345969 /* UIProgressView + Extension.swift */,
 				0B55E1912430760500C9E798 /* UITextView + Extensions.swift */,
+				5B92B0BC24F4DBE20069C57D /* CovidStatisticsView.xib */,
+				5B9E410C2521683500434B25 /* CSAlertView.xib */,
+				5BBE61B025633B6D00B8C983 /* CSGenericContentView.xib */,
+				5B92B0A424EF61480069C57D /* HomeView.xib */,
+				5B92B0B324F37E3E0069C57D /* InternetConnectionView.xib */,
+				5B92B0AA24EFA3160069C57D /* SettingsView.xib */,
+				5DD41D4023DCB03B00FD4AB0 /* Main.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -658,6 +697,70 @@
 				5BA33A7A24B3FE2700D12515 /* UIFont + Traits.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		590545EB2543E0F5009B82AD /* Herald */ = {
+			isa = PBXGroup;
+			children = (
+				590545EC2543E0F5009B82AD /* Sensor */,
+				5905460B2543E0F5009B82AD /* herald.h */,
+			);
+			path = Herald;
+			sourceTree = "<group>";
+		};
+		590545EC2543E0F5009B82AD /* Sensor */ = {
+			isa = PBXGroup;
+			children = (
+				590545ED2543E0F5009B82AD /* BLE */,
+				590545F32543E0F5009B82AD /* Location */,
+				590545F52543E0F5009B82AD /* Sensor.swift */,
+				590545F62543E0F5009B82AD /* Payload */,
+				590546012543E0F5009B82AD /* SensorArray.swift */,
+				590546022543E0F5009B82AD /* PayloadDataSupplier.swift */,
+				590546032543E0F5009B82AD /* Data */,
+				5905460A2543E0F5009B82AD /* SensorDelegate.swift */,
+			);
+			path = Sensor;
+			sourceTree = "<group>";
+		};
+		590545ED2543E0F5009B82AD /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				590545EE2543E0F5009B82AD /* BLESensor.swift */,
+				590545EF2543E0F5009B82AD /* BLEDatabase.swift */,
+				590545F02543E0F5009B82AD /* BLEUtilities.swift */,
+				590545F12543E0F5009B82AD /* BLETransmitter.swift */,
+				590545F22543E0F5009B82AD /* BLEReceiver.swift */,
+			);
+			path = BLE;
+			sourceTree = "<group>";
+		};
+		590545F32543E0F5009B82AD /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				590545F42543E0F5009B82AD /* AwakeSensor.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		590545F62543E0F5009B82AD /* Payload */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Payload;
+			sourceTree = "<group>";
+		};
+		590546032543E0F5009B82AD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				590546042543E0F5009B82AD /* TextFile.swift */,
+				590546052543E0F5009B82AD /* BatteryLog.swift */,
+				590546062543E0F5009B82AD /* DetectionLog.swift */,
+				590546072543E0F5009B82AD /* SensorLogger.swift */,
+				590546082543E0F5009B82AD /* ContactLog.swift */,
+				590546092543E0F5009B82AD /* StatisticsLog.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		5909E4A92450438A00D41C26 /* CoreData */ = {
@@ -767,6 +870,35 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		5BBE61D525637B7600B8C983 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				7F2F0BA123EFFF75006D7404 /* AppSettingsViewController.swift */,
+				D8DEB6812423AE2E00D99925 /* HowItWorksViewController.swift */,
+				C56CF43E23F18A15006B05B0 /* OnboardingStep4ViewController.swift */,
+				30BE1CB423F15D47005DCE4F /* OTPViewController.swift */,
+				592CBB7F2441A583001FFCE9 /* PersonalDetailsViewController.swift */,
+				5D8B248A23F146C500DBB74D /* PhoneNumberViewController.swift */,
+				FB12C4C424304AF0007E893B /* PrivacyPolicyViewController.swift */,
+				59B7416F24514126006E1EEA /* RegistrationConsentViewController.swift */,
+				C5046D5B23EF18600046E96D /* RegistrationIntroViewController.swift */,
+				C58D817623F169DB00345771 /* RegistrationSuccessViewController.swift */,
+				5B110C0F248F275A00B68291 /* SelectCountryViewController.swift */,
+				5B7ABF27244D6BE100BB249B /* UnderSixteenViewController.swift */,
+			);
+			name = Registration;
+			sourceTree = "<group>";
+		};
+		5BBE61D625637BB100B8C983 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				5D8DD05923E2F08400E097EF /* ContactViewController.swift */,
+				5D8DD05D23E2F0BA00E097EF /* InfoViewController.swift */,
+				5D8DD05B23E2F0A700E097EF /* LogViewController.swift */,
+			);
+			name = Debug;
+			sourceTree = "<group>";
+		};
 		5BED1E3824A96CF50066C4D2 /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -824,6 +956,7 @@
 		5DD41D3923DCB03B00FD4AB0 /* CovidSafe */ = {
 			isa = PBXGroup;
 			children = (
+				590545EB2543E0F5009B82AD /* Herald */,
 				597BB7CA245FACE20067A2E2 /* Crypto */,
 				5949DC522434859600AE76BC /* lottie */,
 				5B92D661243005B10049877B /* Resources */,
@@ -843,14 +976,10 @@
 				30FADD6C23F520F5006C125F /* Utils */,
 				5DD41D7723DE141700FD4AB0 /* tracer.xcdatamodeld */,
 				5B728B4C24B5A26D00654ABC /* debug.xcdatamodeld */,
-				5B92B0BC24F4DBE20069C57D /* CovidStatisticsView.xib */,
-				5B92B0A424EF61480069C57D /* HomeView.xib */,
-				5B92B0B324F37E3E0069C57D /* InternetConnectionView.xib */,
-				5B92B0AA24EFA3160069C57D /* SettingsView.xib */,
-				5DD41D4023DCB03B00FD4AB0 /* Main.storyboard */,
 				D8EB201C23FBE216001C60EC /* help_center_article_style.css */,
 				5DD41D4323DCB03D00FD4AB0 /* Assets.xcassets */,
 				5DD41D4823DCB03D00FD4AB0 /* Info.plist */,
+				5BBC571C25526F99005E90AA /* staging-Info.plist */,
 				5D269C0A23E22CC400ADF2DE /* DeviceIdentifier.swift */,
 				DC24373E23F51531007BDBDF /* covid-Bridging-Header.h */,
 			);
@@ -1088,6 +1217,7 @@
 				5BED1E3B24A96D1C0066C4D2 /* LaunchScreen_ar.storyboard in Resources */,
 				5BED1E4424A98EB60066C4D2 /* LaunchScreen_vi.storyboard in Resources */,
 				5B30F78D24B817A100CDED63 /* LaunchScreen_el.storyboard in Resources */,
+				5BBC571D25526F99005E90AA /* staging-Info.plist in Resources */,
 				5B9360FE24F73CE6008859FC /* LoadingViewCell.xib in Resources */,
 				5B92D6C9243018040049877B /* LaunchScreen_en.storyboard in Resources */,
 				5B92B0A624EF61490069C57D /* HomeView.xib in Resources */,
@@ -1096,6 +1226,7 @@
 				5B92D6CB243018040049877B /* Assets.xcassets in Resources */,
 				5B92B0A324E0CD190069C57D /* LaunchScreen_tr.storyboard in Resources */,
 				5BED1E4124A98EAF0066C4D2 /* LaunchScreen_zh-Hant.storyboard in Resources */,
+				5BBE61B225633B6D00B8C983 /* CSGenericContentView.xib in Resources */,
 				5B30F78A24B8179600CDED63 /* LaunchScreen_it.storyboard in Resources */,
 				5B337AB0245AA26300537620 /* Spinner_upload.json in Resources */,
 				5B92B0B524F37E3E0069C57D /* InternetConnectionView.xib in Resources */,
@@ -1129,6 +1260,7 @@
 				5BED1E3A24A96D1C0066C4D2 /* LaunchScreen_ar.storyboard in Resources */,
 				5B30F78C24B817A100CDED63 /* LaunchScreen_el.storyboard in Resources */,
 				5B92B0A124E0CD140069C57D /* LaunchScreen_pa-IN.storyboard in Resources */,
+				5BBE61B125633B6D00B8C983 /* CSGenericContentView.xib in Resources */,
 				5B82435E2480DC2100705CB1 /* Localizable.strings in Resources */,
 				5B92D663243011B40049877B /* CovidSafe-config.plist in Resources */,
 				5BED1E4324A98EB60066C4D2 /* LaunchScreen_vi.storyboard in Resources */,
@@ -1255,32 +1387,36 @@
 				5B92D67D243018040049877B /* HomeViewController.swift in Sources */,
 				5B92D67E243018040049877B /* InfoViewController.swift in Sources */,
 				5B92D67F243018040049877B /* PogoInstructionsViewController.swift in Sources */,
-				FBBBFCE82430A933002B174D /* OnboardingStep1aViewController.swift in Sources */,
+				FBBBFCE82430A933002B174D /* PrivacyPolicyViewController.swift in Sources */,
 				5B51ED512485DF9C008CE722 /* UILocalization.swift in Sources */,
 				5BA33A8024B55EF200D12515 /* BLELogDB.swift in Sources */,
 				594E77C3247387B1009B8B34 /* EncounterDB+migration.swift in Sources */,
+				590546292543E0F6009B82AD /* SensorArray.swift in Sources */,
 				590C99332432C1C400A5EC71 /* UploadDataHomeViewController.swift in Sources */,
+				590546112543E0F5009B82AD /* BLEUtilities.swift in Sources */,
 				59B7417124514126006E1EEA /* RegistrationConsentViewController.swift in Sources */,
 				5B92B0AF24EFADB00069C57D /* SettingsViewController.swift in Sources */,
 				5B92B0C124F4DC3A0069C57D /* CovidStatisticsViewController.swift in Sources */,
 				5B92D680243018040049877B /* CodeInputView.swift in Sources */,
 				5B92D681243018040049877B /* EncounterRecord.swift in Sources */,
+				5905462D2543E0F6009B82AD /* TextFile.swift in Sources */,
 				5B728B4B24B581C100654ABC /* BLELog+CoreDataProperties.swift in Sources */,
 				5B337AAD245A9EF800537620 /* UploadDataErrorViewController.swift in Sources */,
 				590888B02431B9E7008C9B9F /* UIColor + Extensions.swift in Sources */,
 				5B728B4E24B5A26D00654ABC /* debug.xcdatamodeld in Sources */,
+				5905460F2543E0F5009B82AD /* BLEDatabase.swift in Sources */,
 				5B92D74F243022EF0049877B /* DataUploadS3.swift in Sources */,
-				5B92D683243018040049877B /* OnboardingStep2bViewController.swift in Sources */,
+				5B92D683243018040049877B /* RegistrationSuccessViewController.swift in Sources */,
 				5BA33A8224B5602500D12515 /* BLELogRecord+BLELogSave.swift in Sources */,
 				5B92B09524D14AE00069C57D /* InternetConnectionViewController.swift in Sources */,
 				5B92D684243018040049877B /* AsyncAction.swift in Sources */,
 				5B92D685243018040049877B /* UILabelExtension.swift in Sources */,
+				5905462B2543E0F6009B82AD /* PayloadDataSupplier.swift in Sources */,
 				5B92D686243018040049877B /* AppDelegate.swift in Sources */,
 				5B92D687243018040049877B /* PhoneNumberViewController.swift in Sources */,
 				5BA33A7C24B41ECA00D12515 /* UIFont + Traits.swift in Sources */,
 				5961ABEB2474E358004040DF /* MigrationViewController.swift in Sources */,
 				5B110C11248F275B00B68291 /* SelectCountryViewController.swift in Sources */,
-				5B92D688243018040049877B /* BluetraceUtils.swift in Sources */,
 				5B92D689243018040049877B /* NewFeedbackFlowController.swift in Sources */,
 				5B92D68A243018040049877B /* Outcome.swift in Sources */,
 				5B92D68B243018040049877B /* Encounter+EncounterRecord.swift in Sources */,
@@ -1302,12 +1438,13 @@
 				597BB7CD245FAEC00067A2E2 /* SecKey+CovidSafe.swift in Sources */,
 				597BB7D0245FB1250067A2E2 /* Crypto.swift in Sources */,
 				5B92D693243018040049877B /* UIColor+Hex.swift in Sources */,
-				5B92D694243018040049877B /* OnboardingStep1ViewController.swift in Sources */,
+				590546372543E0F6009B82AD /* StatisticsLog.swift in Sources */,
+				5B92D694243018040049877B /* RegistrationIntroViewController.swift in Sources */,
 				5B92D695243018040049877B /* DeviceInfoExtension.swift in Sources */,
 				5BD3EE84243313450004A007 /* UploadDataStep2VC.swift in Sources */,
-				5B92D697243018040049877B /* PeripheralController.swift in Sources */,
 				5B92D698243018040049877B /* SendFeedbackAction.swift in Sources */,
 				5B92D699243018040049877B /* UITextViewFixed.swift in Sources */,
+				590546152543E0F6009B82AD /* BLEReceiver.swift in Sources */,
 				5BA33A7E24B55E7D00D12515 /* BLELogRecord.swift in Sources */,
 				590888B12431B9EB008C9B9F /* Question3ViewController.swift in Sources */,
 				5957EB67244E936E002F5388 /* UnderSixteenViewController.swift in Sources */,
@@ -1323,6 +1460,7 @@
 				5B92D6A0243018040049877B /* CountriesData.swift in Sources */,
 				590888B22431B9EF008C9B9F /* Question2ViewController.swift in Sources */,
 				0B42D0E02432B3AF00E4F44C /* QuestionUploadDataViewController.swift in Sources */,
+				590546352543E0F6009B82AD /* ContactLog.swift in Sources */,
 				5B92D6A1243018040049877B /* AlertController.swift in Sources */,
 				5B92D750243022F20049877B /* InitiateUploadAPI.swift in Sources */,
 				5B92D69F243018040049877B /* EncounterMessageManager.swift in Sources */,
@@ -1330,29 +1468,37 @@
 				5B728B4924B5816C00654ABC /* BLELog+CoreDataClass.swift in Sources */,
 				5B92D6A2243018040049877B /* GetTempIdAPI.swift in Sources */,
 				5B92D6A3243018040049877B /* PhoneValidationAPI.swift in Sources */,
+				590546132543E0F6009B82AD /* BLETransmitter.swift in Sources */,
 				59AF2EB32435A38100ACCAF2 /* CovidRequestRetrier.swift in Sources */,
 				592CBB812441A583001FFCE9 /* PersonalDetailsViewController.swift in Sources */,
-				5B92D6A4243018040049877B /* CentralController.swift in Sources */,
 				5B92D6A5243018040049877B /* UIWindow+TopMost.swift in Sources */,
-				5B92D6A6243018040049877B /* OnboardingStep1bViewController.swift in Sources */,
+				5B92D6A6243018040049877B /* HowItWorksViewController.swift in Sources */,
+				590546312543E0F6009B82AD /* DetectionLog.swift in Sources */,
 				5B92D6A7243018040049877B /* OnboardingStep4ViewController.swift in Sources */,
 				5B92D6A8243018040049877B /* PresentFeedbackExtensions.swift in Sources */,
+				590546392543E0F6009B82AD /* SensorDelegate.swift in Sources */,
 				5B92D6A9243018040049877B /* Errors.swift in Sources */,
 				5B92D6AA243018040049877B /* UINavigationBar+Style.swift in Sources */,
+				590546172543E0F6009B82AD /* AwakeSensor.swift in Sources */,
 				5B92D6AB243018040049877B /* UploadFileData.swift in Sources */,
 				590888B52431BA76008C9B9F /* NSMutableString + Extensions.swift in Sources */,
 				5B92D6AC243018040049877B /* BundleInfoExtension.swift in Sources */,
+				5905460D2543E0F5009B82AD /* BLESensor.swift in Sources */,
+				5BBE61B825633E8D00B8C983 /* CSGenericViewController.swift in Sources */,
 				5909E4AC245043C400D41C26 /* CovidPersistentContainer.swift in Sources */,
+				5905462F2543E0F6009B82AD /* BatteryLog.swift in Sources */,
 				5B92D6AD243018040049877B /* FeedbackSettings.swift in Sources */,
 				5B92D6AE243018040049877B /* JMCTargetJSONFromDisk.swift in Sources */,
 				5B92D6B0243018040049877B /* Action.swift in Sources */,
-				5B92D6B1243018040049877B /* OnboardingStep2ViewController.swift in Sources */,
+				5B92D6B1243018040049877B /* AppSettingsViewController.swift in Sources */,
 				59AF2E9A2435533A00ACCAF2 /* CovidCertificates.swift in Sources */,
 				5B92D6B2243018040049877B /* HTTPPostFeedbackAction.swift in Sources */,
 				5B92B0C424F4DE6F0069C57D /* StatisticsAPI.swift in Sources */,
+				590546192543E0F6009B82AD /* Sensor.swift in Sources */,
 				59898604245173C200966E61 /* URLHelper.swift in Sources */,
 				590888B32431B9F2008C9B9F /* Question1ViewController.swift in Sources */,
 				590888B62431BA7C008C9B9F /* Question3ErrorViewController.swift in Sources */,
+				590546332543E0F6009B82AD /* SensorLogger.swift in Sources */,
 				5B900FC22485C4EE00CAA419 /* String+Localization.swift in Sources */,
 				59AF2E9D2435581600ACCAF2 /* CovidNetworking.swift in Sources */,
 				596B189D24499591003E190F /* UploadHelper.swift in Sources */,
@@ -1373,9 +1519,11 @@
 				30E91BE923EFE514002D592A /* UploadDataVC.swift in Sources */,
 				0BC141AE2430685800399FA8 /* UIColor + Extensions.swift in Sources */,
 				7FEC361523F16A1E00127AFB /* UIViewExtension.swift in Sources */,
+				590546122543E0F6009B82AD /* BLETransmitter.swift in Sources */,
 				5D269C0B23E22CC400ADF2DE /* DeviceIdentifier.swift in Sources */,
 				A767D31E242DF1B000DC9E2A /* LanguageInfoExtension.swift in Sources */,
 				B605A7B12427429D008BA819 /* PlistHelper.swift in Sources */,
+				5905460E2543E0F5009B82AD /* BLEDatabase.swift in Sources */,
 				5DC7B8D1242B8536008E1715 /* BluetraceConfig.swift in Sources */,
 				0B69E7E92430C22E00561DD9 /* UploadDataHomeViewController.swift in Sources */,
 				1B86119524303F5E00EA4B6B /* Question3ViewController.swift in Sources */,
@@ -1389,20 +1537,23 @@
 				59B7417024514126006E1EEA /* RegistrationConsentViewController.swift in Sources */,
 				5D5F83B023F045A800770DEF /* HomeViewController.swift in Sources */,
 				5B337AAB245A9BBC00537620 /* UploadDataErrorViewController.swift in Sources */,
-				FB12C4C524304AF0007E893B /* OnboardingStep1aViewController.swift in Sources */,
+				FB12C4C524304AF0007E893B /* PrivacyPolicyViewController.swift in Sources */,
 				7F19B4DD23F565850071A11E /* PogoInstructionsViewController.swift in Sources */,
 				30E91BEB23EFEA0B002D592A /* CodeInputView.swift in Sources */,
 				597BB7CF245FB1250067A2E2 /* Crypto.swift in Sources */,
 				30BE1CAF23F1349F005DCE4F /* EncounterRecord.swift in Sources */,
+				590546102543E0F5009B82AD /* BLEUtilities.swift in Sources */,
+				590546382543E0F6009B82AD /* SensorDelegate.swift in Sources */,
 				59490B64245FE3DA00C9802B /* EncounterV2Mapping.swift in Sources */,
-				C58D817723F169DB00345771 /* OnboardingStep2bViewController.swift in Sources */,
+				590546282543E0F6009B82AD /* SensorArray.swift in Sources */,
+				C58D817723F169DB00345771 /* RegistrationSuccessViewController.swift in Sources */,
 				59ACB574242F195A00E63E3C /* InitiateUploadAPI.swift in Sources */,
 				A767D324242DF1B100DC9E2A /* AsyncAction.swift in Sources */,
 				B60F8BE4242659810007A641 /* UILabelExtension.swift in Sources */,
 				5DD41D3B23DCB03B00FD4AB0 /* AppDelegate.swift in Sources */,
 				5D8B248B23F146C500DBB74D /* PhoneNumberViewController.swift in Sources */,
-				5DC7B8D3242B8D87008E1715 /* BluetraceUtils.swift in Sources */,
 				A767D32D242DF1B100DC9E2A /* NewFeedbackFlowController.swift in Sources */,
+				590546362543E0F6009B82AD /* StatisticsLog.swift in Sources */,
 				A767D319242DF1B000DC9E2A /* Outcome.swift in Sources */,
 				30BE1CB123F134D0005DCE4F /* Encounter+EncounterRecord.swift in Sources */,
 				A767D336242DF1B100DC9E2A /* GetJMCTargetAction.swift in Sources */,
@@ -1411,25 +1562,31 @@
 				D8EB201B23FA722D001C60EC /* HelpNavController.swift in Sources */,
 				596B189924496D32003E190F /* Encounter+Util.swift in Sources */,
 				5961ABEA2474E358004040DF /* MigrationViewController.swift in Sources */,
+				590546182543E0F6009B82AD /* Sensor.swift in Sources */,
+				590546162543E0F6009B82AD /* AwakeSensor.swift in Sources */,
 				5B04074124BC0CEA00FAAFD0 /* MessageAPI.swift in Sources */,
 				30BE1CB523F15D47005DCE4F /* OTPViewController.swift in Sources */,
+				5905460C2543E0F5009B82AD /* BLESensor.swift in Sources */,
 				5B900FC12485C4EE00CAA419 /* String+Localization.swift in Sources */,
 				5D8DD06123E319B300E097EF /* Encounter+CoreDataClass.swift in Sources */,
 				594E77BF24736B77009B8B34 /* EncounterDB.swift in Sources */,
+				590546322543E0F6009B82AD /* SensorLogger.swift in Sources */,
+				5905462E2543E0F6009B82AD /* BatteryLog.swift in Sources */,
 				FB12C4C1242F0480007E893B /* RespondToAuthChallengeAPI.swift in Sources */,
 				5D269C0D23E2958F00ADF2DE /* BluetraceManager.swift in Sources */,
 				1B86119124303EF200EA4B6B /* Question1ViewController.swift in Sources */,
 				5BD3EE8324330E1A0004A007 /* UploadDataStep2VC.swift in Sources */,
 				A767D31B242DF1B000DC9E2A /* UIColor+Hex.swift in Sources */,
 				5BA33A7B24B3FE2700D12515 /* UIFont + Traits.swift in Sources */,
-				C5046D5C23EF18600046E96D /* OnboardingStep1ViewController.swift in Sources */,
+				590546142543E0F6009B82AD /* BLEReceiver.swift in Sources */,
+				C5046D5C23EF18600046E96D /* RegistrationIntroViewController.swift in Sources */,
 				0B69E7ED2430D72900561DD9 /* UploadDataNavigationController.swift in Sources */,
 				A767D320242DF1B100DC9E2A /* DeviceInfoExtension.swift in Sources */,
-				5DD41D5323DD4CA400FD4AB0 /* PeripheralController.swift in Sources */,
 				5B7ABF28244D6BE100BB249B /* UnderSixteenViewController.swift in Sources */,
 				A767D325242DF1B100DC9E2A /* SendFeedbackAction.swift in Sources */,
 				C5D209FC23F4476F007233BE /* UITextViewFixed.swift in Sources */,
 				C585C83B23EEB99B0061B7C6 /* GradientButton.swift in Sources */,
+				590546342543E0F6009B82AD /* ContactLog.swift in Sources */,
 				597BB7CC245FAEC00067A2E2 /* SecKey+CovidSafe.swift in Sources */,
 				5B92B0AE24EFADB00069C57D /* SettingsViewController.swift in Sources */,
 				5B7ABF25244D3BC600BB249B /* IsolationSuccessViewController.swift in Sources */,
@@ -1438,6 +1595,7 @@
 				5B577815245A584C0088F111 /* UploadDataPrefaceViewController.swift in Sources */,
 				0BC141AC24305D9C00399FA8 /* NSMutableString + Extensions.swift in Sources */,
 				59ACB576242F404500E63E3C /* DataUploadS3.swift in Sources */,
+				590546302543E0F6009B82AD /* DetectionLog.swift in Sources */,
 				5B92B0C024F4DC3A0069C57D /* CovidStatisticsViewController.swift in Sources */,
 				A767D326242DF1B100DC9E2A /* JMCTarget.swift in Sources */,
 				5D5F83AD23F023F600770DEF /* EncounterMessageManager.swift in Sources */,
@@ -1450,13 +1608,14 @@
 				5BFFD94B242EC120003AEF4F /* PhoneValidationAPI.swift in Sources */,
 				59AF2EB22435A38100ACCAF2 /* CovidRequestRetrier.swift in Sources */,
 				592CBB802441A583001FFCE9 /* PersonalDetailsViewController.swift in Sources */,
-				5DD41D4F23DCB05600FD4AB0 /* CentralController.swift in Sources */,
 				A767D330242DF1B100DC9E2A /* UIWindow+TopMost.swift in Sources */,
-				D8DEB6822423AE2E00D99925 /* OnboardingStep1bViewController.swift in Sources */,
+				D8DEB6822423AE2E00D99925 /* HowItWorksViewController.swift in Sources */,
 				5B92B0C324F4DE6F0069C57D /* StatisticsAPI.swift in Sources */,
+				5905462C2543E0F6009B82AD /* TextFile.swift in Sources */,
 				C56CF43F23F18A15006B05B0 /* OnboardingStep4ViewController.swift in Sources */,
 				A767D328242DF1B100DC9E2A /* PresentFeedbackExtensions.swift in Sources */,
 				A767D32F242DF1B100DC9E2A /* Errors.swift in Sources */,
+				5905462A2543E0F6009B82AD /* PayloadDataSupplier.swift in Sources */,
 				0B22A56B242F286900D1FE60 /* UINavigationBar+Style.swift in Sources */,
 				0B1810122431EE610005D11F /* PhoneNumberParser.swift in Sources */,
 				1B86119B24303FA200EA4B6B /* Question3ErrorViewController.swift in Sources */,
@@ -1465,10 +1624,11 @@
 				A767D31D242DF1B000DC9E2A /* BundleInfoExtension.swift in Sources */,
 				A767D32C242DF1B100DC9E2A /* FeedbackSettings.swift in Sources */,
 				A767D31A242DF1B000DC9E2A /* JMCTargetJSONFromDisk.swift in Sources */,
+				5BBE61B725633E8D00B8C983 /* CSGenericViewController.swift in Sources */,
 				5B92B09424D14AE00069C57D /* InternetConnectionViewController.swift in Sources */,
 				A767D334242DF1B100DC9E2A /* Action.swift in Sources */,
 				59AF2E992435533A00ACCAF2 /* CovidCertificates.swift in Sources */,
-				7F2F0BA223EFFF75006D7404 /* OnboardingStep2ViewController.swift in Sources */,
+				7F2F0BA223EFFF75006D7404 /* AppSettingsViewController.swift in Sources */,
 				594E77C2247387B1009B8B34 /* EncounterDB+migration.swift in Sources */,
 				59898603245173C200966E61 /* URLHelper.swift in Sources */,
 				A767D31F242DF1B000DC9E2A /* HTTPPostFeedbackAction.swift in Sources */,
@@ -1627,7 +1787,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 83;
+				CURRENT_PROJECT_VERSION = 91;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1635,7 +1795,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.14;
+				MARKETING_VERSION = 2.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
@@ -1711,7 +1871,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 83;
+				CURRENT_PROJECT_VERSION = 91;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1719,7 +1879,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.14;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1739,15 +1899,15 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 83;
+				CURRENT_PROJECT_VERSION = 91;
 				DEVELOPMENT_TEAM = 45792XH5L8;
-				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/staging-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.14;
+				MARKETING_VERSION = 2.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
@@ -1769,15 +1929,15 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 83;
+				CURRENT_PROJECT_VERSION = 91;
 				DEVELOPMENT_TEAM = 45792XH5L8;
-				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/staging-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.14;
+				MARKETING_VERSION = 2.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
@@ -1799,15 +1959,15 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 83;
+				CURRENT_PROJECT_VERSION = 91;
 				DEVELOPMENT_TEAM = 45792XH5L8;
-				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/staging-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.14;
+				MARKETING_VERSION = 2.0;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_MODULE_NAME = COVIDSafe;
@@ -1829,15 +1989,15 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 83;
+				CURRENT_PROJECT_VERSION = 91;
 				DEVELOPMENT_TEAM = 45792XH5L8;
-				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/staging-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.14;
+				MARKETING_VERSION = 2.0;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_MODULE_NAME = COVIDSafe;
@@ -1977,7 +2137,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 83;
+				CURRENT_PROJECT_VERSION = 91;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1985,7 +2145,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.14;
+				MARKETING_VERSION = 2.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
@@ -2005,7 +2165,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 83;
+				CURRENT_PROJECT_VERSION = 91;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -2013,7 +2173,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.14;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
 				PROVISIONING_PROFILE_SPECIFIER = "";

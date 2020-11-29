@@ -239,7 +239,7 @@
 /* OnBoarding Data Privacy */
 "data_privacy_headline" = "Registration and privacy";
 "deaths" = "Deaths";
-"dialog_error_uploading_message" = "An error occurred while uploading your information, please try again.";
+"dialog_error_uploading_message" = "Try uploading your data again.\n\nRefer to this error code if a state or territory health official asks for it: %@";
 "dialog_error_uploading_negative" = "Cancel";
 "dialog_error_uploading_positive" = "Try again";
 "dialog_uploading_message" = "Your COVIDSafe information is currently being uploaded.\n\nPlease do not close the app.";
@@ -317,6 +317,8 @@
 "jwt_heading" = "Please register again";
 "jwt_success" = "Registration successfully renewed";
 "loading_numbers" = "Loading latest numbers";
+"location_off" = "Location: OFF";
+"location_off_description" = "Your iPhone requires Location permission for COVIDSafe to work. COVIDSafe does NOT track or store your location data.";
 /* Splash Screen */
 "migration_in_progress" = " COVIDSafe update in progress. \n\n Please make sure you phone is not switched off until the update is complete.";
 "national_numbers" = "National numbers";
@@ -343,9 +345,8 @@
 "options_for_australia" = "Options for Australia";
 "permission_button" = "Proceed";
 /* Figma page iOS Screens (05/06) */
-"permission_content_iOS" = "COVIDSafe needs Bluetooth® enabled to work. By enabling Notifications, you get updates to remind you when COVIDSafe is not active. \n\nSelect ‘Proceed' to enable:";
-/* Figma page iOS Screens (05/06) */
-"permission_content_iOS_2" = "1. Bluetooth®\n2. Notifications\n\nCOVIDSafe does not send pairing requests.";
+"permission_content_iOS" = "COVIDSafe needs #Bluetooth# enabled to work. COVIDSafe does not send pairing requests.\n\nBy enabling #Notifications#, you get updates to remind you when COVIDSafe is not active. \n\nYour iPhone requires #Location permission# for COVIDSafe to work. *COVIDSafe does NOT track or store your location data*\n\nSelect ‘Proceed' to enable:";
+"permission_content_iOS_2" = "1. Bluetooth\n2. Notifications\n3. Location Services";
 /* OnBoarding Permission */
 "permission_headline" = "App settings";
 "permission_success_button" = "Done";
@@ -412,10 +413,15 @@
 "update_available_dismiss_btn" = "Remind me later";
 "update_available_message_ios" = "We’ve been making improvements to COVIDSafe. Update through the App Store";
 "update_available_title" = "Update available!";
+"update_description" = "This update improves COVIDSafe’s Bluetooth performance. Now it better captures your close contacts.\n\nThis update requests access to your Location Services for COVIDSafe to work. This permission wakes COVIDSafe up every time you unlock your screen. <a href=\"https://www.covidsafe.gov.au/help-topics.html#location-permissions\">COVIDSafe does NOT collect, store or use your location data</a>\n\nThis is one of the new ways that COVIDSafe can better capture your close contacts. <a href=\"https://www.covidsafe.gov.au/help-topics.html#herald\">Find out more about how we’ve improved COVIDSafe</a>";
+"update_description_VO" = "This update improves COVIDSafe’s Bluetooth performance. Now it better captures your close contacts.\n\nThis update requests access to your Location Services for COVIDSafe to work. This permission wakes COVIDSafe up every time you unlock your screen. COVIDSafe does NOT collect, store or use your location data\n\nThis is one of the new ways that COVIDSafe can better capture your close contacts. Find out more about how we’ve improved COVIDSafe";
+"update_heading" = "Enable Location Services";
+"update_modal_button" = "Proceed";
 "upload_answer_no" = "No";
 /* Upload flow */
 "upload_answer_yes" = "Yes";
 "upload_consent_button" = "I agree";
+"upload_fail_heading" = "Your upload failed";
 "upload_failed" = "Upload failed";
 "upload_finished_header" = "Thank you for helping to stop the spread of COVID-19!";
 "upload_finished_sub_header" = "You have successfully uploaded your information to the COVIDSafe highly secure storage system.\n\nState or territory health officials will notify other COVIDSafe users that have recorded instances of close contact with you. Your identity will remain anonymous to other users.";
@@ -501,7 +507,7 @@
 "NotificationsDisabled_VOLabel" = "Notifications are disabled. You will not receive a notification if COVIDSafe is not active.\nChange notification settings";
 "NotificationsEnabled_VOLabel" = "Notifications are enabled. You will receive a notification if COVIDSafe is not active.\nChange notification settings";
 "OS1b_TopParagraph_VOLabel" = "Bluetooth signals are used to determine when you're near another COVIDSafe user.\nEvery instance of close contact between you and other COVIDSafe users is noted to create close contact information. This information is encrypted and only stored in your phone.\nIf you test positive to COVID-19 as a COVIDSafe user, a state or territory health official will contact you. They will assist with voluntary upload of your close contact information to a highly secure information storage system.\nState or territory health officials can also contact you if you came in close contact with another COVIDSafe user who tested positive.\nFor more information please refer to the Help Topics page.";
-"permission_content_iOS_2_VOLabel" = "1. Bluetooth\n2. Notifications\n\nCOVIDSafe does not send pairing requests.";
-"permission_content_iOS_VOLabel" = "COVIDSafe needs Bluetooth enabled to work. By enabling Notifications, you get updates to remind you when COVIDSafe is not active. \n\nSelect 'Proceed' to enable:";
+"permission_content_iOS_2_VOLabel" = "1. Bluetooth\n2. Notifications\n3. Location Services";
+"permission_content_iOS_VOLabel" = "COVIDSafe needs Bluetooth enabled to work. COVIDSafe does not send pairing requests.\n\nBy enabling Notifications, you get updates to remind you when COVIDSafe is not active. \n\nYour iPhone requires Location permission for COVIDSafe to work. *COVIDSafe does NOT track or store your location data*\n\nSelect ‘Proceed' to enable:";
 "ShareCovidSafe_VOLabel" = "Share COVIDSafe. Invite others to help. Together, we're stronger.";
 "UploadData_VOLabel" = "Has a health official contacted you? You can only upload your information if you have tested positive.";

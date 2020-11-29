@@ -239,7 +239,7 @@
 /* OnBoarding Data Privacy */
 "data_privacy_headline" = "注册及隐私";
 "deaths" = "死亡人数";
-"dialog_error_uploading_message" = "个人信息上传时发生错误，请重试。";
+"dialog_error_uploading_message" = "";
 "dialog_error_uploading_negative" = "取消";
 "dialog_error_uploading_positive" = "重试";
 "dialog_uploading_message" = "您的COVIDSafe信息正在上传中。 \n\n请不要关闭该应用程序。";
@@ -317,6 +317,8 @@
 "jwt_heading" = "请重新注册";
 "jwt_success" = "";
 "loading_numbers" = "正在加载最新统计数字";
+"location_off" = "";
+"location_off_description" = "";
 /* Splash Screen */
 "migration_in_progress" = "COVIDSafe正在更新。 \n\n请保持开机状态直至更新完成。";
 "national_numbers" = "全国统计数字";
@@ -343,9 +345,8 @@
 "options_for_australia" = "澳大利亚选项";
 "permission_button" = "继续";
 /* Figma page iOS Screens (05/06) */
-"permission_content_iOS" = "COVIDSafe需要启用蓝牙®才能运行。通过启用通知，您将在COVIDSafe未激活时收到提醒。 \n\n选择“继续”以启用：";
-/* Figma page iOS Screens (05/06) */
-"permission_content_iOS_2" = "1. 蓝牙®\n2. 通知\n\nCOVIDSafe 不会发送配对请求。";
+"permission_content_iOS" = "";
+"permission_content_iOS_2" = "";
 /* OnBoarding Permission */
 "permission_headline" = "应用设置";
 "permission_success_button" = "完成";
@@ -412,10 +413,15 @@
 "update_available_dismiss_btn" = "稍后提醒我";
 "update_available_message_ios" = "我们一直在改进 COVIDSafe。请通过应用商店更新。";
 "update_available_title" = "更新可用！";
+"update_description" = "";
+"update_description_VO" = "";
+"update_heading" = "";
+"update_modal_button" = "继续";
 "upload_answer_no" = "否";
 /* Upload flow */
 "upload_answer_yes" = "是";
 "upload_consent_button" = "我同意";
+"upload_fail_heading" = "";
 "upload_failed" = "上传失败";
 "upload_finished_header" = "感谢您协助阻止COVID-19的传播！";
 "upload_finished_sub_header" = "您已成功将个人信息上传到COVIDSafe高度安全的储存系统。 \n\n根据记录，其他COVIDSafe用户与您如有密切接触，州或领地卫生官员将通知他们。您的身份对其他用户将保持匿名状态。";
@@ -501,7 +507,7 @@
 "NotificationsDisabled_VOLabel" = "通知已禁用。如果COVIDSafe未激活，您将不会收到通知。 \n更改通知设置";
 "NotificationsEnabled_VOLabel" = "通知已启用。如果COVIDSafe未激活，您将收到通知。 \n更改通知设置";
 "OS1b_TopParagraph_VOLabel" = "COVIDSafe需要使用蓝牙®信号以确定您靠近另一个COVIDSafe用户的时间。 \n\n您与其他COVIDSafe用户之间的每一次密切接触都被记录下来，以创建密切接触信息。该信息经过加密，且仅储存在您的手机中。 \n\n如果您使用COVIDSafe并对COVID-19测试呈阳性，则州或领地卫生官员将与您联系。经您同意，他们会协助您将密切接触者信息上传至高度安全的信息储存系统。\n\n如果您与测试结果呈阳性的其他COVIDSafe用户发生密切接触，则州或领地卫生官员也会与您联系。 \n\n如需更多信息，请参阅*帮助主题*页。";
-"permission_content_iOS_2_VOLabel" = "1. 蓝牙®\n2. 通知\n\nCOVIDSafe不会发送配对请求。";
-"permission_content_iOS_VOLabel" = "COVIDSafe需要启用蓝牙®才能运行。通过启用通知，您将在COVIDSafe未激活时收到提醒。 \n\n选择“继续”以启用：";
+"permission_content_iOS_2_VOLabel" = "";
+"permission_content_iOS_VOLabel" = "";
 "ShareCovidSafe_VOLabel" = "共享COVIDSafe。邀请他人助力。万众一心，其利断金。";
 "UploadData_VOLabel" = "是否有卫生官员联系过您？只有在您的病毒检测呈阳性时，才能上传个人信息。";

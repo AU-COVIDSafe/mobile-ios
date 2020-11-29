@@ -16,7 +16,10 @@ struct BluetraceConfig {
     static let ProtocolVersion = 2
     
     static let CentralScanInterval = 60.0 // in seconds
+    static let PayloadExpiry = 20.0 // in seconds
+    static let PeripheralPayloadExpiry = TimeInterval.minute * 5
     static let PeripheralCleanInterval = 120.0 // in seconds
+    static let PeripheralPayloadSaveInterval = 30.0 // in seconds
     static let CentralScanDuration = 10 // in seconds
     
     static let DummyModel = ""

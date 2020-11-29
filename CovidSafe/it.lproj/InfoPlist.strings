@@ -5,4 +5,7 @@
 "BluetoothUsageDesc" = "COVIDSafe scambia segnali Bluetooth® con cellulari vicini che utilizzano la stessa app. Questi segnali contengono un ID anonimo crittografato che cambia continuamente per garantire la privacy.";
 "NSBluetoothAlwaysUsageDescription" = "COVIDSafe scambia segnali Bluetooth® con cellulari vicini che utilizzano la stessa app. Questi segnali contengono un ID anonimo crittografato che cambia continuamente per garantire la privacy.";
 "NSBluetoothPeripheralUsageDescription" = "COVIDSafe scambia segnali Bluetooth® con i cellulari vicini che utilizzano la stessa app. Questi segnali contengono un ID anonimo crittografato che cambia continuamente per garantire la privacy.";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "";
+"NSLocationAlwaysUsageDescription" = "";
+"NSLocationWhenInUseUsageDescription" = "";
 "UILaunchStoryboardName" = "LaunchScreen_it";

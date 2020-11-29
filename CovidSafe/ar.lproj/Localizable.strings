@@ -239,7 +239,7 @@
 /* OnBoarding Data Privacy */
 "data_privacy_headline" = "التسجيل والخصوصية";
 "deaths" = "الوفيات";
-"dialog_error_uploading_message" = "حدث خطأ أثناء تحميل معلوماتك، يرجى المحاولة مرة أخرى.";
+"dialog_error_uploading_message" = "";
 "dialog_error_uploading_negative" = "إلغاء";
 "dialog_error_uploading_positive" = "حاول مرة أخرى";
 "dialog_uploading_message" = "يتم الآن تحميل معلومات COVIDSafe الخاصة بك. \n\n الرجاء عدم إغلاق التطبيق.";
@@ -317,6 +317,8 @@
 "jwt_heading" = "يرجى التسجيل مرة أخرى";
 "jwt_success" = "";
 "loading_numbers" = "تحميل أحدث الأرقام";
+"location_off" = "";
+"location_off_description" = "";
 /* Splash Screen */
 "migration_in_progress" = "تحديث تطبيق COVIDSafe قيد الإنجاز. \n\nيُرجى التأكد من عدم إغلاق هاتفك إلى أن يتم اكتمال التحديث.";
 "national_numbers" = "الأرقام على الصعيد الوطني";
@@ -343,9 +345,8 @@
 "options_for_australia" = "خيارات لأستراليا";
 "permission_button" = "تابع";
 /* Figma page iOS Screens (05/06) */
-"permission_content_iOS" = "يحتاج تطبيق COVIDSafe إلى تمكين Bluetooth® لكي يعمل. يسمح تمكين الإشعارات بتلقي تحديثات لتذكيرك عندما يكون تطبيق COVIDSafe متوقف عن العمل. \n\n اختر \"تابع\" للتمكين:";
-/* Figma page iOS Screens (05/06) */
-"permission_content_iOS_2" = "1. Bluetooth® \n 2. الإشعارات \n\n لا يرسل تطبيق COVIDSafe طلبات الاقتران.";
+"permission_content_iOS" = "";
+"permission_content_iOS_2" = "";
 /* OnBoarding Permission */
 "permission_headline" = "إعدادات التطبيق";
 "permission_success_button" = "تمّ";
@@ -412,10 +413,15 @@
 "update_available_dismiss_btn" = "ذكّرني لاحقًا";
 "update_available_message_ios" = "لقد أجرينا تحسينات على تطبيق COVIDSafe. قم بتحديث التطبيق عبر متجر التطبيقات App Store.";
 "update_available_title" = "التحديث متوفر!";
+"update_description" = "";
+"update_description_VO" = "";
+"update_heading" = "";
+"update_modal_button" = "تابع";
 "upload_answer_no" = "لا";
 /* Upload flow */
 "upload_answer_yes" = "نعم";
 "upload_consent_button" = "أوافق";
+"upload_fail_heading" = "";
 "upload_failed" = "فشل التحميل";
 "upload_finished_header" = "شكراً لك على المساعدة في وقف انتشار COVID-19!";
 "upload_finished_sub_header" = "لقد قمت بتحميل معلوماتك بنجاح إلى نظام تخزين COVIDSafe العالي الأمان. \n\n سيقوم موظفو دائرة الصحة في الولاية أو الإقليم بإخطار مستخدمي تطبيق COVIDSafe الآخرين الذين سجلوا حالات اختلاط عن قرب معك. ستظل هويتك مجهولة للمستخدمين الآخرين.";
@@ -501,7 +507,7 @@
 "NotificationsDisabled_VOLabel" = "الإشعارات معطّلة. لن تتلقى إشعارًا إذا كان تطبيق COVIDSafe لا يعمل.\nقم بتغيير إعدادات الإشعارات";
 "NotificationsEnabled_VOLabel" = "يُسمح بالإشعارات. سوف تتلقى إشعارًا إذا كان تطبيق COVIDSafe لا يعمل.\nقم بتغيير إعدادات الإشعارات";
 "OS1b_TopParagraph_VOLabel" = "تُستخدم إشارات Bluetooth لتحديد وجودك بالقرب من مستخدم آخر لتطبيق COVIDSafe. \n سيتم تدوين ملاحظة في كل مرة يحصل فيها اختلاط عن قرب بينك وبين مستخدمي تطبيق COVIDSafe الآخرين لجمع معلومات عن اختلاط الأشخاص. يتم تشفير هذه المعلومات وتخزينها فقط في هاتفك. \n إذا جاءت نتيجة فحصك ﻟ COVID-19 إيجابية كمستخدم لتطبيق COVIDSafe، سوف يتصل بك أحد موظفي دائرة الصحة في الولاية أو الإقليم ويساعدك في القيام بتحميل اختياري لمعلومات الاتصال  بك إلى نظام تخزين معلومات آمن للغاية \nيمكن أيضًا لموظفي دائرة الصحة في الولاية أو الإقليم الاتصال بك إذا حصل اتصال وثيق بينك وبين مستخدم آخر لتطبيق COVIDSafe أظهرت نتائج الفحص أنه مصاب بالفيروس. \n لمزيد من المعلومات، يرجى الرجوع إلى صفحة مواضيع المساعدة.";
-"permission_content_iOS_2_VOLabel" = "1. Bluetooth \n 2. الإشعارات \n\n لا يرسل تطبيق COVIDSafe طلبات الاقتران.";
-"permission_content_iOS_VOLabel" = "يحتاج تطبيق COVIDSafe إلى تمكين Bluetooth لكي يعمل. يسمح تمكين الإشعارات بتلقي تحديثات لتذكيرك عندما يكون تطبيق COVIDSafe متوقف عن العمل. \n\n اختر \"تابع\" للتمكين:";
+"permission_content_iOS_2_VOLabel" = "";
+"permission_content_iOS_VOLabel" = "";
 "ShareCovidSafe_VOLabel" = "شارك COVIDSafe. قم بدعوة الآخرين للمساعدة. معاً، نحن أقوى.";
 "UploadData_VOLabel" = "هل اتصل بك أحد موظفي دائرة الصحة؟ يمكنك تحميل معلوماتك فقط إذا كانت نتيجة فحصك إيجابية.";
