@@ -286,7 +286,7 @@ class OTPViewController: UIViewController, RegistrationHandler {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let successVC = segue.destination as? OnboardingStep2bViewController  {
+        if let successVC = segue.destination as? RegistrationSuccessViewController  {
             successVC.reauthenticating = true
         }
     }

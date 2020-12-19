@@ -11,7 +11,7 @@
         <!--Upload Data Navigation Controller-->
         <scene sceneID="Qjz-CC-Kr9">
             <objects>
-                <navigationController navigationBarHidden="YES" id="Nnq-F9-Zjn" customClass="UploadDataNavigationController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="uploadDataNavigationController" navigationBarHidden="YES" id="Nnq-F9-Zjn" customClass="UploadDataNavigationController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qRv-Xf-UaQ">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

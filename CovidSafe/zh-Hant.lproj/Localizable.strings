@@ -1,8 +1,11 @@
+"28_days" = "";
+"7_days" = "";
 "action_continue" = "繼續";
 "action_report_an_issue" = "報告問題";
 "action_upload_done" = "完成";
 "action_verify_invalid_pin" = "PIN 碼無效，請要求衛生部官員再傳送另一條 PIN 給你。";
 "action_verify_upload_pin" = "上傳我的資料";
+"active_cases" = "";
 /* Figma page iOS Screens (05/06) */
 "allow_bluetooth_call" = "允許 COVIDSafe 接入藍牙®";
 /* Figma page iOS Screens (05/06) */
@@ -16,6 +19,8 @@
 "BluetoothOFF_content" = "請打開手機藍牙®。如有顯示，請選擇「允許新連接」選項。";
 /* Figma page iOS Screens (05/06) */
 "BluetoothON" = "藍牙®：開";
+"cases_28_days" = "";
+"cases_7_days" = "";
 "change_language" = "更換語言";
 "change_language_content" = "用其他語言閱讀COVIDSafe使用指南。";
 "collection_message" = "COVIDSafe現在會收集診斷資訊，以幫助你解決應用程式中的問題。 *了解更多*";
@@ -239,7 +244,7 @@
 /* OnBoarding Data Privacy */
 "data_privacy_headline" = "註册及私隱權";
 "deaths" = "死亡人數";
-"dialog_error_uploading_message" = "個人資料上傳時發生錯誤，請重試。";
+"dialog_error_uploading_message" = "再次上傳你的數據。\n\n如果州或領地衛生官員有要求，請出示此錯誤代碼。\n%@";
 "dialog_error_uploading_negative" = "取消";
 "dialog_error_uploading_positive" = "重試";
 "dialog_uploading_message" = "正在上傳你的 COVIDSafe 資料。 \n\n請勿關閉應用程式。";
@@ -293,6 +298,7 @@
 "home_set_complete_external_link_share_title" = "齊齊使用 COVIDSafe";
 "home_setup_help" = "求助";
 "home_version_number_ios" = "發行版本%@ ，建構版本%@";
+"hotspots_state_territory" = "";
 "how_it_works_button" = "下一步";
 "how_it_works_content" = "COVIDSafe 需要使用藍牙®訊號以確定你在何時接近另一名用戶。 \n\n你與其他COVIDSafe用戶之間的每一次密切接觸都會被記錄下來，以建立密切接觸者資料。該資料會被加密，並僅儲存在你的手機内。\n\n如果你是COVIDSafe用户並被驗出 COVID-19 陽性，州或領地衛生部官員將會與你聯絡。他們會協助你自願地將密切接觸者資料上傳到高度保密的資料儲存系統。\n\n如果你曾密切接觸過另一名被驗出 COVID-19 陽性的 COVIDSafe 用戶，則州或領地的衛生部官員亦會聯絡你。 \n\n欲知詳情，請參閱*求助主題*頁";
 /* OnBoarding How it works */
@@ -315,12 +321,16 @@
 "invalid_norfolk_island_phone_number_error_prompt" = "諾福克島的手機號碼是個5至6位數字。";
 "jwt_description" = "你的註冊詳情存在問題。";
 "jwt_heading" = "請重新註冊。";
-"jwt_success" = "";
+"jwt_success" = "成功更新註冊。";
 "loading_numbers" = "正在載入最新統計數字";
+"locally_acquired" = "";
+"location_off" = "位置：關閉";
+"location_off_description" = "你的iPhone要求COVIDSafe獲得位置許可權才能正常運作。COVIDSafe不會跟蹤或者存儲你的位置資料。";
 /* Splash Screen */
 "migration_in_progress" = "正在更新 COVIDSafe。\n\n請保持開機狀態直至更新完成為止。";
 "national_numbers" = "全國統計數字";
 "new_cases" = "過去24小時內新增病例";
+"new_cases_total" = "";
 "new_south_wales" = "新南威爾士州";
 /* Figma page Android Screens (05/06) */
 "norfolk_hint" = "例如：51234";
@@ -341,11 +351,11 @@
 "numbers_no_internet" = "請連接到互聯網，以獲取最新統計數字。";
 "numbers_refresh" = "現在刷新";
 "options_for_australia" = "澳洲適用選項";
+"overseas_acquired" = "";
 "permission_button" = "繼續";
 /* Figma page iOS Screens (05/06) */
-"permission_content_iOS" = "COVIDSafe  需要開啓藍牙®才能執行。透過開啟「通知傳送」功能，你會在 COVIDSafe 仍未處於啟用狀態時收到提醒。\n\n請選擇「繼續」來開啟：";
-/* Figma page iOS Screens (05/06) */
-"permission_content_iOS_2" = "1. 藍牙®\n2. 通知\n\nCOVIDSafe 不會傳送配對請求。";
+"permission_content_iOS" = "COVIDSafe需要啟用#藍牙#才能運作。COVIDSafe不會發出配對請求。\n\n通過允許#通知#，當COVIDSafe未在啟用狀態時，你會收到提示。\n\n你的iPhone要求COVIDSafe獲得#位置許可權#才能運作。*COVIDSafe不會跟蹤或者存儲你的位置資料。*\n\n\n選擇 '繼續’來啟用：";
+"permission_content_iOS_2" = "1. 藍牙\n2. 通知\n3. 位置服務";
 /* OnBoarding Permission */
 "permission_headline" = "應用程式設定";
 "permission_success_button" = "完成";
@@ -391,12 +401,15 @@
 "share_this_app_content" = "同我一齊遏止 COVID-19 的擴散！下載澳洲政府提供的 COVIDSafe 應用程式。 ＃COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
 "show" = "顯示";
 "south_australia" = "南澳";
+"state_number_heading" = "";
 "stepCounter" = "第%d步，共%d步";
 "support" = "支持";
 "support_content" = "獲取幫助，解決求助主題未涵蓋的問題。";
 "Support_VOLabel" = "支持。獲取幫助，解決求助主題未涵蓋的問題。";
 "tasmania" = "塔斯曼尼亞州";
+"total" = "";
 "total_confirmed_cases" = "確診病例總數";
+"total_deaths" = "";
 "total_per_state" = "各州和領地確診病例總數";
 "UILaunchStoryboardName" = "LaunchScreen_zh_Hant";
 "under_sixteen_content" = "我確認我的父母或監護人同意數字化轉型局作為數據儲存管理者，根據澳大利亞政府衛生部常務副部長的合法決定，收集以下資訊：";
@@ -412,10 +425,15 @@
 "update_available_dismiss_btn" = "請稍後提醒";
 "update_available_message_ios" = "我們一直都在改良 COVIDSafe。通過App Store更新。";
 "update_available_title" = "更新可用！";
+"update_description" = "";
+"update_description_VO" = "";
+"update_heading" = "允許定位服務";
+"update_modal_button" = "繼續";
 "upload_answer_no" = "否";
 /* Upload flow */
 "upload_answer_yes" = "是";
 "upload_consent_button" = "我同意";
+"upload_fail_heading" = "你的上傳失敗";
 "upload_failed" = "上傳失敗";
 "upload_finished_header" = "感謝你協助遏止 COVID-19 的擴散！";
 "upload_finished_sub_header" = "你已成功將個人資料上傳到 COVIDSafe 高度保密的儲存系統。\n\n若錄得有其他 COVIDSafe 用户曾密切接觸過你，各州或領地的衛生部官員將會通知他們。你的身份仍舊予以保密。";
@@ -501,7 +519,7 @@
 "NotificationsDisabled_VOLabel" = "「通知傳送」功能已被闗閉。如果 COVIDSafe 尚未處於啟用狀態，你將不會收到通知。更改「通知傳送」設定";
 "NotificationsEnabled_VOLabel" = "「通知傳送」功能已被開啓。如果 COVIDSafe 尚未處於啟用狀態，你將會收到通知。更改「通知傳送」設定";
 "OS1b_TopParagraph_VOLabel" = "藍牙®訊號用於確定你在何時接近另一名 COVIDSafe 用戶。 \n你與其他 COVIDSafe 用戶的每次密切接觸都會被記錄下來，以創建密切接觸者資料。該資料會被加密，並僅儲存在你的手機内。 \n如果你是一名 COVIDSafe 用戶，而又被驗出 COVID-19 陽性，則州或領地衛生官員將會與你聯絡。他們將會協助你自願把你自己的密切接觸者資料上傳到高度保密的資料儲存系統。\n如果你曾密切接觸過另一名化驗結果呈陽性的 COVIDSafe 用戶，則州或領地衛生官員也可能會聯絡你。 \n欲知詳情，請參閱「求助主題」頁。";
-"permission_content_iOS_2_VOLabel" = "1. 藍牙®\n2. 通知\n\nCOVIDSafe 不會傳送配對請求。";
-"permission_content_iOS_VOLabel" = "需開啓藍牙®才能執行 COVIDSafe  。透過開啟「通知傳送」功能，你會在 COVIDSafe 尚未處於啟用狀態時收到提醒。\n\n請選擇「繼續」來開啟：";
+"permission_content_iOS_2_VOLabel" = "1. 藍牙\n2. 通知\n3. 位置服務";
+"permission_content_iOS_VOLabel" = "COVIDSafe需要啟用藍牙才能運作。COVIDSafe不會發出配對請求。\n\n通過允許通知，當COVIDSafe未在啟用狀態時，你會收到提示。\n\n你的iPhone要求COVIDSafe獲得位置許可權才能運作。*COVIDSafe不會跟蹤或者存儲你的位置資料。*\n\n\n選擇 '繼續’來啟用：";
 "ShareCovidSafe_VOLabel" = "分享使用 COVIDSafe，邀請他人參與防疫。團結便是力量！";
 "UploadData_VOLabel" = "曾有衛官員聯絡過你嗎？只有在你被驗出病毒陽性時，才能上傳個人資料。";

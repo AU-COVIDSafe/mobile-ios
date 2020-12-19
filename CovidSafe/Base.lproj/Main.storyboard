@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8X4-AC-7cb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8X4-AC-7cb">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Onboarding Step 2b View Controller-->
+        <!--Registration Success View Controller-->
         <scene sceneID="PoE-0G-Ttd">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="GaQ-f5-ei6" userLabel="Onboarding Step 2b View Controller" customClass="OnboardingStep2bViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="GaQ-f5-ei6" customClass="RegistrationSuccessViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dwh-jN-1SX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,7 +197,7 @@
         <!--Onboarding Step 1 View Controller-->
         <scene sceneID="26D-Zd-57d">
             <objects>
-                <viewController storyboardIdentifier="onboardingStep1" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="8nR-hO-fWt" userLabel="Onboarding Step 1 View Controller" customClass="OnboardingStep1ViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="onboardingStep1" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="8nR-hO-fWt" userLabel="Onboarding Step 1 View Controller" customClass="RegistrationIntroViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lOU-q5-7Co">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -215,7 +215,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Together we can stop the spread of COVID-19" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00h-JA-MfK">
-                                                <rect key="frame" x="32" y="208" width="308.33333333333331" height="67.666666666666686"/>
+                                                <rect key="frame" x="32" y="208" width="309.66666666666669" height="67.666666666666686"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -322,10 +322,10 @@ Together we can help stop the spread and stay healthy.</string>
             </objects>
             <point key="canvasLocation" x="-6738" y="-1212"/>
         </scene>
-        <!--Onboarding Step 2 View Controller-->
+        <!--App Settings View Controller-->
         <scene sceneID="d1g-JU-eoU">
             <objects>
-                <viewController storyboardIdentifier="onboardingStep2" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="eME-NJ-Fcz" userLabel="Onboarding Step 2 View Controller" customClass="OnboardingStep2ViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="onboardingStep2" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="eME-NJ-Fcz" customClass="AppSettingsViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dJg-Mo-aen">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -334,8 +334,14 @@ Together we can help stop the spread and stay healthy.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="624"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SpU-i1-aUA" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="617.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="635.33333333333337"/>
                                         <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 4 of 4" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vco-tH-Zts">
+                                                <rect key="frame" x="32" y="60.000000000000007" width="350" height="19.333333333333336"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppPermissions1" translatesAutoresizingMaskIntoConstraints="NO" id="cma-Te-Ut1">
                                                 <rect key="frame" x="51.666666666666657" y="103.33333333333331" width="311" height="188"/>
                                                 <constraints>
@@ -355,7 +361,7 @@ Together we can help stop the spread and stay healthy.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="npY-9G-r2u">
-                                                <rect key="frame" x="32" y="365" width="350" height="130.33333333333337"/>
+                                                <rect key="frame" x="32" y="365" width="350" height="148"/>
                                                 <string key="text">COVIDSafe needs Bluetooth® enabled to work. By enabling Notifications, you get updates to remind you when COVIDSafe is not active.
 
 Select ‘Proceed' to enable:</string>
@@ -367,8 +373,22 @@ Select ‘Proceed' to enable:</string>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="permission_content_iOS_VOLabel"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vam-jJ-7TM">
+                                                <rect key="frame" x="32" y="365" width="350" height="148"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">COVIDSafe needs Bluetooth® enabled to work. By enabling Notifications, you get updates to remind you when COVIDSafe is not active.
+
+Select ‘Proceed' to enable:</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="permission_content_iOS"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="permission_content_iOS_VOLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAg-5r-Sgd">
-                                                <rect key="frame" x="32" y="515.33333333333337" width="350" height="86.333333333333371"/>
+                                                <rect key="frame" x="32" y="533" width="350" height="86.333333333333371"/>
                                                 <string key="text">1. Bluetooth®
 2. Notifications
 
@@ -381,23 +401,20 @@ COVIDSafe does not send pairing requests.</string>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="permission_content_iOS_2_VOLabel"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 4 of 4" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vco-tH-Zts">
-                                                <rect key="frame" x="32" y="60.000000000000007" width="350" height="19.333333333333336"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="npY-9G-r2u" firstAttribute="leading" secondItem="SpU-i1-aUA" secondAttribute="leading" constant="32" id="1qx-Y1-2Bz"/>
                                             <constraint firstItem="Vco-tH-Zts" firstAttribute="top" secondItem="SpU-i1-aUA" secondAttribute="top" constant="60" id="A22-Zs-PDI"/>
                                             <constraint firstAttribute="bottom" secondItem="DAg-5r-Sgd" secondAttribute="bottom" constant="16" id="ByQ-uv-A4X"/>
+                                            <constraint firstItem="vam-jJ-7TM" firstAttribute="leading" secondItem="SpU-i1-aUA" secondAttribute="leading" constant="32" id="IgC-l4-Hyw"/>
                                             <constraint firstAttribute="trailing" secondItem="Vco-tH-Zts" secondAttribute="trailing" constant="32" id="OUF-2C-mUH"/>
                                             <constraint firstItem="npY-9G-r2u" firstAttribute="top" secondItem="0pO-gl-umK" secondAttribute="bottom" constant="16" id="R2m-S5-4HK"/>
                                             <constraint firstItem="Vco-tH-Zts" firstAttribute="leading" secondItem="SpU-i1-aUA" secondAttribute="leading" constant="32" id="SNT-kH-ef3"/>
                                             <constraint firstAttribute="trailing" secondItem="DAg-5r-Sgd" secondAttribute="trailing" constant="32" id="SkE-oy-hPa"/>
+                                            <constraint firstAttribute="trailing" secondItem="vam-jJ-7TM" secondAttribute="trailing" constant="32" id="ZSg-wl-Els"/>
                                             <constraint firstItem="DAg-5r-Sgd" firstAttribute="top" secondItem="npY-9G-r2u" secondAttribute="bottom" constant="20" id="c13-ir-irb"/>
+                                            <constraint firstItem="DAg-5r-Sgd" firstAttribute="top" secondItem="vam-jJ-7TM" secondAttribute="bottom" constant="20" id="cEL-Fy-qkJ"/>
                                             <constraint firstItem="cma-Te-Ut1" firstAttribute="centerX" secondItem="SpU-i1-aUA" secondAttribute="centerX" id="cEy-KQ-T2p"/>
                                             <constraint firstAttribute="trailing" secondItem="npY-9G-r2u" secondAttribute="trailing" constant="32" id="eEl-PJ-NbS"/>
                                             <constraint firstItem="0pO-gl-umK" firstAttribute="top" secondItem="cma-Te-Ut1" secondAttribute="bottom" constant="24" id="eqm-MY-nO8"/>
@@ -405,6 +422,7 @@ COVIDSafe does not send pairing requests.</string>
                                             <constraint firstItem="DAg-5r-Sgd" firstAttribute="leading" secondItem="SpU-i1-aUA" secondAttribute="leading" constant="32" id="qRs-1i-saU"/>
                                             <constraint firstItem="cma-Te-Ut1" firstAttribute="top" secondItem="Vco-tH-Zts" secondAttribute="bottom" constant="24" id="tAa-dy-jEx"/>
                                             <constraint firstAttribute="trailing" secondItem="0pO-gl-umK" secondAttribute="trailing" constant="32" id="tnK-TI-UxL"/>
+                                            <constraint firstItem="vam-jJ-7TM" firstAttribute="top" secondItem="0pO-gl-umK" secondAttribute="bottom" constant="16" id="yHr-8k-q7c"/>
                                         </constraints>
                                         <variation key="heightClass=compact-widthClass=compact">
                                             <mask key="subviews">
@@ -460,6 +478,7 @@ COVIDSafe does not send pairing requests.</string>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="stepCounterLabel" destination="Vco-tH-Zts" id="NsV-Af-g7D"/>
+                        <outlet property="topContentTextView" destination="vam-jJ-7TM" id="gPO-BM-gLt"/>
                         <segue destination="GaQ-f5-ei6" kind="show" identifier="showSuccessSegue" id="Fee-nc-b99"/>
                     </connections>
                 </viewController>
@@ -1257,10 +1276,10 @@ and save lives.</string>
             </objects>
             <point key="canvasLocation" x="-8561" y="1143"/>
         </scene>
-        <!--Onboarding Step 1b View Controller-->
+        <!--How It Works View Controller-->
         <scene sceneID="f3t-QQ-sex">
             <objects>
-                <viewController storyboardIdentifier="onboardingStep1b" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="szA-K1-DiB" userLabel="Onboarding Step 1b View Controller" customClass="OnboardingStep1bViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="onboardingStep1b" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="szA-K1-DiB" customClass="HowItWorksViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e8O-pH-ICg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1597,10 +1616,10 @@ For more information please refer to the *Help Topics* page.</string>
             </objects>
             <point key="canvasLocation" x="-3633.3333333333335" y="-1212.2282608695652"/>
         </scene>
-        <!--Onboarding Step 1a View Controller-->
+        <!--Privacy Policy View Controller-->
         <scene sceneID="R6W-kj-4rq">
             <objects>
-                <viewController storyboardIdentifier="onboardingStep1a" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JMg-fD-wpp" customClass="OnboardingStep1aViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="onboardingStep1a" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JMg-fD-wpp" userLabel="Privacy Policy View Controller" customClass="PrivacyPolicyViewController" customModule="COVIDSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NCU-xg-1ta">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2261,9 +2280,9 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bMl-IY-pjw"/>
-        <segue reference="4eL-1Z-MtW"/>
-        <segue reference="dge-8I-Ehz"/>
+        <segue reference="rHc-rZ-59x"/>
+        <segue reference="XiO-Zp-pOg"/>
+        <segue reference="Fee-nc-b99"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AppPermissions1" width="311" height="188"/>

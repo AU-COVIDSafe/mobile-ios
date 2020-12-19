@@ -1,5 +1,5 @@
 //
-//  OnboardingStep1ViewController.swift
+//  RegistrationIntroViewController.swift
 //  CovidSafe
 //
 //  Copyright © 2020 Australian Government. All rights reserved.
@@ -9,7 +9,7 @@ import UIKit
 import SafariServices
 import KeychainSwift
 
-class OnboardingStep1ViewController: UIViewController {
+class RegistrationIntroViewController: UIViewController {
     
     let keychain = KeychainSwift()
     
