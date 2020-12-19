@@ -31,11 +31,11 @@
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>COVIDSafe exchanges Bluetooth® signals with nearby phones running the same app. These signals contain an anonymised ID, which is encrypted and changes continually to ensure your privacy.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>We request location permissions to improve the performance of the system and how we provide information about COVID-19. Location permissions will only be used for this purpose. We will not collect or store your location information.</string>
+	<string>COVIDSafe exchanges Bluetooth® signals with nearby phones running the same app. Location permission is required for best performance, your location is not recorded to ensure your privacy.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>We request location permissions to improve the performance of the system and how we provide information about COVID-19. Location permissions will only be used for this purpose. We will not collect or store your location information.</string>
+	<string>COVIDSafe exchanges Bluetooth® signals with nearby phones running the same app. Location permission is required for best performance, your location is not recorded to ensure your privacy.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>We request location permissions to improve the performance of the system and how we provide information about COVID-19. Location permissions will only be used for this purpose. We will not collect or store your location information.</string>
+	<string>COVIDSafe exchanges Bluetooth® signals with nearby phones running the same app. Location permission is required for best performance, your location is not recorded to ensure your privacy.</string>
 	<key>TRACER_SVC_ID</key>
 	<string>${SERVICE_UUID}</string>
 	<key>UIBackgroundModes</key>
@@ -45,6 +45,8 @@
 		<string>location</string>
 		<string>remote-notification</string>
 	</array>
+	<key>UIFileSharingEnabled</key>
+	<true/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen_en</string>
 	<key>UIMainStoryboardFile</key>

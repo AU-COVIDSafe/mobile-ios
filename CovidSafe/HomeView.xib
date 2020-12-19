@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,6 +23,7 @@
                 <outlet property="inactiveAppSectionView" destination="784-Jf-kOX" id="J3m-Pu-697"/>
                 <outlet property="inactiveSettingsContent" destination="AUW-C2-ven" id="NNP-o9-zkK"/>
                 <outlet property="inactiveTokenExpiredView" destination="nxM-ji-ttb" id="vVC-KW-yek"/>
+                <outlet property="locationPermissionsView" destination="u4f-uR-ri3" id="70q-Jr-1cc"/>
                 <outlet property="pairingRequestsLabel" destination="EF2-ER-Q6h" id="Wx5-bg-Rp3"/>
                 <outlet property="scrollView" destination="Lws-gT-pWp" id="pTG-Kh-B9T"/>
                 <outlet property="shareView" destination="vs9-rS-UOM" id="eoj-sn-TkG"/>
@@ -40,6 +41,11 @@
         <tapGestureRecognizer id="zO2-1f-TbO" userLabel="BLAppSettingsTapped">
             <connections>
                 <action selector="onAppSettingsTapped:" destination="-1" id="Tiq-zP-NGf"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="yhN-Oh-SVH" userLabel="LocationAppSettingsTapped">
+            <connections>
+                <action selector="onAppSettingsTapped:" destination="-1" id="guC-1O-5d5"/>
             </connections>
         </tapGestureRecognizer>
         <tapGestureRecognizer id="eUy-DU-cZn" userLabel="BluetoothPairingLabelTapped">
@@ -165,19 +171,19 @@
                             </constraints>
                         </view>
                         <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="h36-8c-K2n">
-                            <rect key="frame" x="0.0" y="120" width="414" height="1566.5"/>
+                            <rect key="frame" x="0.0" y="120" width="414" height="1711"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRs-XW-qzv" userLabel="StatusView">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="764"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="908.5"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rcS-nL-IAO">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="752"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="896.5"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="784-Jf-kOX" userLabel="InactiveView">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="552"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="696.5"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="xti-6W-zko" userLabel="Inactive Stack View">
-                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="552"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="696.5"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fe-SU-8Q6" userLabel="InActiveHeader">
                                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="81"/>
@@ -367,7 +373,7 @@
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ers-f9-BFH" userLabel="Bluetooth Status  Off Section">
                                                                     <rect key="frame" x="0.0" y="450.5" width="414" height="101.5"/>
                                                                     <subviews>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p5d-dk-foR" userLabel="Bluetooth Status Bar Off">
+                                                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p5d-dk-foR" userLabel="Bluetooth Status Bar Off">
                                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="101.5"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth®: Off" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0P-dF-xcR">
@@ -431,6 +437,74 @@
                                                                         <outletCollection property="gestureRecognizers" destination="tGp-em-x7B" appends="YES" id="mo7-ga-Hnw"/>
                                                                     </connections>
                                                                 </view>
+                                                                <view contentMode="scaleToFill" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="u4f-uR-ri3" userLabel="Location Settings">
+                                                                    <rect key="frame" x="0.0" y="553" width="414" height="143.5"/>
+                                                                    <subviews>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGh-Fm-LNa" userLabel="Location Off bar">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="142.5"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location settings" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4a2-uh-JwT">
+                                                                                    <rect key="frame" x="16" y="16" width="150" height="24"/>
+                                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                                                    <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                    <userDefinedRuntimeAttributes>
+                                                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="location_off"/>
+                                                                                    </userDefinedRuntimeAttributes>
+                                                                                </label>
+                                                                                <button opaque="NO" userInteractionEnabled="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjW-bP-Gyh">
+                                                                                    <rect key="frame" x="364" y="6" width="44" height="44"/>
+                                                                                    <accessibility key="accessibilityConfiguration">
+                                                                                        <bool key="isElement" value="NO"/>
+                                                                                    </accessibility>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="44" id="TWO-o0-rOr"/>
+                                                                                        <constraint firstAttribute="width" constant="44" id="tPO-9M-U8r"/>
+                                                                                    </constraints>
+                                                                                    <state key="normal" image="chevron-right-red"/>
+                                                                                </button>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6HO-2o-TTh">
+                                                                                    <rect key="frame" x="16" y="44" width="340" height="82.5"/>
+                                                                                    <accessibility key="accessibilityConfiguration">
+                                                                                        <bool key="isElement" value="NO"/>
+                                                                                    </accessibility>
+                                                                                    <string key="text">Enabling Location Services improves Bluetooth performance when identifying close contacts. COVIDSafe does NOT store or use location data.</string>
+                                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                                                    <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                    <userDefinedRuntimeAttributes>
+                                                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="location_off_description"/>
+                                                                                    </userDefinedRuntimeAttributes>
+                                                                                </label>
+                                                                            </subviews>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="bottom" secondItem="6HO-2o-TTh" secondAttribute="bottom" constant="16" id="2bJ-8i-mJK"/>
+                                                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4a2-uh-JwT" secondAttribute="trailing" constant="20" symbolic="YES" id="ABg-mm-FYN"/>
+                                                                                <constraint firstItem="4a2-uh-JwT" firstAttribute="top" secondItem="aGh-Fm-LNa" secondAttribute="top" constant="16" id="Cil-S8-xIK"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="GjW-bP-Gyh" secondAttribute="trailing" constant="6" id="IuY-4n-l2D"/>
+                                                                                <constraint firstItem="6HO-2o-TTh" firstAttribute="leading" secondItem="aGh-Fm-LNa" secondAttribute="leading" constant="16" id="Jv8-9f-6YY"/>
+                                                                                <constraint firstItem="4a2-uh-JwT" firstAttribute="leading" secondItem="aGh-Fm-LNa" secondAttribute="leading" constant="16" id="LdD-zr-19B"/>
+                                                                                <constraint firstItem="GjW-bP-Gyh" firstAttribute="leading" secondItem="6HO-2o-TTh" secondAttribute="trailing" constant="8" id="MTX-4f-BX4"/>
+                                                                                <constraint firstItem="GjW-bP-Gyh" firstAttribute="centerY" secondItem="4a2-uh-JwT" secondAttribute="centerY" id="g01-mZ-oty"/>
+                                                                                <constraint firstItem="6HO-2o-TTh" firstAttribute="top" secondItem="4a2-uh-JwT" secondAttribute="bottom" constant="4" id="wR8-8y-108"/>
+                                                                            </constraints>
+                                                                        </view>
+                                                                    </subviews>
+                                                                    <accessibility key="accessibilityConfiguration" label="Bluetooth permissions off">
+                                                                        <accessibilityTraits key="traits" button="YES"/>
+                                                                        <bool key="isElement" value="YES"/>
+                                                                    </accessibility>
+                                                                    <constraints>
+                                                                        <constraint firstItem="aGh-Fm-LNa" firstAttribute="top" secondItem="u4f-uR-ri3" secondAttribute="top" id="6KK-e5-iql"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="aGh-Fm-LNa" secondAttribute="bottom" constant="1" id="Qne-bx-T9S"/>
+                                                                        <constraint firstItem="aGh-Fm-LNa" firstAttribute="leading" secondItem="u4f-uR-ri3" secondAttribute="leading" id="ZbU-z8-9iT"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="aGh-Fm-LNa" secondAttribute="trailing" id="bgp-cU-6fm"/>
+                                                                    </constraints>
+                                                                    <connections>
+                                                                        <outletCollection property="gestureRecognizers" destination="yhN-Oh-SVH" appends="YES" id="uuY-YZ-hRu"/>
+                                                                    </connections>
+                                                                </view>
                                                             </subviews>
                                                         </stackView>
                                                     </subviews>
@@ -443,7 +517,7 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m1D-93-7sF" userLabel="ActiveView">
-                                                    <rect key="frame" x="0.0" y="552" width="414" height="200"/>
+                                                    <rect key="frame" x="0.0" y="696.5" width="414" height="200"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="981-Cd-Xm3" userLabel="Active Stack View">
                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -562,7 +636,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aop-Ae-hRv" userLabel="StatisticsViewSection">
-                                    <rect key="frame" x="0.0" y="764" width="414" height="124"/>
+                                    <rect key="frame" x="0.0" y="908.5" width="414" height="124"/>
                                     <subviews>
                                         <view clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="eZl-C5-gSv" userLabel="StatisticsView">
                                             <rect key="frame" x="0.0" y="12" width="414" height="100"/>
@@ -580,7 +654,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9cE-NC-A20" userLabel="Help">
-                                    <rect key="frame" x="0.0" y="888" width="414" height="153"/>
+                                    <rect key="frame" x="0.0" y="1032.5" width="414" height="153"/>
                                     <subviews>
                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="co1-dK-1WU">
                                             <rect key="frame" x="0.0" y="12" width="414" height="129"/>
@@ -713,7 +787,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cN-DY-lc3" userLabel="Change language">
-                                    <rect key="frame" x="0.0" y="1041" width="414" height="153"/>
+                                    <rect key="frame" x="0.0" y="1185.5" width="414" height="153"/>
                                     <subviews>
                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bE9-gT-Hba">
                                             <rect key="frame" x="0.0" y="12" width="414" height="129"/>
@@ -846,7 +920,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vs9-rS-UOM" userLabel="Share CovidSafe">
-                                    <rect key="frame" x="0.0" y="1194" width="414" height="151"/>
+                                    <rect key="frame" x="0.0" y="1338.5" width="414" height="151"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RCa-zU-3Vo">
                                             <rect key="frame" x="0.0" y="12" width="414" height="127"/>
@@ -957,7 +1031,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JSe-D6-hyV" userLabel="Upload Data">
-                                    <rect key="frame" x="0.0" y="1345" width="414" height="165.5"/>
+                                    <rect key="frame" x="0.0" y="1489.5" width="414" height="165.5"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8pS-Df-p0U">
                                             <rect key="frame" x="0.0" y="12" width="414" height="141.5"/>
@@ -1077,7 +1151,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZ2-CQ-dtQ" userLabel="Version View">
-                                    <rect key="frame" x="0.0" y="1510.5" width="414" height="56"/>
+                                    <rect key="frame" x="0.0" y="1655" width="414" height="56"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version number:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1w-Sl-OIH" userLabel="Version">
                                             <rect key="frame" x="16" y="12" width="382" height="20"/>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -206,9 +206,6 @@
                                                                 <constraint firstAttribute="bottom" secondItem="nm4-W8-yfz" secondAttribute="bottom" constant="1" id="Rog-yq-MUA"/>
                                                                 <constraint firstItem="nm4-W8-yfz" firstAttribute="top" secondItem="1F3-ji-p1Z" secondAttribute="top" id="SY0-Kp-41h"/>
                                                             </constraints>
-                                                            <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="AllowBluetoothOFF_VOLabel"/>
-                                                            </userDefinedRuntimeAttributes>
                                                             <connections>
                                                                 <outletCollection property="gestureRecognizers" destination="9uF-DB-1IF" appends="YES" id="MIg-P4-8ip"/>
                                                             </connections>
@@ -266,9 +263,6 @@
                                                                 <constraint firstAttribute="trailing" secondItem="2Uq-lN-t0Y" secondAttribute="trailing" id="dJP-zw-VDV"/>
                                                                 <constraint firstItem="2Uq-lN-t0Y" firstAttribute="leading" secondItem="syj-9c-EKO" secondAttribute="leading" id="ipO-6X-Lp6"/>
                                                             </constraints>
-                                                            <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="BluetoothOFF_VOLabel"/>
-                                                            </userDefinedRuntimeAttributes>
                                                             <connections>
                                                                 <outletCollection property="gestureRecognizers" destination="YgE-FC-hoe" appends="YES" id="ODK-ba-1bP"/>
                                                             </connections>

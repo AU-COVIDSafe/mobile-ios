@@ -1,5 +1,5 @@
 //
-//  OnboardingStep1bViewController.swift
+//  HowItWorksViewController.swift
 //  CovidSafe
 //
 //  Copyright © 2020 Australian Government. All rights reserved.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OnboardingStep1bViewController: UIViewController {
+class HowItWorksViewController: UIViewController {
     
     @IBOutlet weak var textView: UITextView!
     

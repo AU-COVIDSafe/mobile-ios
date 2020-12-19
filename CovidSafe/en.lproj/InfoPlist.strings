@@ -5,4 +5,7 @@
 "BluetoothUsageDesc" = "COVIDSafe exchanges Bluetooth® signals with nearby phones running the same app. These signals contain an anonymised ID, which is encrypted and changes continually to ensure your privacy.";
 "NSBluetoothAlwaysUsageDescription" = "COVIDSafe exchanges Bluetooth® signals with nearby phones running the same app. These signals contain an anonymised ID, which is encrypted and changes continually to ensure your privacy.";
 "NSBluetoothPeripheralUsageDescription" = "COVIDSafe exchanges Bluetooth® signals with nearby phones running the same app. These signals contain an anonymised ID, which is encrypted and changes continually to ensure your privacy.";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Select ‘Always Allow’.\n\nYour location is used to send you relevant COVID-19 alerts and to optimise COVIDSafe performance.\nThese alerts will contain important information and updates for your state or territory.";
+"NSLocationAlwaysUsageDescription" = "Select ‘Always Allow’.\n\nYour location is used to send you relevant COVID-19 alerts and to optimise COVIDSafe performance.\nThese alerts will contain important information and updates for your state or territory.";
+"NSLocationWhenInUseUsageDescription" = "Select ‘While Using App’.\n\nYour location is used to send you relevant COVID-19 alerts and to optimise COVIDSafe performance.\nThese alerts will contain important information and updates for your state or territory.";
 "UILaunchStoryboardName" = "LaunchScreen_en";
