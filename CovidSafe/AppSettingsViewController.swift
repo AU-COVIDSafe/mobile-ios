@@ -21,7 +21,7 @@ class AppSettingsViewController: UIViewController {
             4,
             4
         )
-        topContentTextView.addLink("\(URLHelper.getHelpURL())#location-permission-android", enclosedIn: "*")
+        topContentTextView.addLink("\(URLHelper.geLocationPermissionsURL())", enclosedIn: "*")
         topContentTextView.addAllBold(enclosedIn: "#")
     }
     

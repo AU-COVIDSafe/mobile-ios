@@ -35,7 +35,7 @@ class InitiateUploadAPI {
         }
     }
     
-    static func initiateUploadAPI(session: String, pin: String?, completion: @escaping (UploadResponse?, APIError?) -> Void) {
+    static func initiateUploadAPI(session: String, pin: String?, completion: @escaping (UploadResponse?, APIError?, String?) -> Void) {
         guard let apiHost = PlistHelper.getvalueFromInfoPlist(withKey: "API_Host", plistName: "CovidSafe-config") else {
             return
         }
@@ -48,38 +48,30 @@ class InitiateUploadAPI {
         }
         
         guard pin != nil else {
-            completion(nil, .ServerError)
+            completion(nil, .ServerError, nil)
             return
         }
         
         CovidNetworking.shared.session.request("\(apiHost)/initiateDataUpload", method: .get, headers: headers, interceptor: CovidRequestRetrier(retries: 3)).validate().responseData { (response) in
             guard let respData = response.data else {
-                completion(nil, .ServerError)
+                completion(nil, .ServerError, "[100] API")
                 return
             }
+            
             switch response.result {
             case .success:
                 do {
                     let uploadResponse = try JSONDecoder().decode(UploadResponse.self, from: respData)
-                    completion(uploadResponse, nil)
+                    completion(uploadResponse, nil, nil)
                 } catch {
-                    completion(nil, .ServerError)
+                    completion(nil, .ServerError, "[101] API")
                 }
             case .failure(_):
-                if (response.response?.statusCode == 403) {
-                    do {
-                        let uploadResponse = try JSONDecoder().decode(ErrorResponse.self, from: respData)
-                        if uploadResponse.message == "InvalidPin" {
-                            completion(nil, .ServerError)
-                            return
-                        }
-                    } catch {
-                        completion(nil, .ServerError)
-                        return
-                    }
-                    completion(nil, .ExpireSession)
-                } else {
-                    completion(nil, .ServerError)
+                do {
+                    let uploadResponse = try JSONDecoder().decode(ErrorResponse.self, from: respData)
+                    completion(nil, .ServerError, "[\(response.response?.statusCode ?? 000)] \(uploadResponse.message)")
+                } catch {
+                    completion(nil, .ServerError, "[\(response.response?.statusCode ?? 000)] API")
                 }
             }
         }

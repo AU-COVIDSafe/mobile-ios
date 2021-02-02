@@ -41,7 +41,7 @@ class ConcreteBLEReceiver: NSObject, BLEReceiver, BLEDatabaseDelegate, CBCentral
     /// Payload data supplier for parsing shared payloads
     private let payloadDataSupplier: PayloadDataSupplier
     /// Central manager for managing all connections, using a single manager for simplicity.
-    private var central: CBCentralManager!
+    private var central: CBCentralManager?
     /// Dummy data for writing to the transmitter to trigger state restoration or resume from suspend state to background state.
     private let emptyData = Data(repeating: 0, count: 0)
     /**
@@ -93,26 +93,26 @@ class ConcreteBLEReceiver: NSObject, BLEReceiver, BLEDatabaseDelegate, CBCentral
                                                 CBCentralManagerOptionShowPowerAlertKey : false])
         }
         // Start scanning
-        if central.state == .poweredOn {
+        if central?.state == .poweredOn {
             scan("start")
         }
     }
     
     func stop() {
         logger.debug("stop")
-        guard central != nil else {
+        guard let central = central else {
             return
         }
         guard central.isScanning else {
             logger.fault("stop denied, already stopped")
-            central = nil
+            self.central = nil
             return
         }
         // Stop scanning
         scanTimer?.cancel()
         scanTimer = nil
         queue.async {
-            self.central.stopScan()
+            central.stopScan()
             self.central = nil
         }
         // Cancel all connections, the resulting didDisconnect and didFailToConnect
@@ -129,7 +129,7 @@ class ConcreteBLEReceiver: NSObject, BLEReceiver, BLEDatabaseDelegate, CBCentral
     func scan(_ source: String) {
         statistics.add()
         logger.debug("scan (source=\(source),statistics={\(statistics.description)})")
-        guard central.state == .poweredOn else {
+        guard central?.state == .poweredOn else {
             logger.fault("scan failed, bluetooth is not powered on")
             return
         }
@@ -226,7 +226,7 @@ class ConcreteBLEReceiver: NSObject, BLEReceiver, BLEDatabaseDelegate, CBCentral
      */
     private func taskScanForPeripherals() {
         // Scan for peripherals -> didDiscover
-        central.scanForPeripherals(
+        central?.scanForPeripherals(
             withServices: [BLESensorConfiguration.serviceUUID],
             options: [CBCentralManagerScanOptionSolicitedServiceUUIDsKey: [BLESensorConfiguration.serviceUUID]])
     }
@@ -235,7 +235,7 @@ class ConcreteBLEReceiver: NSObject, BLEReceiver, BLEDatabaseDelegate, CBCentral
      Register all connected peripherals advertising the sensor service as a device.
      */
     private func taskRegisterConnectedPeripherals() {
-        central.retrieveConnectedPeripherals(withServices: [BLESensorConfiguration.serviceUUID]).forEach() { peripheral in
+        central?.retrieveConnectedPeripherals(withServices: [BLESensorConfiguration.serviceUUID]).forEach() { peripheral in
             let targetIdentifier = TargetIdentifier(peripheral: peripheral)
             let device = database.device(targetIdentifier)
             if device.peripheral == nil || device.peripheral != peripheral {
@@ -255,8 +255,8 @@ class ConcreteBLEReceiver: NSObject, BLEReceiver, BLEDatabaseDelegate, CBCentral
             guard let identifier = UUID(uuidString: device.identifier) else {
                 return
             }
-            let peripherals = central.retrievePeripherals(withIdentifiers: [identifier])
-            if let peripheral = peripherals.last {
+            
+            if let peripherals = central?.retrievePeripherals(withIdentifiers: [identifier]), let peripheral = peripherals.last {
                 logger.debug("taskResolveDevicePeripherals (resolved=\(device))")
                 _ = database.device(peripheral, delegate: self)
             }
@@ -499,13 +499,16 @@ class ConcreteBLEReceiver: NSObject, BLEReceiver, BLEDatabaseDelegate, CBCentral
     private func connect(_ source: String, _ peripheral: CBPeripheral) {
         let device = database.device(peripheral, delegate: self)
         logger.debug("connect (source=\(source),device=\(device))")
-        guard central.state == .poweredOn else {
+        guard central?.state == .poweredOn else {
             logger.fault("connect denied, central not powered on (source=\(source),device=\(device))")
             return
         }
         queue.async {
             device.lastConnectRequestedAt = Date()
-            self.central.retrievePeripherals(withIdentifiers: [peripheral.identifier]).forEach {
+            guard let central = self.central else {
+                return
+            }
+            central.retrievePeripherals(withIdentifiers: [peripheral.identifier]).forEach {
                 if $0.state != .connected {
                     // Check to see if Herald has initiated a connection attempt before
                     if let lastAttempt = device.lastConnectionInitiationAttempt {
@@ -514,17 +517,17 @@ class ConcreteBLEReceiver: NSObject, BLEReceiver, BLEDatabaseDelegate, CBCentral
                             // If timeout reached, force disconnect
                             self.logger.fault("connect, timeout forcing disconnect (source=\(source),device=\(device),elapsed=\(-lastAttempt.timeIntervalSinceNow))")
                             device.lastConnectionInitiationAttempt = nil
-                            self.queue.async { self.central.cancelPeripheralConnection(peripheral) }
+                            self.queue.async { central.cancelPeripheralConnection(peripheral) }
                         } else {
                             // If not timed out yet, keep trying
                             self.logger.debug("connect, retrying (source=\(source),device=\(device),elapsed=\(-lastAttempt.timeIntervalSinceNow))")
-                            self.central.connect($0)
+                            central.connect($0)
                         }
                     } else {
                         // If not, connect now
                         self.logger.debug("connect, initiation (source=\(source),device=\(device))")
                         device.lastConnectionInitiationAttempt = Date()
-                        self.central.connect($0)
+                        central.connect($0)
                     }
                 } else {
                     self.taskInitiateNextAction("connect|" + source, peripheral: $0)
@@ -547,7 +550,7 @@ class ConcreteBLEReceiver: NSObject, BLEReceiver, BLEDatabaseDelegate, CBCentral
             logger.fault("disconnect denied, peripheral not connected or connecting (source=\(source),peripheral=\(targetIdentifier))")
             return
         }
-        queue.async { self.central.cancelPeripheralConnection(peripheral) }
+        queue.async { self.central?.cancelPeripheralConnection(peripheral) }
     }
     
     /// Read RSSI

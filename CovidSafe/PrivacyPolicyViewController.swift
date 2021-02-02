@@ -47,7 +47,7 @@ class PrivacyPolicyViewController: UIViewController, UITextViewDelegate {
         privacyText.delegate = self
         privacyText.addLink(privacyPolicyUrl, enclosedIn: "*")
         privacyText.addLink(privacyPolicyUrl, enclosedIn: "*")
-        privacyText.addLink(URLHelper.getHelpURL(), enclosedIn: "*")
+        privacyText.addLink("\(URLHelper.getHelpURL())#delete-information", enclosedIn: "*")
         privacyText.addLink("https://covidsafe.gov.au", enclosedIn: "*")
         privacyText.addLink(privacyPolicyUrl, enclosedIn: "*")
     }

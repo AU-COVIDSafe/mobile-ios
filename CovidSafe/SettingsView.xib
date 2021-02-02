@@ -43,6 +43,11 @@
                 <action selector="onHelpButtonTapped:" destination="-1" id="2UR-nw-9Yq"/>
             </connections>
         </tapGestureRecognizer>
+        <tapGestureRecognizer id="ebA-TD-KVl" userLabel="ChangePostcodeTapped">
+            <connections>
+                <action selector="onChangePostcodeTapped:" destination="-1" id="iNG-Ve-GWB"/>
+            </connections>
+        </tapGestureRecognizer>
         <tapGestureRecognizer id="hgQ-bq-uf6" userLabel="SupportTapped">
             <connections>
                 <action selector="onSupportTapped:" destination="-1" id="myi-je-bdB"/>
@@ -100,7 +105,7 @@
                             </constraints>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="h36-8c-K2n">
-                            <rect key="frame" x="0.0" y="127" width="414" height="761"/>
+                            <rect key="frame" x="0.0" y="127" width="414" height="914"/>
                             <subviews>
                                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OCo-Pr-qlb" userLabel="ImprovementsView">
                                     <rect key="frame" x="0.0" y="-57" width="414" height="57"/>
@@ -444,8 +449,138 @@
                                         <constraint firstAttribute="bottom" secondItem="kYu-cb-Gkb" secondAttribute="bottom" constant="12" id="G90-Zv-cn9"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9cE-NC-A20" userLabel="Help">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7u-8K-E8H" userLabel="Change Postcode">
                                     <rect key="frame" x="0.0" y="248" width="414" height="153"/>
+                                    <subviews>
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Oj-G6-b8Y">
+                                            <rect key="frame" x="0.0" y="12" width="414" height="129"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dd4-Qa-S65" userLabel="Change Postcode">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="129"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change your postcode" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Plf-GT-hKh">
+                                                            <rect key="frame" x="72" y="16" width="302" height="56.5"/>
+                                                            <accessibility key="accessibilityConfiguration">
+                                                                <accessibilityTraits key="traits" none="YES"/>
+                                                                <bool key="isElement" value="NO"/>
+                                                            </accessibility>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="change_postcode_heading"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChevronRight" translatesAutoresizingMaskIntoConstraints="NO" id="agm-3l-PbL">
+                                                            <rect key="frame" x="382" y="16" width="24" height="24"/>
+                                                            <accessibility key="accessibilityConfiguration">
+                                                                <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                            </accessibility>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="24" id="1Sy-GL-rPo"/>
+                                                                <constraint firstAttribute="height" constant="24" id="aTf-h6-ZNR"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update if your postcode has changed since downloading COVIDSafe." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fg9-8g-tjt">
+                                                            <rect key="frame" x="72" y="72.5" width="302" height="40.5"/>
+                                                            <accessibility key="accessibilityConfiguration">
+                                                                <accessibilityTraits key="traits" none="YES"/>
+                                                                <bool key="isElement" value="NO"/>
+                                                            </accessibility>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="change_postcode_description"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TVZ-fY-LVN">
+                                                            <rect key="frame" x="16" y="16" width="40" height="40"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="fUb-sI-W1p">
+                                                                    <rect key="frame" x="8" y="8" width="24" height="24"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="0.0"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="0.7843137255" green="1" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="7b7-Wj-RGg"/>
+                                                                <constraint firstItem="fUb-sI-W1p" firstAttribute="leading" secondItem="TVZ-fY-LVN" secondAttribute="leading" constant="8" id="OIo-X9-Kh0"/>
+                                                                <constraint firstAttribute="trailing" secondItem="fUb-sI-W1p" secondAttribute="trailing" constant="8" id="hXE-SU-qgw"/>
+                                                                <constraint firstAttribute="width" constant="40" id="iLo-AS-lgH"/>
+                                                                <constraint firstItem="fUb-sI-W1p" firstAttribute="top" secondItem="TVZ-fY-LVN" secondAttribute="top" constant="8" id="qbc-Rv-EZO"/>
+                                                                <constraint firstAttribute="bottom" secondItem="fUb-sI-W1p" secondAttribute="bottom" constant="8" id="yTH-bY-eHm"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="20"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <accessibility key="accessibilityConfiguration" label="Help topics. If you have issues or questions about the app.">
+                                                        <accessibilityTraits key="traits" button="YES"/>
+                                                        <bool key="isElement" value="YES"/>
+                                                    </accessibility>
+                                                    <constraints>
+                                                        <constraint firstItem="Fg9-8g-tjt" firstAttribute="top" secondItem="Plf-GT-hKh" secondAttribute="bottom" id="5Yw-Zg-eHW"/>
+                                                        <constraint firstItem="Fg9-8g-tjt" firstAttribute="trailing" secondItem="Plf-GT-hKh" secondAttribute="trailing" id="Huz-tp-P6o"/>
+                                                        <constraint firstItem="Plf-GT-hKh" firstAttribute="leading" secondItem="TVZ-fY-LVN" secondAttribute="trailing" constant="16" id="Kg3-Sk-ays"/>
+                                                        <constraint firstItem="TVZ-fY-LVN" firstAttribute="leading" secondItem="dd4-Qa-S65" secondAttribute="leading" constant="16" id="Lnj-Ke-lxY"/>
+                                                        <constraint firstAttribute="trailing" secondItem="agm-3l-PbL" secondAttribute="trailing" constant="8" id="Rty-fW-GkW"/>
+                                                        <constraint firstItem="TVZ-fY-LVN" firstAttribute="top" secondItem="dd4-Qa-S65" secondAttribute="top" constant="16" id="hb4-Uu-Ekd"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Fg9-8g-tjt" secondAttribute="bottom" constant="16" id="lve-pk-iBN"/>
+                                                        <constraint firstItem="agm-3l-PbL" firstAttribute="top" secondItem="dd4-Qa-S65" secondAttribute="top" constant="16" id="nG0-ro-QZB"/>
+                                                        <constraint firstItem="agm-3l-PbL" firstAttribute="leading" secondItem="Plf-GT-hKh" secondAttribute="trailing" constant="8" id="ndT-We-pK3"/>
+                                                        <constraint firstItem="Plf-GT-hKh" firstAttribute="top" secondItem="dd4-Qa-S65" secondAttribute="top" constant="16" id="vCf-Qd-EO6"/>
+                                                        <constraint firstItem="Fg9-8g-tjt" firstAttribute="leading" secondItem="Plf-GT-hKh" secondAttribute="leading" id="vQH-n2-6EN"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="ebA-TD-KVl" appends="YES" id="idc-dc-vno"/>
+                                                    </connections>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="dd4-Qa-S65" secondAttribute="bottom" id="1R6-Fq-3Xg"/>
+                                                <constraint firstItem="dd4-Qa-S65" firstAttribute="leading" secondItem="1Oj-G6-b8Y" secondAttribute="leading" id="FrN-ce-fBJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="dd4-Qa-S65" secondAttribute="trailing" id="oyg-Cp-Irt"/>
+                                                <constraint firstItem="dd4-Qa-S65" firstAttribute="top" secondItem="1Oj-G6-b8Y" secondAttribute="top" id="tbd-6E-Bun"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="4"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                    <size key="value" width="0.0" height="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="1Oj-G6-b8Y" secondAttribute="trailing" id="17H-DI-MGo"/>
+                                        <constraint firstItem="1Oj-G6-b8Y" firstAttribute="leading" secondItem="d7u-8K-E8H" secondAttribute="leading" id="4rI-i8-H5O"/>
+                                        <constraint firstItem="1Oj-G6-b8Y" firstAttribute="top" secondItem="d7u-8K-E8H" secondAttribute="top" constant="12" id="A3f-i0-tPn"/>
+                                        <constraint firstAttribute="bottom" secondItem="1Oj-G6-b8Y" secondAttribute="bottom" constant="12" id="Em7-DI-Peg"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9cE-NC-A20" userLabel="Help">
+                                    <rect key="frame" x="0.0" y="401" width="414" height="153"/>
                                     <subviews>
                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="co1-dK-1WU">
                                             <rect key="frame" x="0.0" y="12" width="414" height="129"/>
@@ -578,7 +713,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cN-DY-lc3" userLabel="Support">
-                                    <rect key="frame" x="0.0" y="401" width="414" height="153"/>
+                                    <rect key="frame" x="0.0" y="554" width="414" height="153"/>
                                     <subviews>
                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bE9-gT-Hba">
                                             <rect key="frame" x="0.0" y="12" width="414" height="129"/>
@@ -711,7 +846,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vs9-rS-UOM" userLabel="Share CovidSafe">
-                                    <rect key="frame" x="0.0" y="554" width="414" height="151"/>
+                                    <rect key="frame" x="0.0" y="707" width="414" height="151"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RCa-zU-3Vo">
                                             <rect key="frame" x="0.0" y="12" width="414" height="127"/>
@@ -822,7 +957,7 @@
                                     </constraints>
                                 </view>
                                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ud-ep-9af" userLabel="Get Corona Virus App">
-                                    <rect key="frame" x="0.0" y="705" width="414" height="116"/>
+                                    <rect key="frame" x="0.0" y="858" width="414" height="116"/>
                                     <subviews>
                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I7Y-dd-f2J">
                                             <rect key="frame" x="16" y="16" width="382" height="84"/>
@@ -1009,7 +1144,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZ2-CQ-dtQ" userLabel="Version View">
-                                    <rect key="frame" x="0.0" y="705" width="414" height="56"/>
+                                    <rect key="frame" x="0.0" y="858" width="414" height="56"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version number:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1w-Sl-OIH" userLabel="Version">
                                             <rect key="frame" x="16" y="12" width="382" height="20"/>
@@ -1070,6 +1205,7 @@
         <image name="arrow-left" width="24" height="24"/>
         <image name="bell 1" width="40" height="40"/>
         <image name="chevron-right-red" width="24" height="24"/>
+        <image name="home" width="24" height="24"/>
         <image name="mail" width="24" height="24"/>
         <image name="question-mark" width="13" height="20"/>
         <image name="redcross" width="22" height="22"/>

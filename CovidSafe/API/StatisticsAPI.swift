@@ -12,7 +12,7 @@ class StatisticsAPI: CovidSafeAuthenticatedAPI {
     
     static let keyCovidStatistics = "keyCovidStatistics"
     
-    static func getStatistics(completion: @escaping (StatisticsResponse?, CovidSafeAPIError?) -> Void) {
+    static func getStatistics(forState: StateTerritory = StateTerritory.AU, completion: @escaping (StatisticsResponse?, CovidSafeAPIError?) -> Void) {
         guard let apiHost = PlistHelper.getvalueFromInfoPlist(withKey: "API_Host", plistName: "CovidSafe-config") else {
             completion(nil, .RequestError)
             return
@@ -23,8 +23,11 @@ class StatisticsAPI: CovidSafeAuthenticatedAPI {
             return
         }
         
-        CovidNetworking.shared.session.request("\(apiHost)/statistics",
+        let parameters = ["state" : "\(forState.rawValue)"]
+        
+        CovidNetworking.shared.session.request("\(apiHost)/v2/statistics",
             method: .get,
+            parameters: parameters,
             headers: headers
         ).validate().responseDecodable(of: StatisticsResponse.self) { (response) in
             switch response.result {
@@ -66,6 +69,7 @@ class StatisticsAPI: CovidSafeAuthenticatedAPI {
 struct StatisticsResponse: Codable {
     
     let updatedDate: String?
+    let responseVersion: String?
     
     let national: StateTerritoryStatistics?
     let act: StateTerritoryStatistics?
@@ -88,6 +92,14 @@ struct StatisticsResponse: Codable {
         case tas
         case vic
         case wa
+        case responseVersion = "version"
+    }
+    
+    func version() -> Int {
+        guard let versionStr = responseVersion else {
+            return 0
+        }
+        return Int(versionStr) ?? 0
     }
 }
 
@@ -97,12 +109,32 @@ struct StateTerritoryStatistics: Codable {
     let newCases: Int?
     let recoveredCases: Int?
     let deaths: Int?
+    let newLocallyAcquired: Int?
+    let locallyAcquired: Int?
+    let newOverseasAcquired: Int?
+    let overseasAcquired: Int?
+    let historicalCases: [HistoricalCase]?
     
     enum CodingKeys: String, CodingKey {
         case totalCases = "total_cases"
         case activeCases = "active_cases"
         case newCases = "new_cases"
         case recoveredCases = "recovered_cases"
+        case newLocallyAcquired = "new_locally_acquired"
+        case locallyAcquired = "locally_acquired"
+        case newOverseasAcquired = "new_overseas_acquired"
+        case overseasAcquired = "overseas_acquired"
+        case historicalCases = "historical_cases"
         case deaths
+    }
+}
+
+struct HistoricalCase: Codable {
+    let date: String
+    let newCases: Int
+    
+    enum CodingKeys: String, CodingKey {
+        case date
+        case newCases = "new_cases"
     }
 }

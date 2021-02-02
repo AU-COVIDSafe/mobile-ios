@@ -4,7 +4,7 @@ import KeychainSwift
 import SafariServices
 import Reachability
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, HomeDelegate {
     private var observer: NSObjectProtocol?
     private let reauthenticationNeededKey = "ReauthenticationNeededKey"
     
@@ -98,7 +98,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        covidStatisticsViewController.homeDelegate = self
         scrollView.refreshControl = UIRefreshControl()
         scrollView.refreshControl?.addTarget(self, action: #selector(refreshControlEvent), for: .valueChanged)
         
@@ -150,7 +150,7 @@ class HomeViewController: UIViewController {
         appActiveSubtitleLabelInitialColor = appActiveSubtitleLabel.textColor
         
         setupStatisticsView()
-        getStatistics()
+        
     }
     
     deinit {
@@ -233,7 +233,7 @@ class HomeViewController: UIViewController {
     fileprivate func refreshView() {
         toggleViews()
         performHealthCheck()
-        getStatistics()
+        covidStatisticsViewController.getStatistics()
     }
     
     fileprivate func setupStatisticsView() {
@@ -296,7 +296,7 @@ class HomeViewController: UIViewController {
         }
     }
     
-    fileprivate func isInternetReachable() -> Bool {
+    func isInternetReachable() -> Bool {
         return reachability.connection == .cellular || reachability.connection == .wifi
     }
     
@@ -403,7 +403,7 @@ class HomeViewController: UIViewController {
         guard let currentVersion = (Bundle.main.version as NSString?)?.integerValue else {
             return false
         }
-        if currentVersion >= minVersionShowPolicyUpdate && currentVersion > latestVersionShown {
+        if currentVersion >= minVersionShowPolicyUpdate && latestVersionShown < minVersionShowPolicyUpdate {
             return true
         }
         return false
@@ -480,25 +480,7 @@ class HomeViewController: UIViewController {
         }
     }
     
-    func getStatistics() {
-        if covidStatisticsViewController.showStatistics {
-            self.covidStatisticsViewController.isLoading = true
-            StatisticsAPI.getStatistics { (stats, error) in
-                if error != nil {
-                    switch error {
-                    case .TokenExpiredError:
-                        self.showTokenExpiredMessage()
-                    default:
-                        return
-                    }
-                }
-                
-                self.covidStatisticsViewController.isLoading = false
-                self.covidStatisticsViewController.setupData(statistics: stats, errorType: error, hasInternet: self.isInternetReachable())
-                
-            }
-        }
-    }
+    
     
     // MARK: Reachability
     
@@ -655,10 +637,6 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: StatisticsDelegate {
     
-    func refreshStatistics() {
-        self.getStatistics()
-    }
-    
     func setStatisticsContainerHeight(height: CGFloat) {
         
         self.statisticsSectionHeight.constant = height
@@ -672,4 +650,11 @@ struct TracerRemoteConfig {
     static let defaultShareText = """
         \("share_this_app_content".localizedString(comment: "Share app with friends text"))
         """
+}
+
+// MARK: HomeDelegate
+
+protocol HomeDelegate {
+    func showTokenExpiredMessage()
+    func isInternetReachable() -> Bool
 }

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangePostcodeViewController" customModule="COVIDSafe" customModuleProvider="target">
+            <connections>
+                <outlet property="changePostcodeTextView" destination="dFR-9a-6lw" id="7SU-tL-Bin"/>
+                <outlet property="continueButton" destination="tBK-Xx-2Qg" id="Bkl-EJ-YpL"/>
+                <outlet property="loadingAnimationView" destination="gQH-Hn-8G2" id="Sqr-NC-zmZ"/>
+                <outlet property="postcodeErrorLabel" destination="zjM-x7-Ssn" id="m4h-1K-nwx"/>
+                <outlet property="postcodeTextField" destination="PWw-FK-XIy" id="Rf1-8J-RYO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldo-Ve-6uI">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="623"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5iq-db-QT8" userLabel="ContentView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="412"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4l-jb-1pk">
+                                    <rect key="frame" x="16" y="16" width="44" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="bEe-CV-oL9"/>
+                                        <constraint firstAttribute="width" constant="44" id="cTi-Mm-gtg"/>
+                                    </constraints>
+                                    <state key="normal" image="arrow-left"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="global_back"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="LHE-oL-99H"/>
+                                    </connections>
+                                </button>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="d9L-Dp-tgm">
+                                    <rect key="frame" x="32" y="76" width="350" height="336"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change your postcode" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRI-Ur-hjA">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="33.666666666666664"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                                            </accessibility>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="change_postcode_heading"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dFR-9a-6lw">
+                                            <rect key="frame" x="0.0" y="57.666666666666657" width="350" height="192"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="tintColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <string key="text">Have you moved to a different postcode area since you registered to use COVIDSafe? Keeping your postcode up to date can assist health officials to undertake contact tracing.  
+
+Read the COVIDSafe privacy policy for further details about how your information is stored and shared.</string>
+                                            <color key="textColor" systemColor="labelColor"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="change_postcode_intro"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </textView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Bbm-7m-gl2">
+                                            <rect key="frame" x="0.0" y="273.66666666666669" width="350" height="62.333333333333314"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current postcode in Australia" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar6-32-wnU">
+                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="20.333333333333332"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                                                    </accessibility>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="personal_details_post_code"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PWw-FK-XIy">
+                                                    <rect key="frame" x="0.0" y="28.333333333333314" width="350" height="34"/>
+                                                    <accessibility key="accessibilityConfiguration" label="postcode"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" smartInsertDeleteType="no" textContentType="tel"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="0.074509803920000006" green="0.074509803920000006" blue="0.074509803920000006" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="personal_details_post_code"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Postcode number must contain 4 digits." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjM-x7-Ssn">
+                                                    <rect key="frame" x="0.0" y="62.333333333333314" width="350" height="0.0"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                    <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="personal_details_post_code_error_prompt"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="d9L-Dp-tgm" secondAttribute="bottom" id="7jr-sy-Voa"/>
+                                <constraint firstItem="P4l-jb-1pk" firstAttribute="top" secondItem="5iq-db-QT8" secondAttribute="top" constant="16" id="8Td-CZ-x3h"/>
+                                <constraint firstItem="P4l-jb-1pk" firstAttribute="leading" secondItem="5iq-db-QT8" secondAttribute="leading" constant="16" id="RQG-GS-3nA"/>
+                                <constraint firstItem="d9L-Dp-tgm" firstAttribute="top" secondItem="P4l-jb-1pk" secondAttribute="bottom" constant="16" id="sKo-QN-lWh"/>
+                                <constraint firstAttribute="trailing" secondItem="d9L-Dp-tgm" secondAttribute="trailing" constant="32" id="sPl-PQ-E73"/>
+                                <constraint firstItem="d9L-Dp-tgm" firstAttribute="leading" secondItem="5iq-db-QT8" secondAttribute="leading" constant="32" id="xLJ-Bh-6g9"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="5iq-db-QT8" secondAttribute="trailing" id="CPD-sU-5ut"/>
+                        <constraint firstItem="5iq-db-QT8" firstAttribute="width" secondItem="ldo-Ve-6uI" secondAttribute="width" id="K7y-wl-jTV"/>
+                        <constraint firstItem="5iq-db-QT8" firstAttribute="top" secondItem="ldo-Ve-6uI" secondAttribute="top" id="cNr-j5-btK"/>
+                        <constraint firstAttribute="bottom" secondItem="5iq-db-QT8" secondAttribute="bottom" id="j5O-tI-f0o"/>
+                        <constraint firstItem="5iq-db-QT8" firstAttribute="leading" secondItem="ldo-Ve-6uI" secondAttribute="leading" id="ls6-tz-bjX"/>
+                    </constraints>
+                </scrollView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQH-Hn-8G2">
+                    <rect key="frame" x="166.66666666666666" y="639" width="81" height="81"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="81" id="gCl-hX-dCE"/>
+                        <constraint firstAttribute="height" constant="81" id="qP7-0F-nVz"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBK-Xx-2Qg">
+                    <rect key="frame" x="32" y="655" width="350" height="49"/>
+                    <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="49" id="AW1-PY-h3Y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <state key="normal" title="Continue">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" red="0.31372549020000001" green="0.31764705879999999" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="personal_details_button"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="continueButtonTapped:" destination="-1" eventType="touchUpInside" id="KEb-Z1-9Yf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ldo-Ve-6uI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="5Qu-yX-jTa"/>
+                <constraint firstItem="tBK-Xx-2Qg" firstAttribute="top" secondItem="ldo-Ve-6uI" secondAttribute="bottom" constant="32" id="IiN-Cx-hQ2"/>
+                <constraint firstItem="ldo-Ve-6uI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="K7P-LQ-uUq"/>
+                <constraint firstItem="gQH-Hn-8G2" firstAttribute="top" secondItem="ldo-Ve-6uI" secondAttribute="bottom" constant="16" id="Qta-Tt-mVg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tBK-Xx-2Qg" secondAttribute="trailing" constant="32" id="VAF-UW-5Cy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ldo-Ve-6uI" secondAttribute="trailing" id="ejL-3o-0T0"/>
+                <constraint firstItem="gQH-Hn-8G2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jX8-IY-6rc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="gQH-Hn-8G2" secondAttribute="bottom" constant="16" id="ptk-6E-DHJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tBK-Xx-2Qg" secondAttribute="bottom" constant="32" id="q9g-Zb-9dk"/>
+                <constraint firstItem="tBK-Xx-2Qg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="xg9-3T-e7s"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="85.59782608695653"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow-left" width="24" height="24"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,11 +1,13 @@
-"28_days" = "28 days";
-"7_days" = "7 days";
 "action_continue" = "Continue";
 "action_report_an_issue" = "Report an issue";
 "action_upload_done" = "Done";
 "action_verify_invalid_pin" = "Invalid PIN, please ask the health official to send you another PIN.";
 "action_verify_upload_pin" = "Upload my information";
 "active_cases" = "Active cases (estimated)";
+"activity_button" = "Check app activity";
+"activity_button_description" = "View your app's Bluetooth interactions with other COVIDSafe users.";
+"activity_heading" = "App activity";
+"activity_intro" = "Every time your device is in range of other COVIDSafe app users, it takes note of Bluetooth interactions called 'Bluetooth handshakes'.\n\nThese handshakes give an indication of how well your app is working.";
 /* Figma page iOS Screens (05/06) */
 "allow_bluetooth_call" = "Allow COVIDSafe to access Bluetooth®";
 /* Figma page iOS Screens (05/06) */
@@ -13,16 +15,22 @@
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothON" = "Access to Bluetooth®: ON";
 "australian_capital_territory" = "Australian Capital Territory";
+"ble_handshakes_yesterday" = "Bluetooth handshakes yesterday";
+"bluetooth_handshakes" = "Bluetooth handshakes";
 /* Figma page iOS Screens (05/06) */
 "BluetoothOFF" = "Bluetooth®: OFF";
 /* Figma page iOS Screens (05/06) */
 "BluetoothOFF_content" = "Turn on your phone’s Bluetooth®. Select ‘Allow New Connections’ if displayed.";
 /* Figma page iOS Screens (05/06) */
 "BluetoothON" = "Bluetooth®: ON";
+"cancel_snooze" = "Cancel snooze";
 "cases_28_days" = "New cases in the last 28 days";
 "cases_7_days" = "New cases in the last 7 days";
 "change_language" = "Change language";
 "change_language_content" = "Read the guide on using COVIDSafe in a different language.";
+"change_postcode_description" = "Update if your postcode has changed since downloading COVIDSafe.";
+"change_postcode_heading" = "Change your postcode";
+"change_postcode_intro" = "Have you moved to a different postcode area since you registered to use COVIDSafe? \n\nKeeping your postcode up to date can assist health officials to undertake contact tracing.  \n\nRead the *COVIDSafe privacy policy* and *collection notice* for further details about how your information is stored and shared.";
 "collection_message" = "COVIDSafe now collects diagnostic information to help you troubleshoot issues with your App. *Learn more*";
 "consent_button" = "I agree";
 /* Shared Consent Actions */
@@ -238,9 +246,10 @@
 "country_region_name_za" = "South Africa";
 "country_region_name_zm" = "Zambia";
 "country_region_name_zw" = "Zimbabwe";
+"customise_days" = "Customise days";
 "data_privacy_button" = "Next";
-"data_privacy_content" = "It is important that you read the COVIDSafe *privacy policy* before you register for COVIDSafe.\n\nIf you are under 16 years of age, your parent/guardian must also read the *privacy policy*.\n\nUse of COVIDSafe is completely voluntary. You can install or delete the application at any time. If you delete COVIDSafe, *you may also ask for your information* to be deleted from the secure server.\n\nTo register for COVIDSafe, you will need to enter a name (or pseudonym), mobile number, age range and postcode.\n\nInformation you submit when you register and information about your use of COVIDSafe is stored on a highly secure server.\n\nInformation is also collected to make sure that COVIDSafe is working properly on your device. This includes your operating system, the version of the App you have installed, the language your device is set to, whether Bluetooth® is working and if your App has recorded any encounters in the previous seven days.\n\nCOVIDSafe will not collect your location information.\n\nCOVIDSafe will note the date and time of contact, anonymous ID code of other COVIDSafe users you come into contact with, Bluetooth signal strength and the phone model of other users, on your device.\n\nOther COVIDSafe users you come into contact with will note your anonymous ID code, the date and time of contact with you, Bluetooth signal strength and your phone model, on their device.\n\nIf another user tests positive to COVID-19, they may upload their contact information and a state or territory health official may contact you for contact tracing purposes.\n\nYour registration details will only be used or disclosed for contact tracing and for the proper and lawful functioning of COVIDSafe.\n\nMore information is available at the *covidsafe.gov.au* website.\n\nSee the COVIDSafe *privacy policy* for further details about your rights about your information and how it will be handled and shared.";
-"data_privacy_content_VO" = "It is important that you read the COVIDSafe privacy policy before you register for COVIDSafe.\n\nIf you are under 16 years of age, your parent/guardian must also read the privacy policy.\n\nUse of COVIDSafe is completely voluntary. You can install or delete the application at any time. If you delete COVIDSafe, you may also ask for your information to be deleted from the secure server.\n\nTo register for COVIDSafe, you will need to enter a name (or pseudonym), mobile number, age range and postcode.\n\nInformation you submit when you register and information about your use of COVIDSafe is stored on a highly secure server.\n\nInformation is also collected to make sure that COVIDSafe is working properly on your device. This includes your operating system, the version of the App you have installed, the language your device is set to, whether Bluetooth is working and if your App has recorded any encounters in the previous seven days.\n\nCOVIDSafe will not collect your location information.\n\nCOVIDSafe will note the date and time of contact, anonymous ID code of other COVIDSafe users you come into contact with, Bluetooth signal strength and the phone model of other users, on your device.\n\nOther COVIDSafe users you come into contact with will note your anonymous ID code, the date and time of contact with you, Bluetooth signal strength and your phone model, on their device.\n\nIf another user tests positive to COVID-19, they may upload their contact information and a state or territory health official may contact you for contact tracing purposes.\n\nYour registration details will only be used or disclosed for contact tracing and for the proper and lawful functioning of COVIDSafe.\n\nMore information is available at the covidsafe.gov.au website.\n\nSee the COVIDSafe privacy policy for further details about your rights about your information and how it will be handled and shared.";
+"data_privacy_content" = "It is important that you read the COVIDSafe *privacy policy* before you register for COVIDSafe.\n\nCOVIDSafe will collect, use or disclose your personal information only in accordance with this policy and the Privacy Act 1988.\n\nIf you are under 16 years of age, your parent/guardian must also read the *privacy policy*.\n\nUse of COVIDSafe is completely voluntary. You can install or delete the application at any time. If you delete COVIDSafe, *you may also ask for your information* to be deleted from the secure server.\n\nTo register for COVIDSafe, you will need to enter a name (or pseudonym), mobile number, age range and postcode.\n\nInformation you submit when you register and information about your use of COVIDSafe is stored on a highly secure server.\n\nInformation is also collected to make sure that COVIDSafe is working properly on your device. This includes your operating system, the version of the App you have installed, the language your device is set to, whether Bluetooth® is working and if your App has recorded any encounters in the previous seven days.\n\nCOVIDSafe will not collect your location information.\n\nCOVIDSafe will note the date and time of contact, anonymous ID code of other COVIDSafe users you come into contact with, Bluetooth signal strength and the phone model of other users, on your device.\n\nOther COVIDSafe users you come into contact with will note your anonymous ID code, the date and time of contact with you, Bluetooth signal strength and your phone model, on their device.\n\nIf another user tests positive to COVID-19, they may upload their contact information and a state or territory health official may contact you for contact tracing purposes.\n\nYour registration details will only be used or disclosed for contact tracing and for the proper and lawful functioning of COVIDSafe.\n\nMore information is available at the *covidsafe.gov.au* website.\n\nSee the COVIDSafe *privacy policy* for further details about your rights about your information and how it will be handled and shared.";
+"data_privacy_content_VO" = "It is important that you read the COVIDSafe privacy policy before you register for COVIDSafe.\n\nCOVIDSafe will collect, use or disclose your personal information only in accordance with this policy and the Privacy Act 1988.\n\nIf you are under 16 years of age, your parent/guardian must also read the privacy policy.\n\nUse of COVIDSafe is completely voluntary. You can install or delete the application at any time. If you delete COVIDSafe, you may also ask for your information to be deleted from the secure server.\n\nTo register for COVIDSafe, you will need to enter a name (or pseudonym), mobile number, age range and postcode.\n\nInformation you submit when you register and information about your use of COVIDSafe is stored on a highly secure server.\n\nInformation is also collected to make sure that COVIDSafe is working properly on your device. This includes your operating system, the version of the App you have installed, the language your device is set to, whether Bluetooth is working and if your App has recorded any encounters in the previous seven days.\n\nCOVIDSafe will not collect your location information.\n\nCOVIDSafe will note the date and time of contact, anonymous ID code of other COVIDSafe users you come into contact with, Bluetooth signal strength and the phone model of other users, on your device.\n\nOther COVIDSafe users you come into contact with will note your anonymous ID code, the date and time of contact with you, Bluetooth signal strength and your phone model, on their device.\n\nIf another user tests positive to COVID-19, they may upload their contact information and a state or territory health official may contact you for contact tracing purposes.\n\nYour registration details will only be used or disclosed for contact tracing and for the proper and lawful functioning of COVIDSafe.\n\nMore information is available at the covidsafe.gov.au website.\n\nSee the COVIDSafe privacy policy for further details about your rights about your information and how it will be handled and shared.";
 /* OnBoarding Data Privacy */
 "data_privacy_headline" = "Registration and privacy";
 "deaths" = "Deaths";
@@ -250,6 +259,7 @@
 "dialog_uploading_message" = "Your COVIDSafe information is currently being uploaded.\n\nPlease do not close the app.";
 "dismiss" = "Dismiss";
 "done_success" = "Done";
+"edit_snooze_calendar" = "Edit snooze calendar";
 "enter_number_button" = "Get PIN";
 "enter_number_content" = "We’ll send you a 6-digit PIN to verify your mobile number.";
 "enter_number_headline" = "Enter your mobile number";
@@ -262,6 +272,15 @@
 "enter_pin_wrong_number" = "Is this mobile number wrong?";
 /* Figma page Android Screens (05/06) */
 "Enter_your_mobile_number_label" = "Enter your mobile number";
+"every_day" = "Every day";
+"factors_dotpoint1" = "number of COVIDSafe users in range";
+"factors_dotpoint2" = "device model and age";
+"factors_dotpoint3" = "if you’re in a moving vehicle";
+"factors_enviro_item_1" = "physical barriers like walls";
+"factors_enviro_item_2" = "material and fixtures that interfere with Bluetooth signals";
+"factors_handshakes_heading" = "Factors that impact app activity";
+"factors_intro" = "Factors that can affect the number of handshakes include:";
+"factors_intro_2" = "Handshakes can also be affected by environmental factors, including:";
 "global_back" = "Back";
 "global_close" = "Close";
 "global_double_tap" = "double tap to edit";
@@ -298,7 +317,16 @@
 "home_set_complete_external_link_share_title" = "Share COVIDSafe";
 "home_setup_help" = "Help";
 "home_version_number_ios" = "Version %@, Build %@";
+"hotspot_link_ACT" = "https://www.covid19.act.gov.au/community/travel";
+"hotspot_link_NSW" = "https://www.nsw.gov.au/covid-19/latest-news-and-updates";
+"hotspot_link_NT" = "https://coronavirus.nt.gov.au/travel/quarantine/hotspots-covid-19";
+"hotspot_link_QLD" = "https://www.qld.gov.au/health/conditions/health-alerts/coronavirus-covid-19/current-status/hotspots-covid-19";
+"hotspot_link_SA" = "https://sahealth.sa.gov.au/covidcontacttracing";
+"hotspot_link_TAS" = "https://coronavirus.tas.gov.au/";
+"hotspot_link_VIC" = "https://www.dhhs.vic.gov.au/case-locations-and-outbreaks";
+"hotspot_link_WA" = "https://www.wa.gov.au/government/covid-19-coronavirus";
 "hotspots_state_territory" = "Hotspots in %@";
+"hour" = "Hour";
 "how_it_works_button" = "Next";
 "how_it_works_content" = "Bluetooth® signals are used to determine when you're near another COVIDSafe user.\n\nEvery instance of close contact between you and other COVIDSafe users is noted to create contact data. This information is encrypted and only stored in your phone.\n\nIf you test positive to COVID-19 as a COVIDSafe user, a state or territory health official will contact you. They will assist with voluntary upload of your contact data to a highly secure information storage system.\n\nState or territory health officials can also contact you if you came in close contact with another COVIDSafe user who tested positive.\n\nFor more information please refer to the *Help Topics* page.";
 /* OnBoarding How it works */
@@ -319,15 +347,28 @@
 "IntroLabel" = "Help stop the spread\nand save lives.";
 "invalid_australian_phone_number_error_prompt" = "Australian mobile numbers contain a maximum of 10 digits.";
 "invalid_norfolk_island_phone_number_error_prompt" = "Mobile numbers in Norfolk Island contain 5 to 6 digits.";
+"is_snoozed" = "COVIDSafe is snoozed";
+"is_snoozed_description" = "COVIDSafe is not using Bluetooth and is not recording contacts.";
 "jwt_description" = "There is an issue with your registration details.";
+"jwt_expired" = "Your registration has expired.";
+"jwt_expired_description" = "You must confirm your mobile number every 12 months  to ensure your registration details are correct.";
 "jwt_heading" = "Please register again";
 "jwt_success" = "Registration successfully renewed";
+"last_7_days" = "Last 7 days";
+"learn_more" = "Learn more";
 "loading_numbers" = "Loading latest numbers";
 "locally_acquired" = "%@ locally acquired";
 "location_off" = "Location: OFF";
 "location_off_description" = "Your iPhone requires Location permission for COVIDSafe to work. COVIDSafe does NOT track or store your location data.";
+"low_handshakes_description" = "Try these tips to improve the performance of COVIDSafe on your phone:";
+"low_handshakes_heading" = "What to do if your handshake numbers are lower than you expect";
+"low_handshakes_item1" = "Check if COVIDSafe is active by opening the app.";
+"low_handshakes_item2" = "Update your app to the latest version through the Google Play Store or Apple Store.";
+"low_handshakes_item3" = "Restart your phone and open the app again.";
+"low_handshakes_link" = "Read more on how to check if COVIDSafe is working correctly";
 /* Splash Screen */
 "migration_in_progress" = " COVIDSafe update in progress. \n\n Please make sure you phone is not switched off until the update is complete.";
+"minute" = "Minute";
 "national_numbers" = "National numbers";
 "new_cases" = "New cases in the last 24 hours";
 "new_cases_total" = "New cases since 1 Feb 2020";
@@ -351,6 +392,7 @@
 "numbers_no_internet" = "Connect to the internet to ensure you get updated numbers.";
 "numbers_refresh" = "Refresh now";
 "options_for_australia" = "Options for Australia";
+"OS2b_Item_4" = "4. Your iPhone requires Location permission for COVIDSafe to work. *COVIDSafe does NOT collect, store or use your location data*";
 "overseas_acquired" = "%@ acquired overseas";
 "permission_button" = "Proceed";
 /* Figma page iOS Screens (05/06) */
@@ -384,6 +426,9 @@
 "PN_ReminderBody" = "Open COVIDSafe to ensure it is running.";
 /* Figma page iOS Screens (05/06) */
 "PN_ReminderTitle" = "No encounters detected for 48 hours";
+"postcode_api_error" = "There was an error. Check your internet connection and try again.";
+"postcode_change_label" = "Current postcode in Australia ";
+"postcode_success" = "Your postcode has been updated";
 "PostcodeValidationErrorMessage" = "Please enter a valid Australian postcode.";
 "queensland" = "Queensland";
 "recovered" = "Total cases recovered";
@@ -393,15 +438,36 @@
 /* Onboarding Registration Consent */
 "registration_consent_headline" = "Registration consent";
 "registration_consent_second_paragraph" = "information about my contact with other COVIDSafe users, if another user I have come into contact with tests positive for COVID-19 and uploads their contact data";
+"save" = "Save";
+"scheduled" = "You scheduled COVIDSafe to snooze from %@ to %@.";
 /* OnBoarding Enter Number */
 "select_country_or_region" = "Select country or region";
 /* Figma page Android Screens (05/06) */
 "Select_country_or_region_headline" = "Select country or region";
+"select_state_territory_button" = "Select state or territory";
+"select_state_territory_heading" = "Select state or territory";
+"set_snooze_time" = "Set snooze time";
 "settings" = "Settings";
+"seven_days" = "7 days";
 "share_this_app_content" = "Join me in stopping the spread of COVID-19! Download COVIDSafe, an app from the Australian Government. #COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
 "show" = "Show";
+"snooze_button" = "Snooze";
+"snooze_calendar_button" = "Snooze calendar";
+"snooze_calendar_description" = "Set days and times you want to snooze COVIDSafe.";
+"snooze_calendar_toggle" = "Snooze calendar";
+"snooze_covidsafe_button" = "Snooze COVIDSafe";
+"snooze_covidsafe_button_description" = "Snooze COVIDSafe for a specific length of time.";
+"snooze_ended" = "Snooze has ended.";
+"snooze_ends" = "Snooze ends in";
+"snooze_from" = "Snooze from";
+"snooze_heading" = "Snooze COVIDSafe";
+"snooze_on" = "Snooze on %@";
+"snooze_timer_description" = "Set a timer to snooze COVIDSafe.";
+"snooze_to" = "Snooze to";
+"snoozed_calendar_description" = "COVIDSafe is not using Bluetooth and is not recording contacts.\n\nYou scheduled COVIDSafe to snooze from %@ to %@.";
 "south_australia" = "South Australia";
 "state_number_heading" = "%@ numbers";
+"states_territories" = "States and territories";
 "stepCounter" = "Step %d of %d";
 "support" = "Support";
 "support_content" = "For assistance on issues not covered by Help topics";
@@ -411,6 +477,8 @@
 "total_confirmed_cases" = "Total confirmed cases";
 "total_deaths" = "%@ total deaths";
 "total_per_state" = "Total confirmed cases by state and territory";
+"twenty_eight_days" = "28 days";
+"type_in_time" = "Type in time";
 "UILaunchStoryboardName" = "LaunchScreen_en";
 "under_sixteen_content" = "I confirm my parent or guardian consents to the Digital Transformation Agency as data store administrator, under legal determination made by the Secretary of the Australian Government Department of Health collecting:";
 "under_sixteen_first_paragraph" = "my registration information";
@@ -425,8 +493,7 @@
 "update_available_dismiss_btn" = "Remind me later";
 "update_available_message_ios" = "We’ve been making improvements to COVIDSafe. Update through the App Store";
 "update_available_title" = "Update available!";
-"update_description" = "This update improves COVIDSafe’s Bluetooth performance to better capture your close contacts.\n\nThis update requests access to your #Location Services# for COVIDSafe to work. \n\nYour location is used to send you relevant COVID-19 alerts and to optimise COVIDSafe performance.\nThese alerts will contain important information and updates for your state or territory.\n\n<a href=\"https://www.covidsafe.gov.au/help-topics.html#herald\">Find out more about how we’ve improved COVIDSafe.</a>";
-"update_description_VO" = "This update improves COVIDSafe’s Bluetooth performance to better capture your close contacts.\n\nThis update requests access to your #Location Services# for COVIDSafe to work. \n\nYour location is used to send you relevant COVID-19 alerts and to optimise COVIDSafe performance.\nThese alerts will contain important information and updates for your state or territory.\n\nFind out more about how we’ve improved COVIDSafe.";
+"update_description" = "In this update COVIDSafe will request access to Location Services.\n\nThis improves Bluetooth performance when identifying close contacts.\n\n<a href=\"https://www.covidsafe.gov.au/help-topics.html#location-permissions\">COVIDSafe does not collect, store or use location data.</a> \n\nRead the <a href=\"https://covidsafe.gov.au/privacy-policy.html\">privacy policy</a> to find out more about how your personal information is handled.\n\n<a href=\"https://www.covidsafe.gov.au/help-topics.html#herald\">Find out more about how we’ve improved COVIDSafe.</a>";
 "update_heading" = "Enable Location Services";
 "update_modal_button" = "Proceed";
 "upload_answer_no" = "No";
@@ -448,6 +515,7 @@
 "victoria" = "Victoria";
 "western_australia" = "Western Australia";
 "wrong_ping_number" = " Wrong PIN entered";
+"yesterday_activity" = "Yesterday";
 "country_region_name_au2" = "Norfolk Island";
 "AllowBluetoothOFF_VOLabel" = "Access to Bluetooth: OFF Allow COVIDSafe to access Bluetooth";
 "AllowBluetoothON_VOLabel" = "Access to Bluetooth: ON";
