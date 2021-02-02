@@ -15,7 +15,7 @@ extension String {
         
         var localizedString = NSLocalizedString(self, comment: comment)
         
-        if localizedString == self {
+        if localizedString == self || localizedString == "" {
             // No localized string exists.  Retrieve the display string
             // from the base strings file.
             var bundleForString: Bundle

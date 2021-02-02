@@ -49,8 +49,17 @@ struct URLHelper {
         return buildLocalisedURL(path: "privacy-policy")
     }
     
+    static func getCollectionNoticeURL() -> String {
+        // "https://covidsafe.gov.au/collection-notice.html"
+        return buildLocalisedURL(path: "collection-notice")
+    }
+    
     static func getAustralianNumberURL() -> String {
         return "\(getHelpURL())#verify-mobile-number-pin"
+    }
+    
+    static func geLocationPermissionsURL() -> String {
+        return "\(getHelpURL())#location-permissions"
     }
     
 }

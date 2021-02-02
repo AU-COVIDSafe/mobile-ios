@@ -1,11 +1,13 @@
-"28_days" = "";
-"7_days" = "";
 "action_continue" = "Continua";
 "action_report_an_issue" = "Segnala un problema";
 "action_upload_done" = "Eseguito";
-"action_verify_invalid_pin" = "PIN non valido, chiedi al funzionario sanitario d'inviarti un altro PIN.";
+"action_verify_invalid_pin" = "PIN non valido, chiedi al funzionario sanitario d'inviare un altro PIN.";
 "action_verify_upload_pin" = "Carica i miei dati";
-"active_cases" = "";
+"active_cases" = "Casi attivi (stimati)";
+"activity_button" = "Controlla l'attività dell'app";
+"activity_button_description" = "Visualizza le interazioni Bluetooth della tua app con altri utenti COVIDSafe.";
+"activity_heading" = "Attività dell'app";
+"activity_intro" = "Ogni volta che il tuo dispositivo si trova nel raggio di altri utenti dell'app COVIDSafe, prende nota delle interazioni Bluetooth chiamate \"strette di mano Bluetooth\". \n\n Queste strette di mano danno un'indicazione del funzionamento della tua app.";
 /* Figma page iOS Screens (05/06) */
 "allow_bluetooth_call" = "Consenti al COVIDSafe di accedere al Bluetooth®";
 /* Figma page iOS Screens (05/06) */
@@ -13,16 +15,22 @@
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothON" = "Accesso al Bluetooth®: ON";
 "australian_capital_territory" = "Australian Capital Territory";
+"ble_handshakes_yesterday" = "Strette di mano Bluetooth ieri";
+"bluetooth_handshakes" = "Strette di mano Bluetooth";
 /* Figma page iOS Screens (05/06) */
 "BluetoothOFF" = "Bluetooth®: OFF";
 /* Figma page iOS Screens (05/06) */
-"BluetoothOFF_content" = "Attiva il Bluetooth® del tuo cellulare. Seleziona \"Consenti nuove connessioni\" se visualizzato.";
+"BluetoothOFF_content" = "Attiva il Bluetooth® sul cellulare. Seleziona \"Consenti nuove connessioni\" se visualizzato.";
 /* Figma page iOS Screens (05/06) */
 "BluetoothON" = "Bluetooth®: ON";
-"cases_28_days" = "";
-"cases_7_days" = "";
+"cancel_snooze" = "Annulla lo snooze";
+"cases_28_days" = "Nuovi casi negli ultimi 28 giorni";
+"cases_7_days" = "Nuovi casi negli ultimi 7 giorni";
 "change_language" = "Cambia lingua";
 "change_language_content" = "Leggi la guida sull'uso di COVIDSafe in un'altra lingua.";
+"change_postcode_description" = "Aggiorna il codice postale, se è cambiato da quando hai scaricato COVIDSafe.";
+"change_postcode_heading" = "Cambia il codice postale";
+"change_postcode_intro" = "";
 "collection_message" = "COVIDSafe raccoglie ora informazioni diagnostiche per aiutarti a risolvere i problemi con l'App. *Per saperne di più*";
 "consent_button" = "Sono d'accordo";
 /* Shared Consent Actions */
@@ -102,7 +110,7 @@
 "country_region_name_gl" = "Groenlandia";
 "country_region_name_gm" = "Gambia";
 "country_region_name_gn" = "Guinea";
-"country_region_name_gp" = "Guadalupa";
+"country_region_name_gp" = "Guadalupe";
 "country_region_name_gq" = "Guinea Equatoriale";
 "country_region_name_gr" = "Grecia";
 "country_region_name_gt" = "Guatemala";
@@ -182,7 +190,7 @@
 "country_region_name_ph" = "Filippine";
 "country_region_name_pk" = "Pakistan";
 "country_region_name_pl" = "Polonia";
-"country_region_name_pr" = "Puerto Rico";
+"country_region_name_pr" = "Portorico ";
 "country_region_name_ps" = "Territori palestinesi";
 "country_region_name_pt" = "Portogallo";
 "country_region_name_pw" = "Palau";
@@ -238,8 +246,9 @@
 "country_region_name_za" = "Sudafrica";
 "country_region_name_zm" = "Zambia";
 "country_region_name_zw" = "Zimbabwe";
+"customise_days" = "Personalizza i giorni";
 "data_privacy_button" = "Avanti";
-"data_privacy_content" = "È importante leggere l'informativa sulla privacy * COVIDSafe * prima di registrarti a COVIDSafe.\n\nSe hai meno di 16 anni, il tuo genitore / tutore deve anche leggere l'\"informativa sulla privacy*.\n\nL'uso di COVIDSafe è completamente volontario. È possibile installare o eliminare l'applicazione in qualsiasi momento. Se elimini COVIDSafe, *potresti anche chiedere che le tue informazioni* siano eliminate dal server sicuro.\n\nPer registrarti a COVIDSafe, dovrai inserire un nome (o pseudonimo), un numero di cellulare, una fascia d'età e un codice postale.\n\nLe informazioni inviate al momento della registrazione e le informazioni sull'utilizzo di COVIDSafe vengono archiviate su un server altamente sicuro.\n\nVengono inoltre raccolte informazioni per assicurarsi che COVIDSafe funzioni correttamente sul dispositivo. Ciò include il tuo sistema operativo, la versione dell'App che hai installato, la lingua su cui è impostato il tuo dispositivo, se Bluetooth® funziona e se la tua App ha registrato incontri nei sette giorni precedenti.\n\nCOVIDSafe non raccoglierà le informazioni sulla tua posizione.\n\nCOVIDSafe noterà la data e l'ora del contatto, il codice ID anonimo di altri utenti COVIDSafe con cui si entra in contatto, la potenza del segnale Bluetooth e il modello di telefono di altri utenti, sul dispositivo.\n\nAltri utenti COVIDSafe con cui vieni in contatto noteranno il tuo codice ID anonimo, la data e l'ora di contatto con te, la potenza del segnale Bluetooth e il tuo modello di telefono, sul loro dispositivo.\n\nSe un altro utente è positivo al COVID-19, può caricare le informazioni di contatto e un funzionario sanitario dello stato o del territorio può contattarti a scopo di tracciamento dei contatti.\n\nI tuoi dati di registrazione saranno utilizzati o divulgati solo per il tracciamento dei contatti e per il corretto e legittimo funzionamento di COVIDSafe.\n\nUlteriori informazioni sono disponibili sul sito web *covidsafe.gov.au*.\n\nConsulta l'informativa sulla privacy *COVIDSafe* per ulteriori dettagli sui tuoi diritti sulle tue informazioni e su come verranno gestite e condivise.";
+"data_privacy_content" = "È importante leggere l'informativa sulla privacy * COVIDSafe * prima di registrarti a COVIDSafe.\n\nSe hai meno di 16 anni, anche il tuo genitore o chi ne fa le veci deve  leggere l'\"informativa sulla privacy*.\n\nL'uso di COVIDSafe è volontario. È possibile installare o eliminare l'applicazione in qualsiasi momento. Se elimini COVIDSafe, *potresti anche chiedere che le tue informazioni* siano eliminate dal server sicuro.\n\nPer registrarti a COVIDSafe, dovrai inserire nome (o pseudonimo), numero di cellulare, fascia d'età e codice postale.\n\nLe informazioni inviate al momento della registrazione e le informazioni sull'utilizzo di COVIDSafe vengono archiviate su un server altamente sicuro.\n\nVengono inoltre raccolte informazioni per assicurarsi che COVIDSafe funzioni correttamente sul dispositivo. Ciò include il tuo sistema operativo, la versione dell'App che hai installato, la lingua su cui è impostato il tuo dispositivo, il funzionamento di Bluetooth®e se l'App ha registrato incontri nei sette giorni precedenti.\n\nCOVIDSafe non raccoglierà le informazioni sulla tua posizione.\n\nCOVIDSafe noterà la data e l'ora del contatto, il codice ID anonimo di altri utenti COVIDSafe con cui si entra in contatto, la potenza del segnale Bluetooth e il modello di telefono di altri utenti, sul dispositivo.\n\nGli utenti COVIDSafe con cui vieni in contatto noteranno il tuo codice ID anonimo, la data e l'ora di contatto con te, la potenza del segnale Bluetooth e il tuo modello di telefono, sul loro dispositivo.\n\nSe un altro utente è positivo al COVID-19, può caricare le informazioni di contatto e un funzionario sanitario dello stato o del territorio può contattarti a scopo di tracciamento dei contatti.\n\nI dati di registrazione saranno utilizzati o divulgati solo per il tracciamento dei contatti e per il corretto e legittimo funzionamento di COVIDSafe.\n\nUlteriori informazioni sono disponibili sul sito web *covidsafe.gov.au*.\n\nConsulta l'informativa sulla privacy *COVIDSafe* per ulteriori dettagli sui tuoi diritti sulle tue informazioni e su come verranno gestite e condivise.";
 "data_privacy_content_VO" = "Leggi *l'informativa sulla privacy* prima di eseguire la registrazione a COVIDSafe. \n\n*L'informativa sulla privacy* deve essere letta anche dai genitori/chi ne fa le veci dei minori di 16 anni. \n\nL'uso di COVIDSafe è volontario. È possibile installare o eliminare l'applicazione in qualsiasi momento. Se si elimina COVIDSafe, si può anche richiedere la cancellazione delle informazioni dal server protetto \n\nPer registrarti a COVIDSafe, inserisci nome (o pseudonimo), numero di cellulare, fascia di età e codice postale. \n\nLe informazioni inviate al momento della registrazione e quelle sull'utilizzo di COVIDSafe vengono raccolte e archiviate su un server altamente protetto. \n\nLe informazioni vengono raccolte anche per assicurarsi che COVIDSafe stia funzionando sul tuo cellulare. Le informazioni riguardano il sistema operativo, la versione App installata, la lingua selezionata, il funzionamento di Bluetooth e se sono stati registrati dei contatti negli ultimi sette giorni.\n\nCOVIDSafe non raccoglie informazioni sulla tua posizione. \n\nCOVIDSafe annota sul tuo dispositivo il giorno e l'ora del contatto, il codice ID anonimo degli altri utenti di COVIDSafe con cui sei entrato/a in contatto, il loro modello di cellulare e l'intensità del segnale Bluetooth. \n\nGli utenti di COVIDSafe con cui sei entrato/a in contatto vedranno sul loro dispositivo il tuo codice ID anonimo, la data e l'ora del contatto, l'intensità del segnale Bluetooth e il modello del tuo cellulare. \n\nSe un utente che risulta positivo al COVID-19 carica i propri dati di contatto, potresti essere contattato/a da un funzionario sanitario dello stato o territorio australiano interessato per ragioni di tracciabilità dei contatti. \n\nI tuoi dati di registrazione verranno utilizzati o divulgati esclusivamente per ragioni di tracciabilità dei contatti e per il corretto e legittimo funzionamento di COVIDSafe. \n\nUlteriori informazioni sono disponibili sul sito covidsafe.gov.au.\n\nPer ulteriori informazioni sui diritti dell'utente e la gestione e condivisione dei dati consultare *l'informativa sulla privacy* di COVIDSafe.";
 /* OnBoarding Data Privacy */
 "data_privacy_headline" = "Registrazione e privacy";
@@ -250,6 +259,7 @@
 "dialog_uploading_message" = "I dati di COVIDSafe sono attualmente in fase di caricamento. \n\nNon chiudere l'app.";
 "dismiss" = "Ignora";
 "done_success" = "Fatto";
+"edit_snooze_calendar" = "Modifica il calendario di snooze";
 "enter_number_button" = "Ottieni il PIN";
 "enter_number_content" = "Invieremo un PIN di 6 cifre per verificare il numero di cellulare.";
 "enter_number_headline" = "Inserisci il numero di cellulare";
@@ -262,6 +272,15 @@
 "enter_pin_wrong_number" = "Questo numero di cellulare è sbagliato?";
 /* Figma page Android Screens (05/06) */
 "Enter_your_mobile_number_label" = "Inserisci il numero di cellulare";
+"every_day" = "Ogni giorno";
+"factors_dotpoint1" = "numero di utenti COVIDSafe nel raggio d'azione";
+"factors_dotpoint2" = "modello ed età del dispositivo";
+"factors_dotpoint3" = "se sei in un veicolo in movimento";
+"factors_enviro_item_1" = "barriere fisiche come muri";
+"factors_enviro_item_2" = "materiale e dispositivi che interferiscono con i segnali Bluetooth";
+"factors_handshakes_heading" = "Fattori che influiscono sull'attività dell'app";
+"factors_intro" = "I fattori che possono influenzare il numero di strette di mano comprendono:";
+"factors_intro_2" = "Anche le strette di mano possono essere influenzate da fattori ambientali:";
 "global_back" = "Indietro";
 "global_close" = "Chiudi";
 "global_double_tap" = "Fai un doppio click per modificare";
@@ -298,17 +317,26 @@
 "home_set_complete_external_link_share_title" = "Condividi COVIDSafe";
 "home_setup_help" = "Guida";
 "home_version_number_ios" = "Versione %@ , Build %@";
-"hotspots_state_territory" = "";
+"hotspot_link_ACT" = "";
+"hotspot_link_NSW" = "";
+"hotspot_link_NT" = "";
+"hotspot_link_QLD" = "";
+"hotspot_link_SA" = "";
+"hotspot_link_TAS" = "";
+"hotspot_link_VIC" = "";
+"hotspot_link_WA" = "";
+"hotspots_state_territory" = "Hotspot in %@";
+"hour" = "Ora";
 "how_it_works_button" = "Avanti";
 "how_it_works_content" = "I segnali Bluetooth vengono utilizzati per determinare la vicinanza ad altri utenti di COVIDSafe. \nOgni istanza di stretto contatto tra te e gli altri utenti di COVIDSafe viene annotata per creare informazioni sui contatti. Queste informazioni sono crittografate e memorizzate solo sul tuo cellulare. \nSe risulti positivo al COVID-19, come utente di COVIDSafe sarai contattato da un funzionario sanitario statale o del territorio per assisterti con il caricamento volontario delle vostre informazioni di stretto contatto in un sistema di archiviazione delle informazioni altamente sicuro. \nI funzionari sanitari statali o territoriali possono anche contattarti se sei entrato in stretto contatto con un altro utente di COVIDSafe risultato positivo. \nPer ulteriori informazioni, consulta la pagina Argomenti della Guida.";
 /* OnBoarding How it works */
-"how_it_works_headline" = "Come funziona il COVIDSafe";
+"how_it_works_headline" = "Come funziona COVIDSafe";
 "improve" = "Migliora le prestazioni dell'app";
 "improve_heading" = "Migliora le prestazioni di COVIDSafe";
 "internet_connection_content" = "Connettiti a Internet per ricevere notifiche su problemi e aggiornamenti.";
 "internet_connection_heading" = "Nessuna connessione internet";
-"internet_screen_content" = "COVIDSafe deve connettersi al server periodicamente per identificare eventuali problemi dell'app. \n\n La connessione Internet permette di ricevere notifiche su:";
-"internet_screen_content_1" = "come risolvere problemi e riattivare nuovamente COVIDSafe ";
+"internet_screen_content" = "COVIDSafe deve connettersi al server di tanto in tanto per poter identificare i problemi con l'applicazione.\n\nLa connessione a internet garantisce la ricezione delle notifiche:deve";
+"internet_screen_content_1" = "come risolvere problemi e riattivare COVIDSafe ";
 "internet_screen_content_2" = "quando sarà disponibile un nuovo aggiornamento della versione";
 "internet_screen_heading" = "Connettiti a Internet per migliorare le prestazioni di COVIDSafe";
 "intro_button" = "Voglio aiutare";
@@ -317,20 +345,33 @@
 "intro_headline" = "Insieme possiamo fermare la diffusione del COVID-19";
 /* Class = "UILabel"; text = "Help stop the spread\nand save lives."; ObjectID = "Cme-9F-deB"; */
 "IntroLabel" = "Aiuta a fermare la diffusione\ne salvare vite umane.";
-"invalid_australian_phone_number_error_prompt" = "I numeri di cellulare australiani contengono un massimo di 10 cifre.";
+"invalid_australian_phone_number_error_prompt" = "I numeri di cellulare australiani hanno un massimo di 10 cifre.";
 "invalid_norfolk_island_phone_number_error_prompt" = "I numeri di cellulare nell'Isola di Norfolk contengono da 5 a 6 cifre.";
+"is_snoozed" = "COVIDSafe non è attiva";
+"is_snoozed_description" = "COVIDSafe non utilizza il Bluetooth e non registra i contatti. \n\n ";
 "jwt_description" = "C'è un problema con i dati di registrazione.";
+"jwt_expired" = "La tua registrazione è scaduta.";
+"jwt_expired_description" = "Conferma il numero di cellulare ogni 12 mesi per assicurarti che i dati di registrazione siano corretti.";
 "jwt_heading" = "Registrati di nuovo";
 "jwt_success" = "Registrazione rinnovata con successo";
+"last_7_days" = "Ultimi 7 giorni";
+"learn_more" = "";
 "loading_numbers" = "Caricamento degli ultimi numeri";
-"locally_acquired" = "";
+"locally_acquired" = "%@ contratto localmente";
 "location_off" = "Posizione: OFF";
-"location_off_description" = "Il tuo iPhone richiede l'autorizzazione di localizzazione affinché COVIDSafe funzioni. COVIDSafe NON memorizza né utilizza i dati relativi alla tua posizione.";
+"location_off_description" = "Il tuo iPhone richiede l'autorizzazione alla localizzazione affinché COVIDSafe funzioni. COVIDSafe NON memorizza né utilizza i dati relativi alla tua posizione.";
+"low_handshakes_description" = "Prova questi suggerimenti per migliorare le prestazioni di COVIDSafe sul tuo telefono:";
+"low_handshakes_heading" = "Cosa fare se i numeri delle strette di mano sono inferiori alle tue aspettative";
+"low_handshakes_item1" = "Verifica se COVIDSafe è attivo aprendo l'app.";
+"low_handshakes_item2" = "Aggiorna la tua app all'ultima versione tramite Google Play Store o Apple Store.";
+"low_handshakes_item3" = "Riavvia il telefono e apri di nuovo l'app.";
+"low_handshakes_link" = "Per saperne di più su come controllare se COVIDSafe funziona correttamente";
 /* Splash Screen */
 "migration_in_progress" = "Aggiornamento COVIDSafe in corso. \n\nAssicurati che il cellulare non sia spento fino al completamento dell'aggiornamento.";
+"minute" = "Minuto";
 "national_numbers" = "Numeri nazionali";
 "new_cases" = "Nuovi casi nelle ultime 24 ore";
-"new_cases_total" = "";
+"new_cases_total" = "Nuovi casi dal 1° febbraio 2020";
 "new_south_wales" = "New South Wales";
 /* Figma page Android Screens (05/06) */
 "norfolk_hint" = "Per esempio: 51234";
@@ -351,7 +392,8 @@
 "numbers_no_internet" = "Connettiti a Internet per ricevere notifiche sui numeri aggiornati.";
 "numbers_refresh" = "Aggiorna ora";
 "options_for_australia" = "Opzioni per l'Australia";
-"overseas_acquired" = "";
+"OS2b_Item_4" = "Il tuo iPhone richiede l'autorizzazione di localizzazione affinché COVIDSafe funzioni. COVIDSafe NON memorizza né utilizza i dati relativi alla tua posizione.";
+"overseas_acquired" = "%@ contratto all'estero";
 "permission_button" = "Procedi";
 /* Figma page iOS Screens (05/06) */
 "permission_content_iOS" = "COVIDSafe necessita di # Bluetooth # abilitato per funzionare. COVIDSafe non invia richieste di accoppiamento. \n\nAbilitando # Notifiche #, ricevi aggiornamenti per ricordarti quando COVIDSafe non è attivo. \n\nIl tuo iPhone richiede  #L'autorizzazione di localizzazione* # per far funzionare COVIDSafe. * COVIDSafe NON memorizza né utilizza i dati relativi alla tua posizione * \n\nSeleziona \"Procedi\" per abilitare:";
@@ -361,7 +403,7 @@
 "permission_success_button" = "Eseguito";
 /* OnBoarding Permission Success */
 "permission_success_headline" = "Ti sei registrato con successo";
-"permission_success_warning" = "Mantieni attive le notifiche push di COVIDSafe in modo da essere tempestivamente avvisato se l'app non funziona correttamente.";
+"permission_success_warning" = "Mantieni attive le notifiche push per COVIDSafe in modo da essere tempestivamente avvisato se l'app non funziona correttamente.";
 "personal_details_age_content_description" = "Seleziona la fascia d'età";
 "personal_details_age_error_prompt" = "Seleziona la fascia d'età.";
 "personal_details_age_title" = "Fascia d'età (seleziona)";
@@ -376,41 +418,67 @@
 "personal_details_post_code_error_prompt" = "Il codice postale australiano deve contenere 4 cifre.";
 "PINNumber_VO_Label" = "Codice PIN";
 /* Figma page iOS Screens (05/06) */
-"PN_BluetoothStatusBody" = "Assicuratevi che COVIDSafe sia attivo prima di uscire di casa e quando siete in luoghi pubblici abilitando il Bluetooth®.";
+"PN_BluetoothStatusBody" = "Assicurati che COVIDSafe sia attivo prima di uscire e quando ti trovi in luoghi pubblici abilitando il Bluetooth®.";
 /* Figma page iOS Screens (05/06) */
 "PN_BluetoothStatusTitle" = "COVIDSafe non è attivo";
 "PN_MobileNumber_VOLabel" = "Numero di cellulare";
 /* Figma page iOS Screens (05/06) */
 "PN_ReminderBody" = "Apri COVIDSafe per assicurarti che sia in funzione.\n";
 /* Figma page iOS Screens (05/06) */
-"PN_ReminderTitle" = "Nessun incontro rilevato da 48 ore";
+"PN_ReminderTitle" = "Nessun incontro rilevato per 48 ore";
+"postcode_api_error" = "";
+"postcode_change_label" = "";
+"postcode_success" = "Il tuo codice postale è stato aggiornato";
 "PostcodeValidationErrorMessage" = "Inserisci un codice postale australiano valido.";
 "queensland" = "Queensland";
 "recovered" = "Totale guarigioni";
-"registration_consent_content" = "Acconsento alla raccolta di dati da parte della Digital Transformation Agency nel ruolo di amministratrice dell'archivio dati, in base alle disposizioni legali stabilite dal segretario del Dipartimento della sanità del governo australiano per:";
+"registration_consent_content" = "Acconsento alla raccolta di dati da parte della Digital Transformation Agency nel ruolo di amministratore dell'archivio dati, in base alle disposizioni legali stabilite dal segretario del Dipartimento della sanità del governo australiano per:";
 "registration_consent_diagnostic" = "Informazioni per garantire il corretto funzionamento di COVIDSafe sul mio dispositivo.";
 "registration_consent_first_paragraph" = "I miei dati di registrazione.";
 /* Onboarding Registration Consent */
 "registration_consent_headline" = "Consenso alla registrazione";
 "registration_consent_second_paragraph" = "Informazioni sul contatto con altri utenti di COVIDSafe, se un utente con cui sono entrato in contatto risulta positivo al COVID-19 e carica i suoi dati.";
+"save" = "Salva";
+"scheduled" = "Hai programmato COVIDSafe su snooze da %@ a %@ ";
 /* OnBoarding Enter Number */
 "select_country_or_region" = "Seleziona il paese o la regione";
 /* Figma page Android Screens (05/06) */
 "Select_country_or_region_headline" = "Seleziona il paese o la regione";
+"select_state_territory_button" = "Seleziona lo stato o il territorio";
+"select_state_territory_heading" = "Seleziona lo stato o il territorio";
+"set_snooze_time" = "Imposta il tempo di snooze";
 "settings" = "Impostazioni";
-"share_this_app_content" = "Unisciti a noi per fermare la diffusione del COVID-19! Scarica il COVIDSafe, un'app del Governo australiano. #COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
+"seven_days" = "7 giorni";
+"share_this_app_content" = "Unisciti a me per fermare la diffusione del COVID-19! Scarica il COVIDSafe, un'app del Governo australiano. #COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
 "show" = "Visualizza";
+"snooze_button" = "Snooze";
+"snooze_calendar_button" = "Calendario snooze";
+"snooze_calendar_description" = "Imposta giorni e orari in cui vuoi attivare snooze COVIDSafe.";
+"snooze_calendar_toggle" = "Calendario snooze";
+"snooze_covidsafe_button" = "Snooze COVIDSafe.";
+"snooze_covidsafe_button_description" = "Snooze COVIDSafe per un determinato periodo di tempo.";
+"snooze_ended" = "Snooze è terminato.";
+"snooze_ends" = "Snooze termina tra";
+"snooze_from" = "Snooze da";
+"snooze_heading" = "Snooze COVIDSafe";
+"snooze_on" = "Snooze attivo";
+"snooze_timer_description" = "Imposta il timer di snooze COVIDSafe.";
+"snooze_to" = "Snooze fino a";
+"snoozed_calendar_description" = "COVIDSafe non utilizza il Bluetooth e non sta registrando i contatti. \n\n Hai programmato COVIDSafe su snooze da %@ a %@ .";
 "south_australia" = "South Australia";
-"state_number_heading" = "";
+"state_number_heading" = "numeri";
+"states_territories" = "";
 "stepCounter" = "Passo %d di %d";
 "support" = "Supporto";
 "support_content" = "Per assistenza su questioni non trattate dagli argomenti della Guida";
 "Support_VOLabel" = "Supporto. Per assistenza su questioni non trattate dagli argomenti della Guida";
 "tasmania" = "Tasmania";
-"total" = "";
+"total" = "Totale";
 "total_confirmed_cases" = "Totale casi confermati";
-"total_deaths" = "";
+"total_deaths" = "%@ totale decessi";
 "total_per_state" = "Totale casi confermati per stato e territorio";
+"twenty_eight_days" = "28 giorni";
+"type_in_time" = "Digita l'ora";
 "UILaunchStoryboardName" = "LaunchScreen_it_IT";
 "under_sixteen_content" = "Confermo il consenso dei miei genitori o del mio tutore a Digital Transformation Agency nel suo ruolo di amministratore della banca dati, in base alle disposizioni legali stabilite dal segretario del Dipartimento della sanità del governo australiano:";
 "under_sixteen_first_paragraph" = "I miei dati di registrazione.";
@@ -426,7 +494,6 @@
 "update_available_message_ios" = "Abbiamo apportato dei miglioramenti a COVIDSafe. Aggiorna tramite l'App Store";
 "update_available_title" = "Aggiornamento disponibile!";
 "update_description" = "";
-"update_description_VO" = "";
 "update_heading" = "Abilita i servizi di localizzazione";
 "update_modal_button" = "Procedi";
 "upload_answer_no" = "No";
@@ -436,11 +503,11 @@
 "upload_fail_heading" = "Caricamento non riuscito";
 "upload_failed" = "Caricamento non riuscito";
 "upload_finished_header" = "Grazie per aver aiutato a fermare la diffusione del COVID-19!";
-"upload_finished_sub_header" = "I  tuoi dati sono stati caricati sul sistema altamente sicuro di archiviazione di COVIDSafe. \n\nI funzionari sanitari statali o del territorio informeranno gli altri utenti COVIDSafe che hanno registrato casi di stretto contatto con te. La tua identità rimarrà anonima per gli altri utenti.";
+"upload_finished_sub_header" = "I tuoi dati sono stati caricati sul sistema altamente sicuro di archiviazione di COVIDSafe. \n\nI funzionari sanitari statali o del territorio informeranno gli altri utenti COVIDSafe che hanno registrato casi di stretto contatto con te. La tua identità rimarrà anonima per gli altri utenti.";
 "upload_step_1_body" = "Un funzionario sanitario statale o del territorio ti contatterà per aiutarvi con il caricamento volontario dei tuoi dati solo se sei risultato positivo al COVID-19.\n\nDopo aver premuto 'Sì', bisogna fornire il proprio consenso per caricare i dati.";
 "upload_step_1_header" = "Hai ricevuto richiesta di caricamento dati da un ufficiale sanitario?";
 "upload_step_4_header" = "Consenso al caricamento";
-"upload_step_4_sub_header" = "I dati di stretto contatto non vengono caricati senza il tuo consenso.\n\nUna volta dato il consenso, i tuoi dati di stretto contatto vengono caricati e condivisi con funzionari sanitari statali o del territorio a scopo di tracciamento di contatti.\n\nI funzionari sanitari statali e del territorio potranno accedere solo alle informazioni sui contatti stretti.\n\nLeggi *l'informativa sulla privacy* del COVIDSafe per ulteriori informazioni.";
+"upload_step_4_sub_header" = "I dati di stretto contatto non vengono caricati senza il tuo consenso.\n\nUna volta fornito il consenso, i tuoi dati di stretto contatto vengono caricati e condivisi con funzionari sanitari statali o del territorio a scopo di tracciamento di contatti.\n\nI funzionari sanitari statali e del territorio potranno accedere solo alle informazioni sui contatti stretti.\n\nLeggi *l'informativa sulla privacy* del COVIDSafe per ulteriori informazioni.";
 "upload_step_verify_pin_header" = "Carica i tuoi dati";
 "upload_step_verify_pin_sub_header" = "Un funzionario sanitario statale o del territorio invierà un PIN al tuo dispositivo tramite messaggio di testo. Inseriscilo qui sotto per caricare i tuoi dati.";
 "us_consent_button" = "Sono d'accordo";
@@ -448,6 +515,7 @@
 "victoria" = "Victoria";
 "western_australia" = "Western Australia";
 "wrong_ping_number" = "PIN errato ";
+"yesterday_activity" = "Ieri";
 "country_region_name_au2" = "Isola di Norfolk";
 "AllowBluetoothOFF_VOLabel" = "Accesso a Bluetooth: OFF Consenti a COVIDSafe di accedere a Bluetooth";
 "AllowBluetoothON_VOLabel" = "Accesso al Bluetooth: ON";
@@ -516,7 +584,7 @@
 "GetCoronaVirusApp_VOLabel" = "Scarica l'app Coronavirus. Scarica l'app governativa per le ultime notizie e consigli.";
 "HelpTopics_VOLabel" = "Argomenti della Guida su come individuare e risolvere problemi tecnici.";
 "LatestNews_VOLabel" = "Ultime notizie e aggiornamenti. Visita aus.gov.au per le ultime notizie sul Coronavirus.";
-"NotificationsDisabled_VOLabel" = "Le notifiche sono disabilitate. Non si ricevono notifiche se COVIDSafe non è attivo. \nModifica le impostazioni di notifica";
+"NotificationsDisabled_VOLabel" = "Le notifiche sono disabilitate. Non si ricevono notifiche se COVIDSafe non è attiva. \nCambia le impostazioni di notifica";
 "NotificationsEnabled_VOLabel" = "Le notifiche sono abilitate. Riceverai una notifica se COVIDSafe non è attivo. \nModifica le impostazioni di notifica";
 "OS1b_TopParagraph_VOLabel" = "I segnali Bluetooth vengono utilizzati per determinare la vicinanza ad altri utenti di COVIDSafe. \nOgni istanza di stretto contatto tra te e gli altri utenti di COVIDSafe viene annotata per creare informazioni sui contatti. Queste informazioni sono crittografate e memorizzate solo sul tuo cellulare. \nSe risulti positivo al COVID-19, come utente di COVIDSafe sarai contattato da un funzionario sanitario statale o del territorio per assisterti con il caricamento volontario delle tue informazioni di stretto contatto in un sistema di archiviazione di informazioni altamente sicuro. \nI funzionari sanitari statali o territoriali possono anche contattarti se sei stato in stretto contatto con un altro utente di COVIDSafe risultato positivo. \nPer ulteriori informazioni, consulta la pagina Argomenti della Guida.";
 "permission_content_iOS_2_VOLabel" = "1. Bluetooth®\n2. Notifiche\n3. Servizi di localizzazione\n";

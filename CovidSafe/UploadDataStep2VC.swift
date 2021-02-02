@@ -36,7 +36,7 @@ class UploadDataStep2VC: UIViewController, CodeInputViewDelegate {
     var currentKeyboardFrame: CGRect?
     var uploadAnimatedView: AnimationView?
     
-    let uploadFailErrMsg = "UploadFailed".localizedString(comment: "Upload failed. Please try again later.")
+    var uploadDisplayErrorMsg = ""
     let invalidPinErrMsg = "action_verify_invalid_pin".localizedString(comment: "Invalid PIN, please ask health official to send another PIN.")
     
     let verifyEnabledColor = UIColor.covidSafeButtonDarkerColor
@@ -66,11 +66,13 @@ class UploadDataStep2VC: UIViewController, CodeInputViewDelegate {
         super.viewDidAppear(animated)
         setIsLoading(false)
         
-        let uploadAnimation = AnimationView(name: "Spinner_upload")
-        uploadAnimation.loopMode = .loop
-        uploadAnimation.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: self.uploadAnimatedviewContainer.frame.size)
-        self.uploadAnimatedviewContainer.addSubview(uploadAnimation)
-        uploadAnimatedView = uploadAnimation
+        if uploadAnimatedView == nil {
+            let uploadAnimation = AnimationView(name: "Spinner_upload")
+            uploadAnimation.loopMode = .loop
+            uploadAnimation.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: self.uploadAnimatedviewContainer.frame.size)
+            self.uploadAnimatedviewContainer.addSubview(uploadAnimation)
+            uploadAnimatedView = uploadAnimation
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -159,7 +161,7 @@ class UploadDataStep2VC: UIViewController, CodeInputViewDelegate {
         
         setIsLoading(true)
         self.codeInputView.invalidCode = false
-        UploadHelper.uploadEncounterData(pin: code) { result in
+        UploadHelper.uploadEncounterData(pin: code) { result, errorMessage in
             self.setIsLoading(false)
             switch result{
             case .InvalidCode:
@@ -174,25 +176,15 @@ class UploadDataStep2VC: UIViewController, CodeInputViewDelegate {
                 }
                 Encounter.deleteAll()
                 self.performSegue(withIdentifier: "showSuccessVCSegue", sender: nil)
-            case .FailedUpload:
+            case .FailedUpload, .Failed:
+                self.uploadDisplayErrorMsg = errorMessage ?? "No error code/message available"
                 self.performSegue(withIdentifier: "uploadErrorSegue", sender: self)
-                sender.isEnabled = true
-            case .Failed:
-                 self.performSegue(withIdentifier: "uploadErrorSegue", sender: self)
                 sender.isEnabled = true
             case .SessionExpired:
                 NotificationCenter.default.post(name: .jwtExpired, object: nil)
                 sender.isEnabled = true
             }
         }
-    }
-    
-    func displayUploadDataError() {
-        let errorAlert = UIAlertController(title: "upload_failed".localizedString(),
-                                           message: "UploadFailedErrorMessage".localizedString(),
-                                           preferredStyle: .alert)
-        errorAlert.addAction(UIAlertAction(title: "global_OK".localizedString(), style: .default, handler: nil))
-        self.present(errorAlert, animated: true)
     }
     
     private func setIsLoading(_ isLoading: Bool) {
@@ -204,6 +196,12 @@ class UploadDataStep2VC: UIViewController, CodeInputViewDelegate {
             uploadAnimatedView?.stop()
             uploadingView.alpha = 0
             uploadingView.isHidden = true
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let errorViewController = segue.destination as? UploadDataErrorViewController {
+            errorViewController.uploadErrorMessage = self.uploadDisplayErrorMsg
         }
     }
 }

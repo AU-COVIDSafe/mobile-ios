@@ -1,11 +1,13 @@
-"28_days" = "";
-"7_days" = "";
 "action_continue" = "Tiếp tục";
 "action_report_an_issue" = "Báo cáo sự cố";
 "action_upload_done" = "Hoàn tất";
 "action_verify_invalid_pin" = "MÃ PIN không hợp lệ, vui lòng yêu cầu nhân viên y tế gửi cho bạn một mã PIN khác.";
 "action_verify_upload_pin" = "Đăng tải thông tin của tôi";
-"active_cases" = "";
+"active_cases" = "Các ca nhiễm bệnh (ước tính)";
+"activity_button" = "Kiểm tra hoạt động của ứng dụng";
+"activity_button_description" = "Xem các tương tác Bluetooth của ứng dụng của bạn với những người dùng COVIDSafe khác.";
+"activity_heading" = "Hoạt động ứng dụng";
+"activity_intro" = "Mỗi khi thiết bị của bạn nằm trong phạm vi của những người dùng ứng dụng COVIDSafe khác, nó sẽ ghi nhận các tương tác Bluetooth được gọi là 'bắt tay Bluetooth'. \n\n Những lần bắt tay này cho biết ứng dụng của bạn đang hoạt động tốt như thế nào.";
 /* Figma page iOS Screens (05/06) */
 "allow_bluetooth_call" = "Cho phép COVIDSafe truy cập vào Bluetooth®";
 /* Figma page iOS Screens (05/06) */
@@ -13,16 +15,22 @@
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothON" = "Truy cập Bluetooth®: BẬT";
 "australian_capital_territory" = "Lãnh thổ Thủ đô Úc";
+"ble_handshakes_yesterday" = "Bluetooth bắt tay ngày hôm qua";
+"bluetooth_handshakes" = "Bắt tay Bluetooth";
 /* Figma page iOS Screens (05/06) */
 "BluetoothOFF" = "Bluetooth®: TẮT";
 /* Figma page iOS Screens (05/06) */
 "BluetoothOFF_content" = "Bật Bluetooth® trên điện thoại của bạn. Chọn ‘Cho phép Kết nối mới’ nếu có hiển thị.";
 /* Figma page iOS Screens (05/06) */
 "BluetoothON" = "Bluetooth®: BẬT";
-"cases_28_days" = "";
-"cases_7_days" = "";
+"cancel_snooze" = "Hủy tạm ngưng hoạt động";
+"cases_28_days" = "Các ca nhiễm mới trong 28 ngày qua";
+"cases_7_days" = "Các ca nhiễm mới trong 7 ngày qua";
 "change_language" = "Thay đổi ngôn ngữ";
 "change_language_content" = "Đọc hướng dẫn về cách sử dụng COVIDSafe bằng ngôn ngữ khác.";
+"change_postcode_description" = "Cập nhật nếu mã bưu điện của bạn đã thay đổi sau khi tải xuống COVIDSafe.";
+"change_postcode_heading" = "Thay đổi mã bưu điện của bạn";
+"change_postcode_intro" = "";
 "collection_message" = "COVIDSafe hiện đang thu thập thông tin chẩn đoán để giúp bạn khắc phục sự cố với Ứng dụng của mình. *Tìm hiểu thêm *";
 "consent_button" = "Tôi đồng ý";
 /* Shared Consent Actions */
@@ -238,6 +246,7 @@
 "country_region_name_za" = "Nam Phi";
 "country_region_name_zm" = "Zambia";
 "country_region_name_zw" = "Zimbabwe";
+"customise_days" = "Tùy chỉnh ngày";
 "data_privacy_button" = "Tiếp theo";
 "data_privacy_content" = "Điều quan trọng là bạn phải đọc *chính sách bảo mật* COVIDSafe trước khi đăng ký COVIDSafe. \n\nNếu bạn dưới 16 tuổi, cha mẹ/người giám hộ của bạn cũng phải đọc *chính sách bảo mật *. \n\nSử dụng COVIDSafe là hoàn toàn tự nguyện. Bạn có thể cài đặt hoặc xóa ứng dụng bất cứ lúc nào. Nếu bạn xóa COVIDSafe, *bạn cũng có thể yêu cầu xóa thông tin của mình* khỏi máy chủ bảo mật. \n\nĐể đăng ký COVIDSafe, bạn sẽ cần nhập tên (hoặc biệt danh), số điện thoại di động, độ tuổi và mã bưu điện. \n\nThông tin bạn gửi khi đăng ký và thông tin về việc sử dụng COVIDSafe của bạn sẽ được thu thập và lưu trữ trên một máy chủ có độ an toàn cao. \n\nThông tin cũng được thu thập để đảm bảo rằng COVIDSafe đang hoạt động bình thường trên thiết bị của bạn. Điều này bao gồm hệ điều hành, phiên bản Ứng dụng bạn đã cài đặt, ngôn ngữ được thiết lập trên thiết bị của bạn, Bluetooth® có hoạt động hay không và liệu Ứng dụng của bạn có ghi lại bất kỳ cuộc gặp gỡ nào trong bảy ngày trước đó hay không.\n\nCOVIDSafe sẽ không thu thập thông tin vị trí của bạn. \n\nCOVIDSafe sẽ ghi nhớ thời gian tiếp xúc, mã ID ẩn danh của những người dùng COVIDSafe khác mà bạn tiếp xúc, cường độ tín hiệu Bluetooth và kiểu điện thoại của người dùng khác trên thiết bị của bạn. \n\nNhững người dùng COVIDSafe khác mà bạn tiếp xúc cũng sẽ ghi nhớ mã ID ẩn danh của bạn, thời gian tiếp xúc, cường độ tín hiệu Bluetooth và kiểu điện thoại của bạn, trên thiết bị của họ.\n\nNếu người dùng khác xét nghiệm dương tính với COVID-19, họ có thể đăng tải thông tin tiếp xúc của họ và nhân viên y tế của tiểu bang hoặc lãnh thổ có thể liên hệ với bạn nhằm mục đích truy tìm tiếp xúc. \n\nThông tin đăng ký của bạn sẽ chỉ được sử dụng hoặc tiết lộ để truy tìm tiếp xúc và để COVIDSafe hoạt động đúng đắn và hợp pháp. \n\nThông tin thêm có tại trang mạng *covidsafe.gov.au*. \n\nXem *chính sách bảo mật* của COVIDSafe để biết thêm chi tiết về quyền của bạn đối với thông tin của mình cũng như cách xử lý và chia sẻ thông tin đó.\n ";
 "data_privacy_content_VO" = "Điều quan trọng là bạn phải đọc chính sách bảo mật của COVIDSafe trước khi đăng ký COVIDSafe.\n\nNếu bạn dưới 16 tuổi, cha mẹ/người giám hộ của bạn cũng phải đọc chính sách bảo mật.\n\nViệc sử dụng COVIDSafe là hoàn toàn tự nguyện. Bạn có thể cài đặt hoặc xóa ứng dụng bất kỳ lúc nào. Nếu bạn xóa COVIDSafe, bạn cũng có thể yêu cầu xóa thông tin của mình khỏi máy chủ bảo mật.\n\nĐể đăng ký COVIDSafe, bạn sẽ cần nhập tên (hoặc biệt danh), số điện thoại di động, độ tuổi và mã bưu điện.\n\nThông tin bạn gửi khi đăng ký và thông tin về việc sử dụng COVIDSafe của bạn được lưu trữ trên một máy chủ có độ bảo mật cao.\n\nThông tin cũng được thu thập để đảm bảo rằng COVIDSafe đang hoạt động bình thường trên thiết bị của bạn. Điều này bao gồm hệ điều hành, phiên bản Ứng dụng bạn đã cài đặt, ngôn ngữ được thiết lập trên thiết bị của bạn, Bluetooth có hoạt động hay không và liệu Ứng dụng của bạn có ghi lại bất kỳ cuộc gặp gỡ nào trong bảy ngày trước đó hay không.\n\nCOVIDSafe sẽ không thu thập thông tin vị trí của bạn.\n\nCOVIDSafe sẽ ghi nhớ ngày và giờ tiếp xúc, mã ID ẩn danh của những người dùng COVIDSafe khác mà bạn tiếp xúc, cường độ tín hiệu Bluetooth và kiểu điện thoại của những người dùng khác trên thiết bị của bạn.\n\nNhững người dùng COVIDSafe khác mà bạn tiếp xúc sẽ ghi nhớ mã ID ẩn danh, ngày và giờ tiếp xúc với bạn, cường độ tín hiệu Bluetooth và kiểu điện thoại của bạn trên thiết bị của họ.\n\nNếu một người dùng khác xét nghiệm dương tính với COVID-19, họ có thể đăng tải thông tin liên hệ của mình và nhân viên y tế của tiểu bang hoặc vùng lãnh thổ có thể liên hệ với bạn nhằm mục đích truy tìm tiếp xúc.\n\nCác thông tin đăng ký của bạn sẽ chỉ được sử dụng hoặc tiết lộ để theo dõi tiếp xúc và để COVIDSafe hoạt động đúng đắn và hợp pháp.\n\nThông tin thêm có tại trang mạng covidsafe.gov.au.\n\nXem chính sách bảo mật của COVIDSafe để biết thêm chi tiết về các quyền của bạn đối với thông tin của mình cũng như cách xử lý và chia sẻ thông tin đó.";
@@ -250,6 +259,7 @@
 "dialog_uploading_message" = "Thông tin COVIDSafe của bạn hiện đang được đăng tải. \n\n Vui lòng không đóng ứng dụng.";
 "dismiss" = "Bỏ qua";
 "done_success" = "Hoàn tất";
+"edit_snooze_calendar" = "Chỉnh sửa thời gian tạm ngưng hoạt động";
 "enter_number_button" = "Nhận mã PIN";
 "enter_number_content" = "Chúng tôi sẽ gửi cho bạn mã PIN gồm 6 chữ số để xác minh số điện thoại của bạn.";
 "enter_number_headline" = "Nhập số điện thoại di động của bạn";
@@ -262,6 +272,15 @@
 "enter_pin_wrong_number" = "Số điện thoại này có sai không?";
 /* Figma page Android Screens (05/06) */
 "Enter_your_mobile_number_label" = "Nhập số điện thoại di động của bạn";
+"every_day" = "Hằng ngày";
+"factors_dotpoint1" = "số lượng người dùng COVIDSafe trong phạm vi";
+"factors_dotpoint2" = "kiểu thiết bị và độ tuổi";
+"factors_dotpoint3" = "nếu bạn đang ở trong một phương tiện đang di chuyển";
+"factors_enviro_item_1" = "rào cản vật lý như vách tường";
+"factors_enviro_item_2" = "vật liệu và đồ đạc gây nhiễu tín hiệu Bluetooth";
+"factors_handshakes_heading" = "Các yếu tố ảnh hưởng đến hoạt động của ứng dụng";
+"factors_intro" = "Các yếu tố có thể ảnh hưởng đến số lần bắt tay bao gồm:";
+"factors_intro_2" = "Chức năng bắt tay cũng có thể bị ảnh hưởng bởi các yếu tố môi trường, bao gồm:";
 "global_back" = "Trở lại";
 "global_close" = "Đóng";
 "global_double_tap" = "nhấn đúp để chỉnh sửa";
@@ -298,7 +317,16 @@
 "home_set_complete_external_link_share_title" = "Chia sẻ COVIDSafe";
 "home_setup_help" = "Trợ giúp";
 "home_version_number_ios" = "Phiên bản %@ , Xây dựng %@";
-"hotspots_state_territory" = "";
+"hotspot_link_ACT" = "";
+"hotspot_link_NSW" = "";
+"hotspot_link_NT" = "";
+"hotspot_link_QLD" = "";
+"hotspot_link_SA" = "";
+"hotspot_link_TAS" = "";
+"hotspot_link_VIC" = "";
+"hotspot_link_WA" = "";
+"hotspots_state_territory" = "Điểm nóng trong %@";
+"hour" = "Giờ";
 "how_it_works_button" = "Tiếp theo";
 "how_it_works_content" = "Tín hiệu Bluetooth® được sử dụng để xác định khi bạn đang ở gần người dùng COVIDSafe khác. \n\nMọi trường hợp tiếp xúc gần giữa bạn và những người dùng COVIDSafe khác đều được ghi nhận để tạo dữ liệu tiếp xúc. Thông tin này được mã hóa và chỉ được lưu trữ trong điện thoại của bạn. \n\nNếu bạn xét nghiệm dương tính với COVID-19 và là người dùng COVIDSafe, nhân viên y tế của tiểu bang hoặc lãnh thổ sẽ liên hệ với bạn. Họ sẽ tự nguyện hỗ trợ đăng tải dữ liệu tiếp xúc của bạn lên hệ thống lưu trữ thông tin có độ an toàn cao.\n\nCác nhân viên y tế của tiểu bang hoặc lãnh thổ cũng có thể liên hệ với bạn nếu bạn đã tiếp xúc gần với một người dùng COVIDSafe khác có kết quả xét nghiệm dương tính. \n\nĐể biết thêm thông tin, vui lòng tham khảo trang *Chủ đề Trợ giúp*";
 /* OnBoarding How it works */
@@ -319,18 +347,31 @@
 "IntroLabel" = "Giúp ngăn chặn sự lây lan\nvà cứu mạng sống.";
 "invalid_australian_phone_number_error_prompt" = "Số điện thoại di động ở Úc chứa tối đa 10 chữ số.";
 "invalid_norfolk_island_phone_number_error_prompt" = "Số điện thoại di động ở Đảo Norfolk chứa từ 5 đến 6 chữ số.";
+"is_snoozed" = "COVIDSafe đang tạm ngưng hoạt động";
+"is_snoozed_description" = "COVIDSafe không sử dụng Bluetooth và không ghi lại các tiếp xúc.";
 "jwt_description" = "Có vấn đề với thông tin đăng ký của bạn.";
+"jwt_expired" = "Đăng ký của bạn đã hết hạn.";
+"jwt_expired_description" = "Bạn phải xác nhận số điện thoại di động của mình mỗi năm một lần để đảm bảo thông tin đăng ký của bạn chính xác.";
 "jwt_heading" = "Vui lòng đăng ký lại";
 "jwt_success" = "Đăng ký gia hạn thành công";
+"last_7_days" = "7 ngày vừa qua";
+"learn_more" = "";
 "loading_numbers" = "Đang tải các số mới nhất";
-"locally_acquired" = "";
+"locally_acquired" = "%@ ca nhiễm bệnh ở địa phương";
 "location_off" = "Vị trí: TẮT";
 "location_off_description" = "iPhone của bạn yêu cầu quyền truy cập Vị trí để COVIDSafe hoạt động. COVIDSafe KHÔNG theo dõi hoặc lưu trữ dữ liệu vị trí của bạn.";
+"low_handshakes_description" = "Hãy thử các mẹo sau để cải thiện hiệu suất của COVIDSafe trên điện thoại của bạn:";
+"low_handshakes_heading" = "Phải làm gì nếu số lần bắt tay của bạn thấp hơn bạn mong đợi";
+"low_handshakes_item1" = "Kiểm tra xem COVIDSafe có đang hoạt động hay không bằng cách mở ứng dụng.";
+"low_handshakes_item2" = "Cập nhật ứng dụng của bạn lên phiên bản mới nhất thông qua Kho Google Play hoặc kho Apple Store.";
+"low_handshakes_item3" = "Khởi động lại điện thoại của bạn và mở lại ứng dụng.";
+"low_handshakes_link" = "Đọc thêm về cách kiểm tra xem COVIDSafe có hoạt động đúng cách không";
 /* Splash Screen */
 "migration_in_progress" = "COVIDSafe trong tiến trình cập nhật. \n\nVui lòng đảm bảo điện thoại của bạn không bị tắt cho đến khi cập nhật hoàn tất.";
+"minute" = "Phút";
 "national_numbers" = "Số ca nhiễm trên toàn quốc";
 "new_cases" = "Các ca mới trong vòng 24 giờ qua";
-"new_cases_total" = "";
+"new_cases_total" = "Các ca nhiễm mới kể từ ngày 1/2/2020";
 "new_south_wales" = "New South Wales";
 /* Figma page Android Screens (05/06) */
 "norfolk_hint" = "Ví dụ: 51234";
@@ -351,7 +392,8 @@
 "numbers_no_internet" = "Kết nối với internet để đảm bảo bạn nhận được các số cập nhật.";
 "numbers_refresh" = "Làm mới ngay";
 "options_for_australia" = "Tùy chọn cho Úc";
-"overseas_acquired" = "";
+"OS2b_Item_4" = "4. iPhone của bạn yêu cầu quyền truy cập Vị trí để COVIDSafe hoạt động. * COVIDSafe KHÔNG thu thập, lưu trữ hoặc sử dụng dữ liệu vị trí của bạn*";
+"overseas_acquired" = "%@ ca nhiễm bệnh từ nước ngoài";
 "permission_button" = "Kích hoạt";
 /* Figma page iOS Screens (05/06) */
 "permission_content_iOS" = "COVIDSafe cần bật #Bluetooth# để hoạt động. COVIDSafe không gửi yêu cầu ghép nối. \n\nKhi bật #Thông báo#, bạn sẽ nhận được thông tin cập nhật nhắc bạn khi COVIDSafe không hoạt động. \n\niPhone của bạn cần #Quyền truy cập vị trí# để COVIDSafe hoạt động. *COVIDSafe KHÔNG theo dõi hoặc lưu trữ dữ liệu vị trí của bạn* \n\n Chọn 'Kích hoạt' để bật:";
@@ -384,6 +426,9 @@
 "PN_ReminderBody" = "Mở COVIDSafe để đảm bảo ứng dụng đang hoạt động";
 /* Figma page iOS Screens (05/06) */
 "PN_ReminderTitle" = "Không phát hiện có tiếp xúc trong 48 giờ";
+"postcode_api_error" = "";
+"postcode_change_label" = "";
+"postcode_success" = "Mã bưu điện của bạn đã được cập nhật";
 "PostcodeValidationErrorMessage" = "Vui lòng nhập mã bưu điện Úc hợp lệ.";
 "queensland" = "Queensland";
 "recovered" = "Tổng số ca phục hồi";
@@ -393,24 +438,47 @@
 /* Onboarding Registration Consent */
 "registration_consent_headline" = "Đồng ý đăng ký";
 "registration_consent_second_paragraph" = "Thông tin về việc tiếp xúc của tôi với những người dùng COVIDSafe khác, nếu một người dùng COVIDSafe khác mà tôi đã tiếp xúc xét nghiệm dương tính với COVID-19 và đăng tải dữ liệu tiếp xúc của họ.";
+"save" = "Lưu";
+"scheduled" = "Bạn đã lên lịch trình cho COVIDSafe tạm ngưng hoạt động từ %@ đến %@ .";
 /* OnBoarding Enter Number */
 "select_country_or_region" = "Chọn quốc gia hoặc khu vực";
 /* Figma page Android Screens (05/06) */
 "Select_country_or_region_headline" = "Chọn quốc gia hoặc khu vực";
+"select_state_territory_button" = "Chọn tiểu bang hoặc lãnh thổ";
+"select_state_territory_heading" = "Chọn tiểu bang hoặc lãnh thổ";
+"set_snooze_time" = "Đặt thời gian tạm ngưng hoạt động";
 "settings" = "Cài đặt";
+"seven_days" = "7 ngày";
 "share_this_app_content" = "Hãy cùng tôi ngăn chặn sự lây lan của COVID-19! Tải COVIDSafe, ứng dụng của Chính phủ Úc. # COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
 "show" = "Hiển thị";
+"snooze_button" = "Tạm ngưng hoạt động";
+"snooze_calendar_button" = "Lịch trình tạm ngưng hoạt động";
+"snooze_calendar_description" = "Đặt ngày và giờ bạn muốn tạm ngưng hoạt động COVIDSafe.";
+"snooze_calendar_toggle" = "Lịch trình tạm ngưng hoạt động";
+"snooze_covidsafe_button" = "Tạm ngưng hoạt động COVIDSafe";
+"snooze_covidsafe_button_description" = "Tạm ngưng hoạt động của COVIDSafe trong một khoảng thời gian nhất định.";
+"snooze_ended" = "Kết thúc tạm ngưng hoạt động.";
+"snooze_ends" = "Tạm ngưng hoạt động kết thúc trong";
+"snooze_from" = "Tạm ngưng hoạt động từ";
+"snooze_heading" = "Tạm ngưng hoạt động COVIDSafe";
+"snooze_on" = "Tạm ngưng hoạt động vào %@";
+"snooze_timer_description" = "Đặt hẹn giờ để tạm ngưng hoạt động COVIDSafe.";
+"snooze_to" = "Tạm ngưng hoạt động đến";
+"snoozed_calendar_description" = "COVIDSafe không sử dụng Bluetooth và không ghi lại các tiếp xúc. \n\n Bạn đã lên lịch trình cho COVIDSafe tạm ngưng hoạt động từ %@ đến %@ .";
 "south_australia" = "Nam Úc";
-"state_number_heading" = "";
+"state_number_heading" = "%@ số";
+"states_territories" = "";
 "stepCounter" = "Bước %d của %d";
 "support" = "Hỗ trợ";
 "support_content" = "Để được trợ giúp về các vấn đề không có trong chủ đề Trợ giúp";
 "Support_VOLabel" = "Hỗ trợ. Để được trợ giúp về các vấn đề không có trong chủ đề Trợ giúp";
 "tasmania" = "Tasmania";
-"total" = "";
+"total" = "Tổng số";
 "total_confirmed_cases" = "Tổng số ca nhiễm";
-"total_deaths" = "";
+"total_deaths" = "%@ tổng số tử vong";
 "total_per_state" = "Tổng số ca nhiễm theo tiểu bang và lãnh thổ";
+"twenty_eight_days" = "28 ngày";
+"type_in_time" = "Nhập thời gian";
 "UILaunchStoryboardName" = "LaunchScreen_vi";
 "under_sixteen_content" = "Tôi xác nhận cha mẹ hoặc người giám hộ của tôi đồng ý cho Cơ quan Chuyển đổi Kỹ thuật số với tư cách là nhà quản trị cửa hàng dữ liệu, theo quyết định pháp lý của Bộ trưởng Bộ Y tế Chính phủ Úc thu thập:";
 "under_sixteen_first_paragraph" = "Thông tin đăng ký của tôi.";
@@ -426,7 +494,6 @@
 "update_available_message_ios" = "Chúng tôi đã và đang cải thiện COVIDSafe. Cập nhật qua Kho Ứng dụng (App Store).";
 "update_available_title" = "Cập nhật có sẵn!";
 "update_description" = "";
-"update_description_VO" = "";
 "update_heading" = "Bật Dịch vụ Vị trí";
 "update_modal_button" = "Kích hoạt";
 "upload_answer_no" = "Không";
@@ -448,6 +515,7 @@
 "victoria" = "Victoria";
 "western_australia" = "Tây Úc";
 "wrong_ping_number" = "Nhập sai mã PIN";
+"yesterday_activity" = "Hôm qua";
 "country_region_name_au2" = "Đảo Norfolk";
 "AllowBluetoothOFF_VOLabel" = "Truy cập Bluetooth: TẮT Cho phép COVIDSafe truy cập Bluetooth";
 "AllowBluetoothON_VOLabel" = "Truy cập Bluetooth: BẬT";

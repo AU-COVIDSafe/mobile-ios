@@ -284,9 +284,10 @@ public extension PayloadData {
             let message = decodedPayload.msg
             return String(message.suffix(25))
         } catch {
-            let startIndex = count >= 3 ? 3 : 0
-            let endIndex = count >= 3 ? count-3 : 0
-            return String(subdata(in: startIndex..<endIndex).base64EncodedString().prefix(6))
+            guard count > 0 else {
+                return ""
+            }
+            return String(self.base64EncodedString().prefix(6))
         }
     }
 }

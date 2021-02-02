@@ -1,11 +1,13 @@
-"28_days" = "";
-"7_days" = "";
 "action_continue" = "继续";
 "action_report_an_issue" = "报告问题";
 "action_upload_done" = "完成";
 "action_verify_invalid_pin" = "PIN码无效，请要求卫生官员向您再发送一个PIN码。";
 "action_verify_upload_pin" = "上传个人信息";
-"active_cases" = "";
+"active_cases" = "活跃病例（估计）";
+"activity_button" = "检查应用程序的活动";
+"activity_button_description" = "查看您的应用程序与其他COVIDSafe用户的蓝牙交互。";
+"activity_heading" = "应用活动";
+"activity_intro" = "每当您的设备在其他COVIDSafe应用程序用户的范围内时，它都会记录蓝牙交互，这称为“蓝牙握手”。 \n\n这些握手显示了您的应用程序的运行状况。";
 /* Figma page iOS Screens (05/06) */
 "allow_bluetooth_call" = "允许COVIDSafe 访问蓝牙®";
 /* Figma page iOS Screens (05/06) */
@@ -13,16 +15,22 @@
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothON" = "访问蓝牙®：开";
 "australian_capital_territory" = "澳大利亚首都领地";
+"ble_handshakes_yesterday" = "昨日发生的蓝牙握手";
+"bluetooth_handshakes" = "蓝牙握手";
 /* Figma page iOS Screens (05/06) */
 "BluetoothOFF" = "蓝牙®：关";
 /* Figma page iOS Screens (05/06) */
 "BluetoothOFF_content" = "打开手机蓝牙® 选择「允许新的连接」";
 /* Figma page iOS Screens (05/06) */
 "BluetoothON" = "蓝牙®：开";
-"cases_28_days" = "";
-"cases_7_days" = "";
+"cancel_snooze" = "取消休眠";
+"cases_28_days" = "过去28天的新增病例";
+"cases_7_days" = "最近7天内的新增病例";
 "change_language" = "更改语言";
 "change_language_content" = "阅读其他语言版本的COVIDSafe使用指南。";
+"change_postcode_description" = "如果下载 COVIDSafe 后您的邮政编码发生更改，请及时更新。";
+"change_postcode_heading" = "更改邮政编码";
+"change_postcode_intro" = "";
 "collection_message" = "COVIDSafe现在会收集诊断信息，以帮助您解决应用程序中的问题。*了解更多信息*";
 "consent_button" = "我同意";
 /* Shared Consent Actions */
@@ -238,6 +246,7 @@
 "country_region_name_za" = "南非";
 "country_region_name_zm" = "赞比亚";
 "country_region_name_zw" = "津巴布韦";
+"customise_days" = "自定义日子";
 "data_privacy_button" = "下一步";
 "data_privacy_content" = "注册COVIDSafe之前，请务必阅读COVIDSafe的*隐私政策*。 \n\n如果您未满16岁，您的父母/监护人也必须阅读*隐私政策*。 \n\n使用COVIDSafe属自愿行为。您可以随时安装或删除该应用程序。如果删除COVIDSafe，*您也可以要求从安全服务器上删除您的信息*。 \n\n您需要输入姓名（或化名）、手机号码、年龄段和邮政编码来注册使用COVIDSafe。 \n\n注册时提交的信息以及有关COVIDSafe的使用信息将被储存在高度安全的服务器上。 \n\n为了确保COVIDSafe可以在您的设备上正常运行，需要收集与您的设备相关的以下信息：操作系统、应用程序版本、语言设置、蓝牙®是否正在运行以及过去7天应用程序上的接触记录。\n\nCOVIDSafe不会收集您的位置信息。 \n\nCOVIDSafe将在您的设备上记录发生接触的时间、与您发生过接触的其他COVIDSafe用户的匿名ID码、蓝牙®信号强度以及手机型号。 \n\n与您发生接触的其他COVIDSafe用户的设备上也会记录您的匿名ID代码、与您发生接触的日期和时间、蓝牙®信号强度以及您的手机型号。 \n\n如果其他用户的COVID-19检测结果为阳性，他们可以上传自己的接触者信息，而州或领地的卫生官员可能会出于追踪接触者的目的与您联系。 \n\n您的详细注册信息仅在追踪接触者以及维持COVIDSafe的合法正常运行时使用或披露。  \n\n更多信息可在*covidsafe.gov.au*网站上查阅。 \n\n如需进一步了解您对个人信息的权利，以及个人信息的处理和共享方式，请参阅COVIDSafe *隐私政策*。";
 "data_privacy_content_VO" = "注册COVIDSafe之前，请务必阅读COVIDSafe的隐私政策。 \n\n如果您未满16岁，您的父母/监护人也必须阅读隐私政策。 \n\n使用COVIDSafe属自愿行为。您可以随时安装或删除该应用程序。如果删除COVIDSafe，您也可以要求从安全服务器上删除您的信息。 \n\n您需要输入姓名（或化名）、手机号码、年龄段和邮政编码来注册使用COVIDSafe。 \n\n注册时提交的信息以及有关COVIDSafe的使用信息将被储存在高度安全的服务器上。 \n\n为了确保COVIDSafe可以正常运行，需要收集与您的设备相关的以下信息：操作系统、应用程序版本、语言设置、蓝牙®是否正在运行以及过去7天应用程序上的接触记录。\n\nCOVIDSafe不会收集您的位置信息。 \n\nCOVIDSafe将在您的设备上记录发生接触的时间、与您发生过接触的其他COVIDSafe用户的匿名ID码、蓝牙®信号强度以及手机型号。 \n\n与您发生接触的其他COVIDSafe用户的设备上也会记录您的匿名ID代码、与您发生接触的日期和时间、蓝牙®信号强度以及您的手机型号。 \n\n如果其他用户的COVID-19检测结果为阳性，他们可以上传自己的接触者信息，而州或领地的卫生官员可能会出于追踪接触者的目的与您联系。 \n\n您的详细注册信息仅在追踪接触者以及维持COVIDSafe的合法正常运行时使用或披露。  \n\n更多信息可在covidsafe.gov.au网站上查阅。 \n\n如需进一步了解您对个人信息的权利，以及个人信息的处理和共享方式，请参阅COVIDSafe 隐私政策。";
@@ -250,6 +259,7 @@
 "dialog_uploading_message" = "您的COVIDSafe信息正在上传中。 \n\n请不要关闭该应用程序。";
 "dismiss" = "取消";
 "done_success" = "完成";
+"edit_snooze_calendar" = "编辑休眠日历";
 "enter_number_button" = "获取PIN码";
 "enter_number_content" = "我们将向您发送一个6位数的PIN码以验证您的手机号码。";
 "enter_number_headline" = "请输入您的手机号码";
@@ -262,6 +272,15 @@
 "enter_pin_wrong_number" = "请确认手机号码是否正确";
 /* Figma page Android Screens (05/06) */
 "Enter_your_mobile_number_label" = "请输入您的手机号码";
+"every_day" = "每天";
+"factors_dotpoint1" = "范围内的COVIDSafe用户数量";
+"factors_dotpoint2" = "设备型号和机龄";
+"factors_dotpoint3" = "如果您位于正在行驶的车辆中";
+"factors_enviro_item_1" = "物理屏障，如墙壁";
+"factors_enviro_item_2" = "会干扰蓝牙信号的材料和固定装置";
+"factors_handshakes_heading" = "影响应用程序活动的因素";
+"factors_intro" = "可能影响握手次数的因素包括：";
+"factors_intro_2" = "蓝牙握手也会受到环境因素的影响，这些因素包括：";
 "global_back" = "返回";
 "global_close" = "关闭";
 "global_double_tap" = "双击进行编辑";
@@ -298,7 +317,16 @@
 "home_set_complete_external_link_share_title" = "分享COVIDSafe";
 "home_setup_help" = "帮助";
 "home_version_number_ios" = "发布版本号%@，构建版本号 %@";
-"hotspots_state_territory" = "";
+"hotspot_link_ACT" = "";
+"hotspot_link_NSW" = "";
+"hotspot_link_NT" = "";
+"hotspot_link_QLD" = "";
+"hotspot_link_SA" = "";
+"hotspot_link_TAS" = "";
+"hotspot_link_VIC" = "";
+"hotspot_link_WA" = "";
+"hotspots_state_territory" = "%@的热点地区";
+"hour" = "小时";
 "how_it_works_button" = "下一步";
 "how_it_works_content" = "COVIDSafe需要使用蓝牙®信号以确定您在何时靠近另一个COVIDSafe用户。 \n\n您与其他COVIDSafe用户之间的每一次密切接触都会被记录下来，以创建接触者数据。该信息经过加密，且仅储存在您的手机中。 \n\n如果您是COVIDSafe用户并且COVID-19检测呈阳性，则州或领地卫生官员将与您联系。他们会协助您自愿将密切接触者数据上传至高度安全的信息储存系统。\n\n如果您与检测结果呈阳性的其他COVIDSafe用户发生过密切接触，则州或领地卫生官员也会与您联系。 \n\n如需更多信息，请参阅*帮助主题*页。";
 /* OnBoarding How it works */
@@ -319,18 +347,31 @@
 "IntroLabel" = "阻止传播\n拯救生命";
 "invalid_australian_phone_number_error_prompt" = "澳大利亚手机号码最多包含10位数。";
 "invalid_norfolk_island_phone_number_error_prompt" = "诺福克岛的手机号码包含5到6位数。";
+"is_snoozed" = "COVIDSafe已休眠";
+"is_snoozed_description" = "COVIDSafe未在使用蓝牙，也未在记录接触者。";
 "jwt_description" = "您的注册信息存在问题。";
+"jwt_expired" = "您的注册已过期。";
+"jwt_expired_description" = "您必须每12个月确认一次您的手机号码，以确保您的注册信息正确无误。";
 "jwt_heading" = "请重新注册";
 "jwt_success" = "已成功更新注册";
+"last_7_days" = "最近7天";
+"learn_more" = "";
 "loading_numbers" = "正在加载最新统计数字";
-"locally_acquired" = "";
+"locally_acquired" = "%@本地感染";
 "location_off" = "位置：关闭";
 "location_off_description" = "您的 iPhone 要求COVIDSafe 获得位置权限才能运行。COVIDSafe 不会跟踪或存储您的位置数据。";
+"low_handshakes_description" = "请尝试用以下方法提高您手机上 COVIDSafe的性能：";
+"low_handshakes_heading" = "如果您的蓝牙握手次数少于预期，该怎么办";
+"low_handshakes_item1" = "打开应用程序检查COVIDSafe是否处于激活状态。";
+"low_handshakes_item2" = "通过Google Play Store或Apple Store将您的应用更新到最新版本。";
+"low_handshakes_item3" = "重新启动手机并再次打开应用。";
+"low_handshakes_link" = "阅读更多有关如何检查COVIDSafe是否正常运行的信息";
 /* Splash Screen */
 "migration_in_progress" = "COVIDSafe正在更新。 \n\n请保持开机状态直至更新完成。";
+"minute" = "分钟";
 "national_numbers" = "全国统计数字";
 "new_cases" = "过去24小时内新增病例";
-"new_cases_total" = "";
+"new_cases_total" = "自2020年2月1日以来的新增病例";
 "new_south_wales" = "新南威尔士州";
 /* Figma page Android Screens (05/06) */
 "norfolk_hint" = "例如：51234";
@@ -351,7 +392,8 @@
 "numbers_no_internet" = "请连接到互联网，以获取最新统计数字。";
 "numbers_refresh" = "请刷新";
 "options_for_australia" = "澳大利亚选项";
-"overseas_acquired" = "";
+"OS2b_Item_4" = "4. 您的 iPhone 要求COVIDSafe 获得位置权限才能运行。*COVIDSafe 不会收集、储存或使用您的位置数据*";
+"overseas_acquired" = "%@海外感染";
 "permission_button" = "继续";
 /* Figma page iOS Screens (05/06) */
 "permission_content_iOS" = "COVIDSafe需要启用＃Bluetooth＃才能运行。 COVIDSafe不会发送配对请求。 \n\n通过启用＃通知＃，您将在COVIDSafe未激活时收到提示信息。 \n\n您的iPhone要求COVIDSafe获得#位置权限#才能运行。 * COVIDSafe不会跟踪或存储您的位置数据* \n\n选择“继续”以启用：";
@@ -384,6 +426,9 @@
 "PN_ReminderBody" = "开启 COVIDSafe，确保其处于运行状态。";
 /* Figma page iOS Screens (05/06) */
 "PN_ReminderTitle" = "48 小时内未检测到任何接触";
+"postcode_api_error" = "";
+"postcode_change_label" = "";
+"postcode_success" = "您的邮政编码已更新";
 "PostcodeValidationErrorMessage" = "请输入有效的澳大利亚邮政编码。";
 "queensland" = "昆士兰州";
 "recovered" = "康复患者总数";
@@ -393,24 +438,47 @@
 /* Onboarding Registration Consent */
 "registration_consent_headline" = "注册同意书";
 "registration_consent_second_paragraph" = "我与其他COVIDSafe用户的接触信息（如果与我发生过接触的其他用户COVID-19检测呈阳性并上传其接触者数据）。";
+"save" = "保存";
+"scheduled" = "您已将COVIDSafe设置为从%@休眠至%@ 。";
 /* OnBoarding Enter Number */
 "select_country_or_region" = "选择国家或地区";
 /* Figma page Android Screens (05/06) */
 "Select_country_or_region_headline" = "选择国家或地区";
+"select_state_territory_button" = "选择州或领地";
+"select_state_territory_heading" = "选择州或领地";
+"set_snooze_time" = "设置休眠时间";
 "settings" = "设置";
+"seven_days" = "7天";
 "share_this_app_content" = "让我们一起阻止COVID-19的传播！下载 COVIDSafe—澳大利亚政府开发的一款应用程序。 #COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
 "show" = "显示";
+"snooze_button" = "休眠";
+"snooze_calendar_button" = "休眠日历";
+"snooze_calendar_description" = "设置COVIDSafe每周休眠的日子和时间。";
+"snooze_calendar_toggle" = "休眠日历";
+"snooze_covidsafe_button" = "让COVIDSafe休眠";
+"snooze_covidsafe_button_description" = "让COVIDSafe在特定时间段内休眠。";
+"snooze_ended" = "休眠已结束";
+"snooze_ends" = "离休眠结束还有";
+"snooze_from" = "休眠始于";
+"snooze_heading" = "将COVIDSafe休眠";
+"snooze_on" = "在%@调至休眠状态";
+"snooze_timer_description" = "为COVIDSafe设置定时休眠。";
+"snooze_to" = "休眠至";
+"snoozed_calendar_description" = "COVIDSafe未在使用蓝牙，也未在记录接触者。 \n\n您已将COVIDSafe设置为从%@休眠至%@ 。";
 "south_australia" = "南澳大利亚州";
-"state_number_heading" = "";
+"state_number_heading" = "%@数";
+"states_territories" = "";
 "stepCounter" = "第%d步，共%d步";
 "support" = "支持";
 "support_content" = "获取帮助，解决帮助主题未涵盖的问题";
 "Support_VOLabel" = "支持。获取帮助，解决帮助主题未涵盖的问题";
 "tasmania" = "塔斯马尼亚州";
-"total" = "";
+"total" = "总数";
 "total_confirmed_cases" = "确诊病例总数";
-"total_deaths" = "";
+"total_deaths" = "%@ 总死亡人数";
 "total_per_state" = "各州和领地确诊病例总数";
+"twenty_eight_days" = "28天";
+"type_in_time" = "输入时间";
 "UILaunchStoryboardName" = "LaunchScreen_zh_Hans";
 "under_sixteen_content" = "我确认我的父母或监护人同意数字转换局作为数据存储管理方可以根据澳大利亚政府卫生部常务副部长依法作出的决议，收集以下信息：";
 "under_sixteen_first_paragraph" = "我的注册信息。";
@@ -426,7 +494,6 @@
 "update_available_message_ios" = "我们一直在改进 COVIDSafe。请通过应用商店更新。";
 "update_available_title" = "更新可用！";
 "update_description" = "";
-"update_description_VO" = "";
 "update_heading" = "启用位置服务";
 "update_modal_button" = "继续";
 "upload_answer_no" = "否";
@@ -448,6 +515,7 @@
 "victoria" = "维多利亚州";
 "western_australia" = "西澳大利亚州";
 "wrong_ping_number" = "错误的PIN码";
+"yesterday_activity" = "昨天";
 "country_region_name_au2" = "诺福克岛";
 "AllowBluetoothOFF_VOLabel" = "访问蓝牙：关  允许COVIDSafe访问蓝牙";
 "AllowBluetoothON_VOLabel" = "访问蓝牙®：开";

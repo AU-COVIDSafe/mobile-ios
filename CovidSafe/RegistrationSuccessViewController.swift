@@ -13,6 +13,7 @@ class RegistrationSuccessViewController: UIViewController {
     @IBOutlet weak var pointTwoLabel: UILabel!
     @IBOutlet weak var pointThreeLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var pointFourTextView: UITextView!
     
     var reauthenticating = false
     
@@ -41,6 +42,8 @@ class RegistrationSuccessViewController: UIViewController {
             pointThreeText.addAttributes([.underlineStyle: NSUnderlineStyle.single.rawValue, .foregroundColor: UIColor.covidSafeColor], range: nsRange)
             pointThreeLabel.attributedText = pointThreeText
         }
+
+        pointFourTextView.addLink("\(URLHelper.geLocationPermissionsURL())", enclosedIn: "*")
         
         guard let currentVersion = (Bundle.main.version as NSString?)?.integerValue else {
             return

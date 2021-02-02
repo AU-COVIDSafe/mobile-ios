@@ -218,4 +218,10 @@ class SettingsViewController: UIViewController {
     @IBAction func onBackTapped(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
+    
+    @IBAction func onChangePostcodeTapped(_ sender: Any) {
+        let appLogVC = ChangePostcodeViewController()
+        
+        navigationController?.pushViewController(appLogVC, animated: true)
+    }
 }

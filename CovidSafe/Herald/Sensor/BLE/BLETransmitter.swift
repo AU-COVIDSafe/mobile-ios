@@ -48,7 +48,7 @@ class ConcreteBLETransmitter : NSObject, BLETransmitter, CBPeripheralManagerDele
     /// Beacon code generator for creating cryptographically secure public codes that can be later used for on-device matching.
     private let payloadDataSupplier: PayloadDataSupplier
     /// Peripheral manager for managing all connections, using a single manager for simplicity.
-    private var peripheral: CBPeripheralManager!
+    private var peripheral: CBPeripheralManager?
     /// Beacon service and characteristics being broadcasted by the transmitter.
     private var signalCharacteristic: CBMutableCharacteristic?
     private var payloadCharacteristic: CBMutableCharacteristic?
@@ -91,6 +91,9 @@ class ConcreteBLETransmitter : NSObject, BLETransmitter, CBPeripheralManagerDele
                 CBPeripheralManagerOptionShowPowerAlertKey : true
             ])
         }
+        guard let peripheral = peripheral else {
+            return
+        }
         
         guard peripheral.state == .poweredOn else {
             logger.fault("start denied, not powered on")
@@ -102,8 +105,8 @@ class ConcreteBLETransmitter : NSObject, BLETransmitter, CBPeripheralManagerDele
                 startAdvertising(withNewCharacteristics: false)
             } else {
                 queue.async {
-                    self.peripheral.stopAdvertising()
-                    self.peripheral.startAdvertising([CBAdvertisementDataServiceUUIDsKey : [BLESensorConfiguration.serviceUUID]])
+                    peripheral.stopAdvertising()
+                    peripheral.startAdvertising([CBAdvertisementDataServiceUUIDsKey : [BLESensorConfiguration.serviceUUID]])
                 }
             }
             logger.debug("start successful, for existing characteristics")
@@ -123,7 +126,7 @@ class ConcreteBLETransmitter : NSObject, BLETransmitter, CBPeripheralManagerDele
         guard peripheral != nil else {
             return
         }
-        guard peripheral.isAdvertising else {
+        guard peripheral?.isAdvertising ?? false else {
             logger.fault("stop denied, already stopped (source=%s)")
             self.peripheral = nil
             return
@@ -144,17 +147,17 @@ class ConcreteBLETransmitter : NSObject, BLETransmitter, CBPeripheralManagerDele
         legacyCovidPayloadCharacteristic?.value = nil
         service.characteristics = [signalCharacteristic!, payloadCharacteristic!, legacyCovidPayloadCharacteristic!]
         queue.async {
-            self.peripheral.stopAdvertising()
-            self.peripheral.removeAllServices()
-            self.peripheral.add(service)
-            self.peripheral.startAdvertising([CBAdvertisementDataServiceUUIDsKey : [BLESensorConfiguration.serviceUUID]])
+            self.peripheral?.stopAdvertising()
+            self.peripheral?.removeAllServices()
+            self.peripheral?.add(service)
+            self.peripheral?.startAdvertising([CBAdvertisementDataServiceUUIDsKey : [BLESensorConfiguration.serviceUUID]])
         }
     }
     
     private func stopAdvertising() {
         logger.debug("stopAdvertising()")
         queue.async {
-            self.peripheral.stopAdvertising()
+            self.peripheral?.stopAdvertising()
             self.peripheral = nil
         }
         notifyTimer?.cancel()
@@ -168,17 +171,18 @@ class ConcreteBLETransmitter : NSObject, BLETransmitter, CBPeripheralManagerDele
         notifyTimer = DispatchSource.makeTimerSource(queue: notifyTimerQueue)
         notifyTimer?.schedule(deadline: DispatchTime.now() + BLESensorConfiguration.notificationDelay)
         notifyTimer?.setEventHandler { [weak self] in
-            guard let s = self, let logger = self?.logger, let signalCharacteristic = self?.signalCharacteristic else {
+            guard let s = self, let logger = self?.logger, let signalCharacteristic = self?.signalCharacteristic,
+                  let peripheral = s.peripheral else {
                 return
             }
             // Notify subscribers to keep them awake
             s.queue.async {
                 logger.debug("notifySubscribers (source=\(source))")
-                s.peripheral.updateValue(s.emptyData, for: signalCharacteristic, onSubscribedCentrals: nil)
+                peripheral.updateValue(s.emptyData, for: signalCharacteristic, onSubscribedCentrals: nil)
             }
             // Restart advert if required
             let advertUpTime = Date().timeIntervalSince(s.advertisingStartedAt)
-            if s.peripheral.isAdvertising, advertUpTime > BLESensorConfiguration.advertRestartTimeInterval {
+            if peripheral.isAdvertising && advertUpTime > BLESensorConfiguration.advertRestartTimeInterval {
                 logger.debug("advertRestart (upTime=\(advertUpTime))")
                 s.startAdvertising(withNewCharacteristics: true)
             }

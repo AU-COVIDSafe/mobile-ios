@@ -15,6 +15,7 @@ class CovidStatisticsViewController: UITableViewController {
     private let heartImage = UIImage(named: "heart")
     private let virusMoleculeImage = UIImage(named: "virus-molecule")
     private let trendUpImage = UIImage(named: "trending-up")
+    private let alertTriangleImage = UIImage(named: "alert-triangle")
     
     private var statisticsUpdatedDate: Date?
     private var showError: Bool = false
@@ -30,10 +31,19 @@ class CovidStatisticsViewController: UITableViewController {
             UserDefaults.standard.set(showStatistics, forKey: showHideStatisticsKey)
         }
     }
+    private lazy var statisticForStateTerritory: StateTerritory = {
+        guard let value = UserDefaults.standard.string(forKey: statisticsStateTerritorySelectedKey) else {
+            return StateTerritory.AU
+        }
+        return StateTerritory(rawValue: value)!
+    }()
     
+    private var statisticsData: StatisticsResponse?
     private var statisticSections: [[StatisticRowModel]] = []
     
     var statisticsDelegate: StatisticsDelegate?
+    var homeDelegate: HomeDelegate?
+    var contentSizeKVOToken: NSKeyValueObservation?
     
     var isLoading = false {
         didSet {
@@ -45,21 +55,26 @@ class CovidStatisticsViewController: UITableViewController {
         super.viewDidLoad()
         tableView.isScrollEnabled = false
         
+        tableView.register(UINib(nibName: "ExternalLinkTableViewCell", bundle: nil), forCellReuseIdentifier: "ExternalLinkTableViewCell")
         tableView.register(UINib(nibName: "StatDetailedCell", bundle: nil), forCellReuseIdentifier: "StatDetailedCell")
         tableView.register(UINib(nibName: "MainStatisticsHeader", bundle: nil), forCellReuseIdentifier: "MainStatisticsHeader")
         tableView.register(UINib(nibName: "StatisticsTableHeader", bundle: nil), forCellReuseIdentifier: "StatisticsHeader")
         tableView.register(UINib(nibName: "LoadingViewCell", bundle: nil), forCellReuseIdentifier: "LoadingViewCell")
+        getStatistics()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        tableView.addObserver(self, forKeyPath: "contentSize", options: .new, context: nil)
+        contentSizeKVOToken = tableView.observe(\.contentSize, options: .new) { (tableView, change) in
+            if let newsize  = change.newValue {
+                self.statisticsDelegate?.setStatisticsContainerHeight(height: newsize.height)
+            }
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        tableView.removeObserver(self, forKeyPath: "contentSize")
         super.viewWillDisappear(true)
+        contentSizeKVOToken?.invalidate()
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?){
@@ -68,6 +83,30 @@ class CovidStatisticsViewController: UITableViewController {
             if let newvalue = change?[.newKey]{
                 let newsize  = newvalue as! CGSize
                 statisticsDelegate?.setStatisticsContainerHeight(height: newsize.height)
+            }
+        }
+    }
+    
+    // MARK: Retrieve Statistics from API
+    
+    func getStatistics() {
+        if showStatistics {
+            isLoading = true
+            StatisticsAPI.getStatistics(forState: statisticForStateTerritory) { (stats, error) in
+                let hasInternet = self.homeDelegate?.isInternetReachable() ?? false
+                
+                if error != nil {
+                    switch error {
+                    case .TokenExpiredError:
+                        self.homeDelegate?.showTokenExpiredMessage()
+                    default:
+                        // do nothing special
+                        break
+                    }
+                }
+                
+                self.isLoading = false
+                self.setupData(statistics: stats, errorType: error, hasInternet: hasInternet)
             }
         }
     }
@@ -87,12 +126,12 @@ class CovidStatisticsViewController: UITableViewController {
         if !hasInternet {
             showInternetError = true
         }
-        
-        processData(statisticsData: statistics)
+        statisticsData = statistics
+        processData(statisticsData: statisticsData, forState: statisticForStateTerritory)
         reloadTable()
     }
     
-    fileprivate func processData(statisticsData: StatisticsResponse?) {
+    fileprivate func processData(statisticsData: StatisticsResponse?, forState: StateTerritory) {
         statisticSections = []
         guard let statisticsData = statisticsData else {
             // this is the edge case of no data available.
@@ -100,7 +139,6 @@ class CovidStatisticsViewController: UITableViewController {
             statisticSections.append([])
             return
         }
-        let mainData = statisticsData.national
         
         // Set updated date
         if let updatedDate = statisticsData.updatedDate {
@@ -111,55 +149,117 @@ class CovidStatisticsViewController: UITableViewController {
         }
         
         var mainSectionData: [StatisticRowModel] = []
+        let nationalData = statisticsData.national
         
-        if let cases = mainData?.newCases {
-            mainSectionData.append(StatisticRowModel(number: cases, description: "new_cases".localizedString(), image: trendUpImage))
+        if statisticsData.version() == 2 {
+            var stateData = statisticsData.national
+            switch forState {
+            case .ACT:
+                stateData = statisticsData.act
+            case .NSW:
+                stateData = statisticsData.nsw
+            case .NT:
+                stateData = statisticsData.nt
+            case .SA:
+                stateData = statisticsData.sa
+            case .TAS:
+                stateData = statisticsData.tas
+            case .VIC:
+                stateData = statisticsData.vic
+            case .WA:
+                stateData = statisticsData.wa
+            case .QLD:
+                stateData = statisticsData.qld
+            default:
+                stateData = statisticsData.national
+            }
+            
+            let descriptionFormat = "%@\r\r%@"
+            
+            // New cases section
+            let newCases = stateData?.newCases ?? 0
+            let localCases = stateData?.newLocallyAcquired ?? 0
+            let overseasCases = stateData?.newOverseasAcquired ?? 0
+            var bottomDesc = "\(String.localizedStringWithFormat("locally_acquired".localizedString(), "\(localCases)"))\r\(String.localizedStringWithFormat( "overseas_acquired".localizedString(), "\(overseasCases)"))"
+            var description = String.localizedStringWithFormat(descriptionFormat, "new_cases".localizedString(), bottomDesc)
+            var attributedDesc = NSMutableAttributedString(string: description)
+            
+            attributedDesc.addAttribute(.font,
+                                        value: UIFont.preferredFont(for: .callout, weight: .semibold),
+                                        range: NSRange(description.range(of: "\(localCases)")!, in: description))
+            attributedDesc.addAttribute(.font,
+                                        value: UIFont.preferredFont(for: .callout, weight: .semibold),
+                                        range: NSRange(description.range(of: "\(overseasCases)")!, in: description))
+            
+            mainSectionData.append(StatisticRowModel(number: newCases, description: attributedDesc, image: trendUpImage))
+            
+            // Active cases section
+            let activeCases = stateData?.activeCases ?? 0
+            let totalDeaths = stateData?.deaths ?? 0
+            
+            bottomDesc = String.localizedStringWithFormat("total_deaths".localizedString(), "\(totalDeaths)")
+            description = String.localizedStringWithFormat(descriptionFormat, "active_cases".localizedString(), bottomDesc)
+            attributedDesc = NSMutableAttributedString(string: description)
+            attributedDesc.addAttribute(.font,
+                                        value: UIFont.preferredFont(for: .callout, weight: .semibold),
+                                        range: NSRange(description.range(of: "\(totalDeaths)")!, in: description))
+            
+            mainSectionData.append(StatisticRowModel(number: activeCases, description: attributedDesc, image: virusMoleculeImage))
+            
+            statisticSections.append(mainSectionData)
+            
+        } else {
+            // we keep old design/data shown in case the response does not have state based data
+            if let cases = nationalData?.newCases {
+                mainSectionData.append(StatisticRowModel(number: cases, description: NSAttributedString(string: "new_cases".localizedString()), image: trendUpImage))
+            }
+
+            if let cases = nationalData?.totalCases {
+                mainSectionData.append(StatisticRowModel(number: cases, description: NSAttributedString(string: "total_confirmed_cases".localizedString()), image: virusMoleculeImage))
+            }
+
+            if let cases = nationalData?.recoveredCases {
+                mainSectionData.append(StatisticRowModel(number: cases, description: NSAttributedString(string: "recovered".localizedString()), image: heartImage))
+            }
+            
+            if let cases = nationalData?.deaths {
+                mainSectionData.append(StatisticRowModel(number: cases, description: NSAttributedString(string: "deaths".localizedString()), image: virusMoleculeImage, imageBackgroundColor: UIColor.covidSafeLightGreyColor))
+            }
+            
+            statisticSections.append(mainSectionData)
+            
+            var statesSectionData: [StatisticRowModel] = []
+            
+            if let cases = statisticsData.act?.totalCases {
+                statesSectionData.append(StatisticRowModel(number: cases, description: NSAttributedString(string: "australian_capital_territory".localizedString())))
+            }
+            if let cases = statisticsData.nsw?.totalCases {
+                statesSectionData.append(StatisticRowModel(number: cases, description: NSAttributedString(string: "new_south_wales".localizedString())))
+            }
+            if let cases = statisticsData.nt?.totalCases {
+                statesSectionData.append(StatisticRowModel(number: cases, description: NSAttributedString(string: "northern_territory".localizedString())))
+            }
+            if let cases = statisticsData.qld?.totalCases {
+                statesSectionData.append(StatisticRowModel(number: cases, description: NSAttributedString(string: "queensland".localizedString())))
+            }
+            if let cases = statisticsData.sa?.totalCases {
+                statesSectionData.append(StatisticRowModel(number: cases, description: NSAttributedString(string: "south_australia".localizedString())))
+            }
+            if let cases = statisticsData.tas?.totalCases {
+                statesSectionData.append(StatisticRowModel(number: cases, description: NSAttributedString(string: "tasmania".localizedString())))
+            }
+            if let cases = statisticsData.vic?.totalCases {
+                statesSectionData.append(StatisticRowModel(number: cases, description: NSAttributedString(string: "victoria".localizedString())))
+            }
+            if let cases = statisticsData.wa?.totalCases {
+                statesSectionData.append(StatisticRowModel(number: cases, description: NSAttributedString(string: "western_australia".localizedString())))
+            }
+            
+            if statesSectionData.count > 0 {
+                statisticSections.append(statesSectionData)
+            }
         }
         
-        if let cases = mainData?.totalCases {
-            mainSectionData.append(StatisticRowModel(number: cases, description: "total_confirmed_cases".localizedString(), image: virusMoleculeImage))
-        }
-        
-        if let cases = mainData?.recoveredCases {
-            mainSectionData.append(StatisticRowModel(number: cases, description: "recovered".localizedString(), image: heartImage))
-        }
-        
-        if let cases = mainData?.deaths {
-            mainSectionData.append(StatisticRowModel(number: cases, description: "deaths".localizedString(), image: virusMoleculeImage, imageBackgroundColor: UIColor.covidSafeLightGreyColor))
-        }
-        
-        statisticSections.append(mainSectionData)
-        
-        var statesSectionData: [StatisticRowModel] = []
-        
-        if let cases = statisticsData.act?.totalCases {
-            statesSectionData.append(StatisticRowModel(number: cases, description: "australian_capital_territory".localizedString()))
-        }
-        if let cases = statisticsData.nsw?.totalCases {
-            statesSectionData.append(StatisticRowModel(number: cases, description: "new_south_wales".localizedString()))
-        }
-        if let cases = statisticsData.nt?.totalCases {
-            statesSectionData.append(StatisticRowModel(number: cases, description: "northern_territory".localizedString()))
-        }
-        if let cases = statisticsData.qld?.totalCases {
-            statesSectionData.append(StatisticRowModel(number: cases, description: "queensland".localizedString()))
-        }
-        if let cases = statisticsData.sa?.totalCases {
-            statesSectionData.append(StatisticRowModel(number: cases, description: "south_australia".localizedString()))
-        }
-        if let cases = statisticsData.tas?.totalCases {
-            statesSectionData.append(StatisticRowModel(number: cases, description: "tasmania".localizedString()))
-        }
-        if let cases = statisticsData.vic?.totalCases {
-            statesSectionData.append(StatisticRowModel(number: cases, description: "victoria".localizedString()))
-        }
-        if let cases = statisticsData.wa?.totalCases {
-            statesSectionData.append(StatisticRowModel(number: cases, description: "western_australia".localizedString()))
-        }
-        
-        if statesSectionData.count > 0 {
-            statisticSections.append(statesSectionData)
-        }
     }
     
     // MARK: Table view delegate
@@ -175,13 +275,18 @@ class CovidStatisticsViewController: UITableViewController {
         
         if section == 0 {
             let headerView = tableView.dequeueReusableCell(withIdentifier: "MainStatisticsHeader") as! MainStatisticsHeaderViewCell
-            headerView.titleLabel.font = UIFont.preferredFont(for: .title3, weight: .semibold)
             headerView.statisticsDelegate = statisticsDelegate
             headerView.statisticsTableDelegate = self
             
+            let shouldDisplayStateSelection = (statisticsData?.version() ?? 0) >= 2
             let hideShowLabel = showStatistics ? "hide".localizedString() : "show".localizedString()
             headerView.hideShowButton.setTitle(hideShowLabel, for: .normal)
+            headerView.selectStateTerritoryContainer.isHidden = !showStatistics || !shouldDisplayStateSelection
             
+            headerView.titleLabel.text = (statisticForStateTerritory == StateTerritory.AU || !shouldDisplayStateSelection) ? "national_numbers".localizedString() :  String.localizedStringWithFormat(
+                "state_number_heading".localizedString(),
+                statisticForStateTerritory.rawValue
+            )
             
             if let updateDate = statisticsUpdatedDate, showStatistics {
                 let dateFormatter = DateFormatter()
@@ -271,23 +376,33 @@ class CovidStatisticsViewController: UITableViewController {
         
         // detailed stat row
         if indexPath.section == 0 {
-            let cellView = tableView.dequeueReusableCell(withIdentifier: "StatDetailedCell", for: indexPath) as! StatDetailedViewCell
             let rowData = statisticSections[indexPath.section][indexPath.row]
-            
-            cellView.statImage?.image = rowData.image
-            cellView.statDescription.text = rowData.description
-            cellView.statNumberLabel.text = NumberFormatter.localizedString(from: NSNumber(value: rowData.number), number: .decimal)
-            if #available(iOS 11.0, *) {
-                cellView.statNumberLabel.font = UIFont.preferredFont(for: .largeTitle, weight: .semibold)
+            if rowData.cellType == .Link {
+                let cellView = tableView.dequeueReusableCell(withIdentifier: "ExternalLinkTableViewCell", for: indexPath) as! ExternalLinkTableViewCell
+                
+                cellView.cellImage.image = rowData.image
+                cellView.linkDescription.attributedText = rowData.description
+                cellView.externalLinkURL = rowData.urlLink
+                
+                return cellView
             } else {
-                // Fallback on earlier versions
-                cellView.statNumberLabel.font = UIFont.preferredFont(for: .title1, weight: .semibold)
+                let cellView = tableView.dequeueReusableCell(withIdentifier: "StatDetailedCell", for: indexPath) as! StatDetailedViewCell
+                
+                cellView.statImage?.image = rowData.image
+                cellView.statDescription.attributedText = rowData.description
+                cellView.statNumberLabel.text = NumberFormatter.localizedString(from: NSNumber(value: rowData.number), number: .decimal)
+                if #available(iOS 11.0, *) {
+                    cellView.statNumberLabel.font = UIFont.preferredFont(for: .largeTitle, weight: .semibold)
+                } else {
+                    // Fallback on earlier versions
+                    cellView.statNumberLabel.font = UIFont.preferredFont(for: .title1, weight: .semibold)
+                }
+                if let bkgColor = rowData.imageBackgroundColor {
+                    cellView.imageBackgroundColor = bkgColor
+                }
+                
+                return cellView
             }
-            if let bkgColor = rowData.imageBackgroundColor {
-                cellView.imageBackgroundColor = bkgColor
-            }
-            
-            return cellView
         }
         
         // Simple stat row
@@ -302,7 +417,7 @@ class CovidStatisticsViewController: UITableViewController {
         
         let rowData = statisticSections[indexPath.section][indexPath.row]
         
-        cellView!.textLabel?.text = rowData.description
+        cellView!.textLabel?.attributedText = rowData.description
         cellView!.detailTextLabel?.text = NumberFormatter.localizedString(from: NSNumber(value: rowData.number), number: .decimal)
         
         return cellView!
@@ -317,7 +432,7 @@ extension CovidStatisticsViewController: StatisticsTableDelegate {
         showStatistics = !showStatistics
         
         if showStatistics && statisticSections.count == 0 {
-            statisticsDelegate?.refreshStatistics()
+            refreshStatistics()
         } else {
             UIView.transition(with: tableView,
                               duration: 0.3,
@@ -325,6 +440,29 @@ extension CovidStatisticsViewController: StatisticsTableDelegate {
                               animations: { self.reloadTable() })
         }
     }
+    
+    func refreshStatistics() {
+        getStatistics()
+    }
+    
+    func changeStateTerritoryStatistics() {
+        let selectStateTerritoryViewController = SelectStateTerritoryViewController()
+        selectStateTerritoryViewController.delegate = self
+        let navController = UINavigationController(rootViewController: selectStateTerritoryViewController)
+        
+        present(navController, animated: true, completion: nil)
+    }
+}
+
+// MARK: Selected state territory delegate
+
+extension CovidStatisticsViewController: StateTerritorySelectionDelegate {
+    
+    func didChangeStateTerritory(selectedState: StateTerritory) {
+        statisticForStateTerritory = selectedState
+        getStatistics()
+    }
+    
 }
 
 // MARK: Table view cells
@@ -351,16 +489,34 @@ class MainStatisticsHeaderViewCell: UITableViewCell {
     @IBOutlet weak var refreshViewContainer: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var hideShowButton: UIButton!
+    @IBOutlet weak var selectStateLabel: UILabel!
+    @IBOutlet weak var selectStateTerritoryContainer: UIStackView!
     
     var statisticsDelegate: StatisticsDelegate?
     var statisticsTableDelegate: StatisticsTableDelegate?
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        titleLabel.font = UIFont.preferredFont(for: .title3, weight: .semibold)
+        let selectStateTerritoryTapGesture = UITapGestureRecognizer(target: self, action: #selector(selectStateTerritoryTapped))
+        selectStateLabel.addGestureRecognizer(selectStateTerritoryTapGesture)
+        let selectStateText = NSMutableAttributedString(string: "select_state_territory_button".localizedString(),
+                                                           attributes: [.font: UIFont.preferredFont(forTextStyle: .callout),
+                                                                        .underlineStyle: NSUnderlineStyle.single.rawValue])
+        selectStateLabel.attributedText = selectStateText
+    }
+    
     @IBAction func refreshButtonTapped(_ sender: Any) {
-        statisticsDelegate?.refreshStatistics()
+        statisticsTableDelegate?.refreshStatistics()
     }
     
     @IBAction func showHideButtonTapped(_ sender: Any) {
         statisticsTableDelegate?.toggleDisplayStatistics()
+        selectStateTerritoryContainer.isHidden = !selectStateTerritoryContainer.isHidden
+    }
+    
+    @IBAction func selectStateTerritoryTapped(_ sender: Any) {
+        statisticsTableDelegate?.changeStateTerritoryStatistics()
     }
 }
 
@@ -390,18 +546,25 @@ class LoadingViewCell: UITableViewCell {
 
 protocol StatisticsTableDelegate {
     func toggleDisplayStatistics()
+    func changeStateTerritoryStatistics()
+    func refreshStatistics()
 }
 
 protocol StatisticsDelegate {
-    func refreshStatistics()
     func setStatisticsContainerHeight(height: CGFloat)
 }
 
 // MARK: Statistics row model
 
+enum StatisticCellType {
+    case Link, Detail
+}
+
 struct StatisticRowModel {
     var number: Int
-    var description: String
+    var description: NSAttributedString
     var image: UIImage?
     var imageBackgroundColor: UIColor?
+    var urlLink: URL?
+    var cellType: StatisticCellType?
 }

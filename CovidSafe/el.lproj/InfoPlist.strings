@@ -3,6 +3,9 @@
 
   Copyright © 2020 Australian Government. All rights reserved. */
 "BluetoothUsageDesc" = "Η COVIDSafe ανταλλάσσει σήματα Bluetooth® με κοντινά τηλέφωνα που χρησιμοποιούν την ίδια εφαρμογή. Αυτά τα σήματα περιέχουν ένα ανώνυμο αναγνωριστικό, το οποίο είναι κρυπτογραφημένο και αλλάζει συνεχώς για διασφάλιση του απορρήτου σας.";
-"NSBluetoothAlwaysUsageDescription" = "Η COVIDSafe ανταλλάσσει σήματα Bluetooth® με τηλέφωνα που βρίσκονται κοντά σας και χρησιμοποιούν την ίδια εφαρμογή. Αυτά τα σήματα έχουν ανώνυμο αναγνωριστικό, το οποίο είναι κρυπτογραφημένο και αλλάζει συνεχώς για διασφάλιση του απορρήτου σας.";
+"NSBluetoothAlwaysUsageDescription" = "Η COVIDSafe ανταλλάσσει σήματα Bluetooth® με τηλέφωνα που βρίσκονται κοντά σας και χρησιμοποιούν την ίδια εφαρμογή. Αυτά τα σήματα έχουν ανώνυμο αναγνωριστικό, το οποίο είναι κρυπτογραφημένο και αλλάζει συνεχώς για διασφάλιση του απορρήτου σας. ";
 "NSBluetoothPeripheralUsageDescription" = "Η COVIDSafe ανταλλάσσει σήματα Bluetooth® με τηλέφωνα που βρίσκονται κοντά σας και χρησιμοποιούν την ίδια εφαρμογή. Αυτά τα σήματα έχουν ανώνυμο αναγνωριστικό, το οποίο είναι κρυπτογραφημένο και αλλάζει συνεχώς για διασφάλιση του απορρήτου σας.";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "";
+"NSLocationAlwaysUsageDescription" = "";
+"NSLocationWhenInUseUsageDescription" = "";
 "UILaunchStoryboardName" = "LaunchScreen_el";
