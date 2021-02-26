@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSGenericErrorViewController" customModule="COVIDSafe" customModuleProvider="target">
+            <connections>
+                <outlet property="errorDescriptionText" destination="izF-hv-X5C" id="J0b-zA-8f1"/>
+                <outlet property="errorTitleLabel" destination="6Fn-I8-pSW" id="mri-bx-gtk"/>
+                <outlet property="mainButton" destination="Bty-iK-9dk" id="zT8-5f-Ibu"/>
+                <outlet property="secondaryButton" destination="Zcy-8u-7SZ" id="ePJ-uD-OFx"/>
+                <outlet property="view" destination="Ajs-i9-nSX" id="8mr-0z-SuJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Ajs-i9-nSX">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wZ-cd-QHx">
+                    <rect key="frame" x="32" y="87.333333333333314" width="350" height="561.33333333333348"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CovidSafe-Circle-Black" translatesAutoresizingMaskIntoConstraints="NO" id="O0I-6t-0QT">
+                            <rect key="frame" x="70" y="0.0" width="210" height="210"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="O0I-6t-0QT" secondAttribute="height" multiplier="1:1" id="NLC-Sc-L8W"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izF-hv-X5C">
+                            <rect key="frame" x="0.0" y="325" width="350" height="108.33333333333331"/>
+                            <string key="text">Try uploading your data again.
+
+Refer to this error code if a state or territory health official asks for it: 
+[Error code]</string>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bty-iK-9dk" customClass="GradientButton" customModule="COVIDSafe" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="457.33333333333331" width="350" height="48"/>
+                            <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="iPZ-6s-oeG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <color key="tintColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Try again">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="dialog_error_uploading_positive"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcy-8u-7SZ" customClass="GradientButton" customModule="COVIDSafe" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="513.33333333333326" width="350" height="48"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="xBa-93-KrI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <color key="tintColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="0.0" green="0.54117647059999996" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="dialog_error_uploading_negative"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your upload failed" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fn-I8-pSW">
+                            <rect key="frame" x="32" y="274" width="286" height="24"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="upload_fail_heading"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="6Fn-I8-pSW" firstAttribute="top" secondItem="O0I-6t-0QT" secondAttribute="bottom" constant="64" id="233-cz-AES"/>
+                        <constraint firstAttribute="trailing" secondItem="izF-hv-X5C" secondAttribute="trailing" id="2es-QX-BBH"/>
+                        <constraint firstItem="Zcy-8u-7SZ" firstAttribute="top" secondItem="Bty-iK-9dk" secondAttribute="bottom" constant="8" id="4nF-tv-7jS"/>
+                        <constraint firstAttribute="bottom" secondItem="Zcy-8u-7SZ" secondAttribute="bottom" id="6aR-BN-1VE"/>
+                        <constraint firstItem="O0I-6t-0QT" firstAttribute="centerX" secondItem="6wZ-cd-QHx" secondAttribute="centerX" id="8ba-eW-tYD"/>
+                        <constraint firstAttribute="trailing" secondItem="6Fn-I8-pSW" secondAttribute="trailing" constant="32" id="EaC-aB-QKO"/>
+                        <constraint firstItem="Zcy-8u-7SZ" firstAttribute="width" secondItem="Bty-iK-9dk" secondAttribute="width" id="Nl8-QL-zOs"/>
+                        <constraint firstItem="Bty-iK-9dk" firstAttribute="top" secondItem="izF-hv-X5C" secondAttribute="bottom" constant="24" id="W2R-F0-jKu"/>
+                        <constraint firstItem="Zcy-8u-7SZ" firstAttribute="leading" secondItem="6wZ-cd-QHx" secondAttribute="leading" id="aCA-SA-yc8"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="O0I-6t-0QT" secondAttribute="trailing" constant="70" id="byK-ZQ-6cT"/>
+                        <constraint firstItem="6Fn-I8-pSW" firstAttribute="leading" secondItem="6wZ-cd-QHx" secondAttribute="leading" constant="32" id="cdw-Kg-SmI"/>
+                        <constraint firstItem="izF-hv-X5C" firstAttribute="top" secondItem="6Fn-I8-pSW" secondAttribute="bottom" constant="27" id="kaf-zz-1Yy"/>
+                        <constraint firstItem="izF-hv-X5C" firstAttribute="leading" secondItem="6wZ-cd-QHx" secondAttribute="leading" id="oFl-KI-fQj"/>
+                        <constraint firstItem="O0I-6t-0QT" firstAttribute="top" secondItem="6wZ-cd-QHx" secondAttribute="top" id="pQy-az-wa4"/>
+                        <constraint firstAttribute="trailing" secondItem="Bty-iK-9dk" secondAttribute="trailing" id="qPV-Go-96i"/>
+                        <constraint firstItem="O0I-6t-0QT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6wZ-cd-QHx" secondAttribute="leading" constant="70" id="rpl-M5-jpd"/>
+                        <constraint firstAttribute="trailing" secondItem="Zcy-8u-7SZ" secondAttribute="trailing" id="sKp-7x-U10"/>
+                        <constraint firstItem="Bty-iK-9dk" firstAttribute="leading" secondItem="6wZ-cd-QHx" secondAttribute="leading" id="y3A-he-oKh"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAI-oH-bE6" userLabel="BackBtn">
+                    <rect key="frame" x="354" y="16" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="KpF-da-Ao4"/>
+                        <constraint firstAttribute="height" constant="44" id="jLr-Sc-ZzG"/>
+                    </constraints>
+                    <state key="normal" image="closeButton"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="global_close"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="closeBtnTapped:" destination="-1" eventType="touchUpInside" id="8jl-mZ-zfa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="bWl-nI-rcR"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="bWl-nI-rcR" firstAttribute="trailing" secondItem="yAI-oH-bE6" secondAttribute="trailing" constant="16" id="6DC-tz-voA"/>
+                <constraint firstItem="6wZ-cd-QHx" firstAttribute="leading" secondItem="Ajs-i9-nSX" secondAttribute="leading" constant="32" id="H1e-xj-Ryb"/>
+                <constraint firstItem="6wZ-cd-QHx" firstAttribute="centerY" secondItem="Ajs-i9-nSX" secondAttribute="centerY" id="M8a-hE-Ydx"/>
+                <constraint firstItem="bWl-nI-rcR" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="6wZ-cd-QHx" secondAttribute="bottom" constant="10" id="OMJ-VA-zkw"/>
+                <constraint firstAttribute="trailing" secondItem="6wZ-cd-QHx" secondAttribute="trailing" constant="32" id="Vt0-0l-OfF"/>
+                <constraint firstItem="6wZ-cd-QHx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="yAI-oH-bE6" secondAttribute="top" constant="10" id="WOA-YE-U1y"/>
+                <constraint firstItem="yAI-oH-bE6" firstAttribute="top" secondItem="bWl-nI-rcR" secondAttribute="top" constant="16" id="cty-Ar-XCw"/>
+                <constraint firstItem="6wZ-cd-QHx" firstAttribute="centerX" secondItem="Ajs-i9-nSX" secondAttribute="centerX" id="xJH-gs-7eF"/>
+            </constraints>
+            <point key="canvasLocation" x="-52" y="-593"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Bty-iK-9dk">
+            <size key="intrinsicContentSize" width="73" height="33"/>
+        </designable>
+        <designable name="Zcy-8u-7SZ">
+            <size key="intrinsicContentSize" width="55" height="33"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="CovidSafe-Circle-Black" width="240" height="240"/>
+        <image name="closeButton" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

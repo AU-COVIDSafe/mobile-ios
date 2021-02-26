@@ -446,19 +446,37 @@ extension CovidStatisticsViewController: StatisticsTableDelegate {
     }
     
     func changeStateTerritoryStatistics() {
-        let selectStateTerritoryViewController = SelectStateTerritoryViewController()
+        let selectStateTerritoryViewController = SelectableTableViewController<StateTerritory>()
+        selectStateTerritoryViewController.selectedValue = statisticForStateTerritory
+        selectStateTerritoryViewController.data = [[StateTerritory.AU], getStateValues()]
+        selectStateTerritoryViewController.sectionTitles = ["",         "states_territories".localizedString()
+]
         selectStateTerritoryViewController.delegate = self
         let navController = UINavigationController(rootViewController: selectStateTerritoryViewController)
         
         present(navController, animated: true, completion: nil)
     }
+    
+    func getStateValues() -> [StateTerritory] {
+        return [StateTerritory.ACT,
+                StateTerritory.NSW,
+                StateTerritory.QLD,
+                StateTerritory.SA,
+                StateTerritory.TAS,
+                StateTerritory.VIC,
+                StateTerritory.WA]
+    }
 }
 
 // MARK: Selected state territory delegate
 
-extension CovidStatisticsViewController: StateTerritorySelectionDelegate {
+extension CovidStatisticsViewController: TableSelectionDelegate {
     
-    func didChangeStateTerritory(selectedState: StateTerritory) {
+    func didChangeSelectedValue(selectedValue: Any) {
+        guard let selectedState = selectedValue as? StateTerritory else {
+            return
+        }
+        UserDefaults.standard.set(selectedState.rawValue, forKey: statisticsStateTerritorySelectedKey)
         statisticForStateTerritory = selectedState
         getStatistics()
     }

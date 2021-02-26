@@ -46,6 +46,9 @@ class BluetraceManager: SensorDelegate {
         sensor?.start()
     }
     
+    func addDelegateToSensors(delegate: SensorDelegate) {
+        sensor?.add(delegate: delegate)
+    }    
     
     func turnOnLocationSensor() {
         guard let sensorArray = sensor as? SensorArray else {

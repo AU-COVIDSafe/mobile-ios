@@ -7,15 +7,17 @@
 "activity_button" = "Controlla l'attività dell'app";
 "activity_button_description" = "Visualizza le interazioni Bluetooth della tua app con altri utenti COVIDSafe.";
 "activity_heading" = "Attività dell'app";
-"activity_intro" = "Ogni volta che il tuo dispositivo si trova nel raggio di altri utenti dell'app COVIDSafe, prende nota delle interazioni Bluetooth chiamate \"strette di mano Bluetooth\". \n\n Queste strette di mano danno un'indicazione del funzionamento della tua app.";
+"activity_intro" = "";
+"activity_intro_2" = "";
 /* Figma page iOS Screens (05/06) */
 "allow_bluetooth_call" = "Consenti al COVIDSafe di accedere al Bluetooth®";
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothOFF" = "Accesso al Bluetooth®: OFF";
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothON" = "Accesso al Bluetooth®: ON";
+"app_activity_bluetooth_handshakes_heading" = "";
 "australian_capital_territory" = "Australian Capital Territory";
-"ble_handshakes_yesterday" = "Strette di mano Bluetooth ieri";
+"ble_handshakes_yesterday" = "";
 "bluetooth_handshakes" = "Strette di mano Bluetooth";
 /* Figma page iOS Screens (05/06) */
 "BluetoothOFF" = "Bluetooth®: OFF";
@@ -276,11 +278,14 @@
 "factors_dotpoint1" = "numero di utenti COVIDSafe nel raggio d'azione";
 "factors_dotpoint2" = "modello ed età del dispositivo";
 "factors_dotpoint3" = "se sei in un veicolo in movimento";
+"factors_dotpoint4" = "";
 "factors_enviro_item_1" = "barriere fisiche come muri";
 "factors_enviro_item_2" = "materiale e dispositivi che interferiscono con i segnali Bluetooth";
 "factors_handshakes_heading" = "Fattori che influiscono sull'attività dell'app";
-"factors_intro" = "I fattori che possono influenzare il numero di strette di mano comprendono:";
+"factors_intro" = "";
 "factors_intro_2" = "Anche le strette di mano possono essere influenzate da fattori ambientali:";
+/* Example: "From 22 to 28 January 2021" */
+"from" = "";
 "global_back" = "Indietro";
 "global_close" = "Chiudi";
 "global_double_tap" = "Fai un doppio click per modificare";
@@ -288,6 +293,7 @@
 "hide" = "Nascondi";
 "home_app_permission_status_subtitle" = "COVIDSafe non funziona senza le impostazioni corrette. ";
 "home_app_permission_status_title" = "Controlla le impostazioni";
+"home_bottom_nav" = "";
 "home_data_uploaded_message" = "Aiuta a fermare la diffusione di COVID-19 e a monitorare i sintomi.";
 "home_header_active_no_action_required" = "Non sono necessarie ulteriori azioni.";
 /* Home */
@@ -360,12 +366,7 @@
 "locally_acquired" = "%@ contratto localmente";
 "location_off" = "Posizione: OFF";
 "location_off_description" = "Il tuo iPhone richiede l'autorizzazione alla localizzazione affinché COVIDSafe funzioni. COVIDSafe NON memorizza né utilizza i dati relativi alla tua posizione.";
-"low_handshakes_description" = "Prova questi suggerimenti per migliorare le prestazioni di COVIDSafe sul tuo telefono:";
-"low_handshakes_heading" = "Cosa fare se i numeri delle strette di mano sono inferiori alle tue aspettative";
-"low_handshakes_item1" = "Verifica se COVIDSafe è attivo aprendo l'app.";
-"low_handshakes_item2" = "Aggiorna la tua app all'ultima versione tramite Google Play Store o Apple Store.";
-"low_handshakes_item3" = "Riavvia il telefono e apri di nuovo l'app.";
-"low_handshakes_link" = "Per saperne di più su come controllare se COVIDSafe funziona correttamente";
+"main_restrictions" = "";
 /* Splash Screen */
 "migration_in_progress" = "Aggiornamento COVIDSafe in corso. \n\nAssicurati che il cellulare non sia spento fino al completamento dell'aggiornamento.";
 "minute" = "Minuto";
@@ -373,6 +374,13 @@
 "new_cases" = "Nuovi casi nelle ultime 24 ore";
 "new_cases_total" = "Nuovi casi dal 1° febbraio 2020";
 "new_south_wales" = "New South Wales";
+"no_handshakes_description" = "";
+"no_handshakes_heading" = "";
+"no_handshakes_item1" = "Verifica se COVIDSafe è attivo aprendo l'app.";
+"no_handshakes_item2" = "Aggiorna la tua app all'ultima versione tramite Google Play Store o Apple Store.";
+"no_handshakes_item3" = "Riavvia il telefono e apri di nuovo l'app.";
+"no_handshakes_item4" = "";
+"no_handshakes_link" = "Per saperne di più su come controllare se COVIDSafe funziona correttamente";
 /* Figma page Android Screens (05/06) */
 "norfolk_hint" = "Per esempio: 51234";
 "northern_territory" = "Northern Territory";
@@ -438,6 +446,27 @@
 /* Onboarding Registration Consent */
 "registration_consent_headline" = "Consenso alla registrazione";
 "registration_consent_second_paragraph" = "Informazioni sul contatto con altri utenti di COVIDSafe, se un utente con cui sono entrato in contatto risulta positivo al COVID-19 e carica i suoi dati.";
+"restrictions_accommodation" = "";
+"restrictions_activity" = "";
+"restrictions_cafes" = "";
+"restrictions_disclaimer" = "";
+"restrictions_domestic_travel" = "";
+"restrictions_education" = "";
+"restrictions_entertainment" = "";
+"restrictions_error_dismiss" = "";
+"restrictions_error_heading" = "";
+"restrictions_error_message" = "";
+"restrictions_error_try" = "";
+"restrictions_gatherings_work" = "";
+"restrictions_hair_beauty" = "";
+"restrictions_heading" = "";
+"restrictions_hotspots" = "";
+"restrictions_retail" = "";
+"restrictions_select_activity" = "";
+"restrictions_select_state" = "";
+"restrictions_sports" = "";
+"restrictions_state" = "";
+"restrictions_wedding" = "";
 "save" = "Salva";
 "scheduled" = "Hai programmato COVIDSafe su snooze da %@ a %@ ";
 /* OnBoarding Enter Number */
@@ -473,6 +502,8 @@
 "support_content" = "Per assistenza su questioni non trattate dagli argomenti della Guida";
 "Support_VOLabel" = "Supporto. Per assistenza su questioni non trattate dagli argomenti della Guida";
 "tasmania" = "Tasmania";
+/* Example: "From 22 to 28 January 2021" */
+"to" = "";
 "total" = "Totale";
 "total_confirmed_cases" = "Totale casi confermati";
 "total_deaths" = "%@ totale decessi";

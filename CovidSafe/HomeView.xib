@@ -68,11 +68,6 @@
                 <action selector="onHelpButtonTapped:" destination="-1" id="omV-3d-Dev"/>
             </connections>
         </tapGestureRecognizer>
-        <tapGestureRecognizer id="BkG-gC-lSg" userLabel="SettingsTapped">
-            <connections>
-                <action selector="onSettingsTapped:" destination="-1" id="8vn-hC-YS1"/>
-            </connections>
-        </tapGestureRecognizer>
         <tapGestureRecognizer id="4M3-XU-cn0" userLabel="ImprovementAvailableTapped">
             <connections>
                 <action selector="improvementAvailableTapped:" destination="-1" id="432-L8-raP"/>
@@ -118,53 +113,9 @@
                                         <constraint firstAttribute="height" constant="72" id="vlN-Zx-f24"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAD-y1-t0q" userLabel="Settings View">
-                                    <rect key="frame" x="322" y="49.5" width="76" height="43.5"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcW-cs-M8h">
-                                            <rect key="frame" x="8" y="24" width="60" height="19.5"/>
-                                            <accessibility key="accessibilityConfiguration">
-                                                <bool key="isElement" value="NO"/>
-                                            </accessibility>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="settings"/>
-                                            </userDefinedRuntimeAttributes>
-                                        </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oy4-AH-CYl">
-                                            <rect key="frame" x="26" y="0.0" width="24" height="24"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="24" id="7me-3Z-K3F"/>
-                                            </constraints>
-                                        </imageView>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <accessibility key="accessibilityConfiguration">
-                                        <bool key="isElement" value="YES"/>
-                                    </accessibility>
-                                    <constraints>
-                                        <constraint firstItem="dcW-cs-M8h" firstAttribute="centerX" secondItem="bAD-y1-t0q" secondAttribute="centerX" id="789-ha-HeZ"/>
-                                        <constraint firstAttribute="trailing" secondItem="dcW-cs-M8h" secondAttribute="trailing" constant="8" id="UoB-B0-sab"/>
-                                        <constraint firstAttribute="bottom" secondItem="dcW-cs-M8h" secondAttribute="bottom" id="ieu-65-QiK"/>
-                                        <constraint firstItem="dcW-cs-M8h" firstAttribute="leading" secondItem="bAD-y1-t0q" secondAttribute="leading" constant="8" id="jRU-rL-wUn"/>
-                                        <constraint firstItem="dcW-cs-M8h" firstAttribute="top" secondItem="Oy4-AH-CYl" secondAttribute="bottom" id="lNc-AT-Kd4"/>
-                                        <constraint firstItem="Oy4-AH-CYl" firstAttribute="top" secondItem="bAD-y1-t0q" secondAttribute="top" id="uJa-fM-49L"/>
-                                        <constraint firstItem="Oy4-AH-CYl" firstAttribute="centerX" secondItem="bAD-y1-t0q" secondAttribute="centerX" id="vKB-rX-gFx"/>
-                                    </constraints>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="string" keyPath="localVOLabelKey" value="home_setup_help"/>
-                                    </userDefinedRuntimeAttributes>
-                                    <connections>
-                                        <outletCollection property="gestureRecognizers" destination="BkG-gC-lSg" appends="YES" id="7Fi-8h-6kx"/>
-                                    </connections>
-                                </view>
                             </subviews>
                             <color key="backgroundColor" red="0.7843137255" green="1" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
-                                <constraint firstAttribute="bottom" secondItem="bAD-y1-t0q" secondAttribute="bottom" constant="27" id="47L-6e-mYH"/>
-                                <constraint firstAttribute="trailing" secondItem="bAD-y1-t0q" secondAttribute="trailing" constant="16" id="cfy-cP-deX"/>
                                 <constraint firstItem="agZ-x5-SNR" firstAttribute="centerX" secondItem="Ged-Y1-PEf" secondAttribute="centerX" id="e7I-SA-L0c"/>
                                 <constraint firstItem="agZ-x5-SNR" firstAttribute="top" secondItem="Ged-Y1-PEf" secondAttribute="top" constant="32" id="nnF-yA-Bqa"/>
                                 <constraint firstAttribute="bottom" secondItem="agZ-x5-SNR" secondAttribute="bottom" constant="16" id="yJH-rG-DJ7"/>
@@ -1211,7 +1162,6 @@
         <image name="ic-upload" width="24" height="24"/>
         <image name="question-mark" width="13" height="20"/>
         <image name="redcross" width="22" height="22"/>
-        <image name="settings" width="24" height="24"/>
         <image name="small tick" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
