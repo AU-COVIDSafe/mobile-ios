@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="SelectionTableViewCell" customModule="COVIDSafe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ywa-XO-qG4">
+                    <rect key="frame" x="16" y="16" width="342" height="19.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron-right-green" translatesAutoresizingMaskIntoConstraints="NO" id="PdW-Fe-Ks5">
+                    <rect key="frame" x="374" y="28" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="7UZ-yR-WYk"/>
+                        <constraint firstAttribute="width" constant="24" id="VNn-X1-ASh"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5z-8l-Kbm">
+                    <rect key="frame" x="16" y="35.5" width="342" height="28.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                    <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihQ-1X-s9i">
+                    <rect key="frame" x="0.0" y="79" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="rQX-0y-CAb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="PdW-Fe-Ks5" secondAttribute="trailing" constant="16" id="3wY-di-qH8"/>
+                <constraint firstAttribute="bottom" secondItem="n5z-8l-Kbm" secondAttribute="bottom" constant="16" id="83O-tT-c5A"/>
+                <constraint firstItem="Ywa-XO-qG4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="E7Q-xB-Ywr"/>
+                <constraint firstItem="Ywa-XO-qG4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="EH7-5C-2Vv"/>
+                <constraint firstItem="n5z-8l-Kbm" firstAttribute="top" secondItem="Ywa-XO-qG4" secondAttribute="bottom" id="NKA-aE-Ogg"/>
+                <constraint firstItem="n5z-8l-Kbm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="PuM-hH-5n5"/>
+                <constraint firstItem="PdW-Fe-Ks5" firstAttribute="leading" secondItem="n5z-8l-Kbm" secondAttribute="trailing" constant="16" id="XbT-wE-zye"/>
+                <constraint firstItem="n5z-8l-Kbm" firstAttribute="trailing" secondItem="Ywa-XO-qG4" secondAttribute="trailing" id="ghc-VH-BMI"/>
+                <constraint firstAttribute="bottom" secondItem="ihQ-1X-s9i" secondAttribute="bottom" id="ivM-g3-rFb"/>
+                <constraint firstAttribute="trailing" secondItem="ihQ-1X-s9i" secondAttribute="trailing" id="pTq-I0-Bdm"/>
+                <constraint firstItem="ihQ-1X-s9i" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="szv-fJ-E3p"/>
+                <constraint firstItem="PdW-Fe-Ks5" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="uhn-Zy-1c9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="selection" destination="n5z-8l-Kbm" id="xk2-lh-OBr"/>
+                <outlet property="title" destination="Ywa-XO-qG4" id="cGG-qV-xxl"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="-187.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron-right-green" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

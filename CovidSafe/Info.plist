@@ -31,11 +31,23 @@
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>COVIDSafe exchanges Bluetooth® signals with nearby phones running the same app. These signals contain an anonymised ID, which is encrypted and changes continually to ensure your privacy.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>We request location permissions to improve the performance of the system and how we provide information about COVID-19. Location permissions will only be used for this purpose. We will not collect or store your location information.</string>
+	<string>Select ‘Always Allow’.
+
+Use of Location Services improves Bluetooth performance when identifying close contacts.
+
+COVIDSafe does not collect, store or use location data.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>We request location permissions to improve the performance of the system and how we provide information about COVID-19. Location permissions will only be used for this purpose. We will not collect or store your location information.</string>
+	<string>Select ‘Always Allow’.
+
+Use of Location Services improves Bluetooth performance when identifying close contacts.
+
+COVIDSafe does not collect, store or use location data.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>We request location permissions to improve the performance of the system and how we provide information about COVID-19. Location permissions will only be used for this purpose. We will not collect or store your location information.</string>
+	<string>Select ‘While Using App’.
+
+Use of Location Services improves Bluetooth performance when identifying close contacts.
+
+COVIDSafe does not collect, store or use location data.</string>
 	<key>TRACER_SVC_ID</key>
 	<string>${SERVICE_UUID}</string>
 	<key>UIBackgroundModes</key>

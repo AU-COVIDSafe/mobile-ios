@@ -7,15 +7,17 @@
 "activity_button" = "檢查應用程式活動。";
 "activity_button_description" = "查看你應用程式與其他COVIDSafe用戶的藍牙互動。";
 "activity_heading" = "應用程式活動。";
-"activity_intro" = "每次你的裝置在其他COVIDSafe應用程式用戶的範圍內時，它都會記下藍牙互動，這叫作”藍牙握手”。\n\n這些握手可以顯示你的應用程式運作狀況。";
+"activity_intro" = "";
+"activity_intro_2" = "";
 /* Figma page iOS Screens (05/06) */
 "allow_bluetooth_call" = "允許 COVIDSafe 接入藍牙®";
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothOFF" = "連接藍牙®：關";
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothON" = "連接藍牙®：開";
+"app_activity_bluetooth_handshakes_heading" = "";
 "australian_capital_territory" = "澳大利亞首都領地";
-"ble_handshakes_yesterday" = "昨天發生的藍牙握手。";
+"ble_handshakes_yesterday" = "";
 "bluetooth_handshakes" = "藍牙握手";
 /* Figma page iOS Screens (05/06) */
 "BluetoothOFF" = "藍牙®：關";
@@ -276,11 +278,14 @@
 "factors_dotpoint1" = "在範圍內的COVIDSafe用戶數量";
 "factors_dotpoint2" = "裝置型號和機齡";
 "factors_dotpoint3" = "如果你在移動的車裡";
+"factors_dotpoint4" = "";
 "factors_enviro_item_1" = "實物屏障，如牆壁";
 "factors_enviro_item_2" = "會干擾藍牙信號的材料和固定裝置。";
 "factors_handshakes_heading" = "影響應用程式活動的因素";
-"factors_intro" = "可能影響握手次數的因素包括:";
+"factors_intro" = "";
 "factors_intro_2" = "藍牙握手也可以受到環境因素影響，包括:";
+/* Example: "From 22 to 28 January 2021" */
+"from" = "";
 "global_back" = "返回";
 "global_close" = "關閉";
 "global_double_tap" = "點觸兩次來編輯";
@@ -288,6 +293,7 @@
 "hide" = "隱藏";
 "home_app_permission_status_subtitle" = "若設定錯誤，將無法執行 COVIDSafe。";
 "home_app_permission_status_title" = "檢查你的設定";
+"home_bottom_nav" = "";
 "home_data_uploaded_message" = "協助遏止 COVID-19 擴散，追蹤你的症狀。";
 "home_header_active_no_action_required" = "無需採取進一步行動。";
 /* Home */
@@ -360,12 +366,7 @@
 "locally_acquired" = "%@本地感染";
 "location_off" = "位置：關閉";
 "location_off_description" = "你的iPhone要求COVIDSafe獲得位置許可權才能正常運作。COVIDSafe不會跟蹤或者存儲你的位置資料。";
-"low_handshakes_description" = "嘗試以下小貼士改善你手機上COVIDSafe的性能：";
-"low_handshakes_heading" = "如果你的藍牙握手次數比預期低，該怎麼辦";
-"low_handshakes_item1" = "打開應用程式檢查COVIDSafe是否處於啟用狀態。";
-"low_handshakes_item2" = "通過 Google Play Store 或者 Apple Store將你的應用程式更新到最新版本。";
-"low_handshakes_item3" = "重啟你的手機然後打開應用程式。";
-"low_handshakes_link" = "閱讀更多關於如何檢查COVIDSafe是否正常運作的資訊";
+"main_restrictions" = "";
 /* Splash Screen */
 "migration_in_progress" = "正在更新 COVIDSafe。\n\n請保持開機狀態直至更新完成為止。";
 "minute" = "分鐘 ";
@@ -373,6 +374,13 @@
 "new_cases" = "過去24小時內新增病例";
 "new_cases_total" = "自從2020年2月1日以來的新增病例";
 "new_south_wales" = "新南威爾士州";
+"no_handshakes_description" = "";
+"no_handshakes_heading" = "";
+"no_handshakes_item1" = "打開應用程式檢查COVIDSafe是否處於啟用狀態。";
+"no_handshakes_item2" = "通過 Google Play Store 或者 Apple Store將你的應用程式更新到最新版本。";
+"no_handshakes_item3" = "重啟你的手機然後打開應用程式。";
+"no_handshakes_item4" = "";
+"no_handshakes_link" = "閱讀更多關於如何檢查COVIDSafe是否正常運作的資訊";
 /* Figma page Android Screens (05/06) */
 "norfolk_hint" = "例如：51234";
 "northern_territory" = "北領地";
@@ -438,6 +446,27 @@
 /* Onboarding Registration Consent */
 "registration_consent_headline" = "註册同意書";
 "registration_consent_second_paragraph" = "我與其他COVIDSafe用戶的接觸資料，如果我接觸過的另一用戶COVID-19測試呈陽性並且上傳了其接觸者數據。";
+"restrictions_accommodation" = "";
+"restrictions_activity" = "";
+"restrictions_cafes" = "";
+"restrictions_disclaimer" = "";
+"restrictions_domestic_travel" = "";
+"restrictions_education" = "";
+"restrictions_entertainment" = "";
+"restrictions_error_dismiss" = "";
+"restrictions_error_heading" = "";
+"restrictions_error_message" = "";
+"restrictions_error_try" = "";
+"restrictions_gatherings_work" = "";
+"restrictions_hair_beauty" = "";
+"restrictions_heading" = "";
+"restrictions_hotspots" = "";
+"restrictions_retail" = "";
+"restrictions_select_activity" = "";
+"restrictions_select_state" = "";
+"restrictions_sports" = "";
+"restrictions_state" = "";
+"restrictions_wedding" = "";
 "save" = "保存";
 "scheduled" = "你已將COVIDSafe設置為從%@休眠到%@。";
 /* OnBoarding Enter Number */
@@ -473,6 +502,8 @@
 "support_content" = "獲取幫助，解決求助主題未涵蓋的問題。";
 "Support_VOLabel" = "支持。獲取幫助，解決求助主題未涵蓋的問題。";
 "tasmania" = "塔斯曼尼亞州";
+/* Example: "From 22 to 28 January 2021" */
+"to" = "";
 "total" = "總數";
 "total_confirmed_cases" = "確診病例總數";
 "total_deaths" = "%@總死亡人數";

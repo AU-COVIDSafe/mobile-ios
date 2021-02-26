@@ -7,15 +7,17 @@
 "activity_button" = "Ελέγξτε τη δραστηριότητα της εφαρμογής";
 "activity_button_description" = "Δείτε τις αλληλεπιδράσεις Bluetooth της εφαρμογής σας με άλλους χρήστες της COVIDSafe.";
 "activity_heading" = "Δραστηριότητα εφαρμογής";
-"activity_intro" = "Κάθε φορά που η συσκευή σας βρίσκεται εντός εμβέλειας άλλων χρηστών της εφαρμογής COVIDSafe, λαμβάνει υπόψη τις αλληλεπιδράσεις Bluetooth που ονομάζονται «χειραψίες Bluetooth».\n\nΑυτές οι χειραψίες δίνουν μια ένδειξη για το πόσο καλά λειτουργεί η εφαρμογή σας.";
+"activity_intro" = "";
+"activity_intro_2" = "";
 /* Figma page iOS Screens (05/06) */
 "allow_bluetooth_call" = "Επιτρέψτε την COVIDSafe να έχει πρόσβαση στο Bluetooth®";
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothOFF" = "Πρόσβαση στο Bluetooth®: ΑΠΕΝΕΡΓΟΠΟΙΗΜΕΝΗ";
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothON" = "Πρόσβαση στο Bluetooth®: ΕΝΕΡΓΟΠΟΙΗΜΕΝΗ";
+"app_activity_bluetooth_handshakes_heading" = "";
 "australian_capital_territory" = "Επικράτεια Αυστραλιανής Πρωτεύουσας";
-"ble_handshakes_yesterday" = "Χειραψίες Bluetooth χθες";
+"ble_handshakes_yesterday" = "";
 "bluetooth_handshakes" = "Χειραψίες Bluetooth";
 /* Figma page iOS Screens (05/06) */
 "BluetoothOFF" = "Bluetooth®: ΑΠΕΝΕΡΓΟΠΟΙΗΜΕΝΟ";
@@ -276,11 +278,14 @@
 "factors_dotpoint1" = "αριθμός χρηστών της COVIDSafe στην περιοχή σας";
 "factors_dotpoint2" = "μοντέλο συσκευής και ηλικία";
 "factors_dotpoint3" = "αν βρίσκεστε σε κινούμενο όχημα";
+"factors_dotpoint4" = "";
 "factors_enviro_item_1" = "φυσικά εμπόδια όπως οι τοίχοι";
 "factors_enviro_item_2" = "υλικό και εξαρτήματα που παρεμβαίνουν στα σήματα Bluetooth";
 "factors_handshakes_heading" = "Παράγοντες που επηρεάζουν τη δραστηριότητα της εφαρμογής";
-"factors_intro" = "Οι παράγοντες που μπορούν να επηρεάσουν τον αριθμό των χειραψιών περιλαμβάνουν:";
+"factors_intro" = "";
 "factors_intro_2" = "Οι χειραψίες μπορούν επίσης να επηρεαστούν από περιβαλλοντικούς παράγοντες, όπως:";
+/* Example: "From 22 to 28 January 2021" */
+"from" = "";
 "global_back" = "Πίσω";
 "global_close" = "Κλείστε";
 "global_double_tap" = "πατήστε δύο φορές για επεξεργασία";
@@ -288,6 +293,7 @@
 "hide" = "Απόκρυψη";
 "home_app_permission_status_subtitle" = "Η COVIDSafe δε θα λειτουργήσει χωρίς τις σωστές ρυθμίσεις.";
 "home_app_permission_status_title" = "Ελέγξτε τις ρυθμίσεις σας";
+"home_bottom_nav" = "";
 "home_data_uploaded_message" = "Βοηθήστε να σταματήσει η εξάπλωση του COVID-19 και παρακολουθείτε τα συμπτώματά σας.";
 "home_header_active_no_action_required" = "Δεν απαιτούνται περαιτέρω ενέργειες.";
 /* Home */
@@ -360,12 +366,7 @@
 "locally_acquired" = "%@ αποκτηθέν τοπικά";
 "location_off" = "Τοποθεσία: ΑΠΕΝΕΡΓΟΠΟΙΗΜΕΝΗ";
 "location_off_description" = "Το iPhone σας απαιτεί άδεια τοποθεσίας για να λειτουργήσει την COVIDSafe. Η COVIDSafe ΔΕΝ παρακολουθεί ούτε αποθηκεύει τα δεδομένα τοποθεσίας σας.";
-"low_handshakes_description" = "Δοκιμάστε αυτές τις συμβουλές για να βελτιώσετε την απόδοση της COVIDSafe στο τηλέφωνό σας:";
-"low_handshakes_heading" = "Τι να κάνετε αν οι αριθμοί χειραψιών σας είναι χαμηλότεροι από ό,τι περιμένετε;";
-"low_handshakes_item1" = "Ελέγξτε εάν η COVIDSafe είναι ενεργή ανοίγοντας την εφαρμογή.";
-"low_handshakes_item2" = "Ενημερώστε την εφαρμογή σας στην πιο πρόσφατη έκδοση μέσω του Google Play Store ή του Apple Store.";
-"low_handshakes_item3" = "Επανεκκινήστε το τηλέφωνό σας και ανοίξτε ξανά την εφαρμογή.";
-"low_handshakes_link" = "Διαβάστε περισσότερα για το πώς να ελέγξετε εάν η COVIDSafe λειτουργεί σωστά";
+"main_restrictions" = "";
 /* Splash Screen */
 "migration_in_progress" = "Η ενημέρωση της COVIDSafe συνεχίζεται. \n\nΒεβαιωθείτε ότι το τηλέφωνό σας δεν είναι απενεργοποιημένο έως ότου ολοκληρωθεί η ενημέρωση.";
 "minute" = "Λεπτό";
@@ -373,6 +374,13 @@
 "new_cases" = "Νέα κρούσματα κατά τις τελευταίες 24 ώρες";
 "new_cases_total" = "Νέα κρούσματα από την 1η Φεβρουαρίου 2020";
 "new_south_wales" = "Νέα Νότια Ουαλία";
+"no_handshakes_description" = "";
+"no_handshakes_heading" = "";
+"no_handshakes_item1" = "Ελέγξτε εάν η COVIDSafe είναι ενεργή ανοίγοντας την εφαρμογή.";
+"no_handshakes_item2" = "Ενημερώστε την εφαρμογή σας στην πιο πρόσφατη έκδοση μέσω του Google Play Store ή του Apple Store.";
+"no_handshakes_item3" = "Επανεκκινήστε το τηλέφωνό σας και ανοίξτε ξανά την εφαρμογή.";
+"no_handshakes_item4" = "";
+"no_handshakes_link" = "Διαβάστε περισσότερα για το πώς να ελέγξετε εάν η COVIDSafe λειτουργεί σωστά";
 /* Figma page Android Screens (05/06) */
 "norfolk_hint" = "Για παράδειγμα: 51234";
 "northern_territory" = "Βόρεια Επικράτεια";
@@ -438,6 +446,27 @@
 /* Onboarding Registration Consent */
 "registration_consent_headline" = "Συναίνεση εγγραφής";
 "registration_consent_second_paragraph" = "Πληροφορίες σχετικά με την επαφή μου με άλλους χρήστες της COVIDSafe, εάν άλλος χρήστης με τον οποίο έχω έρθει σε επαφή διαγνωστεί θετικά για το COVID-19 και ανεβάζει τα δικά του στοιχεία επικοινωνίας.";
+"restrictions_accommodation" = "";
+"restrictions_activity" = "";
+"restrictions_cafes" = "";
+"restrictions_disclaimer" = "";
+"restrictions_domestic_travel" = "";
+"restrictions_education" = "";
+"restrictions_entertainment" = "";
+"restrictions_error_dismiss" = "";
+"restrictions_error_heading" = "";
+"restrictions_error_message" = "";
+"restrictions_error_try" = "";
+"restrictions_gatherings_work" = "";
+"restrictions_hair_beauty" = "";
+"restrictions_heading" = "";
+"restrictions_hotspots" = "";
+"restrictions_retail" = "";
+"restrictions_select_activity" = "";
+"restrictions_select_state" = "";
+"restrictions_sports" = "";
+"restrictions_state" = "";
+"restrictions_wedding" = "";
 "save" = "Αποθήκευση";
 "scheduled" = "Προγραμματίσατε την COVIDSafe για αναβολή από %@ έως %@ .";
 /* OnBoarding Enter Number */
@@ -473,6 +502,8 @@
 "support_content" = "Για βοήθεια σε θέματα που δεν καλύπτονται από θέματα Βοήθειας";
 "Support_VOLabel" = "Υποστήριξη. Για βοήθεια σε θέματα που δεν καλύπτονται στα θέματα Βοήθειας";
 "tasmania" = "Τασμανία";
+/* Example: "From 22 to 28 January 2021" */
+"to" = "";
 "total" = "Σύνολο";
 "total_confirmed_cases" = "Σύνολο επιβεβαιωμένων κρουσμάτων";
 "total_deaths" = "%@ σύνολο θανάτων";

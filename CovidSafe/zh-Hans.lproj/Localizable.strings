@@ -7,15 +7,17 @@
 "activity_button" = "检查应用程序的活动";
 "activity_button_description" = "查看您的应用程序与其他COVIDSafe用户的蓝牙交互。";
 "activity_heading" = "应用活动";
-"activity_intro" = "每当您的设备在其他COVIDSafe应用程序用户的范围内时，它都会记录蓝牙交互，这称为“蓝牙握手”。 \n\n这些握手显示了您的应用程序的运行状况。";
+"activity_intro" = "";
+"activity_intro_2" = "";
 /* Figma page iOS Screens (05/06) */
 "allow_bluetooth_call" = "允许COVIDSafe 访问蓝牙®";
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothOFF" = "访问蓝牙®：关";
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothON" = "访问蓝牙®：开";
+"app_activity_bluetooth_handshakes_heading" = "";
 "australian_capital_territory" = "澳大利亚首都领地";
-"ble_handshakes_yesterday" = "昨日发生的蓝牙握手";
+"ble_handshakes_yesterday" = "";
 "bluetooth_handshakes" = "蓝牙握手";
 /* Figma page iOS Screens (05/06) */
 "BluetoothOFF" = "蓝牙®：关";
@@ -276,11 +278,14 @@
 "factors_dotpoint1" = "范围内的COVIDSafe用户数量";
 "factors_dotpoint2" = "设备型号和机龄";
 "factors_dotpoint3" = "如果您位于正在行驶的车辆中";
+"factors_dotpoint4" = "";
 "factors_enviro_item_1" = "物理屏障，如墙壁";
 "factors_enviro_item_2" = "会干扰蓝牙信号的材料和固定装置";
 "factors_handshakes_heading" = "影响应用程序活动的因素";
-"factors_intro" = "可能影响握手次数的因素包括：";
+"factors_intro" = "";
 "factors_intro_2" = "蓝牙握手也会受到环境因素的影响，这些因素包括：";
+/* Example: "From 22 to 28 January 2021" */
+"from" = "";
 "global_back" = "返回";
 "global_close" = "关闭";
 "global_double_tap" = "双击进行编辑";
@@ -288,6 +293,7 @@
 "hide" = "隐藏";
 "home_app_permission_status_subtitle" = "若设置不正确，COVIDSafe将无法运行。";
 "home_app_permission_status_title" = "检查您的设置";
+"home_bottom_nav" = "";
 "home_data_uploaded_message" = "协助阻止COVID-19的传播，追踪您的症状。";
 "home_header_active_no_action_required" = "无须进一步操作。";
 /* Home */
@@ -360,12 +366,7 @@
 "locally_acquired" = "%@本地感染";
 "location_off" = "位置：关闭";
 "location_off_description" = "您的 iPhone 要求COVIDSafe 获得位置权限才能运行。COVIDSafe 不会跟踪或存储您的位置数据。";
-"low_handshakes_description" = "请尝试用以下方法提高您手机上 COVIDSafe的性能：";
-"low_handshakes_heading" = "如果您的蓝牙握手次数少于预期，该怎么办";
-"low_handshakes_item1" = "打开应用程序检查COVIDSafe是否处于激活状态。";
-"low_handshakes_item2" = "通过Google Play Store或Apple Store将您的应用更新到最新版本。";
-"low_handshakes_item3" = "重新启动手机并再次打开应用。";
-"low_handshakes_link" = "阅读更多有关如何检查COVIDSafe是否正常运行的信息";
+"main_restrictions" = "";
 /* Splash Screen */
 "migration_in_progress" = "COVIDSafe正在更新。 \n\n请保持开机状态直至更新完成。";
 "minute" = "分钟";
@@ -373,6 +374,13 @@
 "new_cases" = "过去24小时内新增病例";
 "new_cases_total" = "自2020年2月1日以来的新增病例";
 "new_south_wales" = "新南威尔士州";
+"no_handshakes_description" = "";
+"no_handshakes_heading" = "";
+"no_handshakes_item1" = "打开应用程序检查COVIDSafe是否处于激活状态。";
+"no_handshakes_item2" = "通过Google Play Store或Apple Store将您的应用更新到最新版本。";
+"no_handshakes_item3" = "重新启动手机并再次打开应用。";
+"no_handshakes_item4" = "";
+"no_handshakes_link" = "阅读更多有关如何检查COVIDSafe是否正常运行的信息";
 /* Figma page Android Screens (05/06) */
 "norfolk_hint" = "例如：51234";
 "northern_territory" = "北领地";
@@ -438,6 +446,27 @@
 /* Onboarding Registration Consent */
 "registration_consent_headline" = "注册同意书";
 "registration_consent_second_paragraph" = "我与其他COVIDSafe用户的接触信息（如果与我发生过接触的其他用户COVID-19检测呈阳性并上传其接触者数据）。";
+"restrictions_accommodation" = "";
+"restrictions_activity" = "";
+"restrictions_cafes" = "";
+"restrictions_disclaimer" = "";
+"restrictions_domestic_travel" = "";
+"restrictions_education" = "";
+"restrictions_entertainment" = "";
+"restrictions_error_dismiss" = "";
+"restrictions_error_heading" = "";
+"restrictions_error_message" = "";
+"restrictions_error_try" = "";
+"restrictions_gatherings_work" = "";
+"restrictions_hair_beauty" = "";
+"restrictions_heading" = "";
+"restrictions_hotspots" = "";
+"restrictions_retail" = "";
+"restrictions_select_activity" = "";
+"restrictions_select_state" = "";
+"restrictions_sports" = "";
+"restrictions_state" = "";
+"restrictions_wedding" = "";
 "save" = "保存";
 "scheduled" = "您已将COVIDSafe设置为从%@休眠至%@ 。";
 /* OnBoarding Enter Number */
@@ -473,6 +502,8 @@
 "support_content" = "获取帮助，解决帮助主题未涵盖的问题";
 "Support_VOLabel" = "支持。获取帮助，解决帮助主题未涵盖的问题";
 "tasmania" = "塔斯马尼亚州";
+/* Example: "From 22 to 28 January 2021" */
+"to" = "";
 "total" = "总数";
 "total_confirmed_cases" = "确诊病例总数";
 "total_deaths" = "%@ 总死亡人数";

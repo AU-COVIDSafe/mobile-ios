@@ -1,5 +1,5 @@
 //
-//  StateTerritoryTableViewCell.swift
+//  SelectableTableViewCell.swift
 //  CovidSafe
 //
 //  Copyright © 2020 Australian Government. All rights reserved.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StateTerritoryTableViewCell: UITableViewCell {
+class SelectableTableViewCell: UITableViewCell {
 
     @IBOutlet weak var stateTerritoryLabel: UILabel!
     @IBOutlet weak var isSelectedTickView: UIImageView!

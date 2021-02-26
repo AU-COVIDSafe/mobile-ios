@@ -16,6 +16,7 @@
                 <outlet property="loadingAnimationView" destination="gQH-Hn-8G2" id="Sqr-NC-zmZ"/>
                 <outlet property="postcodeErrorLabel" destination="zjM-x7-Ssn" id="m4h-1K-nwx"/>
                 <outlet property="postcodeTextField" destination="PWw-FK-XIy" id="Rf1-8J-RYO"/>
+                <outlet property="scrollView" destination="ldo-Ve-6uI" id="ZvK-yM-mVT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

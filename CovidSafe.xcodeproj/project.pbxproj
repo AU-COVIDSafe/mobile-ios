@@ -151,6 +151,16 @@
 		5B51ED61248715DE008CE722 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B51ED64248715DE008CE722 /* InfoPlist.strings */; };
 		5B51ED62248715DE008CE722 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B51ED64248715DE008CE722 /* InfoPlist.strings */; };
 		5B577815245A584C0088F111 /* UploadDataPrefaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B577814245A584C0088F111 /* UploadDataPrefaceViewController.swift */; };
+		5B69C05C25D36E2A00DF536D /* RestrictionDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B69C05B25D36E2A00DF536D /* RestrictionDetailsView.xib */; };
+		5B69C05D25D36E2A00DF536D /* RestrictionDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B69C05B25D36E2A00DF536D /* RestrictionDetailsView.xib */; };
+		5B69C06125D36E3D00DF536D /* RestrictionDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B69C06025D36E3D00DF536D /* RestrictionDetailsView.swift */; };
+		5B69C06225D36E3D00DF536D /* RestrictionDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B69C06025D36E3D00DF536D /* RestrictionDetailsView.swift */; };
+		5B69C06625D382AF00DF536D /* String+HtmlAttributed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B69C06525D382AF00DF536D /* String+HtmlAttributed.swift */; };
+		5B69C06725D382AF00DF536D /* String+HtmlAttributed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B69C06525D382AF00DF536D /* String+HtmlAttributed.swift */; };
+		5B69C06B25D3983800DF536D /* TableSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B69C06A25D3983800DF536D /* TableSectionHeaderView.xib */; };
+		5B69C06C25D3983900DF536D /* TableSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B69C06A25D3983800DF536D /* TableSectionHeaderView.xib */; };
+		5B69C07825D4D46800DF536D /* RestrictionsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B69C07725D4D46800DF536D /* RestrictionsAPI.swift */; };
+		5B69C07925D4D46800DF536D /* RestrictionsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B69C07725D4D46800DF536D /* RestrictionsAPI.swift */; };
 		5B728B4724B5667000654ABC /* BLELogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B728B4624B5667000654ABC /* BLELogViewController.swift */; };
 		5B728B4924B5816C00654ABC /* BLELog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B728B4824B5816C00654ABC /* BLELog+CoreDataClass.swift */; };
 		5B728B4B24B581C100654ABC /* BLELog+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B728B4A24B581C100654ABC /* BLELog+CoreDataProperties.swift */; };
@@ -160,6 +170,24 @@
 		5B7ABF28244D6BE100BB249B /* UnderSixteenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7ABF27244D6BE100BB249B /* UnderSixteenViewController.swift */; };
 		5B82435E2480DC2100705CB1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B8243612480DC2100705CB1 /* Localizable.strings */; };
 		5B82435F2480DC2100705CB1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B8243612480DC2100705CB1 /* Localizable.strings */; };
+		5B89D4AA25D0ED7100FB3938 /* RestrictionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89D4A825D0ED7100FB3938 /* RestrictionTableViewController.swift */; };
+		5B89D4AB25D0ED7100FB3938 /* RestrictionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89D4A825D0ED7100FB3938 /* RestrictionTableViewController.swift */; };
+		5B89D4AC25D0ED7100FB3938 /* RestrictionTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B89D4A925D0ED7100FB3938 /* RestrictionTableView.xib */; };
+		5B89D4AD25D0ED7100FB3938 /* RestrictionTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B89D4A925D0ED7100FB3938 /* RestrictionTableView.xib */; };
+		5B89D4B525D0F0BD00FB3938 /* SimpleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B89D4B425D0F0BD00FB3938 /* SimpleTableViewCell.xib */; };
+		5B89D4B625D0F0BD00FB3938 /* SimpleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B89D4B425D0F0BD00FB3938 /* SimpleTableViewCell.xib */; };
+		5B89D4BA25D0F6D900FB3938 /* SelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B89D4B925D0F6D900FB3938 /* SelectionTableViewCell.xib */; };
+		5B89D4BB25D0F6DA00FB3938 /* SelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B89D4B925D0F6D900FB3938 /* SelectionTableViewCell.xib */; };
+		5B89D4C125D239EB00FB3938 /* UIImage+imageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89D4C025D239EB00FB3938 /* UIImage+imageColor.swift */; };
+		5B89D4C225D239EB00FB3938 /* UIImage+imageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89D4C025D239EB00FB3938 /* UIImage+imageColor.swift */; };
+		5B89D4CC25D33DA100FB3938 /* StateTerritory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89D4CB25D33DA100FB3938 /* StateTerritory.swift */; };
+		5B89D4CD25D33DA100FB3938 /* StateTerritory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89D4CB25D33DA100FB3938 /* StateTerritory.swift */; };
+		5B89D4D125D33F3100FB3938 /* JurisdictionalRestrictionActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89D4D025D33F3100FB3938 /* JurisdictionalRestrictionActivity.swift */; };
+		5B89D4D225D33F3100FB3938 /* JurisdictionalRestrictionActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89D4D025D33F3100FB3938 /* JurisdictionalRestrictionActivity.swift */; };
+		5B89D4D825D3557F00FB3938 /* RestrictionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89D4D725D3557F00FB3938 /* RestrictionDetailsViewController.swift */; };
+		5B89D4D925D3557F00FB3938 /* RestrictionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89D4D725D3557F00FB3938 /* RestrictionDetailsViewController.swift */; };
+		5B89D4DD25D356A400FB3938 /* CovidHeaderContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89D4DC25D356A400FB3938 /* CovidHeaderContentViewController.swift */; };
+		5B89D4DE25D356A400FB3938 /* CovidHeaderContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89D4DC25D356A400FB3938 /* CovidHeaderContentViewController.swift */; };
 		5B900FC12485C4EE00CAA419 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B900FC02485C4EE00CAA419 /* String+Localization.swift */; };
 		5B900FC22485C4EE00CAA419 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B900FC02485C4EE00CAA419 /* String+Localization.swift */; };
 		5B92B09424D14AE00069C57D /* InternetConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B92B09324D14AE00069C57D /* InternetConnectionViewController.swift */; };
@@ -278,19 +306,27 @@
 		5BA33A7E24B55E7D00D12515 /* BLELogRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA33A7D24B55E7D00D12515 /* BLELogRecord.swift */; };
 		5BA33A8024B55EF200D12515 /* BLELogDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA33A7F24B55EF200D12515 /* BLELogDB.swift */; };
 		5BA33A8224B5602500D12515 /* BLELogRecord+BLELogSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA33A8124B5602500D12515 /* BLELogRecord+BLELogSave.swift */; };
+		5BA3622F25DE12E6002CFF41 /* CSGenericErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BA3622E25DE12E6002CFF41 /* CSGenericErrorView.xib */; };
+		5BA3623025DE12E6002CFF41 /* CSGenericErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BA3622E25DE12E6002CFF41 /* CSGenericErrorView.xib */; };
+		5BA3623425DE133D002CFF41 /* CSGenericErrorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA3623325DE133D002CFF41 /* CSGenericErrorController.swift */; };
+		5BA3623525DE133D002CFF41 /* CSGenericErrorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA3623325DE133D002CFF41 /* CSGenericErrorController.swift */; };
+		5BA3624125E463B6002CFF41 /* WebContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BA3624025E463B5002CFF41 /* WebContentView.xib */; };
+		5BA3624225E463B6002CFF41 /* WebContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BA3624025E463B5002CFF41 /* WebContentView.xib */; };
+		5BA3624625E4654F002CFF41 /* WebContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA3624525E4654E002CFF41 /* WebContentView.swift */; };
+		5BA3624725E4654F002CFF41 /* WebContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA3624525E4654E002CFF41 /* WebContentView.swift */; };
 		5BBC571D25526F99005E90AA /* staging-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BBC571C25526F99005E90AA /* staging-Info.plist */; };
 		5BBE61B125633B6D00B8C983 /* CSGenericContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BBE61B025633B6D00B8C983 /* CSGenericContentView.xib */; };
 		5BBE61B225633B6D00B8C983 /* CSGenericContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BBE61B025633B6D00B8C983 /* CSGenericContentView.xib */; };
 		5BBE61B725633E8D00B8C983 /* CSGenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBE61B625633E8D00B8C983 /* CSGenericViewController.swift */; };
 		5BBE61B825633E8D00B8C983 /* CSGenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBE61B625633E8D00B8C983 /* CSGenericViewController.swift */; };
-		5BD2419425832A7E00F78822 /* SelectStateTerritoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD2419225832A7E00F78822 /* SelectStateTerritoryViewController.swift */; };
-		5BD2419525832A7E00F78822 /* SelectStateTerritoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD2419225832A7E00F78822 /* SelectStateTerritoryViewController.swift */; };
-		5BD2419625832A7E00F78822 /* SelectStateTerritoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD2419325832A7E00F78822 /* SelectStateTerritoryViewController.xib */; };
-		5BD2419725832A7E00F78822 /* SelectStateTerritoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD2419325832A7E00F78822 /* SelectStateTerritoryViewController.xib */; };
-		5BD2419E25832DA600F78822 /* StateTerritoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD2419C25832DA600F78822 /* StateTerritoryTableViewCell.swift */; };
-		5BD2419F25832DA600F78822 /* StateTerritoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD2419C25832DA600F78822 /* StateTerritoryTableViewCell.swift */; };
-		5BD241A025832DA600F78822 /* StateTerritoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD2419D25832DA600F78822 /* StateTerritoryTableViewCell.xib */; };
-		5BD241A125832DA600F78822 /* StateTerritoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD2419D25832DA600F78822 /* StateTerritoryTableViewCell.xib */; };
+		5BD2419425832A7E00F78822 /* SelectableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD2419225832A7E00F78822 /* SelectableTableViewController.swift */; };
+		5BD2419525832A7E00F78822 /* SelectableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD2419225832A7E00F78822 /* SelectableTableViewController.swift */; };
+		5BD2419625832A7E00F78822 /* SelectableTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD2419325832A7E00F78822 /* SelectableTableViewController.xib */; };
+		5BD2419725832A7E00F78822 /* SelectableTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD2419325832A7E00F78822 /* SelectableTableViewController.xib */; };
+		5BD2419E25832DA600F78822 /* SelectableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD2419C25832DA600F78822 /* SelectableTableViewCell.swift */; };
+		5BD2419F25832DA600F78822 /* SelectableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD2419C25832DA600F78822 /* SelectableTableViewCell.swift */; };
+		5BD241A025832DA600F78822 /* SelectableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD2419D25832DA600F78822 /* SelectableTableViewCell.xib */; };
+		5BD241A125832DA600F78822 /* SelectableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD2419D25832DA600F78822 /* SelectableTableViewCell.xib */; };
 		5BD241BC25870B8900F78822 /* ExternalLinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD241BA25870B8900F78822 /* ExternalLinkTableViewCell.swift */; };
 		5BD241BD25870B8900F78822 /* ExternalLinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD241BA25870B8900F78822 /* ExternalLinkTableViewCell.swift */; };
 		5BD241BE25870B8900F78822 /* ExternalLinkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD241BB25870B8900F78822 /* ExternalLinkTableViewCell.xib */; };
@@ -307,6 +343,12 @@
 		5BED1E4424A98EB60066C4D2 /* LaunchScreen_vi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BED1E4224A98EB60066C4D2 /* LaunchScreen_vi.storyboard */; };
 		5BED1E4624A98EC20066C4D2 /* LaunchScreen_ko.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BED1E4524A98EC20066C4D2 /* LaunchScreen_ko.storyboard */; };
 		5BED1E4724A98EC20066C4D2 /* LaunchScreen_ko.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BED1E4524A98EC20066C4D2 /* LaunchScreen_ko.storyboard */; };
+		5BEDEF4025CB938D00AEEC20 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDEF3E25CB938D00AEEC20 /* MainTabBarViewController.swift */; };
+		5BEDEF4125CB938D00AEEC20 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDEF3E25CB938D00AEEC20 /* MainTabBarViewController.swift */; };
+		5BEDEF5425CBC4A900AEEC20 /* RestrictionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDEF5225CBC4A800AEEC20 /* RestrictionsViewController.swift */; };
+		5BEDEF5525CBC4A900AEEC20 /* RestrictionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDEF5225CBC4A800AEEC20 /* RestrictionsViewController.swift */; };
+		5BEDEF5625CBC4A900AEEC20 /* RestrictionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BEDEF5325CBC4A800AEEC20 /* RestrictionsView.xib */; };
+		5BEDEF5725CBC4A900AEEC20 /* RestrictionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BEDEF5325CBC4A800AEEC20 /* RestrictionsView.xib */; };
 		5BFFD94B242EC120003AEF4F /* PhoneValidationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFFD94A242EC120003AEF4F /* PhoneValidationAPI.swift */; };
 		5D269C0B23E22CC400ADF2DE /* DeviceIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D269C0A23E22CC400ADF2DE /* DeviceIdentifier.swift */; };
 		5D269C0D23E2958F00ADF2DE /* BluetraceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D269C0C23E2958F00ADF2DE /* BluetraceManager.swift */; };
@@ -463,6 +505,11 @@
 		5B51ED6E248776CA008CE722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UploadData.storyboard; sourceTree = "<group>"; };
 		5B51ED6F248776CB008CE722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B577814245A584C0088F111 /* UploadDataPrefaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadDataPrefaceViewController.swift; sourceTree = "<group>"; };
+		5B69C05B25D36E2A00DF536D /* RestrictionDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestrictionDetailsView.xib; sourceTree = "<group>"; };
+		5B69C06025D36E3D00DF536D /* RestrictionDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictionDetailsView.swift; sourceTree = "<group>"; };
+		5B69C06525D382AF00DF536D /* String+HtmlAttributed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HtmlAttributed.swift"; sourceTree = "<group>"; };
+		5B69C06A25D3983800DF536D /* TableSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableSectionHeaderView.xib; sourceTree = "<group>"; };
+		5B69C07725D4D46800DF536D /* RestrictionsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestrictionsAPI.swift; sourceTree = "<group>"; };
 		5B728B4624B5667000654ABC /* BLELogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLELogViewController.swift; sourceTree = "<group>"; };
 		5B728B4824B5816C00654ABC /* BLELog+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BLELog+CoreDataClass.swift"; sourceTree = "<group>"; };
 		5B728B4A24B581C100654ABC /* BLELog+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BLELog+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -471,6 +518,15 @@
 		5B7ABF27244D6BE100BB249B /* UnderSixteenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderSixteenViewController.swift; sourceTree = "<group>"; };
 		5B7B031D2490703500296DE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen_en.storyboard; sourceTree = "<group>"; };
 		5B8243602480DC2100705CB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5B89D4A825D0ED7100FB3938 /* RestrictionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictionTableViewController.swift; sourceTree = "<group>"; };
+		5B89D4A925D0ED7100FB3938 /* RestrictionTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestrictionTableView.xib; sourceTree = "<group>"; };
+		5B89D4B425D0F0BD00FB3938 /* SimpleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleTableViewCell.xib; sourceTree = "<group>"; };
+		5B89D4B925D0F6D900FB3938 /* SelectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectionTableViewCell.xib; sourceTree = "<group>"; };
+		5B89D4C025D239EB00FB3938 /* UIImage+imageColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+imageColor.swift"; sourceTree = "<group>"; };
+		5B89D4CB25D33DA100FB3938 /* StateTerritory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTerritory.swift; sourceTree = "<group>"; };
+		5B89D4D025D33F3100FB3938 /* JurisdictionalRestrictionActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JurisdictionalRestrictionActivity.swift; sourceTree = "<group>"; };
+		5B89D4D725D3557F00FB3938 /* RestrictionDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestrictionDetailsViewController.swift; sourceTree = "<group>"; };
+		5B89D4DC25D356A400FB3938 /* CovidHeaderContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CovidHeaderContentViewController.swift; sourceTree = "<group>"; };
 		5B900FC02485C4EE00CAA419 /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
 		5B92B09324D14AE00069C57D /* InternetConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetConnectionViewController.swift; sourceTree = "<group>"; };
 		5B92B09624E0CC000069C57D /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -501,13 +557,17 @@
 		5BA33A7D24B55E7D00D12515 /* BLELogRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLELogRecord.swift; sourceTree = "<group>"; };
 		5BA33A7F24B55EF200D12515 /* BLELogDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLELogDB.swift; sourceTree = "<group>"; };
 		5BA33A8124B5602500D12515 /* BLELogRecord+BLELogSave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BLELogRecord+BLELogSave.swift"; sourceTree = "<group>"; };
+		5BA3622E25DE12E6002CFF41 /* CSGenericErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSGenericErrorView.xib; sourceTree = "<group>"; };
+		5BA3623325DE133D002CFF41 /* CSGenericErrorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSGenericErrorController.swift; sourceTree = "<group>"; };
+		5BA3624025E463B5002CFF41 /* WebContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebContentView.xib; sourceTree = "<group>"; };
+		5BA3624525E4654E002CFF41 /* WebContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebContentView.swift; sourceTree = "<group>"; };
 		5BBC571C25526F99005E90AA /* staging-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "staging-Info.plist"; sourceTree = "<group>"; };
 		5BBE61B025633B6D00B8C983 /* CSGenericContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSGenericContentView.xib; sourceTree = "<group>"; };
 		5BBE61B625633E8D00B8C983 /* CSGenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSGenericViewController.swift; sourceTree = "<group>"; };
-		5BD2419225832A7E00F78822 /* SelectStateTerritoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStateTerritoryViewController.swift; sourceTree = "<group>"; };
-		5BD2419325832A7E00F78822 /* SelectStateTerritoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectStateTerritoryViewController.xib; sourceTree = "<group>"; };
-		5BD2419C25832DA600F78822 /* StateTerritoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTerritoryTableViewCell.swift; sourceTree = "<group>"; };
-		5BD2419D25832DA600F78822 /* StateTerritoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StateTerritoryTableViewCell.xib; sourceTree = "<group>"; };
+		5BD2419225832A7E00F78822 /* SelectableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableTableViewController.swift; sourceTree = "<group>"; };
+		5BD2419325832A7E00F78822 /* SelectableTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectableTableViewController.xib; sourceTree = "<group>"; };
+		5BD2419C25832DA600F78822 /* SelectableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableTableViewCell.swift; sourceTree = "<group>"; };
+		5BD2419D25832DA600F78822 /* SelectableTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectableTableViewCell.xib; sourceTree = "<group>"; };
 		5BD241BA25870B8900F78822 /* ExternalLinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalLinkTableViewCell.swift; sourceTree = "<group>"; };
 		5BD241BB25870B8900F78822 /* ExternalLinkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExternalLinkTableViewCell.xib; sourceTree = "<group>"; };
 		5BD3EE8224330E1A0004A007 /* UploadDataStep2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadDataStep2VC.swift; sourceTree = "<group>"; };
@@ -526,6 +586,9 @@
 		5BED1E5124A98FD50066C4D2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		5BED1E5224A9900B0066C4D2 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5BED1E5324A9900B0066C4D2 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5BEDEF3E25CB938D00AEEC20 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		5BEDEF5225CBC4A800AEEC20 /* RestrictionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictionsViewController.swift; sourceTree = "<group>"; };
+		5BEDEF5325CBC4A800AEEC20 /* RestrictionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestrictionsView.xib; sourceTree = "<group>"; };
 		5BFFD94A242EC120003AEF4F /* PhoneValidationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneValidationAPI.swift; sourceTree = "<group>"; };
 		5D269C0A23E22CC400ADF2DE /* DeviceIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceIdentifier.swift; sourceTree = "<group>"; };
 		5D269C0C23E2958F00ADF2DE /* BluetraceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetraceManager.swift; sourceTree = "<group>"; };
@@ -641,6 +704,8 @@
 				30BE1CB023F134D0005DCE4F /* Encounter+EncounterRecord.swift */,
 				5BA33A8124B5602500D12515 /* BLELogRecord+BLELogSave.swift */,
 				30BE1CA923F108BA005DCE4F /* UploadFileData.swift */,
+				5B89D4CB25D33DA100FB3938 /* StateTerritory.swift */,
+				5B89D4D025D33F3100FB3938 /* JurisdictionalRestrictionActivity.swift */,
 			);
 			name = Structures;
 			sourceTree = "<group>";
@@ -667,17 +732,23 @@
 				B6932CE8242627A9003D1810 /* Upload Data */,
 				5B728B4624B5667000654ABC /* BLELogViewController.swift */,
 				5B98B45625A2B1E1009651B7 /* ChangePostcodeViewController.swift */,
+				5B89D4DC25D356A400FB3938 /* CovidHeaderContentViewController.swift */,
 				5B92B0BF24F4DC3A0069C57D /* CovidStatisticsViewController.swift */,
 				5B9E41112521688700434B25 /* CSAlertViewController.swift */,
 				5BBE61B625633E8D00B8C983 /* CSGenericViewController.swift */,
+				5BA3623325DE133D002CFF41 /* CSGenericErrorController.swift */,
 				D8EB201A23FA722D001C60EC /* HelpNavController.swift */,
 				5D5F83AF23F045A800770DEF /* HomeViewController.swift */,
 				7FACD53923F25A9A0042A33A /* InitialScreenViewController.swift */,
 				5B92B09324D14AE00069C57D /* InternetConnectionViewController.swift */,
 				5B7ABF24244D3BC600BB249B /* IsolationSuccessViewController.swift */,
 				5961ABE92474E358004040DF /* MigrationViewController.swift */,
+				5BEDEF3E25CB938D00AEEC20 /* MainTabBarViewController.swift */,
 				7F19B4DC23F565850071A11E /* PogoInstructionsViewController.swift */,
-				5BD2419225832A7E00F78822 /* SelectStateTerritoryViewController.swift */,
+				5BEDEF5225CBC4A800AEEC20 /* RestrictionsViewController.swift */,
+				5B89D4D725D3557F00FB3938 /* RestrictionDetailsViewController.swift */,
+				5B89D4A825D0ED7100FB3938 /* RestrictionTableViewController.swift */,
+				5BD2419225832A7E00F78822 /* SelectableTableViewController.swift */,
 				5B92B0AD24EFADB00069C57D /* SettingsViewController.swift */,
 				B615C5A823FA403400345969 /* UIViewController + Extension.swift */,
 			);
@@ -697,6 +768,7 @@
 		30E91BEE23EFEA44002D592A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5B69C04E25D3695900DF536D /* ContentViews */,
 				5B9360EC24F6196A008859FC /* Cells */,
 				30E91BEA23EFEA0B002D592A /* CodeInputView.swift */,
 				0BC141AB24305D9C00399FA8 /* NSMutableString + Extensions.swift */,
@@ -707,9 +779,13 @@
 				5B92B0BC24F4DBE20069C57D /* CovidStatisticsView.xib */,
 				5B9E410C2521683500434B25 /* CSAlertView.xib */,
 				5BBE61B025633B6D00B8C983 /* CSGenericContentView.xib */,
+				5BA3622E25DE12E6002CFF41 /* CSGenericErrorView.xib */,
+				59F25D6E245BED80002A7ED8 /* Debug.storyboard */,
 				5B92B0A424EF61480069C57D /* HomeView.xib */,
 				5B92B0B324F37E3E0069C57D /* InternetConnectionView.xib */,
-				5BD2419325832A7E00F78822 /* SelectStateTerritoryViewController.xib */,
+				5BEDEF5325CBC4A800AEEC20 /* RestrictionsView.xib */,
+				5B89D4A925D0ED7100FB3938 /* RestrictionTableView.xib */,
+				5BD2419325832A7E00F78822 /* SelectableTableViewController.xib */,
 				5B92B0AA24EFA3160069C57D /* SettingsView.xib */,
 				5DD41D4023DCB03B00FD4AB0 /* Main.storyboard */,
 				5B51ED58248627A8008CE722 /* UploadData.storyboard */,
@@ -722,12 +798,13 @@
 			children = (
 				B605A7B02427429D008BA819 /* PlistHelper.swift */,
 				5B900FC02485C4EE00CAA419 /* String+Localization.swift */,
+				5B69C06525D382AF00DF536D /* String+HtmlAttributed.swift */,
 				0B1810112431EE610005D11F /* PhoneNumberParser.swift */,
 				596B189B24499591003E190F /* UploadHelper.swift */,
 				59898602245173C200966E61 /* URLHelper.swift */,
-				59F25D6E245BED80002A7ED8 /* Debug.storyboard */,
 				5B51ED4F2485D658008CE722 /* UILocalization.swift */,
 				5BA33A7A24B3FE2700D12515 /* UIFont + Traits.swift */,
+				5B89D4C025D239EB00FB3938 /* UIImage+imageColor.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -848,6 +925,17 @@
 			path = RootCAs;
 			sourceTree = "<group>";
 		};
+		5B69C04E25D3695900DF536D /* ContentViews */ = {
+			isa = PBXGroup;
+			children = (
+				5B69C05B25D36E2A00DF536D /* RestrictionDetailsView.xib */,
+				5BA3624025E463B5002CFF41 /* WebContentView.xib */,
+				5B69C06025D36E3D00DF536D /* RestrictionDetailsView.swift */,
+				5BA3624525E4654E002CFF41 /* WebContentView.swift */,
+			);
+			name = ContentViews;
+			sourceTree = "<group>";
+		};
 		5B82435D2480DAB100705CB1 /* Internationalization */ = {
 			isa = PBXGroup;
 			children = (
@@ -888,13 +976,16 @@
 			isa = PBXGroup;
 			children = (
 				5BD241BA25870B8900F78822 /* ExternalLinkTableViewCell.swift */,
-				5BD2419C25832DA600F78822 /* StateTerritoryTableViewCell.swift */,
-				5B9360ED24F619A8008859FC /* StatDetailedCell.xib */,
-				5B9360F024F619C8008859FC /* MainStatisticsHeader.xib */,
-				5B9360F924F73806008859FC /* StatisticsTableHeader.xib */,
-				5B9360FC24F73CE6008859FC /* LoadingViewCell.xib */,
-				5BD2419D25832DA600F78822 /* StateTerritoryTableViewCell.xib */,
+				5BD2419C25832DA600F78822 /* SelectableTableViewCell.swift */,
 				5BD241BB25870B8900F78822 /* ExternalLinkTableViewCell.xib */,
+				5B9360FC24F73CE6008859FC /* LoadingViewCell.xib */,
+				5B9360F024F619C8008859FC /* MainStatisticsHeader.xib */,
+				5B89D4B925D0F6D900FB3938 /* SelectionTableViewCell.xib */,
+				5B89D4B425D0F0BD00FB3938 /* SimpleTableViewCell.xib */,
+				5B9360ED24F619A8008859FC /* StatDetailedCell.xib */,
+				5BD2419D25832DA600F78822 /* SelectableTableViewCell.xib */,
+				5B9360F924F73806008859FC /* StatisticsTableHeader.xib */,
+				5B69C06A25D3983800DF536D /* TableSectionHeaderView.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -954,6 +1045,7 @@
 				5B2E5B1A25AD156E00A021B0 /* ChangePostcodeAPI.swift */,
 				5B04074024BC0CEA00FAAFD0 /* MessageAPI.swift */,
 				5B92B0C224F4DE6E0069C57D /* StatisticsAPI.swift */,
+				5B69C07725D4D46800DF536D /* RestrictionsAPI.swift */,
 				59ACB573242F195A00E63E3C /* InitiateUploadAPI.swift */,
 				59ACB575242F404500E63E3C /* DataUploadS3.swift */,
 				FB12C4C2242F0FE9007E893B /* GetTempIdAPI.swift */,
@@ -1227,15 +1319,18 @@
 				5B51ED62248715DE008CE722 /* InfoPlist.strings in Resources */,
 				5B98B45B25A2B1E1009651B7 /* ChangePostcodeViewController.xib in Resources */,
 				5B51ED56248627A8008CE722 /* UploadData.storyboard in Resources */,
+				5B89D4B625D0F0BD00FB3938 /* SimpleTableViewCell.xib in Resources */,
 				5B92B0BE24F4DBE20069C57D /* CovidStatisticsView.xib in Resources */,
 				5B9360FB24F73806008859FC /* StatisticsTableHeader.xib in Resources */,
 				5B92D6BD243018040049877B /* JMCTarget.json in Resources */,
+				5B69C05D25D36E2A00DF536D /* RestrictionDetailsView.xib in Resources */,
 				5B9360F224F619C8008859FC /* MainStatisticsHeader.xib in Resources */,
-				5BD2419725832A7E00F78822 /* SelectStateTerritoryViewController.xib in Resources */,
+				5BD2419725832A7E00F78822 /* SelectableTableViewController.xib in Resources */,
 				5B92D6BF243018040049877B /* NewFeedbackFlow.storyboard in Resources */,
 				59AF2EA92435801400ACCAF2 /* SFSRootCAG2.cer in Resources */,
 				59F25D6A245B917A002A7ED8 /* Spinner_home.json in Resources */,
 				5BED1E3E24A98EA90066C4D2 /* LaunchScreen_zh-Hans.storyboard in Resources */,
+				5BA3623025DE12E6002CFF41 /* CSGenericErrorView.xib in Resources */,
 				5B82435F2480DC2100705CB1 /* Localizable.strings in Resources */,
 				5B92D6C7243018040049877B /* CovidSafe-config.plist in Resources */,
 				59AF2EA0243560FD00ACCAF2 /* AmazonRootCA1.cer in Resources */,
@@ -1245,9 +1340,11 @@
 				59AF2EAD2435801400ACCAF2 /* AmazonRootCA4.cer in Resources */,
 				59F25D6F245BED80002A7ED8 /* Debug.storyboard in Resources */,
 				5BED1E3B24A96D1C0066C4D2 /* LaunchScreen_ar.storyboard in Resources */,
-				5BD241A125832DA600F78822 /* StateTerritoryTableViewCell.xib in Resources */,
+				5BD241A125832DA600F78822 /* SelectableTableViewCell.xib in Resources */,
 				5BED1E4424A98EB60066C4D2 /* LaunchScreen_vi.storyboard in Resources */,
+				5BA3624225E463B6002CFF41 /* WebContentView.xib in Resources */,
 				5B30F78D24B817A100CDED63 /* LaunchScreen_el.storyboard in Resources */,
+				5B69C06C25D3983900DF536D /* TableSectionHeaderView.xib in Resources */,
 				5BBC571D25526F99005E90AA /* staging-Info.plist in Resources */,
 				5B9360FE24F73CE6008859FC /* LoadingViewCell.xib in Resources */,
 				5B92D6C9243018040049877B /* LaunchScreen_en.storyboard in Resources */,
@@ -1255,14 +1352,17 @@
 				59AF2EAF2435801400ACCAF2 /* AmazonRootCA2.cer in Resources */,
 				5B92B0AC24EFA3160069C57D /* SettingsView.xib in Resources */,
 				5B92D6CB243018040049877B /* Assets.xcassets in Resources */,
+				5B89D4BB25D0F6DA00FB3938 /* SelectionTableViewCell.xib in Resources */,
 				5B92B0A324E0CD190069C57D /* LaunchScreen_tr.storyboard in Resources */,
 				5BED1E4124A98EAF0066C4D2 /* LaunchScreen_zh-Hant.storyboard in Resources */,
 				5BBE61B225633B6D00B8C983 /* CSGenericContentView.xib in Resources */,
+				5BEDEF5725CBC4A900AEEC20 /* RestrictionsView.xib in Resources */,
 				5B30F78A24B8179600CDED63 /* LaunchScreen_it.storyboard in Resources */,
 				5B337AB0245AA26300537620 /* Spinner_upload.json in Resources */,
 				5B92B0B524F37E3E0069C57D /* InternetConnectionView.xib in Resources */,
 				5B9360EF24F619A8008859FC /* StatDetailedCell.xib in Resources */,
 				5BED1E4724A98EC20066C4D2 /* LaunchScreen_ko.storyboard in Resources */,
+				5B89D4AD25D0ED7100FB3938 /* RestrictionTableView.xib in Resources */,
 				59AF2EAB2435801400ACCAF2 /* AmazonRootCA3.cer in Resources */,
 				5BD241BF25870B8900F78822 /* ExternalLinkTableViewCell.xib in Resources */,
 				5B92D6CF243018040049877B /* Main.storyboard in Resources */,
@@ -1273,31 +1373,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B89D4BA25D0F6D900FB3938 /* SelectionTableViewCell.xib in Resources */,
 				5B30F78924B8179600CDED63 /* LaunchScreen_it.storyboard in Resources */,
 				D8EB201D23FBE216001C60EC /* help_center_article_style.css in Resources */,
 				5B9360EE24F619A8008859FC /* StatDetailedCell.xib in Resources */,
 				5B51ED55248627A8008CE722 /* UploadData.storyboard in Resources */,
 				A767D313242DF1B000DC9E2A /* JMCTarget.json in Resources */,
+				5B69C05C25D36E2A00DF536D /* RestrictionDetailsView.xib in Resources */,
 				5B9360FD24F73CE6008859FC /* LoadingViewCell.xib in Resources */,
 				59AF2EA82435801400ACCAF2 /* SFSRootCAG2.cer in Resources */,
 				5B92B09F24E0CD070069C57D /* LaunchScreen_tr.storyboard in Resources */,
 				A767D312242DF1B000DC9E2A /* NewFeedbackFlow.storyboard in Resources */,
 				5B9360F124F619C8008859FC /* MainStatisticsHeader.xib in Resources */,
 				5BD241BE25870B8900F78822 /* ExternalLinkTableViewCell.xib in Resources */,
+				5BA3624125E463B6002CFF41 /* WebContentView.xib in Resources */,
 				5BED1E3D24A98EA90066C4D2 /* LaunchScreen_zh-Hans.storyboard in Resources */,
 				5B9360FA24F73806008859FC /* StatisticsTableHeader.xib in Resources */,
 				59F25D69245B917A002A7ED8 /* Spinner_home.json in Resources */,
-				5BD2419625832A7E00F78822 /* SelectStateTerritoryViewController.xib in Resources */,
+				5BD2419625832A7E00F78822 /* SelectableTableViewController.xib in Resources */,
 				5B9E410D2521683500434B25 /* CSAlertView.xib in Resources */,
 				5B92B0B424F37E3E0069C57D /* InternetConnectionView.xib in Resources */,
 				5BED1E4624A98EC20066C4D2 /* LaunchScreen_ko.storyboard in Resources */,
 				5BED1E3A24A96D1C0066C4D2 /* LaunchScreen_ar.storyboard in Resources */,
+				5BEDEF5625CBC4A900AEEC20 /* RestrictionsView.xib in Resources */,
 				5B30F78C24B817A100CDED63 /* LaunchScreen_el.storyboard in Resources */,
 				5B92B0A124E0CD140069C57D /* LaunchScreen_pa-IN.storyboard in Resources */,
 				5BBE61B125633B6D00B8C983 /* CSGenericContentView.xib in Resources */,
 				5B82435E2480DC2100705CB1 /* Localizable.strings in Resources */,
 				5B92D663243011B40049877B /* CovidSafe-config.plist in Resources */,
+				5B89D4B525D0F0BD00FB3938 /* SimpleTableViewCell.xib in Resources */,
+				5B69C06B25D3983800DF536D /* TableSectionHeaderView.xib in Resources */,
 				5BED1E4324A98EB60066C4D2 /* LaunchScreen_vi.storyboard in Resources */,
+				5B89D4AC25D0ED7100FB3938 /* RestrictionTableView.xib in Resources */,
 				59AF2E9F243560FD00ACCAF2 /* AmazonRootCA1.cer in Resources */,
 				5B51ED61248715DE008CE722 /* InfoPlist.strings in Resources */,
 				5B92B0AB24EFA3160069C57D /* SettingsView.xib in Resources */,
@@ -1310,10 +1417,11 @@
 				5B92B0BD24F4DBE20069C57D /* CovidStatisticsView.xib in Resources */,
 				5B337AAF245AA26300537620 /* Spinner_upload.json in Resources */,
 				5B98B45A25A2B1E1009651B7 /* ChangePostcodeViewController.xib in Resources */,
-				5BD241A025832DA600F78822 /* StateTerritoryTableViewCell.xib in Resources */,
+				5BD241A025832DA600F78822 /* SelectableTableViewCell.xib in Resources */,
 				59AF2EAA2435801400ACCAF2 /* AmazonRootCA3.cer in Resources */,
 				5961ABED2474E464004040DF /* spinner_migrating_db.json in Resources */,
 				5DD41D4223DCB03B00FD4AB0 /* Main.storyboard in Resources */,
+				5BA3622F25DE12E6002CFF41 /* CSGenericErrorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1422,15 +1530,18 @@
 				5B92D67C243018040049877B /* LogViewController.swift in Sources */,
 				5B92D67D243018040049877B /* HomeViewController.swift in Sources */,
 				5B92D67E243018040049877B /* InfoViewController.swift in Sources */,
+				5BA3623525DE133D002CFF41 /* CSGenericErrorController.swift in Sources */,
 				5B92D67F243018040049877B /* PogoInstructionsViewController.swift in Sources */,
 				FBBBFCE82430A933002B174D /* PrivacyPolicyViewController.swift in Sources */,
 				5B51ED512485DF9C008CE722 /* UILocalization.swift in Sources */,
 				5BA33A8024B55EF200D12515 /* BLELogDB.swift in Sources */,
+				5B69C06225D36E3D00DF536D /* RestrictionDetailsView.swift in Sources */,
 				594E77C3247387B1009B8B34 /* EncounterDB+migration.swift in Sources */,
 				590546292543E0F6009B82AD /* SensorArray.swift in Sources */,
 				590C99332432C1C400A5EC71 /* UploadDataHomeViewController.swift in Sources */,
 				590546112543E0F5009B82AD /* BLEUtilities.swift in Sources */,
 				59B7417124514126006E1EEA /* RegistrationConsentViewController.swift in Sources */,
+				5B69C06725D382AF00DF536D /* String+HtmlAttributed.swift in Sources */,
 				5B92B0AF24EFADB00069C57D /* SettingsViewController.swift in Sources */,
 				5B92B0C124F4DC3A0069C57D /* CovidStatisticsViewController.swift in Sources */,
 				5B92D680243018040049877B /* CodeInputView.swift in Sources */,
@@ -1440,6 +1551,7 @@
 				5B337AAD245A9EF800537620 /* UploadDataErrorViewController.swift in Sources */,
 				590888B02431B9E7008C9B9F /* UIColor + Extensions.swift in Sources */,
 				5B728B4E24B5A26D00654ABC /* debug.xcdatamodeld in Sources */,
+				5BEDEF4125CB938D00AEEC20 /* MainTabBarViewController.swift in Sources */,
 				5B2E5B1C25AD156E00A021B0 /* ChangePostcodeAPI.swift in Sources */,
 				5905460F2543E0F5009B82AD /* BLEDatabase.swift in Sources */,
 				5B92D74F243022EF0049877B /* DataUploadS3.swift in Sources */,
@@ -1448,10 +1560,11 @@
 				5B92B09524D14AE00069C57D /* InternetConnectionViewController.swift in Sources */,
 				5B92D684243018040049877B /* AsyncAction.swift in Sources */,
 				5B92D685243018040049877B /* UILabelExtension.swift in Sources */,
-				5BD2419525832A7E00F78822 /* SelectStateTerritoryViewController.swift in Sources */,
+				5BD2419525832A7E00F78822 /* SelectableTableViewController.swift in Sources */,
 				5905462B2543E0F6009B82AD /* PayloadDataSupplier.swift in Sources */,
 				5B92D686243018040049877B /* AppDelegate.swift in Sources */,
 				5B92D687243018040049877B /* PhoneNumberViewController.swift in Sources */,
+				5BEDEF5525CBC4A900AEEC20 /* RestrictionsViewController.swift in Sources */,
 				5BA33A7C24B41ECA00D12515 /* UIFont + Traits.swift in Sources */,
 				5961ABEB2474E358004040DF /* MigrationViewController.swift in Sources */,
 				5B110C11248F275B00B68291 /* SelectCountryViewController.swift in Sources */,
@@ -1464,9 +1577,11 @@
 				590888B42431B9F5008C9B9F /* UploadDataNavigationController.swift in Sources */,
 				5B92D68C243018040049877B /* GetJMCTargetAction.swift in Sources */,
 				5B92D68D243018040049877B /* Logging.swift in Sources */,
+				5B89D4D225D33F3100FB3938 /* JurisdictionalRestrictionActivity.swift in Sources */,
 				0B42D0DF2432B3A800E4F44C /* Question1ErrorViewController.swift in Sources */,
 				5B92D68E243018040049877B /* HelpNavController.swift in Sources */,
 				5B92D68F243018040049877B /* OTPViewController.swift in Sources */,
+				5B89D4DE25D356A400FB3938 /* CovidHeaderContentViewController.swift in Sources */,
 				596B189A24496D32003E190F /* Encounter+Util.swift in Sources */,
 				5904A5C32462471A008C8012 /* EncounterV1toV2.xcmappingmodel in Sources */,
 				5B92D690243018040049877B /* Encounter+CoreDataClass.swift in Sources */,
@@ -1476,6 +1591,7 @@
 				597BB7CD245FAEC00067A2E2 /* SecKey+CovidSafe.swift in Sources */,
 				597BB7D0245FB1250067A2E2 /* Crypto.swift in Sources */,
 				5B92D693243018040049877B /* UIColor+Hex.swift in Sources */,
+				5B69C07925D4D46800DF536D /* RestrictionsAPI.swift in Sources */,
 				590546372543E0F6009B82AD /* StatisticsLog.swift in Sources */,
 				5B92D694243018040049877B /* RegistrationIntroViewController.swift in Sources */,
 				5B92D695243018040049877B /* DeviceInfoExtension.swift in Sources */,
@@ -1519,10 +1635,12 @@
 				590546392543E0F6009B82AD /* SensorDelegate.swift in Sources */,
 				5B92D6A9243018040049877B /* Errors.swift in Sources */,
 				5B92D6AA243018040049877B /* UINavigationBar+Style.swift in Sources */,
+				5B89D4D925D3557F00FB3938 /* RestrictionDetailsViewController.swift in Sources */,
 				590546172543E0F6009B82AD /* AwakeSensor.swift in Sources */,
 				5B92D6AB243018040049877B /* UploadFileData.swift in Sources */,
 				590888B52431BA76008C9B9F /* NSMutableString + Extensions.swift in Sources */,
 				5B92D6AC243018040049877B /* BundleInfoExtension.swift in Sources */,
+				5B89D4C225D239EB00FB3938 /* UIImage+imageColor.swift in Sources */,
 				5905460D2543E0F5009B82AD /* BLESensor.swift in Sources */,
 				5BBE61B825633E8D00B8C983 /* CSGenericViewController.swift in Sources */,
 				5909E4AC245043C400D41C26 /* CovidPersistentContainer.swift in Sources */,
@@ -1540,14 +1658,17 @@
 				590888B62431BA7C008C9B9F /* Question3ErrorViewController.swift in Sources */,
 				590546332543E0F6009B82AD /* SensorLogger.swift in Sources */,
 				5B900FC22485C4EE00CAA419 /* String+Localization.swift in Sources */,
-				5BD2419F25832DA600F78822 /* StateTerritoryTableViewCell.swift in Sources */,
+				5BD2419F25832DA600F78822 /* SelectableTableViewCell.swift in Sources */,
 				59AF2E9D2435581600ACCAF2 /* CovidNetworking.swift in Sources */,
 				596B189D24499591003E190F /* UploadHelper.swift in Sources */,
 				590888AF2431B9E3008C9B9F /* UITextView + Extensions.swift in Sources */,
 				5B92D6B3243018040049877B /* PushNotificationConstants.swift in Sources */,
 				5B92D6B4243018040049877B /* UIViewController + Extension.swift in Sources */,
+				5BA3624725E4654F002CFF41 /* WebContentView.swift in Sources */,
 				5B92D6B5243018040049877B /* Encounter+CoreDataProperties.swift in Sources */,
+				5B89D4AB25D0ED7100FB3938 /* RestrictionTableViewController.swift in Sources */,
 				5B92D6B6243018040049877B /* Issue.swift in Sources */,
+				5B89D4CD25D33DA100FB3938 /* StateTerritory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1583,19 +1704,22 @@
 				7F19B4DD23F565850071A11E /* PogoInstructionsViewController.swift in Sources */,
 				30E91BEB23EFEA0B002D592A /* CodeInputView.swift in Sources */,
 				597BB7CF245FB1250067A2E2 /* Crypto.swift in Sources */,
-				5BD2419E25832DA600F78822 /* StateTerritoryTableViewCell.swift in Sources */,
+				5BD2419E25832DA600F78822 /* SelectableTableViewCell.swift in Sources */,
 				30BE1CAF23F1349F005DCE4F /* EncounterRecord.swift in Sources */,
 				590546102543E0F5009B82AD /* BLEUtilities.swift in Sources */,
 				590546382543E0F6009B82AD /* SensorDelegate.swift in Sources */,
 				59490B64245FE3DA00C9802B /* EncounterV2Mapping.swift in Sources */,
 				590546282543E0F6009B82AD /* SensorArray.swift in Sources */,
 				5BD241BC25870B8900F78822 /* ExternalLinkTableViewCell.swift in Sources */,
+				5B69C07825D4D46800DF536D /* RestrictionsAPI.swift in Sources */,
 				C58D817723F169DB00345771 /* RegistrationSuccessViewController.swift in Sources */,
+				5BA3623425DE133D002CFF41 /* CSGenericErrorController.swift in Sources */,
 				59ACB574242F195A00E63E3C /* InitiateUploadAPI.swift in Sources */,
 				A767D324242DF1B100DC9E2A /* AsyncAction.swift in Sources */,
 				B60F8BE4242659810007A641 /* UILabelExtension.swift in Sources */,
 				5DD41D3B23DCB03B00FD4AB0 /* AppDelegate.swift in Sources */,
 				5D8B248B23F146C500DBB74D /* PhoneNumberViewController.swift in Sources */,
+				5BA3624625E4654F002CFF41 /* WebContentView.swift in Sources */,
 				A767D32D242DF1B100DC9E2A /* NewFeedbackFlowController.swift in Sources */,
 				590546362543E0F6009B82AD /* StatisticsLog.swift in Sources */,
 				A767D319242DF1B000DC9E2A /* Outcome.swift in Sources */,
@@ -1611,6 +1735,7 @@
 				5B04074124BC0CEA00FAAFD0 /* MessageAPI.swift in Sources */,
 				30BE1CB523F15D47005DCE4F /* OTPViewController.swift in Sources */,
 				5905460C2543E0F5009B82AD /* BLESensor.swift in Sources */,
+				5B69C06125D36E3D00DF536D /* RestrictionDetailsView.swift in Sources */,
 				5B900FC12485C4EE00CAA419 /* String+Localization.swift in Sources */,
 				5D8DD06123E319B300E097EF /* Encounter+CoreDataClass.swift in Sources */,
 				594E77BF24736B77009B8B34 /* EncounterDB.swift in Sources */,
@@ -1627,6 +1752,7 @@
 				0B69E7ED2430D72900561DD9 /* UploadDataNavigationController.swift in Sources */,
 				A767D320242DF1B100DC9E2A /* DeviceInfoExtension.swift in Sources */,
 				5B7ABF28244D6BE100BB249B /* UnderSixteenViewController.swift in Sources */,
+				5B89D4CC25D33DA100FB3938 /* StateTerritory.swift in Sources */,
 				A767D325242DF1B100DC9E2A /* SendFeedbackAction.swift in Sources */,
 				C5D209FC23F4476F007233BE /* UITextViewFixed.swift in Sources */,
 				C585C83B23EEB99B0061B7C6 /* GradientButton.swift in Sources */,
@@ -1634,6 +1760,7 @@
 				590546342543E0F6009B82AD /* ContactLog.swift in Sources */,
 				597BB7CC245FAEC00067A2E2 /* SecKey+CovidSafe.swift in Sources */,
 				5B92B0AE24EFADB00069C57D /* SettingsViewController.swift in Sources */,
+				5B89D4D825D3557F00FB3938 /* RestrictionDetailsViewController.swift in Sources */,
 				5B7ABF25244D3BC600BB249B /* IsolationSuccessViewController.swift in Sources */,
 				A767D331242DF1B100DC9E2A /* ViewControllerFactory.swift in Sources */,
 				0BA617CE242E09B200E6C631 /* FeedbackViewController.swift in Sources */,
@@ -1651,10 +1778,12 @@
 				5BFFD94B242EC120003AEF4F /* PhoneValidationAPI.swift in Sources */,
 				59AF2EB22435A38100ACCAF2 /* CovidRequestRetrier.swift in Sources */,
 				592CBB802441A583001FFCE9 /* PersonalDetailsViewController.swift in Sources */,
+				5B89D4DD25D356A400FB3938 /* CovidHeaderContentViewController.swift in Sources */,
 				A767D330242DF1B100DC9E2A /* UIWindow+TopMost.swift in Sources */,
 				D8DEB6822423AE2E00D99925 /* HowItWorksViewController.swift in Sources */,
 				5B2E5B1B25AD156E00A021B0 /* ChangePostcodeAPI.swift in Sources */,
 				5B92B0C324F4DE6F0069C57D /* StatisticsAPI.swift in Sources */,
+				5B89D4C125D239EB00FB3938 /* UIImage+imageColor.swift in Sources */,
 				5905462C2543E0F6009B82AD /* TextFile.swift in Sources */,
 				C56CF43F23F18A15006B05B0 /* OnboardingStep4ViewController.swift in Sources */,
 				A767D328242DF1B100DC9E2A /* PresentFeedbackExtensions.swift in Sources */,
@@ -1663,12 +1792,16 @@
 				0B22A56B242F286900D1FE60 /* UINavigationBar+Style.swift in Sources */,
 				0B1810122431EE610005D11F /* PhoneNumberParser.swift in Sources */,
 				1B86119B24303FA200EA4B6B /* Question3ErrorViewController.swift in Sources */,
+				5BEDEF5425CBC4A900AEEC20 /* RestrictionsViewController.swift in Sources */,
 				30BE1CAA23F108BA005DCE4F /* UploadFileData.swift in Sources */,
+				5B89D4D125D33F3100FB3938 /* JurisdictionalRestrictionActivity.swift in Sources */,
+				5BEDEF4025CB938D00AEEC20 /* MainTabBarViewController.swift in Sources */,
 				5909E4AB245043C400D41C26 /* CovidPersistentContainer.swift in Sources */,
 				A767D31D242DF1B000DC9E2A /* BundleInfoExtension.swift in Sources */,
 				A767D32C242DF1B100DC9E2A /* FeedbackSettings.swift in Sources */,
 				A767D31A242DF1B000DC9E2A /* JMCTargetJSONFromDisk.swift in Sources */,
 				5BBE61B725633E8D00B8C983 /* CSGenericViewController.swift in Sources */,
+				5B89D4AA25D0ED7100FB3938 /* RestrictionTableViewController.swift in Sources */,
 				5B92B09424D14AE00069C57D /* InternetConnectionViewController.swift in Sources */,
 				A767D334242DF1B100DC9E2A /* Action.swift in Sources */,
 				59AF2E992435533A00ACCAF2 /* CovidCertificates.swift in Sources */,
@@ -1678,10 +1811,12 @@
 				A767D31F242DF1B000DC9E2A /* HTTPPostFeedbackAction.swift in Sources */,
 				7F36305F23F7F81400CC6E1D /* PushNotificationConstants.swift in Sources */,
 				59AF2E9C2435581600ACCAF2 /* CovidNetworking.swift in Sources */,
-				5BD2419425832A7E00F78822 /* SelectStateTerritoryViewController.swift in Sources */,
+				5BD2419425832A7E00F78822 /* SelectableTableViewController.swift in Sources */,
+				5BD2419425832A7E00F78822 /* SelectableTableViewController.swift in Sources */,
 				596B189C24499591003E190F /* UploadHelper.swift in Sources */,
 				5B51ED502485D658008CE722 /* UILocalization.swift in Sources */,
 				1B86119724303F8500EA4B6B /* Question1ErrorViewController.swift in Sources */,
+				5B69C06625D382AF00DF536D /* String+HtmlAttributed.swift in Sources */,
 				B615C5A923FA403500345969 /* UIViewController + Extension.swift in Sources */,
 				1B86119324303F4A00EA4B6B /* Question2ViewController.swift in Sources */,
 				5D8DD06223E319B300E097EF /* Encounter+CoreDataProperties.swift in Sources */,
@@ -1832,7 +1967,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 108;
+				CURRENT_PROJECT_VERSION = 111;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1840,7 +1975,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.3;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
@@ -1916,7 +2051,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 108;
+				CURRENT_PROJECT_VERSION = 111;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1924,7 +2059,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.3;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1944,7 +2079,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 107;
+				CURRENT_PROJECT_VERSION = 110;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/staging-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1952,10 +2087,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.3;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
+				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe.uat;
 				PRODUCT_MODULE_NAME = COVIDSafe;
 				PRODUCT_NAME = "COVIDSafe-staging";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1974,7 +2109,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 107;
+				CURRENT_PROJECT_VERSION = 110;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/staging-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1982,10 +2117,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.3;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
+				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe.uat;
 				PRODUCT_MODULE_NAME = COVIDSafe;
 				PRODUCT_NAME = "COVIDSafe-staging";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2004,7 +2139,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 107;
+				CURRENT_PROJECT_VERSION = 110;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/staging-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -2012,9 +2147,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.3;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
+				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe.uat;
 				PRODUCT_MODULE_NAME = COVIDSafe;
 				PRODUCT_NAME = "COVIDSafe-staging";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2034,7 +2169,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 107;
+				CURRENT_PROJECT_VERSION = 110;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/staging-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -2042,9 +2177,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.3;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
+				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe.uat;
 				PRODUCT_MODULE_NAME = COVIDSafe;
 				PRODUCT_NAME = "COVIDSafe-staging";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2182,7 +2317,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 108;
+				CURRENT_PROJECT_VERSION = 111;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -2190,7 +2325,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.3;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
@@ -2210,7 +2345,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 108;
+				CURRENT_PROJECT_VERSION = 111;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -2218,7 +2353,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.3;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
 				PROVISIONING_PROFILE_SPECIFIER = "";

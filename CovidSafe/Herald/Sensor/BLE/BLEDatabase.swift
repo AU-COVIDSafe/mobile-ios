@@ -323,21 +323,37 @@ class BLEPseudoDeviceAddress {
         }}
     
     init?(fromAdvertisementData: [String: Any]) {
-        guard let manufacturerData = fromAdvertisementData["kCBAdvDataManufacturerData"] as? Data else {
+        guard let manufacturerData = fromAdvertisementData[CBAdvertisementDataManufacturerDataKey] as? Data else {
             return nil
         }
-        guard let manufacturerId = manufacturerData.uint16(0), manufacturerId == BLESensorConfiguration.manufacturerIdForSensor else {
+        guard let manufacturerId = manufacturerData.uint16(0) else {
             return nil
         }
-        guard manufacturerData.count == 8 else {
+        // HERALD pseudo device address
+        if manufacturerId == BLESensorConfiguration.manufacturerIdForSensor, manufacturerData.count == 8 {
+            data = Data(manufacturerData.subdata(in: 2..<8))
+            var longValueData = Data(repeating: 0, count: 2)
+            longValueData.append(data)
+            guard let longValue = longValueData.int64(0) else {
+                return nil
+            }
+            address = Int64(longValue)
+        }
+        // Legacy pseudo device address
+        else if manufacturerId == UInt(1023), manufacturerData.count > 2 {
+            data = Data(manufacturerData.subdata(in: 2..<min(8,manufacturerData.count)))
+            var longValueData = Data(data)
+            if longValueData.count < 8 {
+                longValueData.append(Data(repeating: 0, count: 8 - longValueData.count))
+            }
+            guard let longValue = longValueData.int64(0) else {
+                return nil
+            }
+            address = Int64(longValue)
+        }
+        // Pseudo device address not detected
+        else {
             return nil
         }
-        data = Data(manufacturerData.subdata(in: 2..<8))
-        var longValueData = Data(repeating: 0, count: 2)
-        longValueData.append(data)
-        guard let longValue = longValueData.int64(0) else {
-            return nil
-        }
-        address = Int64(longValue)
     }
 }

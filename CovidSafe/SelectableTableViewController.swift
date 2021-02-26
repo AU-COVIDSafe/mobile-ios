@@ -1,5 +1,5 @@
 //
-//  SelectStateTerritoryViewController.swift
+//  SelectableTableViewController.swift
 //  CovidSafe
 //
 //  Copyright © 2020 Australian Government. All rights reserved.
@@ -19,9 +19,6 @@ class SelectableTableViewController<T>: UITableViewController where T:SimpleCell
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        title = "select_state_territory_heading".localizedString()
-        tableView.isScrollEnabled = false
         
         let buttonTitle = "global_cancel_button_title".localizedString()
 
@@ -35,7 +32,7 @@ class SelectableTableViewController<T>: UITableViewController where T:SimpleCell
         
         navigationItem.rightBarButtonItem = item
         
-        tableView.register(UINib(nibName: "StateTerritoryTableViewCell", bundle: nil), forCellReuseIdentifier: "StateTerritoryCell")
+        tableView.register(UINib(nibName: "SelectableTableViewCell", bundle: nil), forCellReuseIdentifier: "SelectableCell")
     }
     
     @objc func dismissView() {
@@ -58,7 +55,7 @@ class SelectableTableViewController<T>: UITableViewController where T:SimpleCell
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "StateTerritoryCell", for: indexPath) as! StateTerritoryTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SelectableCell", for: indexPath) as! SelectableTableViewCell
 
         // Configure the cell...
         let sectionValues = data[indexPath.section]
@@ -89,44 +86,6 @@ class SelectableTableViewController<T>: UITableViewController where T:SimpleCell
 
 protocol SimpleCellObject {
     func getCellTitle() -> String
-}
-
-enum StateTerritory: String {
-    case AU, ACT, NSW, NT, QLD, SA, TAS, VIC, WA
-}
-
-extension StateTerritory {
-    
-    func stateTerritoryFullName() -> String {
-        switch self {
-        case .ACT:
-            return "australian_capital_territory".localizedString()
-        case .NSW:
-            return "new_south_wales".localizedString()
-        case .NT:
-            return "northern_territory".localizedString()
-        case .QLD:
-            return "queensland".localizedString()
-        case .SA:
-            return "south_australia".localizedString()
-        case .TAS:
-            return "tasmania".localizedString()
-        case .VIC:
-            return "victoria".localizedString()
-        case .WA:
-            return "western_australia".localizedString()
-        default:
-            return "country_region_name_au".localizedString()
-
-        }
-    }
-}
-
-extension StateTerritory: SimpleCellObject {
-    
-    func getCellTitle() -> String {
-        return stateTerritoryFullName()
-    }
 }
 
 protocol TableSelectionDelegate {

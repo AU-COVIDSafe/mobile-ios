@@ -98,6 +98,9 @@ class HomeViewController: UIViewController, HomeDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "home_bottom_nav".localizedString()
+        tabBarItem.image = UIImage(named: "ausCheck")
+        
         covidStatisticsViewController.homeDelegate = self
         scrollView.refreshControl = UIRefreshControl()
         scrollView.refreshControl?.addTarget(self, action: #selector(refreshControlEvent), for: .valueChanged)
@@ -230,6 +233,10 @@ class HomeViewController: UIViewController, HomeDelegate {
         }
     }
     
+    fileprivate func navigateToSettings() {
+        tabBarController?.selectedIndex = 2
+    }
+    
     fileprivate func refreshView() {
         toggleViews()
         performHealthCheck()
@@ -283,7 +290,7 @@ class HomeViewController: UIViewController, HomeDelegate {
                 if  (self.reachability.connection != .cellular && self.reachability.connection != .wifi) ||
                     self.shouldShowUpdateApp {
                     DispatchQueue.main.async {
-                        self.onSettingsTapped(self)
+                        self.navigateToSettings()
                     }
                 } else if self.allPermissionOn &&
                     self.isInternetReachable() &&
@@ -563,14 +570,8 @@ class HomeViewController: UIViewController, HomeDelegate {
     
     @IBAction func improvementAvailableTapped(_ sender: Any) {
         if shouldShowUpdateApp || !isInternetReachable() {
-            onSettingsTapped(sender)
+            navigateToSettings()
         }
-    }
-    
-    @IBAction func onSettingsTapped(_ sender: Any) {
-        let settingsVC = SettingsViewController(nibName: "SettingsView", bundle: nil)
-        settingsVC.showUpdateAvailable = shouldShowUpdateApp
-        navigationController?.pushViewController(settingsVC, animated: true)
     }
     
     @IBAction func registerAgainTapped(_ sender: Any) {
