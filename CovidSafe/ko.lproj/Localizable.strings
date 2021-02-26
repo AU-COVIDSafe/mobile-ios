@@ -7,15 +7,17 @@
 "activity_button" = "앱 활동 확인";
 "activity_button_description" = "다른 COVIDSafe 사용자와의 블루투스 상호 작용 보기";
 "activity_heading" = "앱 활동";
-"activity_intro" = "여러분의 기기가 다른 COVIDSafe 앱 사용자의 범위 안에 있을 때마다 '블루투스 악수'라는 블루투스 상호작용이 기록됩니다.\n\n이 악수는 여러분의 앱이 얼마나 잘 작동하는지를 나타냅니다.";
+"activity_intro" = "";
+"activity_intro_2" = "";
 /* Figma page iOS Screens (05/06) */
 "allow_bluetooth_call" = "COVIDSafe의 블루투스® 접속을 허용해 주세요";
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothOFF" = "블루투스® 접속: 꺼짐";
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothON" = "블루투스® 접속: 켜짐";
+"app_activity_bluetooth_handshakes_heading" = "";
 "australian_capital_territory" = "호주 수도 테리토리";
-"ble_handshakes_yesterday" = "어제의 블루투스 악수";
+"ble_handshakes_yesterday" = "";
 "bluetooth_handshakes" = "블루투스 악수";
 /* Figma page iOS Screens (05/06) */
 "BluetoothOFF" = "블루투스®: 꺼짐";
@@ -276,11 +278,14 @@
 "factors_dotpoint1" = "근접 범위 내 COVIDSafe 사용자 수";
 "factors_dotpoint2" = "기기 모델 및 연식";
 "factors_dotpoint3" = "움직이는 차량 안에 있는 경우";
+"factors_dotpoint4" = "";
 "factors_enviro_item_1" = "벽 등의 물리적 장애물";
 "factors_enviro_item_2" = "블루투스 신호를 방해하는 물질 및 시설";
 "factors_handshakes_heading" = "앱 활동에 영향을 미치는 요인";
-"factors_intro" = "블루투스 악수 숫자에 영향을 줄 수 있는 요소는 다음과 같습니다.";
+"factors_intro" = "";
 "factors_intro_2" = "다음과 같은 환경 요인 역시 블루투스 악수에 영향을 미칠 수 있습니다.";
+/* Example: "From 22 to 28 January 2021" */
+"from" = "";
 "global_back" = "뒤로";
 "global_close" = "닫기";
 "global_double_tap" = "두 번 탭해서 수정하세요";
@@ -288,6 +293,7 @@
 "hide" = "숨기기";
 "home_app_permission_status_subtitle" = "COVIDSafe는 올바른 설정없이는 작동되지 않습니다.";
 "home_app_permission_status_title" = "설정을 확인하세요.";
+"home_bottom_nav" = "";
 "home_data_uploaded_message" = "COVID-19의 확산방지에 협조하고 자신의 증상을 추적하세요.";
 "home_header_active_no_action_required" = "추가 조치가 필요하지 않습니다.";
 /* Home */
@@ -360,12 +366,7 @@
 "locally_acquired" = "%@ 지역 감염";
 "location_off" = "위치 서비스: 꺼짐";
 "location_off_description" = "COVIDSafe가 제대로 실행되기 위해서는 여러분의 아이폰에서 위치 서비스 기능을 허용해야 합니다. COVIDSafe는 여러분의 위치 정보를 추적하거나 저장하지 않습니다.";
-"low_handshakes_description" = "휴대폰에서 COVIDSafe의 성능을 향상시키려면 다음 팁을 활용해보세요.";
-"low_handshakes_heading" = "블루투스 악수 숫자가 예상보다 적으면 어떻게 하나요";
-"low_handshakes_item1" = "앱을 열어 COVIDSafe가 활성화되어 있는지 확인하세요.";
-"low_handshakes_item2" = "Google Play Store 또는 Apple Store를 통해 앱을 최신 버전으로 업데이트하세요.";
-"low_handshakes_item3" = "휴대폰을 재시작하고 앱을 다시 실행하세요.";
-"low_handshakes_link" = "COVIDSafe가 올바르게 작동하는지 확인하는 방법에 대한 자세한 정보 보기";
+"main_restrictions" = "";
 /* Splash Screen */
 "migration_in_progress" = "COVIDSafe 업데이트 진행 중. \n\n업데이트가 완료될 때까지 휴대폰이 꺼지지 않도록 해주세요.";
 "minute" = "분";
@@ -373,6 +374,13 @@
 "new_cases" = "지난 24시간 동안의 새 확진자 수";
 "new_cases_total" = "2020년 2월 1일 이후 신규 확진 건수";
 "new_south_wales" = "뉴 사우스 웨일즈";
+"no_handshakes_description" = "";
+"no_handshakes_heading" = "";
+"no_handshakes_item1" = "앱을 열어 COVIDSafe가 활성화되어 있는지 확인하세요.";
+"no_handshakes_item2" = "Google Play Store 또는 Apple Store를 통해 앱을 최신 버전으로 업데이트하세요.";
+"no_handshakes_item3" = "휴대폰을 재시작하고 앱을 다시 실행하세요.";
+"no_handshakes_item4" = "";
+"no_handshakes_link" = "COVIDSafe가 올바르게 작동하는지 확인하는 방법에 대한 자세한 정보 보기";
 /* Figma page Android Screens (05/06) */
 "norfolk_hint" = "예: 51234";
 "northern_territory" = "노던 테리토리";
@@ -438,6 +446,27 @@
 /* Onboarding Registration Consent */
 "registration_consent_headline" = "등록 동의";
 "registration_consent_second_paragraph" = "다른 COVIDSafe 사용자가 COVID-19 양성 결과를 받고 자신의 접촉 데이터를 업로드한 경우, 다른 COVIDSafe 사용자들과의 본인의 접촉 정보.";
+"restrictions_accommodation" = "";
+"restrictions_activity" = "";
+"restrictions_cafes" = "";
+"restrictions_disclaimer" = "";
+"restrictions_domestic_travel" = "";
+"restrictions_education" = "";
+"restrictions_entertainment" = "";
+"restrictions_error_dismiss" = "";
+"restrictions_error_heading" = "";
+"restrictions_error_message" = "";
+"restrictions_error_try" = "";
+"restrictions_gatherings_work" = "";
+"restrictions_hair_beauty" = "";
+"restrictions_heading" = "";
+"restrictions_hotspots" = "";
+"restrictions_retail" = "";
+"restrictions_select_activity" = "";
+"restrictions_select_state" = "";
+"restrictions_sports" = "";
+"restrictions_state" = "";
+"restrictions_wedding" = "";
 "save" = "저장";
 "scheduled" = "%@부터 %@까지 COVIDsafe를 일시 정지해놓았습니다.";
 /* OnBoarding Enter Number */
@@ -473,6 +502,8 @@
 "support_content" = "도움말 항목에서 다루지 않는 문제에 대한 지원";
 "Support_VOLabel" = "지원. 도움말 항목에서 다루지 않는 문제에 대한 지원";
 "tasmania" = "태즈매니아";
+/* Example: "From 22 to 28 January 2021" */
+"to" = "";
 "total" = "총";
 "total_confirmed_cases" = "총 확진자 수";
 "total_deaths" = "%@ 총 사망자 수";

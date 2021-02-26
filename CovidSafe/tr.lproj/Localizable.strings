@@ -7,15 +7,17 @@
 "activity_button" = "Uygulama etkinliğini kontrol edin";
 "activity_button_description" = "Uygulamanızın diğer COVIDSafe kullanıcılarıyla Bluetooth etkileşimlerini görüntüleyin.";
 "activity_heading" = "Uygulama etkinliği";
-"activity_intro" = "Cihazınızın diğer COVIDSafe uygulama kullanıcılarının alanına her girişinde 'Bluetooth el sıkışma' adı verilen Bluetooth etkileşimlerini dikkate alır.\n\nBu el sıkışmalar, uygulamanızın ne kadar iyi çalıştığını gösterir.";
+"activity_intro" = "";
+"activity_intro_2" = "";
 /* Figma page iOS Screens (05/06) */
 "allow_bluetooth_call" = "COVIDSafe'in Bluetooth®'a erişmesine izin verin";
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothOFF" = "Bluetooth®'a erişim: KAPALI";
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothON" = "Bluetooth®'a erişim: AÇIK";
+"app_activity_bluetooth_handshakes_heading" = "";
 "australian_capital_territory" = "Avustralya Başkent Bölgesi";
-"ble_handshakes_yesterday" = "Dünkü Bluetooth el sıkışmaları";
+"ble_handshakes_yesterday" = "";
 "bluetooth_handshakes" = "Bluetooth el sıkışmaları";
 /* Figma page iOS Screens (05/06) */
 "BluetoothOFF" = "Bluetooth®: KAPALI";
@@ -276,11 +278,14 @@
 "factors_dotpoint1" = "alanda COVIDSafe kullanıcıları sayısı";
 "factors_dotpoint2" = "cihazın modeli ve yaşı";
 "factors_dotpoint3" = "hareket halindeki bir araçta iseniz";
+"factors_dotpoint4" = "";
 "factors_enviro_item_1" = "duvarlar gibi fiziksel engeller";
 "factors_enviro_item_2" = "Bluetooth sinyallerini engelleyen malzeme ve armatürler";
 "factors_handshakes_heading" = "Uygulama etkinliğini etkileyen faktörler";
-"factors_intro" = "El sıkışma sayısını etkileyebilecek faktörler şunları içerir:";
+"factors_intro" = "";
 "factors_intro_2" = "El sıkışmalar çevresel faktörlerden de etkilenebilir, örneğin:";
+/* Example: "From 22 to 28 January 2021" */
+"from" = "";
 "global_back" = "Geri";
 "global_close" = "Kapat";
 "global_double_tap" = "düzeltme yapmak için iki defa tıklayınız";
@@ -288,6 +293,7 @@
 "hide" = "Gizle";
 "home_app_permission_status_subtitle" = "COVIDSafe doğru ayarlar olmadan çalışmaz. ";
 "home_app_permission_status_title" = "Ayarlarınızı kontrol edin";
+"home_bottom_nav" = "";
 "home_data_uploaded_message" = "COVID-19'un yayılmasını durdurmaya ve belirtilerinizin takibine yardımcı olun.";
 "home_header_active_no_action_required" = "Başka bir eylem gerekmez.";
 /* Home */
@@ -360,12 +366,7 @@
 "locally_acquired" = "%@ yerel olarak edinilen";
 "location_off" = "Konum: KAPALI";
 "location_off_description" = "iPhone’unuz, COVIDSafe’in çalışması için Konum iznine ihtiyaç duyar. COVIDSafe konum verilerinizi İZLEMEZ veya SAKLAMAZ.";
-"low_handshakes_description" = "Telefonunuzda COVIDSafe'in performansını artırmak için şu ipuçlarını deneyin:";
-"low_handshakes_heading" = "El sıkışma sayılarınız beklediğinizin altında ise ne yapmalısınız";
-"low_handshakes_item1" = "Uygulamayı açarak COVIDSafe'in etkin olup olmadığını kontrol edin.";
-"low_handshakes_item2" = "Uygulamanızı Google Play Store veya Apple Store üzerinden en son sürüme güncelleyin.";
-"low_handshakes_item3" = "Telefonunuzu yeniden başlatın ve uygulamayı tekrar açın.";
-"low_handshakes_link" = "COVIDSafe'in doğru çalışıp çalışmadığının nasıl kontrol edileceği hakkında daha fazlasını okuyun";
+"main_restrictions" = "";
 /* Splash Screen */
 "migration_in_progress" = " COVIDSafe güncellemesi devam ediyor. \n\n Lütfen güncelleme tamamlanana kadar telefonunuzu kapatmayın.";
 "minute" = "Dakika";
@@ -373,6 +374,13 @@
 "new_cases" = "Son 24 saatte çıkan yeni vakalar";
 "new_cases_total" = "1 Şubat 2020'den itibaren yeni vakalar";
 "new_south_wales" = "Yeni Güney Galler";
+"no_handshakes_description" = "";
+"no_handshakes_heading" = "";
+"no_handshakes_item1" = "Uygulamayı açarak COVIDSafe'in etkin olup olmadığını kontrol edin.";
+"no_handshakes_item2" = "Uygulamanızı Google Play Store veya Apple Store üzerinden en son sürüme güncelleyin.";
+"no_handshakes_item3" = "Telefonunuzu yeniden başlatın ve uygulamayı tekrar açın.";
+"no_handshakes_item4" = "";
+"no_handshakes_link" = "COVIDSafe'in doğru çalışıp çalışmadığının nasıl kontrol edileceği hakkında daha fazlasını okuyun";
 /* Figma page Android Screens (05/06) */
 "norfolk_hint" = "Örneğin: 51234";
 "northern_territory" = "Kuzey Bölgesi";
@@ -438,6 +446,27 @@
 /* Onboarding Registration Consent */
 "registration_consent_headline" = "Kayıt onayı";
 "registration_consent_second_paragraph" = "Başka bir kullanıcının COVID-19 testi pozitif çıkması ve temas verilerini sisteme yüklemesi halinde diğer COVIDSafe kullanıcıları ile paylaşılacak şahsıma ait temas bilgileri.";
+"restrictions_accommodation" = "";
+"restrictions_activity" = "";
+"restrictions_cafes" = "";
+"restrictions_disclaimer" = "";
+"restrictions_domestic_travel" = "";
+"restrictions_education" = "";
+"restrictions_entertainment" = "";
+"restrictions_error_dismiss" = "";
+"restrictions_error_heading" = "";
+"restrictions_error_message" = "";
+"restrictions_error_try" = "";
+"restrictions_gatherings_work" = "";
+"restrictions_hair_beauty" = "";
+"restrictions_heading" = "";
+"restrictions_hotspots" = "";
+"restrictions_retail" = "";
+"restrictions_select_activity" = "";
+"restrictions_select_state" = "";
+"restrictions_sports" = "";
+"restrictions_state" = "";
+"restrictions_wedding" = "";
 "save" = "Kaydet";
 "scheduled" = "COVIDSafe'i %@ ile %@ arasında ertelemeye programladınız .";
 /* OnBoarding Enter Number */
@@ -473,6 +502,8 @@
 "support_content" = "Yardım konuları bölümünde belirtilmemiş hususlarda destek  için";
 "Support_VOLabel" = "Destek. Yardım konuları bölümünde belirtilmemiş hususlarda destek için";
 "tasmania" = "Tazmanya";
+/* Example: "From 22 to 28 January 2021" */
+"to" = "";
 "total" = "Toplam";
 "total_confirmed_cases" = "Toplam doğrulanmış vakalar";
 "total_deaths" = "%@ toplam ölümler";

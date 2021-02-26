@@ -277,8 +277,8 @@ class OTPViewController: UIViewController, RegistrationHandler {
                     viewController.performSegue(withIdentifier: "showAllowPermissionsFromOTPSegue", sender: self)
                 } else {
                     DispatchQueue.main.async {
-                        let homeVC = HomeViewController(nibName: "HomeView", bundle: nil)
-                        self.navigationController?.setViewControllers([homeVC], animated: true)
+                        let tabVC = MainTabBarViewController()
+                        self.navigationController?.setViewControllers([tabVC], animated: true)
                     }
                 }
             }

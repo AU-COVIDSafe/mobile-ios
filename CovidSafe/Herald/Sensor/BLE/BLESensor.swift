@@ -123,6 +123,7 @@ class ConcreteBLESensor : NSObject, BLESensor, BLEDatabaseDelegate {
         transmitter.stop()
         receiver.stop()
         // BLE transmitter and receivers stops on powerOff event
+        delegates.forEach({ $0.sensor(.BLE, didUpdateState: .off) })
     }
     
     func add(delegate: SensorDelegate) {

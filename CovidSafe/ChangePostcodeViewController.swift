@@ -14,6 +14,7 @@ class ChangePostcodeViewController: UIViewController {
     @IBOutlet weak var postcodeTextField: UITextField!
     @IBOutlet weak var postcodeErrorLabel: UILabel!
     @IBOutlet weak var changePostcodeTextView: UITextView!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     var nextBarButtonItem: UIBarButtonItem?
     var initialTextFieldBorderColour: UIColor?
@@ -174,6 +175,13 @@ extension ChangePostcodeViewController: UITextFieldDelegate {
                 postcodeTextField.borderColor = UIColor.covidSafeErrorColor
                 if UIAccessibility.isVoiceOverRunning {
                     UIAccessibility.post(notification: .layoutChanged, argument: postcodeErrorLabel)
+                }
+                // need to wait for stack view to update and then get the new content size
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                    if self.scrollView.contentSize.height > self.scrollView.bounds.height {
+                        let bottomOffset = CGPoint(x: 0, y: self.scrollView.contentSize.height - self.scrollView.bounds.height + self.scrollView.contentInset.bottom)
+                        self.scrollView.setContentOffset(bottomOffset, animated: true)
+                    }
                 }
             } else {
                 postcodeErrorLabel.isHidden = true

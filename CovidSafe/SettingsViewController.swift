@@ -24,6 +24,17 @@ class SettingsViewController: UIViewController {
 
     private let reachability = try! Reachability()
     
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        
+        tabBarItem.title = "settings".localizedString()
+        tabBarItem.image = UIImage(named: "settings")
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initialLabelTextColour = pushNotificationStatusTitle.textColor

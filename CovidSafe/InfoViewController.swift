@@ -17,10 +17,13 @@ final class InfoViewController: UIViewController {
     private var devicesEncounteredCount: Int?
     @IBOutlet weak var messagesAPILastDateLabel: UILabel!
     @IBOutlet weak var messagesAPILastVersionLabel: UILabel!
+    @IBOutlet weak var bleSensorStateLabel: UILabel!
+    @IBOutlet weak var awakeSensorStateLabel: UILabel!
     
     @IBOutlet weak var versionNumLabel: UILabel!
     
     let dateFormatter = DateFormatter()
+    var isSensorOn = true
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,6 +42,7 @@ final class InfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        BluetraceManager.shared.addDelegateToSensors(delegate: self)
         dateFormatter.dateFormat = "dd/MM/yyyy"
         advertisementSwitch.addTarget(self, action: #selector(self.advertisementSwitchChanged), for: UIControl.Event.valueChanged)
         scanningSwitch.addTarget(self, action: #selector(self.scanningSwitchChanged), for: UIControl.Event.valueChanged)
@@ -167,5 +171,40 @@ final class InfoViewController: UIViewController {
     @IBAction func setReauthenticationNeeded(_ sender: Any) {
         let keychain = KeychainSwift()
         keychain.set("corruptedjwt", forKey: "JWT_TOKEN", withAccess: .accessibleAfterFirstUnlock)
+    }
+    
+    @IBAction func toogleSensorsTapped(_ sender: Any) {
+        
+        BluetraceManager.shared.toggleScanning(!isSensorOn)
+    }
+}
+
+extension InfoViewController: SensorDelegate {
+    func sensor(_ sensor: SensorType, didUpdateState: SensorState) {
+        isSensorOn = didUpdateState == .on
+        
+        DispatchQueue.main.async {
+            if sensor == .BLE {
+                switch didUpdateState {
+                case .off:
+                    self.bleSensorStateLabel.text = "BLE Sensor State: OFF"
+                case .on:
+                    self.bleSensorStateLabel.text = "BLE Sensor State: ON"
+                default:
+                    self.bleSensorStateLabel.text = "BLE Sensor State: N/A"
+                }
+            }
+            
+            if sensor == .AWAKE {
+                switch didUpdateState {
+                case .off:
+                    self.awakeSensorStateLabel.text = "Awake Sensor State: OFF"
+                case .on:
+                    self.awakeSensorStateLabel.text = "Awake Sensor State: ON"
+                default:
+                    self.awakeSensorStateLabel.text = "Awake Sensor State: N/A"
+                }
+            }
+        }
     }
 }

@@ -62,8 +62,7 @@ class ConcreteAwakeSensor : NSObject, AwakeSensor, CLLocationManagerDelegate {
             locationManager.startRangingBeacons(in: beaconRegion)
             logger.debug("startRangingBeacons(ios<13.0,beaconUUID=\(beaconUUID.uuidString)))")
         }
-        
-
+        delegates.forEach({ $0.sensor(.AWAKE, didUpdateState: .on) })
     }
     
     func stop() {
@@ -82,6 +81,7 @@ class ConcreteAwakeSensor : NSObject, AwakeSensor, CLLocationManagerDelegate {
             locationManager.stopRangingBeacons(in: beaconRegion)
             logger.debug("stopRangingBeacons(ios<13.0,beaconUUID=\(beaconUUID.description))")
         }
+        delegates.forEach({ $0.sensor(.AWAKE, didUpdateState: .off) })
     }
     
     // MARK:- CLLocationManagerDelegate    

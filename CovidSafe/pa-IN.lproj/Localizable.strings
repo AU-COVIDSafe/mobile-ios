@@ -7,15 +7,17 @@
 "activity_button" = "ਐਪ ਗਤੀਵਿਧੀ ਦੀ ਜਾਂਚ ਕਰੋ";
 "activity_button_description" = "ਹੋਰ COVIDSafe ਵਰਤੋਂਕਾਰਾਂ ਨਾਲ ਆਪਣੀ ਐਪ ਦੀਆਂ ਬਲੂਟੁੱਥ ਅੰਤਰਕਿਰਿਆਵਾਂ ਨੂੰ ਦੇਖੋ।";
 "activity_heading" = "ਐਪ ਦੀ ਗਤੀਵਿਧੀ";
-"activity_intro" = "ਹਰ ਵਾਰ ਜਦ ਵੀ ਤੁਹਾਡੀ ਡਿਵਾਈਸ ਹੋਰ COVIDSafe ਐਪ ਵਰਤੋਂਕਾਰਾਂ ਦੀ ਰੇਂਜ ਵਿੱਚ ਹੁੰਦੀ ਹੈ, ਤਾਂ ਇਹ ਬਲੂਟੁੱਥ ਅੰਤਰਕਿਰਿਆਵਾਂ ਨੂੰ ਨੋਟ ਕਰ ਲੈਂਦੀ ਹੈ ਜਿਨ੍ਹਾਂ ਨੂੰ 'ਬਲੂਟੁੱਥ ਹੈਂਡਸ਼ੇਕਸ' ਕਿਹਾ ਜਾਂਦਾ ਹੈ।\n\nਇਹ ਹੈਂਡਸ਼ੇਕ ਇਸ ਗੱਲ ਦਾ ਸੰਕੇਤ ਦਿੰਦੇ ਹਨ ਕਿ ਤੁਹਾਡੀ ਐਪ ਕਿੰਨੀ ਚੰਗੀ ਤਰ੍ਹਾਂ ਕੰਮ ਕਰ ਰਹੀ ਹੈ।";
+"activity_intro" = "";
+"activity_intro_2" = "";
 /* Figma page iOS Screens (05/06) */
 "allow_bluetooth_call" = "COVIDSafe ਨੂੰ Bluetooth® ਤੱਕ ਪਹੁੰਚ ਦਿਓ";
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothOFF" = "Bluetooth® ਤੱਕ ਪਹੁੰਚ: ਔੱਫ";
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothON" = "Bluetooth ਤੱਕ ਪਹੁੰਚ: ਔਨ";
+"app_activity_bluetooth_handshakes_heading" = "";
 "australian_capital_territory" = "ਆਸਟ੍ਰੇਲੀਅਨ ਕੈਪੀਟਲ ਟੈਰੀਟਰੀ";
-"ble_handshakes_yesterday" = "ਬੀਤੇ ਕੱਲ੍ਹ ਕੀਤੇ ਗਏ ਬਲੂਟੁੱਥ ਹੈਂਡਸ਼ੇਕ";
+"ble_handshakes_yesterday" = "";
 "bluetooth_handshakes" = "ਬਲੂਟੁੱਥ ਦੇ ਹੈਂਡਸ਼ੇਕ";
 /* Figma page iOS Screens (05/06) */
 "BluetoothOFF" = "Bluetooth®: ਔੱਫ";
@@ -276,11 +278,14 @@
 "factors_dotpoint1" = "COVIDSafe ਦੇ ਵਰਤੋਂਕਾਰਾਂ ਦੀ ਸੰਖਿਆ ਜੋ ਕਿ ਰੇਂਜ ਵਿੱਚ ਹਨ";
 "factors_dotpoint2" = "ਡਿਵਾਈਸ ਦਾ ਮਾਡਲ ਅਤੇ ਇਹ ਕਿੰਨਾ ਪੁਰਾਣਾ ਹੈ";
 "factors_dotpoint3" = "ਜੇ ਤੁਸੀਂ ਕਿਸੇ ਚੱਲਦੀ ਗੱਡੀ ਵਿੱਚ ਹੋ";
+"factors_dotpoint4" = "";
 "factors_enviro_item_1" = "ਭੌਤਿਕ ਰੁਕਾਵਟਾਂ ਜਿਵੇਂ ਕਿ ਕੰਧਾਂ";
 "factors_enviro_item_2" = "ਸਮੱਗਰੀਆਂ ਅਤੇ ਫਿਕਸਚਰ ਜੋ ਬਲੂਟੁੱਥ ਸਿਗਨਲਾਂ ਵਿੱਚ ਦਖਲ ਅੰਦਾਜ਼ੀ ਕਰਦੇ ਹਨ";
 "factors_handshakes_heading" = "ਉਹ ਕਾਰਕ ਜੋ ਐਪ ਦੀ ਗਤੀਵਿਧੀ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰਦੇ ਹਨ";
-"factors_intro" = "ਉਹ ਕਾਰਕ ਜੋ ਕਿ 'ਹੈਂਡਸ਼ੇਕਾਂ' ਦੀ ਸੰਖਿਆ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰ ਸਕਦੇ ਹਨ, ਉਹਨਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹਨ:";
+"factors_intro" = "";
 "factors_intro_2" = "ਹੈਂਡਸ਼ੇਕ ਵਾਤਾਵਰਣਕ ਕਾਰਕਾਂ ਦੁਆਰਾ ਵੀ ਪ੍ਰਭਾਵਿਤ ਹੋ ਸਕਦੇ ਹਨ, ਜਿੰਨ੍ਹਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹਨ:";
+/* Example: "From 22 to 28 January 2021" */
+"from" = "";
 "global_back" = "ਪਿੱਛੇ";
 "global_close" = "ਬੰਦ ਕਰੋ";
 "global_double_tap" = "ਸੋਧਣ ਲਈ ਡਬਲ ਟੈਪ ਕਰੋ";
@@ -288,6 +293,7 @@
 "hide" = "ਛੁਪਾਣਾ";
 "home_app_permission_status_subtitle" = "COVIDSafe ਸਹੀ ਸੈਟਿੰਗਾਂ ਤੋਂ ਬਿਨਾਂ ਕੰਮ ਨਹੀਂ ਕਰੇਗਾ।";
 "home_app_permission_status_title" = "ਆਪਣੀਆਂ ਸੈਟਿੰਗਾਂ ਚੈੱਕ ਕਰੋ";
+"home_bottom_nav" = "";
 "home_data_uploaded_message" = "ਕੋਵਿਡ-19 ਦੇ ਫੈਲਣ ਨੂੰ ਰੋਕਣ ਵਿੱਚ ਸਹਾਇਤਾ ਕਰੋ ਅਤੇ ਆਪਣੇ ਲੱਛਣਾਂ 'ਤੇ ਨਜ਼ਰ ਰੱਖੋ।";
 "home_header_active_no_action_required" = "ਕੋਈ ਹੋਰ ਕਾਰਵਾਈ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ।";
 /* Home */
@@ -360,12 +366,7 @@
 "locally_acquired" = "%@ ਸਥਾਨਕ ਲੱਗੀ ਲਾਗ";
 "location_off" = "ਲੋਕੇਸ਼ਨ: ਔਫ";
 "location_off_description" = "COVIDSafe ਕੰਮ ਕਰ ਸਕੇ, ਇਸ ਦੇ ਲਈ ਤੁਹਾਡੇ iPhone ਨੂੰ ਲੋਕੇਸ਼ਨ ਆਗਿਆ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ। COVIDSafe ਤੁਹਾਡੇ ਲੋਕੇਸ਼ਨ ਦੇ ਡਾਟਾ ਉੱਪਰ ਨਾ ਹੀ ਨਜ਼ਰ ਰੱਖਦਾ ਹੈ ਨਾ ਹੀ ਉਸ ਨੂੰ ਸਟੋਰ ਕਰਦਾ ਹੈ";
-"low_handshakes_description" = "ਤੁਹਾਡੇ ਫੋਨ ਉੱਤੇ COVIDSafe  ਦੇ ਪ੍ਰਦਰਸ਼ਨ (ਪਰਫਾਰਮੈਂਸ) ਵਿੱਚ ਸੁਧਾਰ ਕਰਨ ਦੇ ਲਈ ਇਨ੍ਹਾਂ ਨੁਕਤਿਆਂ ਨੂੰ ਅਜ਼ਮਾਉ:";
-"low_handshakes_heading" = "ਜੇ ਤੁਹਾਡੇ 'ਹੈਂਡਸ਼ੇਕ' ਦੇ ਨੰਬਰ ਤੁਹਾਡੀ ਉਮੀਦ ਨਾਲੋਂ ਘੱਟ ਹਨ ਤਾਂ ਕੀ ਕਰਨਾ ਹੈ";
-"low_handshakes_item1" = "COVIDSafe ਐਕਟਿਵ ਹੈ ਜਾਂ ਨਹੀਂ, ਇਸ ਦੀ ਜਾਂਚ ਐਪ ਨੂੰ ਖੋਲ ਕੇ ਕਰੋ।";
-"low_handshakes_item2" = "Google Play Store ਜਾਂ Apple Store ਰਾਹੀਂ ਆਪਣੀ ਐਪ ਨੂੰ ਨਵੀਨਤਮ ਸੰਸਕਰਣ ਵਿੱਚ ਅੱਪਡੇਟ ਕਰੋ।";
-"low_handshakes_item3" = "ਆਪਣੇ ਫ਼ੋਨ ਨੂੰ ਮੁੜ ਚਾਲੂ ਕਰੋ ਅਤੇ ਐਪ ਨੂੰ ਦੁਬਾਰਾ ਖੋਲ੍ਹੋ।";
-"low_handshakes_link" = "ਇਸ ਬਾਰੇ ਹੋਰ ਪੜ੍ਹੋ ਕਿ ਜਾਂਚ ਕਿਵੇਂ ਕਰਨੀ ਹੈ ਕਿ ਕੀ COVIDSafe ਸਹੀ ਤਰੀਕੇ ਨਾਲ ਕੰਮ ਕਰ ਰਿਹਾ ਹੈ";
+"main_restrictions" = "";
 /* Splash Screen */
 "migration_in_progress" = "COVIDSafe ਅੱਪਡੇਟ ਚੱਲ ਰਿਹਾ ਹੈ। \n\nਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਹਾਡਾ ਫ਼ੋਨ ਤਦ ਤੱਕ ਬੰਦ ਨਹੀਂ ਹੋਣਾ ਚਾਹੀਦਾ ਜਦ ਤੱਕ ਅੱਪਡੇਟ ਪੂਰਾ ਨਹੀਂ ਹੋ ਜਾਂਦਾ।";
 "minute" = "ਮਿੰਟ";
@@ -373,6 +374,13 @@
 "new_cases" = "ਪਿਛਲੇ 24 ਘੰਟਿਆਂ ਦੌਰਾਨ ਨਵੇਂ ਕੇਸ";
 "new_cases_total" = "1 ਫਰਵਰੀ 2020 ਤੋਂ ਲੈਕੇ ਹੁਣ ਤੱਕ ਦੇ ਨਵੇਂ ਮਾਮਲੇ";
 "new_south_wales" = "ਨਿਊ ਸਾਊਥ ਵੇਲਜ਼";
+"no_handshakes_description" = "";
+"no_handshakes_heading" = "";
+"no_handshakes_item1" = "COVIDSafe ਐਕਟਿਵ ਹੈ ਜਾਂ ਨਹੀਂ, ਇਸ ਦੀ ਜਾਂਚ ਐਪ ਨੂੰ ਖੋਲ ਕੇ ਕਰੋ।";
+"no_handshakes_item2" = "Google Play Store ਜਾਂ Apple Store ਰਾਹੀਂ ਆਪਣੀ ਐਪ ਨੂੰ ਨਵੀਨਤਮ ਸੰਸਕਰਣ ਵਿੱਚ ਅੱਪਡੇਟ ਕਰੋ।";
+"no_handshakes_item3" = "ਆਪਣੇ ਫ਼ੋਨ ਨੂੰ ਮੁੜ ਚਾਲੂ ਕਰੋ ਅਤੇ ਐਪ ਨੂੰ ਦੁਬਾਰਾ ਖੋਲ੍ਹੋ।";
+"no_handshakes_item4" = "";
+"no_handshakes_link" = "ਇਸ ਬਾਰੇ ਹੋਰ ਪੜ੍ਹੋ ਕਿ ਜਾਂਚ ਕਿਵੇਂ ਕਰਨੀ ਹੈ ਕਿ ਕੀ COVIDSafe ਸਹੀ ਤਰੀਕੇ ਨਾਲ ਕੰਮ ਕਰ ਰਿਹਾ ਹੈ";
 /* Figma page Android Screens (05/06) */
 "norfolk_hint" = "ਉਦਾਹਰਣ ਵਜੋਂ: 51234";
 "northern_territory" = "ਨੌਰਦਰਨ ਟੈਰੀਟਰੀ";
@@ -438,6 +446,27 @@
 /* Onboarding Registration Consent */
 "registration_consent_headline" = "ਰਜਿਸਟਰੇਸ਼ਨ ਸਹਿਮਤੀ";
 "registration_consent_second_paragraph" = "ਹੋਰ COVIDSafe ਵਰਤੋਂਕਾਰਾਂ ਨਾਲ ਮੇਰੇ ਸੰਪਰਕ ਬਾਰੇ ਜਾਣਕਾਰੀ: ਜੇ ਕੋਈ ਹੋਰ ਵਰਤੋਂਕਾਰ ਮੇਰੇ ਸੰਪਰਕ ਵਿੱਚ ਆਇਆ ਹੈ ਅਤੇ ਕੋਵਿਡ-19 ਪਾਜ਼ੇਟਿਵ ਟੈਸਟ ਹੁੰਦਾ ਹੈ ਅਤੇ ਅਪਣਾ ਸੰਪਰਕ ਡੇਟਾ ਅੱਪਲੋਡ ਕਰਦਾ ਹੈ|";
+"restrictions_accommodation" = "";
+"restrictions_activity" = "";
+"restrictions_cafes" = "";
+"restrictions_disclaimer" = "";
+"restrictions_domestic_travel" = "";
+"restrictions_education" = "";
+"restrictions_entertainment" = "";
+"restrictions_error_dismiss" = "";
+"restrictions_error_heading" = "";
+"restrictions_error_message" = "";
+"restrictions_error_try" = "";
+"restrictions_gatherings_work" = "";
+"restrictions_hair_beauty" = "";
+"restrictions_heading" = "";
+"restrictions_hotspots" = "";
+"restrictions_retail" = "";
+"restrictions_select_activity" = "";
+"restrictions_select_state" = "";
+"restrictions_sports" = "";
+"restrictions_state" = "";
+"restrictions_wedding" = "";
 "save" = "ਸੰਭਾਲੋ (ਸੇਵ ਕਰੋ)";
 "scheduled" = "ਤੁਸੀਂ %@ ਤੋਂ %@ ਤੱਕ COVIDSafe ਨੂੰ ਅਸਥਾਈ ਤੌਰ 'ਤੇ ਬੰਦ ਕਰ (snooze) ਦਿੱਤਾ ਹੈ।";
 /* OnBoarding Enter Number */
@@ -473,6 +502,8 @@
 "support_content" = "ਜੋ ਮੁੱਦੇ ਸਹਾਇਤਾ ਵਿਸ਼ੇ ਦੁਆਰਾ ਕਵਰ ਨਹੀਂ ਹੁੰਦੇ ਉਨ੍ਹਾਂ ਲਈ ਸਹਾਇਤਾ";
 "Support_VOLabel" = "ਸਹਾਇਤਾ। ਜੋ ਮੁੱਦੇ ਸਹਾਇਤਾ ਵਿਸ਼ੇ ਦੁਆਰਾ ਕਵਰ ਨਹੀਂ ਹੁੰਦੇ ਉਨ੍ਹਾਂ ਲਈ ਸਹਾਇਤਾ";
 "tasmania" = "ਤਸਮਾਨੀਆ";
+/* Example: "From 22 to 28 January 2021" */
+"to" = "";
 "total" = "ਕੁੱਲ";
 "total_confirmed_cases" = "ਕੁੱਲ ਪੁਸ਼ਟੀ ਕੀਤੇ ਕੇਸ";
 "total_deaths" = "%@ ਕੁੱਲ ਮੌਤਾਂ";
