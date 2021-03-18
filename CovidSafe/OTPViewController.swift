@@ -228,19 +228,21 @@ class OTPViewController: UIViewController, RegistrationHandler {
         let session = UserDefaults.standard.string(forKey: "session") ?? ""
         RespondToAuthChallengeAPI.respondToAuthChallenge(session: session,
                                                          code: OTP)
-        { (token: String?, error: Error?) in
+        { (response: ChallengeResponse?, error: Error?) in
             if let error = error {
                 // User was not signed in. Display error.
                 DLog(error.localizedDescription)
                 result(.WrongOTP)
                 return
             }
-            guard let tokenToStore = token else {
+            guard let tokenToStore = response?.token,
+                  let refreshToken = response?.refreshToken else {
                 result(.WrongOTP)
                 return
             }
             let keychain = KeychainSwift()
             keychain.set(tokenToStore, forKey: "JWT_TOKEN", withAccess: .accessibleAfterFirstUnlock)
+            keychain.set(refreshToken, forKey: "REFRESH_TOKEN", withAccess: .accessibleAfterFirstUnlock)
             UserDefaults.standard.set(true, forKey: "HasUpdatedKeychainAccess")
             UserDefaults.standard.set(false, forKey: "ReauthenticationNeededKey")
             result(.Success)

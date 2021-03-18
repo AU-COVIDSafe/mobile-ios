@@ -5,7 +5,7 @@
 "BluetoothUsageDesc" = "COVIDSafe scambia segnali Bluetooth® con cellulari vicini che utilizzano la stessa app. Questi segnali contengono un ID anonimo crittografato che cambia continuamente per garantire la privacy.";
 "NSBluetoothAlwaysUsageDescription" = "COVIDSafe scambia segnali Bluetooth® con cellulari vicini che utilizzano la stessa app. Questi segnali contengono un ID anonimo crittografato che cambia continuamente per garantire la tua privacy.";
 "NSBluetoothPeripheralUsageDescription" = "COVIDSafe scambia segnali Bluetooth® con i cellulari vicini che utilizzano la stessa app. Questi segnali contengono un ID anonimo crittografato che cambia continuamente per garantire la tua privacy.";
-"NSLocationAlwaysAndWhenInUseUsageDescription" = "";
-"NSLocationAlwaysUsageDescription" = "";
-"NSLocationWhenInUseUsageDescription" = "";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Seleziona \"Consenti sempre\". \n\n L'uso dei servizi di localizzazione migliora le prestazioni di Bluetooth durante l'identificazione dei contatti stretti. \n\n COVIDSafe non raccoglie, archivia o utilizza i dati sulla posizione.";
+"NSLocationAlwaysUsageDescription" = "Seleziona \"Consenti sempre\". \n\nL'uso dei servizi di localizzazione migliora le prestazioni di Bluetooth durante l'identificazione dei contatti stretti. \n\nCOVIDSafe non raccoglie, archivia o utilizza i dati sulla posizione.";
+"NSLocationWhenInUseUsageDescription" = "Seleziona \"Consenti sempre\". \n\nL'uso dei servizi di localizzazione migliora le prestazioni di Bluetooth durante l'identificazione dei contatti stretti. \n\n COVIDSafe non raccoglie, archivia o utilizza i dati sulla posizione.";
 "UILaunchStoryboardName" = "LaunchScreen_it";

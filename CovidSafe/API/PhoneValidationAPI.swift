@@ -28,8 +28,7 @@ class PhoneValidationAPI {
         CovidNetworking.shared.session.request("\(apiHost)/initiateAuth",
             method: .post,
             parameters: params,
-            encoding: JSONEncoding.default,
-            interceptor: CovidRequestRetrier(retries:3)).validate().responseDecodable(of: AuthResponse.self) { (response) in
+            encoding: JSONEncoding.default).validate().responseDecodable(of: AuthResponse.self) { (response) in
                 switch response.result {
                 case .success:
                     guard let authResponse = response.value else { return }

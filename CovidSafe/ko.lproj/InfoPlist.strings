@@ -1,11 +1,11 @@
 /* InfoPlist.strings
   CovidSafe
 
-  Copyright © 2020 Australian Government. All rights reserved. */
-"BluetoothUsageDesc" = "COVIDSafe는 동일한 앱을 실행하는 근처의 휴대폰과 블루투스® 신호를 교환합니다. 이 신호에는 익명의 ID가 포함되어 있으며, 이 ID는 암호화되어 있고 개인정보를 보호하기 위해 지속적으로 변경됩니다.";
-"NSBluetoothAlwaysUsageDescription" = "COVIDSafe는 동일한 앱을 실행하는 주위의 휴대폰들과 블루투스® 신호를 교환합니다. 이 신호들에는 익명의 ID가 포함되어 있으며, 이 ID는 암호화되어 있고 귀하의 개인 정보를 보호하기 위해 지속적으로 변경됩니다.";
-"NSBluetoothPeripheralUsageDescription" = "COVIDSafe는 동일한 앱을 실행하는 주위의 휴대폰들과 블루투스® 신호를 교환합니다. 이 신호들에는 익명의 ID가 포함되어 있으며, 이 ID는 암호화되어 있고 귀하의 개인 정보를 보호하기 위해 지속적으로 변경됩니다.";
-"NSLocationAlwaysAndWhenInUseUsageDescription" = "";
-"NSLocationAlwaysUsageDescription" = "";
-"NSLocationWhenInUseUsageDescription" = "";
+  Copyright © 2021 Australian Government. All rights reserved. */
+"BluetoothUsageDesc" = "COVIDSafe는 동일한 앱을 실행하는 근처의 휴대폰과 블루투스® 신호를 교환합니다. 이 신호에는 익명의 ID가 포함되어 있으며, 이 ID는 암호화 되어있고 개인정보를 보호하기 위해 지속적으로 변경됩니다.";
+"NSBluetoothAlwaysUsageDescription" = "COVIDSafe는 동일한 앱을 실행하는 주위의 휴대폰들과 블루투스® 신호를 교환합니다. 이 신호들에는 익명의 ID가 포함되어 있으며, 이 ID는 암호화 되어있고 귀하의 개인 정보를 보호하기 위해 지속적으로 변경됩니다.";
+"NSBluetoothPeripheralUsageDescription" = "COVIDSafe는 동일한 앱을 실행하는 주위의 휴대폰들과 블루투스® 신호를 교환합니다. 이 신호들에는 익명의 ID가 포함되어 있으며, 이 ID는 암호화 되어있고 귀하의 개인 정보를 보호하기 위해 지속적으로 변경됩니다.";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "'항상 허용'을 선택\n\n위치 서비스를 사용하면 근거리 접촉자를 추적하는 블루투스의 기능이 향상됩니다.\n\nCOVIDsafe는 위치 정보를 수집하거나 저장, 사용하지 않습니다.";
+"NSLocationAlwaysUsageDescription" = "'항상 허용'을 선택\n\n위치 서비스를 사용하면 근거리 접촉자를 추적하는 블루투스의 기능이 향상됩니다.\n\nCOVIDsafe는 위치 정보를 수집하거나 저장, 사용하지 않습니다.";
+"NSLocationWhenInUseUsageDescription" = "'앱을 사용하는 동안 허용'을 선택\n\n위치 서비스를 사용하면 근거리 접촉자를 추적하는 블루투스의 기능이 향상됩니다.\n\nCOVIDSafe는 위치 정보를 수집하거나 저장, 사용하지 않습니다.";
 "UILaunchStoryboardName" = "LaunchScreen_ko";

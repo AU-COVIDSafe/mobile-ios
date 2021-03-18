@@ -17,11 +17,6 @@ class ChangePostcodeAPI: CovidSafeAuthenticatedAPI {
             return
         }
         
-        guard let headers = try? authenticatedHeaders() else {
-            completion(.TokenExpiredError)
-            return
-        }
-        
         let params = [
             "postcode": newPostcode,
             ]
@@ -29,7 +24,7 @@ class ChangePostcodeAPI: CovidSafeAuthenticatedAPI {
             method: .post,
             parameters: params,
             encoding: JSONEncoding.default,
-            headers: headers,
+            headers: authenticatedHeaders,
             interceptor: CovidRequestRetrier(retries:3)).validate().responseDecodable(of: DeviceResponse.self) { (response) in
                 switch response.result {
                 case .success:

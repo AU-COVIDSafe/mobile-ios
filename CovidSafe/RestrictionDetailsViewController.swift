@@ -21,6 +21,8 @@ class RestrictionDetailsViewController: CovidHeaderContentViewController {
         }
         
         restrictionsDetailsView.webContentView.delegate = self
+        restrictionsDetailsView.webContentView.scrollView.showsVerticalScrollIndicator = false
+        restrictionsDetailsView.webContentView.scrollView.showsHorizontalScrollIndicator = false
         
         guard let htmlString = self.htmlString else { return  }
         restrictionsDetailsView.webContentView.loadHTMLString(htmlString.htmlDocumentString(font: UIFont.preferredFont(forTextStyle: .body), withAdditionalCSS: "a{color:\(UIColor.covidSafeButtonDarkerColor.hexString)}"), baseURL: nil)

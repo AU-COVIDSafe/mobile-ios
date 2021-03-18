@@ -32,7 +32,7 @@
 "change_language_content" = "阅读其他语言版本的COVIDSafe使用指南。";
 "change_postcode_description" = "如果下载 COVIDSafe 后您的邮政编码发生更改，请及时更新。";
 "change_postcode_heading" = "更改邮政编码";
-"change_postcode_intro" = "";
+"change_postcode_intro" = "注册使用COVIDSafe后，您是否搬到了不同邮政编码的区域？ \n\n及时更新您的邮政编码可以帮助卫生官员追踪接触者。  \n\n请阅读*COVIDSafe隐私政策*和*信息收集通知*，以进一步了解您的信息是如何存储和共享的。";
 "collection_message" = "COVIDSafe现在会收集诊断信息，以帮助您解决应用程序中的问题。*了解更多信息*";
 "consent_button" = "我同意";
 /* Shared Consent Actions */
@@ -250,8 +250,8 @@
 "country_region_name_zw" = "津巴布韦";
 "customise_days" = "自定义日子";
 "data_privacy_button" = "下一步";
-"data_privacy_content" = "注册COVIDSafe之前，请务必阅读COVIDSafe的*隐私政策*。 \n\n如果您未满16岁，您的父母/监护人也必须阅读*隐私政策*。 \n\n使用COVIDSafe属自愿行为。您可以随时安装或删除该应用程序。如果删除COVIDSafe，*您也可以要求从安全服务器上删除您的信息*。 \n\n您需要输入姓名（或化名）、手机号码、年龄段和邮政编码来注册使用COVIDSafe。 \n\n注册时提交的信息以及有关COVIDSafe的使用信息将被储存在高度安全的服务器上。 \n\n为了确保COVIDSafe可以在您的设备上正常运行，需要收集与您的设备相关的以下信息：操作系统、应用程序版本、语言设置、蓝牙®是否正在运行以及过去7天应用程序上的接触记录。\n\nCOVIDSafe不会收集您的位置信息。 \n\nCOVIDSafe将在您的设备上记录发生接触的时间、与您发生过接触的其他COVIDSafe用户的匿名ID码、蓝牙®信号强度以及手机型号。 \n\n与您发生接触的其他COVIDSafe用户的设备上也会记录您的匿名ID代码、与您发生接触的日期和时间、蓝牙®信号强度以及您的手机型号。 \n\n如果其他用户的COVID-19检测结果为阳性，他们可以上传自己的接触者信息，而州或领地的卫生官员可能会出于追踪接触者的目的与您联系。 \n\n您的详细注册信息仅在追踪接触者以及维持COVIDSafe的合法正常运行时使用或披露。  \n\n更多信息可在*covidsafe.gov.au*网站上查阅。 \n\n如需进一步了解您对个人信息的权利，以及个人信息的处理和共享方式，请参阅COVIDSafe *隐私政策*。";
-"data_privacy_content_VO" = "注册COVIDSafe之前，请务必阅读COVIDSafe的隐私政策。 \n\n如果您未满16岁，您的父母/监护人也必须阅读隐私政策。 \n\n使用COVIDSafe属自愿行为。您可以随时安装或删除该应用程序。如果删除COVIDSafe，您也可以要求从安全服务器上删除您的信息。 \n\n您需要输入姓名（或化名）、手机号码、年龄段和邮政编码来注册使用COVIDSafe。 \n\n注册时提交的信息以及有关COVIDSafe的使用信息将被储存在高度安全的服务器上。 \n\n为了确保COVIDSafe可以正常运行，需要收集与您的设备相关的以下信息：操作系统、应用程序版本、语言设置、蓝牙®是否正在运行以及过去7天应用程序上的接触记录。\n\nCOVIDSafe不会收集您的位置信息。 \n\nCOVIDSafe将在您的设备上记录发生接触的时间、与您发生过接触的其他COVIDSafe用户的匿名ID码、蓝牙®信号强度以及手机型号。 \n\n与您发生接触的其他COVIDSafe用户的设备上也会记录您的匿名ID代码、与您发生接触的日期和时间、蓝牙®信号强度以及您的手机型号。 \n\n如果其他用户的COVID-19检测结果为阳性，他们可以上传自己的接触者信息，而州或领地的卫生官员可能会出于追踪接触者的目的与您联系。 \n\n您的详细注册信息仅在追踪接触者以及维持COVIDSafe的合法正常运行时使用或披露。  \n\n更多信息可在covidsafe.gov.au网站上查阅。 \n\n如需进一步了解您对个人信息的权利，以及个人信息的处理和共享方式，请参阅COVIDSafe 隐私政策。";
+"data_privacy_content" = "注册COVIDSafe之前，请务必阅读COVIDSafe的*隐私政策*。\n\nCOVIDSafe只会在遵守本政策和《1988年隐私法》的情况下收集、使用或披露您的个人信息。\n\n如果您未满16岁，您的父母/监护人也必须阅读*隐私政策*。 \n\n使用COVIDSafe属自愿行为。您可以随时安装或删除该应用程序。如果删除COVIDSafe，*您也可以要求从安全服务器上删除您的信息*。 \n\n您需要输入姓名（或化名）、手机号码、年龄段和邮政编码来注册使用COVIDSafe。 \n\n注册时提交的信息以及有关COVIDSafe的使用信息将被储存在高度安全的服务器上。 \n\n为了确保COVIDSafe可以在您的设备上正常运行，需要收集与您的设备相关的以下信息：操作系统、应用程序版本、语言设置、蓝牙®是否正在运行以及过去7天应用程序上的接触记录。\n\nCOVIDSafe不会收集您的位置信息。 \n\nCOVIDSafe将在您的设备上记录发生接触的日期和时间、与您发生过接触的其他COVIDSafe用户的匿名ID码、蓝牙信号强度以及手机型号。 \n\n与您发生接触的其他COVIDSafe用户的设备上也会记录您的匿名ID代码、与您发生接触的日期和时间、蓝牙信号强度以及您的手机型号。 \n\n如果其他用户的COVID-19检测结果为阳性，他们可能会上传自己的接触者信息，而州或领地的卫生官员可能会出于追踪接触者的目的与您联系。 \n\n您的详细注册信息仅会在追踪接触者以及维持COVIDSafe的合法正常运行时使用或披露。  \n\n更多信息可在*covidsafe.gov.au*网站上查阅。 \n\n如需进一步了解您对个人信息的权利，以及个人信息的处理和共享方式，请参阅COVIDSafe *隐私政策*。";
+"data_privacy_content_VO" = "注册COVIDSafe之前，请务必阅读COVIDSafe的隐私政策。\n\nCOVIDSafe只会在遵守本政策和《1988年隐私法》的情况下收集、使用或披露您的个人信息。\n\n如果您未满16岁，您的父母/监护人也必须阅读隐私政策。 \n\n使用COVIDSafe属自愿行为。您可以随时安装或删除该应用程序。如果删除COVIDSafe，您也可以要求从安全服务器上删除您的信息。 \n\n您需要输入姓名（或化名）、手机号码、年龄段和邮政编码来注册使用COVIDSafe。 \n\n注册时提交的信息以及有关COVIDSafe的使用信息将被储存在高度安全的服务器上。 \n\n为了确保COVIDSafe可以正常运行，需要收集与您的设备相关的以下信息：操作系统、应用程序版本、语言设置、蓝牙是否正在运行以及过去7天应用程序上的接触记录。\n\nCOVIDSafe不会收集您的位置信息。 \n\nCOVIDSafe将在您的设备上记录发生接触的日期和时间、与您发生过接触的其他COVIDSafe用户的匿名ID码、蓝牙信号强度以及手机型号。 \n\n与您发生接触的其他COVIDSafe用户的设备上也会记录您的匿名ID代码、与您发生接触的日期和时间、蓝牙信号强度以及您的手机型号。 \n\n如果其他用户的COVID-19检测结果为阳性，他们可能会上传自己的接触者信息，而州或领地的卫生官员可能会出于追踪接触者的目的与您联系。 \n\n您的详细注册信息仅会在追踪接触者以及维持COVIDSafe的合法正常运行时使用或披露。  \n\n更多信息可在covidsafe.gov.au网站上查阅。 \n\n如需进一步了解您对个人信息的权利，以及个人信息的处理和共享方式，请参阅COVIDSafe 隐私政策。";
 /* OnBoarding Data Privacy */
 "data_privacy_headline" = "注册及隐私";
 "deaths" = "死亡人数";
@@ -293,7 +293,7 @@
 "hide" = "隐藏";
 "home_app_permission_status_subtitle" = "若设置不正确，COVIDSafe将无法运行。";
 "home_app_permission_status_title" = "检查您的设置";
-"home_bottom_nav" = "";
+"home_bottom_nav" = "首页";
 "home_data_uploaded_message" = "协助阻止COVID-19的传播，追踪您的症状。";
 "home_header_active_no_action_required" = "无须进一步操作。";
 /* Home */
@@ -366,7 +366,7 @@
 "locally_acquired" = "%@本地感染";
 "location_off" = "位置：关闭";
 "location_off_description" = "您的 iPhone 要求COVIDSafe 获得位置权限才能运行。COVIDSafe 不会跟踪或存储您的位置数据。";
-"main_restrictions" = "";
+"main_restrictions" = "主要限制措施";
 /* Splash Screen */
 "migration_in_progress" = "COVIDSafe正在更新。 \n\n请保持开机状态直至更新完成。";
 "minute" = "分钟";
@@ -434,8 +434,8 @@
 "PN_ReminderBody" = "开启 COVIDSafe，确保其处于运行状态。";
 /* Figma page iOS Screens (05/06) */
 "PN_ReminderTitle" = "48 小时内未检测到任何接触";
-"postcode_api_error" = "";
-"postcode_change_label" = "";
+"postcode_api_error" = "出现错误。请检查您的互联网连接，然后重试。";
+"postcode_change_label" = "当前的澳大利亚邮政编码";
 "postcode_success" = "您的邮政编码已更新";
 "PostcodeValidationErrorMessage" = "请输入有效的澳大利亚邮政编码。";
 "queensland" = "昆士兰州";
@@ -446,27 +446,27 @@
 /* Onboarding Registration Consent */
 "registration_consent_headline" = "注册同意书";
 "registration_consent_second_paragraph" = "我与其他COVIDSafe用户的接触信息（如果与我发生过接触的其他用户COVID-19检测呈阳性并上传其接触者数据）。";
-"restrictions_accommodation" = "";
-"restrictions_activity" = "";
-"restrictions_cafes" = "";
-"restrictions_disclaimer" = "";
-"restrictions_domestic_travel" = "";
-"restrictions_education" = "";
-"restrictions_entertainment" = "";
-"restrictions_error_dismiss" = "";
-"restrictions_error_heading" = "";
-"restrictions_error_message" = "";
-"restrictions_error_try" = "";
-"restrictions_gatherings_work" = "";
-"restrictions_hair_beauty" = "";
-"restrictions_heading" = "";
-"restrictions_hotspots" = "";
-"restrictions_retail" = "";
-"restrictions_select_activity" = "";
-"restrictions_select_state" = "";
-"restrictions_sports" = "";
-"restrictions_state" = "";
-"restrictions_wedding" = "";
+"restrictions_accommodation" = "住宿";
+"restrictions_activity" = "活动";
+"restrictions_cafes" = "咖啡厅和餐厅";
+"restrictions_disclaimer" = "您的选择仅用于显示您所在地区的限制措施。COVIDSafe不会存储或使用位置数据。";
+"restrictions_domestic_travel" = "国内旅行";
+"restrictions_education" = "教育和儿童保育";
+"restrictions_entertainment" = "娱乐场所";
+"restrictions_error_dismiss" = "忽略";
+"restrictions_error_heading" = "无限制措施";
+"restrictions_error_message" = "请检查您的互联网连接，或稍后再试。";
+"restrictions_error_try" = "请重试";
+"restrictions_gatherings_work" = "聚会和工作";
+"restrictions_hair_beauty" = "美发及美容服务";
+"restrictions_heading" = "限制措施";
+"restrictions_hotspots" = "热点地区和出现病例的地点";
+"restrictions_retail" = "零售和销售";
+"restrictions_select_activity" = "选择活动";
+"restrictions_select_state" = "选择州或领地";
+"restrictions_sports" = "运动休闲";
+"restrictions_state" = "州或领地";
+"restrictions_wedding" = "婚礼、葬礼和宗教活动";
 "save" = "保存";
 "scheduled" = "您已将COVIDSafe设置为从%@休眠至%@ 。";
 /* OnBoarding Enter Number */
@@ -486,17 +486,21 @@
 "snooze_calendar_toggle" = "休眠日历";
 "snooze_covidsafe_button" = "让COVIDSafe休眠";
 "snooze_covidsafe_button_description" = "让COVIDSafe在特定时间段内休眠。";
+"snooze_end_now" = "立即结束休眠";
 "snooze_ended" = "休眠已结束";
 "snooze_ends" = "离休眠结束还有";
 "snooze_from" = "休眠始于";
 "snooze_heading" = "将COVIDSafe休眠";
+"snooze_interference_popup1" = "下一次休眠已设置为从%@开始。";
+"snooze_interference_popup2" = "将休眠设置为在此时间之前结束。";
 "snooze_on" = "在%@调至休眠状态";
+"snooze_running" = "立即结束休眠以便设定新的计时器。";
 "snooze_timer_description" = "为COVIDSafe设置定时休眠。";
 "snooze_to" = "休眠至";
 "snoozed_calendar_description" = "COVIDSafe未在使用蓝牙，也未在记录接触者。 \n\n您已将COVIDSafe设置为从%@休眠至%@ 。";
 "south_australia" = "南澳大利亚州";
 "state_number_heading" = "%@数";
-"states_territories" = "";
+"states_territories" = "州和领地";
 "stepCounter" = "第%d步，共%d步";
 "support" = "支持";
 "support_content" = "获取帮助，解决帮助主题未涵盖的问题";
@@ -524,7 +528,7 @@
 "update_available_dismiss_btn" = "稍后提醒我";
 "update_available_message_ios" = "我们一直在改进 COVIDSafe。请通过应用商店更新。";
 "update_available_title" = "更新可用！";
-"update_description" = "";
+"update_description" = "在此更新中，COVIDSafe将请求访问位置服务。 \n\n这有助于在识别密切接触者时提高蓝牙性能。 \n\n <a href=\"https://www.covidsafe.gov.au/help-topics.html#location-permissions\"> COVIDSafe不会收集、存储或使用位置数据。 </a> \n\n请阅读<a href=\"https://covidsafe.gov.au/privacy-policy.html\">隐私政策</a>以进一步了解您的个人信息将被如何处理。 \n\n <a href=\"https://www.covidsafe.gov.au/help-topics.html#herald\">了解有关我们如何改进COVIDSafe的更多信息。 </a>";
 "update_heading" = "启用位置服务";
 "update_modal_button" = "继续";
 "upload_answer_no" = "否";

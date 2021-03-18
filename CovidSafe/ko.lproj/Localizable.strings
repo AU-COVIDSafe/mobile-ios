@@ -3,21 +3,21 @@
 "action_upload_done" = "완료";
 "action_verify_invalid_pin" = "잘못된 PIN입니다. 보건 담당자에게 다른 PIN을 보내달라고 요청하십시오.";
 "action_verify_upload_pin" = "내 정보 업로드하기";
-"active_cases" = "미완치 환자 수(추정)";
+"active_cases" = "미완치 환자 수 (추정)";
 "activity_button" = "앱 활동 확인";
 "activity_button_description" = "다른 COVIDSafe 사용자와의 블루투스 상호 작용 보기";
 "activity_heading" = "앱 활동";
-"activity_intro" = "";
-"activity_intro_2" = "";
+"activity_intro" = "여러분의 장치가 다른 COVIDSafe 앱 사용자의 블루투스 범위에 있을 경우, <a href=\"https://www.covidsafe.gov.au/technology.html#handshakes\">디지털 '악수'</a>라는 블루투스 상호작용이 기록됩니다. \n\n이 블루투스 악수는 여러분의 앱이 얼마나 잘 작동하는지를 보여줍니다. ";
+"activity_intro_2" = "블루투스 악수의 갯수는 다른 COVIDSafe 사용자와 가까운 거리에 있었음을 보여줍니다. COVID-19에 양성반응을 보인 사용자와 접촉했다는 의미는 아닙니다. ";
 /* Figma page iOS Screens (05/06) */
 "allow_bluetooth_call" = "COVIDSafe의 블루투스® 접속을 허용해 주세요";
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothOFF" = "블루투스® 접속: 꺼짐";
 /* Figma page iOS Screens (05/06) */
 "AllowBluetoothON" = "블루투스® 접속: 켜짐";
-"app_activity_bluetooth_handshakes_heading" = "";
+"app_activity_bluetooth_handshakes_heading" = "여러분의 장치에 기록된 블루투스 악수";
 "australian_capital_territory" = "호주 수도 테리토리";
-"ble_handshakes_yesterday" = "";
+"ble_handshakes_yesterday" = "어제 여러분의 장치에 기록된 블루투스 악수";
 "bluetooth_handshakes" = "블루투스 악수";
 /* Figma page iOS Screens (05/06) */
 "BluetoothOFF" = "블루투스®: 꺼짐";
@@ -25,14 +25,14 @@
 "BluetoothOFF_content" = "휴대폰의 블루투스®를 켜십시오. '새 연결 허용'이 표시되면 선택하십시오.";
 /* Figma page iOS Screens (05/06) */
 "BluetoothON" = "블루투스®: 켜짐";
-"cancel_snooze" = "일시 정지 취소";
+"cancel_snooze" = "일시중지 취소";
 "cases_28_days" = "지난 28일간 신규 확진 건수";
 "cases_7_days" = "지난 7일간 신규 확진 건";
 "change_language" = "언어를 변경하십시오";
 "change_language_content" = "다른 언어로 COVIDSafe 사용에 대한 안내서를 읽으십시오.";
-"change_postcode_description" = "COVIDSafe를 다운로드한 이후에 우편 번호가 변경되었다면 업데이트하십시오.";
-"change_postcode_heading" = "우편 번호 변경";
-"change_postcode_intro" = "";
+"change_postcode_description" = "COVIDSafe를 다운로드한 이후에 우편번호가 변경되었다면 업데이트하십시오.";
+"change_postcode_heading" = "우편번호 변경";
+"change_postcode_intro" = "COVIDSafe 사용 등록 후 다른 우편번호 지역으로 이사를 하셨나요?\n\n우편번호를 최신 상태로 유지하면 보건 담당자가 접촉자를 추적하는데 도움이 됩니다.\n\n여러분의 정보가 어떻게 저장되고 공유되는 지에 대한 자세한 정보는 *CovidSafe 개인 정보 보호 정책* 및 *수집 통보*를 참고하십시오.";
 "collection_message" = "이제 COVIDSafe는 앱 문제를 해결하는 데 도움이 되는 진단 정보를 수집합니다. *더 알아보기*";
 "consent_button" = "동의";
 /* Shared Consent Actions */
@@ -250,8 +250,8 @@
 "country_region_name_zw" = "짐바브웨";
 "customise_days" = "요일 맞춤 설정";
 "data_privacy_button" = "다음";
-"data_privacy_content" = "COVIDSafe에 등록하기 전에 COVIDSafe *개인 정보 보호 정책*을 읽는 것이 중요합니다. \n\n16세 미만이라면, 그 부모 또는 보호자도 반드시 *개인 정보 보호 정책*을 읽어야 합니다. \n\nCOVIDSafe의 사용은 전적으로 자발적입니다. 언제든지 앱을 설치 또는 삭제할 수 있습니다. COVIDSafe를 삭제하면, *여러분은 보안 서버에 있는 자신의 정보 삭제*도 요청할 수 있습니다. \n\nCOVIDSafe에 등록하려면, 성명 (또는 가명), 휴대폰 번호, 연령대 및 우편 번호를 입력해야 합니다. \n\n등록 시 제출한 정보 및 여러분의 COVIDSafe 사용 정보는 보안성 높은 서버에 수집 및 저장됩니다. \n\nCOVIDSafe가 장치에서 제대로 작동하는지 확인하기 위해 정보도 수집됩니다. 여기에는 운영 체제, 설치한 앱 버전, 장치에 설정된 언어, 블루투스 작동여부 및 지난 7일 동안 장치에 기록된 접촉 정보가 포함됩니다. \n\nCOVIDSafe는 여러분의 위치 정보를 수집하지 않습니다. \n\nCOVIDSafe는 접촉 시각 및 여러분과 접촉한 다른 COVIDSafe 사용자의 익명 ID 코드, 블루투스® 신호 강도 및 다른 사용자의 전화기 모델 등을 여러분 장치에 기록합니다. \n\n여러분과 접촉한 다른 COVIDSafe 사용자의 장치에도 여러분의 익명 ID 코드 및 접촉날짜와 시간, 블루투스® 신호 강도 및 당신의 전화기 모델 등이 여러분 장치에 기록됩니다.  \n\n다른 사용자가 COVID-19 양성 결과를 받으면, 그들은 자신의 접촉 정보를 업로드할 수 있으며, 주 또는 테리토리 보건 담당자가 접촉 추적 목적으로 여러분에게 연락을 취할 수 있습니다. \n\n여러분의 등록 정보는 접촉 추적 및 COVIDSafe의 적절하고 합법적인 기능을 위해서만 사용 또는 공개됩니다. \n\n자세한 정보는 *호주 정부 보건부* 웹사이트에서 확인할 수 있습니다. \n\n자신의 정보에 대한 권리와 개인 정보의 취급 및 공유 방법에 대한 자세한 내용은 COVIDSafe *개인 정보 보호 정책*을 참조하십시오.";
-"data_privacy_content_VO" = "COVIDSafe에 등록하기 전에 COVIDSafe 개인 정보 보호 정책을 읽어야 합니다. \n\n16 세 미만인 경우, 부모/보호자 또한 개인 정보 보호 정책을 읽어야 합니다. \n\nCOVIDSafe의 사용은 전적으로 자발적입니다. 언제든지 응용 프로그램을 설치하거나 삭제할 수 있습니다. COVIDSafe를 삭제하면 보안 서버에서 정보를 삭제하도록 요청할 수도 있습니다. \n\nCOVIDSafe에 등록하려면 이름 (혹은 가명), 휴대폰 번호, 연령대 및 우편 번호를 입력해야 합니다. \n\n등록시 제출한 정보 및 COVIDSafe 사용에 관한 정보는 매우 안전한 서버에 저장됩니다. \n\nCOVIDSafe가 장치에서 제대로 작동하게끔 하기 위한 정보도 수집됩니다. 여기에는 운영 체제, 설치한 앱 버전, 장치에 설정된 언어, 블루투스 작동 여부 및 앱이 지난 7일 동안의 접촉을 기록했는지 여부가 포함됩니다. \n\nCOVIDSafe는 위치 정보를 수집하지 않습니다. \n\nCOVIDSafe는 접촉 날짜와 시간, 접촉한 다른 COVIDSafe 사용자의 익명 ID 코드, 블루투스 신호 강도 및 다른 사용자의 전화 모델을 장치에 기록합니다. \n\n귀하가 접촉한 다른 COVIDSafe 사용자는 귀하의 익명 ID 코드, 접촉 날짜와 시간, 블루투스 신호 강도 및 귀하의 전화 모델을 장치에 기록합니다. \n\n다른 사용자가 COVID-19에 양성 반응을 보이는 경우, 본인의 연락처 정보를 업로드 할 수 있으며 주 또는 테리토리 보건 당국은 연락 추적 목적으로 당신에게 연락할 수 있습니다. \n\n당신의 등록정보는 접촉 추적 및 COVIDSafe의 적절하고 합법적인 기능을 위해서만 사용 또는 공개됩니다. \n\n자세한 정보는 covidsafe.gov.au 웹사이트에서 확인할 수 있습니다. \n\n여러분의 개인 정보에 대한 권리와 정보의 취급 및 공유 방법에 대한 자세한 내용은 COVIDSafe 개인 정보 보호 정책을 참조하십시오.";
+"data_privacy_content" = "COVIDSafe에 등록하기 전에 COVIDSafe *개인 정보 보호 정책*을 읽는 것이 중요합니다. \n\nCOVIDSafe는 본 정책과 개인정보보호법(1988)이 허용하는 범위에 한해 여러분의 개인 정보를 수집하거나 사용, 공개할 것입니다.\n\n16세 미만인 경우, 여러분의 부모 및 보호자도 반드시 *개인 정보 보호 정책*을 읽어야 합니다. \n\nCOVIDSafe를 사용하는 것은 전적으로 자발적인 선택입니다. 여러분은 언제든지 앱을 설치 또는 삭제할 수 있습니다. COVIDSafe를 삭제하는 경우, *여러분은 본인의 정보가 보안 서버에서도 삭제되도록 요청*할 수 있습니다. \n\nCOVIDSafe에 등록하려면, 성명 (또는 가명), 휴대폰 번호, 연령대 및 우편번호를 입력해야 합니다. \n\n등록시 제출한 정보 및 COVIDSafe 사용에 관한 정보는 높은 보안성을 갖춘 서버에 저장됩니다. \n\nCOVIDSafe가 여러분의 기기에서 제대로 작동하는 지 확인하기 위한 정보도 수집됩니다. 여기에는 여러분 기기의 운영 체제, 설치한 앱 버전, 기기 내 언어 설정, 블루투스 작동 여부 및 지난 7일 간의 근거리 접촉자 기록 여부가 포함됩니다.\n\nCOVIDSafe는 여러분의 위치 정보를 수집하지 않습니다. \n\nCOVIDSafe는 접촉 날짜와 시간, 여러분이 근거리에서 접촉한 다른 COVIDSafe 사용자의 익명 ID 코드, 블루투스 신호 강도, 다른 사용자의 휴대폰 모델을 여러분의 기기에 기록합니다. \n\n여러분이 근거리에서 접촉한 다른 COVIDSafe 사용자는 여러분의 익명 ID 코드, 접촉 날짜와 시간, 블루투스 신호 강도 및 여러분의 휴대폰 모델을 해당 사용자의 기기에 기록하게 됩니다. \n\n다른 사용자가 COVID-19 양성 판정을 받은 경우, 해당 사용자는 본인의 연락처 정보를 업로드 할 수 있으며, 주 또는 테리토리 보건 당국이 접촉자 추적 목적으로 여러분에게 연락할 수 있습니다. \n\n여러분의 등록정보는 접촉자 추적 및 COVIDSafe의 적절하고 합법적인 기능을 위해서만 사용 또는 공개됩니다. \n\n자세한 정보는 *covidsafe.gov.au* 홈페이지에서 확인할 수 있습니다. \n\n개인 정보에 대한 여러분의 권리와 정보 취급 및 공유 방법에 대한 자세한 내용은 COVIDSafe *개인 정보 보호 정책*을 참조하십시오.";
+"data_privacy_content_VO" = "COVIDSafe에 등록하기 전에 COVIDSafe 개인 정보 보호 정책을 읽는 것이 중요합니다.\n\nCOVIDSafe는 본 정책과 개인정보보호법(1988)이 허용하는 범위에 한해 여러분의 개인 정보를 수집하거나 사용, 공개할 것입니다.\n\n16 세 미만인 경우, 여러분의 부모나 보호자도 반드시 개인 정보 보호 정책을 읽어야 합니다. \n\nCOVIDSafe를 사용하는 것은 전적으로 자발적인 선택입니다. 여러분은 언제든지 앱을 설치하거나 삭제할 수 있습니다. COVIDSafe를 삭제하는 경우, 보안 서버에서도 여러분의 정보가 삭제되도록 요청할 수 있습니다. \n\nCOVIDSafe에 등록하려면 이름(혹은 가명), 휴대폰 번호, 연령대 및 우편번호를 입력해야 합니다. \n\n등록시 제출한 정보 및 COVIDSafe 사용에 관한 정보는 높은 보안성을 갖춘 서버에 저장됩니다. \n\nCOVIDSafe가 여러분의 기기에서 제대로 작동하는 지 확인하기 위한 정보도 수집됩니다. 여기에는 여러분 기기의 운영 체제, 설치한 앱 버전, 기기 내 언어 설정, 블루투스 작동 여부 및 지난 7일 간의 근거리 접촉자 기록 여부가 포함됩니다. \n\nCOVIDSafe는 여러분의 위치 정보를 수집하지 않습니다. \n\nCOVIDSafe는 접촉 날짜와 시간, 여러분이 근거리에서 접촉한 다른 COVIDSafe 사용자의 익명 ID 코드, 블루투스 신호 강도, 다른 사용자의 휴대폰 모델을 여러분의 기기에 기록합니다. \n\n여러분이 근거리에서 접촉한 다른 COVIDSafe 사용자는 여러분의 익명 ID 코드, 접촉 날짜와 시간, 블루투스 신호 강도 및 여러분의 휴대폰 모델을 해당 사용자의 기기에 기록하게 됩니다. \n\n다른 사용자가 COVID-19 양성 판정을 받은 경우, 해당 사용자는 본인의 연락처 정보를 업로드 할 수 있으며, 주 또는 테리토리 보건 당국이 접촉자 추적 목적으로 여러분에게 연락할 수 있습니다. \n\n여러분의 등록정보는 접촉자 추적 및 COVIDSafe의 적절하고 합법적인 기능을 위해서만 사용 또는 공개됩니다. \n\n자세한 정보는 covidsafe.gov.au 홈페이지에서 확인할 수 있습니다. \n\n개인 정보에 대한 여러분의 권리와 정보 취급 및 공유 방법에 대한 자세한 내용은 COVIDSafe 개인 정보 보호 정책을 참조하십시오.";
 /* OnBoarding Data Privacy */
 "data_privacy_headline" = "등록 및 개인정보 보호";
 "deaths" = "사망자";
@@ -259,9 +259,9 @@
 "dialog_error_uploading_negative" = "취소";
 "dialog_error_uploading_positive" = "다시 시도";
 "dialog_uploading_message" = "당신의 COVIDSafe 정보가 현재 업로드 중입니다. \n\n앱을 닫지 마세요.";
-"dismiss" = "무시하기";
+"dismiss" = "무시";
 "done_success" = "완료";
-"edit_snooze_calendar" = "일시 정지 일정 수정";
+"edit_snooze_calendar" = "일시중지 일정 수정";
 "enter_number_button" = "PIN 받기";
 "enter_number_content" = "본 휴대폰 번호 확인을 위해 6자리 PIN을 보내겠습니다.";
 "enter_number_headline" = "본인의 휴대폰 번호를 입력하세요";
@@ -278,14 +278,14 @@
 "factors_dotpoint1" = "근접 범위 내 COVIDSafe 사용자 수";
 "factors_dotpoint2" = "기기 모델 및 연식";
 "factors_dotpoint3" = "움직이는 차량 안에 있는 경우";
-"factors_dotpoint4" = "";
+"factors_dotpoint4" = "벽이나 장비와 같은 블루투스 신호를 방해하는 모든 것";
 "factors_enviro_item_1" = "벽 등의 물리적 장애물";
 "factors_enviro_item_2" = "블루투스 신호를 방해하는 물질 및 시설";
 "factors_handshakes_heading" = "앱 활동에 영향을 미치는 요인";
-"factors_intro" = "";
+"factors_intro" = "블루투스 악수가 기록되는 것이 보이시면, 앱이 작동하고 있다는 뜻입니다. 다음 요인으로 인해 블루투스 악수의 갯수가 영향 받을 수 있습니다. ";
 "factors_intro_2" = "다음과 같은 환경 요인 역시 블루투스 악수에 영향을 미칠 수 있습니다.";
 /* Example: "From 22 to 28 January 2021" */
-"from" = "";
+"from" = "부터";
 "global_back" = "뒤로";
 "global_close" = "닫기";
 "global_double_tap" = "두 번 탭해서 수정하세요";
@@ -293,7 +293,7 @@
 "hide" = "숨기기";
 "home_app_permission_status_subtitle" = "COVIDSafe는 올바른 설정없이는 작동되지 않습니다.";
 "home_app_permission_status_title" = "설정을 확인하세요.";
-"home_bottom_nav" = "";
+"home_bottom_nav" = "홈";
 "home_data_uploaded_message" = "COVID-19의 확산방지에 협조하고 자신의 증상을 추적하세요.";
 "home_header_active_no_action_required" = "추가 조치가 필요하지 않습니다.";
 /* Home */
@@ -341,7 +341,7 @@
 "improve_heading" = "COVIDSafe의 성능을 향상시키십시오";
 "internet_connection_content" = "인터넷에 연결해서 문제 및 업데이트에 관한 알림을 받으십시오.";
 "internet_connection_heading" = "인터넷에 연결되지 않음";
-"internet_screen_content" = "COVIDSafe는 앱과 관련된 문제들을 확인하기 위해 때때로 서버에 연결되어야 합니다. \n\n인터넷에 연결하면 다음과 같은 알림들을 받을 수 있습니다:";
+"internet_screen_content" = "COVIDSafe는 앱과 관련된 문제들을 확인하기 위해 때때로 서버에 연결되어야 합니다. \n\n인터넷에 연결하면 다음과 같은 알림을 받을 수 있습니다. ";
 "internet_screen_content_1" = "문제를 해결하고 COVIDSafe를 다시 활성화하는 방법";
 "internet_screen_content_2" = "새 버전의 업데이트가 가능할 때";
 "internet_screen_heading" = "COVIDSafe의 성능을 향상시키기 위해 인터넷에 연결하십시오";
@@ -353,20 +353,20 @@
 "IntroLabel" = "바이러스 확산을 방지해서 \n생명을 구합시다.";
 "invalid_australian_phone_number_error_prompt" = "호주 휴대폰 번호는 최대 10자리입니다.";
 "invalid_norfolk_island_phone_number_error_prompt" = "노퍽 섬의 휴대폰 번호는 5-6자리입니다.";
-"is_snoozed" = "COVIDSafe가 일시 정지되었습니다.";
-"is_snoozed_description" = "COVIDSafe가 블루투스를 사용하지 않으며 접촉자를 기록하고 있지 않습니다.";
+"is_snoozed" = "COVIDSafe가 일시중지되었습니다.";
+"is_snoozed_description" = "COVIDSafe가 블루투스를 사용하고 있지 않으며 접촉자를 기록하고 있지 않습니다.";
 "jwt_description" = "등록 세부 정보에 문제가 있습니다.";
 "jwt_expired" = "등록이 만료되었습니다.";
-"jwt_expired_description" = "등록 정보가 올바른지 확인하려면 12개월마다 휴대폰 번호를 확인해야 합니다.";
+"jwt_expired_description" = "등록 정보를 정확히하려면 12개월마다 휴대폰 번호를 확인해야 합니다.";
 "jwt_heading" = "다시 등록하십시오";
 "jwt_success" = "등록 갱신 완료";
 "last_7_days" = "지난 7 일";
-"learn_more" = "";
+"learn_more" = "더 알아보기";
 "loading_numbers" = "최신 번호 로드 중";
 "locally_acquired" = "%@ 지역 감염";
 "location_off" = "위치 서비스: 꺼짐";
 "location_off_description" = "COVIDSafe가 제대로 실행되기 위해서는 여러분의 아이폰에서 위치 서비스 기능을 허용해야 합니다. COVIDSafe는 여러분의 위치 정보를 추적하거나 저장하지 않습니다.";
-"main_restrictions" = "";
+"main_restrictions" = "주요 규제 조치";
 /* Splash Screen */
 "migration_in_progress" = "COVIDSafe 업데이트 진행 중. \n\n업데이트가 완료될 때까지 휴대폰이 꺼지지 않도록 해주세요.";
 "minute" = "분";
@@ -374,12 +374,12 @@
 "new_cases" = "지난 24시간 동안의 새 확진자 수";
 "new_cases_total" = "2020년 2월 1일 이후 신규 확진 건수";
 "new_south_wales" = "뉴 사우스 웨일즈";
-"no_handshakes_description" = "";
-"no_handshakes_heading" = "";
+"no_handshakes_description" = "다른 COVIDSafe 사용자와 접촉했다고 생각될 경우, 다음 방법을 통해 여러분의 휴대폰에서 COVIDSafe의 기능을 향상시켜보세요. ";
+"no_handshakes_heading" = "블루투스 악수가 안보일 경우 어떻게 하나요";
 "no_handshakes_item1" = "앱을 열어 COVIDSafe가 활성화되어 있는지 확인하세요.";
 "no_handshakes_item2" = "Google Play Store 또는 Apple Store를 통해 앱을 최신 버전으로 업데이트하세요.";
 "no_handshakes_item3" = "휴대폰을 재시작하고 앱을 다시 실행하세요.";
-"no_handshakes_item4" = "";
+"no_handshakes_item4" = "<a href=\"https://www.covidsafe.gov.au/help-topics.html#location-services\">위치 서비스</a> 설정이 맞게 되어있는지 확인하세요.";
 "no_handshakes_link" = "COVIDSafe가 올바르게 작동하는지 확인하는 방법에 대한 자세한 정보 보기";
 /* Figma page Android Screens (05/06) */
 "norfolk_hint" = "예: 51234";
@@ -389,7 +389,7 @@
 "notification_not_active_title" = "COVIDSafe가 활성화되어 있지 않습니다.";
 "notification_settings" = "앱을 열어 여러분의 설정을 확인하십시오.";
 "notification_update_content" = "최신 개선 사항에 접근하려면 앱을 업데이트 하십시오.";
-"notification_update_heading" = "COVIDSafe 업데이트가 가능함";
+"notification_update_heading" = "COVIDSafe 업데이트 가능";
 /* Figma page iOS Screens (05/06) */
 "NotificationsBlurbLink" = "알림 설정 변경";
 /* Figma page iOS Screens (05/06) */
@@ -400,11 +400,11 @@
 "numbers_no_internet" = "업데이트된 번호를 얻으려면 인터넷에 연결하십시오.";
 "numbers_refresh" = "지금 새로 고침";
 "options_for_australia" = "호주 관련 옵션";
-"OS2b_Item_4" = "4. COVIDSafe가 제대로 실행되기 위해서는 여러분의 아이폰에서 위치 서비스 기능을 허용해야 합니다. *COVIDSafe는 여러분의 위치 정보를 수집, 저장하거나 사용하지 않습니다.*";
+"OS2b_Item_4" = "4. COVIDSafe가 제대로 실행되기 위해서는 여러분의 아이폰에서 위치 서비스 기능을 허용해야 합니다. *COVIDSafe는 여러분의 위치 정보를 수집, 저장하거나 사용하지 않습니다*";
 "overseas_acquired" = "%@ 해외 유입";
 "permission_button" = "진행";
 /* Figma page iOS Screens (05/06) */
-"permission_content_iOS" = "COVIDSafe가 제대로 실행되기 위해서는 #블루투스#가 활성화되어야 합니다. COVIDSafe는 페어링 요청을 보내지 않습니다.\n\n#알림 기능#을 활성화하면, COVIDSafe가 비활성화되어 있을 때 알림을 받게 됩니다. \n\nCOVIDSafe가 제대로 실행되기 위해서는 여러분의 아이폰에서 #위치 서비스 허용#이 필요합니다.*COVIDSafe는 여러분의 위치 정보를 추적하거나 저장하지 않습니다*\n\n활성화하려면 '진행'을 선택하세요.";
+"permission_content_iOS" = "COVIDSafe가 제대로 실행되기 위해서는 #블루투스#가 활성화되어야 합니다. COVIDSafe는 페어링 요청을 보내지 않습니다.\n\n#알림 기능#을 활성화하면, COVIDSafe가 비활성화되어 있을 때 알림을 받게 됩니다. \n\nCOVIDSafe가 제대로 실행되기 위해서는 여러분의 아이폰에서 #위치 서비스 허용#이 필요합니다. *COVIDSafe는 여러분의 위치 정보를 추적하거나 저장하지 않습니다*\n\n활성화하려면 '진행'을 선택하세요.";
 "permission_content_iOS_2" = "1. 블루투스\n2. 알림\n3. 위치 서비스";
 /* OnBoarding Permission */
 "permission_headline" = "앱 설정";
@@ -434,76 +434,80 @@
 "PN_ReminderBody" = "COVIDSafe를 열어 실행 중인지 확인하세요.";
 /* Figma page iOS Screens (05/06) */
 "PN_ReminderTitle" = "48시간 동안 접촉이 감지되지 않음";
-"postcode_api_error" = "";
-"postcode_change_label" = "";
-"postcode_success" = "우편 번호가 업데이트 되었습니다.";
-"PostcodeValidationErrorMessage" = "유효한 호주 우편 번호를 입력하세요.";
+"postcode_api_error" = "오류가 발생하였습니다. 인터넷 연결상태를 확인한 후 다시 시도하세요.";
+"postcode_change_label" = "호주 내 현재 거주 지역 우편번호";
+"postcode_success" = "우편번호가 업데이트 되었습니다.";
+"PostcodeValidationErrorMessage" = "유효한 호주 우편번호를 입력하세요.";
 "queensland" = "퀸즐랜드";
 "recovered" = "회복된 총 확진자 수";
-"registration_consent_content" = "본인은 호주 정부 보건부 장관의 법적 결정에 따라, 데이터 저장소 관리자로서 Digital Transformation Agency가 다음 정보를 수집하는 것에 동의합니다:";
-"registration_consent_diagnostic" = "COVIDSafe가 내 장치에서 제대로 작동하는지 확인하기 위한 정보.";
-"registration_consent_first_paragraph" = "나의 등록 정보.";
+"registration_consent_content" = "본인은 호주 정부 보건부 장관의 법적 결정에 따라, 데이터 저장소 관리자로서 Digital Transformation Agency가 다음 정보를 수집하는 것에 동의합니다.";
+"registration_consent_diagnostic" = "COVIDSafe가 내 장치에서 제대로 작동하도록 하기 위한 정보.";
+"registration_consent_first_paragraph" = "나의 등록 정보";
 /* Onboarding Registration Consent */
 "registration_consent_headline" = "등록 동의";
 "registration_consent_second_paragraph" = "다른 COVIDSafe 사용자가 COVID-19 양성 결과를 받고 자신의 접촉 데이터를 업로드한 경우, 다른 COVIDSafe 사용자들과의 본인의 접촉 정보.";
-"restrictions_accommodation" = "";
-"restrictions_activity" = "";
-"restrictions_cafes" = "";
-"restrictions_disclaimer" = "";
-"restrictions_domestic_travel" = "";
-"restrictions_education" = "";
-"restrictions_entertainment" = "";
-"restrictions_error_dismiss" = "";
-"restrictions_error_heading" = "";
-"restrictions_error_message" = "";
-"restrictions_error_try" = "";
-"restrictions_gatherings_work" = "";
-"restrictions_hair_beauty" = "";
-"restrictions_heading" = "";
-"restrictions_hotspots" = "";
-"restrictions_retail" = "";
-"restrictions_select_activity" = "";
-"restrictions_select_state" = "";
-"restrictions_sports" = "";
-"restrictions_state" = "";
-"restrictions_wedding" = "";
+"restrictions_accommodation" = "숙박 시설";
+"restrictions_activity" = "활동";
+"restrictions_cafes" = "카페 및 음식점";
+"restrictions_disclaimer" = "선택하신 내용은 여러분의 지역 내 제한 사항을 보여주는 용도로만 사용됩니다. COVIDSafe는 여러분의 위치 정보를 추적하거나 저장하지 않습니다.";
+"restrictions_domestic_travel" = "국내 여행";
+"restrictions_education" = "교육 및 보육";
+"restrictions_entertainment" = "엔터테인먼트 장소";
+"restrictions_error_dismiss" = "무시";
+"restrictions_error_heading" = "규제 조치를 이용할 수 없습니다.";
+"restrictions_error_message" = "인터넷 연결상태를 확인한 후 다시 시도하세요.";
+"restrictions_error_try" = "다시 시도";
+"restrictions_gatherings_work" = "모임 및 업무";
+"restrictions_hair_beauty" = "헤어 및 뷰티 서비스";
+"restrictions_heading" = "제한 사항";
+"restrictions_hotspots" = "집중 감염 지역 및 확진 위치";
+"restrictions_retail" = "소매 및 판매업";
+"restrictions_select_activity" = "활동 선택";
+"restrictions_select_state" = "주 또는 테리토리 선택";
+"restrictions_sports" = "스포츠 및 레크리에이션";
+"restrictions_state" = "주 또는 테리토리";
+"restrictions_wedding" = "결혼식, 장례식 및 종교 활동";
 "save" = "저장";
-"scheduled" = "%@부터 %@까지 COVIDsafe를 일시 정지해놓았습니다.";
+"scheduled" = "%@부터 %@까지 COVIDsafe를 일시중지해놓았습니다.";
 /* OnBoarding Enter Number */
 "select_country_or_region" = "국가 또는 지역을 선택하세요";
 /* Figma page Android Screens (05/06) */
 "Select_country_or_region_headline" = "국가 또는 지역을 선택하세요";
 "select_state_territory_button" = "주 또는 테리토리 선택";
 "select_state_territory_heading" = "주 또는 테리토리 선택";
-"set_snooze_time" = "일시 정지 시간 설정";
+"set_snooze_time" = "일시중지 시간 설정";
 "settings" = "설정";
 "seven_days" = "7일";
-"share_this_app_content" = "COVID-19의 확산을 막아주세요! 호주 정부의 앱인 COVIDSafe를 다운로드하세요. # COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
+"share_this_app_content" = "COVID-19의 확산을 막아주세요! 호주 정부의 앱인 COVIDSafe를 다운로드하세요. #COVID19 #coronavirusaustralia #stayhomesavelives https://covidsafe.gov.au";
 "show" = "보여주기";
-"snooze_button" = "일시 정지";
-"snooze_calendar_button" = "일시 정지 일정";
-"snooze_calendar_description" = "COVIDSafe를 일시 정지하고 싶은 요일과 시간을 설정하세요.";
-"snooze_calendar_toggle" = "일시 정지 일정";
-"snooze_covidsafe_button" = "COVIDSafe 일시 정지";
-"snooze_covidsafe_button_description" = "특정 시간 동안 COVIDSafe를 일시 정지합니다.";
-"snooze_ended" = "일시 정지 기능이 종료되었습니다.";
-"snooze_ends" = "일시 정지 종료까지 남은 시간";
-"snooze_from" = "일시 정지 시작 시간";
-"snooze_heading" = "COVIDSafe 일시 정지";
-"snooze_on" = "일시 정지 켬 %@";
-"snooze_timer_description" = "COVIDSafe 일시 정지 시간 설정하기";
-"snooze_to" = "일시 정지 종료 시간";
-"snoozed_calendar_description" = "COVIDSafe가 블루투스를 사용하지 않으며 접촉자를 기록하고 있지 않습니다.\n%@부터 %@까지 COVIDSafe를 일시 정지해놓았습니다.";
+"snooze_button" = "일시중지";
+"snooze_calendar_button" = "일시중지 일정";
+"snooze_calendar_description" = "COVIDSafe를 일시중지하고 싶은 요일과 시간을 설정하세요.";
+"snooze_calendar_toggle" = "일시중지 일정";
+"snooze_covidsafe_button" = "COVIDSafe 일시중지";
+"snooze_covidsafe_button_description" = "특정 시간 동안 COVIDSafe를 일시중지합니다.";
+"snooze_end_now" = "지금 일시중지 종료하기";
+"snooze_ended" = "일시중지 기능이 종료되었습니다.";
+"snooze_ends" = "일시중지 종료까지 남은 시간";
+"snooze_from" = "일시중지 시작 시간";
+"snooze_heading" = "COVIDSafe 일시중지";
+"snooze_interference_popup1" = "다음 일시중지 기능은 %@에 시작하도록 설정되었습니다.";
+"snooze_interference_popup2" = "이 시간 전까지 일시중지 기능을 사용합니다.";
+"snooze_on" = "일시중지 켬 %@";
+"snooze_running" = "새 타이머를 설정하려면 지금 일시중지를 종료하세요.";
+"snooze_timer_description" = "COVIDSafe 일시중지 시간 설정하기";
+"snooze_to" = "일시중지 종료 시간";
+"snoozed_calendar_description" = "COVIDSafe가 블루투스를 사용하고 있지 않으며 접촉자를 기록하고 있지 않습니다.\n\n%@부터 %@까지 COVIDSafe를 일시중지 해놓았습니다.";
 "south_australia" = "남호주";
 "state_number_heading" = "%@ 수치";
-"states_territories" = "";
-"stepCounter" = "%d 의 단계들 중 %d 단계";
+"states_territories" = "주 및 테리토리";
+"stepCounter" = "%d개의 단계 중 %d 단계";
 "support" = "지원";
 "support_content" = "도움말 항목에서 다루지 않는 문제에 대한 지원";
 "Support_VOLabel" = "지원. 도움말 항목에서 다루지 않는 문제에 대한 지원";
 "tasmania" = "태즈매니아";
 /* Example: "From 22 to 28 January 2021" */
-"to" = "";
+"to" = "까지";
 "total" = "총";
 "total_confirmed_cases" = "총 확진자 수";
 "total_deaths" = "%@ 총 사망자 수";
@@ -512,7 +516,7 @@
 "type_in_time" = "시간 입력";
 "UILaunchStoryboardName" = "LaunchScreen_ko";
 "under_sixteen_content" = "본인은 호주 정부 보건부 장관의 법적 결정에 따라, 데이터 저장소 관리자로서 다음 정보를 수집하는 것에 대해 본인 부모 또는 보호자가 Digital Transformation Agency에 동의한다는 것을 확인합니다:";
-"under_sixteen_first_paragraph" = "나의 등록 정보.";
+"under_sixteen_first_paragraph" = "나의 등록 정보";
 /* OnBoarding Under Sixteen */
 "under_sixteen_headline" = "계속 진행하려면 부모 혹은 보호자의 동의가 필요합니다";
 /* Figma page Android Screens (05/06) */
@@ -524,7 +528,7 @@
 "update_available_dismiss_btn" = "나중에 다시 알려 주세요";
 "update_available_message_ios" = "저희는 COVIDSafe의 기능을 향상시키고 있습니다. 앱 스토어를 통해 업데이트 하십시오.";
 "update_available_title" = "업데이트 가능!";
-"update_description" = "";
+"update_description" = "본 업데이트에서 COVIDSafe는 위치 서비스에 대한 액세스를 요청할 것입니다.\n\n이를 통해 근거리 접촉자를 식별하는 블루투스 성능이 향상됩니다.\n\n<a href=\"https://www.covidsafe.gov.au/help-topics.html#location-permissions\">COVIDSafe수집, 저장 또는 위치 데이터를 사용하지 않습니다.</a> \n\n여러분의 개인 정보가 어떻게 처리되는지에 대한 자세한 정보는 <a href=\"https://covidsafe.gov.au/privacy-policy.html\">개인정보 보호 정책</a> 을 참고하십시오.\n\n<a href=\"https://www.covidsafe.gov.au/help-topics.html#herald\">COVIDSafe가 어떻게 개선되었는지 자세히 알아보기</a>";
 "update_heading" = "위치 서비스 활성화";
 "update_modal_button" = "진행";
 "upload_answer_no" = "아니요";
@@ -542,7 +546,7 @@
 "upload_step_verify_pin_header" = "본인의 정보를 업로드하세요";
 "upload_step_verify_pin_sub_header" = "주 또는 테리토리 보건 담당자가 당신의 장치에 문자 메시지로 PIN을 보낼 것입니다. 본인의 정보를 업로드하려면 아래에 그 번호를 입력하십시오.";
 "us_consent_button" = "동의";
-"us_registration_consent_diagnostic" = "COVIDSafe가 내 장치에서 제대로 작동하는지 확인하기 위한 정보.";
+"us_registration_consent_diagnostic" = "COVIDSafe가 내 장치에서 제대로 작동하도록 하기 위한 정보.";
 "victoria" = "빅토리아";
 "western_australia" = "서호주";
 "wrong_ping_number" = "잘못된 PIN 입력";
@@ -550,7 +554,7 @@
 "country_region_name_au2" = "노퍽 섬";
 "AllowBluetoothOFF_VOLabel" = "블루투스 접속: 꺼짐 COVIDSafe의 블루투스 접속을 허용해 주세요";
 "AllowBluetoothON_VOLabel" = "블루투스 접속: 켜짐";
-"BluetoothOFF_VOLabel" = "블루투스: OFF  휴대폰의 블루투스를 켜세요. '새 연결 허용'이 표시되면 선택하세요.";
+"BluetoothOFF_VOLabel" = "블루투스: 꺼짐  휴대폰의 블루투스를 켜세요. '새 연결 허용'이 표시되면 선택하세요.";
 "BluetoothON_VOLabel" = "블루투스: 켜짐";
 "CodeHasExpired" = "코드가 만료되었습니다.";
 /* details */
@@ -608,7 +612,7 @@
 /* help */
 "ReportAnIssue" = "문제 신고하기";
 /* VO */
-"SelectedCountryTemplate" = "(+%@ ) %@이(가) 선택되었습니다";
+"SelectedCountryTemplate" = "(+%@) %@이(가) 선택되었습니다";
 "UploadFailed" = "업로드에 실패했습니다. 나중에 다시 시도하세요.";
 "UploadFailedErrorMessage" = "나중에 다시 시도하세요.";
 "ValidationError" = "인증 오류";
@@ -617,7 +621,7 @@
 "LatestNews_VOLabel" = "최신 뉴스 및 업데이트. 최신 코로나 바이러스 뉴스를 보려면 aus.gov.au를 방문하세요.";
 "NotificationsDisabled_VOLabel" = "알림이 꺼졌습니다. COVIDSafe가 활성화되어 있지 않으면 알림을 받을 수 없습니다.  \n알림 설정 변경하기";
 "NotificationsEnabled_VOLabel" = "알림이 켜졌습니다. COVIDSafe가 활성화되어 있지 않으면 알림을 받게 됩니다.  \n알림 설정 변경하기";
-"OS1b_TopParagraph_VOLabel" = "블루투스 신호는 당신이 다른 COVIDSafe 사용자 근처에 있을때를 확인하는 데 사용됩니다. \n당신과 다른 COVIDSafe 사용자 간의 모든 근거리 접촉 상황들이 근거리 접촉정보로 기록됩니다. 이 정보는 암호화되어 당신의 휴대폰에만 저장됩니다. \nCOVIDSafe 사용자로서 당신이 COVID-19에 양성 결과가 나오면, 주 또는 테리토리 보건 담당자가 당신에게 연락할 것입니다. 당신이 자신의 근거리 접촉정보를 보안성 높은 정보 저장 체계에 자발적으로 업로드할 수 있도록 도와줄 것입니다. \n또한 양성 결과가 나온 다른 COVIDSafe 사용자와 당신이 가까이 접촉한 경우, 주 또는 테리토리 보건 담당자가 당신에게 연락을 취할 수 있습니다. \n자세한 내용은 *도움말 항목* 페이지를 참조하세요.";
+"OS1b_TopParagraph_VOLabel" = "블루투스 신호는 당신이 다른 COVIDSafe 사용자 근처에 있을 때를 확인하는 데 사용됩니다. \n당신과 다른 COVIDSafe 사용자 간의 모든 근거리 접촉 상황들이 근거리 접촉정보로 기록됩니다. 이 정보는 암호화되어 당신의 휴대폰에만 저장됩니다. \nCOVIDSafe 사용자로서 당신이 COVID-19에 양성 결과가 나오면, 주 또는 테리토리 보건 담당자가 당신에게 연락할 것입니다. 당신이 자신의 근거리 접촉정보를 보안성 높은 정보 저장 체계에 자발적으로 업로드할 수 있도록 도와줄 것입니다. \n또한 양성 결과가 나온 다른 COVIDSafe 사용자와 당신이 가까이 접촉한 경우, 주 또는 테리토리 보건 담당자가 당신에게 연락을 취할 수 있습니다. \n자세한 내용은 *도움말 항목* 페이지를 참조하세요.";
 "permission_content_iOS_2_VOLabel" = "1. 블루투스\n2. 알림\n3. 위치 서비스";
 "permission_content_iOS_VOLabel" = "COVIDSafe가 제대로 실행되기 위해서는 블루투스가 활성화되어야 합니다. COVIDSafe는 페어링 요청을 보내지 않습니다.\n\n알림 기능을 활성화하면, COVIDSafe가 비활성화되어 있을 때 알림을 받게 됩니다.\n\nCOVIDSafe가 제대로 실행되기 위해서는 당신의 아이폰에서 위치 서비스 허용이 필요합니다. *COVIDSafe는 당신의 위치 정보를 추적하거나 저장하지 않습니다*\n\n활성화하려면 '진행'을 선택하세요.";
 "ShareCovidSafe_VOLabel" = "COVIDSafe를 공유하세요. 다른 이들에게 참여를 권유하세요. 우리는 함께할 때 더 강해집니다.";

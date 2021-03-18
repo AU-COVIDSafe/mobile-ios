@@ -222,8 +222,8 @@ class HomeViewController: UIViewController, HomeDelegate {
     
     func updateJWTKeychainAccess() {
         let hasUpdatedKeychainAccess = UserDefaults.standard.bool(forKey: "HasUpdatedKeychainAccess")
+        let keychain = KeychainSwift()
         if (!hasUpdatedKeychainAccess) {
-            let keychain = KeychainSwift()
             if let jwt = keychain.get("JWT_TOKEN") {
                 if (keychain.set(jwt, forKey: "JWT_TOKEN", withAccess: .accessibleAfterFirstUnlock)) {
                     DLog("Updated access class on JWT")
@@ -440,7 +440,6 @@ class HomeViewController: UIViewController, HomeDelegate {
     }
     
     func showTokenExpiredMessage() {
-        UserDefaults.standard.set(true, forKey: reauthenticationNeededKey)
         toggleViews()
     }
     

@@ -19,6 +19,9 @@ final class InfoViewController: UIViewController {
     @IBOutlet weak var messagesAPILastVersionLabel: UILabel!
     @IBOutlet weak var bleSensorStateLabel: UILabel!
     @IBOutlet weak var awakeSensorStateLabel: UILabel!
+    @IBOutlet weak var jwtExpiryLabel: UILabel!
+    @IBOutlet weak var jwtSubjectLabel: UILabel!
+    @IBOutlet weak var refreshExpiryLabel: UILabel!
     
     @IBOutlet weak var versionNumLabel: UILabel!
     
@@ -49,6 +52,33 @@ final class InfoViewController: UIViewController {
         clearLogsButton.addTarget(self, action:#selector(self.clearLogsButtonClicked), for: .touchUpInside)
         silentNotificationsCountLabel.text = "\(UserDefaults.standard.integer(forKey: "debugSilentNotificationCount"))"
         apnTokenLabel.text = UserDefaults.standard.string(forKey: "deviceTokenForAPN")
+        
+        let keychain = KeychainSwift()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .short
+        dateFormatter.timeStyle = .medium
+        
+        if let token = keychain.get("JWT_TOKEN"),
+           let jwtExpiry = AuthenticationToken(token: token).getExpiry(),
+           let jwtSubject = AuthenticationToken(token: token).getSubject()
+        {
+            jwtExpiryLabel.text = dateFormatter.string(from: jwtExpiry)
+            jwtSubjectLabel.text = jwtSubject
+        } else {
+            jwtExpiryLabel.text = "N/A"
+        }
+        
+        if let refreshToken = keychain.get("REFRESH_TOKEN") {
+            if let refreshExpiry = AuthenticationToken(token: refreshToken).getExpiry() {
+                refreshExpiryLabel.text = dateFormatter.string(from: refreshExpiry)
+            } else {
+                refreshExpiryLabel.text = "exists, exp N/A"
+            }
+            
+        } else {
+            refreshExpiryLabel.text = "N/A, N/A"
+        }
+        
     }
     
     @IBAction func logoutBtn(_ sender: UIButton) {

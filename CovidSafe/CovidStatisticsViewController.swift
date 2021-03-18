@@ -460,6 +460,7 @@ extension CovidStatisticsViewController: StatisticsTableDelegate {
     func getStateValues() -> [StateTerritory] {
         return [StateTerritory.ACT,
                 StateTerritory.NSW,
+                StateTerritory.NT,
                 StateTerritory.QLD,
                 StateTerritory.SA,
                 StateTerritory.TAS,

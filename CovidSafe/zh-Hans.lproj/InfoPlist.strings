@@ -5,7 +5,7 @@
 "BluetoothUsageDesc" = "COVIDSafe与附近运行同一应用程序的手机交换蓝牙®信号。这些信号包含一组匿名ID，该ID经过加密并不断更改以保护您的隐私。";
 "NSBluetoothAlwaysUsageDescription" = "COVIDSafe与附近运行同一应用程序的手机交换蓝牙®信号。这些信号包含一个匿名ID，该ID经过加密并不断更改以保护您的隐私。";
 "NSBluetoothPeripheralUsageDescription" = "COVIDSafe与附近运行同一应用程序的手机交换蓝牙®信号。这些信号包含一个匿名ID，该ID经过加密并不断更改以保护您的隐私。";
-"NSLocationAlwaysAndWhenInUseUsageDescription" = "";
-"NSLocationAlwaysUsageDescription" = "";
-"NSLocationWhenInUseUsageDescription" = "";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "选择\"始终允许\"。\n\n在识别密切接触者时，使用定位服务可提高蓝牙性能。\n\nCOVIDSafe不会收集、存储或使用位置数据。";
+"NSLocationAlwaysUsageDescription" = "选择\"始终允许\"。\n\n在识别密切接触者时，使用定位服务可提高蓝牙性能。\n\nCOVIDSafe不会收集、存储或使用位置数据。";
+"NSLocationWhenInUseUsageDescription" = "选择\"在使用应用程序时\"。\n\n在识别密切接触者时，使用定位服务可提高蓝牙性能。\n\nCOVIDSafe不会收集、存储或使用位置数据。";
 "UILaunchStoryboardName" = "LaunchScreen_zh-Hans";

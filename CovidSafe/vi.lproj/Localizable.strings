@@ -32,7 +32,7 @@
 "change_language_content" = "Đọc hướng dẫn về cách sử dụng COVIDSafe bằng ngôn ngữ khác.";
 "change_postcode_description" = "Cập nhật nếu mã bưu điện của bạn đã thay đổi sau khi tải xuống COVIDSafe.";
 "change_postcode_heading" = "Thay đổi mã bưu điện của bạn";
-"change_postcode_intro" = "";
+"change_postcode_intro" = "Bạn đã chuyển sang khu vực có mã bưu điện khác kể từ khi đăng ký sử dụng COVIDSafe chưa? \n\nLuôn cập nhật mã bưu điện của bạn có thể hỗ trợ các nhân viên y tế tiến hành truy vết. \n\nĐọc *chính sách bảo mật của COVIDSafe* và *thông báo thu thập* để biết thêm chi tiết về việc thông tin của bạn được lưu trữ và chia sẻ như thế nào.";
 "collection_message" = "COVIDSafe hiện đang thu thập thông tin chẩn đoán để giúp bạn khắc phục sự cố với Ứng dụng của mình. *Tìm hiểu thêm *";
 "consent_button" = "Tôi đồng ý";
 /* Shared Consent Actions */
@@ -250,8 +250,8 @@
 "country_region_name_zw" = "Zimbabwe";
 "customise_days" = "Tùy chỉnh ngày";
 "data_privacy_button" = "Tiếp theo";
-"data_privacy_content" = "Điều quan trọng là bạn phải đọc *chính sách bảo mật* COVIDSafe trước khi đăng ký COVIDSafe. \n\nNếu bạn dưới 16 tuổi, cha mẹ/người giám hộ của bạn cũng phải đọc *chính sách bảo mật *. \n\nSử dụng COVIDSafe là hoàn toàn tự nguyện. Bạn có thể cài đặt hoặc xóa ứng dụng bất cứ lúc nào. Nếu bạn xóa COVIDSafe, *bạn cũng có thể yêu cầu xóa thông tin của mình* khỏi máy chủ bảo mật. \n\nĐể đăng ký COVIDSafe, bạn sẽ cần nhập tên (hoặc biệt danh), số điện thoại di động, độ tuổi và mã bưu điện. \n\nThông tin bạn gửi khi đăng ký và thông tin về việc sử dụng COVIDSafe của bạn sẽ được thu thập và lưu trữ trên một máy chủ có độ an toàn cao. \n\nThông tin cũng được thu thập để đảm bảo rằng COVIDSafe đang hoạt động bình thường trên thiết bị của bạn. Điều này bao gồm hệ điều hành, phiên bản Ứng dụng bạn đã cài đặt, ngôn ngữ được thiết lập trên thiết bị của bạn, Bluetooth® có hoạt động hay không và liệu Ứng dụng của bạn có ghi lại bất kỳ cuộc gặp gỡ nào trong bảy ngày trước đó hay không.\n\nCOVIDSafe sẽ không thu thập thông tin vị trí của bạn. \n\nCOVIDSafe sẽ ghi nhớ thời gian tiếp xúc, mã ID ẩn danh của những người dùng COVIDSafe khác mà bạn tiếp xúc, cường độ tín hiệu Bluetooth và kiểu điện thoại của người dùng khác trên thiết bị của bạn. \n\nNhững người dùng COVIDSafe khác mà bạn tiếp xúc cũng sẽ ghi nhớ mã ID ẩn danh của bạn, thời gian tiếp xúc, cường độ tín hiệu Bluetooth và kiểu điện thoại của bạn, trên thiết bị của họ.\n\nNếu người dùng khác xét nghiệm dương tính với COVID-19, họ có thể đăng tải thông tin tiếp xúc của họ và nhân viên y tế của tiểu bang hoặc lãnh thổ có thể liên hệ với bạn nhằm mục đích truy tìm tiếp xúc. \n\nThông tin đăng ký của bạn sẽ chỉ được sử dụng hoặc tiết lộ để truy tìm tiếp xúc và để COVIDSafe hoạt động đúng đắn và hợp pháp. \n\nThông tin thêm có tại trang mạng *covidsafe.gov.au*. \n\nXem *chính sách bảo mật* của COVIDSafe để biết thêm chi tiết về quyền của bạn đối với thông tin của mình cũng như cách xử lý và chia sẻ thông tin đó.\n ";
-"data_privacy_content_VO" = "Điều quan trọng là bạn phải đọc chính sách bảo mật của COVIDSafe trước khi đăng ký COVIDSafe.\n\nNếu bạn dưới 16 tuổi, cha mẹ/người giám hộ của bạn cũng phải đọc chính sách bảo mật.\n\nViệc sử dụng COVIDSafe là hoàn toàn tự nguyện. Bạn có thể cài đặt hoặc xóa ứng dụng bất kỳ lúc nào. Nếu bạn xóa COVIDSafe, bạn cũng có thể yêu cầu xóa thông tin của mình khỏi máy chủ bảo mật.\n\nĐể đăng ký COVIDSafe, bạn sẽ cần nhập tên (hoặc biệt danh), số điện thoại di động, độ tuổi và mã bưu điện.\n\nThông tin bạn gửi khi đăng ký và thông tin về việc sử dụng COVIDSafe của bạn được lưu trữ trên một máy chủ có độ bảo mật cao.\n\nThông tin cũng được thu thập để đảm bảo rằng COVIDSafe đang hoạt động bình thường trên thiết bị của bạn. Điều này bao gồm hệ điều hành, phiên bản Ứng dụng bạn đã cài đặt, ngôn ngữ được thiết lập trên thiết bị của bạn, Bluetooth có hoạt động hay không và liệu Ứng dụng của bạn có ghi lại bất kỳ cuộc gặp gỡ nào trong bảy ngày trước đó hay không.\n\nCOVIDSafe sẽ không thu thập thông tin vị trí của bạn.\n\nCOVIDSafe sẽ ghi nhớ ngày và giờ tiếp xúc, mã ID ẩn danh của những người dùng COVIDSafe khác mà bạn tiếp xúc, cường độ tín hiệu Bluetooth và kiểu điện thoại của những người dùng khác trên thiết bị của bạn.\n\nNhững người dùng COVIDSafe khác mà bạn tiếp xúc sẽ ghi nhớ mã ID ẩn danh, ngày và giờ tiếp xúc với bạn, cường độ tín hiệu Bluetooth và kiểu điện thoại của bạn trên thiết bị của họ.\n\nNếu một người dùng khác xét nghiệm dương tính với COVID-19, họ có thể đăng tải thông tin liên hệ của mình và nhân viên y tế của tiểu bang hoặc vùng lãnh thổ có thể liên hệ với bạn nhằm mục đích truy tìm tiếp xúc.\n\nCác thông tin đăng ký của bạn sẽ chỉ được sử dụng hoặc tiết lộ để theo dõi tiếp xúc và để COVIDSafe hoạt động đúng đắn và hợp pháp.\n\nThông tin thêm có tại trang mạng covidsafe.gov.au.\n\nXem chính sách bảo mật của COVIDSafe để biết thêm chi tiết về các quyền của bạn đối với thông tin của mình cũng như cách xử lý và chia sẻ thông tin đó.";
+"data_privacy_content" = "Điều quan trọng là bạn phải đọc *chính sách bảo mật*  COVIDSafe trước khi đăng ký COVIDSafe. \n\n COVIDSafe sẽ chỉ thu thập, sử dụng hoặc tiết lộ thông tin cá nhân của bạn theo chính sách này và Đạo luật Bảo mật 1988. \n\n Nếu bạn dưới 16 tuổi, cha mẹ/người giám hộ của bạn cũng phải đọc *chính sách bảo mật*. \n\n Việc sử dụng COVIDSafe là hoàn toàn tự nguyện. Bạn có thể cài đặt hoặc xóa ứng dụng bất kỳ lúc nào. Nếu bạn xóa COVIDSafe, *bạn cũng có thể yêu cầu thông tin của mình* được xóa khỏi máy chủ an toàn. \n\n Để đăng ký COVIDSafe, bạn sẽ cần nhập tên (hoặc biệt danh), số điện thoại di động, độ tuổi và mã bưu điện. \n\n Thông tin bạn gửi khi đăng ký và thông tin về việc bạn sử dụng COVIDSafe được lưu trữ trên một máy chủ có độ bảo mật cao. \n\n Thông tin cũng được thu thập để đảm bảo rằng COVIDSafe đang hoạt động bình thường trên thiết bị của bạn. Điều này bao gồm hệ điều hành, phiên bản Ứng dụng đã cài đặt, ngôn ngữ cài đặt trên thiết bị, Bluetooth® có hoạt động hay không và nếu Ứng dụng của bạn đã ghi lại bất kỳ cuộc gặp gỡ nào trong bảy ngày trước đó. \n\n COVIDSafe sẽ không thu thập thông tin vị trí của bạn. \n\n COVIDSafe sẽ ghi chú ngày và giờ liên hệ, mã ID ẩn danh của những người dùng COVIDSafe khác mà bạn tiếp xúc, cường độ tín hiệu Bluetooth và kiểu điện thoại của những người dùng khác trên thiết bị của bạn. \n\n Những người dùng COVIDSafe khác mà bạn tiếp xúc sẽ ghi lại mã ID ẩn danh, ngày và giờ liên hệ với bạn, cường độ tín hiệu Bluetooth và kiểu điện thoại của bạn trên thiết bị của họ. \n\n Nếu một người dùng khác có kết quả dương tính với COVID-19, họ có thể tải lên thông tin liên hệ của mình và nhân viên y tế của tiểu bang hoặc vùng lãnh thổ có thể liên hệ với bạn nhằm mục đích truy vết. \n\n Các chi tiết đăng ký của bạn sẽ chỉ được sử dụng hoặc tiết lộ để ttruy vết và để COVIDSafe hoạt động đúng cách và hợp pháp. \n\n Thông tin thêm có tại trang mạng *covidsafe.gov.au*. \n\n Xem *chính sách bảo mật* COVIDSafe để biết thêm chi tiết về quyền của bạn đối với thông tin của mình và cách nó sẽ được xử lý và chia sẻ như thế nào.";
+"data_privacy_content_VO" = "Điều quan trọng là bạn phải đọc chính sách bảo mật của COVIDSafe trước khi đăng ký COVIDSafe. \n\n COVIDSafe sẽ chỉ thu thập, sử dụng hoặc tiết lộ thông tin cá nhân của bạn theo chính sách này và Đạo luật Bảo mật 1988. \n\n Nếu bạn dưới 16 tuổi, cha mẹ/người giám hộ của bạn cũng phải đọc chính sách bảo mật. \n\n Việc sử dụng COVIDSafe là hoàn toàn tự nguyện. Bạn có thể cài đặt hoặc xóa ứng dụng bất kỳ lúc nào. Nếu bạn xóa COVIDSafe, bạn cũng có thể yêu cầu xóa thông tin của mình khỏi máy chủ an toàn. \n\n Để đăng ký COVIDSafe, bạn sẽ cần nhập tên (hoặc biệt danh), số điện thoại di động, độ tuổi và mã bưu điện. \n\n Thông tin bạn gửi khi đăng ký và thông tin về việc bạn sử dụng COVIDSafe được lưu trữ trên một máy chủ có độ bảo mật cao. \n\n Thông tin cũng được thu thập để đảm bảo rằng COVIDSafe đang hoạt động bình thường trên thiết bị của bạn. Điều này bao gồm hệ điều hành, phiên bản Ứng dụng đã cài đặt, ngôn ngữ được cài đặt thiết bị, Bluetooth có hoạt động hay không và liệu Ứng dụng của bạn có ghi lại bất kỳ cuộc gặp gỡ nào trong bảy ngày trước đó hay không. \n\n COVIDSafe sẽ không thu thập thông tin vị trí của bạn. \n\n COVIDSafe sẽ ghi chú ngày và giờ liên hệ, mã ID ẩn danh của những người dùng COVIDSafe khác mà bạn tiếp xúc, cường độ tín hiệu Bluetooth và kiểu điện thoại của những người dùng khác trên thiết bị của bạn. \n\n Những người dùng COVIDSafe khác mà bạn tiếp xúc sẽ ghi lại mã ID ẩn danh, ngày và giờ liên hệ với bạn, cường độ tín hiệu Bluetooth và kiểu điện thoại của bạn trên thiết bị của họ. \n\n Nếu một người dùng khác có kết quả dương tính với COVID-19, họ có thể đăng tải thông tin tiếp xúc của mình và nhân viên y tế của tiểu bang hoặc vùng lãnh thổ có thể liên hệ với bạn nhằm mục đích truy vết. \n\n Các chi tiết đăng ký của bạn sẽ chỉ được sử dụng hoặc tiết lộ để ttruy vết và để COVIDSafe hoạt động đúng cách và hợp pháp. \n\nTìm hiểu thêm thông tin tại trang mạng covidsafe.gov.au. \n\n Xem chính sách bảo mật của COVIDSafe để biết thêm chi tiết về các quyền của bạn đối với thông tin của mình và cách nó sẽ được xử lý và chia sẻ như thế nào.";
 /* OnBoarding Data Privacy */
 "data_privacy_headline" = "Đăng ký và bảo mật";
 "deaths" = "Tử vong";
@@ -293,7 +293,7 @@
 "hide" = "Ẩn";
 "home_app_permission_status_subtitle" = "COVIDSafe sẽ không hoạt động nếu không có cài đặt phù hợp.";
 "home_app_permission_status_title" = "Kiểm tra cài đặt của bạn";
-"home_bottom_nav" = "";
+"home_bottom_nav" = "Trang Chủ";
 "home_data_uploaded_message" = "Giúp ngăn chặn sự lây lan của COVID-19 và theo dõi các triệu chứng của bạn.";
 "home_header_active_no_action_required" = "Không cần làm gì thêm.";
 /* Home */
@@ -366,7 +366,7 @@
 "locally_acquired" = "%@ ca nhiễm bệnh ở địa phương";
 "location_off" = "Vị trí: TẮT";
 "location_off_description" = "iPhone của bạn yêu cầu quyền truy cập Vị trí để COVIDSafe hoạt động. COVIDSafe KHÔNG theo dõi hoặc lưu trữ dữ liệu vị trí của bạn.";
-"main_restrictions" = "";
+"main_restrictions" = "Những hạn chế chính";
 /* Splash Screen */
 "migration_in_progress" = "COVIDSafe trong tiến trình cập nhật. \n\nVui lòng đảm bảo điện thoại của bạn không bị tắt cho đến khi cập nhật hoàn tất.";
 "minute" = "Phút";
@@ -434,8 +434,8 @@
 "PN_ReminderBody" = "Mở COVIDSafe để đảm bảo ứng dụng đang hoạt động";
 /* Figma page iOS Screens (05/06) */
 "PN_ReminderTitle" = "Không phát hiện có tiếp xúc trong 48 giờ";
-"postcode_api_error" = "";
-"postcode_change_label" = "";
+"postcode_api_error" = "Có lỗi. Kiểm tra kết nối internet của bạn và thử lại.";
+"postcode_change_label" = "Mã bưu điện hiện tại ở Úc";
 "postcode_success" = "Mã bưu điện của bạn đã được cập nhật";
 "PostcodeValidationErrorMessage" = "Vui lòng nhập mã bưu điện Úc hợp lệ.";
 "queensland" = "Queensland";
@@ -446,27 +446,27 @@
 /* Onboarding Registration Consent */
 "registration_consent_headline" = "Đồng ý đăng ký";
 "registration_consent_second_paragraph" = "Thông tin về việc tiếp xúc của tôi với những người dùng COVIDSafe khác, nếu một người dùng COVIDSafe khác mà tôi đã tiếp xúc xét nghiệm dương tính với COVID-19 và đăng tải dữ liệu tiếp xúc của họ.";
-"restrictions_accommodation" = "";
-"restrictions_activity" = "";
-"restrictions_cafes" = "";
-"restrictions_disclaimer" = "";
-"restrictions_domestic_travel" = "";
-"restrictions_education" = "";
-"restrictions_entertainment" = "";
-"restrictions_error_dismiss" = "";
-"restrictions_error_heading" = "";
-"restrictions_error_message" = "";
-"restrictions_error_try" = "";
-"restrictions_gatherings_work" = "";
-"restrictions_hair_beauty" = "";
-"restrictions_heading" = "";
-"restrictions_hotspots" = "";
-"restrictions_retail" = "";
-"restrictions_select_activity" = "";
-"restrictions_select_state" = "";
-"restrictions_sports" = "";
-"restrictions_state" = "";
-"restrictions_wedding" = "";
+"restrictions_accommodation" = "Chỗ lưu trú";
+"restrictions_activity" = "Hoạt động";
+"restrictions_cafes" = "Quán cà phê và Nhà hàng";
+"restrictions_disclaimer" = "Lựa chọn của bạn sẽ chỉ được sử dụng để hiển thị các hạn chế trong khu vực của bạn. COVIDSafe không lưu trữ hoặc sử dụng dữ liệu vị trí.";
+"restrictions_domestic_travel" = "Du lịch Nội địa";
+"restrictions_education" = "Giáo dục và Chăm sóc trẻ em";
+"restrictions_entertainment" = "Địa điểm Giải trí";
+"restrictions_error_dismiss" = "Bỏ qua";
+"restrictions_error_heading" = "Chưa có thông tin về các hạn chế";
+"restrictions_error_message" = "Kiểm tra kết nối internet của bạn hoặc thử lại sau.";
+"restrictions_error_try" = "Thử lại";
+"restrictions_gatherings_work" = "Tụ tập và Công việc";
+"restrictions_hair_beauty" = "Dịch vụ Làm tóc và Làm đẹp";
+"restrictions_heading" = "Hạn chế";
+"restrictions_hotspots" = "Điểm nóng và Các Vị trí Ca nhiễm";
+"restrictions_retail" = "Bán lẻ và Bán hàng";
+"restrictions_select_activity" = "Chọn hoạt động";
+"restrictions_select_state" = "Chọn tiểu bang hoặc lãnh thổ";
+"restrictions_sports" = "Thể thao và Giải trí";
+"restrictions_state" = "Tiểu bang hoặc lãnh thổ";
+"restrictions_wedding" = "Đám cưới, Tang lễ và Tôn giáo";
 "save" = "Lưu";
 "scheduled" = "Bạn đã lên lịch trình cho COVIDSafe tạm ngưng hoạt động từ %@ đến %@ .";
 /* OnBoarding Enter Number */
@@ -486,17 +486,21 @@
 "snooze_calendar_toggle" = "Lịch trình tạm ngưng hoạt động";
 "snooze_covidsafe_button" = "Tạm ngưng hoạt động COVIDSafe";
 "snooze_covidsafe_button_description" = "Tạm ngưng hoạt động của COVIDSafe trong một khoảng thời gian nhất định.";
+"snooze_end_now" = "Kết thúc tạm ngưng hoạt động ngay bây giờ";
 "snooze_ended" = "Kết thúc tạm ngưng hoạt động.";
 "snooze_ends" = "Tạm ngưng hoạt động kết thúc trong";
 "snooze_from" = "Tạm ngưng hoạt động từ";
 "snooze_heading" = "Tạm ngưng hoạt động COVIDSafe";
+"snooze_interference_popup1" = "Tạm ngưng hoạt động được lên lịch tiếp theo bắt đầu từ %@";
+"snooze_interference_popup2" = "Đặt tạm ngưng hoạt động kết thúc trước thời gian này.";
 "snooze_on" = "Tạm ngưng hoạt động vào %@";
+"snooze_running" = "Kết thúc tạm ngưng hoạt động ngay bây giờ để đặt hẹn giờ mới.";
 "snooze_timer_description" = "Đặt hẹn giờ để tạm ngưng hoạt động COVIDSafe.";
 "snooze_to" = "Tạm ngưng hoạt động đến";
 "snoozed_calendar_description" = "COVIDSafe không sử dụng Bluetooth và không ghi lại các tiếp xúc. \n\n Bạn đã lên lịch trình cho COVIDSafe tạm ngưng hoạt động từ %@ đến %@ .";
 "south_australia" = "Nam Úc";
 "state_number_heading" = "%@ số";
-"states_territories" = "";
+"states_territories" = "Các tiểu bang và vùng lãnh thổ";
 "stepCounter" = "Bước %d của %d";
 "support" = "Hỗ trợ";
 "support_content" = "Để được trợ giúp về các vấn đề không có trong chủ đề Trợ giúp";
@@ -524,7 +528,7 @@
 "update_available_dismiss_btn" = "Nhắc tôi sau";
 "update_available_message_ios" = "Chúng tôi đã và đang cải thiện COVIDSafe. Cập nhật qua Kho Ứng dụng (App Store).";
 "update_available_title" = "Cập nhật có sẵn!";
-"update_description" = "";
+"update_description" = "Trong bản cập nhật này, COVIDSafe sẽ yêu cầu quyền truy cập vào Dịch vụ Vị trí. \n\n Điều này cải thiện hiệu suất Bluetooth khi xác định các tiếp xúc gần. \n\n <a href=\"https://www.covidsafe.gov.au/help-topics.html#location-permissions\"> COVIDSafe không thu thập, lưu trữ hoặc sử dụng dữ liệu vị trí. </a> \n\n Đọc <a href=\"https://covidsafe.gov.au/privacy-policy.html\"> chính sách bảo mật </a> để tìm hiểu thêm về thông tin cá nhân của bạn được xử lý như thế nào. \n\n <a href=\"https://www.covidsafe.gov.au/help-topics.html#herald\"> Tìm hiểu thêm về cách chúng tôi đã cải tiến COVIDSafe. </a>";
 "update_heading" = "Bật Dịch vụ Vị trí";
 "update_modal_button" = "Kích hoạt";
 "upload_answer_no" = "Không";

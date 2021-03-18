@@ -12,7 +12,7 @@ class RespondToAuthChallengeAPI {
         
     static func respondToAuthChallenge(session: String,
                                        code: String,
-                                       completion: @escaping (String?, ChallengeErrorResponse?) -> Void) {
+                                       completion: @escaping (ChallengeResponse?, ChallengeErrorResponse?) -> Void) {
         guard let apiHost = PlistHelper.getvalueFromInfoPlist(withKey: "API_Host", plistName: "CovidSafe-config") else {
             return
         }
@@ -21,11 +21,11 @@ class RespondToAuthChallengeAPI {
             "code": code
         ]
 
-        CovidNetworking.shared.session.request("\(apiHost)/respondToAuthChallenge", method: .post, parameters: params, encoding: JSONEncoding.default).validate().responseDecodable(of: ChallengeResponse.self) { (response) in
+        CovidNetworking.shared.session.request("\(apiHost)/v2/respondToAuthChallenge", method: .post, parameters: params, encoding: JSONEncoding.default).validate().responseDecodable(of: ChallengeResponse.self) { (response) in
             switch response.result {
             case .success:
                 guard let challengeResponse = response.value else { return }
-                completion(challengeResponse.token, nil)
+                completion(challengeResponse, nil)
             case .failure(_):
                 guard let errorData = response.data else {
                     completion(nil, nil)
@@ -55,9 +55,11 @@ struct ChallengeErrorResponse: Decodable, Error {
 }
 
 struct ChallengeResponse: Decodable {
-  let token: String
-  
-  enum CodingKeys: String, CodingKey {
-    case token
-  }
+    let token: String
+    let refreshToken: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case token
+        case refreshToken
+    }
 }

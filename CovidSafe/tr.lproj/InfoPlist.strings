@@ -5,7 +5,7 @@
 "BluetoothUsageDesc" = "COVIDSafe, aynı uygulamayı çalıştıran yakındaki telefonlarla Bluetooth® sinyalleri alışverişinde bulunur. Bu sinyaller, gizliliğinizi sağlamak için şifrelenen ve sürekli değişen anonimleştirilmiş bir kimlik içerir.";
 "NSBluetoothAlwaysUsageDescription" = "COVIDSafe, aynı uygulamayı çalıştıran yakındaki telefonlarla Bluetooth® sinyalleri alışverişinde bulunur. Bu sinyaller, gizliliğinizi sağlamak için şifrelenen ve sürekli değişen anonimleştirilmiş bir kimlik içerir.";
 "NSBluetoothPeripheralUsageDescription" = "COVIDSafe, aynı uygulamayı çalıştıran yakındaki telefonlarla Bluetooth® sinyalleri alışverişinde bulunur. Bu sinyaller, gizliliğinizi sağlamak için şifrelenen ve sürekli değişen anonimleştirilmiş bir kimlik içerir.";
-"NSLocationAlwaysAndWhenInUseUsageDescription" = "";
-"NSLocationAlwaysUsageDescription" = "";
-"NSLocationWhenInUseUsageDescription" = "";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "'Her Zaman İzin Ver'i seçin. \n\n Konum Servislerinin kullanılması, yakın temasları belirlerken Bluetooth performansını iyileştirir. \n\n COVIDSafe, konum verilerini toplamaz, saklamaz veya kullanmaz.";
+"NSLocationAlwaysUsageDescription" = "'Her Zaman İzin Ver'i seçin. \n\n Konum Servislerinin kullanılması, yakın temasları belirlerken Bluetooth performansını iyileştirir. \n\n COVIDSafe, konum verilerini toplamaz, saklamaz veya kullanmaz.";
+"NSLocationWhenInUseUsageDescription" = "'Uygulamayı Kullanırken'i seçin. \n\n Konum Servislerinin kullanılması, yakın temasları belirlerken Bluetooth performansını iyileştirir. \n\n COVIDSafe, konum verilerini toplamaz, saklamaz veya kullanmaz.";
 "UILaunchStoryboardName" = "LaunchScreen_tr";
