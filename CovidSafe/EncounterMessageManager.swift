@@ -231,7 +231,6 @@ class EncounterMessageManager {
                 }
                 
                 if covidSafeError == .TokenExpiredError {
-                    UserDefaults.standard.set(true, forKey: "ReauthenticationNeededKey")
                     onComplete?(CovidSafeAPIError.TokenExpiredError, nil)
                     return
                 }

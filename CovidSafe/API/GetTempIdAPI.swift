@@ -13,21 +13,28 @@ class GetTempIdAPI: CovidSafeAuthenticatedAPI {
     private static let apiVersion = 2
     
     static func getTempId(completion: @escaping (String?, Int?, Swift.Error?, CovidSafeAPIError?) -> Void) {
+        guard isBusy == false else {
+            completion(nil ,nil ,nil, .UnknownError)
+            return
+        }
+        
         guard let apiHost = PlistHelper.getvalueFromInfoPlist(withKey: "API_Host", plistName: "CovidSafe-config") else {
            return
        }
        
-        guard let headers = try? authenticatedHeaders() else {
-            completion(nil, nil, nil, .TokenExpiredError)
-            return
-        }
         let params = [
             "version" : apiVersion
         ]
+        
+        guard authenticatedHeaders.count > 0 else {
+            completion(nil, nil, nil, .TokenExpiredError)
+            return
+        }
+        
         CovidNetworking.shared.session.request("\(apiHost)/getTempId",
             method: .get,
             parameters: params,
-            headers: headers,
+            headers: authenticatedHeaders,
             interceptor: CovidRequestRetrier(retries: 3)).validate().responseDecodable(of: TempIdResponse.self) { (response) in
                 switch response.result {
                 case .success:

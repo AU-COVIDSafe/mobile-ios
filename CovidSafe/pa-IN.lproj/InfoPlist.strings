@@ -2,10 +2,10 @@
   CovidSafe
 
   Copyright © 2020 Australian Government. All rights reserved. */
-"BluetoothUsageDesc" = "COVIDSafe ਨਜ਼ਦੀਕੀ ਇਕੋ ਜਿਹੀ ਐਪ ਵਾਲੇ ਫੋਨਾਂ ਨਾਲ ਬਲੂਟੁੱਥ® ਸਿਗਨਲਾਂ ਦਾ ਵਟਾਂਦਰਾ ਕਰਦਾ ਹੈ। ਇਹਨਾਂ ਸਿਗਨਲਾਂ ਵਿੱਚ ਇੱਕ ਗੁੰਮਨਾਮ ਏਨਕ੍ਰਿਪਟਿਡ ਆਈ.ਡੀ. ਹੁੰਦੀ ਹੈ ਜੋ ਤੁਹਾਡੀ ਪ੍ਰਾਈਵੇਸੀ ਨੂੰ ਯਕੀਨੀ ਬਣਾਉਣ ਲਈ ਲਗਾਤਾਰ ਬਦਲਦੀ ਰਹਿੰਦੀ ਹੈ|";
-"NSBluetoothAlwaysUsageDescription" = "COVIDSafe ਨਜ਼ਦੀਕੀ ਇਕੋ ਜਿਹੀ ਐਪ ਵਾਲੇ ਫੋਨਾਂ ਨਾਲ Bluetooth ਸਿਗਨਲਾਂ ਦਾ ਵਟਾਂਦਰਾ ਕਰਦਾ ਹੈ। ਇਹਨਾਂ ਸਿਗਨਲਾਂ ਵਿੱਚ ਇੱਕ ਗੁੰਮਨਾਮ ਏਨਕ੍ਰਿਪਟਿਡ ਆਈ.ਡੀ. ਹੁੰਦੀ ਹੈ ਜੋ ਤੁਹਾਡੀ ਪ੍ਰਾਈਵੇਸੀ ਨੂੰ ਯਕੀਨੀ ਬਣਾਉਣ ਲਈ ਲਗਾਤਾਰ ਬਦਲਦੀ ਰਹਿੰਦੀ ਹੈ|";
-"NSBluetoothPeripheralUsageDescription" = "CovidSafe ਨਜ਼ਦੀਕੀ ਇਕੋ ਜਿਹੀ ਐਪ ਵਾਲੇ ਫੋਨਾਂ ਨਾਲ Bluetooth ਸਿਗਨਲਾਂ ਦਾ ਵਟਾਂਦਰਾ ਕਰਦਾ ਹੈ। ਇਹਨਾਂ ਸਿਗਨਲਾਂ ਵਿੱਚ ਇੱਕ ਗੁੰਮਨਾਮ ਏਨਕ੍ਰਿਪਟਿਡ ਆਈ.ਡੀ. ਹੁੰਦੀ ਹੈ ਜੋ ਤੁਹਾਡੀ ਪ੍ਰਾਈਵੇਸੀ ਨੂੰ ਯਕੀਨੀ ਬਣਾਉਣ ਲਈ ਲਗਾਤਾਰ ਬਦਲਦੀ ਰਹਿੰਦੀ ਹੈ|";
-"NSLocationAlwaysAndWhenInUseUsageDescription" = "";
-"NSLocationAlwaysUsageDescription" = "";
-"NSLocationWhenInUseUsageDescription" = "";
+"BluetoothUsageDesc" = "COVIDSafe ਇਕੋ ਜਿਹੀ ਐਪ ਵਾਲੇ ਨਜ਼ਦੀਕੀ ਫੋਨਾਂ ਨਾਲ Bluetooth ਸੰਕੇਤਾਂ ਦਾ ਵਟਾਂਦਰਾ ਕਰਦਾ ਹੈ। ਇਹਨਾਂ ਸੰਕੇਤਾਂ ਵਿੱਚ ਇੱਕ ਗੁੰਮਨਾਮ ਐਨਕ੍ਰਿਪਟਿਡ ਆਈ.ਡੀ. ਹੁੰਦੀ ਹੈ ਜੋ ਤੁਹਾਡੀ ਪ੍ਰਾਈਵੇਸੀ ਨੂੰ ਯਕੀਨੀ ਬਣਾਉਣ ਲਈ ਲਗਾਤਾਰ ਬਦਲਦੀ ਰਹਿੰਦੀ ਹੈ|";
+"NSBluetoothAlwaysUsageDescription" = "CovidSafe, ਇਕੋ ਜਿਹੀ ਐਪ ਵਾਲੇ ਨਜ਼ਦੀਕੀ ਫੋਨਾਂ ਨਾਲ Bluetooth ਸੰਕੇਤਾਂ ਦਾ ਵਟਾਂਦਰਾ ਕਰਦਾ ਹੈ। ਇਹਨਾਂ ਸੰਕੇਤਾਂ ਵਿੱਚ ਇੱਕ ਗੁੰਮਨਾਮ ਐਨਕ੍ਰਿਪਟਿਡ ਆਈ.ਡੀ. ਹੁੰਦੀ ਹੈ ਜੋ ਤੁਹਾਡੀ ਪ੍ਰਾਈਵੇਸੀ ਨੂੰ ਯਕੀਨੀ ਬਣਾਉਣ ਲਈ ਲਗਾਤਾਰ ਬਦਲਦੀ ਰਹਿੰਦੀ ਹੈ|";
+"NSBluetoothPeripheralUsageDescription" = "CovidSafe, ਇਕੋ ਜਿਹੀ ਐਪ ਵਾਲੇ ਨਜ਼ਦੀਕੀ ਫੋਨਾਂ ਨਾਲ Bluetooth ਸੰਕੇਤਾਂ ਦਾ ਵਟਾਂਦਰਾ ਕਰਦਾ ਹੈ। ਇਹਨਾਂ ਸੰਕੇਤਾਂ ਵਿੱਚ ਇੱਕ ਗੁੰਮਨਾਮ ਐਨਕ੍ਰਿਪਟਿਡ ਆਈ.ਡੀ. ਹੁੰਦੀ ਹੈ ਜੋ ਤੁਹਾਡੀ ਪ੍ਰਾਈਵੇਸੀ ਨੂੰ ਯਕੀਨੀ ਬਣਾਉਣ ਲਈ ਲਗਾਤਾਰ ਬਦਲਦੀ ਰਹਿੰਦੀ ਹੈ|";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "' ਹਮੇਸ਼ਾ ਆਗਿਆ ਦਿਓ ' ਦੀ ਚੋਣ ਕਰੋ।\n\nਨਜ਼ਦੀਕੀ ਸੰਪਰਕਾਂ ਦੀ ਪਹਿਚਾਣ ਕਰਦੇ ਸਮੇਂ, ਸਥਾਨਕ ਸੇਵਾਵਾਂ ਦੀ ਵਰਤੋਂ, Bluetooth ਦੀ ਕਾਰਗੁਜ਼ਾਰੀ ਵਿੱਚ ਸੁਧਾਰ ਕਰਦੀ ਹੈ।\n\nCOVIDSafe ਸਥਾਨਕ ਡੇਟਾ ਨੂੰ ਇਕੱਤਰ ਨਹੀਂ ਕਰਦਾ, ਨਾ ਹੀ ਸੰਭਾਲਦਾ ਜਾਂ ਇਸਦੀ ਵਰਤੋਂ ਕਰਦਾ ਹੈ।";
+"NSLocationAlwaysUsageDescription" = "' ਹਮੇਸ਼ਾ ਆਗਿਆ ਦਿਓ ' ਦੀ ਚੋਣ ਕਰੋ।\n\nਨਜ਼ਦੀਕੀ ਸੰਪਰਕਾਂ ਦੀ ਪਹਿਚਾਣ ਕਰਦੇ ਸਮੇਂ, ਸਥਾਨਕ ਸੇਵਾਵਾਂ ਦੀ ਵਰਤੋਂ, Bluetooth ਦੀ ਕਾਰਗੁਜ਼ਾਰੀ ਵਿੱਚ ਸੁਧਾਰ ਕਰਦੀ ਹੈ।\n\nCOVIDSafe ਸਥਾਨਕ ਡੇਟਾ ਨੂੰ ਇਕੱਤਰ ਨਹੀਂ ਕਰਦਾ, ਨਾ ਹੀ ਸੰਭਾਲਦਾ ਜਾਂ ਇਸਦੀ ਵਰਤੋਂ ਕਰਦਾ ਹੈ।";
+"NSLocationWhenInUseUsageDescription" = "' ਐਪ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਸਮੇਂ ' ਦੀ ਚੋਣ ਕਰੋ।\n\nਨਜ਼ਦੀਕੀ ਸੰਪਰਕਾਂ ਦੀ ਪਹਿਚਾਣ ਕਰਦੇ ਸਮੇਂ, ਸਥਾਨਕ ਸੇਵਾਵਾਂ ਦੀ ਵਰਤੋਂ, Bluetooth ਦੀ ਕਾਰਗੁਜ਼ਾਰੀ ਵਿੱਚ ਸੁਧਾਰ ਕਰਦੀ ਹੈ।\n\nCOVIDSafe ਸਥਾਨਕ ਡੇਟਾ ਨੂੰ ਇਕੱਤਰ ਨਹੀਂ ਕਰਦਾ, ਨਾ ਹੀ ਸੰਭਾਲਦਾ ਜਾਂ ਇਸਦੀ ਵਰਤੋਂ ਕਰਦਾ ਹੈ।";
 "UILaunchStoryboardName" = "LaunchScreen_pa-IN";

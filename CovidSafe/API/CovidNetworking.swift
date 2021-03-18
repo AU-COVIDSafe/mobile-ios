@@ -61,16 +61,20 @@ enum CovidSafeAPIError: Error {
 
 class CovidSafeAuthenticatedAPI {
     
-    static func authenticatedHeaders() throws -> HTTPHeaders? {
-        let keychain = KeychainSwift()
-        
-        guard let token = keychain.get("JWT_TOKEN") else {
-            throw CovidSafeAPIError.TokenExpiredError
+    static var isBusy = false
+    
+    static var authenticatedHeaders: HTTPHeaders {
+        get {
+            let keychain = KeychainSwift()
+            
+            guard let token = keychain.get("JWT_TOKEN") else {
+                return []
+            }
+            let headers: HTTPHeaders = [
+                "Authorization": "Bearer \(token)"
+            ]
+            return headers
         }
-        let headers: HTTPHeaders = [
-            "Authorization": "Bearer \(token)"
-        ]
-        return headers
     }
     
     static func processUnauthorizedError(_ data: Data) -> CovidSafeAPIError {

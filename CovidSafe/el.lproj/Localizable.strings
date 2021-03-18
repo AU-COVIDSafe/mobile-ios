@@ -32,7 +32,7 @@
 "change_language_content" = "Διαβάστε τον οδηγό για τη χρήση του COVIDSafe σε άλλη γλώσσα.";
 "change_postcode_description" = "Ενημερώστε εάν ο ταχυδρομικός σας κώδικας έχει αλλάξει από τότε που κατεβάσατε την COVIDSafe.";
 "change_postcode_heading" = "Αλλαγή του ταχυδρομικού κώδικα";
-"change_postcode_intro" = "";
+"change_postcode_intro" = "Έχετε μετακομίσει σε διαφορετική περιοχή ταχυδρομικού κώδικα από την εγγραφή σας για να χρησιμοποιήσετε το COVIDSafe; \n\n Η ενημέρωση του ταχυδρομικού σας κώδικα μπορεί να βοηθήσει τους υπαλλήλους υγείας να πραγματοποιήσουν εντοπισμό επαφών. \n\n Για περισσότερες λεπτομέρειες σχετικά με τον τρόπο αποθήκευσης και κοινοποίησης των πληροφοριών σας, διαβάστε την * Πολιτική απορρήτου COVIDSafe * και *.";
 "collection_message" = "Η COVIDSafe συλλέγει τώρα διαγνωστικές πληροφορίες για να σας βοηθήσει να αντιμετωπίσετε προβλήματα με την εφαρμογή σας. *Μάθετε περισσότερα*";
 "consent_button" = "Συμφωνώ";
 /* Shared Consent Actions */
@@ -293,7 +293,7 @@
 "hide" = "Απόκρυψη";
 "home_app_permission_status_subtitle" = "Η COVIDSafe δε θα λειτουργήσει χωρίς τις σωστές ρυθμίσεις.";
 "home_app_permission_status_title" = "Ελέγξτε τις ρυθμίσεις σας";
-"home_bottom_nav" = "";
+"home_bottom_nav" = "Αρχική σελίδα";
 "home_data_uploaded_message" = "Βοηθήστε να σταματήσει η εξάπλωση του COVID-19 και παρακολουθείτε τα συμπτώματά σας.";
 "home_header_active_no_action_required" = "Δεν απαιτούνται περαιτέρω ενέργειες.";
 /* Home */
@@ -366,7 +366,7 @@
 "locally_acquired" = "%@ αποκτηθέν τοπικά";
 "location_off" = "Τοποθεσία: ΑΠΕΝΕΡΓΟΠΟΙΗΜΕΝΗ";
 "location_off_description" = "Το iPhone σας απαιτεί άδεια τοποθεσίας για να λειτουργήσει την COVIDSafe. Η COVIDSafe ΔΕΝ παρακολουθεί ούτε αποθηκεύει τα δεδομένα τοποθεσίας σας.";
-"main_restrictions" = "";
+"main_restrictions" = "Κύριοι περιορισμοί";
 /* Splash Screen */
 "migration_in_progress" = "Η ενημέρωση της COVIDSafe συνεχίζεται. \n\nΒεβαιωθείτε ότι το τηλέφωνό σας δεν είναι απενεργοποιημένο έως ότου ολοκληρωθεί η ενημέρωση.";
 "minute" = "Λεπτό";
@@ -434,8 +434,8 @@
 "PN_ReminderBody" = "Ανοίξτε την COVIDSafe για να βεβαιωθείτε ότι λειτουργεί.";
 /* Figma page iOS Screens (05/06) */
 "PN_ReminderTitle" = "Δεν εντοπίστηκαν συναντήσεις για 48 ώρες";
-"postcode_api_error" = "";
-"postcode_change_label" = "";
+"postcode_api_error" = "Παρουσιάστηκε σφάλμα. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο και δοκιμάστε ξανά.";
+"postcode_change_label" = "Ο ταχυδρομικός σας κώδικας στην Αυστραλία";
 "postcode_success" = "Ο ταχυδρομικός σας κώδικας έχει ενημερωθεί";
 "PostcodeValidationErrorMessage" = "Εισάγετε έναν έγκυρο ταχυδρομικό κώδικα της Αυστραλίας.";
 "queensland" = "Κουίνσλαντ";
@@ -446,27 +446,27 @@
 /* Onboarding Registration Consent */
 "registration_consent_headline" = "Συναίνεση εγγραφής";
 "registration_consent_second_paragraph" = "Πληροφορίες σχετικά με την επαφή μου με άλλους χρήστες της COVIDSafe, εάν άλλος χρήστης με τον οποίο έχω έρθει σε επαφή διαγνωστεί θετικά για το COVID-19 και ανεβάζει τα δικά του στοιχεία επικοινωνίας.";
-"restrictions_accommodation" = "";
-"restrictions_activity" = "";
-"restrictions_cafes" = "";
-"restrictions_disclaimer" = "";
-"restrictions_domestic_travel" = "";
-"restrictions_education" = "";
-"restrictions_entertainment" = "";
-"restrictions_error_dismiss" = "";
-"restrictions_error_heading" = "";
-"restrictions_error_message" = "";
-"restrictions_error_try" = "";
-"restrictions_gatherings_work" = "";
-"restrictions_hair_beauty" = "";
-"restrictions_heading" = "";
-"restrictions_hotspots" = "";
-"restrictions_retail" = "";
-"restrictions_select_activity" = "";
-"restrictions_select_state" = "";
-"restrictions_sports" = "";
-"restrictions_state" = "";
-"restrictions_wedding" = "";
+"restrictions_accommodation" = "Καταλύματα";
+"restrictions_activity" = "Δραστηριότητα";
+"restrictions_cafes" = "Καφετέριες και Εστιατόρια";
+"restrictions_disclaimer" = "Η επιλογή σας θα χρησιμοποιηθεί μόνο για την εμφάνιση περιορισμών στην περιοχή σας. Η COVIDSafe δεν αποθηκεύει ούτε χρησιμοποιεί δεδομένα τοποθεσίας.";
+"restrictions_domestic_travel" = "Ταξίδια εσωτερικού";
+"restrictions_education" = "Εκπαίδευση και Παιδική Μέριμνα";
+"restrictions_entertainment" = "Χώροι Διασκέδασης";
+"restrictions_error_dismiss" = "Απόρριψη";
+"restrictions_error_heading" = "Οι περιορισμοί δεν είναι διαθέσιμοι";
+"restrictions_error_message" = "Ελέγξτε τη σύνδεσή σας στο διαδίκτυο ή δοκιμάστε ξανά αργότερα.";
+"restrictions_error_try" = "Προσπαθήστε ξανά";
+"restrictions_gatherings_work" = "Συγκεντρώσεις και Εργασία";
+"restrictions_hair_beauty" = "Υπηρεσίες Κομμωτικής και Αισθητικής";
+"restrictions_heading" = "Περιορισμοί";
+"restrictions_hotspots" = "Ενεργά σημεία και Τοποθεσίες Κρουσμάτων";
+"restrictions_retail" = "Λιανικό εμπόριο και πωλήσεις";
+"restrictions_select_activity" = "Επιλέξτε δραστηριότητα";
+"restrictions_select_state" = "Επιλέξτε Πολιτεία ή Επικράτεια";
+"restrictions_sports" = "Αθλητισμός και Αναψυχή";
+"restrictions_state" = "Πολιτεία ή επικράτεια";
+"restrictions_wedding" = "Γάμος, Κηδεία και Θρησκεία";
 "save" = "Αποθήκευση";
 "scheduled" = "Προγραμματίσατε την COVIDSafe για αναβολή από %@ έως %@ .";
 /* OnBoarding Enter Number */
@@ -486,17 +486,21 @@
 "snooze_calendar_toggle" = "";
 "snooze_covidsafe_button" = "Αναβολή της COVIDSafe";
 "snooze_covidsafe_button_description" = "Αναβολή της COVIDSafe για συγκεκριμένο χρονικό διάστημα.";
+"snooze_end_now" = "Τέλος αναβολής τώρα";
 "snooze_ended" = "Η αναβολή τελείωσε.";
 "snooze_ends" = "Η αναβολή τελειώνει σε";
 "snooze_from" = "Αναβολή από";
 "snooze_heading" = "Αναβολή της COVIDSafe";
+"snooze_interference_popup1" = "Η επόμενη προγραμματισμένη αναβολή ξεκινά από %@";
+"snooze_interference_popup2" = "Ορίστε αναβολή που λήγει πριν από αυτήν την ώρα.";
 "snooze_on" = "Αναβολή σε % @";
+"snooze_running" = "Τέλος αναβολής τώρα για να ορίσετε ένα νέο χρονόμετρο.";
 "snooze_timer_description" = "Ρυθμίστε το χρονόμετρο για να αναβάλετε την COVIDSafe.";
 "snooze_to" = "Αναβολή έως";
 "snoozed_calendar_description" = "Η COVIDSafe δεν χρησιμοποιεί Bluetooth και δεν καταγράφει επαφές.\n\nΠρογραμματίστε την COVIDSafe για αναβολή από %@ σε %@.";
 "south_australia" = "Νότια Αυστραλία";
 "state_number_heading" = "%@ αριθμοί";
-"states_territories" = "";
+"states_territories" = "Πολιτείες και Επικράτειες";
 "stepCounter" = "Βήμα %d του %d";
 "support" = "Υποστήριξη";
 "support_content" = "Για βοήθεια σε θέματα που δεν καλύπτονται από θέματα Βοήθειας";
@@ -524,7 +528,7 @@
 "update_available_dismiss_btn" = "Θύμισέ μου αργότερα";
 "update_available_message_ios" = "Πραγματοποιήσαμε βελτιώσεις στην COVIDSafe. Ενημερώστε την εφαρμογή μέσῳ του App Store.";
 "update_available_title" = "Η ενημερωμένη έκδοση είναι διαθέσιμη!";
-"update_description" = "";
+"update_description" = "Σε αυτήν την ενημερωμένη έκδοση, η COVIDSafe θα ζητήσει πρόσβαση στις Υπηρεσίες τοποθεσίας.\n\nΑυτό βελτιώνει την απόδοση του Bluetooth κατά τον εντοπισμό στενών επαφών.\n\n<ένα href=\"https://www.covidsafe.gov.au/help-topics.html#location-permissions\">Η COVIDSafe δεν συλλέγει, αποθηκεύει ή χρησιμοποιεί δεδομένα τοποθεσίας.</a> \n\nΔιαβάστε την <a href=\"https://covidsafe.gov.au/privacy-policy.html\"> πολιτική απορρήτου</a> για να μάθετε περισσότερα σχετικά με τον τρόπο χειρισμού των προσωπικών σας πληροφοριών.\n\n<ένα href=\"https://www.covidsafe.gov.au/help-topics.html#herald\">Βρείτε περισσότερα για το πώς βελτιώσαμε την COVIDSafe.</a>";
 "update_heading" = "Ενεργοποιήστε τις Υπηρεσίες Τοποθεσίας";
 "update_modal_button" = "Προχωρήστε";
 "upload_answer_no" = "Όχι";

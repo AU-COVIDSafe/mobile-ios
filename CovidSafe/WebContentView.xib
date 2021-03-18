@@ -17,7 +17,7 @@
             <subviews>
                 <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n9g-0C-xdp">
                     <rect key="frame" x="16" y="60" width="382" height="786"/>
-                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </webView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

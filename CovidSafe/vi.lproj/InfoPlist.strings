@@ -5,7 +5,7 @@
 "BluetoothUsageDesc" = "COVIDSafe trao đổi tín hiệu Bluetooth® với các điện thoại chạy cùng ứng dụng xung quanh. Các tín hiệu này chứa mã ID ẩn danh, được mã hóa và thay đổi liên tục để đảm bảo quyền riêng tư của bạn.";
 "NSBluetoothAlwaysUsageDescription" = "COVIDSafe trao đổi tín hiệu Bluetooth® với các điện thoại chạy cùng ứng dụng xung quanh. Các tín hiệu này chứa ID ẩn danh, được mã hóa và thay đổi liên tục để đảm bảo quyền riêng tư của bạn.";
 "NSBluetoothPeripheralUsageDescription" = "COVIDSafe trao đổi tín hiệu Bluetooth® với các điện thoại chạy cùng ứng dụng xung quanh. Các tín hiệu này chứa ID ẩn danh, được mã hóa và thay đổi liên tục để đảm bảo quyền riêng tư của bạn.";
-"NSLocationAlwaysAndWhenInUseUsageDescription" = "";
-"NSLocationAlwaysUsageDescription" = "";
-"NSLocationWhenInUseUsageDescription" = "";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Chọn 'Luôn cho phép'. \n\n Sử dụng Dịch vụ Vị trí cải thiện hiệu suất Bluetooth khi xác định các tiếp xúc gần. \n\n COVIDSafe không thu thập, lưu trữ hoặc sử dụng dữ liệu vị trí.";
+"NSLocationAlwaysUsageDescription" = "Chọn 'Luôn cho phép'. \n\n Sử dụng Dịch vụ Vị trí cải thiện hiệu suất Bluetooth khi xác định các tiếp xúc gần. \n\n COVIDSafe không thu thập, lưu trữ hoặc sử dụng dữ liệu vị trí";
+"NSLocationWhenInUseUsageDescription" = "Chọn 'Trong khi Sử dụng Ứng dụng'. \n\n Sử dụng Dịch vụ Vị trí cải thiện hiệu suất Bluetooth khi xác định các tiếp xúc gần. \n\n COVIDSafe không thu thập, lưu trữ hoặc sử dụng dữ liệu vị trí.";
 "UILaunchStoryboardName" = "LaunchScreen_vi";

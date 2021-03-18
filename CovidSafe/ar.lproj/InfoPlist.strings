@@ -5,7 +5,7 @@
 "BluetoothUsageDesc" = "يتبادل COVIDSafe إشارات Bluetooth® مع الهواتف المجاورة التي تشغِّل نفس التطبيق. تحتوي هذه الإشارات على معرِّف مجهول الهوية، يتم تشفيره وتغييره باستمرار لضمان الحفاظ على خصوصيتك.";
 "NSBluetoothAlwaysUsageDescription" = "يتبادل COVIDSafe إشارات Bluetooth® مع الهواتف المجاورة التي تشغِّل نفس التطبيق. تحتوي هذه الإشارات على معرِّف مجهول الهوية، يتم تشفيره وتغييره باستمرار لضمان الحفاظ على خصوصيتك.";
 "NSBluetoothPeripheralUsageDescription" = "يتبادل COVIDSafe إشارات Bluetooth® مع الهواتف المجاورة التي تشغِّل نفس التطبيق. تحتوي هذه الإشارات على معرِّف مجهول الهوية، يتم تشفيره وتغييره باستمرار لضمان الحفاظ على خصوصيتك.";
-"NSLocationAlwaysAndWhenInUseUsageDescription" = "";
-"NSLocationAlwaysUsageDescription" = "";
-"NSLocationWhenInUseUsageDescription" = "";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "اختر \"اسمح دائمًا\". \n\n إن تشغيل الموقع الجغرافي يحسن أداء Bluetooth عند تحديد الأشخاص الذين خالطتهم عن قرب. \n\n لا يقوم تطبيق COVIDSafe بجمع بيانات الموقع الجغرافي أو تخزينها أو استخدمها.";
+"NSLocationAlwaysUsageDescription" = "اختر \"اسمح دائمًا\". \n\n إن تشغيل الموقع الجغرافي يحسن أداء Bluetooth عند تحديد الأشخاص الذين خالطتهم عن قرب. \n\n لا يقوم تطبيق COVIDSafe بجمع بيانات الموقع الجغرافي أو تخزينها أو استخدمها.";
+"NSLocationWhenInUseUsageDescription" = "اختر \"عند استخدام التطبيق\".\nإن تشغيل الموقع الجغرافي يحسن أداء Bluetooth عند تحديد الأشخاص الذين خالطتهم عن قرب.\n لا يقوم تطبيق COVIDSafe بجمع بيانات الموقع الجغرافي أو تخزينها أو استخدامها.";
 "UILaunchStoryboardName" = "LaunchScreen_ar";

@@ -22,17 +22,13 @@ class RestrictionsAPI: CovidSafeAuthenticatedAPI {
             return
         }
         
-        guard let headers = try? authenticatedHeaders() else {
-            completion(nil, .TokenExpiredError)
-            return
-        }
-        
         let params = ["state": "\(forState.rawValue.lowercased())"]
         
         CovidNetworking.shared.session.request("\(apiHost)/restrictions",
             method: .get,
             parameters: params,
-            headers: headers
+            headers: authenticatedHeaders,
+            interceptor: CovidRequestRetrier(retries: 3)
         ).validate().responseDecodable(of: StateRestriction.self) { (response) in
             switch response.result {
             case .success:

@@ -17,7 +17,11 @@ class InitiateUploadAPI {
         let headers: HTTPHeaders = [
             "Authorization": "Bearer \(session)"
         ]
-        CovidNetworking.shared.session.request("\(apiHost)/requestUploadOtp", method: .get, headers: headers).validate().responseString { (response) in
+        CovidNetworking.shared.session.request("\(apiHost)/requestUploadOtp",
+           method: .get,
+           headers: headers,
+           interceptor: CovidRequestRetrier(retries: 3)
+        ).validate().responseString { (response) in
             switch response.result {
             case .success:
                 if response.value != nil {

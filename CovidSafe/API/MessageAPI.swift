@@ -55,6 +55,10 @@ class MessageAPI: CovidSafeAuthenticatedAPI {
     }
     
     private static func shouldGetMessages() -> Bool {
+        guard isBusy == false else {
+            return false
+        }
+        
         let lastChecked = UserDefaults.standard.double(forKey: keyLastApiUpdate)
         let versionChecked = UserDefaults.standard.integer(forKey: keyLastVersionChecked)
         
@@ -87,11 +91,6 @@ class MessageAPI: CovidSafeAuthenticatedAPI {
             return
         }
         
-        guard let headers = try? authenticatedHeaders() else {
-            completion(nil, .TokenExpiredError)
-            return
-        }
-        
         let preferredLanguages = Locale.preferredLanguages.count > 5 ? Locale.preferredLanguages[0...5].joined(separator: ",") : Locale.preferredLanguages.joined(separator: ",")
         
         var params: [String : Any] = [
@@ -107,10 +106,14 @@ class MessageAPI: CovidSafeAuthenticatedAPI {
         if let remoteToken = msgRequest.remotePushToken {
             params["token"] = remoteToken
         }
+        
+        isBusy = true
+        
         CovidNetworking.shared.session.request("\(apiHost)/messages",
             method: .get,
             parameters: params,
-            headers: headers
+            headers: authenticatedHeaders,
+            interceptor: CovidRequestRetrier(retries: 3)
         ).validate().responseDecodable(of: MessageResponse.self) { (response) in
             switch response.result {
             case .success:
@@ -127,6 +130,7 @@ class MessageAPI: CovidSafeAuthenticatedAPI {
                 }
                 UserDefaults.standard.set(Bundle.main.version, forKey: keyLastVersionChecked)
                 
+                isBusy = false
                 completion(messageResponse, nil)
             case .failure(_):
                 guard let statusCode = response.response?.statusCode else {
@@ -147,6 +151,8 @@ class MessageAPI: CovidSafeAuthenticatedAPI {
                     completion(nil, .RequestError)
                     return
                 }
+                
+                isBusy = false
                 completion(nil, .ServerError)
             }
         }
