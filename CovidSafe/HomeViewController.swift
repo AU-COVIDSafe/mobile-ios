@@ -586,6 +586,15 @@ class HomeViewController: UIViewController, HomeDelegate {
         present(navigationController, animated: true, completion: nil)
     }
     
+    @IBAction func privacyPolicyTapped(_ sender: Any) {
+        guard let url = URL(string: URLHelper.getPrivacyPolicyURL()) else {
+            return
+        }
+        
+        let safariVC = SFSafariViewController(url: url)
+        present(safariVC, animated: true, completion: nil)
+    }
+    
     @objc
     func appWillResignActive(_ notification: Notification) {
         self.lottieBluetoothView?.stop()

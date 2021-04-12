@@ -438,6 +438,8 @@
 "postcode_change_label" = "Avustralya'daki mevcut posta kodu ";
 "postcode_success" = "Posta kodunuz güncellendi";
 "PostcodeValidationErrorMessage" = "Lütfen geçerli bir Avustralya posta kodu giriniz.";
+"privacy_policy" = "";
+"privacy_policy_description" = "";
 "queensland" = "Queensland";
 "recovered" = "Toplam iyileşen vakalar";
 "registration_consent_content" = "Avustralya Hükümeti Sağlık Bakanının yasal olarak belirlediğine uygun olarak aşağıdaki bilgileri toplayan Dijital Dönüşüm Ajansı'nı veri deposu yöneticisi olarak onaylıyorum:";

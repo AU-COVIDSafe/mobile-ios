@@ -438,6 +438,8 @@
 "postcode_change_label" = "Codice postale attuale in Australia";
 "postcode_success" = "Il tuo codice postale è stato aggiornato";
 "PostcodeValidationErrorMessage" = "Inserisci un codice postale australiano valido.";
+"privacy_policy" = "";
+"privacy_policy_description" = "";
 "queensland" = "Queensland";
 "recovered" = "Totale guarigioni";
 "registration_consent_content" = "Acconsento alla raccolta di dati da parte della Digital Transformation Agency nel ruolo di amministratore dell'archivio dati, in base alle disposizioni legali stabilite dal segretario del Dipartimento della sanità del governo australiano per:";

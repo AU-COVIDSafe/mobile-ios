@@ -438,6 +438,8 @@
 "postcode_change_label" = "호주 내 현재 거주 지역 우편번호";
 "postcode_success" = "우편번호가 업데이트 되었습니다.";
 "PostcodeValidationErrorMessage" = "유효한 호주 우편번호를 입력하세요.";
+"privacy_policy" = "";
+"privacy_policy_description" = "";
 "queensland" = "퀸즐랜드";
 "recovered" = "회복된 총 확진자 수";
 "registration_consent_content" = "본인은 호주 정부 보건부 장관의 법적 결정에 따라, 데이터 저장소 관리자로서 Digital Transformation Agency가 다음 정보를 수집하는 것에 동의합니다.";

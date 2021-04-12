@@ -438,6 +438,8 @@
 "postcode_change_label" = "Current postcode in Australia ";
 "postcode_success" = "Your postcode has been updated";
 "PostcodeValidationErrorMessage" = "Please enter a valid Australian postcode.";
+"privacy_policy" = "Privacy policy";
+"privacy_policy_description" = "Read the privacy policy for COVIDSafe app";
 "queensland" = "Queensland";
 "recovered" = "Total cases recovered";
 "registration_consent_content" = "I consent to the Digital Transformation Agency, as data store administrator, under legal determination made by the Secretary of the Australian Government Department of Health collecting:";

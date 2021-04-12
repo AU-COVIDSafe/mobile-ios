@@ -438,6 +438,8 @@
 "postcode_change_label" = "當前在澳大利亞的郵編";
 "postcode_success" = "你的郵編已經更新";
 "PostcodeValidationErrorMessage" = "請輸入有效的澳洲郵遞區號。";
+"privacy_policy" = "";
+"privacy_policy_description" = "";
 "queensland" = "昆士蘭州";
 "recovered" = "康復者總數";
 "registration_consent_content" = "我同意數字化轉型局作為數據儲存管理者，根據澳大利亞政府衛生部常務副部長的合法決定，收集以下信息：";

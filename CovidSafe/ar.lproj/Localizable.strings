@@ -438,6 +438,8 @@
 "postcode_change_label" = "الرمز البريدي الحالي في أستراليا";
 "postcode_success" = "تم تحديث الرمز البريدي الخاص بك";
 "PostcodeValidationErrorMessage" = "يُرجى إدخال رمز بريدي أسترالي صالح.";
+"privacy_policy" = "";
+"privacy_policy_description" = "";
 "queensland" = "ولاية كوينزلاند";
 "recovered" = "مجموع الحالات التي تعافت";
 "registration_consent_content" = "أوافق على أن تقوم وكالة التحول الرقمي، كونها مسؤولة عن تخزين البيانات، بموجب قرار قانوني صادر عن أمين عام وزارة الصحة في الحكومة الأسترالية بجمع:";
