@@ -438,6 +438,8 @@
 "postcode_change_label" = "当前的澳大利亚邮政编码";
 "postcode_success" = "您的邮政编码已更新";
 "PostcodeValidationErrorMessage" = "请输入有效的澳大利亚邮政编码。";
+"privacy_policy" = "";
+"privacy_policy_description" = "";
 "queensland" = "昆士兰州";
 "recovered" = "康复患者总数";
 "registration_consent_content" = "我同意数字转换局作为数据存储管理方可以根据澳大利亚政府卫生部常务副部长依法作出的决议，收集以下信息：";

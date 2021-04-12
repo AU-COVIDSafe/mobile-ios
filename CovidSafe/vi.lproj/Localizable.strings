@@ -438,6 +438,8 @@
 "postcode_change_label" = "Mã bưu điện hiện tại ở Úc";
 "postcode_success" = "Mã bưu điện của bạn đã được cập nhật";
 "PostcodeValidationErrorMessage" = "Vui lòng nhập mã bưu điện Úc hợp lệ.";
+"privacy_policy" = "";
+"privacy_policy_description" = "";
 "queensland" = "Queensland";
 "recovered" = "Tổng số ca phục hồi";
 "registration_consent_content" = "Tôi đồng ý cho Cơ quan Chuyển đổi Kỹ thuật số với tư cách là nhà quản trị kho dữ liệu, theo quyết định pháp lý của Bộ trưởng Bộ Y tế Chính phủ Úc thu thập:";
