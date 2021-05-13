@@ -1,3 +1,4 @@
+"[test]decommission_message" = "";
 "action_continue" = "ਜਾਰੀ ਰੱਖੋ";
 "action_report_an_issue" = "ਮੁੱਦੇ/ਮਸਲੇ ਬਾਰੇ ਰਿਪੋਰਟ ਕਰੋ|";
 "action_upload_done" = "ਕਰ ਦਿੱਤਾ";
@@ -286,6 +287,8 @@
 "factors_intro_2" = "ਹੱਥ ਮਿਲਾਉਣੇ, ਵਾਤਾਵਰਣਕ ਕਾਰਕਾਂ ਦੁਆਰਾ ਵੀ ਪ੍ਰਭਾਵਤ ਹੋ ਸਕਦੇ ਹਨ, ਜਿੰਨ੍ਹਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹਨ :";
 /* Example: "From 22 to 28 January 2021" */
 "from" = "ਵੱਲੋਂ";
+/* Error message for when a user tries to signup outside of Australia. */
+"geoblock_error_message" = "";
 "global_back" = "ਪਿੱਛੇ";
 "global_close" = "ਬੰਦ ਕਰੋ";
 "global_double_tap" = "ਸੋਧਣ ਲਈ ਡਬਲ ਟੈਪ ਕਰੋ";
@@ -367,6 +370,9 @@
 "location_off" = "ਲੋਕੇਸ਼ਨ: ਔਫ";
 "location_off_description" = "COVIDSafe ਕੰਮ ਕਰ ਸਕੇ, ਇਸ ਦੇ ਲਈ ਤੁਹਾਡੇ iPhone ਨੂੰ ਲੋਕੇਸ਼ਨ ਆਗਿਆ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ। *COVIDSafe ਤੁਹਾਡੇ ਸਥਾਨਕ ਅੰਕੜਿਆਂ ਨੂੰ ਨਹੀਂ ਢੂੰਡਦਾ ਜਾਂ ਸੰਭਾਲਦਾ।*";
 "main_restrictions" = "ਮੁੱਖ ਪਾਬੰਦੀਆਂ";
+"max_registration_button2" = "";
+"max_registrations" = "";
+"max_registrations_button1" = "";
 /* Splash Screen */
 "migration_in_progress" = "COVIDSafe ਅੱਪਡੇਟ ਚੱਲ ਰਿਹਾ ਹੈ। \n\nਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਹਾਡਾ ਫ਼ੋਨ ਤਦ ਤੱਕ ਬੰਦ ਨਹੀਂ ਹੋਣਾ ਚਾਹੀਦਾ ਜਦ ਤੱਕ ਅੱਪਡੇਟ ਪੂਰਾ ਨਹੀਂ ਹੋ ਜਾਂਦਾ।";
 "minute" = "ਮਿੰਟ";

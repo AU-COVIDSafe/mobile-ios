@@ -1,3 +1,4 @@
+"[test]decommission_message" = "";
 "action_continue" = "계속";
 "action_report_an_issue" = "문제 신고하기";
 "action_upload_done" = "완료";
@@ -286,6 +287,8 @@
 "factors_intro_2" = "다음과 같은 환경 요인 역시 블루투스 악수에 영향을 미칠 수 있습니다.";
 /* Example: "From 22 to 28 January 2021" */
 "from" = "부터";
+/* Error message for when a user tries to signup outside of Australia. */
+"geoblock_error_message" = "";
 "global_back" = "뒤로";
 "global_close" = "닫기";
 "global_double_tap" = "두 번 탭해서 수정하세요";
@@ -367,6 +370,9 @@
 "location_off" = "위치 서비스: 꺼짐";
 "location_off_description" = "COVIDSafe가 제대로 실행되기 위해서는 여러분의 아이폰에서 위치 서비스 기능을 허용해야 합니다. COVIDSafe는 여러분의 위치 정보를 추적하거나 저장하지 않습니다.";
 "main_restrictions" = "주요 규제 조치";
+"max_registration_button2" = "";
+"max_registrations" = "";
+"max_registrations_button1" = "";
 /* Splash Screen */
 "migration_in_progress" = "COVIDSafe 업데이트 진행 중. \n\n업데이트가 완료될 때까지 휴대폰이 꺼지지 않도록 해주세요.";
 "minute" = "분";

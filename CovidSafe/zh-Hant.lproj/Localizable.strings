@@ -1,3 +1,4 @@
+"[test]decommission_message" = "";
 "action_continue" = "繼續";
 "action_report_an_issue" = "報告問題";
 "action_upload_done" = "完成";
@@ -286,6 +287,8 @@
 "factors_intro_2" = "藍牙握手也可以受到環境因素影響，包括:";
 /* Example: "From 22 to 28 January 2021" */
 "from" = "";
+/* Error message for when a user tries to signup outside of Australia. */
+"geoblock_error_message" = "";
 "global_back" = "返回";
 "global_close" = "關閉";
 "global_double_tap" = "點觸兩次來編輯";
@@ -367,6 +370,9 @@
 "location_off" = "位置：關閉";
 "location_off_description" = "你的iPhone要求COVIDSafe獲得位置許可權才能正常運作。COVIDSafe不會跟蹤或者存儲你的位置資料。";
 "main_restrictions" = "主要限制措施";
+"max_registration_button2" = "";
+"max_registrations" = "";
+"max_registrations_button1" = "";
 /* Splash Screen */
 "migration_in_progress" = "正在更新 COVIDSafe。\n\n請保持開機狀態直至更新完成為止。";
 "minute" = "分鐘 ";

@@ -26,7 +26,7 @@ class GetTempIdAPI: CovidSafeAuthenticatedAPI {
             "version" : apiVersion
         ]
         
-        guard authenticatedHeaders.count > 0 else {
+        guard let authHeaders = try? authenticatedHeaders(), authHeaders.count > 0 else {
             completion(nil, nil, nil, .TokenExpiredError)
             return
         }
@@ -34,7 +34,7 @@ class GetTempIdAPI: CovidSafeAuthenticatedAPI {
         CovidNetworking.shared.session.request("\(apiHost)/getTempId",
             method: .get,
             parameters: params,
-            headers: authenticatedHeaders,
+            headers: authHeaders,
             interceptor: CovidRequestRetrier(retries: 3)).validate().responseDecodable(of: TempIdResponse.self) { (response) in
                 switch response.result {
                 case .success:

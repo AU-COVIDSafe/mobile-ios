@@ -15,7 +15,7 @@ class InitialScreenViewController: UIViewController, EncounterDBMigrationProgres
     var migrationStart: Date?
     var isKeychainAvailable = false
     var isDisplayTimeElapsed = false
-    let keychain = KeychainSwift()
+    let keychain = KeychainSwift.shared
     var giveupTimer: Timer?
     var initialDelayTimer: Timer?
     var migrationViewController: UIViewController?

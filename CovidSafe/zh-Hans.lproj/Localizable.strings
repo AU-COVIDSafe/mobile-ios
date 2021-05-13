@@ -1,3 +1,4 @@
+"[test]decommission_message" = "";
 "action_continue" = "继续";
 "action_report_an_issue" = "报告问题";
 "action_upload_done" = "完成";
@@ -286,6 +287,8 @@
 "factors_intro_2" = "蓝牙握手也会受到环境因素的影响，这些因素包括：";
 /* Example: "From 22 to 28 January 2021" */
 "from" = "";
+/* Error message for when a user tries to signup outside of Australia. */
+"geoblock_error_message" = "";
 "global_back" = "返回";
 "global_close" = "关闭";
 "global_double_tap" = "双击进行编辑";
@@ -367,6 +370,9 @@
 "location_off" = "位置：关闭";
 "location_off_description" = "您的 iPhone 要求COVIDSafe 获得位置权限才能运行。COVIDSafe 不会跟踪或存储您的位置数据。";
 "main_restrictions" = "主要限制措施";
+"max_registration_button2" = "";
+"max_registrations" = "";
+"max_registrations_button1" = "";
 /* Splash Screen */
 "migration_in_progress" = "COVIDSafe正在更新。 \n\n请保持开机状态直至更新完成。";
 "minute" = "分钟";

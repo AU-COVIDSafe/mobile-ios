@@ -62,4 +62,8 @@ struct URLHelper {
         return "\(getHelpURL())#location-permissions"
     }
     
+    static func getDataDeletionURL() -> String {
+        return "https://covidsafe-form.service.gov.au"
+    }
+    
 }

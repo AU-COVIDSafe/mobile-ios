@@ -56,6 +56,8 @@ enum CovidSafeAPIError: Error {
     case ResponseError
     case ServerError
     case TokenExpiredError
+    case TokenAlreadyRefreshedError
+    case MaxRegistrationError
     case UnknownError
 }
 
@@ -63,18 +65,16 @@ class CovidSafeAuthenticatedAPI {
     
     static var isBusy = false
     
-    static var authenticatedHeaders: HTTPHeaders {
-        get {
-            let keychain = KeychainSwift()
-            
-            guard let token = keychain.get("JWT_TOKEN") else {
-                return []
-            }
-            let headers: HTTPHeaders = [
-                "Authorization": "Bearer \(token)"
-            ]
-            return headers
+    static func authenticatedHeaders() throws -> HTTPHeaders {
+        let keychain = KeychainSwift.shared
+        
+        guard let token = keychain.get("JWT_TOKEN") else {
+            throw CovidSafeAPIError.RequestError
         }
+        let headers: HTTPHeaders = [
+            "Authorization": "Bearer \(token)"
+        ]
+        return headers
     }
     
     static func processUnauthorizedError(_ data: Data) -> CovidSafeAPIError {

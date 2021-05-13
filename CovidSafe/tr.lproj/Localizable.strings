@@ -1,3 +1,4 @@
+"[test]decommission_message" = "";
 "action_continue" = "Devam";
 "action_report_an_issue" = "Sorun bildir";
 "action_upload_done" = "Bitti";
@@ -286,6 +287,8 @@
 "factors_intro_2" = "El sıkışmalar çevresel faktörlerden de etkilenebilir, örneğin:";
 /* Example: "From 22 to 28 January 2021" */
 "from" = "";
+/* Error message for when a user tries to signup outside of Australia. */
+"geoblock_error_message" = "";
 "global_back" = "Geri";
 "global_close" = "Kapat";
 "global_double_tap" = "düzeltme yapmak için iki defa tıklayınız";
@@ -367,6 +370,9 @@
 "location_off" = "Konum: KAPALI";
 "location_off_description" = "iPhone’unuz, COVIDSafe’in çalışması için Konum iznine ihtiyaç duyar. COVIDSafe konum verilerinizi İZLEMEZ veya SAKLAMAZ.";
 "main_restrictions" = "Ana kısıtlamalar";
+"max_registration_button2" = "";
+"max_registrations" = "";
+"max_registrations_button1" = "";
 /* Splash Screen */
 "migration_in_progress" = " COVIDSafe güncellemesi devam ediyor. \n\n Lütfen güncelleme tamamlanana kadar telefonunuzu kapatmayın.";
 "minute" = "Dakika";

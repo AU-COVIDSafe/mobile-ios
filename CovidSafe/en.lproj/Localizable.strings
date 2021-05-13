@@ -1,3 +1,4 @@
+"[test]decommission_message" = "Delete this app now";
 "action_continue" = "Continue";
 "action_report_an_issue" = "Report an issue";
 "action_upload_done" = "Done";
@@ -286,6 +287,8 @@
 "factors_intro_2" = "Handshakes can also be affected by environmental factors, including:";
 /* Example: "From 22 to 28 January 2021" */
 "from" = "From";
+/* Error message for when a user tries to signup outside of Australia. */
+"geoblock_error_message" = "You may be connected using an internet provider from outside Australia. This could happen when using international data roaming on a non-Australian SIM card.\n\nPlease connect to an Australian network or use a local Wi-Fi internet connection to continue.";
 "global_back" = "Back";
 "global_close" = "Close";
 "global_double_tap" = "double tap to edit";
@@ -367,6 +370,9 @@
 "location_off" = "Location: OFF";
 "location_off_description" = "Your iPhone requires Location permission for COVIDSafe to work. COVIDSafe does NOT track or store your location data.";
 "main_restrictions" = "Main restrictions";
+"max_registration_button2" = "Cancel";
+"max_registrations" = "You've reached the limit to register using the same mobile number.\n\nTo use the same mobile number to register again, you must request to delete your current registration information.";
+"max_registrations_button1" = "Request deletion";
 /* Splash Screen */
 "migration_in_progress" = " COVIDSafe update in progress. \n\n Please make sure you phone is not switched off until the update is complete.";
 "minute" = "Minute";

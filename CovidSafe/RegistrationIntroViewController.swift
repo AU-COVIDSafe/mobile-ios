@@ -11,7 +11,7 @@ import KeychainSwift
 
 class RegistrationIntroViewController: UIViewController {
     
-    let keychain = KeychainSwift()
+    let keychain = KeychainSwift.shared
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

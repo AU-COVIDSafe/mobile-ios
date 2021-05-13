@@ -135,12 +135,34 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
             self?.activityIndicator.stopAnimating()
             self?.getOTPButton.isEnabled = true
             if let error = error {
+                
+                let alertMessage = error == .MaxRegistrationError ? "max_registrations".localizedString() : "PhoneVerificationErrorMessage".localizedString()
+                
                 let errorAlert = UIAlertController(title: "PhoneVerificationErrorTitle".localizedString(),
-                                                   message: "PhoneVerificationErrorMessage".localizedString(),
+                                                   message: alertMessage,
                                                    preferredStyle: .alert)
-                errorAlert.addAction(UIAlertAction(title: "global_OK".localizedString(), style: .default, handler: { _ in
-                    DLog("Unable to verify phone number")
-                }))
+                if error == .MaxRegistrationError {
+                    errorAlert.addAction(UIAlertAction(title: "max_registrations_button1".localizedString(), style: .default, handler: { _ in
+                        DLog("Max registrations error, request deletion tapped")
+                        
+                        let deleteUrl = URLHelper.getDataDeletionURL()
+                        guard let url = URL(string: deleteUrl) else {
+                            DLog("Unable to create url")
+                            return
+                        }
+                        
+                        let safariVC = SFSafariViewController(url: url)
+                        self?.present(safariVC, animated: true, completion: nil)
+                        
+                    }))
+                    errorAlert.addAction(UIAlertAction(title: "max_registration_button2".localizedString(), style: .default, handler: { _ in
+                        DLog("Max registrations error, close alert")
+                    }))
+                } else {
+                    errorAlert.addAction(UIAlertAction(title: "global_OK".localizedString(), style: .default, handler: { _ in
+                        DLog("Unable to verify phone number")
+                    }))
+                }
                 self?.present(errorAlert, animated: true)
                 DLog("Phone number verification error: \(error.localizedDescription)")
                 return

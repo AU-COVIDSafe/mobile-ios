@@ -1,0 +1,96 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  before_all do
+    setup_circle_ci
+  end
+
+  desc "Install UAT certificate (in CI)"
+  lane :import_uat_distribution_certificate do
+
+    import_certificate(
+      certificate_path: "Distribution_UAT.p12",
+      certificate_password: ENV["DISTRIBUTION_UAT_P12_PASSWORD"] || "default",
+      keychain_name: ENV["MATCH_KEYCHAIN_NAME"],
+      keychain_password: ENV["MATCH_KEYCHAIN_PASSWORD"],
+    )
+
+    install_provisioning_profile(path: "~/Library/MobileDevice/Provisioning\ Profiles/AppStore_UAT.mobileprovision")
+  end
+
+  desc "Install PROD certificate (in CI)"
+  lane :import_distribution_certificate do
+
+    import_certificate(
+      certificate_path: "Distribution.p12",
+      certificate_password: ENV["DISTRIBUTION_P12_PASSWORD"] || "default",
+      keychain_name: ENV["MATCH_KEYCHAIN_NAME"],
+      keychain_password: ENV["MATCH_KEYCHAIN_PASSWORD"],
+    )
+
+    install_provisioning_profile(path: "~/Library/MobileDevice/Provisioning\ Profiles/AppStore.mobileprovision")
+  end
+
+  desc "Push a new UAT build to TestFlight"
+  lane :beta do
+
+  	# To increment build number is recommended to use api_key 
+    #	increment_build_number(
+	#    build_number: app_store_build_number + 1,
+	#    xcodeproj: "CovidSafe.xcodeproj"
+	# )
+  	
+	gym(workspace: "CovidSafe.xcworkspace",
+		scheme: "covid-staging",
+        export_options: {
+          method: "app-store",
+          provisioningProfiles: {
+            "au.gov.health.covidsafe.uat" => "CovidSafe UAT"
+          }
+        },
+        configuration: "Release")
+
+	upload_to_testflight(apple_id: ENV["APPLE_ID_UAT"],
+		skip_submission: true,
+		skip_waiting_for_build_processing: true)
+  end
+
+  desc "Push a new PROD build to TestFlight"
+  lane :release do
+
+  	# To increment build number is recommended to use api_key 
+    #	increment_build_number(
+	#    build_number: app_store_build_number + 1,
+	#    xcodeproj: "CovidSafe.xcodeproj"
+	# )
+	
+    gym(workspace: "CovidSafe.xcworkspace",
+		scheme: "covid-production",
+        export_options: {
+          method: "app-store",
+          provisioningProfiles: {
+            "au.gov.health.covidsafe" => "COVIDSafe"
+          }
+        },
+        configuration: "Release")
+
+	upload_to_testflight(apple_id: ENV["APPLE_ID"],
+		skip_submission: true,
+		skip_waiting_for_build_processing: true)
+  end
+end

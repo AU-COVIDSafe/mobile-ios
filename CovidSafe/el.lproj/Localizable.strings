@@ -1,3 +1,4 @@
+"[test]decommission_message" = "";
 "action_continue" = "Συνεχίστε";
 "action_report_an_issue" = "Αναφέρετε το πρόβλημα";
 "action_upload_done" = "Συνεχίστε";
@@ -286,6 +287,8 @@
 "factors_intro_2" = "Οι χειραψίες μπορούν επίσης να επηρεαστούν από περιβαλλοντικούς παράγοντες, όπως:";
 /* Example: "From 22 to 28 January 2021" */
 "from" = "";
+/* Error message for when a user tries to signup outside of Australia. */
+"geoblock_error_message" = "";
 "global_back" = "Πίσω";
 "global_close" = "Κλείστε";
 "global_double_tap" = "πατήστε δύο φορές για επεξεργασία";
@@ -367,6 +370,9 @@
 "location_off" = "Τοποθεσία: ΑΠΕΝΕΡΓΟΠΟΙΗΜΕΝΗ";
 "location_off_description" = "Το iPhone σας απαιτεί άδεια τοποθεσίας για να λειτουργήσει την COVIDSafe. Η COVIDSafe ΔΕΝ παρακολουθεί ούτε αποθηκεύει τα δεδομένα τοποθεσίας σας.";
 "main_restrictions" = "Κύριοι περιορισμοί";
+"max_registration_button2" = "";
+"max_registrations" = "";
+"max_registrations_button1" = "";
 /* Splash Screen */
 "migration_in_progress" = "Η ενημέρωση της COVIDSafe συνεχίζεται. \n\nΒεβαιωθείτε ότι το τηλέφωνό σας δεν είναι απενεργοποιημένο έως ότου ολοκληρωθεί η ενημέρωση.";
 "minute" = "Λεπτό";

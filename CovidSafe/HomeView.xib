@@ -21,6 +21,7 @@
                 <outlet property="covidStatisticsContainer" destination="eZl-C5-gSv" id="37c-CV-VgS"/>
                 <outlet property="covidStatisticsSection" destination="Aop-Ae-hRv" id="Qpd-Hv-uA8"/>
                 <outlet property="inactiveAppSectionView" destination="784-Jf-kOX" id="J3m-Pu-697"/>
+                <outlet property="inactiveGenericError" destination="5Pd-c8-CYx" id="Fez-q4-Oc5"/>
                 <outlet property="inactiveSettingsContent" destination="AUW-C2-ven" id="NNP-o9-zkK"/>
                 <outlet property="inactiveTokenExpiredView" destination="nxM-ji-ttb" id="vVC-KW-yek"/>
                 <outlet property="locationPermissionsView" destination="u4f-uR-ri3" id="70q-Jr-1cc"/>
@@ -127,19 +128,19 @@
                             </constraints>
                         </view>
                         <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="h36-8c-K2n">
-                            <rect key="frame" x="0.0" y="120" width="414" height="1940.5"/>
+                            <rect key="frame" x="0.0" y="120" width="414" height="2105"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRs-XW-qzv" userLabel="StatusView">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="1136"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="1300.5"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rcS-nL-IAO">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="1124"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="1288.5"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="784-Jf-kOX" userLabel="InactiveView">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="696.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="861"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="xti-6W-zko" userLabel="Inactive Stack View">
-                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="696.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="861"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fe-SU-8Q6" userLabel="InActiveHeader">
                                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="81"/>
@@ -246,7 +247,7 @@
                                                                     </subviews>
                                                                     <accessibility key="accessibilityConfiguration" label="Bluetooth permissions off">
                                                                         <accessibilityTraits key="traits" button="YES"/>
-                                                                        <bool key="isElement" value="YES"/>
+                                                                        <bool key="isElement" value="NO"/>
                                                                     </accessibility>
                                                                     <constraints>
                                                                         <constraint firstItem="reL-DQ-aFx" firstAttribute="leading" secondItem="nxM-ji-ttb" secondAttribute="leading" id="DNN-Va-LUA"/>
@@ -255,8 +256,69 @@
                                                                         <constraint firstAttribute="bottom" secondItem="reL-DQ-aFx" secondAttribute="bottom" id="qeE-Hu-OAb"/>
                                                                     </constraints>
                                                                 </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Pd-c8-CYx" userLabel="Generic Error View">
+                                                                    <rect key="frame" x="0.0" y="369" width="414" height="163.5"/>
+                                                                    <subviews>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Nu-a1-6fd" userLabel="Generic Error Bar">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="163.5"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error connectiong to server" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yw4-mY-Pvb">
+                                                                                    <rect key="frame" x="16" y="16" width="238.5" height="0.0"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" id="K73-MG-bAA"/>
+                                                                                    </constraints>
+                                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                                                    <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iw2-bN-Bjb">
+                                                                                    <rect key="frame" x="16" y="16" width="350" height="131.5"/>
+                                                                                    <accessibility key="accessibilityConfiguration">
+                                                                                        <bool key="isElement" value="NO"/>
+                                                                                    </accessibility>
+                                                                                    <string key="text">It looks like you may be accessing the internet from outside Australia. This sometimes happens when roaming on an international simcard. Please connect to an Australian network to continue.</string>
+                                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                                                    <color key="textColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                    <userDefinedRuntimeAttributes>
+                                                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="geoblock_error_message"/>
+                                                                                    </userDefinedRuntimeAttributes>
+                                                                                </label>
+                                                                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron-right-red" highlightedImage="redcross" translatesAutoresizingMaskIntoConstraints="NO" id="JZ8-95-6mR">
+                                                                                    <rect key="frame" x="374" y="16" width="24" height="24"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="width" constant="24" id="5Dg-TP-jeV"/>
+                                                                                        <constraint firstAttribute="height" constant="24" id="QDY-8b-rGB"/>
+                                                                                    </constraints>
+                                                                                </imageView>
+                                                                            </subviews>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <constraints>
+                                                                                <constraint firstItem="yw4-mY-Pvb" firstAttribute="top" secondItem="8Nu-a1-6fd" secondAttribute="top" constant="16" id="8lj-Mp-QPd"/>
+                                                                                <constraint firstItem="Iw2-bN-Bjb" firstAttribute="top" secondItem="yw4-mY-Pvb" secondAttribute="bottom" id="BG1-vf-8aa"/>
+                                                                                <constraint firstItem="yw4-mY-Pvb" firstAttribute="leading" secondItem="8Nu-a1-6fd" secondAttribute="leading" constant="16" id="FB0-Gh-26E"/>
+                                                                                <constraint firstItem="Iw2-bN-Bjb" firstAttribute="leading" secondItem="8Nu-a1-6fd" secondAttribute="leading" constant="16" id="MsQ-XB-0Cp"/>
+                                                                                <constraint firstItem="JZ8-95-6mR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yw4-mY-Pvb" secondAttribute="trailing" constant="8" id="N9H-1e-dzZ"/>
+                                                                                <constraint firstAttribute="bottom" secondItem="Iw2-bN-Bjb" secondAttribute="bottom" constant="16" id="SmG-4M-0Ir"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="Iw2-bN-Bjb" secondAttribute="trailing" constant="48" id="YQ6-nh-9k7"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="JZ8-95-6mR" secondAttribute="trailing" constant="16" id="jSl-T3-bbB"/>
+                                                                                <constraint firstItem="JZ8-95-6mR" firstAttribute="top" secondItem="8Nu-a1-6fd" secondAttribute="top" constant="16" id="toG-5o-Kri"/>
+                                                                            </constraints>
+                                                                        </view>
+                                                                    </subviews>
+                                                                    <accessibility key="accessibilityConfiguration">
+                                                                        <accessibilityTraits key="traits" button="YES"/>
+                                                                        <bool key="isElement" value="NO"/>
+                                                                    </accessibility>
+                                                                    <constraints>
+                                                                        <constraint firstItem="8Nu-a1-6fd" firstAttribute="leading" secondItem="5Pd-c8-CYx" secondAttribute="leading" id="GvM-yl-CrV"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="8Nu-a1-6fd" secondAttribute="bottom" id="gZR-KX-tky"/>
+                                                                        <constraint firstItem="8Nu-a1-6fd" firstAttribute="top" secondItem="5Pd-c8-CYx" secondAttribute="top" id="gl7-zv-NsS"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="8Nu-a1-6fd" secondAttribute="trailing" id="tnp-QS-aoM"/>
+                                                                    </constraints>
+                                                                </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a5D-xk-n0n" userLabel="Bluetooth Permission Off Section">
-                                                                    <rect key="frame" x="0.0" y="369" width="414" height="80.5"/>
+                                                                    <rect key="frame" x="0.0" y="533.5" width="414" height="80.5"/>
                                                                     <subviews>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZoL-pC-0bR" userLabel="Bluetooth Permission Off Bar">
                                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="80.5"/>
@@ -327,7 +389,7 @@
                                                                     </connections>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ers-f9-BFH" userLabel="Bluetooth Status  Off Section">
-                                                                    <rect key="frame" x="0.0" y="450.5" width="414" height="101.5"/>
+                                                                    <rect key="frame" x="0.0" y="615" width="414" height="101.5"/>
                                                                     <subviews>
                                                                         <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p5d-dk-foR" userLabel="Bluetooth Status Bar Off">
                                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="101.5"/>
@@ -394,7 +456,7 @@
                                                                     </connections>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="u4f-uR-ri3" userLabel="Location Settings">
-                                                                    <rect key="frame" x="0.0" y="553" width="414" height="143.5"/>
+                                                                    <rect key="frame" x="0.0" y="717.5" width="414" height="143.5"/>
                                                                     <subviews>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGh-Fm-LNa" userLabel="Location Off bar">
                                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="142.5"/>
@@ -473,7 +535,7 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m1D-93-7sF" userLabel="ActiveView">
-                                                    <rect key="frame" x="0.0" y="696.5" width="414" height="427.5"/>
+                                                    <rect key="frame" x="0.0" y="861" width="414" height="427.5"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="981-Cd-Xm3" userLabel="Active Stack View">
                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="427.5"/>
@@ -592,7 +654,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aop-Ae-hRv" userLabel="StatisticsViewSection">
-                                    <rect key="frame" x="0.0" y="1136" width="414" height="124"/>
+                                    <rect key="frame" x="0.0" y="1300.5" width="414" height="124"/>
                                     <subviews>
                                         <view clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="eZl-C5-gSv" userLabel="StatisticsView">
                                             <rect key="frame" x="0.0" y="12" width="414" height="100"/>
@@ -610,7 +672,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9cE-NC-A20" userLabel="Help">
-                                    <rect key="frame" x="0.0" y="1260" width="414" height="153"/>
+                                    <rect key="frame" x="0.0" y="1424.5" width="414" height="153"/>
                                     <subviews>
                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="co1-dK-1WU">
                                             <rect key="frame" x="0.0" y="12" width="414" height="129"/>
@@ -743,7 +805,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cN-DY-lc3" userLabel="Change language">
-                                    <rect key="frame" x="0.0" y="1413" width="414" height="153"/>
+                                    <rect key="frame" x="0.0" y="1577.5" width="414" height="153"/>
                                     <subviews>
                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bE9-gT-Hba">
                                             <rect key="frame" x="0.0" y="12" width="414" height="129"/>
@@ -876,7 +938,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CGS-rw-uZS" userLabel="PrivacyPolicy">
-                                    <rect key="frame" x="0.0" y="1566" width="414" height="153"/>
+                                    <rect key="frame" x="0.0" y="1730.5" width="414" height="153"/>
                                     <subviews>
                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BBB-zD-Non">
                                             <rect key="frame" x="0.0" y="12" width="414" height="129"/>
@@ -885,7 +947,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="129"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mFo-iF-cX3">
-                                                            <rect key="frame" x="72" y="16" width="302" height="24"/>
+                                                            <rect key="frame" x="72" y="16" width="302" height="77.5"/>
                                                             <accessibility key="accessibilityConfiguration">
                                                                 <accessibilityTraits key="traits" none="YES"/>
                                                                 <bool key="isElement" value="NO"/>
@@ -908,7 +970,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy for COVIDSafe Application" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gF9-eh-ER2">
-                                                            <rect key="frame" x="72" y="40" width="302" height="73"/>
+                                                            <rect key="frame" x="72" y="93.5" width="302" height="19.5"/>
                                                             <accessibility key="accessibilityConfiguration">
                                                                 <accessibilityTraits key="traits" none="YES"/>
                                                                 <bool key="isElement" value="NO"/>
@@ -1009,7 +1071,7 @@
                                     </constraints>
                                 </view>
                                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vs9-rS-UOM" userLabel="Share CovidSafe">
-                                    <rect key="frame" x="0.0" y="1719" width="414" height="56"/>
+                                    <rect key="frame" x="0.0" y="1883.5" width="414" height="56"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RCa-zU-3Vo">
                                             <rect key="frame" x="0.0" y="12" width="414" height="32"/>
@@ -1120,7 +1182,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JSe-D6-hyV" userLabel="Upload Data">
-                                    <rect key="frame" x="0.0" y="1719" width="414" height="165.5"/>
+                                    <rect key="frame" x="0.0" y="1883.5" width="414" height="165.5"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8pS-Df-p0U">
                                             <rect key="frame" x="0.0" y="12" width="414" height="141.5"/>
@@ -1240,7 +1302,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZ2-CQ-dtQ" userLabel="Version View">
-                                    <rect key="frame" x="0.0" y="1884.5" width="414" height="56"/>
+                                    <rect key="frame" x="0.0" y="2049" width="414" height="56"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version number:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1w-Sl-OIH" userLabel="Version">
                                             <rect key="frame" x="16" y="12" width="382" height="20"/>
