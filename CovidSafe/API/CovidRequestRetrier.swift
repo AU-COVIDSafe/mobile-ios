@@ -20,8 +20,12 @@ final class CovidRequestRetrier: Alamofire.RequestInterceptor {
     
     func adapt(_ urlRequest: URLRequest, for session: Session, completion: @escaping (Result<URLRequest, Error>) -> Void) {
         var urlRequest = urlRequest
-        let keychain = KeychainSwift()
+        let keychain = KeychainSwift.shared
         let refreshExists = keychain.get("REFRESH_TOKEN") != nil
+        
+        // turn off geolock error
+        UserDefaults.standard.setValue(false, forKey: showGeolockErrorKey)
+        
         // prevent authenticated api calls if the re-registration flow has been started
         if UserDefaults.standard.bool(forKey: "ReauthenticationNeededKey") &&
             refreshExists {
@@ -81,13 +85,19 @@ final class CovidRequestRetrier: Alamofire.RequestInterceptor {
             return completion(.retryWithDelay(1.0))
         }
         
+        if let serverHeader = response.headers.first(where: { $0.name == "Server" }),
+           response.statusCode == 403 && serverHeader.value == "CloudFront" {
+            UserDefaults.standard.setValue(true, forKey: showGeolockErrorKey)
+            return completion(.doNotRetryWithError(error))
+        }
+        
         if !triedRefresh &&
-            (response.statusCode == 403 || response.statusCode == 401) {
+            (response.statusCode == 401 || response.statusCode == 403) {
             triedRefresh = true
             retriesExecuted += 1
             AuthenticationAPI.issueTokensAPI { (response, authError) in
                 // this will update the tokens automatically
-                guard let respError = authError, respError == .TokenExpiredError else {
+                if let respError = authError, respError == .TokenExpiredError {
                     completion(.doNotRetryWithError(error))
                     return
                 }

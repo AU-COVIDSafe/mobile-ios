@@ -16,10 +16,15 @@ class AuthenticationAPI: CovidSafeAuthenticatedAPI {
             return
         }
         
+        guard let authHeaders = try? authenticatedHeaders() else {
+            completion(nil, .RequestError)
+            return
+        }
+        
         CovidNetworking.shared.session.request("\(apiHost)/issueInitialRefreshToken",
            method: .post,
            encoding: JSONEncoding.default,
-           headers: authenticatedHeaders
+           headers: authHeaders
         ).validate().responseDecodable(of: ChallengeResponse.self) { (response) in
             switch response.result {
             case .success:
@@ -55,7 +60,7 @@ class AuthenticationAPI: CovidSafeAuthenticatedAPI {
             return
         }
         
-        let keychain = KeychainSwift()
+        let keychain = KeychainSwift.shared
         
         guard let token = keychain.get("JWT_TOKEN"),
               let refreshToken = keychain.get("REFRESH_TOKEN"),
@@ -105,7 +110,7 @@ class AuthenticationAPI: CovidSafeAuthenticatedAPI {
     }
     
     static func issueTokensAPI(completion: @escaping (ChallengeResponse?, CovidSafeAPIError?) -> Void) {
-        let keychain = KeychainSwift()
+        let keychain = KeychainSwift.shared
         
         // block api call only if refresh token exists, if it doesn't it means the app should get it for the first time
         if UserDefaults.standard.bool(forKey: "ReauthenticationNeededKey") && keychain.get("REFRESH_TOKEN") != nil {
@@ -132,13 +137,20 @@ class AuthenticationAPI: CovidSafeAuthenticatedAPI {
                 completion(response, nil)
             }
         } else {
+            let refreshTokenBeforeRefresh = keychain.get("REFRESH_TOKEN")
             AuthenticationAPI.issueJWTTokenAPI { (response, error) in
                 
                 guard let jwt = response?.token,
                       let refresh =  response?.refreshToken,
                       error == nil else {
                     
-                    // set corrupted
+                    // if the token in the system before the call is different than the one in keychain, this is a concurrency issue, the token was refresh already and that is why this failed. We should not start re-authentication
+                    guard refreshTokenBeforeRefresh == keychain.get("REFRESH_TOKEN") else {
+                        completion(response, .TokenAlreadyRefreshedError)
+                        return
+                    }
+                    
+                    // set corrupted only when it has not been changed
                     UserDefaults.standard.set(true, forKey: "ReauthenticationNeededKey")
                     completion(response, .TokenExpiredError)
                     return

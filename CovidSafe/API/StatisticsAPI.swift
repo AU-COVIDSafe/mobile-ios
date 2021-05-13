@@ -20,10 +20,15 @@ class StatisticsAPI: CovidSafeAuthenticatedAPI {
         
         let parameters = ["state" : "\(forState.rawValue)"]
         
+        guard let authHeaders = try? authenticatedHeaders() else {
+            completion(nil, .RequestError)
+            return
+        }
+        
         CovidNetworking.shared.session.request("\(apiHost)/v2/statistics",
             method: .get,
             parameters: parameters,
-            headers: authenticatedHeaders,
+            headers: authHeaders,
             interceptor: CovidRequestRetrier(retries: 3)
         ).validate().responseDecodable(of: StatisticsResponse.self) { (response) in
             switch response.result {

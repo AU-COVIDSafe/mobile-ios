@@ -64,7 +64,6 @@ class RegistrationSuccessViewController: UIViewController {
         if reauthenticating {
             dismiss(animated: true, completion: nil)
         } else {
-            let homeVC = HomeViewController(nibName: "HomeView", bundle: nil)
             let tabVC = MainTabBarViewController()
             self.navigationController?.setViewControllers([tabVC], animated: true)
         }

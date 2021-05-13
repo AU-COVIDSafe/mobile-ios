@@ -65,7 +65,7 @@ class MessageAPI: CovidSafeAuthenticatedAPI {
         var shouldGetMessages = true
         
         let calendar = NSCalendar.current
-        let currentDate = calendar.startOfDay(for: Date())
+        let currentDate = Date()
         
         // if the current version is newer than the last version checked, allow messages call
         if let currVersionStr = Bundle.main.version, let currVersion = Int(currVersionStr), currVersion > versionChecked {
@@ -77,7 +77,7 @@ class MessageAPI: CovidSafeAuthenticatedAPI {
             let components = calendar.dateComponents([.hour], from: lastCheckedDate, to: currentDate)
             
             if let numHours = components.hour {
-                shouldGetMessages = numHours > 4
+                shouldGetMessages = numHours >= 4
             }
         }
         
@@ -109,10 +109,15 @@ class MessageAPI: CovidSafeAuthenticatedAPI {
         
         isBusy = true
         
+        guard let authHeaders = try? authenticatedHeaders() else {
+            completion(nil, .RequestError)
+            return
+        }
+        
         CovidNetworking.shared.session.request("\(apiHost)/messages",
             method: .get,
             parameters: params,
-            headers: authenticatedHeaders,
+            headers: authHeaders,
             interceptor: CovidRequestRetrier(retries: 3)
         ).validate().responseDecodable(of: MessageResponse.self) { (response) in
             switch response.result {
@@ -120,7 +125,7 @@ class MessageAPI: CovidSafeAuthenticatedAPI {
                 guard let messageResponse = response.value else { return }
                 
                 // save successful timestamp
-                let minutesToDefer = Int.random(in: 0..<10)
+                let minutesToDefer = Int.random(in: 0..<30)
                 let calendar = NSCalendar.current
                 let currentDate = Date()
                 if let deferredDate = calendar.date(byAdding: .minute, value: minutesToDefer, to: currentDate) {

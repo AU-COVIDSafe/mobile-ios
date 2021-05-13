@@ -1,8 +1,8 @@
 PODS:
-  - Alamofire (5.0.5)
+  - Alamofire (5.4.0)
   - FlagKit (2.2)
   - KeychainSwift (19.0.0)
-  - lottie-ios (3.1.6)
+  - lottie-ios (3.1.9)
   - ReachabilitySwift (5.0.0)
 
 DEPENDENCIES:
@@ -21,12 +21,12 @@ SPEC REPOS:
     - ReachabilitySwift
 
 SPEC CHECKSUMS:
-  Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
+  Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
   FlagKit: eca7dc89064b0c986302ba9acefad1bf80a435b1
   KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
-  lottie-ios: 85ce835dd8c53e02509f20729fc7d6a4e6645a0a
+  lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
 
-PODFILE CHECKSUM: 5c536190b2facfc3f56594f2313066237ffac6ab
+PODFILE CHECKSUM: 3075a84136d3a2d8fde2aeecdc0d0c5147e0306f
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.9.1

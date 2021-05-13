@@ -11,7 +11,7 @@ import Alamofire
 class PhoneValidationAPI {
         
     static func verifyPhoneNumber(regInfo: RegistrationRequest,
-                                  completion: @escaping (String?, Swift.Error?) -> Void) {
+                                  completion: @escaping (String?, CovidSafeAPIError?) -> Void) {
 
         guard let apiHost = PlistHelper.getvalueFromInfoPlist(withKey: "API_Host", plistName: "CovidSafe-config") else {
             return
@@ -33,8 +33,22 @@ class PhoneValidationAPI {
                 case .success:
                     guard let authResponse = response.value else { return }
                     completion(authResponse.session, nil)
-                case let .failure(error):
-                    completion(nil, error)
+                case .failure(_):
+                    var apiError = CovidSafeAPIError.RequestError
+                    
+                    if let respData = response.data {
+                        do {
+                            let errorResponse = try JSONDecoder().decode(CovidSafeErrorResponse.self, from: respData)
+                            if errorResponse.message == "MaxRegistrationsReached" {
+                                apiError = .MaxRegistrationError
+                            }
+                        } catch {
+                            // unable to parse response
+                            apiError = .ResponseError
+                        }
+                    }
+                    completion(nil, apiError)
+                    
                 }
         }
     }

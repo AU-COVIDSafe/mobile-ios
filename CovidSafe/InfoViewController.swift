@@ -53,7 +53,7 @@ final class InfoViewController: UIViewController {
         silentNotificationsCountLabel.text = "\(UserDefaults.standard.integer(forKey: "debugSilentNotificationCount"))"
         apnTokenLabel.text = UserDefaults.standard.string(forKey: "deviceTokenForAPN")
         
-        let keychain = KeychainSwift()
+        let keychain = KeychainSwift.shared
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .short
         dateFormatter.timeStyle = .medium
@@ -92,7 +92,7 @@ final class InfoViewController: UIViewController {
     }
     
     @IBAction func requestUploadOTP(_ sender: UIButton) {
-        let keychain = KeychainSwift()
+        let keychain = KeychainSwift.shared
         guard let jwt = keychain.get("JWT_TOKEN") else {
             DLog("Error trying to upload when not logged in")
             return
@@ -199,7 +199,7 @@ final class InfoViewController: UIViewController {
     }
     
     @IBAction func setReauthenticationNeeded(_ sender: Any) {
-        let keychain = KeychainSwift()
+        let keychain = KeychainSwift.shared
         keychain.set("corruptedjwt", forKey: "JWT_TOKEN", withAccess: .accessibleAfterFirstUnlock)
     }
     

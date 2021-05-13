@@ -240,7 +240,7 @@ class OTPViewController: UIViewController, RegistrationHandler {
                 result(.WrongOTP)
                 return
             }
-            let keychain = KeychainSwift()
+            let keychain = KeychainSwift.shared
             keychain.set(tokenToStore, forKey: "JWT_TOKEN", withAccess: .accessibleAfterFirstUnlock)
             keychain.set(refreshToken, forKey: "REFRESH_TOKEN", withAccess: .accessibleAfterFirstUnlock)
             UserDefaults.standard.set(true, forKey: "HasUpdatedKeychainAccess")

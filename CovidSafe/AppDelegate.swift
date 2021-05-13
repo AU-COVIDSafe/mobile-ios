@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupCoredataDir()
         let firstRun = UserDefaults.standard.bool(forKey: "HasBeenLaunched")
         if( !firstRun ) {
-            let keychain = KeychainSwift()
+            let keychain = KeychainSwift.shared
             keychain.clear()
             UserDefaults.standard.set(true, forKey: "HasBeenLaunched")
         }

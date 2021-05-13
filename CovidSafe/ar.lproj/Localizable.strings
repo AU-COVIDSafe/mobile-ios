@@ -1,3 +1,4 @@
+"[test]decommission_message" = "";
 "action_continue" = "تابع";
 "action_report_an_issue" = "بلِّغ عن مشكلة";
 "action_upload_done" = "تمّ";
@@ -286,6 +287,8 @@
 "factors_intro_2" = "كما يمكن أن تتأثر المصافحات بالعوامل البيئية، بما في ذلك:";
 /* Example: "From 22 to 28 January 2021" */
 "from" = "";
+/* Error message for when a user tries to signup outside of Australia. */
+"geoblock_error_message" = "";
 "global_back" = "رجوع";
 "global_close" = "إغلاق";
 "global_double_tap" = "أنقر مرتين للتصحيح";
@@ -367,6 +370,9 @@
 "location_off" = "الموقع الجغرافي: معطّل";
 "location_off_description" = "يتطلب جهاز iphone الخاص بك تشغيل الموقع الجغرافي ليتمكن تطبيق COVIDSafe من العمل. لا يقوم تطبيق COVIDSafe بتتبّع بيانات الموقع الجغرافي أو تخزينها.";
 "main_restrictions" = "القيود الرئيسية";
+"max_registration_button2" = "";
+"max_registrations" = "";
+"max_registrations_button1" = "";
 /* Splash Screen */
 "migration_in_progress" = "تحديث تطبيق COVIDSafe قيد الإنجاز. \n\nيُرجى التأكد من عدم إغلاق هاتفك إلى أن يتم اكتمال التحديث.";
 "minute" = "دقيقة";

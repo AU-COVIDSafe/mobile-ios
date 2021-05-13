@@ -1,3 +1,4 @@
+"[test]decommission_message" = "";
 "action_continue" = "Continua";
 "action_report_an_issue" = "Segnala un problema";
 "action_upload_done" = "Eseguito";
@@ -286,6 +287,8 @@
 "factors_intro_2" = "Anche le strette di mano possono essere influenzate da fattori ambientali:";
 /* Example: "From 22 to 28 January 2021" */
 "from" = "";
+/* Error message for when a user tries to signup outside of Australia. */
+"geoblock_error_message" = "";
 "global_back" = "Indietro";
 "global_close" = "Chiudi";
 "global_double_tap" = "Fai un doppio click per modificare";
@@ -367,6 +370,9 @@
 "location_off" = "Posizione: OFF";
 "location_off_description" = "Il tuo iPhone richiede l'autorizzazione alla localizzazione affinché COVIDSafe funzioni. COVIDSafe NON memorizza né utilizza i dati relativi alla tua posizione.";
 "main_restrictions" = "Restrizioni principali";
+"max_registration_button2" = "";
+"max_registrations" = "";
+"max_registrations_button1" = "";
 /* Splash Screen */
 "migration_in_progress" = "Aggiornamento COVIDSafe in corso. \n\nAssicurati che il cellulare non sia spento fino al completamento dell'aggiornamento.";
 "minute" = "Minuto";

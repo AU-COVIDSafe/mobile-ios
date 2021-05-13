@@ -316,6 +316,8 @@
 		5BA3624225E463B6002CFF41 /* WebContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BA3624025E463B5002CFF41 /* WebContentView.xib */; };
 		5BA3624625E4654F002CFF41 /* WebContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA3624525E4654E002CFF41 /* WebContentView.swift */; };
 		5BA3624725E4654F002CFF41 /* WebContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA3624525E4654E002CFF41 /* WebContentView.swift */; };
+		5BB9B8A0262FE0870056C47E /* KeychainSwift+Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB9B89F262FE0870056C47E /* KeychainSwift+Singleton.swift */; };
+		5BB9B8A1262FE0870056C47E /* KeychainSwift+Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB9B89F262FE0870056C47E /* KeychainSwift+Singleton.swift */; };
 		5BBC571D25526F99005E90AA /* staging-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BBC571C25526F99005E90AA /* staging-Info.plist */; };
 		5BBE61B125633B6D00B8C983 /* CSGenericContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BBE61B025633B6D00B8C983 /* CSGenericContentView.xib */; };
 		5BBE61B225633B6D00B8C983 /* CSGenericContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BBE61B025633B6D00B8C983 /* CSGenericContentView.xib */; };
@@ -564,6 +566,7 @@
 		5BA3623325DE133D002CFF41 /* CSGenericErrorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSGenericErrorController.swift; sourceTree = "<group>"; };
 		5BA3624025E463B5002CFF41 /* WebContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebContentView.xib; sourceTree = "<group>"; };
 		5BA3624525E4654E002CFF41 /* WebContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebContentView.swift; sourceTree = "<group>"; };
+		5BB9B89F262FE0870056C47E /* KeychainSwift+Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeychainSwift+Singleton.swift"; sourceTree = "<group>"; };
 		5BBC571C25526F99005E90AA /* staging-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "staging-Info.plist"; sourceTree = "<group>"; };
 		5BBE61B025633B6D00B8C983 /* CSGenericContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSGenericContentView.xib; sourceTree = "<group>"; };
 		5BBE61B625633E8D00B8C983 /* CSGenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSGenericViewController.swift; sourceTree = "<group>"; };
@@ -800,6 +803,7 @@
 			isa = PBXGroup;
 			children = (
 				B605A7B02427429D008BA819 /* PlistHelper.swift */,
+				5BB9B89F262FE0870056C47E /* KeychainSwift+Singleton.swift */,
 				5B900FC02485C4EE00CAA419 /* String+Localization.swift */,
 				5B69C06525D382AF00DF536D /* String+HtmlAttributed.swift */,
 				0B1810112431EE610005D11F /* PhoneNumberParser.swift */,
@@ -1240,7 +1244,7 @@
 				5B92D66A243018040049877B /* Sources */,
 				5B92D6B7243018040049877B /* Frameworks */,
 				5B92D6B9243018040049877B /* Resources */,
-				67401E6C50CE0E543E47346A /* [CP] Embed Pods Frameworks */,
+				34C60B5DD40F4458AB9E6FD0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1259,7 +1263,7 @@
 				5DD41D3323DCB03B00FD4AB0 /* Sources */,
 				5DD41D3423DCB03B00FD4AB0 /* Frameworks */,
 				5DD41D3523DCB03B00FD4AB0 /* Resources */,
-				2D8EF319C5D6408D45C0B585 /* [CP] Embed Pods Frameworks */,
+				DB7F6C492EEEEFCD9ACA09F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1432,24 +1436,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2D8EF319C5D6408D45C0B585 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CovidSafe/Pods-CovidSafe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CovidSafe/Pods-CovidSafe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CovidSafe/Pods-CovidSafe-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		67401E6C50CE0E543E47346A /* [CP] Embed Pods Frameworks */ = {
+		34C60B5DD40F4458AB9E6FD0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1486,6 +1473,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB7F6C492EEEEFCD9ACA09F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CovidSafe/Pods-CovidSafe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CovidSafe/Pods-CovidSafe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CovidSafe/Pods-CovidSafe-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DC4D19AF69C7C819FCC35F09 /* [CP] Check Pods Manifest.lock */ = {
@@ -1576,6 +1580,7 @@
 				5B92D68A243018040049877B /* Outcome.swift in Sources */,
 				5B92D68B243018040049877B /* Encounter+EncounterRecord.swift in Sources */,
 				0B42D0DE2432B39E00E4F44C /* Question2ErrorViewController.swift in Sources */,
+				5BB9B8A1262FE0870056C47E /* KeychainSwift+Singleton.swift in Sources */,
 				594E77C024736B77009B8B34 /* EncounterDB.swift in Sources */,
 				5B728B4724B5667000654ABC /* BLELogViewController.swift in Sources */,
 				590888B42431B9F5008C9B9F /* UploadDataNavigationController.swift in Sources */,
@@ -1796,6 +1801,7 @@
 				A767D32F242DF1B100DC9E2A /* Errors.swift in Sources */,
 				5905462A2543E0F6009B82AD /* PayloadDataSupplier.swift in Sources */,
 				0B22A56B242F286900D1FE60 /* UINavigationBar+Style.swift in Sources */,
+				5BB9B8A0262FE0870056C47E /* KeychainSwift+Singleton.swift in Sources */,
 				0B1810122431EE610005D11F /* PhoneNumberParser.swift in Sources */,
 				1B86119B24303FA200EA4B6B /* Question3ErrorViewController.swift in Sources */,
 				5BEDEF5425CBC4A900AEEC20 /* RestrictionsViewController.swift in Sources */,
@@ -1971,9 +1977,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 121;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 127;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1981,11 +1987,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.5;
+				MARKETING_VERSION = 2.6;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = COVIDSafe;
 				SERVICE_UUID = "17E033D3-490E-4BC9-9FE8-2F567643F4D3";
 				SWIFT_OBJC_BRIDGING_HEADER = "CovidSafe/covid-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -2055,9 +2061,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 121;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 127;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -2065,10 +2071,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.5;
+				MARKETING_VERSION = 2.6;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = COVIDSafe;
 				SERVICE_UUID = "B82AB3FC-1595-4F6A-80F0-FE094CC218F9";
 				SWIFT_OBJC_BRIDGING_HEADER = "CovidSafe/covid-Bridging-Header.h";
 				SWIFT_REFLECTION_METADATA_LEVEL = none;
@@ -2083,9 +2089,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 120;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 126;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/staging-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -2093,13 +2099,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.5;
+				MARKETING_VERSION = 2.6;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe.uat;
 				PRODUCT_MODULE_NAME = COVIDSafe;
 				PRODUCT_NAME = "COVIDSafe-staging";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "CovidSafe UAT";
 				SERVICE_UUID = "CC0AC8B7-03B5-4252-8D84-44D199E16065";
 				SWIFT_OBJC_BRIDGING_HEADER = "CovidSafe/covid-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -2113,9 +2119,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 120;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 126;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/staging-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -2123,13 +2129,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.5;
+				MARKETING_VERSION = 2.6;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe.uat;
 				PRODUCT_MODULE_NAME = COVIDSafe;
 				PRODUCT_NAME = "COVIDSafe-staging";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "CovidSafe UAT";
 				SERVICE_UUID = "CC0AC8B7-03B5-4252-8D84-44D199E16065";
 				SWIFT_OBJC_BRIDGING_HEADER = "CovidSafe/covid-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -2143,9 +2149,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 120;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 126;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/staging-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -2153,12 +2159,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.5;
+				MARKETING_VERSION = 2.6;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe.uat;
 				PRODUCT_MODULE_NAME = COVIDSafe;
 				PRODUCT_NAME = "COVIDSafe-staging";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "CovidSafe UAT";
 				SERVICE_UUID = "CC0AC8B7-03B5-4252-8D84-44D199E16065";
 				SWIFT_OBJC_BRIDGING_HEADER = "CovidSafe/covid-Bridging-Header.h";
 				SWIFT_REFLECTION_METADATA_LEVEL = none;
@@ -2173,9 +2179,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 120;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 126;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/staging-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -2183,12 +2189,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.5;
+				MARKETING_VERSION = 2.6;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe.uat;
 				PRODUCT_MODULE_NAME = COVIDSafe;
 				PRODUCT_NAME = "COVIDSafe-staging";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "CovidSafe UAT";
 				SERVICE_UUID = "CC0AC8B7-03B5-4252-8D84-44D199E16065";
 				SWIFT_OBJC_BRIDGING_HEADER = "CovidSafe/covid-Bridging-Header.h";
 				SWIFT_REFLECTION_METADATA_LEVEL = none;
@@ -2321,9 +2327,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 121;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 127;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -2331,11 +2337,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.5;
+				MARKETING_VERSION = 2.6;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = COVIDSafe;
 				SERVICE_UUID = "CC0AC8B7-03B5-4252-8D84-44D199E16065";
 				SWIFT_OBJC_BRIDGING_HEADER = "CovidSafe/covid-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -2349,9 +2355,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "CovidSafe/Project Bluetrace.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 121;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 127;
 				DEVELOPMENT_TEAM = 45792XH5L8;
 				INFOPLIST_FILE = "$(SRCROOT)/CovidSafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -2359,10 +2365,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.5;
+				MARKETING_VERSION = 2.6;
 				PRODUCT_BUNDLE_IDENTIFIER = au.gov.health.covidsafe;
 				PRODUCT_NAME = COVIDSafe;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = COVIDSafe;
 				SERVICE_UUID = "B82AB3FC-1595-4F6A-80F0-FE094CC218F9";
 				SWIFT_OBJC_BRIDGING_HEADER = "CovidSafe/covid-Bridging-Header.h";
 				SWIFT_REFLECTION_METADATA_LEVEL = none;

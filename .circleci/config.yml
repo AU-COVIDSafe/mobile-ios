@@ -1,0 +1,69 @@
+# Circle CI Build config for COVIDSafe
+
+version: 2.1
+
+
+commands:
+
+  prepare-uat:
+    steps:
+      - checkout
+      - run: bundle install
+      - run: mkdir -pv ~/Library/MobileDevice/Provisioning\ Profiles/
+      - run: echo ${APP_STORE_UAT_PROFILE_B64} | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/AppStore_UAT.mobileprovision
+      - run: echo ${DISTRIBUTION_UAT_P12_B64} | base64 --decode > Distribution_UAT.p12
+      - run: bundle exec fastlane import_uat_distribution_certificate
+
+  prepare-release:
+    steps:
+      - checkout
+      - run: bundle install
+      - run: mkdir -pv ~/Library/MobileDevice/Provisioning\ Profiles/
+      - run: echo ${APP_STORE_PROFILE_B64} | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/AppStore.mobileprovision
+      - run: echo ${DISTRIBUTION_P12_B64} | base64 --decode > Distribution.p12
+      - run: bundle exec fastlane import_distribution_certificate
+
+jobs:
+  
+  build-uat:
+
+    macos:
+      xcode: 12.4.0 # Specify the Xcode version to use
+    environment:
+      FL_OUTPUT_DIR: output
+    steps:
+      - prepare-uat
+      - checkout
+      - run: bundle exec pod install
+      - run: bundle exec fastlane beta
+      - store_artifacts:
+          path: output
+
+  build-release:
+
+    macos:
+      xcode: 12.4.0 # Specify the Xcode version to use
+    environment:
+      FL_OUTPUT_DIR: output
+    steps:
+      - prepare-release
+      - checkout
+      - run: bundle exec pod install
+      - run: bundle exec fastlane release
+      - store_artifacts:
+          path: output
+
+workflows:
+  build-uat:
+    jobs:
+      - build-uat:
+          filters:
+            branches:
+              only: dev
+
+  build-release:
+    jobs:
+      - build-release:
+          filters:
+            branches:
+              only: master

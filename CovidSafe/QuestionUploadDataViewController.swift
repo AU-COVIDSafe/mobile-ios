@@ -21,7 +21,7 @@ class QuestionUploadDataViewController: UIViewController {
     // MARK: -
     
     private func showUploadDataFlow() {
-        let keychain = KeychainSwift()
+        let keychain = KeychainSwift.shared
         setIsLoading(true)
         guard let jwt = keychain.get("JWT_TOKEN") else {
             DLog("Error trying to upload when not logged in")

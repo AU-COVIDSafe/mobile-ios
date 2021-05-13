@@ -20,11 +20,17 @@ class ChangePostcodeAPI: CovidSafeAuthenticatedAPI {
         let params = [
             "postcode": newPostcode,
             ]
+        
+        guard let authHeaders = try? authenticatedHeaders() else {
+            completion(.RequestError)
+            return
+        }
+        
         CovidNetworking.shared.session.request("\(apiHost)/device",
             method: .post,
             parameters: params,
             encoding: JSONEncoding.default,
-            headers: authenticatedHeaders,
+            headers: authHeaders,
             interceptor: CovidRequestRetrier(retries:3)).validate().responseDecodable(of: DeviceResponse.self) { (response) in
                 switch response.result {
                 case .success:

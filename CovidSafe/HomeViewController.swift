@@ -4,15 +4,18 @@ import KeychainSwift
 import SafariServices
 import Reachability
 
+let reauthenticationNeededKey = "ReauthenticationNeededKey"
+let showGeolockErrorKey = "showGeolockErrorKey"
+
 class HomeViewController: UIViewController, HomeDelegate {
     private var observer: NSObjectProtocol?
-    private let reauthenticationNeededKey = "ReauthenticationNeededKey"
     
     @IBOutlet weak var bluetoothStatusOffView: UIView!
     @IBOutlet weak var bluetoothPermissionOffView: UIView!
     @IBOutlet weak var locationPermissionsView: UIView!
     @IBOutlet weak var inactiveSettingsContent: UIView!
     @IBOutlet weak var inactiveTokenExpiredView: UIView!
+    @IBOutlet weak var inactiveGenericError: UIView!
     @IBOutlet weak var shareView: UIView!
     @IBOutlet weak var inactiveAppSectionView: UIView!
     @IBOutlet weak var activeAppSectionView: UIView!
@@ -42,8 +45,17 @@ class HomeViewController: UIViewController, HomeDelegate {
     
     var allPermissionOn = true
     
-    var registrationNeeded: Bool {
-       return UserDefaults.standard.bool(forKey: reauthenticationNeededKey)
+    var showErrorToUser: Bool {
+        return showRegistrationError ||
+            showGenericError
+    }
+    
+    var showGenericError: Bool {
+        return UserDefaults.standard.bool(forKey: showGeolockErrorKey)
+    }
+    
+    var showRegistrationError: Bool {
+        return UserDefaults.standard.bool(forKey: reauthenticationNeededKey)
     }
     
     var bluetoothStatusOn = true
@@ -222,7 +234,7 @@ class HomeViewController: UIViewController, HomeDelegate {
     
     func updateJWTKeychainAccess() {
         let hasUpdatedKeychainAccess = UserDefaults.standard.bool(forKey: "HasUpdatedKeychainAccess")
-        let keychain = KeychainSwift()
+        let keychain = KeychainSwift.shared
         if (!hasUpdatedKeychainAccess) {
             if let jwt = keychain.get("JWT_TOKEN") {
                 if (keychain.set(jwt, forKey: "JWT_TOKEN", withAccess: .accessibleAfterFirstUnlock)) {
@@ -272,6 +284,7 @@ class HomeViewController: UIViewController, HomeDelegate {
                     self?.toggleShareView()
                     self?.toggleStatisticsView()
                     self?.toggleRegistrationNeededView()
+                    self?.toggleGenericErrorView()
                 }
             })
         }
@@ -349,37 +362,41 @@ class HomeViewController: UIViewController, HomeDelegate {
     }
     
     fileprivate func toggleUploadView() {
-        toggleViewVisibility(view: self.uploadView, isVisible: !self.didUploadData && !self.registrationNeeded)
+        toggleViewVisibility(view: self.uploadView, isVisible: !self.didUploadData && !self.showErrorToUser)
     }
     
     fileprivate func toggleShareView() {
-        toggleViewVisibility(view: shareView, isVisible: !registrationNeeded)
+        toggleViewVisibility(view: shareView, isVisible: !showErrorToUser)
     }
     
     fileprivate func toggleStatisticsView() {
-        toggleViewVisibility(view: covidStatisticsSection, isVisible: !registrationNeeded)
+        toggleViewVisibility(view: covidStatisticsSection, isVisible: !showErrorToUser)
     }
     
     fileprivate func toggleHeaderView() {
-        toggleViewVisibility(view: inactiveAppSectionView, isVisible: !self.allPermissionOn || registrationNeeded)
-        toggleViewVisibility(view: inactiveSettingsContent, isVisible: !self.allPermissionOn && !registrationNeeded)
-        toggleViewVisibility(view: activeAppSectionView, isVisible: self.allPermissionOn)
+        toggleViewVisibility(view: inactiveAppSectionView, isVisible: !self.allPermissionOn || showErrorToUser)
+        toggleViewVisibility(view: inactiveSettingsContent, isVisible: !self.allPermissionOn && !showErrorToUser)
+        toggleViewVisibility(view: activeAppSectionView, isVisible: self.allPermissionOn && !showErrorToUser)
     }
     
     fileprivate func toggleBluetoothStatusView() {
-        toggleViewVisibility(view: bluetoothStatusOffView, isVisible: self.bluetoothPermissionOn && !self.bluetoothStatusOn && !registrationNeeded)
+        toggleViewVisibility(view: bluetoothStatusOffView, isVisible: self.bluetoothPermissionOn && !self.bluetoothStatusOn && !showErrorToUser)
     }
     
     fileprivate func toggleBluetoothPermissionStatusView() {
-        toggleViewVisibility(view: bluetoothPermissionOffView, isVisible: !self.allPermissionOn && !self.bluetoothPermissionOn && !registrationNeeded)
+        toggleViewVisibility(view: bluetoothPermissionOffView, isVisible: !self.allPermissionOn && !self.bluetoothPermissionOn && !showErrorToUser)
     }
     
     fileprivate func toggleLocationPermissionStatusView() {
-        toggleViewVisibility(view: locationPermissionsView, isVisible: !allPermissionOn && !locationPermissionOn && (bluetoothPermissionOn && bluetoothStatusOn) && !registrationNeeded)
+        toggleViewVisibility(view: locationPermissionsView, isVisible: !allPermissionOn && !locationPermissionOn && (bluetoothPermissionOn && bluetoothStatusOn) && !showErrorToUser)
     }
     
     fileprivate func toggleRegistrationNeededView() {
-        toggleViewVisibility(view: inactiveTokenExpiredView, isVisible: registrationNeeded)
+        toggleViewVisibility(view: inactiveTokenExpiredView, isVisible: showRegistrationError)
+    }
+    
+    fileprivate func toggleGenericErrorView() {
+        toggleViewVisibility(view: inactiveGenericError, isVisible: showGenericError)
     }
     
     func attemptTurnOnBluetooth() {

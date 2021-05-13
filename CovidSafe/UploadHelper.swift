@@ -12,7 +12,7 @@ import KeychainSwift
 final class UploadHelper {
     
     public static func uploadEncounterData(pin: String?, _ result: @escaping (UploadResult, String?) -> Void) {
-        let keychain = KeychainSwift()
+        let keychain = KeychainSwift.shared
         
         guard let managedContext = EncounterDB.shared.persistentContainer?.viewContext else {
             result(.Failed, "[001]")

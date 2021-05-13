@@ -1,3 +1,4 @@
+"[test]decommission_message" = "";
 "action_continue" = "Tiếp tục";
 "action_report_an_issue" = "Báo cáo sự cố";
 "action_upload_done" = "Hoàn tất";
@@ -286,6 +287,8 @@
 "factors_intro_2" = "Chức năng bắt tay cũng có thể bị ảnh hưởng bởi các yếu tố môi trường, bao gồm:";
 /* Example: "From 22 to 28 January 2021" */
 "from" = "";
+/* Error message for when a user tries to signup outside of Australia. */
+"geoblock_error_message" = "";
 "global_back" = "Trở lại";
 "global_close" = "Đóng";
 "global_double_tap" = "nhấn đúp để chỉnh sửa";
@@ -367,6 +370,9 @@
 "location_off" = "Vị trí: TẮT";
 "location_off_description" = "iPhone của bạn yêu cầu quyền truy cập Vị trí để COVIDSafe hoạt động. COVIDSafe KHÔNG theo dõi hoặc lưu trữ dữ liệu vị trí của bạn.";
 "main_restrictions" = "Những hạn chế chính";
+"max_registration_button2" = "";
+"max_registrations" = "";
+"max_registrations_button1" = "";
 /* Splash Screen */
 "migration_in_progress" = "COVIDSafe trong tiến trình cập nhật. \n\nVui lòng đảm bảo điện thoại của bạn không bị tắt cho đến khi cập nhật hoàn tất.";
 "minute" = "Phút";
