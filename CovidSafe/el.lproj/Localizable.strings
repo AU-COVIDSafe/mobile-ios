@@ -289,6 +289,7 @@
 "from" = "";
 /* Error message for when a user tries to signup outside of Australia. */
 "geoblock_error_message" = "";
+"geoblock_rego_error" = "";
 "global_back" = "Πίσω";
 "global_close" = "Κλείστε";
 "global_double_tap" = "πατήστε δύο φορές για επεξεργασία";
@@ -364,6 +365,7 @@
 "jwt_heading" = "Παρακαλούμε εγγραφείτε ξανά";
 "jwt_success" = "Η εγγραφή ανανεώθηκε με επιτυχία";
 "last_7_days" = "Τις τελευταίες 7 ημέρες";
+"latest_case_numbers" = "";
 "learn_more" = "";
 "loading_numbers" = "Φόρτωση τελευταίων αριθμών";
 "locally_acquired" = "%@ αποκτηθέν τοπικά";

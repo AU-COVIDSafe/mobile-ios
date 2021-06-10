@@ -289,6 +289,7 @@
 "from" = "From";
 /* Error message for when a user tries to signup outside of Australia. */
 "geoblock_error_message" = "You may be connected using an internet provider from outside Australia. This could happen when using international data roaming on a non-Australian SIM card.\n\nPlease connect to an Australian network or use a local Wi-Fi internet connection to continue.";
+"geoblock_rego_error" = "Note: You can only complete registration once you’ve arrived in Australia.";
 "global_back" = "Back";
 "global_close" = "Close";
 "global_double_tap" = "double tap to edit";
@@ -364,6 +365,7 @@
 "jwt_heading" = "Please register again";
 "jwt_success" = "Registration successfully renewed";
 "last_7_days" = "Last 7 days";
+"latest_case_numbers" = "Latest available case numbers since %@";
 "learn_more" = "Learn more";
 "loading_numbers" = "Loading latest numbers";
 "locally_acquired" = "%@ locally acquired";

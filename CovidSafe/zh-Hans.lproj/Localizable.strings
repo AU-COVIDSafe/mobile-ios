@@ -289,6 +289,7 @@
 "from" = "";
 /* Error message for when a user tries to signup outside of Australia. */
 "geoblock_error_message" = "";
+"geoblock_rego_error" = "";
 "global_back" = "返回";
 "global_close" = "关闭";
 "global_double_tap" = "双击进行编辑";
@@ -364,6 +365,7 @@
 "jwt_heading" = "请重新注册";
 "jwt_success" = "已成功更新注册";
 "last_7_days" = "最近7天";
+"latest_case_numbers" = "";
 "learn_more" = "";
 "loading_numbers" = "正在加载最新统计数字";
 "locally_acquired" = "%@本地感染";

@@ -289,6 +289,7 @@
 "from" = "";
 /* Error message for when a user tries to signup outside of Australia. */
 "geoblock_error_message" = "";
+"geoblock_rego_error" = "";
 "global_back" = "Trở lại";
 "global_close" = "Đóng";
 "global_double_tap" = "nhấn đúp để chỉnh sửa";
@@ -364,6 +365,7 @@
 "jwt_heading" = "Vui lòng đăng ký lại";
 "jwt_success" = "Đăng ký gia hạn thành công";
 "last_7_days" = "7 ngày vừa qua";
+"latest_case_numbers" = "";
 "learn_more" = "";
 "loading_numbers" = "Đang tải các số mới nhất";
 "locally_acquired" = "%@ ca nhiễm bệnh ở địa phương";
