@@ -12,6 +12,7 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
     @IBOutlet weak var phoneExample: UILabel!
     @IBOutlet weak var phoneError: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var overseasWarningLabel: UILabel!
     @IBOutlet weak var stepCounterLabel: UILabel!
     @IBOutlet weak var backButton: UIButton!
     var countryFlagContainerView: UIView!
@@ -222,10 +223,15 @@ class PhoneNumberViewController: UIViewController, UITextFieldDelegate, Registra
         }
         countryCodeField.text = "(+\(countryPhoneCode)) \(countryName)"
         countryCodeField.accessibilityValue = String.init(format: "SelectedCountryTemplate".localizedString(), countryPhoneCode, countryName)
-        if selectedCountry?.isoCode == "AU2" {
+        if selectedCountry?.isoCode == "AU" {
+            phoneExample.isHidden = true
+            overseasWarningLabel.isHidden = true
+        } else if selectedCountry?.isoCode == "AU2" {
             phoneExample.isHidden = false
+            overseasWarningLabel.isHidden = true
         } else {
             phoneExample.isHidden = true
+            overseasWarningLabel.isHidden = false
         }
         validatePhoneNumber()
     }

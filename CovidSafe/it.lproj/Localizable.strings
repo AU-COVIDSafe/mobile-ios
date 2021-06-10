@@ -289,6 +289,7 @@
 "from" = "";
 /* Error message for when a user tries to signup outside of Australia. */
 "geoblock_error_message" = "";
+"geoblock_rego_error" = "";
 "global_back" = "Indietro";
 "global_close" = "Chiudi";
 "global_double_tap" = "Fai un doppio click per modificare";
@@ -364,6 +365,7 @@
 "jwt_heading" = "Registrati di nuovo";
 "jwt_success" = "Registrazione rinnovata con successo";
 "last_7_days" = "Ultimi 7 giorni";
+"latest_case_numbers" = "";
 "learn_more" = "";
 "loading_numbers" = "Caricamento degli ultimi numeri";
 "locally_acquired" = "%@ contratto localmente";

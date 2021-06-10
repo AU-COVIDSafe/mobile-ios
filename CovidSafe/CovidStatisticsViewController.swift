@@ -294,7 +294,7 @@ class CovidStatisticsViewController: UITableViewController {
                 dateFormatter.timeStyle = .short
                 headerView.dateLabelContainer.isHidden = false
                 headerView.dateLabelDivider.isHidden = false
-                headerView.dateLabel.text = "\(dateFormatter.string(from: updateDate))"
+                headerView.dateLabel.text = String.localizedStringWithFormat("latest_case_numbers".localizedString(), dateFormatter.string(from: updateDate))
             } else {
                 headerView.dateLabelContainer.isHidden = true
                 headerView.dateLabelDivider.isHidden = true

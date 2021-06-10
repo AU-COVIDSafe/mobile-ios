@@ -289,6 +289,7 @@
 "from" = "";
 /* Error message for when a user tries to signup outside of Australia. */
 "geoblock_error_message" = "";
+"geoblock_rego_error" = "";
 "global_back" = "رجوع";
 "global_close" = "إغلاق";
 "global_double_tap" = "أنقر مرتين للتصحيح";
@@ -364,6 +365,7 @@
 "jwt_heading" = "يرجى التسجيل مرة أخرى";
 "jwt_success" = "تم تجديد التسجيل بنجاح";
 "last_7_days" = "آخر 7 أيام";
+"latest_case_numbers" = "";
 "learn_more" = "";
 "loading_numbers" = "تحميل أحدث الأرقام";
 "locally_acquired" = "%@ تم التقاطه محلياً";

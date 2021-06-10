@@ -289,6 +289,7 @@
 "from" = "ਵੱਲੋਂ";
 /* Error message for when a user tries to signup outside of Australia. */
 "geoblock_error_message" = "";
+"geoblock_rego_error" = "";
 "global_back" = "ਪਿੱਛੇ";
 "global_close" = "ਬੰਦ ਕਰੋ";
 "global_double_tap" = "ਸੋਧਣ ਲਈ ਡਬਲ ਟੈਪ ਕਰੋ";
@@ -364,6 +365,7 @@
 "jwt_heading" = "ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਰਜਿਸਟਰ ਕਰੋ";
 "jwt_success" = "ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਦਾ  ਸਫਲਤਾਪੂਰਵਕ ਨਵੀਨੀਕਰਨ ਕੀਤਾ ਗਿਆ ਹੈ ";
 "last_7_days" = "ਪਿਛਲੇ 7 ਦਿਨ";
+"latest_case_numbers" = "";
 "learn_more" = "ਹੋਰ ਜ਼ਿਆਦਾ ਸਿੱਖੋ";
 "loading_numbers" = "ਤਾਜ਼ਾ ਨੰਬਰ ਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ";
 "locally_acquired" = "%@ ਸਥਾਨਕ ਲੱਗੀ ਲਾਗ";
