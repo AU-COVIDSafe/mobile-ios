@@ -1,4 +1,3 @@
-"[test]decommission_message" = "";
 "action_continue" = "تابع";
 "action_report_an_issue" = "بلِّغ عن مشكلة";
 "action_upload_done" = "تمّ";
@@ -366,6 +365,7 @@
 "jwt_success" = "تم تجديد التسجيل بنجاح";
 "last_7_days" = "آخر 7 أيام";
 "latest_case_numbers" = "";
+"latest_case_numbers_ios" = "";
 "learn_more" = "";
 "loading_numbers" = "تحميل أحدث الأرقام";
 "locally_acquired" = "%@ تم التقاطه محلياً";
@@ -525,6 +525,7 @@
 "twenty_eight_days" = "28 يومًا";
 "type_in_time" = "أدخل الوقت";
 "UILaunchStoryboardName" = "LaunchScreen_ar";
+"under_investigation" = "";
 "under_sixteen_content" = "أؤكد موافقة أحد والدي أو الوصي علي على أن تعمل وكالة التحول الرقمي كمدير لتخزين البيانات، بموجب قرار قانوني من قبل أمين وزارة الصحة في الحكومة الأسترالية لجمع:";
 "under_sixteen_first_paragraph" = "معلومات التسجيل الخاصة بي.";
 /* OnBoarding Under Sixteen */

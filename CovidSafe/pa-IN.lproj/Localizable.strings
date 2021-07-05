@@ -1,4 +1,3 @@
-"[test]decommission_message" = "";
 "action_continue" = "ਜਾਰੀ ਰੱਖੋ";
 "action_report_an_issue" = "ਮੁੱਦੇ/ਮਸਲੇ ਬਾਰੇ ਰਿਪੋਰਟ ਕਰੋ|";
 "action_upload_done" = "ਕਰ ਦਿੱਤਾ";
@@ -366,6 +365,7 @@
 "jwt_success" = "ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਦਾ  ਸਫਲਤਾਪੂਰਵਕ ਨਵੀਨੀਕਰਨ ਕੀਤਾ ਗਿਆ ਹੈ ";
 "last_7_days" = "ਪਿਛਲੇ 7 ਦਿਨ";
 "latest_case_numbers" = "";
+"latest_case_numbers_ios" = "";
 "learn_more" = "ਹੋਰ ਜ਼ਿਆਦਾ ਸਿੱਖੋ";
 "loading_numbers" = "ਤਾਜ਼ਾ ਨੰਬਰ ਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ";
 "locally_acquired" = "%@ ਸਥਾਨਕ ਲੱਗੀ ਲਾਗ";
@@ -525,6 +525,7 @@
 "twenty_eight_days" = "28 ਦਿਨ";
 "type_in_time" = "ਸਮਾਂ ਭਰੋ";
 "UILaunchStoryboardName" = "";
+"under_investigation" = "";
 "under_sixteen_content" = "ਮੈਂ ਆੱਸਟ੍ਰੇਲੀਅਨ ਸਰਕਾਰ ਦੇ ਸਿਹਤ ਵਿਭਾਗ ਦੇ ਸਕੱਤਰ ਦੁਆਰਾ ਕੀਤੇ ਕਨੂੰਨੀ ਨਿਰਣੇ ਦੇ ਤਹਿਤ, ਡੇਟਾ ਸਟੋਰ ਪ੍ਰਸ਼ਾਸ਼ਕ ਵਜੋਂ ਡਿਜੀਟਲ ਟ੍ਰਾਂਸਫੋਰਮੇਸ਼ਨ ਏਜੰਸੀ ਨੂੰ ਆਪਣੇ ਮਾਪੇ ਜਾਂ ਸਰਪ੍ਰਸਤ ਦੀਆਂ ਸਹਿਮਤੀਆਂ ਦੀ ਪੁਸ਼ਟੀ ਕਰਦਾ/ਦੀ ਹਾਂ, ਜੋ ਇਕੱਤਰ ਕਰ ਰਹੇ ਹਨ :";
 "under_sixteen_first_paragraph" = "ਮੇਰੀ ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਸਬੰਧੀ ਜਾਣਕਾਰੀ।";
 /* OnBoarding Under Sixteen */

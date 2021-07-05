@@ -1,4 +1,3 @@
-"[test]decommission_message" = "";
 "action_continue" = "Devam";
 "action_report_an_issue" = "Sorun bildir";
 "action_upload_done" = "Bitti";
@@ -366,6 +365,7 @@
 "jwt_success" = "Kayıt başarıyla yenilendi";
 "last_7_days" = "Son 7 gün";
 "latest_case_numbers" = "";
+"latest_case_numbers_ios" = "";
 "learn_more" = "";
 "loading_numbers" = "En son sayılar yükleniyor";
 "locally_acquired" = "%@ yerel olarak edinilen";
@@ -525,6 +525,7 @@
 "twenty_eight_days" = "28 gün";
 "type_in_time" = "Zamanı yazın";
 "UILaunchStoryboardName" = "";
+"under_investigation" = "";
 "under_sixteen_content" = "Ebeveynimin ya da vasimin aşağıdaki bilgileri toplayan Dijital Dönüşüm Ajansı'na veri deposu yöneticisi olarak Avustralya Hükümeti Sağlık Bakanının yasal olarak belirlediğine uygun olarak rızası olduğunu onaylıyorum:";
 "under_sixteen_first_paragraph" = "Kayıt bilgilerim.";
 /* OnBoarding Under Sixteen */

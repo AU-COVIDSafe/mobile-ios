@@ -1,4 +1,3 @@
-"[test]decommission_message" = "";
 "action_continue" = "Συνεχίστε";
 "action_report_an_issue" = "Αναφέρετε το πρόβλημα";
 "action_upload_done" = "Συνεχίστε";
@@ -366,6 +365,7 @@
 "jwt_success" = "Η εγγραφή ανανεώθηκε με επιτυχία";
 "last_7_days" = "Τις τελευταίες 7 ημέρες";
 "latest_case_numbers" = "";
+"latest_case_numbers_ios" = "";
 "learn_more" = "";
 "loading_numbers" = "Φόρτωση τελευταίων αριθμών";
 "locally_acquired" = "%@ αποκτηθέν τοπικά";
@@ -525,6 +525,7 @@
 "twenty_eight_days" = "28 ημέρες";
 "type_in_time" = "Πληκτρολογήστε την ώρα";
 "UILaunchStoryboardName" = "LaunchScreen_el_GR";
+"under_investigation" = "";
 "under_sixteen_content" = "Επιβεβαιώνω ότι ο γονέας ή ο κηδεμόνας μου συναινεί να είναι ο Οργανισμός Ψηφιακού Μετασχηματισμού  διαχειριστής του χώρου αποθήκευσης δεδομένων, σύμφωνα με νόμιμο καθορισμό του Γενικού Γραμματέα του Υπουργείου Υγείας της Αυστραλιανής Κυβέρνησης που συλλέγει:";
 "under_sixteen_first_paragraph" = "Τα στοιχεία εγγραφής μου.";
 /* OnBoarding Under Sixteen */
