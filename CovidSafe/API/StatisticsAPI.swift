@@ -113,6 +113,7 @@ struct StateTerritoryStatistics: Codable {
     let newLocallyAcquired: Int?
     let locallyAcquired: Int?
     let newOverseasAcquired: Int?
+    let newUnderInvestigation: Int?
     let overseasAcquired: Int?
     let historicalCases: [HistoricalCase]?
     
@@ -126,6 +127,7 @@ struct StateTerritoryStatistics: Codable {
         case newOverseasAcquired = "new_overseas_acquired"
         case overseasAcquired = "overseas_acquired"
         case historicalCases = "historical_cases"
+        case newUnderInvestigation = "new_under_investigation"
         case deaths
     }
 }

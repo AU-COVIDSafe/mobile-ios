@@ -1,4 +1,3 @@
-"[test]decommission_message" = "Delete this app now";
 "action_continue" = "Continue";
 "action_report_an_issue" = "Report an issue";
 "action_upload_done" = "Done";
@@ -366,6 +365,7 @@
 "jwt_success" = "Registration successfully renewed";
 "last_7_days" = "Last 7 days";
 "latest_case_numbers" = "Latest available case numbers since %@";
+"latest_case_numbers_ios" = "Latest available case numbers since";
 "learn_more" = "Learn more";
 "loading_numbers" = "Loading latest numbers";
 "locally_acquired" = "%@ locally acquired";
@@ -525,6 +525,7 @@
 "twenty_eight_days" = "28 days";
 "type_in_time" = "Type in time";
 "UILaunchStoryboardName" = "LaunchScreen_en";
+"under_investigation" = "%@ under investigation";
 "under_sixteen_content" = "I confirm my parent or guardian consents to the Digital Transformation Agency as data store administrator, under legal determination made by the Secretary of the Australian Government Department of Health collecting:";
 "under_sixteen_first_paragraph" = "my registration information";
 /* OnBoarding Under Sixteen */

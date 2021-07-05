@@ -1,4 +1,3 @@
-"[test]decommission_message" = "";
 "action_continue" = "繼續";
 "action_report_an_issue" = "報告問題";
 "action_upload_done" = "完成";
@@ -366,6 +365,7 @@
 "jwt_success" = "成功更新註冊。";
 "last_7_days" = "過去7天";
 "latest_case_numbers" = "";
+"latest_case_numbers_ios" = "";
 "learn_more" = "";
 "loading_numbers" = "正在載入最新統計數字";
 "locally_acquired" = "%@本地感染";
@@ -525,6 +525,7 @@
 "twenty_eight_days" = "28天";
 "type_in_time" = "輸入時間";
 "UILaunchStoryboardName" = "LaunchScreen_zh_Hant";
+"under_investigation" = "";
 "under_sixteen_content" = "我確認我的父母或監護人同意數字化轉型局作為數據儲存管理者，根據澳大利亞政府衛生部常務副部長的合法決定，收集以下資訊：";
 "under_sixteen_first_paragraph" = "我的註册資料。";
 /* OnBoarding Under Sixteen */

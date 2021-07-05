@@ -1,4 +1,3 @@
-"[test]decommission_message" = "";
 "action_continue" = "계속";
 "action_report_an_issue" = "문제 신고하기";
 "action_upload_done" = "완료";
@@ -366,6 +365,7 @@
 "jwt_success" = "등록 갱신 완료";
 "last_7_days" = "지난 7 일";
 "latest_case_numbers" = "";
+"latest_case_numbers_ios" = "";
 "learn_more" = "더 알아보기";
 "loading_numbers" = "최신 번호 로드 중";
 "locally_acquired" = "%@ 지역 감염";
@@ -525,6 +525,7 @@
 "twenty_eight_days" = "28일";
 "type_in_time" = "시간 입력";
 "UILaunchStoryboardName" = "LaunchScreen_ko";
+"under_investigation" = "";
 "under_sixteen_content" = "본인은 호주 정부 보건부 장관의 법적 결정에 따라, 데이터 저장소 관리자로서 다음 정보를 수집하는 것에 대해 본인 부모 또는 보호자가 Digital Transformation Agency에 동의한다는 것을 확인합니다:";
 "under_sixteen_first_paragraph" = "나의 등록 정보";
 /* OnBoarding Under Sixteen */

@@ -180,7 +180,8 @@ class CovidStatisticsViewController: UITableViewController {
             let newCases = stateData?.newCases ?? 0
             let localCases = stateData?.newLocallyAcquired ?? 0
             let overseasCases = stateData?.newOverseasAcquired ?? 0
-            var bottomDesc = "\(String.localizedStringWithFormat("locally_acquired".localizedString(), "\(localCases)"))\r\(String.localizedStringWithFormat( "overseas_acquired".localizedString(), "\(overseasCases)"))"
+            let underInvestigation = stateData?.newUnderInvestigation ?? 0
+            var bottomDesc = "\(String.localizedStringWithFormat("locally_acquired".localizedString(), "\(localCases)"))\r\(String.localizedStringWithFormat( "overseas_acquired".localizedString(), "\(overseasCases)"))\r\(String.localizedStringWithFormat( "under_investigation".localizedString(), "\(underInvestigation)"))"
             var description = String.localizedStringWithFormat(descriptionFormat, "new_cases".localizedString(), bottomDesc)
             var attributedDesc = NSMutableAttributedString(string: description)
             
@@ -190,6 +191,9 @@ class CovidStatisticsViewController: UITableViewController {
             attributedDesc.addAttribute(.font,
                                         value: UIFont.preferredFont(for: .callout, weight: .semibold),
                                         range: NSRange(description.range(of: "\(overseasCases)")!, in: description))
+            attributedDesc.addAttribute(.font,
+                                        value: UIFont.preferredFont(for: .callout, weight: .semibold),
+                                        range: NSRange(description.range(of: "\(underInvestigation)")!, in: description))
             
             mainSectionData.append(StatisticRowModel(number: newCases, description: attributedDesc, image: trendUpImage))
             

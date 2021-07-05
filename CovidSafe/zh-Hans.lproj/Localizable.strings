@@ -1,4 +1,3 @@
-"[test]decommission_message" = "";
 "action_continue" = "继续";
 "action_report_an_issue" = "报告问题";
 "action_upload_done" = "完成";
@@ -366,6 +365,7 @@
 "jwt_success" = "已成功更新注册";
 "last_7_days" = "最近7天";
 "latest_case_numbers" = "";
+"latest_case_numbers_ios" = "";
 "learn_more" = "";
 "loading_numbers" = "正在加载最新统计数字";
 "locally_acquired" = "%@本地感染";
@@ -525,6 +525,7 @@
 "twenty_eight_days" = "28天";
 "type_in_time" = "输入时间";
 "UILaunchStoryboardName" = "LaunchScreen_zh_Hans";
+"under_investigation" = "";
 "under_sixteen_content" = "我确认我的父母或监护人同意数字转换局作为数据存储管理方可以根据澳大利亚政府卫生部常务副部长依法作出的决议，收集以下信息：";
 "under_sixteen_first_paragraph" = "我的注册信息。";
 /* OnBoarding Under Sixteen */

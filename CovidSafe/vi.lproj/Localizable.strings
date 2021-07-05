@@ -1,4 +1,3 @@
-"[test]decommission_message" = "";
 "action_continue" = "Tiếp tục";
 "action_report_an_issue" = "Báo cáo sự cố";
 "action_upload_done" = "Hoàn tất";
@@ -366,6 +365,7 @@
 "jwt_success" = "Đăng ký gia hạn thành công";
 "last_7_days" = "7 ngày vừa qua";
 "latest_case_numbers" = "";
+"latest_case_numbers_ios" = "";
 "learn_more" = "";
 "loading_numbers" = "Đang tải các số mới nhất";
 "locally_acquired" = "%@ ca nhiễm bệnh ở địa phương";
@@ -525,6 +525,7 @@
 "twenty_eight_days" = "28 ngày";
 "type_in_time" = "Nhập thời gian";
 "UILaunchStoryboardName" = "LaunchScreen_vi";
+"under_investigation" = "";
 "under_sixteen_content" = "Tôi xác nhận cha mẹ hoặc người giám hộ của tôi đồng ý cho Cơ quan Chuyển đổi Kỹ thuật số với tư cách là nhà quản trị cửa hàng dữ liệu, theo quyết định pháp lý của Bộ trưởng Bộ Y tế Chính phủ Úc thu thập:";
 "under_sixteen_first_paragraph" = "Thông tin đăng ký của tôi.";
 /* OnBoarding Under Sixteen */

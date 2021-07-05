@@ -1,4 +1,3 @@
-"[test]decommission_message" = "";
 "action_continue" = "Continua";
 "action_report_an_issue" = "Segnala un problema";
 "action_upload_done" = "Eseguito";
@@ -366,6 +365,7 @@
 "jwt_success" = "Registrazione rinnovata con successo";
 "last_7_days" = "Ultimi 7 giorni";
 "latest_case_numbers" = "";
+"latest_case_numbers_ios" = "";
 "learn_more" = "";
 "loading_numbers" = "Caricamento degli ultimi numeri";
 "locally_acquired" = "%@ contratto localmente";
@@ -525,6 +525,7 @@
 "twenty_eight_days" = "28 giorni";
 "type_in_time" = "Digita l'ora";
 "UILaunchStoryboardName" = "LaunchScreen_it_IT";
+"under_investigation" = "";
 "under_sixteen_content" = "Confermo il consenso dei miei genitori o del mio tutore a Digital Transformation Agency nel suo ruolo di amministratore della banca dati, in base alle disposizioni legali stabilite dal segretario del Dipartimento della sanità del governo australiano:";
 "under_sixteen_first_paragraph" = "I miei dati di registrazione.";
 /* OnBoarding Under Sixteen */
