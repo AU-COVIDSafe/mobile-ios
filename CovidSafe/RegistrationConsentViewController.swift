@@ -9,6 +9,19 @@ import UIKit
 
 class RegistrationConsentViewController: UIViewController {
     
+    @IBOutlet weak var introLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        guard let attributedString = introLabel.attributedText else {
+            return
+        }
+        let mutableString = NSMutableAttributedString(attributedString: attributedString)
+        mutableString.parseItalicTags()
+        introLabel.attributedText = mutableString
+    }
+    
     @IBAction func onBackTapped(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }

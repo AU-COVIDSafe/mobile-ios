@@ -15,6 +15,7 @@ class UnderSixteenViewController: UIViewController, RegistrationHandler {
     public var reauthenticating: Bool = false
     
     @IBOutlet weak var stepCounterLabel: UILabel!
+    @IBOutlet weak var introLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,13 @@ class UnderSixteenViewController: UIViewController, RegistrationHandler {
             1,
             4
         )
+        
+        guard let attributedString = introLabel.attributedText else {
+            return
+        }
+        let mutableString = NSMutableAttributedString(attributedString: attributedString)
+        mutableString.parseItalicTags()
+        introLabel.attributedText = mutableString
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -39,4 +47,11 @@ class UnderSixteenViewController: UIViewController, RegistrationHandler {
         performSegue(withIdentifier: "under16Consent", sender: nil)
     }
 
+    @IBAction func dontAgreeTapped(_ sender: Any) {
+        let errorAlert = UIAlertController(title: "",
+                                           message: "non_consent_popup".localizedString(),
+                                           preferredStyle: .alert)
+        errorAlert.addAction(UIAlertAction(title: "global_OK".localizedString(), style: .default))
+        present(errorAlert, animated: true)
+    }
 }

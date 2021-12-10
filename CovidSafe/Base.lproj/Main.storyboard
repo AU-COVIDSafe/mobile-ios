@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8X4-AC-7cb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8X4-AC-7cb">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -235,7 +235,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Together we can stop the spread of COVID-19" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00h-JA-MfK">
-                                                <rect key="frame" x="32" y="208" width="354.66666666666669" height="61"/>
+                                                <rect key="frame" x="32" y="208" width="355" height="61"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -841,7 +841,7 @@ They will need to register using their own device and phone number so that COVID
                         <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountryCell" id="8do-WN-Rfo" customClass="CountryCellViewCell" customModule="COVIDSafe" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="66.333335876464844"/>
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="66.333335876464844"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8do-WN-Rfo" id="jdA-4g-Z20">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="66.333335876464844"/>
@@ -1666,6 +1666,7 @@ For more information please refer to the *Help Topics* page.</string>
                     <navigationItem key="navigationItem" id="CfU-xv-EVP"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="introLabel" destination="l6E-t2-z2H" id="ZsP-2z-5c5"/>
                         <segue destination="tmd-7A-Wz4" kind="show" identifier="iConsentSegue" id="h8R-i7-zdK"/>
                     </connections>
                 </viewController>
@@ -1740,7 +1741,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="data_privacy_content"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="data_privacy_content_android"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration and privacy" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0u-wa-fYL">
@@ -2159,7 +2160,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HxI-sW-1by">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="592"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DY3-Bs-8h2" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="414.66666666666669"/>
@@ -2304,7 +2305,7 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8B-6S-UGU">
-                                <rect key="frame" x="32" y="655" width="350" height="49"/>
+                                <rect key="frame" x="32" y="600" width="350" height="49"/>
                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" hint="please consent to proceed"/>
                                 <constraints>
@@ -2321,20 +2322,42 @@ See the COVIDSafe *privacy policy* for further details about your rights about y
                                     <action selector="doneOntap:" destination="GKS-Wl-QbF" eventType="touchUpInside" id="h4R-Sa-TOb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQ8-ni-wBl">
+                                <rect key="frame" x="32" y="657" width="350" height="49"/>
+                                <color key="backgroundColor" red="0.63921568630000003" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" hint="please consent to proceed"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="rAk-ex-har"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="I do not agree">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="non_consent_button"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dontAgreeTapped:" destination="GKS-Wl-QbF" eventType="touchUpInside" id="k3S-GY-BY0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="iQ8-ni-wBl" firstAttribute="top" secondItem="C8B-6S-UGU" secondAttribute="bottom" constant="8" id="0f8-Pe-Dmy"/>
                             <constraint firstItem="C8B-6S-UGU" firstAttribute="leading" secondItem="C9Z-le-9Gl" secondAttribute="leading" constant="32" id="Dqh-2I-raE"/>
+                            <constraint firstAttribute="trailing" secondItem="iQ8-ni-wBl" secondAttribute="trailing" constant="32" id="M2m-XF-j7y"/>
                             <constraint firstItem="C8B-6S-UGU" firstAttribute="top" secondItem="HxI-sW-1by" secondAttribute="bottom" constant="8" id="Vzy-X6-5Gx"/>
-                            <constraint firstItem="n1U-7K-j10" firstAttribute="top" secondItem="C8B-6S-UGU" secondAttribute="bottom" constant="32" id="dgy-9q-XRO"/>
                             <constraint firstItem="HxI-sW-1by" firstAttribute="trailing" secondItem="C9Z-le-9Gl" secondAttribute="trailing" id="g0Z-zj-hkW"/>
                             <constraint firstItem="HxI-sW-1by" firstAttribute="top" secondItem="igf-1X-v6T" secondAttribute="bottom" id="ld9-RV-hXG"/>
                             <constraint firstItem="HxI-sW-1by" firstAttribute="leading" secondItem="C9Z-le-9Gl" secondAttribute="leading" id="sCn-WT-Ne1"/>
+                            <constraint firstItem="iQ8-ni-wBl" firstAttribute="leading" secondItem="C9Z-le-9Gl" secondAttribute="leading" constant="32" id="skQ-F4-gqI"/>
                             <constraint firstAttribute="trailing" secondItem="C8B-6S-UGU" secondAttribute="trailing" constant="32" id="t6r-v9-G5t"/>
+                            <constraint firstItem="n1U-7K-j10" firstAttribute="top" secondItem="iQ8-ni-wBl" secondAttribute="bottom" constant="30" id="vsw-TU-gAS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Stz-cr-egJ"/>
                     <connections>
+                        <outlet property="introLabel" destination="QDG-kZ-uPM" id="oKa-Xo-hJ5"/>
                         <outlet property="stepCounterLabel" destination="phd-aD-1If" id="Zlo-Ih-5hz"/>
                         <segue destination="mND-9i-sIw" kind="show" identifier="under16Consent" id="bMl-IY-pjw"/>
                     </connections>

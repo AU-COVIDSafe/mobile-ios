@@ -6,7 +6,8 @@ public extension NSMutableAttributedString {
     
     enum ElementType {
         case Link,
-        Bold
+        Bold,
+        Italic
     }
     
     func parseHTMLLinks() {
@@ -22,6 +23,14 @@ public extension NSMutableAttributedString {
         let regexBoldEndElementTextString = #"\<\/b\>"#
         while canParseOccurence(elementStartRegex: regexBoldStartElementString, elementEndRegex: regexBoldEndElementTextString) {
             parseHtmlOccurence(elementStartRegex: regexBoldStartElementString, elementEndRegex: regexBoldEndElementTextString, elementType: .Bold)
+        }
+    }
+    
+    func parseItalicTags() {
+        let regexItalicStartElementString = #"\<i(.*?)\>"#
+        let regexItalicEndElementTextString = #"\<\/i\>"#
+        while canParseOccurence(elementStartRegex: regexItalicStartElementString, elementEndRegex: regexItalicEndElementTextString) {
+            parseHtmlOccurence(elementStartRegex: regexItalicStartElementString, elementEndRegex: regexItalicEndElementTextString, elementType: .Italic)
         }
     }
     
@@ -72,6 +81,11 @@ public extension NSMutableAttributedString {
             replaceCharacters(in: nsEndElementRange, with: "#")
             replaceCharacters(in: nsStartElementRange, with: "#")
             addBold(enclosedIn: "#")
+        case .Italic:
+            //remove bold marking from text
+            replaceCharacters(in: nsEndElementRange, with: "%")
+            replaceCharacters(in: nsStartElementRange, with: "%")
+            addItalic(enclosedIn: "%")
         }
         
     }
@@ -130,6 +144,36 @@ public extension NSMutableAttributedString {
         // for now only supporting body. Need to get the UIFont from the current string.
         let attributes: [NSAttributedString.Key: Any] = [
             .font: UIFont.preferredFont(for: .body, weight: .semibold)
+        ]
+        
+        addAttributes(attributes, range: linkRange)
+        
+        return true
+    }
+    
+    @discardableResult
+    func addItalic(enclosedIn marker: String) -> Bool {
+        guard !marker.isEmpty else { return false }
+        
+        let regexString = "\(marker)(.*?)\(marker)"
+        guard let strRange = string.range(of: regexString, options: .regularExpression) else {
+            return false
+        }
+        let convertedRange = NSRange(strRange, in: string)
+        
+        let matchingString = string[strRange]
+        let enclosedString = matchingString.replacingOccurrences(of: marker, with: "")
+        let nsBeginRange = NSRange(location: convertedRange.location, length: marker.count)
+        let nsEndRange = NSRange(location: convertedRange.upperBound - marker.count, length: marker.count)
+        // first replace end, otherwise the range will change
+        replaceCharacters(in: nsEndRange, with: "")
+        replaceCharacters(in: nsBeginRange, with: "")
+        
+        let linkRange = NSRange(location: convertedRange.location, length: enclosedString.count)
+        
+        // for now only supporting body. Need to get the UIFont from the current string.
+        let attributes: [NSAttributedString.Key: Any] = [
+            .font: UIFont.preferredFont(forTextStyle: .body).italic()
         ]
         
         addAttributes(attributes, range: linkRange)
