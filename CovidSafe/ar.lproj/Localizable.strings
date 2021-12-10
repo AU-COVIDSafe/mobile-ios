@@ -1,3 +1,38 @@
+/* Figma page iOS Screens (05/06) */
+"AllowBluetoothOFF" = "الوصول إلى Bluetooth®: متوقف";
+/* Figma page iOS Screens (05/06) */
+"AllowBluetoothON" = "الوصول إلى Bluetooth: مشغّل";
+/* Figma page iOS Screens (05/06) */
+"BluetoothOFF" = "\U200FBluetooth®: متوقف";
+/* Figma page iOS Screens (05/06) */
+"BluetoothOFF_content" = "شغِّل Bluetooth® على هاتفك، اختر \"السماح باتصالات جديدة\" في حال ظهورها.";
+/* Figma page iOS Screens (05/06) */
+"BluetoothON" = "Bluetooth®: مشغّل";
+/* Figma page Android Screens (05/06) */
+"Enter_your_mobile_number_label" = "أدخل رقم هاتفك المحمول";
+/* Class = "UILabel"; text = "Help stop the spread\nand save lives."; ObjectID = "Cme-9F-deB"; */
+"IntroLabel" = "ساعد في وقف الانتشار\nوإنقاذ الأرواح.";
+/* Figma page iOS Screens (05/06) */
+"NotificationsBlurbLink" = "تغيير إعدادات الإشعارات";
+/* Figma page iOS Screens (05/06) */
+"NotificationsDisabledBlurb" = "لن تتلقى إشعارًا إذا كان تطبيق COVIDSafe لا يعمل. \nغيّر إعدادات الإشعارات";
+/* Figma page iOS Screens (05/06) */
+"NotificationsEnabledBlurb" = "سوف تتلقى إشعارًا إذا كان تطبيق COVIDSafe لا يعمل. غيّر إعدادات الإشعارات";
+"OS2b_Item_4" = "4. يتطلب جهاز iphone الخاص بك تشغيل الموقع الجغرافي ليتمكن تطبيق COVIDSafe من العمل. *لا يقوم تطبيق COVIDSafe بجمع بيانات الموقع الجغرافي أو تخزينها أو استخدامها*";
+"PINNumber_VO_Label" = "رقم التعريف الشخصي PIN";
+/* Figma page iOS Screens (05/06) */
+"PN_BluetoothStatusBody" = "تأكد من أن التطبيق يعمل قبل مغادرتك المنزل وعند وجودك في الأماكن العامة من خلال تمكين Bluetooth®.";
+/* Figma page iOS Screens (05/06) */
+"PN_BluetoothStatusTitle" = "\U200F COVIDSafe لا يعمل";
+"PN_MobileNumber_VOLabel" = "رقم الهاتف المحمول";
+/* Figma page iOS Screens (05/06) */
+"PN_ReminderBody" = "افتح تطبيق COVIDSafe لتتأكد من أنه يعمل.";
+/* Figma page iOS Screens (05/06) */
+"PN_ReminderTitle" = "لم يتم اكتشاف أي لقاءات لمدة 48 ساعة";
+"PostcodeValidationErrorMessage" = "يُرجى إدخال رمز بريدي أسترالي صالح.";
+/* Figma page Android Screens (05/06) */
+"Select_country_or_region_headline" = "اختر البلد أو المنطقة";
+"Support_VOLabel" = "الدعم. للحصول على مساعدة بشأن المشكلات التي لا تغطيها مواضيع المساعدة";
 "action_continue" = "تابع";
 "action_report_an_issue" = "بلِّغ عن مشكلة";
 "action_upload_done" = "تمّ";
@@ -11,20 +46,10 @@
 "activity_intro_2" = "";
 /* Figma page iOS Screens (05/06) */
 "allow_bluetooth_call" = "السماح لتطبيق COVIDSafe بالوصول إلى Bluetooth®";
-/* Figma page iOS Screens (05/06) */
-"AllowBluetoothOFF" = "الوصول إلى Bluetooth®: متوقف";
-/* Figma page iOS Screens (05/06) */
-"AllowBluetoothON" = "الوصول إلى Bluetooth: مشغّل";
 "app_activity_bluetooth_handshakes_heading" = "";
 "australian_capital_territory" = "إقليم العاصمة الأسترالية";
 "ble_handshakes_yesterday" = "";
 "bluetooth_handshakes" = "مصافحات \U200F Bluetooth";
-/* Figma page iOS Screens (05/06) */
-"BluetoothOFF" = "\U200FBluetooth®: متوقف";
-/* Figma page iOS Screens (05/06) */
-"BluetoothOFF_content" = "شغِّل Bluetooth® على هاتفك، اختر \"السماح باتصالات جديدة\" في حال ظهورها.";
-/* Figma page iOS Screens (05/06) */
-"BluetoothON" = "Bluetooth®: مشغّل";
 "cancel_snooze" = "إلغاء الغفوة";
 "cases_28_days" = "الحالات الجديدة في ال 28 يومًا الماضية";
 "cases_7_days" = "الحالات الجديدة في آخر 7 أيام";
@@ -250,8 +275,9 @@
 "country_region_name_zw" = "زيمبابوي";
 "customise_days" = "تخصيص الأيام";
 "data_privacy_button" = "التالي";
-"data_privacy_content" = "من المهم أن تقرأ *سياسة الخصوصية* لتطبيق COVIDSafe قبل التسجيل.\n\nسيقوم COVIDSafe بجمع معلوماتك الشخصية أو استخدامها أو الكشف عنها فقط بما يتماشى مع هذه السياسة وقانون الخصوصية لعام 1988.\n\n إذا كان عمرك يقل عن 16 عاماً، يجب على أحد والديك/الوصي عليك أيضاً قراءة *سياسة الخصوصية*. \n\nاستخدام تطبيق COVIDSafe هو أمر إختياري تماماً. يمكنك تثبيت التطبيق أو حذفه في أي وقت. إذا قمت بحذف تطبيق COVIDSafe، *يمكنك أيضاً طلب حذف معلوماتك* من الخادم الآمن. \n\nللتسجيل في تطبيق COVIDSafe، ستحتاج إلى إدخال اسم (أو اسم مستعار) ورقم هاتف محمول وفئة عمرية ورمز بريدي. \n\n يتم تخزين المعلومات التي تعطيها عند التسجيل، والمعلومات المتعلقة باستخدامك لتطبيق COVIDSafe في خادم آمن للغاية. \n\nيتم جمع المعلومات أيضًا للتأكد من أن تطبيق COVIDSafe يعمل بشكل صحيح على جهازك، ويتضمن ذلك نظام تشغيل جهازك وإصدار التطبيق الذي قمت بتثبيته واللغة التي تستخدمها في جهازك وما إذا كانت تقنية Bluetooth® تعمل وما إذا كان التطبيق الخاص بك قد سجل أي لقاءات في الأيام السبعة السابقة.\n\nلن يقوم تطبيق COVIDSafe بجمع معلومات عن موقعك الجغرافي. \n\nسيسجل تطبيق COVIDSafe تاريخ ووقت الاتصال والرمز مجهول الهوية لمستخدمي COVIDSafe الآخرين الذين تتواصل معهم وقوة إشارة Bluetooth، وطراز الهاتف المحمول للمستخدمين الآخرين على جهازك. \n\nكما سيسجل تطبيق COVIDSafe على أجهزة المستخدمين الآخرين الذين تتواصل معهم أيضاً الرمز مجهول الهوية الخاص بك وتاريخ ووقت الاتصال بك وقوة إشارة Bluetooth وطراز هاتفك المحمول.  \n\n إذا جاءت نتيجة فحص COVID-19 لمستخدم آخر إيجابية، فقد يقوم هذا المستخدم بتحميل تفاصيل الاتصال به وقد يتصل بك موظف من دائرة الصحة في الولاية أو الإقليم لأغراض تعقب الاختلاط. \n\n سيتم استخدام تفاصيل التسجيل الخاصة بك أو الكشف عنها فقط لتعقب الاختلاط ولتشغيل التطبيق بالطرق المناسبة والقانونية. \n\n يتوفر المزيد من المعلومات على الموقع الإلكتروني *covidsafe.gov.au*. \n\n راجع *سياسة الخصوصية* لتطبيق COVIDSafe للاطلاع على مزيد من التفاصيل حول حقوقك المتعلقة بمعلوماتك وكيف سيتم التعامل معها ومشاركتها.";
-"data_privacy_content_VO" = "من المهم أن تقرأ سياسة الخصوصية لتطبيق COVIDSafe قبل التسجيل. \n\nسيقوم COVIDSafe بجمع معلوماتك الشخصية أو استخدامها أو الكشف عنها فقط بما يتماشى مع هذه السياسة وقانون الخصوصية لعام 1988.\n\nإذا كان عمرك يقل عن 16 عاماً، يجب على أحد والديك/الوصي عليك أيضاً قراءة سياسة الخصوصية. \n\nاستخدام تطبيق COVIDSafe هو أمر إختياري تماماً. يمكنك تثبيت التطبيق أو حذفه في أي وقت. إذا قمت بحذف تطبيق COVIDSafe، يمكنك أيضاً طلب حذف معلوماتك من الخادم الآمن. \n \nللتسجيل في تطبيق COVIDSafe، ستحتاج إلى إدخال اسم (أو اسم مستعار) ورقم هاتف محمول وفئة عمرية ورمز بريدي. \n\n يتم تخزين المعلومات التي تعطيها عند التسجيل، والمعلومات المتعلقة باستخدامك لتطبيق COVIDSafe في خادم آمن للغاية. \n \n يتم جمع المعلومات أيضًا للتأكد من أن تطبيق COVIDSafe يعمل بشكل صحيح على جهازك، ويتضمن ذلك نظام تشغيل جهازك وإصدار التطبيق الذي قمت بتثبيته واللغة التي تستخدمها في جهازك وما إذا كانت تقنية Bluetooth تعمل وما إذا كان التطبيق الخاص بك قد سجل أي لقاءات في الأيام السبعة السابقة.\n\n لن يقوم تطبيق COVIDSafe بجمع معلومات عن موقعك الجغرافي. \n\nسيسجل تطبيق COVIDSafe تاريخ ووقت الاتصال والرمز مجهول الهوية لمستخدمي COVIDSafe الآخرين الذين تتواصل معهم وقوة إشارة Bluetooth، وطراز الهاتف المحمول للمستخدمين الآخرين على جهازك. \n\nكما سيسجل تطبيق COVIDSafe على أجهزة المستخدمين الآخرين الذين تتواصل معهم أيضاً الرمز مجهول الهوية الخاص بك وتاريخ ووقت الاتصال بك وقوة إشارة Bluetooth وطراز هاتفك المحمول.  \n\nإذا جاءت نتيجة فحص COVID-19 لمستخدم آخر إيجابية، فقد يقوم هذا المستخدم بتحميل تفاصيل الاتصال به وقد يتصل بك موظف من دائرة الصحة في الولاية أو الإقليم لأغراض تعقب الاختلاط.  \n\n سيتم استخدام تفاصيل التسجيل الخاصة بك أو الكشف عنها فقط لتعقب الاختلاط ولتشغيل COVIDSafe بالطرق المناسبة والقانونية. \n\nيتوفر المزيد من المعلومات على الموقع الإلكتروني covidsafe.gov.au.  \n\n راجع سياسة الخصوصية لتطبيق COVIDSafe للاطلاع على مزيد من التفاصيل حول حقوقك المتعلقة بمعلوماتك وكيف سيتم التعامل معها ومشاركتها.";
+"data_privacy_content" = "من المهم أن تقرأ سياسة الخصوصية لتطبيق COVIDSafe قبل التسجيل لتطبيق COVIDSafe. سيقوم COVIDSafe بجمع معلوماتك الشخصية أو استخدامها أو الكشف عنها فقط بما يتماشى مع هذه السياسة وقانون الخصوصية لعام 1988.\n\nإذا كان عمرك أقل من 16 عامًا، فيجب على أحد والديك/الوصي عليك أيضًا قراءة *سياسة الخصوصية*. \n\nاستخدام تطبيق COVIDSafe هو أمر طوعي بالكامل. يمكنك تثبيت التطبيق أو حذفه في أي وقت. إذا قمت بحذف تطبيق COVIDSafe، *فيمكنك أيضًا طلب حذف معلوماتك* من الخادم الآمن. إذا لم تقدم معلوماتك الشخصية، فلن يعمل تطبيق COVIDSafe على النحو المنشود. \n \nللتسجيل في تطبيق COVIDSafe، ستحتاج إلى إدخال اسم (أو اسم مستعار) ورقم هاتف محمول وفئة عمرية ورمز بريدي. \n\n يتم تخزين المعلومات التي تقدمها عند التسجيل، والمعلومات المتعلقة باستخدامك لتطبيق COVIDSafe في خادم آمن للغاية. \n \n يتم جمع المعلومات أيضًا للتأكد من أن تطبيق COVIDSafe يعمل بشكل صحيح على جهازك، ويتضمن ذلك نظام تشغيل جهازك وإصدار التطبيق الذي قمت بتثبيته واللغة التي تستخدمها في جهازك وما إذا كانت تقنية البلوتوث تعمل وما إذا كان التطبيق الخاص بك قد سجل أي لقاءات في الأيام السبعة السابقة.\n\n لن يقوم تطبيق COVIDSafe بجمع معلومات عن موقعك الجغرافي. \n\nسيسجل تطبيق COVIDSafe تاريخ ووقت الاتصال ورمز المعرف المشفر لمستخدمي COVIDSafe الآخرين الذين تتواصل معهم وقوة إشارة البلوتوث وطراز الهاتف المحمول للمستخدمين الآخرين على جهازك. \n\nسيسجل تطبيق COVIDSafe على أجهزة المستخدمين الآخرين الذين تتواصل معهم أيضًا رمز المعرف المشفر وتاريخ ووقت الاتصال بك وقوة إشارة البلوتوث وطراز هاتفك على أجهزتهم.\n\nإذا جاءت نتيجة فحص كوفيد-19 لمستخدم آخر إيجابية، فقد يقوم هذا المستخدم بتحميل تفاصيل الاتصال به وقد يتصل بك موظف من دائرة الصحة في الولاية أو الإقليم لأغراض تعقب المخالطة. \n\nسيتم استخدام تفاصيل التسجيل الخاصة بك أو الكشف عنها فقط لتقفّي المخالطة وللأغراض المناسبة والقانونية لتطبيق COVIDSafe. \n\nيتوفر المزيد من المعلومات على موقع الويب covidsafe.gov.au.\n\nتوفر سياسة خصوصية COVIDSafe مزيدًا من التفاصيل حول حقوقك فيما يتعلق بمعلوماتك وكيف سيتم التعامل معها ومشاركتها.\n\nيتم توفير تفاصيل الاتصال المتعلقة باستفسارات وشكاوى الخصوصية الخاصة بتطبيق COVIDSafe في سياسة الخصوصية ضمن اتصل بنا.";
+"data_privacy_content_VO" = "من المهم أن تقرأ سياسة الخصوصية لتطبيق COVIDSafe قبل التسجيل لتطبيق COVIDSafe. سيقوم COVIDSafe بجمع معلوماتك الشخصية أو استخدامها أو الكشف عنها فقط بما يتماشى مع هذه السياسة وقانون الخصوصية لعام 1988.\n\nإذا كان عمرك أقل من 16 عامًا، فيجب على أحد والديك/الوصي عليك أيضًا قراءة *سياسة الخصوصية*. \n\nاستخدام تطبيق COVIDSafe هو أمر طوعي بالكامل. يمكنك تثبيت التطبيق أو حذفه في أي وقت. إذا قمت بحذف تطبيق COVIDSafe، *فيمكنك أيضًا طلب حذف معلوماتك* من الخادم الآمن. إذا لم تقدم معلوماتك الشخصية، فلن يعمل تطبيق COVIDSafe على النحو المنشود. \n \nللتسجيل في تطبيق COVIDSafe، ستحتاج إلى إدخال اسم (أو اسم مستعار) ورقم هاتف محمول وفئة عمرية ورمز بريدي. \n\n يتم تخزين المعلومات التي تقدمها عند التسجيل، والمعلومات المتعلقة باستخدامك لتطبيق COVIDSafe في خادم آمن للغاية. \n \n يتم جمع المعلومات أيضًا للتأكد من أن تطبيق COVIDSafe يعمل بشكل صحيح على جهازك، ويتضمن ذلك نظام تشغيل جهازك وإصدار التطبيق الذي قمت بتثبيته واللغة التي تستخدمها في جهازك وما إذا كانت تقنية البلوتوث تعمل وما إذا كان التطبيق الخاص بك قد سجل أي لقاءات في الأيام السبعة السابقة.\n\n لن يقوم تطبيق COVIDSafe بجمع معلومات عن موقعك الجغرافي. \n\nسيسجل تطبيق COVIDSafe تاريخ ووقت الاتصال ورمز المعرف المشفر لمستخدمي COVIDSafe الآخرين الذين تتواصل معهم وقوة إشارة البلوتوث وطراز الهاتف المحمول للمستخدمين الآخرين على جهازك. \n\nسيسجل تطبيق COVIDSafe على أجهزة المستخدمين الآخرين الذين تتواصل معهم أيضًا رمز المعرف المشفر وتاريخ ووقت الاتصال بك وقوة إشارة البلوتوث وطراز هاتفك على أجهزتهم.\n\nإذا جاءت نتيجة فحص كوفيد-19 لمستخدم آخر إيجابية، فقد يقوم هذا المستخدم بتحميل تفاصيل الاتصال به وقد يتصل بك موظف من دائرة الصحة في الولاية أو الإقليم لأغراض تعقب المخالطة. \n\nسيتم استخدام تفاصيل التسجيل الخاصة بك أو الكشف عنها فقط لتقفّي المخالطة وللأغراض المناسبة والقانونية لتطبيق COVIDSafe. \n\nيتوفر المزيد من المعلومات على موقع الويب covidsafe.gov.au. \n\nتوفر سياسة خصوصية COVIDSafe مزيدًا من التفاصيل حول حقوقك فيما يتعلق بمعلوماتك وكيف سيتم التعامل معها ومشاركتها.\n\nيتم توفير تفاصيل الاتصال المتعلقة باستفسارات وشكاوى الخصوصية الخاصة بتطبيق COVIDSafe في سياسة الخصوصية ضمن اتصل بنا.";
+"data_privacy_content_android" = "من المهم أن تقرأ *سياسة الخصوصية* لتطبيق COVIDSafe قبل التسجيل لتطبيق COVIDSafe. سيقوم COVIDSafe بجمع معلوماتك الشخصية أو استخدامها أو الكشف عنها فقط بما يتماشى مع هذه السياسة <i>وقانون الخصوصية لعام 1988</i>.\n\nإذا كان عمرك أقل من 16 عامًا، فيجب على أحد والديك/الوصي عليك أيضًا قراءة *سياسة الخصوصية*. \n\nاستخدام تطبيق COVIDSafe هو أمر طوعي بالكامل. يمكنك تثبيت التطبيق أو حذفه في أي وقت. إذا قمت بحذف تطبيق COVIDSafe، *فيمكنك أيضًا طلب حذف معلوماتك* من الخادم الآمن. \n\nللتسجيل في تطبيق COVIDSafe، ستحتاج إلى إدخال اسم (أو اسم مستعار) ورقم هاتف محمول وفئة عمرية ورمز بريدي. إذا لم تقدم معلوماتك الشخصية، فلن يعمل تطبيق COVIDSafe على النحو المنشود. \n\n يتم تخزين المعلومات التي تقدمها عند التسجيل، والمعلومات المتعلقة باستخدامك لتطبيق COVIDSafe في خادم آمن للغاية. \n \nيتم جمع المعلومات أيضًا للتأكد من أن COVIDSafe يعمل بشكل صحيح على جهازك، ويتضمن ذلك نظام تشغيل جهازك وإصدار التطبيق الذي قمت بتثبيته واللغة التي تستخدمها في جهازك وما إذا كانت تقنية Bluetooth® تعمل وما إذا كان التطبيق الخاص بك قد سجل أي لقاءات في الأيام السبعة السابقة.\n \nعلى أجهزة Android، ستشمل أيضًا معلومات حول ما إذا كان قد تم تعطيل تحسين البطارية وتمكين خدمات الموقع الجغرافي. \n\nلن يقوم تطبيق COVIDSafe بجمع معلومات عن موقعك الجغرافي. \n\nسيسجل تطبيق COVIDSafe تاريخ ووقت الاتصال ورمز المعرف المشفر لمستخدمي COVIDSafe الآخرين الذين تتواصل معهم وقوة إشارة البلوتوث وطراز الهاتف المحمول للمستخدمين الآخرين على جهازك.\n\nسيسجل تطبيق COVIDSafe على أجهزة المستخدمين الآخرين الذين تتواصل معهم أيضًا رمز المعرف المشفر وتاريخ ووقت الاتصال بك وقوة إشارة البلوتوث وطراز هاتفك على أجهزتهم.\n\nإذا جاءت نتيجة فحص كوفيد-19 لمستخدم آخر إيجابية، فقد يقوم هذا المستخدم بتحميل تفاصيل الاتصال به وقد يتصل بك موظف من دائرة الصحة في الولاية أو الإقليم لأغراض تعقب المخالطة.\n\nسيتم استخدام تفاصيل التسجيل الخاصة بك أو الكشف عنها فقط لتقفّي المخالطة وللأغراض المناسبة والقانونية لتطبيق COVIDSafe. \n\nيتوفر المزيد من المعلومات على موقع الويب *covidsafe.gov.au*.\n \nتوفر سياسة خصوصية *COVIDSafe* مزيدًا من التفاصيل حول حقوقك فيما يتعلق بمعلوماتك وكيف سيتم التعامل معها ومشاركتها.\n\nيتم توفير تفاصيل الاتصال المتعلقة باستفسارات وشكاوى الخصوصية الخاصة بتطبيق COVIDSafe في سياسة الخصوصية ضمن اتصل بنا.";
 /* OnBoarding Data Privacy */
 "data_privacy_headline" = "التسجيل والخصوصية";
 "deaths" = "الوفيات";
@@ -272,8 +298,6 @@
 "enter_pin_resend_pin" = "إعادة إرسال رقم التعريف الشخصي";
 "enter_pin_timer_expire" = "ستنتهي صلاحية رقم التعريف الشخصي الخاص بك في غضون";
 "enter_pin_wrong_number" = "هل رقم الهاتف المحمول هذا خاطئ؟";
-/* Figma page Android Screens (05/06) */
-"Enter_your_mobile_number_label" = "أدخل رقم هاتفك المحمول";
 "every_day" = "كل يوم";
 "factors_dotpoint1" = "عدد مستخدمي تطبيق COVIDSafe الموجودين من حولك";
 "factors_dotpoint2" = "طراز الجهاز وعمره";
@@ -289,10 +313,10 @@
 /* Error message for when a user tries to signup outside of Australia. */
 "geoblock_error_message" = "";
 "geoblock_rego_error" = "";
+"global_OK" = "حسناً";
 "global_back" = "رجوع";
 "global_close" = "إغلاق";
 "global_double_tap" = "أنقر مرتين للتصحيح";
-"global_OK" = "حسناً";
 "hide" = "إخفاء";
 "home_app_permission_status_subtitle" = "لن يعمل تطبيق COVIDSafe بدون الإعدادات الصحيحة.";
 "home_app_permission_status_title" = "تحقق من إعدادات هاتفك";
@@ -300,10 +324,13 @@
 "home_data_uploaded_message" = "ساعد في وقف انتشار COVID-19 وتتبع أعراضك.";
 "home_header_active_no_action_required" = "لا يلزم اتخاذ أي إجراء آخر.";
 /* Home */
+"home_header_active_title" = "\u200F COVIDSafe يعمل.";
+/* Home */
 "home_header_active_title" = "\U200F COVIDSafe يعمل.";
 /* Home */
 "home_header_active_title_thanks" = "شكراً ، COVIDSafe يعمل الآن.";
 "home_header_inactive_check_your_permissions" = "تحقق من إعدادات هاتفك.";
+"home_header_inactive_title" = "\u200F COVIDSafe لا يعمل";
 "home_header_inactive_title" = "\U200F COVIDSafe لا يعمل";
 "home_header_uploaded_on_date_ios" = "تم تحميل معلوماتك على %@ .";
 "home_set_complete_external_link_app_content" = "قم بتنزيل التطبيق الحكومي للحصول على أحدث الأخبار والنصائح.";
@@ -352,8 +379,6 @@
 "intro_content" = "تم تطوير تطبيق COVIDSafe من قبل الحكومة الأسترالية للمساعدة في الحفاظ على المجتمع في مأمن من انتشار فيروس كورونا. \n\n سوف يدوّن تطبيق COVIDSafe بشكل آمن اختلاطك بمستخدمين آخرين للتطبيق. سيسمح ذلك لموظفي دائرة الصحة في الولاية أو الإقليم بالاتصال بك إذا حصل اختلاط عن قرب بينك وبين شخص أظهرت نتيجة فحصه أنه مصاب بالفيروس. \n\n معاً يمكننا المساعدة في وقف الانتشار والبقاء بصحة جيدة.";
 /* OnBoarding Intro */
 "intro_headline" = "معاً يمكننا وقف انتشار COVID-19";
-/* Class = "UILabel"; text = "Help stop the spread\nand save lives."; ObjectID = "Cme-9F-deB"; */
-"IntroLabel" = "ساعد في وقف الانتشار\nوإنقاذ الأرواح.";
 "invalid_australian_phone_number_error_prompt" = "تتألف أرقام الهواتف المحمولة في أستراليا من 10 أرقام كحد أقصى.";
 "invalid_norfolk_island_phone_number_error_prompt" = "تتألف أرقام الهواتف المحمولة في جزيرة نورفولك من 5 إلى 6 أرقام.";
 "is_snoozed" = "تطبيق \U200F COVIDSafe هو في غفوة حاليًا";
@@ -389,26 +414,22 @@
 "no_handshakes_item3" = "أغلق هاتفك وقم بإعادة تشغيله وافتح التطبيق مجددًا.";
 "no_handshakes_item4" = "";
 "no_handshakes_link" = "اقرأ المزيد حول كيفية التحقق مما إذا كان تطبييق COVIDSafe يعمل بشكل صحيح";
+"non_consent_button" = "لا أوافق";
+"non_consent_popup" = "لا يمكنك متابعة عملية التسجيل بدون موافقة ولي الأمر أو الوصي.\n\nيُرجى الخروج وحذف التطبيق.";
 /* Figma page Android Screens (05/06) */
 "norfolk_hint" = "على سبيل المثال: 51234";
 "northern_territory" = "الإقليم الشمالي";
 "notification_bluetooth" = "قم بتشغيل البلوتوث لكي يتمكن تطبيق COVIDSafe من العمل.";
 "notification_internet_content" = "افتح التطبيق وتحقق من اتصال جهازك بالإنترنت ليتمكن تطبيق COVIDSafe من العمل.";
+"notification_internet_content" = "افتح التطبيق وتحقق من اتصال جهازك بالإنترنت.";
 "notification_not_active_title" = "\U200F COVIDSafe لا يعمل";
 "notification_settings" = "افتح التطبيق للتحقق من الإعدادات.";
 "notification_update_content" = "قم بتحديث تطبيقك للحصول على أحدث التحسينات.";
 "notification_update_heading" = "يتوفر تحديث لتطبيق COVIDSafe ";
-/* Figma page iOS Screens (05/06) */
-"NotificationsBlurbLink" = "تغيير إعدادات الإشعارات";
-/* Figma page iOS Screens (05/06) */
-"NotificationsDisabledBlurb" = "لن تتلقى إشعارًا إذا كان تطبيق COVIDSafe لا يعمل. \nغيّر إعدادات الإشعارات";
-/* Figma page iOS Screens (05/06) */
-"NotificationsEnabledBlurb" = "سوف تتلقى إشعارًا إذا كان تطبيق COVIDSafe لا يعمل. غيّر إعدادات الإشعارات";
 "numbers_error" = "تعذر التحقق من أحدث الأرقام.";
 "numbers_no_internet" = "اتصل بالإنترنت لكي تحصل على آخر الأرقام.";
 "numbers_refresh" = "قم بالتحديث الآن";
 "options_for_australia" = "خيارات لأستراليا";
-"OS2b_Item_4" = "4. يتطلب جهاز iphone الخاص بك تشغيل الموقع الجغرافي ليتمكن تطبيق COVIDSafe من العمل. *لا يقوم تطبيق COVIDSafe بجمع بيانات الموقع الجغرافي أو تخزينها أو استخدامها*";
 "overseas_acquired" = "%@ تم التقاطه في الخارج";
 "permission_button" = "تابع";
 /* Figma page iOS Screens (05/06) */
@@ -432,30 +453,19 @@
 "personal_details_name_title" = "الاسم الكامل (أو الاسم المستعار)";
 "personal_details_post_code" = "الرمز البريدي في أستراليا";
 "personal_details_post_code_error_prompt" = "يجب أن يحتوي رقم رمزك البريدي الأسترالي على 4 أرقام.";
-"PINNumber_VO_Label" = "رقم التعريف الشخصي PIN";
-/* Figma page iOS Screens (05/06) */
-"PN_BluetoothStatusBody" = "تأكد من أن التطبيق يعمل قبل مغادرتك المنزل وعند وجودك في الأماكن العامة من خلال تمكين Bluetooth®.";
-/* Figma page iOS Screens (05/06) */
-"PN_BluetoothStatusTitle" = "\U200F COVIDSafe لا يعمل";
-"PN_MobileNumber_VOLabel" = "رقم الهاتف المحمول";
-/* Figma page iOS Screens (05/06) */
-"PN_ReminderBody" = "افتح تطبيق COVIDSafe لتتأكد من أنه يعمل.";
-/* Figma page iOS Screens (05/06) */
-"PN_ReminderTitle" = "لم يتم اكتشاف أي لقاءات لمدة 48 ساعة";
 "postcode_api_error" = "لقد حصل خطأ. تحقق من الاتصال بالإنترنت وحاول مرة أخرى.";
 "postcode_change_label" = "الرمز البريدي الحالي في أستراليا";
 "postcode_success" = "تم تحديث الرمز البريدي الخاص بك";
-"PostcodeValidationErrorMessage" = "يُرجى إدخال رمز بريدي أسترالي صالح.";
 "privacy_policy" = "";
 "privacy_policy_description" = "";
 "queensland" = "ولاية كوينزلاند";
 "recovered" = "مجموع الحالات التي تعافت";
-"registration_consent_content" = "أوافق على أن تقوم وكالة التحول الرقمي، كونها مسؤولة عن تخزين البيانات، بموجب قرار قانوني صادر عن أمين عام وزارة الصحة في الحكومة الأسترالية بجمع:";
+"registration_consent_content" = "أوافق على أن تقوم وزارة الصحة، كونها مسؤولة عن تخزين البيانات، بموجب قانون الخصوصية لعام 1988 بجمع:";
 "registration_consent_diagnostic" = "معلومات للتأكد من أن تطبيق COVIDSafe يعمل بشكل صحيح على جهازي.";
-"registration_consent_first_paragraph" = "معلومات التسجيل الخاصة بي.";
+"registration_consent_first_paragraph" = "معلومات التسجيل،";
 /* Onboarding Registration Consent */
 "registration_consent_headline" = "الموافقة على التسجيل";
-"registration_consent_second_paragraph" = "معلومات حول اختلاطي بمستخدمين آخرين لتطبيق COVIDSafe في حال أظهرت نتائج الفحص أن مستخدمًا آخر كنت على تواصل معه مصاب بفيروس COVID-19، وقام هذا المستخدم بتحميل بيانات الاتصال به.";
+"registration_consent_second_paragraph" = "معلومات حول اختلاطي بمستخدمين آخرين لتطبيق COVIDSafe في حال أظهرت نتائج الفحص أن مستخدمًا آخر كنت على تواصل معه مصاب بفيروس كوفيد-19، وقام هذا المستخدم بتحميل بيانات الاتصال به،";
 "restrictions_accommodation" = "أماكن الإقامة";
 "restrictions_activity" = "النشاط";
 "restrictions_cafes" = "المقاهي والمطاعم";
@@ -481,8 +491,6 @@
 "scheduled" = "قمت بتحديد مدة غفوة تطبيق COVIDSafe من %@ إلى %@.";
 /* OnBoarding Enter Number */
 "select_country_or_region" = "اختر البلد أو المنطقة";
-/* Figma page Android Screens (05/06) */
-"Select_country_or_region_headline" = "اختر البلد أو المنطقة";
 "select_state_territory_button" = "اختر الولاية أو الإقليم";
 "select_state_territory_heading" = "اختر الولاية أو الإقليم";
 "set_snooze_time" = "حدّد وقت الغفوة";
@@ -514,7 +522,6 @@
 "stepCounter" = "الخطوة %d من %d";
 "support" = "الدعم";
 "support_content" = "للحصول على مساعدة بشأن المشكلات التي لا تغطيها مواضيع المساعدة";
-"Support_VOLabel" = "الدعم. للحصول على مساعدة بشأن المشكلات التي لا تغطيها مواضيع المساعدة";
 "tasmania" = "ولاية تسمانيا";
 /* Example: "From 22 to 28 January 2021" */
 "to" = "";
@@ -524,17 +531,16 @@
 "total_per_state" = "مجموع الحالات المؤكدة في كل ولاية وإقليم";
 "twenty_eight_days" = "28 يومًا";
 "type_in_time" = "أدخل الوقت";
-"UILaunchStoryboardName" = "LaunchScreen_ar";
+/* Figma page Android Screens (05/06) */
+"under-sixteen_consent_call_for_action" = "حدد \"أوافق\" لتأكيد الموافقة أو \"لا أوافق\" إذا لم تتمكن من تأكيد موافقة ولي الأمر أو الوصي.";
 "under_investigation" = "";
-"under_sixteen_content" = "أؤكد موافقة أحد والدي أو الوصي علي على أن تعمل وكالة التحول الرقمي كمدير لتخزين البيانات، بموجب قرار قانوني من قبل أمين وزارة الصحة في الحكومة الأسترالية لجمع:";
-"under_sixteen_first_paragraph" = "معلومات التسجيل الخاصة بي.";
+"under_sixteen_content" = "أؤكد موافقة أحد والدي أو الوصي علي على أن تعمل وزارة الصحة، كونها مسؤولة عن تخزين البيانات، بموجب قانون الخصوصية لعام 1988 على جمع:";
+"under_sixteen_first_paragraph" = "معلومات التسجيل،";
 /* OnBoarding Under Sixteen */
 "under_sixteen_headline" = "تحتاج إلى موافقة أحد والديك/ الوصي للمضي قدماً";
 /* Figma page Android Screens (05/06) */
-"under_sixteen_registration_consent_first_paragraph" = "معلومات التسجيل الخاصة بي.";
-"under_sixteen_second_paragraph" = "معلومات حول اختلاطي بمستخدمين آخرين لتطبيق COVIDSafe في حال أظهرت نتائج الفحص أن مستخدمًا آخر كنت على تواصل معه مصاب بفيروس COVID-19، وقام هذا المستخدم بتحميل بيانات الاتصال به.";
-/* Figma page Android Screens (05/06) */
-"under-sixteen_consent_call_for_action" = "اختر \"أوافق\" لتأكيد الموافقة.";
+"under_sixteen_registration_consent_first_paragraph" = "معلومات التسجيل،";
+"under_sixteen_second_paragraph" = "معلومات حول اختلاطي بمستخدمين آخرين لتطبيق COVIDSafe في حال أظهرت نتائج الفحص أن مستخدمًا آخر كنت على تواصل معه مصاب بفيروس كوفيد-19، وقام هذا المستخدم بتحميل بيانات الاتصال به،";
 "update_available_app_store_btn" = "انتقل إلى App Store";
 "update_available_dismiss_btn" = "ذكّرني لاحقًا";
 "update_available_message_ios" = "لقد أجرينا تحسينات على تطبيق COVIDSafe. قم بتحديث التطبيق عبر متجر التطبيقات App Store.";
@@ -572,38 +578,16 @@
 "Done" = "تـمّ";
 /* Feedback */
 "EmailPlaceholder" = "أدخل عنوان بريدك الإلكتروني (مطلوب)";
+"EnterPINSent" = "أدخل رقم التعريف الشخصي المرسل إلى %@";
 /* Phone number and PIN */
 "EnterPhoneReVerify" = "أدخل رقم هاتفك المحمول لإعادة التحقق";
-"EnterPINSent" = "أدخل رقم التعريف الشخصي المرسل إلى %@";
-/* Message for prompt that user sees when opening feeback. Prompt asks user if he/she would like to send new feedback. */
-"entryPrompt_alert_message" = "مرحبا يا صديقي، كيف تود المتابعة؟";
-/* Title for prompt that user sees when opening feeback. Prompt asks user if he/she would like to send new feedback. */
-"entryPrompt_alert_title" = "صندوق الملاحظات";
-/* Title for button that launches new feedback flow. */
-"entryPrompt_newFeedback_button_title" = "ملاحظات جديدة";
 "FoundIssueWithApp" = "هل وجدت مشكلة في تطبيق COVIDSafe؟";
-/* *** Feedback localised strings *** */
-"global_cancel_button_title" = "إلغاء";
-"global_send_button_title" = "أرسل";
-"global_sending_indication_title" = "الإرسال جار";
-"global_success_indication_title" = "نجاح";
 /* upload */
 "InformationUploaded" = "تم تحميل معلوماتك على %@ .";
 "InvalidOTP" = "يجب أن يكون رمزاً مكوناً من 6 أرقام";
 "IssueDescPlaceholder" = "يرجى تحديد المشكلة";
 "IssueFooter" = "قد نتصل بك للحصول على مزيد من التفاصيل حول ملاحظاتك. لن يتم استخدام عنوان بريدك الإلكتروني لأي غرض آخر.";
 "IssueThankYou" = "شكراً لك! لقد تلقينا ملاحظاتك.";
-/* Delete screenshot action sheet action button title. */
-"newFeedback_deleteScreenshot_actionTitle" = "حذف لقطة الشاشة";
-/* Messsage shown to user asking to confirm screenshot deletion. */
-"newFeedback_deleteScreenshotConfirmation_message" = "سيتم حذف لقطة الشاشة هذه نهائياً.";
-"newFeedback_invalidEmail_errorMessage" = "يرجى ادخل عنوان بريد إلكتروني صالح!";
-/* Error message displayed to users when feedback has empty description */
-"newFeedback_noMessage_errorMessage" = "أخبرنا بشيء قبل الإرسال.";
-/* Error message displayed to users when feedback fails to send. */
-"newFeedback_send_errorMessage" = "خطأ في إرسال الملاحظات";
-/* Navigation Bar title shown during new feedback flow. */
-"newFeedbackFlow_navigationTitle" = "بلِّغ عن مشكلة";
 "Next" = "التالي";
 /* registration succcess */
 "OS2b_Item1" = "1. عندما تغادر المنزل، ابق هاتفك بحوزتك وتأكد من أن تطبيق COVIDSafe يعمل.";
@@ -611,6 +595,7 @@
 "OS2b_Item2_VOLabel" = "2. يجب إبقاء Bluetooth مشغلًا.";
 "OS2b_Item3" = "3. لا يرسل تطبيق COVIDSafe طلبات الاقتران. إعرِف المزيد.";
 "OS2b_Item3Underline" = "إعرِف المزيد";
+"PINWillExpire" = "سوف تنتهي صلاحية رقم التعريف الشخصي الخاص بك في %@";
 /* home */
 "PairingRequestsInfo" = "لا يرسل تطبيق COVIDSafe طلبات الاقتران.";
 "PairingRequestsInfoUnderline" = "طلبات الاقتران";
@@ -618,7 +603,6 @@
 "PhoneNumberFormatErrorTitle" = "صيغة الرقم خاطئة";
 "PhoneVerificationErrorMessage" = "يرجى التحقق من التفاصيل والمحاولة مرة أخرى.";
 "PhoneVerificationErrorTitle" = "خطأ في التحقق من رقم الهاتف";
-"PINWillExpire" = "سوف تنتهي صلاحية رقم التعريف الشخصي الخاص بك في %@";
 "ReceivePinIssue" = "مشكلات في تلقي رقم التعريف الشخصي الخاص بك؟";
 /* help */
 "ReportAnIssue" = "بلِّغ عن مشكلة";
@@ -627,13 +611,35 @@
 "UploadFailed" = "فشل التحميل. يرجى إعادة المحاولة لاحقًا.";
 "UploadFailedErrorMessage" = "يرجى إعادة المحاولة لاحقًا.";
 "ValidationError" = "خطأ في التحقق من سريان المفعول";
+/* Message for prompt that user sees when opening feeback. Prompt asks user if he/she would like to send new feedback. */
+"entryPrompt_alert_message" = "مرحبا يا صديقي، كيف تود المتابعة؟";
+/* Title for prompt that user sees when opening feeback. Prompt asks user if he/she would like to send new feedback. */
+"entryPrompt_alert_title" = "صندوق الملاحظات";
+/* Title for button that launches new feedback flow. */
+"entryPrompt_newFeedback_button_title" = "ملاحظات جديدة";
+/* *** Feedback localised strings *** */
+"global_cancel_button_title" = "إلغاء";
+"global_send_button_title" = "أرسل";
+"global_sending_indication_title" = "الإرسال جار";
+"global_success_indication_title" = "نجاح";
+/* Navigation Bar title shown during new feedback flow. */
+"newFeedbackFlow_navigationTitle" = "بلِّغ عن مشكلة";
+/* Messsage shown to user asking to confirm screenshot deletion. */
+"newFeedback_deleteScreenshotConfirmation_message" = "سيتم حذف لقطة الشاشة هذه نهائياً.";
+/* Delete screenshot action sheet action button title. */
+"newFeedback_deleteScreenshot_actionTitle" = "حذف لقطة الشاشة";
+"newFeedback_invalidEmail_errorMessage" = "يرجى ادخل عنوان بريد إلكتروني صالح!";
+/* Error message displayed to users when feedback has empty description */
+"newFeedback_noMessage_errorMessage" = "أخبرنا بشيء قبل الإرسال.";
+/* Error message displayed to users when feedback fails to send. */
+"newFeedback_send_errorMessage" = "خطأ في إرسال الملاحظات";
 "GetCoronaVirusApp_VOLabel" = "احصل على تطبيق Coronavirus. قم بتنزيل التطبيق الحكومي للحصول على آخر الأخبار والنصائح.";
 "HelpTopics_VOLabel" = "مواضيع المساعدة. إرشادات حول كيفية استكشاف المشكلات التقنية وإصلاحها";
 "LatestNews_VOLabel" = "آخر الأخبار والمستجدات. قم بزيارة الموقع aus.gov.au للاطلاع على آخر أخبار فيروس كورونا.";
 "NotificationsDisabled_VOLabel" = "الإشعارات معطّلة. لن تتلقى إشعارًا إذا كان تطبيق COVIDSafe لا يعمل.\nقم بتغيير إعدادات الإشعارات";
 "NotificationsEnabled_VOLabel" = "يُسمح بالإشعارات. سوف تتلقى إشعارًا إذا كان تطبيق COVIDSafe لا يعمل.\nقم بتغيير إعدادات الإشعارات";
 "OS1b_TopParagraph_VOLabel" = "تُستخدم إشارات Bluetooth لتحديد وجودك بالقرب من مستخدم آخر لتطبيق COVIDSafe. \n سيتم تدوين ملاحظة في كل مرة يحصل فيها اختلاط عن قرب بينك وبين مستخدمي تطبيق COVIDSafe الآخرين لجمع معلومات عن اختلاط الأشخاص. يتم تشفير هذه المعلومات وتخزينها فقط في هاتفك. \n إذا جاءت نتيجة فحصك ﻟ COVID-19 إيجابية كمستخدم لتطبيق COVIDSafe، سوف يتصل بك أحد موظفي دائرة الصحة في الولاية أو الإقليم ويساعدك في القيام بتحميل اختياري لمعلومات الاتصال  بك إلى نظام تخزين معلومات آمن للغاية \nيمكن أيضًا لموظفي دائرة الصحة في الولاية أو الإقليم الاتصال بك إذا حصل اتصال وثيق بينك وبين مستخدم آخر لتطبيق COVIDSafe أظهرت نتائج الفحص أنه مصاب بالفيروس. \n لمزيد من المعلومات، يرجى الرجوع إلى صفحة مواضيع المساعدة.";
-"permission_content_iOS_2_VOLabel" = "1. Bluetooth \n2. الإشعارات\n3. خدمات الموقع الجغرافي";
-"permission_content_iOS_VOLabel" = "يحتاج تطبيق COVIDSafe لأن يكون Bluetooth مشغلًا لكي يعمل.  لا يرسل تطبيق COVIDSafe طلبات الاقتران.\n\nيسمح تمكين الإشعارات بتلقي تحديثات لتذكيرك عندما يكون تطبيق COVIDSafe متوقفًا عن العمل. \n\nيتطلب جهاز iphone الخاص بك تشغيل الموقع الجغرافي ليتمكن تطبيق COVIDSafe من العمل.\n*لا يقوم تطبيق COVIDSafe* بتتبّع بيانات الموقع الجغرافي أو تخزينها*\n\n اختر \"تابع\" لتمكين:";
 "ShareCovidSafe_VOLabel" = "شارك COVIDSafe. قم بدعوة الآخرين للمساعدة. معاً، نحن أقوى.";
 "UploadData_VOLabel" = "هل اتصل بك أحد موظفي دائرة الصحة؟ يمكنك تحميل معلوماتك فقط إذا كانت نتيجة فحصك إيجابية.";
+"permission_content_iOS_2_VOLabel" = "1. Bluetooth \n2. الإشعارات\n3. خدمات الموقع الجغرافي";
+"permission_content_iOS_VOLabel" = "يحتاج تطبيق COVIDSafe لأن يكون Bluetooth مشغلًا لكي يعمل.  لا يرسل تطبيق COVIDSafe طلبات الاقتران.\n\nيسمح تمكين الإشعارات بتلقي تحديثات لتذكيرك عندما يكون تطبيق COVIDSafe متوقفًا عن العمل. \n\nيتطلب جهاز iphone الخاص بك تشغيل الموقع الجغرافي ليتمكن تطبيق COVIDSafe من العمل.\n*لا يقوم تطبيق COVIDSafe* بتتبّع بيانات الموقع الجغرافي أو تخزينها*\n\n اختر \"تابع\" لتمكين:";

@@ -1,3 +1,38 @@
+/* Figma page iOS Screens (05/06) */
+"AllowBluetoothOFF" = "访问蓝牙®：关";
+/* Figma page iOS Screens (05/06) */
+"AllowBluetoothON" = "访问蓝牙®：开";
+/* Figma page iOS Screens (05/06) */
+"BluetoothOFF" = "蓝牙®：关";
+/* Figma page iOS Screens (05/06) */
+"BluetoothOFF_content" = "打开手机蓝牙® 选择「允许新的连接」";
+/* Figma page iOS Screens (05/06) */
+"BluetoothON" = "蓝牙®：开";
+/* Figma page Android Screens (05/06) */
+"Enter_your_mobile_number_label" = "请输入您的手机号码";
+/* Class = "UILabel"; text = "Help stop the spread\nand save lives."; ObjectID = "Cme-9F-deB"; */
+"IntroLabel" = "阻止传播\n拯救生命";
+/* Figma page iOS Screens (05/06) */
+"NotificationsBlurbLink" = "更改通知设置";
+/* Figma page iOS Screens (05/06) */
+"NotificationsDisabledBlurb" = "如果COVIDSafe未激活，您不会收到任何通知。 \n更改通知设置";
+/* Figma page iOS Screens (05/06) */
+"NotificationsEnabledBlurb" = "如果COVIDSafe未激活，您将收到通知。 \n更改通知设置";
+"OS2b_Item_4" = "4. 您的 iPhone 要求COVIDSafe 获得位置权限才能运行。*COVIDSafe 不会收集、储存或使用您的位置数据*";
+"PINNumber_VO_Label" = "PIN码";
+/* Figma page iOS Screens (05/06) */
+"PN_BluetoothStatusBody" = "离家之前和在公共场所时，务必开启蓝牙®，使COVIDSafe处于激活状态。";
+/* Figma page iOS Screens (05/06) */
+"PN_BluetoothStatusTitle" = "COVIDSafe未激活";
+"PN_MobileNumber_VOLabel" = "手机号码";
+/* Figma page iOS Screens (05/06) */
+"PN_ReminderBody" = "开启 COVIDSafe，确保其处于运行状态。";
+/* Figma page iOS Screens (05/06) */
+"PN_ReminderTitle" = "48 小时内未检测到任何接触";
+"PostcodeValidationErrorMessage" = "请输入有效的澳大利亚邮政编码。";
+/* Figma page Android Screens (05/06) */
+"Select_country_or_region_headline" = "选择国家或地区";
+"Support_VOLabel" = "支持。获取帮助，解决帮助主题未涵盖的问题";
 "action_continue" = "继续";
 "action_report_an_issue" = "报告问题";
 "action_upload_done" = "完成";
@@ -11,20 +46,10 @@
 "activity_intro_2" = "";
 /* Figma page iOS Screens (05/06) */
 "allow_bluetooth_call" = "允许COVIDSafe 访问蓝牙®";
-/* Figma page iOS Screens (05/06) */
-"AllowBluetoothOFF" = "访问蓝牙®：关";
-/* Figma page iOS Screens (05/06) */
-"AllowBluetoothON" = "访问蓝牙®：开";
 "app_activity_bluetooth_handshakes_heading" = "";
 "australian_capital_territory" = "澳大利亚首都领地";
 "ble_handshakes_yesterday" = "";
 "bluetooth_handshakes" = "蓝牙握手";
-/* Figma page iOS Screens (05/06) */
-"BluetoothOFF" = "蓝牙®：关";
-/* Figma page iOS Screens (05/06) */
-"BluetoothOFF_content" = "打开手机蓝牙® 选择「允许新的连接」";
-/* Figma page iOS Screens (05/06) */
-"BluetoothON" = "蓝牙®：开";
 "cancel_snooze" = "取消休眠";
 "cases_28_days" = "过去28天的新增病例";
 "cases_7_days" = "最近7天内的新增病例";
@@ -250,8 +275,9 @@
 "country_region_name_zw" = "津巴布韦";
 "customise_days" = "自定义日子";
 "data_privacy_button" = "下一步";
-"data_privacy_content" = "注册COVIDSafe之前，请务必阅读COVIDSafe的*隐私政策*。\n\nCOVIDSafe只会在遵守本政策和《1988年隐私法》的情况下收集、使用或披露您的个人信息。\n\n如果您未满16岁，您的父母/监护人也必须阅读*隐私政策*。 \n\n使用COVIDSafe属自愿行为。您可以随时安装或删除该应用程序。如果删除COVIDSafe，*您也可以要求从安全服务器上删除您的信息*。 \n\n您需要输入姓名（或化名）、手机号码、年龄段和邮政编码来注册使用COVIDSafe。 \n\n注册时提交的信息以及有关COVIDSafe的使用信息将被储存在高度安全的服务器上。 \n\n为了确保COVIDSafe可以在您的设备上正常运行，需要收集与您的设备相关的以下信息：操作系统、应用程序版本、语言设置、蓝牙®是否正在运行以及过去7天应用程序上的接触记录。\n\nCOVIDSafe不会收集您的位置信息。 \n\nCOVIDSafe将在您的设备上记录发生接触的日期和时间、与您发生过接触的其他COVIDSafe用户的匿名ID码、蓝牙信号强度以及手机型号。 \n\n与您发生接触的其他COVIDSafe用户的设备上也会记录您的匿名ID代码、与您发生接触的日期和时间、蓝牙信号强度以及您的手机型号。 \n\n如果其他用户的COVID-19检测结果为阳性，他们可能会上传自己的接触者信息，而州或领地的卫生官员可能会出于追踪接触者的目的与您联系。 \n\n您的详细注册信息仅会在追踪接触者以及维持COVIDSafe的合法正常运行时使用或披露。  \n\n更多信息可在*covidsafe.gov.au*网站上查阅。 \n\n如需进一步了解您对个人信息的权利，以及个人信息的处理和共享方式，请参阅COVIDSafe *隐私政策*。";
-"data_privacy_content_VO" = "注册COVIDSafe之前，请务必阅读COVIDSafe的隐私政策。\n\nCOVIDSafe只会在遵守本政策和《1988年隐私法》的情况下收集、使用或披露您的个人信息。\n\n如果您未满16岁，您的父母/监护人也必须阅读隐私政策。 \n\n使用COVIDSafe属自愿行为。您可以随时安装或删除该应用程序。如果删除COVIDSafe，您也可以要求从安全服务器上删除您的信息。 \n\n您需要输入姓名（或化名）、手机号码、年龄段和邮政编码来注册使用COVIDSafe。 \n\n注册时提交的信息以及有关COVIDSafe的使用信息将被储存在高度安全的服务器上。 \n\n为了确保COVIDSafe可以正常运行，需要收集与您的设备相关的以下信息：操作系统、应用程序版本、语言设置、蓝牙是否正在运行以及过去7天应用程序上的接触记录。\n\nCOVIDSafe不会收集您的位置信息。 \n\nCOVIDSafe将在您的设备上记录发生接触的日期和时间、与您发生过接触的其他COVIDSafe用户的匿名ID码、蓝牙信号强度以及手机型号。 \n\n与您发生接触的其他COVIDSafe用户的设备上也会记录您的匿名ID代码、与您发生接触的日期和时间、蓝牙信号强度以及您的手机型号。 \n\n如果其他用户的COVID-19检测结果为阳性，他们可能会上传自己的接触者信息，而州或领地的卫生官员可能会出于追踪接触者的目的与您联系。 \n\n您的详细注册信息仅会在追踪接触者以及维持COVIDSafe的合法正常运行时使用或披露。  \n\n更多信息可在covidsafe.gov.au网站上查阅。 \n\n如需进一步了解您对个人信息的权利，以及个人信息的处理和共享方式，请参阅COVIDSafe 隐私政策。";
+"data_privacy_content" = "注册COVIDSafe之前，请务必阅读COVIDSafe的隐私政策。COVIDSafe只会在遵守本政策和《1988年隐私法》的情况下收集、使用或披露您的个人信息。\n\n如果您未满16岁，您的父母/监护人也必须阅读隐私政策。 \n\n使用COVIDSafe属完全自愿行为。您可以随时安装或删除该应用程序。如果删除COVIDSafe，您也可以要求从安全服务器上删除您的信息。 如果您不提供自己的个人信息， COVIDSafe应用程序可能无法正常工作。\n\n您需要输入姓名（或化名）、手机号码、年龄段和邮政编码来注册使用COVIDSafe。 \n\n注册时提交的信息以及有关COVIDSafe的使用信息将被储存在高度安全的服务器上。 \n\n为了确保COVIDSafe可以在正常运行，需要收集与您的设备相关的以下信息：操作系统、应用程序版本、语言设置、蓝牙是否正在运行以及过去7天应用程序上的接触记录。\n\nCOVIDSafe不会收集您的位置信息。 \n\nCOVIDSafe将在您的设备上记录发生接触的日期和时间、与您发生过接触的其他COVIDSafe用户的匿名ID码、蓝牙信号强度以及手机型号。 \n\n与您发生接触的其他COVIDSafe用户的设备上也会记录您的匿名ID代码、与您发生接触的日期和时间、蓝牙信号强度以及您的手机型号。 \n\n如果其他用户的COVID-19检测结果为阳性，他们可能会上传自己的接触者信息，而州或领地的卫生官员可能会出于追踪接触者的目的与您联系。 \n\n您的详细注册信息仅会在追踪接触者以及维持COVIDSafe的合法正常运行时使用或披露。  \n\n更多信息可在covidsafe.gov.au网站上查阅。 \n\n如需进一步了解您对个人信息的权利，以及个人信息的处理和共享方式，请参阅COVIDSafe隐私政策。\n\n有关COVIDSafe隐私查询和投诉的详细联系方式，请参阅隐私政策的“联系我们”。";
+"data_privacy_content_VO" = "注册COVIDSafe之前，请务必阅读COVIDSafe的隐私政策。COVIDSafe只会在遵守本政策和《1988年隐私法》的情况下收集、使用或披露您的个人信息。\n\n如果您未满16岁，您的父母/监护人也必须阅读隐私政策。 \n\n使用COVIDSafe属完全自愿行为。您可以随时安装或删除该应用程序。如果删除COVIDSafe，您也可以要求从安全服务器上删除您的信息。如果您不提供自己的个人信息， COVIDSafe应用程序可能无法正常工作。 \n\n您需要输入姓名（或化名）、手机号码、年龄段和邮政编码来注册使用COVIDSafe。 \n\n注册时提交的信息以及有关COVIDSafe的使用信息将被储存在高度安全的服务器上。 \n\n为了确保COVIDSafe可以正常运行，需要收集与您的设备相关的以下信息：操作系统、应用程序版本、语言设置、蓝牙是否正在运行以及过去7天应用程序上的接触记录。\n\nCOVIDSafe不会收集您的位置信息。 \n\nCOVIDSafe将在您的设备上记录发生接触的日期和时间、与您发生过接触的其他COVIDSafe用户的匿名ID码、蓝牙信号强度以及手机型号。 \n\n与您发生接触的其他COVIDSafe用户的设备上也会记录您的匿名ID代码、与您发生接触的日期和时间、蓝牙信号强度以及您的手机型号。 \n\n如果其他用户的COVID-19检测结果为阳性，他们可能会上传自己的接触者信息，而州或领地的卫生官员可能会出于追踪接触者的目的与您联系。 \n\n您的详细注册信息仅会在追踪接触者以及维持COVIDSafe的合法正常运行时使用或披露。  \n\n更多信息可在covidsafe.gov.au网站上查阅。 \n\n如需进一步了解您对个人信息的权利，以及个人信息的处理和共享方式，请参阅COVIDSafe 隐私政策。\n\n\n有关COVIDSafe隐私查询和投诉的详细联系方式，请参阅隐私政策的“联系我们”。";
+"data_privacy_content_android" = "注册COVIDSafe之前，请务必阅读COVIDSafe的*隐私政策*。 COVIDSafe只会在遵守本政策和<i>1988年隐私法</i>的情况下收集、使用或披露您的个人信息。\n\n如果您未满16岁，您的父母/监护人也必须阅读*隐私政策*。 \n\n使用COVIDSafe属完全自愿行为。您可以随时安装或删除该应用程序。如果删除COVIDSafe，*您也可以要求从安全服务器上删除您的信息*。 \n\n您需要输入姓名（或化名）、手机号码、年龄段和邮政编码来注册使用COVIDSafe。如果您不提供自己的个人信息， COVIDSafe应用程序可能无法正常工作。\n\n您在注册时提交的信息以及有关您使用COVIDSafe的信息存储在高度安全的服务器上。 \n\n为了确保COVIDSafe可以正常运行，还需要收集与您的设备相关的以下信息：操作系统、应用程序版本、语言设置、蓝牙®是否正在运行以及过去7天应用程序上的接触记录。\n\n在安卓设备上，这还包括电池优化是否禁用和定位服务是否启用的信息。\n\nCOVIDSafe不会收集您的位置信息。\n\nCOVIDSafe将在您的设备上记录发生接触的日期和时间、与您发生过接触的其他COVIDSafe用户的匿名ID码、蓝牙信号强度以及其他用户的手机型号。 \n\n与您发生接触的其他COVIDSafe用户的设备上也会记录您的匿名ID代码、与您发生接触的日期和时间、蓝牙信号强度以及您的手机型号。 \n\n如果其他用户的COVID-19检测结果为阳性，他们可以上传自己的接触者信息，而州或领地的卫生官员可能会出于追踪接触者的目的与您联系。 \n\n您的详细注册信息仅在追踪接触者以及维持COVIDSafe的合法正常运行时使用或披露。  \n\n更多信息可在*covidsafe.gov.au*网站上查阅。 \n\n如需进一步了解您对个人信息的权利，以及个人信息的处理和共享方式，请参阅COVIDSafe*隐私政策*。\n\n有关COVIDSafe隐私查询和投诉的详细联系方式，请参阅隐私政策的*联系我们*。";
 /* OnBoarding Data Privacy */
 "data_privacy_headline" = "注册及隐私";
 "deaths" = "死亡人数";
@@ -272,8 +298,6 @@
 "enter_pin_resend_pin" = "重新发送PIN码";
 "enter_pin_timer_expire" = "您的PIN码将在此时间后失效";
 "enter_pin_wrong_number" = "请确认手机号码是否正确";
-/* Figma page Android Screens (05/06) */
-"Enter_your_mobile_number_label" = "请输入您的手机号码";
 "every_day" = "每天";
 "factors_dotpoint1" = "范围内的COVIDSafe用户数量";
 "factors_dotpoint2" = "设备型号和机龄";
@@ -289,10 +313,10 @@
 /* Error message for when a user tries to signup outside of Australia. */
 "geoblock_error_message" = "";
 "geoblock_rego_error" = "";
+"global_OK" = "确定";
 "global_back" = "返回";
 "global_close" = "关闭";
 "global_double_tap" = "双击进行编辑";
-"global_OK" = "确定";
 "hide" = "隐藏";
 "home_app_permission_status_subtitle" = "若设置不正确，COVIDSafe将无法运行。";
 "home_app_permission_status_title" = "检查您的设置";
@@ -302,8 +326,11 @@
 /* Home */
 "home_header_active_title" = "COVIDSafe已激活。";
 /* Home */
+"home_header_active_title" = "COVIDSafe已激活。";
+/* Home */
 "home_header_active_title_thanks" = "谢谢，COVIDSafe已激活。";
 "home_header_inactive_check_your_permissions" = "检查您的设置";
+"home_header_inactive_title" = "COVIDSafe未激活";
 "home_header_inactive_title" = "COVIDSafe未激活";
 "home_header_uploaded_on_date_ios" = "个人信息已在%@ 上传。";
 "home_set_complete_external_link_app_content" = "下载政府应用程序，了解最新消息和建议。";
@@ -352,8 +379,6 @@
 "intro_content" = "为了避免冠状病毒的传播，澳大利亚政府开发了COVIDSafe。 \n\n COVIDSafe会以保密的方式记录您与其他用户发生的接触。如果您与病毒测试呈阳性的人发生密切接触，州和领地的卫生官员将与您联系。 \n\n让我们齐心协力，阻止病毒传播，保护大众健康。";
 /* OnBoarding Intro */
 "intro_headline" = "齐心协力，阻止COVID-19的传播";
-/* Class = "UILabel"; text = "Help stop the spread\nand save lives."; ObjectID = "Cme-9F-deB"; */
-"IntroLabel" = "阻止传播\n拯救生命";
 "invalid_australian_phone_number_error_prompt" = "澳大利亚手机号码最多包含10位数。";
 "invalid_norfolk_island_phone_number_error_prompt" = "诺福克岛的手机号码包含5到6位数。";
 "is_snoozed" = "COVIDSafe已休眠";
@@ -389,26 +414,22 @@
 "no_handshakes_item3" = "重新启动手机并再次打开应用。";
 "no_handshakes_item4" = "";
 "no_handshakes_link" = "阅读更多有关如何检查COVIDSafe是否正常运行的信息";
+"non_consent_button" = "我不同意";
+"non_consent_popup" = "没有父母或监护人的同意，你不能继续注册。\n\n请退出并删除本应用程序。";
 /* Figma page Android Screens (05/06) */
 "norfolk_hint" = "例如：51234";
 "northern_territory" = "北领地";
 "notification_bluetooth" = "请开启蓝牙，以便COVIDSafe可以正常运行。";
 "notification_internet_content" = "请打开应用程序并检查网络连接，以便COVIDSafe可以正常运行。";
+"notification_internet_content" = "请打开应用程序并检查网络连接。";
 "notification_not_active_title" = "COVIDSafe未激活";
 "notification_settings" = "请打开应用程序以检查您的设置。";
 "notification_update_content" = "请更新您的应用程序以获得改进后的版本。";
 "notification_update_heading" = "COVIDSafe 更新可用";
-/* Figma page iOS Screens (05/06) */
-"NotificationsBlurbLink" = "更改通知设置";
-/* Figma page iOS Screens (05/06) */
-"NotificationsDisabledBlurb" = "如果COVIDSafe未激活，您不会收到任何通知。 \n更改通知设置";
-/* Figma page iOS Screens (05/06) */
-"NotificationsEnabledBlurb" = "如果COVIDSafe未激活，您将收到通知。 \n更改通知设置";
 "numbers_error" = "无法查询最新统计数字。";
 "numbers_no_internet" = "请连接到互联网，以获取最新统计数字。";
 "numbers_refresh" = "请刷新";
 "options_for_australia" = "澳大利亚选项";
-"OS2b_Item_4" = "4. 您的 iPhone 要求COVIDSafe 获得位置权限才能运行。*COVIDSafe 不会收集、储存或使用您的位置数据*";
 "overseas_acquired" = "%@海外感染";
 "permission_button" = "继续";
 /* Figma page iOS Screens (05/06) */
@@ -432,30 +453,19 @@
 "personal_details_name_title" = "全名（或化名）";
 "personal_details_post_code" = "澳大利亚邮政编码";
 "personal_details_post_code_error_prompt" = "您的澳大利亚邮政编码必须包含4位数。";
-"PINNumber_VO_Label" = "PIN码";
-/* Figma page iOS Screens (05/06) */
-"PN_BluetoothStatusBody" = "离家之前和在公共场所时，务必开启蓝牙®，使COVIDSafe处于激活状态。";
-/* Figma page iOS Screens (05/06) */
-"PN_BluetoothStatusTitle" = "COVIDSafe未激活";
-"PN_MobileNumber_VOLabel" = "手机号码";
-/* Figma page iOS Screens (05/06) */
-"PN_ReminderBody" = "开启 COVIDSafe，确保其处于运行状态。";
-/* Figma page iOS Screens (05/06) */
-"PN_ReminderTitle" = "48 小时内未检测到任何接触";
 "postcode_api_error" = "出现错误。请检查您的互联网连接，然后重试。";
 "postcode_change_label" = "当前的澳大利亚邮政编码";
 "postcode_success" = "您的邮政编码已更新";
-"PostcodeValidationErrorMessage" = "请输入有效的澳大利亚邮政编码。";
 "privacy_policy" = "";
 "privacy_policy_description" = "";
 "queensland" = "昆士兰州";
 "recovered" = "康复患者总数";
-"registration_consent_content" = "我同意数字转换局作为数据存储管理方可以根据澳大利亚政府卫生部常务副部长依法作出的决议，收集以下信息：";
-"registration_consent_diagnostic" = "确保 COVIDSafe 在我的设备上正常运行的信息。";
-"registration_consent_first_paragraph" = "我的注册信息。";
+"registration_consent_content" = "我同意卫生部作为数据存储管理方可以根据《1988年隐私法》收集以下信息：";
+"registration_consent_diagnostic" = "确保COVIDSafe在我的设备上正常运行的信息。";
+"registration_consent_first_paragraph" = "注册信息，";
 /* Onboarding Registration Consent */
 "registration_consent_headline" = "注册同意书";
-"registration_consent_second_paragraph" = "我与其他COVIDSafe用户的接触信息（如果与我发生过接触的其他用户COVID-19检测呈阳性并上传其接触者数据）。";
+"registration_consent_second_paragraph" = "我与其他COVIDSafe用户的接触信息（如果与我发生过接触的其他用户COVID-19检测呈阳性并上传其接触者数据），及";
 "restrictions_accommodation" = "住宿";
 "restrictions_activity" = "活动";
 "restrictions_cafes" = "咖啡厅和餐厅";
@@ -481,8 +491,6 @@
 "scheduled" = "您已将COVIDSafe设置为从%@休眠至%@ 。";
 /* OnBoarding Enter Number */
 "select_country_or_region" = "选择国家或地区";
-/* Figma page Android Screens (05/06) */
-"Select_country_or_region_headline" = "选择国家或地区";
 "select_state_territory_button" = "选择州或领地";
 "select_state_territory_heading" = "选择州或领地";
 "set_snooze_time" = "设置休眠时间";
@@ -514,7 +522,6 @@
 "stepCounter" = "第%d步，共%d步";
 "support" = "支持";
 "support_content" = "获取帮助，解决帮助主题未涵盖的问题";
-"Support_VOLabel" = "支持。获取帮助，解决帮助主题未涵盖的问题";
 "tasmania" = "塔斯马尼亚州";
 /* Example: "From 22 to 28 January 2021" */
 "to" = "";
@@ -524,17 +531,16 @@
 "total_per_state" = "各州和领地确诊病例总数";
 "twenty_eight_days" = "28天";
 "type_in_time" = "输入时间";
-"UILaunchStoryboardName" = "LaunchScreen_zh_Hans";
+/* Figma page Android Screens (05/06) */
+"under-sixteen_consent_call_for_action" = "选择“我同意”确认同意，如果不能确认父母或监护人同意，选择“我不同意”。";
 "under_investigation" = "";
-"under_sixteen_content" = "我确认我的父母或监护人同意数字转换局作为数据存储管理方可以根据澳大利亚政府卫生部常务副部长依法作出的决议，收集以下信息：";
-"under_sixteen_first_paragraph" = "我的注册信息。";
+"under_sixteen_content" = "我确认我的父母或监护人同意卫生部作为数据存储管理方可以根据《1988年隐私法》收集以下信息：";
+"under_sixteen_first_paragraph" = "注册信息，";
 /* OnBoarding Under Sixteen */
 "under_sixteen_headline" = "您需要得到父母/监护人的同意才能继续";
 /* Figma page Android Screens (05/06) */
-"under_sixteen_registration_consent_first_paragraph" = "我的注册信息。";
-"under_sixteen_second_paragraph" = "我与其他COVIDSafe用户的接触信息（如果与我发生过接触的其他用户COVID-19检测呈阳性并上传其接触者数据）。";
-/* Figma page Android Screens (05/06) */
-"under-sixteen_consent_call_for_action" = "选择“我同意”以确认同意。";
+"under_sixteen_registration_consent_first_paragraph" = "注册信息，";
+"under_sixteen_second_paragraph" = "我与其他COVIDSafe用户的接触信息（如果与我发生过接触的其他用户COVID-19检测呈阳性并上传其接触者数据），及";
 "update_available_app_store_btn" = "前往App Store";
 "update_available_dismiss_btn" = "稍后提醒我";
 "update_available_message_ios" = "我们一直在改进 COVIDSafe。请通过应用商店更新。";
@@ -557,7 +563,7 @@
 "upload_step_verify_pin_header" = "上传个人信息";
 "upload_step_verify_pin_sub_header" = "州或领地卫生官员将通过短信向您的手机发送 PIN码。请在下面输入PIN码以上传个人信息。";
 "us_consent_button" = "我同意";
-"us_registration_consent_diagnostic" = "确保 COVIDSafe 在我的设备上正常运行的信息。";
+"us_registration_consent_diagnostic" = "确保COVIDSafe在我的设备上正常运行的信息。";
 "victoria" = "维多利亚州";
 "western_australia" = "西澳大利亚州";
 "wrong_ping_number" = "错误的PIN码";
@@ -572,38 +578,16 @@
 "Done" = "完成";
 /* Feedback */
 "EmailPlaceholder" = "输入您的电子邮件地址（必填）";
+"EnterPINSent" = "输入发送到%@的PIN码";
 /* Phone number and PIN */
 "EnterPhoneReVerify" = "输入您的手机号码以重新验证";
-"EnterPINSent" = "输入发送到%@的PIN码";
-/* Message for prompt that user sees when opening feeback. Prompt asks user if he/she would like to send new feedback. */
-"entryPrompt_alert_message" = "您好，请选择接下来的操作。";
-/* Title for prompt that user sees when opening feeback. Prompt asks user if he/she would like to send new feedback. */
-"entryPrompt_alert_title" = "意见箱";
-/* Title for button that launches new feedback flow. */
-"entryPrompt_newFeedback_button_title" = "新的反馈";
 "FoundIssueWithApp" = "在 COVIDSafe 应用程序中发现问题吗？";
-/* *** Feedback localised strings *** */
-"global_cancel_button_title" = "取消";
-"global_send_button_title" = "发送";
-"global_sending_indication_title" = "正在发送";
-"global_success_indication_title" = "成功";
 /* upload */
 "InformationUploaded" = "个人信息已在%@ 上传。";
 "InvalidOTP" = "PIN码为6位数";
 "IssueDescPlaceholder" = "请描述问题";
 "IssueFooter" = "我们可能会与您联系以进一步了解反馈意见。您的电子邮件地址不会被用于其他目的。";
 "IssueThankYou" = "谢谢！反馈已收到。";
-/* Delete screenshot action sheet action button title. */
-"newFeedback_deleteScreenshot_actionTitle" = "删除屏幕截图";
-/* Messsage shown to user asking to confirm screenshot deletion. */
-"newFeedback_deleteScreenshotConfirmation_message" = "此屏幕截图将被永久删除。";
-"newFeedback_invalidEmail_errorMessage" = "请输入有效的电子邮件地址！";
-/* Error message displayed to users when feedback has empty description */
-"newFeedback_noMessage_errorMessage" = "发送前请填写反馈意见。";
-/* Error message displayed to users when feedback fails to send. */
-"newFeedback_send_errorMessage" = "发送反馈意见时出错";
-/* Navigation Bar title shown during new feedback flow. */
-"newFeedbackFlow_navigationTitle" = "报告问题";
 "Next" = "下一步";
 /* registration succcess */
 "OS2b_Item1" = "1.离开家时，请随身携带手机，并确保COVIDSafe处于激活状态。";
@@ -611,6 +595,7 @@
 "OS2b_Item2_VOLabel" = "2.蓝牙®应该保持开启状态。";
 "OS2b_Item3" = "3. COVIDSafe不会发送配对请求。 了解更多信息。";
 "OS2b_Item3Underline" = "了解更多信息";
+"PINWillExpire" = "您的PIN码将在%@失效";
 /* home */
 "PairingRequestsInfo" = "COVIDSafe不会发送配对请求。";
 "PairingRequestsInfoUnderline" = "配对请求";
@@ -618,7 +603,6 @@
 "PhoneNumberFormatErrorTitle" = "号码格式错误";
 "PhoneVerificationErrorMessage" = "请检查个人信息，然后重试。";
 "PhoneVerificationErrorTitle" = "验证电话号码时出错";
-"PINWillExpire" = "您的PIN码将在%@失效";
 "ReceivePinIssue" = "接收PIN码时遇到问题？";
 /* help */
 "ReportAnIssue" = "报告问题";
@@ -627,13 +611,35 @@
 "UploadFailed" = "上传失败。请稍后再试。";
 "UploadFailedErrorMessage" = "请稍后再试。";
 "ValidationError" = "验证出错";
+/* Message for prompt that user sees when opening feeback. Prompt asks user if he/she would like to send new feedback. */
+"entryPrompt_alert_message" = "您好，请选择接下来的操作。";
+/* Title for prompt that user sees when opening feeback. Prompt asks user if he/she would like to send new feedback. */
+"entryPrompt_alert_title" = "意见箱";
+/* Title for button that launches new feedback flow. */
+"entryPrompt_newFeedback_button_title" = "新的反馈";
+/* *** Feedback localised strings *** */
+"global_cancel_button_title" = "取消";
+"global_send_button_title" = "发送";
+"global_sending_indication_title" = "正在发送";
+"global_success_indication_title" = "成功";
+/* Navigation Bar title shown during new feedback flow. */
+"newFeedbackFlow_navigationTitle" = "报告问题";
+/* Messsage shown to user asking to confirm screenshot deletion. */
+"newFeedback_deleteScreenshotConfirmation_message" = "此屏幕截图将被永久删除。";
+/* Delete screenshot action sheet action button title. */
+"newFeedback_deleteScreenshot_actionTitle" = "删除屏幕截图";
+"newFeedback_invalidEmail_errorMessage" = "请输入有效的电子邮件地址！";
+/* Error message displayed to users when feedback has empty description */
+"newFeedback_noMessage_errorMessage" = "发送前请填写反馈意见。";
+/* Error message displayed to users when feedback fails to send. */
+"newFeedback_send_errorMessage" = "发送反馈意见时出错";
 "GetCoronaVirusApp_VOLabel" = "获取冠状病毒应用程序。下载政府应用程序以获取最新消息和建议。";
 "HelpTopics_VOLabel" = "帮助主题。排除故障和修复技术问题指南。";
 "LatestNews_VOLabel" = "最新消息及更新。前往aus.gov.au了解冠状病毒的最新消息。";
 "NotificationsDisabled_VOLabel" = "通知已禁用。如果COVIDSafe未激活，您将不会收到通知。 \n更改通知设置";
 "NotificationsEnabled_VOLabel" = "通知已启用。如果COVIDSafe未激活，您将收到通知。 \n更改通知设置";
 "OS1b_TopParagraph_VOLabel" = "COVIDSafe需要使用蓝牙®信号以确定您靠近另一个COVIDSafe用户的时间。 \n\n您与其他COVIDSafe用户之间的每一次密切接触都被记录下来，以创建密切接触信息。该信息经过加密，且仅储存在您的手机中。 \n\n如果您使用COVIDSafe并对COVID-19测试呈阳性，则州或领地卫生官员将与您联系。经您同意，他们会协助您将密切接触者信息上传至高度安全的信息储存系统。\n\n如果您与测试结果呈阳性的其他COVIDSafe用户发生密切接触，则州或领地卫生官员也会与您联系。 \n\n如需更多信息，请参阅*帮助主题*页。";
-"permission_content_iOS_2_VOLabel" = "1. 蓝牙\n2. 通知\n3. 位置服务";
-"permission_content_iOS_VOLabel" = "COVIDSafe需要启用蓝牙才能运行。 COVIDSafe不会发送配对请求。 \n\n通过启用通知，您将在COVIDSafe未激活时收到提示信息。 \n\n您的iPhone要求COVIDSafe获得位置权限才能运行。 * COVIDSafe不会跟踪或存储您的位置数据* \n\n选择“继续”以启用：";
 "ShareCovidSafe_VOLabel" = "共享COVIDSafe。邀请他人助力。万众一心，其利断金。";
 "UploadData_VOLabel" = "是否有卫生官员联系过您？只有在您的病毒检测呈阳性时，才能上传个人信息。";
+"permission_content_iOS_2_VOLabel" = "1. 蓝牙\n2. 通知\n3. 位置服务";
+"permission_content_iOS_VOLabel" = "COVIDSafe需要启用蓝牙才能运行。 COVIDSafe不会发送配对请求。 \n\n通过启用通知，您将在COVIDSafe未激活时收到提示信息。 \n\n您的iPhone要求COVIDSafe获得位置权限才能运行。 * COVIDSafe不会跟踪或存储您的位置数据* \n\n选择“继续”以启用：";

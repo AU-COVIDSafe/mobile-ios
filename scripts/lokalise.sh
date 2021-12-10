@@ -1,6 +1,6 @@
 LOKALISE_TOKEN=$1
 
-lokalise2 --token $LOKALISE_TOKEN --project-id 961497065ee6ad1e440843.11368444 file download --format strings --dest ../temp --unzip-to ../temp/locales
+lokalise2 --token $LOKALISE_TOKEN --project-id 99670955616fccfa149649.92277036 file download --format strings --dest ../temp --unzip-to ../temp/locales
 
 for directory in `find ../temp/locales -type d`
 do
@@ -37,9 +37,9 @@ do
 			continue
 		fi
 
-		echo "Contatenating $filename to Localizable.strings"
+		echo "Concatenating $filename to Localizable.strings"
 
-		cat "$file" >> "$directory/Localizable.strings"
+		(echo ;cat "$file") >> "$directory/Localizable.strings"
 
 		echo "Deleting $file"
 		rm $file
